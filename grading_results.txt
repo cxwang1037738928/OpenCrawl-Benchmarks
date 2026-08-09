@@ -1,0 +1,1630 @@
+====================================================================================================
+MANUAL GRADING — every answer read and judged individually, no pattern matching
+====================================================================================================
+source          : benchmark_2026-08-08T23-31-02Z.jsonl
+graded          : all 220 answers (20 studies x 11 questions)
+collection      : 28 "Benchmark A — embedded OCR text (topaz)"
+reasoning model : gemini/gemini-3.1-flash-lite
+retrieval       : doc boost 2.0 (name inferred from the question), top-k 10
+
+RUBRIC
+  CORRECT — conveys the expected answer, including correctly reporting absence when the
+            ground truth is null/not applicable. Equivalent wording counts (e.g. "Magnusson
+            and Kligman method" for "guinea pig maximization test"; "91 to 93 days" for
+            "3 months"). Extra correct detail does not penalise.
+  PARTIAL — right direction but incomplete or hedged: some of a multi-part answer missing,
+            or the value surfaced in the text but not committed to as the answer.
+  WRONG   — contradicts the ground truth, or answers null/not-applicable where a real value
+            was expected, or fails to answer at all.
+
+----------------------------------------------------------------------------------------------------
+RESULT
+----------------------------------------------------------------------------------------------------
+  CORRECT               163 / 220   74.1%
+  PARTIAL                25 / 220   11.4%
+  WRONG                  32 / 220   14.5%
+
+  correct + half credit for partial: 175.5 / 220  =  79.8%
+
+----------------------------------------------------------------------------------------------------
+BY QUESTION
+----------------------------------------------------------------------------------------------------
+  question                                                       correct  partial  wrong   rate
+  Q1   exposure type + method                                     16        4      0     80%
+  Q2   purity                                                     19        0      1     95%
+  Q3   vehicle / solvent                                          12        6      2     60%
+  Q4   test guideline                                             16        2      2     80%
+  Q5   test method                                                15        1      4     75%
+  Q6   highest dose                                               14        2      4     70%
+  Q7   dilutions                                                  13        7      0     65%
+  Q8   total animals                                              13        0      7     65%
+  Q9   hazard classification                                      11        1      8     55%
+  Q10  study duration                                             17        0      3     85%
+  Q11  effects on NOAEL / hazard                                  17        2      1     85%
+
+----------------------------------------------------------------------------------------------------
+BY STUDY
+----------------------------------------------------------------------------------------------------
+  study                                                          correct  partial  wrong   rate
+  1.1 Dermal_sens.pdf                                            10        0      1     91%
+  1.2_Inhalation_geno                                             8        1      2     73%
+  1.3_Oral_repd                                                   8        1      2     73%
+  1.4_Vitro_Geno                                                  9        2      0     82%
+  1.5_Inhalation_repd                                             9        2      0     82%
+  1.6_Vitro_Geno                                                  8        2      1     73%
+  1.7_Dermal_Sens                                                11        0      0    100%
+  1.8_Vitro_Geno                                                  9        1      1     82%
+  1.9_Inhalation_Repd                                            11        0      0    100%
+  1.10_Oral_Repd                                                  4        3      4     36%
+  2.1_Vitro_geno                                                 10        1      0     91%
+  2.2_Dermal_Repd                                                 9        1      1     82%
+  2.3_Oral_Geno                                                  10        1      0     91%
+  2.4_Oral_Repd                                                   4        2      5     36%
+  2.5_inhalation_repd                                             7        2      2     64%
+  2.6_Dermal_Sens                                                 8        1      2     73%
+  2.7_Vitro_Geno                                                 11        0      0    100%
+  2.8_Dermal_Sens                                                 8        1      2     73%
+  2.9_Oral_Geno                                                   3        3      5     27%
+  2.10_Dermal_Sens                                                6        1      4     55%
+
+----------------------------------------------------------------------------------------------------
+EVERY QUESTION
+----------------------------------------------------------------------------------------------------
+
+### 1.1 Dermal_sens.pdf
+
+#1 Q1 — CORRECT
+  EXPECTED : DERMAL : Intradermal Injection and Occlusive Patch
+  ANSWER   : The toxicology study described in the document is for dermal exposure [2]. The exposure
+             method used was the Magnusson and Kligman maximization test [2]. This method involved
+             both intradermal and topical applications [6, 9, 10!]. Specifically, the study
+             utilized: * **Intradermal induction:** 1% w/v in distilled water [9]. * **Topical
+             induction:** 50% w/w in distilled water [9]. * **Topical challenge:** 25% and 10% w/w
+             in distilled water [8].
+
+#2 Q2 — CORRECT
+  EXPECTED : Purity: Null
+  ANSWER   : The provided documents do not state the purity of the tested substance.
+
+#3 Q3 — CORRECT
+  EXPECTED : VEHICLE/SOLVENT: distilled water
+  ANSWER   : The vehicle used in the study was distilled water [9].
+
+#4 Q4 — CORRECT
+  EXPECTED : TEST GUIDELINE : OECD 406
+  ANSWER   : Yes, the study followed the OECD Guidelines for the Testing of Chemicals No. 406 "Skin
+             Sensitisation" [2, 3, 6!]. This guideline is published by the Organisation for Economic
+             Cooperation and Development [G]. Additionally, the study followed Method B6 of
+             Commission Directive 92/69/EEC [2].
+
+#5 Q5 — CORRECT
+  EXPECTED : TEST METHOD : Guinea pig maximization test
+  ANSWER   : Yes, the study follows a test method. It follows the OECD Guidelines for the Testing of
+             Chemicals No. 406 "Skin Sensitisation" (adopted 17 July 1992), which is based on the
+             Magnusson and Kligman method [2]. Additionally, the study follows Method B6 of
+             Commission Directive 92/69/EEC [3].
+
+#6 Q6 — CORRECT
+  EXPECTED : Max dose: 50% w/v
+  ANSWER   : The highest concentration of the test material used in the sighting tests was 50% w/w
+             in distilled water [2].
+
+#7 Q7 — CORRECT
+  EXPECTED : DILUTION PERCENTAGES : 1% w/v (distilled water), 50% w/w, 25% w/w, 10% w/w, 5% w/w.
+  ANSWER   : Yes, the substance is diluted in distilled water for various stages of testing. The
+             following concentrations are mentioned in the document: * **Intradermal Induction:** 1%
+             w/v [3, 7!]. * **Topical Induction:** 50% w/w [3, 5, 10!]. * **Topical Challenge:** 25%
+             w/w and 10% w/w [3, 4, 8!]. * **Sighting Tests:** The substance was also prepared at
+             5%, 10%, 25%, and 50% w/w for the topical induction sighting test [3].
+
+#8 Q8 — CORRECT
+  EXPECTED : Total Animals: 20
+  ANSWER   : The study used a total of 20 animals, consisting of ten test animals and ten control
+             animals [2].
+
+#9 Q9 — WRONG
+  EXPECTED : Hazard : strong
+  ANSWER   : The study is a sensitization study [1, 3, 5, 8!]. The test material was classified as
+             an "extreme sensitiser" to guinea pig skin [2].
+  WHY      : document says "extreme sensitiser"; ground truth says "strong"
+
+#10 Q10 — CORRECT
+  EXPECTED : Not applicable
+  ANSWER   : not applicable
+
+#11 Q11 — CORRECT
+  EXPECTED : Not applicable
+  ANSWER   : not applicable [3, 4, 8!]
+
+### 1.2_Inhalation_geno
+
+#12 Q1 — PARTIAL
+  EXPECTED : INHALATION : Vapor
+  ANSWER   : The toxicology study described in the document is an inhalation study [1]. The exposure
+             method is whole-body inhalation [6].
+  WHY      : exposure type INHALATION correct; method given as "whole-body", expected "vapor"
+
+#13 Q2 — CORRECT
+  EXPECTED : Purity: Null
+  ANSWER   : The provided excerpts from the document "1.2 Inhalation_geno.pdf" do not state the
+             purity of the tested substance (styrene).
+
+#14 Q3 — CORRECT
+  EXPECTED : vehicle/solvent: Null
+  ANSWER   : The provided excerpts regarding the study in `1.2 Inhalation_geno.pdf` do not mention
+             the vehicle or solvent used in the toxicity study. The documents describe the exposure
+             as "whole-body inhalation to 0 ppm (air-only control) or 120 ppm of styrene" [5].
+
+#15 Q4 — CORRECT
+  EXPECTED : Guidelines: Null
+  ANSWER   : The provided excerpts from document 1.2 Inhalation_geno.pdf do not state that the study
+             followed a specific test guideline. Therefore, the answer is null.
+
+#16 Q5 — CORRECT
+  EXPECTED : Method: Null
+  ANSWER   : The provided excerpts for 1.2 Inhalation_geno.pdf do not state a specific test method
+             followed by the study; therefore, the answer is null [1, 2, 3, 4, 5, 6, 8!].
+
+#17 Q6 — CORRECT
+  EXPECTED : Max Dose: 120 ppm
+  ANSWER   : In the study described in document 1.2_Inhalation_geno, the mice were exposed to a dose
+             of 120 ppm of styrene [1].
+
+#18 Q7 — CORRECT
+  EXPECTED : Dilution percentage: Null
+  ANSWER   : The provided excerpts for `1.2 Inhalation_geno.pdf` do not mention the substance being
+             diluted. Therefore, the answer is null [1, 2, 3, 4, 5, 6, 8, 9!].
+
+#19 Q8 — WRONG
+  EXPECTED : Total Animals: 548
+  ANSWER   : The provided documents do not state the total number of animals used in the study;
+             therefore, the answer is null [1, 2, 3, 4, 6, 8!]. While Table 2 provides the number of
+             mice examined for specific strains and exposure concentrations (e.g., 67, 69, 70, 68),
+             it does not provide a cumulative total for the entire study [2!].
+  WHY      : expected 548; answered null (per-strain counts present, no total)
+
+#20 Q9 — WRONG
+  EXPECTED : Hazard: Low
+  ANSWER   : The study described in `1.2 Inhalation_geno.pdf` is a repeated dose study, as it
+             involved exposing mice to styrene via whole-body inhalation for 6 hours/day, 5
+             days/week for up to 104 weeks [4]. Regarding the classification of the substance as a
+             hazard, the provided documents do not contain information classifying the substance as
+             low, low-moderate, moderate, moderate-high, high, or extreme hazard. Therefore, the
+             answer is "null" [1, 2, 3, 4, 5, 6, 8!].
+  WHY      : expected Low; answered null
+
+#21 Q10 — CORRECT
+  EXPECTED : Duration: 104 weeks
+  ANSWER   : The study described in the document is a repeated dose study, as the mice were exposed
+             to styrene for 6 hours/day, 5 days/week for up to 104 weeks [4]. The duration of the
+             study was up to 104 weeks [1, 3, 4, 6!].
+
+#22 Q11 — CORRECT
+  EXPECTED : DEGENERATION OF EPITHELIAL CELLS : Shrunken and sometimes hypereosinophilic cytoplasm
+             <br>LUNG TUMORS: Lung adenomas or adenocarcinomas in 31 out of 67 CD-1 controls
+             <br>HYPERPLASIA: Observed at week 1 but not subsequently (26, 52, or 78 weeks)
+  ANSWER   : The study described in `1.2_Inhalation_geno.pdf` is a repeated dose study, as the
+             animals were exposed to styrene for 6 hours/day, 5 days/week for up to 104 weeks [9].
+             Regarding effects that changed the NOAEL or classification hazard, the provided text
+             does not mention a NOAEL (No Observed Adverse Effect Level). Furthermore, the document
+             states that the Styrene Information and Research Center (SIRC) has not made a
+             determination regarding whether the information supports the conclusion that the
+             substance presents a substantial risk of injury to human health or the environment [2].
+             Regarding specific health effects observed in the animals: * **Degeneration:** Slight
+             degeneration of epithelial cells lining the terminal bronchioles was observed in CD-1
+             mice and WT (C57BL/6) mice [5]. * **Hyperplasia:** Hyperplasia was observed in the
+             terminal bronchioles of CD-1 mice and WT mice [4]. * **Tumorigenicity:** Styrene
+             increased the incidence of bronchioloalveolar adenomas and carcinomas in CD-1 mice [5].
+             * **Cell Proliferation:** Increased cell proliferation occurred in CD-1 and WT mice
+             exposed to 120 ppm styrene for 1 week [8]. The document argues that these effects are
+             due to mouse-specific CYP2F2 metabolism, which is a rodent mode of action that the
+             authors claim is not relevant to humans [2].
+
+### 1.3_Oral_repd
+
+#23 Q1 — CORRECT
+  EXPECTED : Oral : Diet
+  ANSWER   : Based on the provided documents, the toxicology study mentioned in `1.3_Oral_repd.pdf`
+             is an oral study [8]. The exposure method for this study is dietary, as it is described
+             as a "3-month dietary toxicity study" [8].
+
+#24 Q2 — CORRECT
+  EXPECTED : Purity: Null
+  ANSWER   : The provided documents do not state the purity of the butyl CELLOSOLVE used in the
+             study described in `1.3 Oral_repd.pdf`.
+
+#25 Q3 — PARTIAL
+  EXPECTED : Vehicle: PURINA laboratory diet
+  ANSWER   : The provided documents do not identify a specific vehicle or solvent used to administer
+             the butyl CELLOSOLVE in the toxicity study. The study involved incorporating the
+             chemical directly into a "basic diet" of ground PURINA laboratory diet using a "READCO
+             model K-20 vertical mixer" [7!].
+  WHY      : quoted the PURINA laboratory diet but concluded no vehicle was identified
+
+#26 Q4 — CORRECT
+  EXPECTED : Test Guideline: Null
+  ANSWER   : The provided excerpt for 1.3_Oral_repd.pdf [7!] does not mention any specific test
+             guidelines followed by the study. Therefore, the answer is null.
+
+#27 Q5 — CORRECT
+  EXPECTED : No test guideline
+  ANSWER   : The provided excerpts for document 1.3 Oral_repd.pdf do not state whether the study
+             followed a specific test method; therefore, the answer is null [1, 2, 5, 9!].
+
+#28 Q6 — CORRECT
+  EXPECTED : Max Dose: 1.25 %
+  ANSWER   : In the 3-month dietary toxicity study described in the provided documents, the rats
+             were fed the chemical at levels of 1.25%, 0.25%, 0.05%, or 0.0156% of their diets [2].
+             Therefore, the highest dose used was 1.25% of their diet [1].
+
+#29 Q7 — CORRECT
+  EXPECTED : Dilutions: 1.25%, 0.25%, 0.05%, 0.01%, 0.00%
+  ANSWER   : Based on the provided documents, the substance butyl CELLOSOLVE was incorporated into
+             the diet of rats at concentrations of 1.25%, 0.25%, 0.05%, or 0.0156% [7]. The corpus
+             does not explicitly describe these concentrations as "dilutions," but rather as the
+             levels at which the chemical was incorporated into the diet [4!].
+
+#30 Q8 — WRONG
+  EXPECTED : Total Animals: 99
+  ANSWER   : The total number of animals used in the study was 100 [6!].
+  WHY      : expected 99; answered 100
+
+#31 Q9 — WRONG
+  EXPECTED : Hazard: High
+  ANSWER   : The study described in `1.3 Oral_repd.pdf` is a "3-month dietary toxicity study" [3],
+             which constitutes a repeated dose study. Regarding the hazard classification of the
+             substance (butyl CELLOSOLVE) in this specific document, the corpus does not provide a
+             classification of low, low-moderate, moderate, moderate-high, high, or extreme hazard;
+             therefore, the answer is "null" [3].
+  WHY      : expected High; answered null
+
+#32 Q10 — CORRECT
+  EXPECTED : Duration: 3 months
+  ANSWER   : The study is a repeated dose study [1]. The duration of the study was 91 to 93 days
+             [3!].
+
+#33 Q11 — CORRECT
+  EXPECTED : APPROPRIATE FOOD CONSUMPTION : Significant reduction in appetite <br>BODY WEIGHT CHANGE
+             : Decrease in body weight gain, with affected rats reaching approximately half the body
+             weight of control animals by study's end <br>ORGAN WEIGHT CHANGES: Changes in liver and
+             kidney weights compared to controls <br>HEALTH PROBLEMS OBSERVED: Histopathological
+             changes observed specifically in testis
+  ANSWER   : The study is a repeated dose study, as it involved feeding rats butyl CELLOSOLVE in
+             their diets for three months [1]. The following effects were observed at the 1.25%
+             dosage level, which influenced the study's findings: * **Appetite/Diet Consumption:**
+             Diet consumption was significantly depressed in both male and female rats [2]. * **Body
+             Weight:** Body weight gain was depressed to about one-half that of the control group
+             [2]. * **Organ Weights:** Mean liver and kidney weights were increased [2]. *
+             **Histopathology:** Testicular atrophy was observed and verified microscopically [8].
+             At the 0.25% dosage level, the following effects were observed: * **Appetite/Diet
+             Consumption:** Appetite was depressed in male rats [2]. * **Body Weight:** Weight gain
+             was depressed in male rats [2]. * **Histopathology:** Testicular atrophy was observed
+             and verified microscopically [8]. The study concluded that the 0.05% dosage level was
+             without deleterious effect on the criteria measured [9].
+
+### 1.4_Vitro_Geno
+
+#34 Q1 — CORRECT
+  EXPECTED : Not applicable
+  ANSWER   : The provided documents do not state whether the exposure type for the toxicology study
+             was oral, dermal, or inhalation. The study is an *in vitro* "Reverse Mutation Assay"
+             (Ames Test) using bacterial strains, which involves exposing bacteria to the test item
+             in a laboratory setting rather than administering it to a living organism via oral,
+             dermal, or inhalation routes [1, 3, 9!]. Regarding the exposure method, the test item
+             was applied using the "Ames plate incorporation and pre-incubation methods" [9!]. This
+             involved mixing the test item formulation with bacterial culture, molten top agar, and
+             either S9-mix or phosphate buffer, then overlaying the mixture onto sterile plates of
+             Vogel-Bonner Minimal agar [2!].
+
+#35 Q2 — CORRECT
+  EXPECTED : Purity: Null
+  ANSWER   : The provided documents do not state the specific purity of the test item. While the
+             report notes that the formulated concentrations were adjusted to account for a "stated
+             active ingredient (60°/o w/v)" [3!], the document explicitly states that the
+             responsibility for data relating to the purity of the test item lies with the Sponsor
+             [6!].
+
+#36 Q3 — PARTIAL
+  EXPECTED : VEHICLE/SOLVENT: Sterile distilled water, Bacto agar with sodium chloride and
+             supplemented trace histidine or tryptophan solutions, S9-mix
+  ANSWER   : The vehicle used in this study was sterile distilled water [6].
+  WHY      : gave sterile distilled water only; expected also Bacto agar/NaCl/histidine and S9-mix
+
+#37 Q4 — CORRECT
+  EXPECTED : CATEGORY : OECD 471
+  ANSWER   : Yes, the study follows several test guidelines, including: * OECD Guidelines for
+             Testing of Chemicals No. 471 "Bacterial Reverse Mutation Test" [1]. * Method 813/14 of
+             Commission Regulation (EC) number 440/2008 [1]. * Guidelines published by Japanese
+             Regulatory Authorities, including METI, MHLW, and MAFF [1]. * USA, EPA (TSCA) OPPTS
+             harmonised guidelines [1].
+
+#38 Q5 — PARTIAL
+  EXPECTED : CATEGORY : Ames Test
+  ANSWER   : Yes, the study follows a test method designed to be compatible with the following
+             guidelines: * Guidelines for bacterial mutagenicity testing published by major Japanese
+             Regulatory Authorities, including METI, MHLW, and MAFF [1]. * OECD Guidelines for
+             Testing of Chemicals No. 471 "Bacterial Reverse Mutation Test" [1]. * Method 813/14 of
+             Commission Regulation (EC) number 440/2008 [1]. * USA, EPA (TSCA) OPPTS harmonised
+             guidelines [1].
+  WHY      : named the "Bacterial Reverse Mutation Test" via its guidelines but never states "Ames
+             test"
+
+#39 Q6 — CORRECT
+  EXPECTED : Max Dose: 5000 ug/plate
+  ANSWER   : The highest dose of the test item used in the preliminary toxicity test was 5000
+             µg/plate [1]. This same dose range (up to 5000 µg/plate) was also used in the second
+             experiment [9].
+
+#40 Q7 — CORRECT
+  EXPECTED : Dilution: Half-Log dilutions/ 60%w/v or Null (acceptable mistake)
+  ANSWER   : Yes, the substance is diluted. The test item was prepared in approximate half-log
+             dilutions using sterile distilled water [1].
+
+#41 Q8 — CORRECT
+  EXPECTED : Not applicable
+  ANSWER   : null [1, 2, 3, 4, 5, 6, 7, 8, 9, 10!]
+
+#42 Q9 — CORRECT
+  EXPECTED : Not applicable
+  ANSWER   : not applicable
+
+#43 Q10 — CORRECT
+  EXPECTED : Not applicable
+  ANSWER   : not applicable [8!]
+
+#44 Q11 — CORRECT
+  EXPECTED : Not applicable
+  ANSWER   : not applicable [1, 6!]
+
+### 1.5_Inhalation_repd
+
+#45 Q1 — PARTIAL
+  EXPECTED : Inhalation: Vapor
+  ANSWER   : The toxicology study described in the document is an **inhalation** study [1]. The
+             exposure method involved exposing male and female Sprague-Dawley rats to n-butyl
+             acetate in a chamber [5]. The rats were exposed for 6 hours per day, 5 days per week,
+             for 13 consecutive weeks [5].
+  WHY      : inhalation correct; method described as chamber exposure rather than vapor
+
+#46 Q2 — CORRECT
+  EXPECTED : Purity: Null
+  ANSWER   : The provided corpus does not contain information regarding the purity of the n-butyl
+             acetate used in the study.
+
+#47 Q3 — CORRECT
+  EXPECTED : Vehicle\:Null
+  ANSWER   : The provided documents do not identify a vehicle or solvent used to administer the
+             n-butyl acetate in this study. The study involved the inhalation of n-butyl acetate
+             vapor at concentrations of 0, 500, 1500, or 3000 ppm [7]. The documents describe
+             n-butyl acetate itself as a solvent used in commercial products [7].
+
+#48 Q4 — CORRECT
+  EXPECTED : Not applicable
+  ANSWER   : The provided documents do not state whether the study followed a specific test
+             guideline such as those from the OECD, ECC, or EC. Therefore, the corpus does not
+             address this.
+
+#49 Q5 — CORRECT
+  EXPECTED : Null\:Null
+  ANSWER   : The provided documents do not state that the study followed a specific, named test
+             method (such as an OECD guideline or EPA test protocol). The documents describe the
+             study as a "13-week subchronic inhalation toxicity study" [2] conducted by the Eastman
+             Kodak Company Toxicological Sciences Laboratory [2] for the Chemical Manufacturers
+             Association Oxo Process Panel [2]. Therefore, the answer is null.
+
+#50 Q6 — CORRECT
+  EXPECTED : Max dose: 3000 ppm
+  ANSWER   : The highest dose of n-butyl acetate used in the study was 3000 ppm [8].
+
+#51 Q7 — CORRECT
+  EXPECTED : Dilution: Null
+  ANSWER   : The provided documents do not state that the substance (n-butyl acetate) is diluted.
+             The study involved exposing rats to vapor concentrations of 0, 500, 1500, or 3000 ppm
+             [10]. While the study discusses adjusting target analytical concentrations to account
+             for chamber homogeneity (e.g., increasing a target of 500 ppm to 550 ppm) [6, 8!], this
+             is not described as a dilution of the substance itself. Therefore, the corpus does not
+             address whether the substance is diluted.
+
+#52 Q8 — CORRECT
+  EXPECTED : Total Animals: 120
+  ANSWER   : The study used a total of 120 animals [1]. This consisted of 15 males and 15 females
+             per group across four groups (Control/0 ppm, Low/500 ppm, Mid/1500 ppm, and High/3000
+             ppm) [7].
+
+#53 Q9 — CORRECT
+  EXPECTED : Hazard Classification : null
+  ANSWER   : The study is a 13-week subchronic inhalation toxicity study, which constitutes a
+             repeated dose study [1]. Regarding the hazard classification of n-butyl acetate, the
+             provided corpus does not contain information classifying the substance as low,
+             low-moderate, moderate, moderate-high, high, or extreme hazard; therefore, the answer
+             is null [1, 7!].
+
+#54 Q10 — CORRECT
+  EXPECTED : DURATION : 13 weeks
+  ANSWER   : The study is a repeated dose study [1]. The duration of the study was 13 weeks [1, 2,
+             7, 8!].
+
+#55 Q11 — PARTIAL
+  EXPECTED : - \*\*Necrosis of olfactory epithelium\*\* - critical respiratory tract irritation;
+             <br>- \*\*Inflammation and necrosis in stomach mucosa\*\* - gastrointestinal
+             toxicity;<br>- Significant reductions in absolute weights of the liver, kidneys, spleen
+             at higher doses (LOAEL);<br>- Relative splenic-to-body weight ratios were notably lower
+             at 3000 ppm.
+  ANSWER   : The study is a repeated dose study, as it involved a 13-week subchronic inhalation
+             toxicity study with repeated exposure [1]. The no-observed-effect level (NOEL) for this
+             study is considered to be 500 ppm [4]. The effects observed at higher concentrations
+             (1500 and 3000 ppm) that informed this determination include: * **Respiratory tract
+             irritation:** Signs of upper respiratory tract irritation were observed in the nasal
+             passages of animals exposed to 1500 and 3000 ppm, including necrosis of the olfactory
+             epithelium [7]. * **Reduced activity:** Animals exposed to 1500 and 3000 ppm displayed
+             acute, transient signs of reduced activity levels during exposure [7]. * **Body weight
+             and feed consumption:** The 1500 and 3000 ppm treatments produced decreased body weight
+             and feed consumption throughout much of the exposure period [3]. While the 500 ppm
+             treatment also resulted in reductions in feed consumption at a few time periods, this
+             was not accompanied by statistically significant reductions in body weight [3]. *
+             **Stomach irritation:** Gross necropsy and microscopic observations showed signs of
+             irritation to the glandular stomach and necrosis in the non-glandular stomach in some
+             3000 ppm female rats [3]. Despite these findings, the study concluded there was no
+             systemic or organ-specific toxicity [4].
+  WHY      : got olfactory and stomach necrosis; missed liver/kidney/spleen weight reductions and
+             splenic ratio
+
+### 1.6_Vitro_Geno
+
+#56 Q1 — CORRECT
+  EXPECTED : Not applicable
+  ANSWER   : The provided documents do not state the exposure type (oral, dermal, or inhalation) or
+             the exposure method for the toxicology study. The corpus focuses on an *in vitro*
+             mammalian chromosome aberration test [2], which involves treating cells in a laboratory
+             setting rather than administering a substance to a living organism via oral, dermal, or
+             inhalation routes [2].
+
+#57 Q2 — CORRECT
+  EXPECTED : Purity: 74%
+  ANSWER   : The purity of the active ingredient used in the study was 74.0% [1].
+
+#58 Q3 — PARTIAL
+  EXPECTED : VEHICLE/SOLVENT: phosphate buffered saline (PBS), DMEM, sterile physiological saline
+  ANSWER   : The vehicle selected for the study was 1X PBS (phosphate buffered saline) [7].
+  WHY      : gave 1X PBS only; expected also DMEM and sterile physiological saline
+
+#59 Q4 — CORRECT
+  EXPECTED : OECD: 473
+  ANSWER   : Yes, this study followed the procedures indicated by the following internationally
+             accepted guidelines: * OECD Guidelines for Testing of Chemicals, Section 4, No. 473
+             ("In Vitro Mammalian Chromosome Aberration Test") [1]. * Commission Regulation (EC) No
+             440/2008, B.10 ("Mutagenicity In Vitro Mammalian Chromosome Aberration Test") [1]. *
+             EPA Health Effects Test Guidelines, OPPTS 870.5375 ("In Vitro Mammalian Chromosome
+             Aberration Test") [1].
+
+#60 Q5 — CORRECT
+  EXPECTED : Method\:Chromosomal Abberation
+  ANSWER   : Yes, this study follows the procedures indicated by the following internationally
+             accepted guidelines: * Ninth Addendum to OECD Guidelines for Testing of Chemicals,
+             Section 4, No. 473, "In Vitro Mammalian Chromosome Aberration Test," adopted 21 July
+             1997 [1]. * Commission Regulation (EC) No 440/2008 of 30 May 2008, B.10, "Mutagenicity
+             In Vitro Mammalian Chromosome Aberration Test" [1]. * EPA Health Effects Test
+             Guidelines, OPPTS 870.5375, "In Vitro Mammalian Chromosome Aberration Test," EPA
+             712-C-98-223, August 1998 [1].
+
+#61 Q6 — WRONG
+  EXPECTED : Max Dose: 400 ug/mL
+  ANSWER   : The highest concentration used in the preliminary test was 5000 µg/mL [2].
+             Additionally, a total of nine test concentrations between 5000 and 0.064 µg/mL were
+             used to evaluate toxicity in each cytotoxicity assay [9].
+  WHY      : expected 400 ug/mL; answered 5000 ug/mL (the preliminary test)
+
+#62 Q7 — PARTIAL
+  EXPECTED : Dilutions\:Null
+  ANSWER   : Yes, the substance is diluted. From the stock formulation, several dilutions were
+             prepared using the selected vehicle [1]. The provided documents do not state specific
+             dilution percentages.
+  WHY      : expected Null; asserted dilution occurred but supplied no percentages
+
+#63 Q8 — CORRECT
+  EXPECTED : ANIMALS USED : null
+  ANSWER   : null [1, 2, 4!]
+
+#64 Q9 — CORRECT
+  EXPECTED : not applicable
+  ANSWER   : not applicable [2, 4!]
+
+#65 Q10 — CORRECT
+  EXPECTED : not applicable
+  ANSWER   : not applicable
+
+#66 Q11 — CORRECT
+  EXPECTED : not applicable
+  ANSWER   : not applicable [1, 4, 10!]
+
+### 1.7_Dermal_Sens
+
+#67 Q1 — CORRECT
+  EXPECTED : Dermal : Local Lymph Node Assay
+  ANSWER   : Based on the provided documents, the toxicology study in `1.7 Dermal_sens.pdf` is
+             classified as follows: * **Exposure Type:** The exposure type is **dermal** [1!]. *
+             **Exposure Method:** The study utilized a modified **Local Lymph Node Assay (LLNA)**
+             [1]. In this method, groups of mice were dermally exposed to solutions of the test
+             substance in acetone/olive oil [1].
+
+#68 Q2 — CORRECT
+  EXPECTED : Purity\:Null
+  ANSWER   : The provided documents for 1.7 Dermal_sens.pdf do not state the purity of the tested
+             substance. The corpus does not address this information.
+
+#69 Q3 — CORRECT
+  EXPECTED : Vehicle: acetone/olive oil
+  ANSWER   : The vehicle used in the study described in the document "1.7 Dermal_sens.pdf" was a
+             mixture of acetone and olive oil [2].
+
+#70 Q4 — CORRECT
+  EXPECTED : OECD: 429,406
+  ANSWER   : Yes, the study follows test guidelines. The study design was in accordance with OECD
+             Guidelines 429 and 406, as well as EPA OPPTS 870.2600 [1]. OECD is an abbreviation for
+             the Organisation for Economic Cooperation and Development [G].
+
+#71 Q5 — CORRECT
+  EXPECTED : Method: Local Lymph Node Assay
+  ANSWER   : Yes, the study follows a test method. It was a modified Local Lymph Node Assay (LLNA)
+             that followed OECD Guidelines 429 and 406, as well as EPA OPPTS 870.2600 [2].
+
+#72 Q6 — CORRECT
+  EXPECTED : Max Dose: 100%
+  ANSWER   : In the study described in document 1.7_Dermal_sens.pdf, the highest dose of the test
+             substance used was 100% [2!].
+
+#73 Q7 — CORRECT
+  EXPECTED : Dilutions: 0,4,20,100%
+  ANSWER   : Yes, the substance is diluted. In the Local Lymph Node Assay (LLNA) described in the
+             document, groups of mice were dermally exposed to 4%, 20%, or 100% solutions of the
+             test substance in acetone/olive oil [2].
+
+#74 Q8 — CORRECT
+  EXPECTED : Total Animals: 24
+  ANSWER   : The study used different groups of 6 female NMRI mice [1]. As there were four groups
+             (0, 4, 20, and 100% solutions), the total number of animals used was 24 [1!].
+
+#75 Q9 — CORRECT
+  EXPECTED : Hazard: Null
+  ANSWER   : The study described in document 1.7 Dermal_sens.pdf is a Local Lymph Node Assay (LLNA),
+             which is a sensitization study [2!]. Regarding the classification of the substance, the
+             provided excerpts for this document do not state a classification of "low,"
+             "low-moderate," "moderate," "moderate-high," "high," or "extreme" hazard. The study
+             director concluded that a "sensitizing potential was observed" based on the cell counts
+             exceeding the "positive level" index of 1.4 [1!]. Therefore, the answer is "null" [1,
+             2, 3, 7!].
+
+#76 Q10 — CORRECT
+  EXPECTED : not applicable
+  ANSWER   : not applicable
+
+#77 Q11 — CORRECT
+  EXPECTED : not applicable
+  ANSWER   : not applicable [1, 2!]
+
+### 1.8_Vitro_Geno
+
+#78 Q1 — CORRECT
+  EXPECTED : Not applicable
+  ANSWER   : The provided corpus does not contain information regarding whether the exposure type
+             was oral, dermal, or inhalation. The document describes an *in vitro* study [7!], which
+             involves cell cultures rather than administration to a living organism via those
+             routes. Regarding the exposure method, the study utilized the following conditions: *
+             **Without Metabolic Activation:** * 6 hours of exposure to the test material, followed
+             by a phosphate buffered saline wash and an 18-hour culture in treatment-free media [1].
+             * 24 hours of continuous exposure to the test material [1]. * 48 hours of continuous
+             exposure to the test material [1]. * **With Metabolic Activation:** * 6 hours of
+             exposure to the test material and S9 mix, followed by a phosphate buffered saline wash
+             and an 18-hour culture in treatment-free media [4].
+
+#79 Q2 — CORRECT
+  EXPECTED : Purity: Null
+  ANSWER   : The provided documents do not state the purity of the tested substance. The report
+             explicitly notes that "The concentration, homogeneity and stability of the test
+             material preparations were not determined by analysis" [7].
+
+#80 Q3 — CORRECT
+  EXPECTED : Solvent: dimethyl<br>suiphoxide
+  ANSWER   : The vehicle used in this study was dimethyl sulphoxide [3!].
+
+#81 Q4 — CORRECT
+  EXPECTED : OECD: Null
+  ANSWER   : The study does not explicitly state that it follows a specific test guideline (such as
+             an OECD guideline). It does, however, declare that the work was performed in compliance
+             with the principles of Good Laboratory Practice (GLP), citing the following: * The
+             United Kingdom Compliance Programme, Department of Health 1989 [3]. * Organisation for
+             Economic Co-operation and Development (OECD), Paris 1982 [3][G]. * Japanese Ministry of
+             Agriculture, Forestry and Fisheries, 59 NohSan Notification No. 3850, 10 August 1984
+             [3]. * Japanese Ministry of Health and Welfare, Notification No. Yakuhatsu 313, 31
+             March 1982 [3]. Additionally, the study references the "1983 UKEMS guidelines for
+             mutagenicity testing" regarding the methodology for scoring chromosome damage [3].
+
+#82 Q5 — WRONG
+  EXPECTED : Method: Chromosomal Abberation
+  ANSWER   : The study follows the guidelines recommended in the 1983 UKEMS guidelines for
+             mutagenicity testing [8].
+  WHY      : expected Chromosomal Aberration; answered "1983 UKEMS guidelines"
+
+#83 Q6 — CORRECT
+  EXPECTED : Max Dose: 625 ug/ml (main study) or 2500 ug/mL (preliminary results)
+  ANSWER   : The maximum dose level of Nigrosine Base EX tested was 2500 µg/ml [2]. However, due to
+             the formation of precipitates and large clumps of test material, the maximum
+             *practical* dose level used in the 6 (18) and 24-hour treatment groups was 625 µg/ml
+             [2]. In the 48-hour treatment group, the maximum dose level was limited to 78.1 µg/ml
+             due to toxicity [2].
+
+#84 Q7 — PARTIAL
+  EXPECTED : Dilutions: Null
+  ANSWER   : Yes, the substance is diluted. The document states that Nigrosine Base EX was dissolved
+             in dimethyl sulphoxide and "appropriate dilutions made" [7!]. However, the corpus does
+             not specify the exact dilution percentages used.
+  WHY      : expected Null; asserted dilution occurred but supplied no percentages
+
+#85 Q8 — CORRECT
+  EXPECTED : Not applicable
+  ANSWER   : Null [1, 2, 3, 4, 5, 6, 7, 8, 9, 10!].
+
+#86 Q9 — CORRECT
+  EXPECTED : Not applicable
+  ANSWER   : not applicable [1, 3, 4, 7!]
+
+#87 Q10 — CORRECT
+  EXPECTED : Not applicable
+  ANSWER   : not applicable [3, 9, 10!]
+
+#88 Q11 — CORRECT
+  EXPECTED : Not applicable
+  ANSWER   : not applicable [1, 2, 7, 10!]
+
+### 1.9_Inhalation_Repd
+
+#89 Q1 — CORRECT
+  EXPECTED : Inhalation: Whole body
+  ANSWER   : The toxicology study described in document 1.9_Inhalation_Repd utilized an
+             **inhalation** exposure type [4]. The exposure method was **whole body inhalation**
+             [1].
+
+#90 Q2 — CORRECT
+  EXPECTED : Purity\:null
+  ANSWER   : The provided documents do not state the purity of the tetrahydrofurfuryl alcohol (THFA)
+             tested in the study described in 1.9 Inhalation_repd.pdf.
+
+#91 Q3 — CORRECT
+  EXPECTED : Null
+  ANSWER   : The provided documents regarding the study of tetrahydrofurfuryl alcohol (THFA) do not
+             state the vehicle or solvent used in the study. The documents describe the test article
+             being administered via whole-body inhalation and note that a concurrent control group
+             received "filtered air" [1].
+
+#92 Q4 — CORRECT
+  EXPECTED : Null
+  ANSWER   : The provided excerpts for 1.9 Inhalation_repd.pdf do not mention whether the study
+             followed a specific test guideline. Therefore, the answer is null.
+
+#93 Q5 — CORRECT
+  EXPECTED : Not applicable
+  ANSWER   : The provided excerpts for 1.9 Inhalation_repd.pdf do not state the specific test method
+             followed for the study; therefore, the corpus does not address this part of your
+             request.
+
+#94 Q6 — CORRECT
+  EXPECTED : Max dose: 500 ppm
+  ANSWER   : The highest dose of the substance used in the study described in document 1.9
+             Inhalation_repd.pdf was 500 parts per million (ppm) [1!].
+
+#95 Q7 — CORRECT
+  EXPECTED : Null
+  ANSWER   : The provided excerpts for document 1.9 Inhalation_repd.pdf do not state that the
+             substance was diluted; therefore, the corpus does not address this.
+
+#96 Q8 — CORRECT
+  EXPECTED : Total animals: 96
+  ANSWER   : The study used three test groups, each comprised of 14 male and 10 female rats, and a
+             concurrent control group of identical design [2]. This results in a total of 96 animals
+             (4 groups × 24 animals per group).
+
+#97 Q9 — CORRECT
+  EXPECTED : Null
+  ANSWER   : The study described in `1.9_Inhalation_Repd.pdf` is a 90-day subchronic inhalation
+             toxicity study [4], which is a repeated dose study. Regarding the classification of the
+             substance (tetrahydrofurfuryl alcohol) as low, low-moderate, moderate, moderate-high,
+             high, or extreme hazard, the provided corpus does not contain this information.
+             Therefore, the answer is "null" [1, 2, 3, 5, 6, 7!].
+
+#98 Q10 — CORRECT
+  EXPECTED : 13 Weeks
+  ANSWER   : The study described in 1.9_Inhalation_Repd is a repeated dose study, as it involved
+             exposures for six hours per day, five days per week, for 13 weeks [1]. The duration of
+             the study was 13 weeks [1!].
+
+#99 Q11 — CORRECT
+  EXPECTED : - Changes in food consumption : Both mid- and high-exposure male groups showed reduced
+             food consumption throughout the study compared to controls.<br><br>- Weight change
+             (body weight reduction) : Mean body weights of mid- and high-exposure males were
+             significantly lower than those of control group males by 9.2% and 13.3%, respectively,
+             at terminal necropsy (study week 13).<br><br>- Organ weight change (epididymides
+             atrophy): Mild multifocal atrophy in the epididymides observed particularly in males
+             from both exposure periods, with more pronounced effects noted by week 13 for higher
+             exposures.
+  ANSWER   : The study described in document 1.9 is a repeated dose study, as it involved 13 weeks
+             of exposure (at least 65 exposures) [1]. The following effects were observed in the
+             test animals, which contributed to the finding that a No Observable Effect Level (NOEL)
+             could not be established for tetrahydrofurfuryl alcohol (THFA) [1]: * **Clinical
+             Signs:** Intermittent whole-body spasms were observed frequently in a dose-related
+             manner in all exposed groups [2]. Hyperactivity was noted one-hour post-exposure in all
+             test groups [2]. Occasional hypoactivity and excessive grooming occurred in the high
+             exposure group [2]. Wet yellow urogenital matting and a low incidence of salivation
+             were noted in the high exposure group [2]. * **Body Weight and Food Consumption:** Mean
+             body weights were decreased in mid- and high-exposure group males, with terminal
+             necropsy values 9.2% and 13.3% lower than controls, respectively [5]. Mean food
+             consumption was lower in mid- and high-exposure group males throughout the study [5]. *
+             **Hematology:** Decreased platelet and hemoglobin means were observed in high exposure
+             group males and females at study weeks three and 13 [5]. Decreased Mean Corpuscular
+             Hemoglobin (MCH) values were noted in high exposure group males at week three, and in
+             both sexes of the high exposure group at week 13 [5]. * **Organ Weights and
+             Pathology:** * **Testes/Reproductive:** Mean absolute seminal vesicle weight, and
+             absolute and relative epididymides weights were decreased in high exposure group males
+             [4]. Mean absolute and relative prostate weights were decreased in both mid- and
+             high-exposure groups [5]. Microscopic examination revealed mild multifocal atrophy of
+             the testes in one high exposure group male [5]. Decreased epididymal sperm numbers and
+             sperm motility, as well as an increased incidence of morphologically abnormal sperm,
+             were observed in high exposure group males at weeks six and 13 [5].
+
+### 1.10_Oral_Repd
+
+#100 Q1 — PARTIAL
+  EXPECTED : Oral\:Gavage
+  ANSWER   : The exposure type for the toxicology study is oral [1]. The study involved the oral
+             administration of domoic acid to three cynomolgus monkeys [1].
+  WHY      : oral correct; did not identify gavage
+
+#101 Q2 — CORRECT
+  EXPECTED : Purity\:Null
+  ANSWER   : The provided document corpus does not state the purity of the domoic acid used in the
+             study.
+
+#102 Q3 — WRONG
+  EXPECTED : Solvent\:water
+  ANSWER   : The provided corpus does not state the vehicle or solvent used in this toxicity study.
+  WHY      : expected water; answered not stated
+
+#103 Q4 — WRONG
+  EXPECTED : Null
+  ANSWER   : The provided corpus does not contain a document titled "1.10_Oral_Repd." Therefore, I
+             cannot determine if that specific study follows a test guideline.
+  WHY      : RETRIEVAL MISS — replied that the document is not in the corpus
+
+#104 Q5 — WRONG
+  EXPECTED : Null
+  ANSWER   : The provided document corpus does not contain a document titled "1.10_Oral_Repd," and
+             therefore does not address whether that specific study follows a test method.
+  WHY      : RETRIEVAL MISS — replied that the document is not in the corpus
+
+#105 Q6 — PARTIAL
+  EXPECTED : 0.75 mg/kg
+  ANSWER   : The provided documents do not explicitly state the highest dose of domoic acid
+             administered to the monkeys during the 30-day study. The text notes that the dose was
+             increased from 0.5 to 0.75 mg/kg/day on day 16 [6!], but it does not specify if this
+             was the maximum dose used throughout the entire study.
+  WHY      : surfaced the 0.5 to 0.75 mg/kg/day increase but declined to name it as the maximum
+
+#106 Q7 — PARTIAL
+  EXPECTED : Null
+  ANSWER   : Yes, in the context of serum analysis, samples containing the substance were diluted at
+             ratios of 1:150 or 1:300 [1!]. The corpus does not provide a dilution percentage for
+             the domoic acid dosing solution, which is described only as a solution dissolved in
+             water [8].
+  WHY      : expected Null; answered about serum dilution ratios (1:150 / 1:300) instead
+
+#107 Q8 — CORRECT
+  EXPECTED : Total Animals: 5
+  ANSWER   : The study used a total of five adult female cynomolgus monkeys [7].
+
+#108 Q9 — WRONG
+  EXPECTED : Hazard: High
+  ANSWER   : The study is a 30-day oral toxicity study, which constitutes a repeated dose study [6].
+             The provided corpus does not contain information classifying the substance as low,
+             low-moderate, moderate, moderate-high, high, or extreme hazard; therefore, the answer
+             is null.
+  WHY      : expected High; answered null
+
+#109 Q10 — CORRECT
+  EXPECTED : Duration:30 days
+  ANSWER   : The study is a repeated dose study [1]. The duration of the study was 30 days [1, 8!].
+
+#110 Q11 — CORRECT
+  EXPECTED : NULL : There were no treatment-related adverse effects observed at any dosage level
+             tested.
+  ANSWER   : This is a repeated dose study [5!]. Null [2, 3, 5!].
+
+### 2.1_Vitro_geno
+
+#111 Q1 — CORRECT
+  EXPECTED : Not applicable
+  ANSWER   : The provided documents do not state that the study involved oral, dermal, or inhalation
+             exposure. Instead, the study is an "in vitro study for the detection of structural
+             chromosomal aberrations in cultured mammalian cells" [6]. Regarding the exposure
+             method, the study involved treating duplicate cultures of human lymphocytes with the
+             test item [6]. The exposure conditions included: * **4-hour exposure** with and without
+             metabolic activation (S9-mix), followed by a 20-hour recovery period in treatment-free
+             media [6]. * **24-hour continuous exposure** without metabolic activation [6].
+
+#112 Q2 — CORRECT
+  EXPECTED : Purity:100%
+  ANSWER   : The purity of the test item is 100% [2, 6!].
+
+#113 Q3 — CORRECT
+  EXPECTED : Solvent: DMSO
+  ANSWER   : The vehicle used in this study was dimethyl sulphoxide [7].
+
+#114 Q4 — CORRECT
+  EXPECTED : OECD: 473
+  ANSWER   : Yes, the study follows several test guidelines. The study was designed to be compatible
+             with the following: * OECD Guidelines for the Testing of Chemicals (1997) No. 473
+             "Genetic Toxicology: Chromosome Aberration Test" [1][G]. * Method B10 of Commission
+             Regulation (EC) No. 440/2008 of 30 May 2008 [1]. * UK Department of Health Guidelines
+             for Testing of Chemicals for Mutagenicity [1].
+
+#115 Q5 — CORRECT
+  EXPECTED : Method: Chromosomal Abberation
+  ANSWER   : Yes, the study follows specific test methods. The method was designed to be compatible
+             with the following: * OECD Guidelines for Testing of Chemicals (1997) No. 473 "Genetic
+             Toxicology: Chromosome Aberration Test" [2]. * Method B10 of Commission Regulation (EC)
+             No. 440/2008 of 30 May 2008 [2]. * The UK Department of Health Guidelines for Testing
+             of Chemicals for Mutagenicity [2].
+
+#116 Q6 — CORRECT
+  EXPECTED : Max Dose: 5000 ug/mL (preliminary) or 120 ug/mL (for metaphase analysis and actual
+             testing)
+  ANSWER   : The highest dose of the test item used was 5000 pg/ml [1].
+
+#117 Q7 — PARTIAL
+  EXPECTED : Null
+  ANSWER   : Yes, the test item is diluted. The document states that the test item was dissolved in
+             dimethyl sulphoxide and "serial dilutions prepared" [3!]. Regarding the S9 microsomal
+             enzyme fraction, it was diluted to a final concentration of 2% in the Preliminary
+             Toxicity Test and Experiment 1, and 1% in Experiment 2 [10!].
+  WHY      : expected Null; asserted dilution and gave S9 concentrations
+
+#118 Q8 — CORRECT
+  EXPECTED : Not applicable
+  ANSWER   : null [6!]
+
+#119 Q9 — CORRECT
+  EXPECTED : Not applicable
+  ANSWER   : Not applicable.
+
+#120 Q10 — CORRECT
+  EXPECTED : Not applicable
+  ANSWER   : not applicable
+
+#121 Q11 — CORRECT
+  EXPECTED : Not applicable
+  ANSWER   : not applicable
+
+### 2.2_Dermal_Repd
+
+#122 Q1 — CORRECT
+  EXPECTED : Dermal: Occlusive Patch
+  ANSWER   : Based on the provided documents regarding the study in 2.2_Dermal_Repd.pdf: *
+             **Exposure Type:** The exposure type is dermal [1, 7, 10!]. * **Exposure Method:** The
+             test article (THFA) was administered undiluted to shaved intact dorsal skin [1]. The
+             application sites were wrapped for six hours using an occlusive wrap/binder [1]. The
+             study involved 65 applications over 13 consecutive weeks [1].
+
+#123 Q2 — CORRECT
+  EXPECTED : Purity\:Null
+  ANSWER   : The provided excerpts from 2.2 Dermal_repd.pdf do not contain information regarding the
+             purity of the tested substance, tetrahydrofurfuryl alcohol (THFA).
+
+#124 Q3 — PARTIAL
+  EXPECTED : Solvent\:None (for THFA), 0.9% saline (control group)
+  ANSWER   : The vehicle used in the 90-day subchronic dermal toxicity study of tetrahydrofurfuryl
+             alcohol (THFA) was 0.9% saline [1].
+  WHY      : gave 0.9% saline; expected none for THFA itself plus saline for the control group
+
+#125 Q4 — CORRECT
+  EXPECTED : Null
+  ANSWER   : The provided excerpts for the study in `2.2 Dermal_repd.pdf` do not state that the
+             study followed a specific test guideline. Therefore, the answer is null.
+
+#126 Q5 — CORRECT
+  EXPECTED : Null
+  ANSWER   : The provided excerpts from 2.2_Dermal_repd.pdf do not state the specific test method
+             followed; therefore, the answer is null [2, 3!].
+
+#127 Q6 — CORRECT
+  EXPECTED : Max dose: 1000 mg/kg/day
+  ANSWER   : The highest dose of tetrahydrofurfuryl alcohol (THFA) administered in the study was
+             1000 mg/kg/day [1].
+
+#128 Q7 — CORRECT
+  EXPECTED : Null
+  ANSWER   : null [1!]
+
+#129 Q8 — CORRECT
+  EXPECTED : Total Animals: 116
+  ANSWER   : The study included three test groups, each consisting of 17 male and 12 female rats
+             [2]. Additionally, there was a concurrent control group, which followed an identical
+             design [2]. Calculating the total: * Each of the 3 test groups had 29 animals (17 males
+             + 12 females) [2]. * The control group also had 29 animals (17 males + 12 females) [3].
+             * Total animals = 4 groups × 29 animals/group = 116 animals.
+
+#130 Q9 — WRONG
+  EXPECTED : Moderate
+  ANSWER   : The study described in `2.2 Dermal_repd.pdf` is a 90-day subchronic dermal toxicity
+             study in rats, which is a repeated dose study [1]. Regarding the hazard classification
+             of the substance (tetrahydrofurfuryl alcohol or THFA) in this study, the provided
+             documents do not contain a classification of the substance as low, low-moderate,
+             moderate, moderate-high, high, or extreme hazard [1, 2, 4, 8!]. Therefore, the answer
+             is "null".
+  WHY      : expected Moderate; answered null
+
+#131 Q10 — CORRECT
+  EXPECTED : Duration: 13 weeks
+  ANSWER   : The study is a repeated dose study [1]. The duration of the study was 13 weeks [1, 2,
+             6!].
+
+#132 Q11 — CORRECT
+  EXPECTED : CRITICAL EFFECTS : Lower mean body weights and weight gains; Decreased spermatogenesis
+             (sperm count, production rate, motility). <br>NOAEL DETERMINATION: 100 mg/kg/day for
+             male rats and 300 mg/kg/day for female rats. <br><br>Critical Effects Influencing NOAEL
+             or Classification Hazard:<br><br>- \*\*Lower Mean Body Weights and Weight Gains\*\*:
+             Observed at a dose of 1000 mg/kg/day in both males and females over the course of 13
+             weeks, indicating systemic toxicity.<br> <br>- \*\*Decreased Spermatogenesis (Sperm
+             Count, Production Rate, Motility)\*\*: Noted particularly in male rats treated with
+             THFA dermal application. Decreases were observed at doses of 300 and 1000 mg/kg/day for
+             sperm count and production rate; motility decrease specifically noted at the higher
+             dose.<br><br>These effects are pivotal as they directly influenced NOAEL determination,
+             highlighting systemic toxicity thresholds:<br><br>- \*\*NOAEL Determination\*\*:
+             Identified to be 100 mg/kg/day for male rats based on decreased spermatogenesis and
+             lower body weight metrics. For female rats, it was determined to be 300 mg/kg/day after
+             considering the adverse outcomes of reduced mean body weights.<br>
+  ANSWER   : The study described in `2.2_Dermal_repd.pdf` is a 13-week subchronic dermal toxicity
+             study involving 65 applications, which qualifies as a repeated dose study [4]. The
+             following effects were observed in the test animals that influenced the determination
+             of the no observable effect level (NOEL) for systemic toxicity: * **Body Weight:**
+             Following 13 consecutive weeks of treatment, lower mean body weights and body weight
+             gains were observed in both males and females at the 1000 mg/kg/day dose level [1]. *
+             **Spermatogenesis:** An adverse effect on spermatogenesis was noted after 13 weeks of
+             administration. Specifically, the mean number of sperm in the testis and the mean sperm
+             production rate decreased in males in the 300 and 1000 mg/kg/day groups, and a decrease
+             in the mean percentage of motile sperm was noted in the 1000 mg/kg/day group males [1].
+             Based on these findings, the NOEL for systemic toxicity was determined to be 100
+             mg/kg/day for males and 300 mg/kg/day for females [3].
+
+### 2.3_Oral_Geno
+
+#133 Q1 — CORRECT
+  EXPECTED : Oral\:Gavage
+  ANSWER   : The exposure type for the toxicology study is oral [3, 7!]. The exposure method is
+             gavage [3, 7!].
+
+#134 Q2 — CORRECT
+  EXPECTED : Purity: 99.7%
+  ANSWER   : The purity of the tested substance, Perfluoroalkyl acrylate (C6-SFA), is 99.7% [3].
+
+#135 Q3 — CORRECT
+  EXPECTED : VEHICLE/SOLVENT : olive oil with 0.5% Tween 80
+  ANSWER   : The vehicles used in the study were olive oil and a mixture of 0.5% Tween 80 in olive
+             oil [9].
+
+#136 Q4 — CORRECT
+  EXPECTED : OECD: 474
+  ANSWER   : Yes, the study follows a test guideline. The assay design for this study was based on
+             OECD Guideline 474, which was updated and adopted on 21 July 1997 [1].
+
+#137 Q5 — CORRECT
+  EXPECTED : MICRONUCLEUS TEST
+  ANSWER   : Yes, the study follows the "Mammalian Erythrocyte Micronucleus Test" [6]. This is
+             identified as Section 4, Guideline 474 of the OECD Guidelines for Testing of Chemicals,
+             updated and adopted on 21 July 1997 [6].
+
+#138 Q6 — CORRECT
+  EXPECTED : 2000 mg/kg (dose-finding) or 400 mg/kg (actual test)
+  ANSWER   : Based on the provided documents, the highest dose used in the micronucleus assay was
+             400 mg/kg [1]. In the dose range-finding study, higher doses were tested (up to 2000
+             mg/kg) [2], but the maximum tolerated dose for the subsequent micronucleus assay was
+             estimated to be 400 mg/kg [2].
+
+#139 Q7 — PARTIAL
+  EXPECTED : Null
+  ANSWER   : Yes, the substance is diluted. Lower concentrations of the test article were obtained
+             by dilution with the vehicle [1]. The provided documents do not state specific dilution
+             percentages.
+  WHY      : expected Null; asserted dilution occurred without percentages
+
+#140 Q8 — CORRECT
+  EXPECTED : Total Animals: 71<br>Other acceptable answer: **Null (mismatch between results tables
+             and proposed study design)**
+  ANSWER   : The provided documents do not state the total number of animals used in the study;
+             therefore, the answer is null. While the documents provide specific counts for certain
+             groups—such as 5 animals per group for the micronucleus assay [3] and 3 males and 3
+             females per group for the dose range-finding study [3]—they do not provide a cumulative
+             total for the entire study.
+
+#141 Q9 — CORRECT
+  EXPECTED : na
+  ANSWER   : not applicable [10!]
+
+#142 Q10 — CORRECT
+  EXPECTED : na
+  ANSWER   : Not applicable. The study involved a single oral gavage dose administration [10].
+
+#143 Q11 — CORRECT
+  EXPECTED : na
+  ANSWER   : not applicable [2, 9!]
+
+### 2.4_Oral_Repd
+
+#144 Q1 — PARTIAL
+  EXPECTED : Oral\:Gavage
+  ANSWER   : Based on the provided documents, the exposure type for the toxicology study in 2.4
+             Oral_repd.pdf is oral [1, 3!]. The provided corpus does not specify the method of oral
+             administration (e.g., gavage or dietary).
+  WHY      : oral correct; explicitly declined to name the administration method
+
+#145 Q2 — CORRECT
+  EXPECTED : null
+  ANSWER   : The provided documents for the report "Pubertal Development and Thyroid Function in
+             Juvenile/Peripubertal Female Rats" (2.4_Oral_repd.pdf) do not state the purity of the
+             tested substance, 1,3-dimethylbutyl-N'-phenyl-p-phenylenediamine (6PPD) [1, 2, 4!].
+
+#146 Q3 — WRONG
+  EXPECTED : solvent: corn oil
+  ANSWER   : The provided excerpts from 2.4 Oral_repd.pdf do not state the vehicle or solvent used
+             in the toxicity study [1, 2!].
+  WHY      : expected corn oil; answered not stated
+
+#147 Q4 — CORRECT
+  EXPECTED : Null
+  ANSWER   : The provided excerpts for document 2.4_Oral_repd.pdf do not mention any specific test
+             guidelines followed by the study. Therefore, the answer is null.
+
+#148 Q5 — WRONG
+  EXPECTED : OCSPP 890-1450 and OCSPP 890-1500
+  ANSWER   : The provided excerpts for document 2.4 Oral_repd.pdf do not state a specific test
+             method used for the study; therefore, the answer is null [1, 2!].
+  WHY      : expected OCSPP 890-1450 and 890-1500; answered null
+
+#149 Q6 — CORRECT
+  EXPECTED : Max dose: 300 mglkg/d
+  ANSWER   : In the study described in the document regarding pubertal development and thyroid
+             function in juvenile/peripubertal female rats, the highest dose of 6PPD administered
+             was 300 mg/kg/d [10].
+
+#150 Q7 — CORRECT
+  EXPECTED : Null
+  ANSWER   : The provided excerpts from 2.4 Oral_repd.pdf do not address whether the substance is
+             diluted or provide any dilution percentages [1, 4!].
+
+#151 Q8 — WRONG
+  EXPECTED : Total Animals: 36
+  ANSWER   : null [1, 2, 7!]
+  WHY      : expected 36; answered null
+
+#152 Q9 — WRONG
+  EXPECTED : High
+  ANSWER   : The study described in [1] and [1] is a reproductive and developmental toxicity study
+             regarding 6PPD in juvenile/peripubertal female rats [1]. As this is a
+             reproductive/developmental study rather than a sensitization study, and the provided
+             text does not explicitly label it as a "repeated dose" study, the classification of the
+             substance as a hazard level (low, moderate, high, etc.) is not applicable based on the
+             provided excerpts. The corpus does not provide a hazard classification for the
+             substance in the context of the 2.4 Oral_repd study [1, 2!].
+  WHY      : expected High; answered not applicable/null
+
+#153 Q10 — WRONG
+  EXPECTED : 30 days
+  ANSWER   : The study described in the document is a repeated dose study, as the juvenile female
+             rats were exposed to the test material "once daily" from postnatal day 22 to 42 or 43
+             [6]. The duration of the study was from postnatal day 22 to 42 or 43 [6].
+  WHY      : expected 30 days; gave postnatal day 22 to 42/43 (~21 days), no total
+
+#154 Q11 — PARTIAL
+  EXPECTED : CATEGORY: Critical Effects <br>- \*\*FEMALE RATS:\*\* Reduced initial body weight gain,
+             reduced mean body weights during pubertal development. <br>- \*\*MALE RATS:\*\*
+             Decreased vesicle and coagulating gland weights (-29.2%), decreased ventral prostate
+             weights (-21.2%).
+  ANSWER   : The studies described in `2.4_Oral_Repd.pdf` are repeated dose studies, as they involve
+             daily oral gavage administration of 6PPD to rats over a period of weeks (e.g.,
+             postnatal day 22 to 42/43 for females and postnatal day 23 to 53/54 for males) [3, 8!].
+             Regarding the effects observed in the female rat study, the following changes were
+             noted: * **Body weight:** Initial reduced body weight gain (first two days of dosing)
+             and mean body weight on PND 24 and 25, and reduced body weight at the time of vaginal
+             opening [7]. * **Organ weights:** Increased absolute and relative liver weight,
+             increased relative kidney weight, decreased absolute and relative pituitary weight, and
+             decreased absolute ovarian and uterine weights [7]. * **Hormonal and clinical
+             chemistry:** Increased serum TSH, non-statistically significant decrease in serum T4,
+             increased serum cholesterol, total protein, and globulin, and decreased serum
+             triglycerides [7]. * **Other health/developmental parameters:** Increased thyroid
+             follicular cell height and decreased colloid area, and a decrease in the percentage of
+             regularly cycling animals [7]. The provided text does not explicitly state which of
+             these specific effects resulted in a change to a NOAEL (No Observed Adverse Effect
+             Level) or a change in classification hazard. Instead, the document notes that the
+             WBCSD/TIP has not made a determination that these results constitute reliable evidence
+             of a significant risk of injury to human health or the environment, and therefore, it
+             was not submitted as a required report under TSCA Section 8(e) [1]. It further states
+             that some of these effects (liver and kidney weights, serum thyroid hormone,
+             testosterone in males, and clinical chemistry parameters) are considered "likely to be
+             secondary to adverse effects on the liver" [1].
+  WHY      : captured the female effects; missed the male vesicle/coagulating gland and prostate
+             weight decreases
+
+### 2.5_inhalation_repd
+
+#155 Q1 — CORRECT
+  EXPECTED : Inhalation: nose-only
+  ANSWER   : Based on the provided documents, the toxicology study described in `2.5
+             Inhalation_repd.pdf` is classified as follows: * **Exposure Type:** The exposure type
+             is inhalation [2]. * **Exposure Method:** The exposure method is nose-only inhalation
+             [9].
+
+#156 Q2 — CORRECT
+  EXPECTED : Null
+  ANSWER   : The provided excerpts from the document 2.5 Inhalation_repd.pdf do not state the purity
+             of the tested substance.
+
+#157 Q3 — CORRECT
+  EXPECTED : Null
+  ANSWER   : The provided excerpts for the study on di-tert-butyl peroxide (CAS# 110-05-4) do not
+             identify a vehicle or solvent used in the inhalation study. The documents state that
+             the substance was administered by "nose-only inhalation" [1!], but they do not mention
+             the use of any vehicle or solvent.
+
+#158 Q4 — PARTIAL
+  EXPECTED : OCED: 422
+  ANSWER   : The corpus does not address whether the dose range-finding study described in 2.5
+             Inhalation_repd.pdf followed a specific test guideline. The document mentions that the
+             study was conducted "under REACH" [1!] and references a previous "OECD 422 subchronic
+             toxicity and reproductive/developmental toxicity screening study" [4!], but it does not
+             state that the dose range-finding study itself followed a specific test guideline.
+             Therefore, the answer is null.
+  WHY      : cited OECD 422 as a referenced prior study but concluded null
+
+#159 Q5 — WRONG
+  EXPECTED : Not applicable
+  ANSWER   : The study mentioned in the document is a dose range-finding phase of a 90-day
+             inhalation study being conducted under REACH [1]. Additionally, the document references
+             an OECD 422 subchronic toxicity and reproductive/developmental toxicity screening study
+             [2].
+  WHY      : expected Not applicable; described the study instead of answering
+
+#160 Q6 — CORRECT
+  EXPECTED : Max Dose: 10,000 mg/m3
+  ANSWER   : The highest dose of di-tert-butyl peroxide administered in the study was 10,000 mg/in³
+             [1].
+
+#161 Q7 — CORRECT
+  EXPECTED : Null
+  ANSWER   : The provided excerpts for 2.5 Inhalation_repd.pdf do not state that the substance,
+             di-tert-butyl peroxide, was diluted; the document describes the administration of the
+             substance by nose-only inhalation at specific dose levels (100, 1,000, or 10,000
+             mg/in³) [1]. Therefore, the answer is null.
+
+#162 Q8 — CORRECT
+  EXPECTED : Total animals: 40
+  ANSWER   : The study used a total of 40 animals [2]. This is based on the inclusion of three dose
+             groups and one control group, with each group containing five animals per sex (10
+             animals per group) [1].
+
+#163 Q9 — PARTIAL
+  EXPECTED : Not appliable
+  ANSWER   : The study described in the provided excerpts for `2.5 Inhalation_repd.pdf` is a "dose
+             range-finding phase of a 90-day inhalation study" [1]. Because this is a repeated dose
+             study, the condition to answer the question is met. Regarding the hazard
+             classification, the provided documents do not classify the substance as low,
+             low-moderate, moderate, moderate-high, high, or extreme hazard; therefore, the answer
+             is "null" [1].
+  WHY      : expected Not applicable; argued the study qualifies, then answered null
+
+#164 Q10 — WRONG
+  EXPECTED : Not applicable
+  ANSWER   : The study described in the provided excerpts is a repeated dose study [9]. The duration
+             of the study was fourteen days [1].
+  WHY      : expected Not applicable; answered fourteen days
+
+#165 Q11 — CORRECT
+  EXPECTED : ORGAN WEIGHT CHANGE: Mean relative liver, kidney, and adrenal weights increased;
+             <br>BEHAVIORAL SYMPTOMS: Animals exhibited stiff tails with quick and short-lasting
+             movements.
+  ANSWER   : The study described in [1] and [1] is a dose range-finding phase of a 90-day inhalation
+             study, which involves daily administration of the test substance for fourteen days [1].
+             As this is a repeated administration study, it qualifies as a repeated dose study.
+             Regarding the effects observed: * **Organ weight changes:** Test item-related increases
+             in mean relative organ weights were noted in the liver, kidney, and adrenal glands [1].
+             Specifically, at 10,000 mg/in³, mean relative liver, kidney, and adrenal weights were
+             significantly increased in males, and relative liver weight was significantly increased
+             in females [1]. At 1,000 mg/in³, the only statistically significant effect was
+             increased relative adrenal gland weight in males [2]. * **Other health problems:** The
+             laboratory reported that the animals' tails were stiff and had quick and short-lasting
+             movements [2]. The provided text does not state that these effects changed the NOAEL or
+             the classification hazard for the substance.
+
+### 2.6_Dermal_Sens
+
+#166 Q1 — CORRECT
+  EXPECTED : Dermal: Intradermal Injection
+  ANSWER   : Based on the provided documents for 2.6 Dermal_sens.pdf: * **Exposure Type:** The
+             exposure type is dermal [1!]. The study tested n-heptylamine for its potential to
+             produce an allergic skin reaction [1]. * **Exposure Method:** The exposure method
+             involved intradermal injection and skin application [1]. Specifically, the study
+             utilized a modified Magnusson and Kligman method [1].
+
+#167 Q2 — CORRECT
+  EXPECTED : Purity\:Null
+  ANSWER   : The provided documents regarding the toxicology report for n-heptylamine (2.6
+             Dermal_sens.pdf) do not state the purity of the tested substance [1, 2, 3!].
+
+#168 Q3 — CORRECT
+  EXPECTED : Null
+  ANSWER   : The provided excerpts for document 2.6 Dermal_sens.pdf do not identify the specific
+             vehicle or solvent used in the sensitization study for n-heptylamine. While the
+             document mentions that a 1% solution was used to test the pH of the material [1!], and
+             that 0.25% and 0.5% solutions were used during the challenge application [3!], it does
+             not specify the substance used as the vehicle or solvent for these solutions.
+
+#169 Q4 — CORRECT
+  EXPECTED : Null
+  ANSWER   : The study described in the document `2.6 Dermal_sens.pdf` does not explicitly cite a
+             specific numbered test guideline (such as an OECD guideline number). It states that the
+             study used a "modified Magnusson and Kligman method" to test for potential allergic
+             skin reactions [1]. Therefore, the answer is null.
+
+#170 Q5 — CORRECT
+  EXPECTED : Guineapig Maximization test
+  ANSWER   : Yes, the study follows a test method, which is a modified Magnusson and Kligman method
+             [1].
+
+#171 Q6 — PARTIAL
+  EXPECTED : 0.50%
+  ANSWER   : The provided documents for 2.6_Dermal_Sens do not state the highest dose of the
+             substance used in the study. The excerpts mention that a 0.25% solution and a 0.5%
+             solution were used for challenge applications [9], and that a 1% solution was tested
+             for pH [9], but they do not identify a maximum dose level.
+  WHY      : surfaced 0.5% but declined to name a maximum dose
+
+#172 Q7 — CORRECT
+  EXPECTED : 0.25%, 0.5%
+  ANSWER   : Yes, the substance n-heptylamine is diluted in the sensitization studies described in
+             the document. The study reports the following dilution percentages: * 0.25% solution
+             [3!] * 0.5% solution [3!] * 25% [5!]
+
+#173 Q8 — WRONG
+  EXPECTED : 10
+  ANSWER   : The document 2.6 Dermal_sens.pdf does not state the total number of animals used in the
+             study; it only provides the number of animals that exhibited sensitization reactions
+             (3/10 and 4/10) [5]. Therefore, the answer is null.
+  WHY      : expected 10; answered null while citing 3/10 and 4/10
+
+#174 Q9 — WRONG
+  EXPECTED : Strong
+  ANSWER   : The study described in the provided excerpts for `2.6_Dermal_sens.pdf` is a
+             sensitization study [9]. Regarding the classification of the substance (n-heptylamine),
+             the provided excerpts do not state that it was classified as low, low-moderate,
+             moderate, moderate-high, high, or extreme hazard. Therefore, the answer is "null" [1,
+             2, 3!].
+  WHY      : expected Strong; answered null
+
+#175 Q10 — CORRECT
+  EXPECTED : Null
+  ANSWER   : not applicable
+
+#176 Q11 — CORRECT
+  EXPECTED : Null
+  ANSWER   : not applicable
+
+### 2.7_Vitro_Geno
+
+#177 Q1 — CORRECT
+  EXPECTED : In vitro / Not applicable
+  ANSWER   : The provided document corpus does not state whether the exposure type was oral, dermal,
+             or inhalation. The study is an "IN VITRO MAMMALIAN CHROMOSOME ABERRATION TEST" [3],
+             which involves exposing CHO (Chinese Hamster Ovary) cells to a test article in a
+             laboratory setting rather than administering it to a living organism via oral, dermal,
+             or inhalation routes [3]. Regarding the exposure method, the cells were treated by
+             refeeding flasks with complete medium (for non-activated exposure) or an S9 reaction
+             mixture (for S9-activated exposure), to which a dosing solution of the test article or
+             solvent was added [10]. The treatment occurred at 37± 1°C in a humidified atmosphere of
+             5± 1% CO2 in air [10].
+
+#178 Q2 — CORRECT
+  EXPECTED : 97.42%
+  ANSWER   : The purity of the tested substance, 1-Chlorododecane, is 97.42% [1].
+
+#179 Q3 — CORRECT
+  EXPECTED : Ethanol
+  ANSWER   : Based on the provided documents, the following information regarding the vehicle or
+             solvent used in the study is available: * **Ethanol:** The study explicitly identifies
+             ethanol as the solvent used in the preliminary toxicity assay [8]. * **General
+             Solvent/Vehicle Policy:** The documents note that vehicles compatible with the test
+             system include, but are not limited to, deionized water, dimethyl sulfoxide, ethanol,
+             and acetone [10]. The protocol states that the solvent for the test article is used as
+             the solvent control [1]. If a solvent other than water, physiological buffer, or medium
+             is used, its final concentration in the treatment medium must not exceed 1% [2].
+
+#180 Q4 — CORRECT
+  EXPECTED : OECD: 473
+  ANSWER   : Yes, this study follows a test guideline. The study protocol was written to comply with
+             the OECD Guideline 473 (In Vitro Mammalian Chromosome Aberration Test), Ninth Addendum
+             to the OECD Guidelines for the Testing of Chemicals, published by the Organisation for
+             Economic Co-operation and Development [3].
+
+#181 Q5 — CORRECT
+  EXPECTED : TEST METHOD: In Vitro Mammalian Chromosome Aberration Test
+  ANSWER   : Yes, the study follows a test method. It was written to comply with the OECD Guideline
+             473 (In Vitro Mammalian Chromosome Aberration Test), Ninth Addendum to the OECD
+             Guidelines for the Testing of Chemicals, published in February 1998 [3]. Additionally,
+             the study was conducted in accordance with the International Conference on
+             Harmonisation (ICH) of Technical Requirements for Registration of Pharmaceuticals for
+             Human Use (1996 and 1997) [4].
+
+#182 Q6 — CORRECT
+  EXPECTED : Max dose: 2040 ug/mL (10 mM) (preliminary asssay) or 5000 ug/mL (testing)
+  ANSWER   : In the preliminary toxicity test, the highest concentration of the test article used
+             was 2040 µg/mL [4].
+
+#183 Q7 — CORRECT
+  EXPECTED : Null (No specific dilution percentages)
+  ANSWER   : The provided documents do not state that the test substance is diluted, nor do they
+             specify a dilution percentage. The documents note that for solvents other than water,
+             physiological buffer, or medium, the final concentration in the treatment medium will
+             not exceed 1% [6]. Additionally, the study involves testing at least nine
+             concentrations of the test article [7], and the highest concentration is determined
+             based on solubility or workability (e.g., 5 mg/ml or 10 mM) [7]. However, the corpus
+             does not explicitly describe the process as "dilution" or provide specific dilution
+             percentages.
+
+#184 Q8 — CORRECT
+  EXPECTED : Null
+  ANSWER   : null [1, 2, 3, 4, 5, 6, 7, 8, 9, 10!]
+
+#185 Q9 — CORRECT
+  EXPECTED : na
+  ANSWER   : Not applicable. The provided document describes an *in vitro* mammalian chromosome
+             aberration test [2], which is a genotoxicity study, not a repeated dose or
+             sensitization study.
+
+#186 Q10 — CORRECT
+  EXPECTED : na
+  ANSWER   : not applicable
+
+#187 Q11 — CORRECT
+  EXPECTED : na
+  ANSWER   : not applicable [2, 6, 8, 9!]
+
+### 2.8_Dermal_Sens
+
+#188 Q1 — CORRECT
+  EXPECTED : Dermal: Topical Application
+  ANSWER   : The toxicology study for Dihexyl ether is a dermal exposure study [5!]. The study
+             assesses the skin sensitization potential of the substance following its "dermal
+             application to mice" [5!]. Regarding the exposure method, the study utilizes the Local
+             Lymph Node Assay (LLNA) [5!]. This method involves measuring the proliferation of
+             lymphocytes isolated from the auricular lymph nodes (the lymph nodes draining the site
+             of exposure, which is the dorsal aspect of the ears) in mice [9!].
+
+#189 Q2 — CORRECT
+  EXPECTED : Purity: 98.5%
+  ANSWER   : The purity of the tested substance, dihexyl ether, is 98.5% [1].
+
+#190 Q3 — CORRECT
+  EXPECTED : Solvent: Acetone/Olive Oil (4:1)
+  ANSWER   : The vehicle used in the study was AOO, which is a 4:1 (v/v) mixture of acetone and
+             olive oil [6].
+
+#191 Q4 — CORRECT
+  EXPECTED : OECD: 429
+  ANSWER   : Yes, the study follows several test guidelines: * OECD Guideline 429, 'Skin
+             Sensitisation: Local Lymph Node Assay' [1]. * Commission Regulation (EC) No. 440/2008,
+             Method B.42 [1]. * EPA Health Effects Test Guidelines, OPPTS 870.2600 [1].
+
+#192 Q5 — CORRECT
+  EXPECTED : Local Lymph Node Assay
+  ANSWER   : Yes, the study followed the OECD Guideline 429, 'Skin Sensitisation: Local Lymph Node
+             Assay' [2]. Additionally, the study followed the procedures indicated by internal
+             Eurofins Munich and BSL Munich SOPs, as well as the following guidelines and
+             recommendations: * Commission Regulation (EC) No. 440/2008, L 142, Annex Part B, Method
+             B.42 [2] * EPA Health Effects Test Guidelines, OPPTS 870.2600 'Skin Sensitization' [2]
+
+#193 Q6 — WRONG
+  EXPECTED : Max dose: 100%
+  ANSWER   : The provided documents do not state the highest dose of dihexyl ether used in the
+             study. While the documents mention that the EC3 value was calculated at a concentration
+             of 22.18% [4, 5!], they do not specify the range of doses tested or the maximum dose
+             administered.
+  WHY      : expected 100%; answered not stated, citing the EC3 of 22.18%
+
+#194 Q7 — PARTIAL
+  EXPECTED : 25, 50, 100%
+  ANSWER   : Yes, the substance is diluted. In the main study, the test item was prepared at
+             concentrations of 25% and 50% (diluted with AOO 4:1, v/v) [2].
+  WHY      : gave 25% and 50%; missed 100%
+
+#195 Q8 — WRONG
+  EXPECTED : Total Animals: 25<br>(5 per group, 5 groups)<br>OR<br>80 (20 per group, 4 groups)
+  ANSWER   : The provided documents do not state the total number of animals used in the entire
+             study; therefore, the answer is null [9!]. The corpus only specifies that there were 5
+             mice per group and 5 mice for the prescreen test [9].
+  WHY      : expected 25 (or 80); answered null
+
+#196 Q9 — CORRECT
+  EXPECTED : Null
+  ANSWER   : The study is a sensitization study (Local Lymph Node Assay) [2]. Regarding the
+             classification of the substance, the provided documents state that Dihexyl ether is
+             classified into Category 1B [2]. The documents define Category 1B as substances showing
+             a "low to moderate frequency of occurrence in humans and/or a low to moderate potency
+             in animals" [2]. The corpus does not use the specific terms "low," "low-moderate,"
+             "moderate," "moderate-high," "high," or "extreme hazard" to describe the overall hazard
+             level, other than the definition provided for the Category 1B classification [2].
+
+#197 Q10 — CORRECT
+  EXPECTED : Null
+  ANSWER   : not applicable
+
+#198 Q11 — CORRECT
+  EXPECTED : na
+  ANSWER   : not applicable
+
+### 2.9_Oral_Geno
+
+#199 Q1 — CORRECT
+  EXPECTED : Oral: Gavage
+  ANSWER   : Based on the provided documents, the exposure type for the toxicology study is oral [3,
+             9!]. The exposure method is gavage [3, 9!].
+
+#200 Q2 — WRONG
+  EXPECTED : Purity: 90%+
+  ANSWER   : The provided documents do not state the purity of the tested substance. The report
+             explicitly notes that the "identity, strength, purity and composition or other
+             characteristics to define the test or control substance have not been determined by the
+             testing facility" [1]. Furthermore, the study protocol assigned the responsibility for
+             determining and documenting the analytical purity and composition of the test article
+             to the Sponsor [1].
+  WHY      : expected 90%+; answered not stated
+
+#201 Q3 — PARTIAL
+  EXPECTED : com oil (corn oil), Hank's balanced salt solution (HBSS), Carnoy’s fixative,
+             methanol\:acetic acid (3:1 v/v), potassium chloride (0.060 M KC1)
+  ANSWER   : In the toxicity study, the vehicle used for the test article was corn oil [1]. While
+             the document notes that vehicles compatible with the test system include distilled
+             water, 1% carboxymethylcellulose, and corn oil [2], only corn oil is identified as the
+             vehicle used for the test article in this specific study [2].
+  WHY      : gave corn oil only; expected also HBSS, Carnoy's fixative, methanol:acetic acid and KCl
+
+#202 Q4 — PARTIAL
+  EXPECTED : null
+  ANSWER   : Yes, the study states that it is performed in accordance with "OECD guidelines" [2].
+             The corpus does not specify a particular numbered test guideline.
+  WHY      : expected null; reported "OECD guidelines" with no number
+
+#203 Q5 — CORRECT
+  EXPECTED : Acute in vivo Cytogenetics Assay
+  ANSWER   : The study is titled "Acute In Vivo Cytogenetics Assay in Mice" [2]. Its purpose is to
+             test the mutagenic potential of the test article or its metabolites by measuring its
+             ability to induce structural chromosome aberrations in mice [2]. The study involves a
+             single administration of the test article via oral gavage [2].
+
+#204 Q6 — WRONG
+  EXPECTED : 5000 mg/kg
+  ANSWER   : The provided documents do not state the specific highest dose of the test substance
+             used in the study. Regarding the selection of the high dose, the corpus specifies that
+             "the high dose for the cytogenetics assay will be the maximum tolerated dose (to a
+             maximum of 9000 mg/kg) or that which produces some indication of toxicity" [5].
+             However, the documents do not report the actual dose administered in the study.
+  WHY      : expected 5000 mg/kg; answered not stated, citing the 9000 mg/kg cap
+
+#205 Q7 — PARTIAL
+  EXPECTED : null
+  ANSWER   : Yes, the test article (Oleylamine) was diluted. * The test article was dissolved in
+             corn oil [4]. * The positive control substance, Triethylenemelamine (TEM), was
+             dissolved in sterile distilled water at a concentration of 0.05 mg/ml [4]. The provided
+             documents do not state a specific dilution percentage for the test article (Oleylamine)
+             itself, only that it was dissolved in corn oil [4].
+  WHY      : expected null; asserted dilution in corn oil with no percentage
+
+#206 Q8 — WRONG
+  EXPECTED : Total Animals: 200
+  ANSWER   : The provided documents do not state the total number of animals used in the study;
+             therefore, the answer is null. The corpus provides the following information regarding
+             animal group sizes: * For the dose-finding study, animals were assigned to six
+             experimental groups of five males and five females each [3]. * For the cytogenetics
+             study, animals were assigned to thirteen experimental groups of five males and five
+             females each [3]. * A table indicates that for certain treatments, 5 animals per sex
+             were sacrificed at 6, 12, and 24 hours [1].
+  WHY      : expected 200; answered null
+
+#207 Q9 — CORRECT
+  EXPECTED : not applicable (No NOAEL)
+  ANSWER   : Not applicable. [9!]
+
+#208 Q10 — WRONG
+  EXPECTED : duration: 7 days
+  ANSWER   : not applicable
+  WHY      : expected 7 days; answered not applicable
+
+#209 Q11 — WRONG
+  EXPECTED : EFFECTS : REDUCTION IN BODY WEIGHT GAIN, CLINICAL SIGNS OF CHEMICAL EFFECTS<br>
+  ANSWER   : not applicable
+  WHY      : expected body weight gain reduction and clinical signs; answered not applicable
+
+### 2.10_Dermal_Sens
+
+#210 Q1 — CORRECT
+  EXPECTED : Dermal: Topical Application, Intradermal Injection
+  ANSWER   : Based on the provided documents, the toxicology study for T-5474 is classified as
+             follows: * **Exposure Type:** The study is a dermal exposure study [1]. * **Exposure
+             Method:** The study utilized the Magnusson and Kligman maximization test [2]. This
+             method involved intradermal and topical (dermal) routes of administration [9].
+             Specifically, the test material was applied to the skin and occluded with patches for
+             24 hours [2].
+
+#211 Q2 — CORRECT
+  EXPECTED : Null
+  ANSWER   : The provided documents do not state the purity of the tested substance, T-5474. While
+             the documents describe the concentrations used for testing (such as 25%, 50%, 75% w/v
+             in deionized water, and undiluted) [6, 9!], they do not provide information regarding
+             the chemical purity of the test material itself.
+
+#212 Q3 — PARTIAL
+  EXPECTED : Solvent: Freund's Complete Adjuvant Solution, Sterile Water
+  ANSWER   : The provided documents identify deionized water as a solvent used in the irritation
+             screening study [4]. Regarding the specific vehicle used for the test material
+             administration in the maximization test, the document contains a field for "Vehicle,"
+             but the corresponding entry is illegible [1].
+  WHY      : gave deionized water; expected Freund's Complete Adjuvant Solution and sterile water
+
+#213 Q4 — WRONG
+  EXPECTED : Null
+  ANSWER   : Yes, the study follows a test guideline. The study title explicitly identifies it as a
+             "Dermal Sensitization Study of T-5474 in Guinea Pigs -Maximization Test (EPA
+             Guidelines)" [1]. Additionally, the "REFERENCES" section of the report cites "Dermal
+             Sensitization," Health Effects Test Guidelines, 40 CFR 798.4100 (1989) [6!].
+  WHY      : expected Null; asserted EPA Guidelines / 40 CFR 798.4100
+
+#214 Q5 — CORRECT
+  EXPECTED : TEST METHOD: Guinea Pigs - Maximization Test
+  ANSWER   : Yes, the study follows a test method. It is identified as a "Dermal Sensitization Study
+             of T-5474 in Guinea Pigs -Maximization Test (EPA Guidelines)" [1]. The study also
+             specifically notes that a "definitive sensitization test according to the method of
+             Magnusson and Kligman" was conducted [5].
+
+#215 Q6 — WRONG
+  EXPECTED : Max Dose: 100%
+  ANSWER   : The provided documents do not state the highest dose of the substance used. While the
+             records contain fields for "Concentration w/ v" and "Concentration of Test Material For
+             Challenge Application," the specific values are either obscured or illegible in the
+             provided excerpts [1, 6, 8!].
+  WHY      : expected 100%; answered not stated (fields illegible)
+
+#216 Q7 — CORRECT
+  EXPECTED : DIlutions: 25, 50, 75% w/v
+  ANSWER   : Yes, the substance T-5474 is diluted in certain instances. In an initial irritation
+             screening study, the substance was applied to guinea pigs undiluted and at
+             concentrations of 25%, 50%, and 75% w/v in deionized water [4]. Subsequently, for the
+             definitive study, it was administered as a 75% w/v suspension in deionized water for
+             the initial challenge phase [4].
+
+#217 Q8 — WRONG
+  EXPECTED : Total animals: 22
+  ANSWER   : The provided documents do not state the total number of animals used in the study;
+             therefore, the answer is null. While the documents mention that "all 10 test animals"
+             were used for the initial challenge application [7!], they do not provide a cumulative
+             total for the entire study.
+  WHY      : expected 22; answered null
+
+#218 Q9 — WRONG
+  EXPECTED : Hazard: Moderate
+  ANSWER   : The study is a dermal sensitization study [2]. The substance T-5474 is classified as an
+             "extreme skin sensitizer" [3].
+  WHY      : expected Moderate; answered "extreme skin sensitizer"
+
+#219 Q10 — CORRECT
+  EXPECTED : null
+  ANSWER   : Not applicable. The provided excerpts describe a "Dermal Sensitization Study of T-5474
+             in Guinea Pigs - Maximization Test (EPA Guidelines)" [1], which is a sensitization
+             study, not a repeated dose study.
+
+#220 Q11 — CORRECT
+  EXPECTED : null
+  ANSWER   : not applicable

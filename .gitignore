@@ -1,0 +1,8 @@
+node_modules/
+
+# Retrieval sidecars embed the full text of every retrieved chunk, so committing
+# one republishes most of the source corpus. This repository is public and the
+# corpus is third-party study reports — keep these local unless the documents
+# themselves have been cleared for publication. The paired .txt reports carry
+# only chunk metadata (filename, pages, chunkId, scores) and are safe to commit.
+retrieval_*.jsonl
