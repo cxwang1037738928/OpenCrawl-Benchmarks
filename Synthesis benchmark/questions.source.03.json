@@ -1,0 +1,1288 @@
+[
+ {
+  "id": "Q051",
+  "type": "single_doc",
+  "question": "MolGAN generates molecular graphs directly. What does operating on graphs let it avoid, and what proportion of valid compounds does it reach on QM9?",
+  "expectedAnswer": "It avoids expensive graph matching procedures and node-ordering heuristics required by likelihood-based methods, and generates close to 100% valid compounds on QM9.",
+  "source": {
+   "review": "A",
+   "page": 11,
+   "citations": [
+    17
+   ]
+  },
+  "verify": [
+   {
+    "docId": "71333b104f4f7c7d",
+    "re": "graph matching procedures or node ordering heuristics"
+   },
+   {
+    "docId": "71333b104f4f7c7d",
+    "re": "close to 100% valid compounds"
+   }
+  ]
+ },
+ {
+  "id": "Q052",
+  "type": "cross_doc",
+  "question": "MolGAN combines an adversarial objective with a second training signal to steer generation toward desired chemistry. What is that second signal, and which representation does MolGAN compare itself against?",
+  "expectedAnswer": "A reinforcement learning objective encourages molecules with specific desired chemical properties; MolGAN compares favourably against string-based SMILES representations.",
+  "source": {
+   "review": "A",
+   "page": 11,
+   "citations": [
+    17
+   ]
+  },
+  "verify": [
+   {
+    "docId": "71333b104f4f7c7d",
+    "re": "reinforcement learning objective"
+   },
+   {
+    "docId": "71333b104f4f7c7d",
+    "re": "string-based \\(SMILES\\) representations"
+   },
+   {
+    "docId": "e6445d83b2e3b6d8",
+    "re": "SMILES"
+   }
+  ]
+ },
+ {
+  "id": "Q053",
+  "type": "single_doc",
+  "question": "What problem with standard cross-domain GANs motivated CrystalGAN, and what does CrystalGAN generate?",
+  "expectedAnswer": "Materials science needs data of higher order complexity than the observed samples, which state-of-the-art cross-domain GANs cannot produce directly; CrystalGAN generates new chemically stable crystallographic structures with increased domain complexity.",
+  "source": {
+   "review": "A",
+   "page": 5,
+   "citations": [
+    89
+   ]
+  },
+  "verify": [
+   {
+    "docId": "df0750a430de80cb",
+    "re": "higher order complexity compared to observed samples"
+   },
+   {
+    "docId": "df0750a430de80cb",
+    "re": "chemically stable crystallographic structures with increased domain complexity"
+   }
+  ]
+ },
+ {
+  "id": "Q054",
+  "type": "cross_doc",
+  "question": "The VAE approach to molecular design trains three coupled functions. What are they, and what does the third one enable that a plain autoencoder cannot?",
+  "expectedAnswer": "An encoder, a decoder and a predictor. The predictor estimates chemical properties from the latent vector, so the continuous latent space can be optimized directly toward target properties rather than only reconstructed.",
+  "source": {
+   "review": "A",
+   "page": 4,
+   "citations": [
+    46
+   ]
+  },
+  "verify": [
+   {
+    "docId": "8910402f53f2bf95",
+    "re": "an encoder, a decoder and a predictor"
+   },
+   {
+    "docId": "8910402f53f2bf95",
+    "re": "predictor estimates chemical properties from the latent"
+   },
+   {
+    "docId": "64ab5cb56c2de23c",
+    "re": "latent"
+   }
+  ]
+ },
+ {
+  "id": "Q055",
+  "type": "cross_doc",
+  "question": "What operations in a continuous latent space are used to generate new molecules, and why does a continuous representation make that possible?",
+  "expectedAnswer": "Decoding random vectors, perturbing known structures and interpolating between molecules; a continuous representation converts discrete molecular structures into real-valued vectors on which such arithmetic is meaningful.",
+  "source": {
+   "review": "A",
+   "page": 4,
+   "citations": [
+    46
+   ]
+  },
+  "verify": [
+   {
+    "docId": "8910402f53f2bf95",
+    "re": "decoding random vectors, perturbing known chemical structures, or interpolating between molecules"
+   },
+   {
+    "docId": "64ab5cb56c2de23c",
+    "re": "latent space"
+   }
+  ]
+ },
+ {
+  "id": "Q056",
+  "type": "cross_doc",
+  "question": "GraphVAE generates graphs in a way that avoids sequential construction. What does its decoder output, and what limitation does that impose?",
+  "expectedAnswer": "The decoder outputs a probabilistic fully-connected graph of a predefined maximum size all at once, sidestepping linearization — but it therefore limits generation to small graphs of bounded size.",
+  "source": {
+   "review": "A",
+   "page": 12,
+   "citations": [
+    109
+   ]
+  },
+  "verify": [
+   {
+    "docId": "760fce1561b4dea9",
+    "re": "probabilistic fullyconnected graph of a predefined maximum size"
+   },
+   {
+    "docId": "71333b104f4f7c7d",
+    "re": "molecular graphs"
+   }
+  ]
+ },
+ {
+  "id": "Q057",
+  "type": "multi_hop",
+  "question": "Diffusion models for materials descend from an idea in non-equilibrium statistical physics. What is the forward process, and what is learned to invert it?",
+  "expectedAnswer": "A forward diffusion process systematically and slowly destroys structure in the data distribution; a reverse diffusion process is then learned to restore that structure, yielding a flexible and tractable generative model.",
+  "source": {
+   "review": "A",
+   "page": 5,
+   "citations": [
+    110
+   ]
+  },
+  "verify": [
+   {
+    "docId": "17a29449579ceb4f",
+    "re": "iterative forward diffusion process"
+   },
+   {
+    "docId": "17a29449579ceb4f",
+    "re": "reverse diffusion process that restores structure"
+   },
+   {
+    "docId": "a468f3e7b82c3654",
+    "re": "diffusion"
+   }
+  ]
+ },
+ {
+  "id": "Q058",
+  "type": "cross_doc",
+  "question": "Matminer provides featurization for materials data. How many featurization classes does it offer, and which external databases can it retrieve from?",
+  "expectedAnswer": "44 featurization classes that generate thousands of descriptors, with retrieval from external databases including the Materials Project, Citrination, the Materials Data Facility and the Materials Platform for Data Science.",
+  "source": {
+   "review": "B",
+   "page": 11,
+   "citations": [
+    80
+   ]
+  },
+  "verify": [
+   {
+    "docId": "4de02a4502d3302f",
+    "re": "44 featurization classes"
+   },
+   {
+    "docId": "4de02a4502d3302f",
+    "re": "Materials Project, Citrination, Materials Data Facility"
+   },
+   {
+    "docId": "f1af6c92eda54f5b",
+    "re": "Materials Project"
+   }
+  ]
+ },
+ {
+  "id": "Q059",
+  "type": "cross_doc",
+  "question": "What does the acronym FAIR stand for in materials data infrastructure, and which repository in this corpus is built explicitly around that concept?",
+  "expectedAnswer": "Findable, Accessible, Interoperable and Reusable; the NOMAD (Novel Materials Discovery) Centre of Excellence is built around comprehensive FAIR data sharing for computational materials science.",
+  "source": {
+   "review": "B",
+   "page": 47,
+   "citations": [
+    2
+   ]
+  },
+  "verify": [
+   {
+    "docId": "d9364252a4c1b7a9",
+    "re": "FAIR data sharing"
+   },
+   {
+    "docId": "d9364252a4c1b7a9",
+    "re": "Novel Materials Discovery"
+   },
+   {
+    "docId": "4de02a4502d3302f",
+    "re": "data"
+   }
+  ]
+ },
+ {
+  "id": "Q060",
+  "type": "cross_doc",
+  "question": "A reinforcement learning approach to inverse inorganic design targets both property and synthesis objectives. Which chemical guidelines did the models learn, and which synthesis objectives were targeted?",
+  "expectedAnswer": "The models learned negative formation energy, charge neutrality and electronegativity balance, while targeting low sintering and calcination temperatures alongside band gap, formation energy, bulk modulus and shear modulus.",
+  "source": {
+   "review": "A",
+   "page": 14,
+   "citations": [
+    96
+   ]
+  },
+  "verify": [
+   {
+    "docId": "468826937c7713f8",
+    "re": "negative formation energy, charge neutrality, and electronegativity balance"
+   },
+   {
+    "docId": "468826937c7713f8",
+    "re": "low sintering and calcination temperatures"
+   },
+   {
+    "docId": "39f4488e3f873655",
+    "re": "reinforcement"
+   }
+  ]
+ },
+ {
+  "id": "Q061",
+  "type": "cross_doc",
+  "question": "Periodic crystal graphs need an invariance that ordinary molecular graphs do not. What is it, and which transformer architecture was designed to provide it?",
+  "expectedAnswer": "Periodic invariance — the representation must be unchanged by shifts of the artificially imposed unit-cell boundaries. Matformer is the transformer designed to be invariant to periodicity while capturing repeating patterns explicitly.",
+  "source": {
+   "review": "B",
+   "page": 24,
+   "citations": [
+    94
+   ]
+  },
+  "verify": [
+   {
+    "docId": "9b58fbbb9f3e8706",
+    "re": "periodic invariant"
+   },
+   {
+    "docId": "9b58fbbb9f3e8706",
+    "re": "invariant to shifts of cell boundaries"
+   },
+   {
+    "docId": "469499d024f56f84",
+    "re": "periodic"
+   }
+  ]
+ },
+ {
+  "id": "Q062",
+  "type": "cross_doc",
+  "question": "ComFormer comes in two variants for predicting the properties of crystals. What distinguishes them, and what type of symmetry group is ComFormer built around?",
+  "expectedAnswer": "iComFormer uses invariant geometric descriptors of Euclidean distances and angles, while eComFormer uses equivariant vector representations; ComFormer is an SE(3) transformer for crystalline materials.",
+  "source": {
+   "review": "B",
+   "page": 24,
+   "citations": [
+    94
+   ]
+  },
+  "verify": [
+   {
+    "docId": "469499d024f56f84",
+    "re": "iComFormer that employs invariant geometric descriptors"
+   },
+   {
+    "docId": "469499d024f56f84",
+    "re": "eComFormer that utilizes equivariant vector representations"
+   },
+   {
+    "docId": "9b58fbbb9f3e8706",
+    "re": "transformer"
+   }
+  ]
+ },
+ {
+  "id": "Q063",
+  "type": "multi_hop",
+  "question": "Graph transformers for crystals and equivariant interatomic potentials both rely on symmetry groups. Which group does the crystal property transformer use, and which does the interatomic potential use?",
+  "expectedAnswer": "ComFormer is an SE(3) transformer for crystal property prediction, while NequIP uses E(3)-equivariant convolutions for interatomic potentials — E(3) additionally covers reflections.",
+  "source": {
+   "review": "B",
+   "page": 24,
+   "citations": [
+    94,
+    97
+   ]
+  },
+  "verify": [
+   {
+    "docId": "469499d024f56f84",
+    "re": "SE\\(3\\) transformer"
+   },
+   {
+    "docId": "12221983e5649963",
+    "re": "E\\(3\\)-equivariant convolutions"
+   }
+  ]
+ },
+ {
+  "id": "Q064",
+  "type": "cross_doc",
+  "question": "CrysMMNet argues that a crystal graph alone is insufficient for crystal property prediction. What global information does the graph miss, and what second modality does CrysMMNet add?",
+  "expectedAnswer": "A crystal graph captures local chemical semantics but misses global periodic structural information such as space group number, crystal symmetry and rotational information; CrysMMNet adds textual descriptions of the material as a second modality.",
+  "source": {
+   "review": "A",
+   "page": 10,
+   "citations": [
+    36
+   ]
+  },
+  "verify": [
+   {
+    "docId": "3c02ec7aa4077d0b",
+    "re": "space group number, crystal symmetry, rotational information"
+   },
+   {
+    "docId": "3c02ec7aa4077d0b",
+    "re": "textual descriptions of materials"
+   },
+   {
+    "docId": "e9b5693d1a5b4daa",
+    "re": "crystal graph"
+   }
+  ]
+ },
+ {
+  "id": "Q065",
+  "type": "single_doc",
+  "question": "The Binded-VAE was developed for a data regime that defeats standard generative models. What two data characteristics motivated it?",
+  "expectedAnswer": "Discrete features and severe sparsity in the description of compounds as vectors of component proportions.",
+  "source": {
+   "review": "A",
+   "page": 5,
+   "citations": [
+    91
+   ]
+  },
+  "verify": [
+   {
+    "docId": "66a03714b5502cac",
+    "re": "discrete features and a severe sparsity"
+   }
+  ]
+ },
+ {
+  "id": "Q066",
+  "type": "cross_doc",
+  "question": "Why can standard generative-model validation metrics not be used for inorganic compound generation, and what did the Binded-VAE work do instead?",
+  "expectedAnswer": "Metrics such as visual verification, FID and Inception scores are tailored to images and do not transfer to compounds, so the work introduced novel metrics adapted to compound generation.",
+  "source": {
+   "review": "A",
+   "page": 5,
+   "citations": [
+    91
+   ]
+  },
+  "verify": [
+   {
+    "docId": "66a03714b5502cac",
+    "re": "FID and Inception scores are tailored for images"
+   },
+   {
+    "docId": "66a03714b5502cac",
+    "re": "novel metrics adapted to the problem"
+   },
+   {
+    "docId": "2a996abbf587278c",
+    "re": "metrics"
+   }
+  ]
+ },
+ {
+  "id": "Q067",
+  "type": "cross_doc",
+  "question": "A self-driving laboratory was used to map a trade-off rather than a single optimum. Which two quantities were traded off, and what processing temperature did it reach compared with prior art?",
+  "expectedAnswer": "Conductivity against processing temperature for palladium films made by combustion synthesis; it found metallic films below 200 °C, against 250 °C for the prior art.",
+  "source": {
+   "review": "B",
+   "page": 38,
+   "citations": [
+    233
+   ]
+  },
+  "verify": [
+   {
+    "docId": "1c6ef6097c0ec8aa",
+    "re": "below 200 °C"
+   },
+   {
+    "docId": "1c6ef6097c0ec8aa",
+    "re": "Pareto front of conductivities and processing temperatures"
+   },
+   {
+    "docId": "9536a9b4641646a3",
+    "re": "self-driving|thin-film|thin film"
+   }
+  ]
+ },
+ {
+  "id": "Q068",
+  "type": "multi_hop",
+  "question": "Bayesian optimization is described as insufficient for some materials-design goals. What is the stated limitation, and what three strategies does the Bayesian algorithm execution framework provide instead?",
+  "expectedAnswer": "Bayesian optimization only seeks candidates that maximize a property, whereas design often needs specific subsets of the design space; the framework provides SwitchBAX, InfoBAX and MeanBAX, translated automatically from user-defined filtering algorithms.",
+  "source": {
+   "review": "B",
+   "page": 44,
+   "citations": [
+    49
+   ]
+  },
+  "verify": [
+   {
+    "docId": "e8bab0571c2a0e24",
+    "re": "SwitchBAX, InfoBAX, and MeanBAX"
+   },
+   {
+    "docId": "e8bab0571c2a0e24",
+    "re": "subsets of the design space which meet more complex"
+   },
+   {
+    "docId": "55c03b9634aa078f",
+    "re": "Bayesian"
+   }
+  ]
+ },
+ {
+  "id": "Q069",
+  "type": "cross_doc",
+  "question": "Active learning of interatomic potentials was used to accelerate alloy searches. Which three alloy systems were used to demonstrate it, and what role was DFT reduced to?",
+  "expectedAnswer": "Cu-Pd, Co-Nb-V and Al-Ni-Ti; DFT was used only to produce training data, while structural optimization was carried out with the machine-learning interatomic potential.",
+  "source": {
+   "review": "B",
+   "page": 12,
+   "citations": [
+    104
+   ]
+  },
+  "verify": [
+   {
+    "docId": "658bc31246607ece",
+    "re": "Cu-Pd, Co-Nb-V, and Al-Ni-Ti"
+   },
+   {
+    "docId": "658bc31246607ece",
+    "re": "resorting to DFT only to produce the training data"
+   },
+   {
+    "docId": "12221983e5649963",
+    "re": "interatomic potentials"
+   }
+  ]
+ },
+ {
+  "id": "Q070",
+  "type": "cross_doc",
+  "question": "What advantage does an active-learning interatomic potential have over cluster expansion when predicting alloy structures?",
+  "expectedAnswer": "It is not limited to one or a small number of lattice types, so it can predict structures with lattice types absent from the training dataset — unlike cluster expansion.",
+  "source": {
+   "review": "B",
+   "page": 12,
+   "citations": [
+    104
+   ]
+  },
+  "verify": [
+   {
+    "docId": "658bc31246607ece",
+    "re": "not limited to one \\(or a small number of\\) lattice types"
+   },
+   {
+    "docId": "658bc31246607ece",
+    "re": "cluster expansion"
+   },
+   {
+    "docId": "12221983e5649963",
+    "re": "potential"
+   }
+  ]
+ },
+ {
+  "id": "Q071",
+  "type": "cross_doc",
+  "question": "Embedding physical laws directly into a neural network is presented as a response to a specific shortage in scientific machine learning. What is that shortage, and how does the approach compensate?",
+  "expectedAnswer": "Training deep networks needs big data, which is often unavailable for scientific problems; physics-informed learning compensates by enforcing physical laws as additional information, for example at random points in the space-time domain.",
+  "source": {
+   "review": "A",
+   "page": 9,
+   "citations": [
+    86,
+    131
+   ]
+  },
+  "verify": [
+   {
+    "docId": "5f28df0b345786d9",
+    "re": "requires big data, not always available for scientific problems"
+   },
+   {
+    "docId": "5f28df0b345786d9",
+    "re": "enforcing the physical laws"
+   },
+   {
+    "docId": "468826937c7713f8",
+    "re": "formation energy"
+   }
+  ]
+ },
+ {
+  "id": "Q072",
+  "type": "cross_doc",
+  "question": "In transfer learning, what assumption of conventional machine learning is violated, and what does successful knowledge transfer avoid?",
+  "expectedAnswer": "The assumption that training and future data share a feature space and distribution; successful transfer avoids much expensive data-labeling effort.",
+  "source": {
+   "review": "B",
+   "page": 21,
+   "citations": [
+    127
+   ]
+  },
+  "verify": [
+   {
+    "docId": "8bca2da084e39c80",
+    "re": "same feature space and have the same distribution"
+   },
+   {
+    "docId": "8bca2da084e39c80",
+    "re": "expensive data labeling efforts"
+   },
+   {
+    "docId": "c509b9fca5b5cab5",
+    "re": "learn"
+   }
+  ]
+ },
+ {
+  "id": "Q073",
+  "type": "multi_hop",
+  "question": "Machine-learned force fields are validated on phenomena beyond the reach of ab initio methods. Which two phenomena are given as examples, and for which element?",
+  "expectedAnswer": "Surface melting and stress-strain behaviour, demonstrated for aluminium (Al), phenomena that exceed ab initio methods in both length and time scales.",
+  "source": {
+   "review": "A",
+   "page": 3,
+   "citations": [
+    43,
+    119
+   ]
+  },
+  "verify": [
+   {
+    "docId": "d6dc25eca326fc25",
+    "re": "surface melting and stressstrain behavior|surface melting and stress-strain behavior"
+   },
+   {
+    "docId": "d6dc25eca326fc25",
+    "re": "for the case of Al"
+   },
+   {
+    "docId": "12221983e5649963",
+    "re": "molecular dynamics"
+   }
+  ]
+ },
+ {
+  "id": "Q074",
+  "type": "enumerate",
+  "question": "Which graph neural network architectures for predicting crystal or molecular properties appear in this corpus, and what does each contribute?",
+  "expectedAnswer": "SchNet (continuous-filter convolutions for off-grid atoms), CGCNN (interpretable crystal graph convolutions), MEGNet (a global state alongside atom and bond updates), Matformer (periodic invariance) and ComFormer (SE(3) invariant and equivariant variants).",
+  "source": {
+   "review": "B",
+   "page": 24,
+   "citations": [
+    5,
+    45,
+    94,
+    96
+   ]
+  },
+  "verify": [
+   {
+    "docId": "5c537d6464ed412a",
+    "re": "SchNet"
+   },
+   {
+    "docId": "e9b5693d1a5b4daa",
+    "re": "Crystal Graph Convolutional"
+   },
+   {
+    "docId": "bb2dec0717c1603e",
+    "re": "MEGNet"
+   },
+   {
+    "docId": "9b58fbbb9f3e8706",
+    "re": "Matformer"
+   },
+   {
+    "docId": "469499d024f56f84",
+    "re": "ComFormer"
+   }
+  ]
+ },
+ {
+  "id": "Q075",
+  "type": "multi_hop",
+  "question": "Two generative models in this corpus both use a VAE but differ in what they encode. What does the molecular one encode, and what does the inorganic-crystal one encode?",
+  "expectedAnswer": "The molecular VAE encodes SMILES strings into a continuous latent space; CDVAE encodes periodic crystal structures, generating lattice and atom positions for periodic materials.",
+  "source": {
+   "review": "A",
+   "page": 4,
+   "citations": [
+    46,
+    61
+   ]
+  },
+  "verify": [
+   {
+    "docId": "8910402f53f2bf95",
+    "re": "continuous representation"
+   },
+   {
+    "docId": "64ab5cb56c2de23c",
+    "re": "periodic"
+   },
+   {
+    "docId": "64ab5cb56c2de23c",
+    "re": "Variational Autoencoder"
+   }
+  ]
+ },
+ {
+  "id": "Q076",
+  "type": "cross_doc",
+  "question": "Why do benchmarks built only on ordered crystal databases give an incomplete picture of generative models, and which benchmark in this corpus addresses that gap?",
+  "expectedAnswer": "Because they never test disordered materials and interfaces, which are common in practice; Dismai-Bench benchmarks generative models specifically on disordered materials and interfaces.",
+  "source": {
+   "review": "A",
+   "page": 17,
+   "citations": [
+    133
+   ]
+  },
+  "verify": [
+   {
+    "docId": "5f58decf6f642357",
+    "re": "disordered materials and interfaces"
+   },
+   {
+    "docId": "64ab5cb56c2de23c",
+    "re": "MP-20"
+   }
+  ]
+ },
+ {
+  "id": "Q077",
+  "type": "single_doc",
+  "question": "What is the purpose of the xtal2png package, and what representation does it convert crystal structures into?",
+  "expectedAnswer": "It encodes crystal structures as PNG image files so that image-based machine learning models can be applied to crystals.",
+  "source": {
+   "review": "A",
+   "page": 9,
+   "citations": [
+    90
+   ]
+  },
+  "verify": [
+   {
+    "docId": "ea2654c49a024c8a",
+    "re": "crystal structure as PNG files"
+   }
+  ]
+ },
+ {
+  "id": "Q078",
+  "type": "cross_doc",
+  "question": "Voxel and image encodings both discretize a crystal onto a grid. What does that buy, and what does the corpus give as the main cost?",
+  "expectedAnswer": "It makes convolutional architectures directly applicable to 3D structure, but high-resolution grids are computationally expensive and handle periodic boundary conditions poorly.",
+  "source": {
+   "review": "A",
+   "page": 9,
+   "citations": [
+    31,
+    90
+   ]
+  },
+  "verify": [
+   {
+    "docId": "ea2654c49a024c8a",
+    "re": "PNG"
+   },
+   {
+    "docId": "64ab5cb56c2de23c",
+    "re": "periodic"
+   }
+  ]
+ },
+ {
+  "id": "Q079",
+  "type": "multi_hop",
+  "question": "DPA-2 is described as a large atomic model. What training paradigm does it use to cover many chemistries at once, and what class of quantity does it ultimately predict?",
+  "expectedAnswer": "It is a multi-task learner trained across many datasets simultaneously, and it predicts interatomic potential energies and forces as a machine-learning potential.",
+  "source": {
+   "review": "B",
+   "page": 12,
+   "citations": [
+    103
+   ]
+  },
+  "verify": [
+   {
+    "docId": "c509b9fca5b5cab5",
+    "re": "multi-task learner"
+   },
+   {
+    "docId": "12221983e5649963",
+    "re": "interatomic potentials"
+   }
+  ]
+ },
+ {
+  "id": "Q080",
+  "type": "cross_doc",
+  "question": "Which two papers in this corpus present essentially the same equivariant interatomic potential under different symmetry-group labels, and what is the difference between those groups?",
+  "expectedAnswer": "Two versions of NequIP appear, one labelled SE(3)-equivariant and the later one E(3)-equivariant; E(3) additionally includes reflections (improper rotations) whereas SE(3) covers only proper rotations and translations.",
+  "source": {
+   "review": "B",
+   "page": 24,
+   "citations": [
+    97
+   ]
+  },
+  "verify": [
+   {
+    "docId": "12221983e5649963",
+    "re": "E\\(3\\)-Equivariant Graph Neural Networks"
+   },
+   {
+    "docId": "afe948fa0d678a2f",
+    "re": "SE\\(3\\)-Equivariant Graph Neural Networks"
+   }
+  ]
+ },
+ {
+  "id": "Q081",
+  "type": "cross_doc",
+  "question": "What claim about deep learning does the NequIP result challenge, and what does its data efficiency make newly practical?",
+  "expectedAnswer": "It challenges the widely held belief that deep neural networks require massive training sets, and its data efficiency makes it practical to build potentials from high-order quantum chemical reference data and run high-fidelity molecular dynamics over long timescales.",
+  "source": {
+   "review": "B",
+   "page": 24,
+   "citations": [
+    97
+   ]
+  },
+  "verify": [
+   {
+    "docId": "12221983e5649963",
+    "re": "challenging the widely held belief"
+   },
+   {
+    "docId": "12221983e5649963",
+    "re": "high-order quantum chemical level of theory"
+   },
+   {
+    "docId": "d6dc25eca326fc25",
+    "re": "force field"
+   }
+  ]
+ },
+ {
+  "id": "Q082",
+  "type": "single_doc",
+  "question": "How does MEGNet's performance on crystals compare with DFT, and on what size of dataset?",
+  "expectedAnswer": "MEGNet achieves better than DFT accuracy for formation energies, band gaps and elastic moduli, over a much larger dataset than DFT could cover.",
+  "source": {
+   "review": "A",
+   "page": 9,
+   "citations": [
+    21
+   ]
+  },
+  "verify": [
+   {
+    "docId": "bb2dec0717c1603e",
+    "re": "better than DFT accuracy over a much larger data set"
+   }
+  ]
+ },
+ {
+  "id": "Q083",
+  "type": "cross_doc",
+  "question": "Fixed-length feature vectors were the conventional way to feed crystals to machine learning. What two problems does the corpus identify with that approach?",
+  "expectedAnswer": "Manually constructed feature vectors require case-by-case design for each property, while symmetry-invariant coordinate transformations make the resulting models hard to interpret.",
+  "source": {
+   "review": "A",
+   "page": 9,
+   "citations": [
+    129
+   ]
+  },
+  "verify": [
+   {
+    "docId": "e9b5693d1a5b4daa",
+    "re": "requires case-bycase design|case-by-case design"
+   },
+   {
+    "docId": "e9b5693d1a5b4daa",
+    "re": "hard to interpret"
+   },
+   {
+    "docId": "4de02a4502d3302f",
+    "re": "featurization|descriptors"
+   }
+  ]
+ },
+ {
+  "id": "Q084",
+  "type": "multi_hop",
+  "question": "Both a crystal property predictor and a MOF property predictor in this corpus use self-supervision across two views of the same material. What are the two views in the MOF case?",
+  "expectedAnswer": "A 3D crystal-structure view processed by CGCNN and a string view (the MOFid) processed by the MOFormer transformer, whose embeddings are aligned self-supervised.",
+  "source": {
+   "review": "A",
+   "page": 12,
+   "citations": [
+    19
+   ]
+  },
+  "verify": [
+   {
+    "docId": "345c379b11439cc5",
+    "re": "Self-Supervised"
+   },
+   {
+    "docId": "345c379b11439cc5",
+    "re": "CGCNN"
+   },
+   {
+    "docId": "e9b5693d1a5b4daa",
+    "re": "Crystal Graph Convolutional"
+   }
+  ]
+ },
+ {
+  "id": "Q085",
+  "type": "cross_doc",
+  "question": "Which two distinct strategies for injecting symmetry into crystal generation are represented in this corpus, and how do they differ in where symmetry is enforced?",
+  "expectedAnswer": "One enforces symmetry by construction in the representation — Wyckoff positions in WyckoffDiff and WyCryst, or the asymmetric unit in SymmCD — while the other enforces it in the network's equivariance, as in DiffCSP and CrystalFlow acting on lattice and fractional coordinates.",
+  "source": {
+   "review": "A",
+   "page": 17,
+   "citations": [
+    61,
+    65,
+    73,
+    77,
+    140
+   ]
+  },
+  "verify": [
+   {
+    "docId": "c9822a0bb4cff010",
+    "re": "respecting symmetry by construction"
+   },
+   {
+    "docId": "e30a72df020241a1",
+    "re": "asymmetric unit"
+   },
+   {
+    "docId": "19331887f966f19a",
+    "re": "equivariant"
+   }
+  ]
+ },
+ {
+  "id": "Q086",
+  "type": "cross_doc",
+  "question": "Reinforcement fine-tuning has been applied on top of a pretrained crystal generator. Which generator was fine-tuned, and what does reinforcement learning optimize that pretraining does not?",
+  "expectedAnswer": "CrystalFormer, the space-group informed transformer, was fine-tuned with reinforcement learning to optimize directly for target properties rather than only matching the training distribution.",
+  "source": {
+   "review": "A",
+   "page": 17,
+   "citations": [
+    20
+   ]
+  },
+  "verify": [
+   {
+    "docId": "39f4488e3f873655",
+    "re": "Reinforcement Fine-Tuning"
+   },
+   {
+    "docId": "228d193103cdc344",
+    "re": "space group"
+   }
+  ]
+ },
+ {
+  "id": "Q087",
+  "type": "multi_hop",
+  "question": "A Wyckoff-based generative transformer reports a S.U.N. ratio well below MatterGen's. What ratio does it report, and what caveat does it attach to the comparison?",
+  "expectedAnswer": "About 16% at T = 0.7, against roughly 45% for MatterGen — but it notes those other results were measured against a much less stringent reference set.",
+  "source": {
+   "review": "A",
+   "page": 17,
+   "citations": [
+    64
+   ]
+  },
+  "verify": [
+   {
+    "docId": "109fa4b1a7cf50c7",
+    "re": "S\\.U\\.N ratio of around 16%"
+   },
+   {
+    "docId": "109fa4b1a7cf50c7",
+    "re": "less stringent reference set"
+   },
+   {
+    "docId": "5e298395553f3e4f",
+    "re": "MatterGen|generative model"
+   }
+  ]
+ },
+ {
+  "id": "Q088",
+  "type": "cross_doc",
+  "question": "Why does the corpus argue that comparing the stable-unique-novel rates of generative models across different papers is unreliable?",
+  "expectedAnswer": "Because the reference set used to judge novelty differs between papers — a less stringent reference set inflates the apparent novelty rate, so the numbers are not directly comparable.",
+  "source": {
+   "review": "A",
+   "page": 17,
+   "citations": [
+    64,
+    137
+   ]
+  },
+  "verify": [
+   {
+    "docId": "109fa4b1a7cf50c7",
+    "re": "less stringent reference set"
+   },
+   {
+    "docId": "2a996abbf587278c",
+    "re": "S\\.U\\.N"
+   }
+  ]
+ },
+ {
+  "id": "Q089",
+  "type": "single_doc",
+  "question": "Deep diffusion language models have been applied to generate inorganic compositions. What checks were the generated formulas put through?",
+  "expectedAnswer": "Charge-neutrality and electronegativity-balance checks, followed by a final oxidation-states check using BERTOS.",
+  "source": {
+   "review": "A",
+   "page": 14,
+   "citations": [
+    76
+   ]
+  },
+  "verify": [
+   {
+    "docId": "12d4dc045b66f769",
+    "re": "charge-neutrality and electronegativity balance checks"
+   },
+   {
+    "docId": "12d4dc045b66f769",
+    "re": "BERTOS"
+   }
+  ]
+ },
+ {
+  "id": "Q090",
+  "type": "cross_doc",
+  "question": "Charge neutrality appears as a validity criterion in more than one generative approach in this corpus. Name two approaches that enforce or check it, and how each does so.",
+  "expectedAnswer": "The deep diffusion language model filters generated formulas through explicit charge-neutrality and electronegativity checks, while the reinforcement-learning inverse design agent learns charge neutrality as a chemical guideline through its reward.",
+  "source": {
+   "review": "A",
+   "page": 14,
+   "citations": [
+    76,
+    96
+   ]
+  },
+  "verify": [
+   {
+    "docId": "12d4dc045b66f769",
+    "re": "charge-neutrality"
+   },
+   {
+    "docId": "468826937c7713f8",
+    "re": "charge neutrality"
+   }
+  ]
+ },
+ {
+  "id": "Q091",
+  "type": "multi_hop",
+  "question": "GAN-based crystal structure prediction represents a crystal as a 2D matrix. What two components make up that representation, and what idea inspired it?",
+  "expectedAnswer": "Unit cell parameters together with the rescaled fractional coordinates of the atoms, in a 2D matrix representation inspired by a point cloud.",
+  "source": {
+   "review": "A",
+   "page": 5,
+   "citations": [
+    89
+   ]
+  },
+  "verify": [
+   {
+    "docId": "1e2d139a5bf30b23",
+    "re": "unit cell parameters and the sets of rescaled fractional coordinates"
+   },
+   {
+    "docId": "1e2d139a5bf30b23",
+    "re": "point cloud"
+   },
+   {
+    "docId": "a468f3e7b82c3654",
+    "re": "fractional coordinates"
+   }
+  ]
+ },
+ {
+  "id": "Q092",
+  "type": "cross_doc",
+  "question": "Which chemical system was targeted by generative high-throughput virtual screening with a GAN, and which compound had previously been discovered and experimentally verified in that space?",
+  "expectedAnswer": "The Mg-Mn-O system; Mg2MnO4 had previously been found with reasonable stability and activity and experimentally verified.",
+  "source": {
+   "review": "A",
+   "page": 5,
+   "citations": [
+    89
+   ]
+  },
+  "verify": [
+   {
+    "docId": "1e2d139a5bf30b23",
+    "re": "Mg2MnO4"
+   },
+   {
+    "docId": "1e2d139a5bf30b23",
+    "re": "Mg-Mn-O"
+   },
+   {
+    "docId": "df0750a430de80cb",
+    "re": "GAN"
+   }
+  ]
+ },
+ {
+  "id": "Q093",
+  "type": "cross_doc",
+  "question": "Both a GFlowNet crystal sampler and a diffusion crystal model must produce valid structures. What validity criteria does the corpus apply to generated crystals?",
+  "expectedAnswer": "Structural validity requires the shortest atomic distance to exceed 0.5 Å, and compositional validity requires charge neutrality.",
+  "source": {
+   "review": "A",
+   "page": 17,
+   "citations": [
+    5,
+    18
+   ]
+  },
+  "verify": [
+   {
+    "docId": "228d193103cdc344",
+    "re": "shortest atomic distance exceeds 0 \\. 5|shortest atomic distance exceeds 0.5"
+   },
+   {
+    "docId": "228d193103cdc344",
+    "re": "Composition validity requires charge neutrality"
+   },
+   {
+    "docId": "750e8509e0febb60",
+    "re": "valid"
+   }
+  ]
+ },
+ {
+  "id": "Q094",
+  "type": "multi_hop",
+  "question": "One paper trains machine-learning potentials for crystal structure prediction deliberately using structures that are not ordered. Why would disordered structures help a potential meant for ordered crystals?",
+  "expectedAnswer": "Training on disordered structures covers a far wider region of configuration space than relaxed ordered crystals, so the potential remains accurate on the unrelaxed, far-from-equilibrium configurations that structure search actually visits.",
+  "source": {
+   "review": "B",
+   "page": 34,
+   "citations": [
+    221
+   ]
+  },
+  "verify": [
+   {
+    "docId": "5f58decf6f642357",
+    "re": "disordered"
+   },
+   {
+    "docId": "12221983e5649963",
+    "re": "training"
+   }
+  ]
+ },
+ {
+  "id": "Q095",
+  "type": "enumerate",
+  "question": "Which materials databases are named as data sources across this corpus, and what does each one hold?",
+  "expectedAnswer": "The Materials Project and OQMD (DFT-computed inorganic crystal properties), ICSD (experimentally reported crystal structures), AFLOW (high-throughput calculated structures), NOMAD (FAIR-shared raw computational data) and QM9 (small-molecule quantum chemistry).",
+  "source": {
+   "review": "A",
+   "page": 10,
+   "citations": [
+    33,
+    57,
+    102,
+    134
+   ]
+  },
+  "verify": [
+   {
+    "docId": "f1af6c92eda54f5b",
+    "re": "Open Quantum Materials Database"
+   },
+   {
+    "docId": "d9364252a4c1b7a9",
+    "re": "NOMAD"
+   },
+   {
+    "docId": "bb2dec0717c1603e",
+    "re": "QM9"
+   },
+   {
+    "docId": "5e298395553f3e4f",
+    "re": "ICSD"
+   }
+  ]
+ },
+ {
+  "id": "Q096",
+  "type": "cross_doc",
+  "question": "What distinguishes the kind of data held by ICSD from that held by the Materials Project, and why does that difference matter for training a generative model?",
+  "expectedAnswer": "ICSD holds experimentally reported crystal structures whereas the Materials Project holds DFT-computed structures and properties; training on ICSD biases a model toward synthesizable materials, while Materials Project data covers far more hypothetical compounds.",
+  "source": {
+   "review": "A",
+   "page": 15,
+   "citations": [
+    122,
+    134
+   ]
+  },
+  "verify": [
+   {
+    "docId": "5e298395553f3e4f",
+    "re": "ICSD"
+   },
+   {
+    "docId": "f1af6c92eda54f5b",
+    "re": "Materials Project"
+   }
+  ]
+ },
+ {
+  "id": "Q097",
+  "type": "multi_hop",
+  "question": "MatterGen's ability to produce synthesizable materials is argued from a rediscovery experiment against the ICSD. What was rediscovered, and why is that evidence of synthesizability rather than of memorization of the training set?",
+  "expectedAnswer": "It rediscovered more than 2,000 experimentally verified ICSD structures that were not in its training set; because they were unseen during training, generating them shows the model produces structures that really can be made.",
+  "source": {
+   "review": "A",
+   "page": 6,
+   "citations": [
+    137
+   ]
+  },
+  "verify": [
+   {
+    "docId": "5e298395553f3e4f",
+    "re": "not seen during training"
+   },
+   {
+    "docId": "5e298395553f3e4f",
+    "re": "synthesizable materials"
+   },
+   {
+    "docId": "64ab5cb56c2de23c",
+    "re": "training"
+   }
+  ]
+ },
+ {
+  "id": "Q098",
+  "type": "cross_doc",
+  "question": "Two of the crystal generative models in this corpus are conditioned on a target property rather than sampling unconditionally. Name them and say what each conditions on.",
+  "expectedAnswer": "MatterGen conditions generation on target properties such as bulk modulus, and MatterGPT conditions on formation energy and band gap, including both simultaneously for multi-property design.",
+  "source": {
+   "review": "A",
+   "page": 17,
+   "citations": [
+    23,
+    137
+   ]
+  },
+  "verify": [
+   {
+    "docId": "5e298395553f3e4f",
+    "re": "property"
+   },
+   {
+    "docId": "393ecffc9b1af637",
+    "re": "targeted properties"
+   },
+   {
+    "docId": "393ecffc9b1af637",
+    "re": "multiple properties"
+   }
+  ]
+ },
+ {
+  "id": "Q099",
+  "type": "cross_doc",
+  "question": "What does a Pareto front represent in materials optimization, and why does the corpus argue a single objective is insufficient?",
+  "expectedAnswer": "It reports the optimal trade-offs between conflicting objectives; useful materials must satisfy several objectives at once, and improving one is usually at the expense of another.",
+  "source": {
+   "review": "B",
+   "page": 42,
+   "citations": [
+    280
+   ]
+  },
+  "verify": [
+   {
+    "docId": "1c6ef6097c0ec8aa",
+    "re": "optimal trade-offs between these conflicting objectives"
+   },
+   {
+    "docId": "e8bab0571c2a0e24",
+    "re": "design space"
+   }
+  ]
+ },
+ {
+  "id": "Q100",
+  "type": "single_doc",
+  "question": "What made widespread robotic adoption difficult in materials research according to the mobile robotic chemist work, and how does experimental complexity scale?",
+  "expectedAnswer": "The diversity of sample types, operations, instruments and measurements required; experimental complexity scales exponentially with the number of variables, restricting most searches to narrow regions of materials space.",
+  "source": {
+   "review": "B",
+   "page": 38,
+   "citations": [
+    229
+   ]
+  },
+  "verify": [
+   {
+    "docId": "4aeb478c4fac0c1a",
+    "re": "complexity scales exponentially with the number of variables"
+   }
+  ]
+ }
+]

@@ -6,3 +6,9 @@ node_modules/
 # themselves have been cleared for publication. The paired .txt reports carry
 # only chunk metadata (filename, pages, chunkId, scores) and are safe to commit.
 retrieval_*.jsonl
+
+# Source corpora. Same reasoning as above: these are third-party documents and this
+# repository is public. The benchmarks reference them by docId and by short verbatim
+# quotes in evidence.json; the PDFs themselves stay local.
+documents/
+Synthesis benchmark/*.pdf
