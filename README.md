@@ -105,10 +105,10 @@ and the useful retrieval is chunk retrieval).
 
 ---
 
-## 4. Synthesis benchmark (in progress)
+## 4. Synthesis benchmark — the knowledge graph does help, by 8 answers in 200
 
-`Synthesis benchmark/` builds the experiment the ablation above could not run: can OpenCrawl
-reproduce the conclusions of a review article from the primary papers that review cites?
+`Synthesis benchmark/` runs the experiment the ablation above could not: can OpenCrawl reproduce the
+conclusions of a review article from the primary papers that review cites?
 
 Two review PDFs supply the ground truth; collection 26 — their downloaded reference lists — supplies
 the evidence:
@@ -119,38 +119,78 @@ the evidence:
   2503.18975, 324 references.
 
 Reference lists parse cleanly (A: 133 of 141; B: 322 of 324), and title matching maps **143 of
-collection 26's 192 documents** to a numbered citation in one of the reviews (A: 72 references → 71
-documents; B: 94 → 81).
+collection 26's 192 documents** to a numbered citation in one of the reviews.
 
-Two design parameters were measured rather than assumed:
+**200 questions**, 40 single-document / 80 cross-document / 60 multi-hop / 20 enumerate. Ground truth
+is each review's own claim; `build_questions.mjs` verifies **every component** of that claim against a
+chunk of a cited collection-26 document — 508 components across 62 documents — and refuses to emit if
+one cannot be found. It also enforces that every question seeds the graph and that none resolves a
+document name, which would collect the 2.0x doc boost and turn synthesis into lookup.
 
-- **Phrasing.** A question quoting a paper title verbatim resolves through `resolveDocIds` and
-  collects the 2.0× doc boost, collapsing a synthesis question into a lookup (1 document boosted for
-  one title, 2 for two, 0 for three — the resolver self-disables past two). Naming methods instead
-  (MatterGen, MP-20) boosts nothing and still seeds the graph, returning the full 25-fact cap. So
-  questions name methods and benchmarks, never document titles.
-- **top-k.** At k=10 a question reaches a median of ~4 distinct documents of 192 (range 2–7); k=20
-  reaches ~6. k=10 is kept: it is what the product serves, and a larger k would supply by retrieval
-  the very facts the graph is meant to contribute.
+The two arms are collection 26 and collection 33, a row-for-row clone with `knowledgeGraph` left
+null. Verified before running: retrieval returns **identical chunk ids in identical order**, and the
+graph supplies facts on 20/20 sampled questions in 26 and 0/20 in 33.
 
-Ground truth is each review's own claim; `build_questions.mjs` then verifies **every component of
-that claim** against a chunk of a cited collection-26 document and records the chunk id and a
-verbatim quote. A component that matches nothing is a hard build failure — a question whose answer
-the corpus cannot support would be unanswerable rather than hard. The same build enforces that every
-question seeds the graph and that none resolves a document name.
+### Result — 400 answers, every one read and judged by hand
 
-**Status: 150 of 200 questions authored, 383 evidence components verified across 62 documents.**
-Remaining: 50 questions, the graph-free clone of collection 26, and the paired 200 × 2 run.
+| collection | CORRECT | PARTIAL | WRONG | accuracy |
+| --- | --- | --- | --- | --- |
+| 26 — graph (20,301 entities) | 128 | 52 | 20 | **64.0%** |
+| 33 — no graph (control) | 120 | 56 | 24 | **60.0%** |
 
-### Found while verifying: review B misreports its own source
+**+8 answers, +4.0 points.** 16 of 200 questions were graded differently between the arms. Against
+the previous ablation's 1-answer spread over 660, this is a real effect.
 
-Review B's Table 6 credits the autonomous laboratory with **41 of 58** targets realized in 17 days.
-The cited paper (`10.1038_s41586-023-06734-w`) says **36 of 57**, a 63% success rate, three times
-over. Questions are only built where review and corpus agree, so the verification step drops claims
-like this automatically — but it is worth recording that a published review's summary table
-disagrees with the paper it cites.
+**The graph fired on every question**: facts were supplied for 200/200, and the model cited `[G]` in
+76 of them — against 5 of 220 in the toxicology ablation. Splitting by whether the graph actually
+contributed:
+
+| | questions | c26 | c33 |
+| --- | --- | --- | --- |
+| graph facts supplied **and** cited `[G]` | 76 | **64.5%** | 59.2% |
+| supplied but not cited | 124 | **63.7%** | 60.5% |
+| not supplied | 0 | — | — |
+
+The effect is larger where the model actually used a graph fact, which is what you would expect if
+the graph is doing the work rather than the difference being noise.
+
+### What the graph actually contributes
+
+Every flip has the same shape: **the control arm denies the corpus contains something the graph
+knew.** Retrieval is bit-identical, so the difference cannot come from anywhere else.
+
+| | control arm (no graph) | graph arm |
+| --- | --- | --- |
+| Q038 | "the corpus does not mention a dataset named MP-20" | answered from a `[G]` fact that MP-20 is a Materials Project subset |
+| Q015 | "does not state that WyckoffDiff and WyCryst build on the same representation" | correct |
+| Q189 | "does not contain information regarding models evaluated on MP-20" | named CDVAE from a graph fact |
+| Q081 | "no general claim that NequIP challenges" | answered it |
+| Q094 | declined to explain why disordered training helps | correct |
+| Q107 | treated two XRD papers as one study | contrasted them |
+
+Two flips ran the other way (Q139, Q147), where the graph arm declined and the control arm answered.
+The net is +8.
+
+### The binding constraint is retrieval, not synthesis
+
+Almost every WRONG verdict in either arm coincides with **0 of N support documents retrieved** at
+top-k 10. Since retrieval is identical in both arms this affects them equally, but it caps how high
+either can score — and it is the largest available lever on this benchmark, well ahead of the graph.
+
+### Two errors found in the reviews, and two in our own questions
+
+Verifying claims against the corpus caught the reviews misreporting their own sources:
+
+- Review B's Table 6 credits the autonomous laboratory with **41 of 58** targets in 17 days. The cited
+  paper says **36 of 57**, a 63% success rate.
+- Review B says ElemNet trained on **275,000** OQMD compounds; the paper says **256,622**.
+
+And two of our own expected answers were wrong, both graded in the model's favour and recorded in
+`verdicts.synthesis.json`: Q019 inherited review B's ElemNet figure, and Q134 used our arithmetic
+(21 unobtained targets) where the paper says 17.
 
 ---
+
 
 ## Layout
 
