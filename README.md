@@ -105,9 +105,9 @@ and the useful retrieval is chunk retrieval).
 
 ---
 
-## 4. Synthesis benchmark — the knowledge graph does help, by 8 answers in 200
+## 4. Synthesis benchmark — the graph helps a little; the fact cap is not why
 
-`Synthesis benchmark/` runs the experiment the ablation above could not: can OpenCrawl reproduce the
+`experiments/03-synthesis/` runs the experiment the ablation above could not: can OpenCrawl reproduce the
 conclusions of a review article from the primary papers that review cites?
 
 Two review PDFs supply the ground truth; collection 26 — their downloaded reference lists — supplies
@@ -127,81 +127,119 @@ chunk of a cited collection-26 document — 508 components across 62 documents �
 one cannot be found. It also enforces that every question seeds the graph and that none resolves a
 document name, which would collect the 2.0x doc boost and turn synthesis into lookup.
 
-The two arms are collection 26 and collection 33, a row-for-row clone with `knowledgeGraph` left
-null. Verified before running: retrieval returns **identical chunk ids in identical order**, and the
-graph supplies facts on 20/20 sampled questions in 26 and 0/20 in 33.
+The arms are collection 26 and collection 33, a row-for-row clone with `knowledgeGraph` left null.
+Verified before running: retrieval returns **identical chunk ids in identical order**, and the graph
+supplies facts on 20/20 sampled questions in 26 and 0/20 in 33. Retrieval does not depend on the
+graph or on the fact cap, so it is identical across all three arms.
 
-### Result — 400 answers, every one read and judged by hand
+### Result — 600 answers, every one read and judged by hand
 
-| collection | CORRECT | PARTIAL | WRONG | accuracy |
+A third arm was added: the same collection 26, the same 200 questions, the same retrieval, with
+`GRAPH_MAX_FACTS` raised from 25 to 100. All 600 answers were then re-read from scratch.
+
+| arm | Correct | Partially Correct | False | accuracy |
 | --- | --- | --- | --- | --- |
-| 26 — graph (20,301 entities) | 128 | 52 | 20 | **64.0%** |
-| 33 — no graph (control) | 120 | 56 | 24 | **60.0%** |
+| `26@25` — graph, 25 facts | 106 | 73 | 21 | **53.0%** |
+| `26@100` — graph, 100 facts | 107 | 70 | 23 | **53.5%** |
+| `33` — no graph (control) | 101 | 73 | 26 | **50.5%** |
 
-**+8 answers, +4.0 points.** 16 of 200 questions were graded differently between the arms. Against
-the previous ablation's 1-answer spread over 660, this is a real effect.
+**The graph is worth 5–6 answers in 200. Widening its window is worth nothing.**
 
-**The graph fired on every question**: facts were supplied for 200/200, and the model cited `[G]` in
-76 of them — against 5 of 220 in the toxicology ablation. Splitting by whether the graph actually
-contributed:
+## 5. Why a bigger fact window does not help
 
-| | questions | c26 | c33 |
-| --- | --- | --- | --- |
-| graph facts supplied **and** cited `[G]` | 76 | **64.5%** | 59.2% |
-| supplied but not cited | 124 | **63.7%** | 60.5% |
-| not supplied | 0 | — | — |
+`GRAPH_MAX_FACTS = 25` looked like the binding constraint. Measured over all 200 questions
+against the real graph index, 2-hop expansion reaches a **median of 705 facts** per question
+(mean 932, max 3321); only 5 questions have 25 or fewer. The model was seeing about **3%** of
+what the graph found, and raising the cap demonstrably surfaces on-target facts — the share of
+the 423 support documents touched by at least one fact in the window:
 
-The effect is larger where the model actually used a graph fact, which is what you would expect if
-the graph is doing the work rather than the difference being noise.
-
-### What the graph actually contributes
-
-Every flip has the same shape: **the control arm denies the corpus contains something the graph
-knew.** Retrieval is bit-identical, so the difference cannot come from anywhere else.
-
-| | control arm (no graph) | graph arm |
+| cap | support documents reached | graph block |
 | --- | --- | --- |
-| Q038 | "the corpus does not mention a dataset named MP-20" | answered from a `[G]` fact that MP-20 is a Materials Project subset |
-| Q015 | "does not state that WyckoffDiff and WyCryst build on the same representation" | correct |
-| Q189 | "does not contain information regarding models evaluated on MP-20" | named CDVAE from a graph fact |
-| Q081 | "no general claim that NequIP challenges" | answered it |
-| Q094 | declined to explain why disordered training helps | correct |
-| Q107 | treated two XRD papers as one study | contrasted them |
+| 25 | 181 / 423 — 42.8% | ~280 tok |
+| **100** | **243 / 423 — 57.4%** | ~1,100 tok |
+| 400 | 267 / 423 — 63.1% | ~3,900 tok |
 
-Two flips ran the other way (Q139, Q147), where the graph arm declined and the control arm answered.
-The net is +8.
+At cap 100 the model demonstrably used the wider window — mean facts supplied rose 24.6 → 94.4
+and `[G]` citations rose **76 → 89 of 200**. The window was verified end to end before the run:
+on Q178 the model cited `[G]` for "MTP is used to approximate density functional theory", a
+triple ranked **100th**, with no MTP triple anywhere in the top 25.
 
-### The binding constraint is retrieval, not synthesis
+It changed the score by one answer.
 
-Almost every WRONG verdict in either arm coincides with **0 of N support documents retrieved** at
-top-k 10. Since retrieval is identical in both arms this affects them equally, but it caps how high
-either can score — and it is the largest available lever on this benchmark, well ahead of the graph.
+| | |
+| --- | --- |
+| verdicts changed by the cap alone | 15 of 200 |
+| improved | 7 |
+| regressed | 8 |
 
-### Two errors found in the reviews, and two in our own questions
+Seven questions got better and eight got worse. More of the graph reaches the model, the model
+cites it more often, and the answers are no better. **The 25-fact cap was not the constraint.**
+
+### The binding constraint is retrieval, and it is absolute
+
+| support documents retrieved | n | `26@25` | `26@100` | `33` |
+| --- | --- | --- | --- | --- |
+| all | 57 | 73.7% | 71.9% | 68.4% |
+| some | 114 | 56.1% | 57.0% | 54.4% |
+| **none** | **29** | **0.0%** | **3.4%** | **0.0%** |
+
+Of the 29 questions where retrieval returned none of the supporting documents, the graph arms got
+**one** right between them. A hundred graph facts cannot substitute for a missing chunk.
+
+The cleanest illustration is a fact the benchmark asks for twice. Q153 and Q012 both want CDVAE's
+encoder and decoder parameter counts. Q153 retrieves its one support document and all three arms
+answer "2.2 million and 2.3 million" correctly. Q012 retrieves none, and all three arms answer
+that the corpus does not state them.
+
+Accuracy also falls off sharply with the number of documents a question needs — 85% single-document,
+56% cross-document, 42–47% multi-hop, **5–10% enumerate**. The enumerate questions ask for
+exhaustive lists; at top-k 10 the retriever cannot supply them, and the graph cannot either.
+
+### Two errors found in the reviews, and three in our own questions
 
 Verifying claims against the corpus caught the reviews misreporting their own sources:
 
-- Review B's Table 6 credits the autonomous laboratory with **41 of 58** targets in 17 days. The cited
-  paper says **36 of 57**, a 63% success rate.
+- Review B's Table 6 credits the autonomous laboratory with **41 of 58** targets in 17 days. The
+  cited paper says **36 of 57**, a 63% success rate.
 - Review B says ElemNet trained on **275,000** OQMD compounds; the paper says **256,622**.
 
-And two of our own expected answers were wrong, both graded in the model's favour and recorded in
-`verdicts.synthesis.json`: Q019 inherited review B's ElemNet figure, and Q134 used our arithmetic
-(21 unobtained targets) where the paper says 17.
+Three of our own questions were flawed and are recorded in `verdicts.synthesis.json`: Q019
+inherited review B's ElemNet figure, Q134 used our arithmetic (21 unobtained targets) where the
+paper says 17, and Q161 invented a "two failure modes" framing the source does not use. All are
+graded in the model's favour.
+
+### What to take from this
+
+1. **The knowledge graph helps, by about 3 points, and the effect is real but small.** It is
+   measurable here only because the corpus was chosen so the graph fires on every question.
+2. **Showing the model more of the graph does not help.** The 25-fact window was not the limit;
+   the model's ability to use loose triples is.
+3. **Retrieval is the whole ballgame.** 29 questions score ~0% in every arm because the evidence
+   never reaches the prompt. Fixing that is worth an order of magnitude more than any graph work.
+
+**Caveat.** The reasoning model runs at temperature 0.2 with no seed and no replicate was run, so
+a difference of a few answers is not separable from run-to-run variance. The 1-answer cap effect
+is noise; the 5–6 answer graph effect and the 29-question retrieval collapse are not.
 
 ---
-
 
 ## Layout
 
 | path | what it is |
 | --- | --- |
 | `main.js` | benchmark harness — retrieval-only by default, `--answers` for the full RAG path |
-| `Synthesis benchmark/` | review PDFs, reference reports, question sources and the verifying builder |
-| `grading_results.txt` | 220 answers, collection 28, graded by hand |
-| `ablation_grading.txt` | 660 answers, collections 30/31/32, graded by hand |
-| `benchmark_*.txt/.jsonl` | answer runs |
-| `retrieval_*.txt` | retrieval runs (chunk metadata; the `.jsonl` sidecars are gitignored) |
+| `synthesis_benchmark.js` | the paired synthesis run: same questions, one collection per arm |
+| `clone_collection.js` | row-for-row copy of a collection with `knowledgeGraph` left null |
+| `experiments/01-doc-boost/` | retrieval before/after the doc boost, its answer run, `grading_results.txt` |
+| `experiments/02-kg-ablation/` | collections 30/31/32, `ablation_grading.txt` (660 answers) |
+| `experiments/03-synthesis/` | review PDFs, question sources, the verifying builder, three answer runs, `synthesis_grading.txt` (600 answers) |
+| `runs/` | scratch output from a fresh run; promoted into `experiments/` once a report cites it |
+
+Inside `experiments/03-synthesis/`: `build_questions.mjs` emits and verifies the question set,
+`show_batch.mjs` prints a question with every arm's answer side by side for grading,
+`record_verdicts.mjs` checkpoints hand verdicts into `verdicts.synthesis.json`, and
+`grade_synthesis.mjs` renders the report — refusing to hide an ungraded answer, which would
+otherwise count as correct.
 
 Corpus PDFs are deliberately not committed — this repository is public and the documents are
 third-party. `retrieval_*.jsonl` is gitignored for the same reason: it embeds the full text of every
