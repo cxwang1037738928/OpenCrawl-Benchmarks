@@ -1,0 +1,2128 @@
+{
+  "model": "gemini/gemini-3.1-flash-lite",
+  "topK": 10,
+  "_note": "Hand verdicts. Every id carries an explicit verdict in every arm; PARTIAL and WRONG also carry a reason. Arms are keyed by `key` because two of them are the same collection at different GRAPH_MAX_FACTS.",
+  "arms": [
+    {
+      "key": "26@25",
+      "collectionId": 26,
+      "maxFacts": 25,
+      "label": "graph, 25 facts",
+      "file": "synthesis_c26_2026-08-10T04-19-23Z.jsonl"
+    },
+    {
+      "key": "26@100",
+      "collectionId": 26,
+      "maxFacts": 100,
+      "label": "graph, 100 facts",
+      "file": "synthesis_c26_2026-08-10T15-41-53Z.jsonl"
+    },
+    {
+      "key": "33",
+      "collectionId": 33,
+      "maxFacts": 0,
+      "label": "no graph (control)",
+      "file": "synthesis_c33_2026-08-10T04-19-23Z.jsonl"
+    }
+  ],
+  "gradedThrough": "Q200",
+  "verdicts": {
+    "33": {
+      "Q001": {
+        "v": "CORRECT"
+      },
+      "Q002": {
+        "v": "CORRECT"
+      },
+      "Q003": {
+        "v": "CORRECT"
+      },
+      "Q004": {
+        "v": "CORRECT"
+      },
+      "Q005": {
+        "v": "PARTIAL",
+        "why": "gave DiffCSP as 'a diffusion model' without the joint equivariant diffusion over lattice and fractional coordinates"
+      },
+      "Q006": {
+        "v": "CORRECT"
+      },
+      "Q007": {
+        "v": "CORRECT"
+      },
+      "Q008": {
+        "v": "CORRECT"
+      },
+      "Q009": {
+        "v": "CORRECT"
+      },
+      "Q010": {
+        "v": "CORRECT"
+      },
+      "Q011": {
+        "v": "CORRECT"
+      },
+      "Q012": {
+        "v": "WRONG",
+        "why": "expected 2.2M encoder / 2.3M decoder parameters; answered that the documents do not state them (0/1 support docs retrieved)"
+      },
+      "Q013": {
+        "v": "CORRECT"
+      },
+      "Q014": {
+        "v": "PARTIAL",
+        "why": "said the documents do not mention GNoME at all; did explain NequIP's equivariance and data efficiency"
+      },
+      "Q015": {
+        "v": "WRONG",
+        "why": "denied the two share a representation, calling WyCryst 'a different representation' than WyckoffDiff"
+      },
+      "Q016": {
+        "v": "CORRECT"
+      },
+      "Q017": {
+        "v": "PARTIAL",
+        "why": "gave MEGNet's global state vector but said the documents do not detail CGCNN's architecture"
+      },
+      "Q018": {
+        "v": "CORRECT"
+      },
+      "Q019": {
+        "v": "PARTIAL",
+        "why": "MAE 0.050 right; said the documents do not state the training-set size"
+      },
+      "Q020": {
+        "v": "WRONG",
+        "why": "expected Materials Project and OQMD; named Materials Project and ICSD (0/3 support docs retrieved)"
+      },
+      "Q021": {
+        "v": "CORRECT"
+      },
+      "Q022": {
+        "v": "CORRECT"
+      },
+      "Q023": {
+        "v": "CORRECT"
+      },
+      "Q024": {
+        "v": "CORRECT"
+      },
+      "Q025": {
+        "v": "CORRECT"
+      },
+      "Q026": {
+        "v": "CORRECT"
+      },
+      "Q027": {
+        "v": "CORRECT"
+      },
+      "Q028": {
+        "v": "CORRECT"
+      },
+      "Q029": {
+        "v": "CORRECT"
+      },
+      "Q030": {
+        "v": "CORRECT"
+      },
+      "Q031": {
+        "v": "PARTIAL",
+        "why": "continuous-filter convolutions right; gave physical-law motivations rather than the off-grid-atoms rationale"
+      },
+      "Q032": {
+        "v": "CORRECT"
+      },
+      "Q033": {
+        "v": "CORRECT"
+      },
+      "Q034": {
+        "v": "WRONG",
+        "why": "claimed the corpus contains neither the inorganic-solids nor the electrolyte autonomous laboratory; found only the mobile robot (1/3 support docs)"
+      },
+      "Q035": {
+        "v": "CORRECT"
+      },
+      "Q036": {
+        "v": "PARTIAL",
+        "why": "named SymmCD and WyckoffDiff but not the space-group informed transformer, and drew no DiffCSP contrast"
+      },
+      "Q037": {
+        "v": "PARTIAL",
+        "why": "answered for FlowMM and FlowLLM rather than CrystalFlow and FlowLLM - a defensible reading, and the analytic-prior contrast is right"
+      },
+      "Q038": {
+        "v": "WRONG",
+        "why": "replied that the corpus does not mention a dataset named MP-20 at all; both graph arms knew it is a Materials Project subset"
+      },
+      "Q039": {
+        "v": "PARTIAL",
+        "why": "said 'atomic coordinates' rather than fractional coordinates and declined the periodicity rationale"
+      },
+      "Q040": {
+        "v": "CORRECT"
+      },
+      "Q041": {
+        "v": "PARTIAL",
+        "why": "named the Materials Project as the reference but said the corpus does not define the stability criterion"
+      },
+      "Q042": {
+        "v": "CORRECT"
+      },
+      "Q043": {
+        "v": "CORRECT"
+      },
+      "Q044": {
+        "v": "CORRECT"
+      },
+      "Q045": {
+        "v": "CORRECT"
+      },
+      "Q046": {
+        "v": "PARTIAL",
+        "why": "said the corpus does not state why both are needed; defined each separately (0/2 support docs)"
+      },
+      "Q047": {
+        "v": "PARTIAL",
+        "why": "listed diffusion, flow and string families but omitted the VAE, transformer and GFlowNet families (1/5 support docs)"
+      },
+      "Q048": {
+        "v": "CORRECT"
+      },
+      "Q049": {
+        "v": "PARTIAL",
+        "why": "gave all three hard constraints and why they matter but explicitly declined the diffusion-model comparison the question asked for"
+      },
+      "Q050": {
+        "v": "CORRECT"
+      },
+      "Q051": {
+        "v": "CORRECT"
+      },
+      "Q052": {
+        "v": "CORRECT"
+      },
+      "Q053": {
+        "v": "CORRECT"
+      },
+      "Q054": {
+        "v": "WRONG",
+        "why": "expected encoder, decoder and predictor; answered that the corpus does not support a VAE with three coupled functions"
+      },
+      "Q055": {
+        "v": "CORRECT"
+      },
+      "Q056": {
+        "v": "CORRECT"
+      },
+      "Q057": {
+        "v": "CORRECT"
+      },
+      "Q058": {
+        "v": "CORRECT"
+      },
+      "Q059": {
+        "v": "CORRECT"
+      },
+      "Q060": {
+        "v": "CORRECT"
+      },
+      "Q061": {
+        "v": "PARTIAL",
+        "why": "named Matformer but hedged that the corpus does not identify a transformer designed to provide periodic invariance"
+      },
+      "Q062": {
+        "v": "CORRECT"
+      },
+      "Q063": {
+        "v": "PARTIAL",
+        "why": "gave ComFormer's SE(3)/SO(3) but said the corpus holds nothing on equivariant interatomic potentials"
+      },
+      "Q064": {
+        "v": "CORRECT"
+      },
+      "Q065": {
+        "v": "PARTIAL",
+        "why": "gave sparsity and diversity of component ratios; expected discrete features and severe sparsity"
+      },
+      "Q066": {
+        "v": "CORRECT"
+      },
+      "Q067": {
+        "v": "CORRECT"
+      },
+      "Q068": {
+        "v": "CORRECT"
+      },
+      "Q069": {
+        "v": "CORRECT"
+      },
+      "Q070": {
+        "v": "CORRECT"
+      },
+      "Q071": {
+        "v": "CORRECT"
+      },
+      "Q072": {
+        "v": "PARTIAL",
+        "why": "assumption right; said transfer avoids re-collecting training data rather than the expensive data-labeling effort"
+      },
+      "Q073": {
+        "v": "CORRECT"
+      },
+      "Q074": {
+        "v": "PARTIAL",
+        "why": "named SchNet, CGCNN, MEGNet (with its global state) and Matformer but omitted ComFormer (3/5 support docs)"
+      },
+      "Q075": {
+        "v": "PARTIAL",
+        "why": "molecular VAE right; named BVAE and WyCryst rather than CDVAE as the inorganic-crystal VAE (0/2 support docs)"
+      },
+      "Q076": {
+        "v": "CORRECT"
+      },
+      "Q077": {
+        "v": "CORRECT"
+      },
+      "Q078": {
+        "v": "PARTIAL",
+        "why": "gave CNN compatibility and the memory/compute cost but not the poor handling of periodic boundary conditions (0/2 support docs)"
+      },
+      "Q079": {
+        "v": "PARTIAL",
+        "why": "multi-task pre-training right; said the documents do not define the class of quantity predicted"
+      },
+      "Q080": {
+        "v": "CORRECT"
+      },
+      "Q081": {
+        "v": "WRONG",
+        "why": "said the corpus states no claim about deep learning that NequIP challenges"
+      },
+      "Q082": {
+        "v": "CORRECT"
+      },
+      "Q083": {
+        "v": "CORRECT"
+      },
+      "Q084": {
+        "v": "CORRECT"
+      },
+      "Q085": {
+        "v": "PARTIAL",
+        "why": "gave Wyckoff-label prediction and SymmCD's asymmetric unit - both by-construction; missed the network-equivariance strategy (1/3 support docs)"
+      },
+      "Q086": {
+        "v": "CORRECT"
+      },
+      "Q087": {
+        "v": "CORRECT"
+      },
+      "Q088": {
+        "v": "WRONG",
+        "why": "said the corpus does not state that cross-paper S.U.N. comparison is unreliable"
+      },
+      "Q089": {
+        "v": "PARTIAL",
+        "why": "gave the three checks but did not name BERTOS as the oxidation-state checker"
+      },
+      "Q090": {
+        "v": "PARTIAL",
+        "why": "named CDVAE and GAN-based models rather than the diffusion language model and the RL agent"
+      },
+      "Q091": {
+        "v": "CORRECT"
+      },
+      "Q092": {
+        "v": "CORRECT"
+      },
+      "Q093": {
+        "v": "CORRECT"
+      },
+      "Q094": {
+        "v": "PARTIAL",
+        "why": "said the documents do not explain why disordered structures help; gave the methodology and its benefits (0/2 support docs)"
+      },
+      "Q095": {
+        "v": "WRONG",
+        "why": "listed only Citrine and OPTiMaDe instead of Materials Project, OQMD, ICSD, AFLOW, NOMAD and QM9 (0/4 support docs)"
+      },
+      "Q096": {
+        "v": "PARTIAL",
+        "why": "gave ICSD as experimentally verified but said the corpus does not distinguish it from the Materials Project"
+      },
+      "Q097": {
+        "v": "CORRECT"
+      },
+      "Q098": {
+        "v": "PARTIAL",
+        "why": "MatterGen right; named the composition-conditioned Crystal GAN rather than MatterGPT (0/2 support docs)"
+      },
+      "Q099": {
+        "v": "CORRECT"
+      },
+      "Q100": {
+        "v": "CORRECT"
+      },
+      "Q101": {
+        "v": "CORRECT"
+      },
+      "Q102": {
+        "v": "CORRECT"
+      },
+      "Q103": {
+        "v": "CORRECT"
+      },
+      "Q104": {
+        "v": "CORRECT"
+      },
+      "Q105": {
+        "v": "CORRECT"
+      },
+      "Q106": {
+        "v": "CORRECT"
+      },
+      "Q107": {
+        "v": "CORRECT"
+      },
+      "Q108": {
+        "v": "CORRECT"
+      },
+      "Q109": {
+        "v": "CORRECT"
+      },
+      "Q110": {
+        "v": "PARTIAL",
+        "why": "named the positive-bias-model and publication-bias papers rather than the reaction VAE and the failed-experiment work, and said the second proposes no technical remedy (0/2 support docs)"
+      },
+      "Q111": {
+        "v": "PARTIAL",
+        "why": "named AIRSS but said the corpus does not define what it searches over"
+      },
+      "Q112": {
+        "v": "PARTIAL",
+        "why": "gave the MLIP cost saving but described AIRSS only as quasi-random exploration, without the DFT-relaxation contrast"
+      },
+      "Q113": {
+        "v": "CORRECT"
+      },
+      "Q114": {
+        "v": "PARTIAL",
+        "why": "described amortising MCMC correctly but never named the detailed balance objective"
+      },
+      "Q115": {
+        "v": "PARTIAL",
+        "why": "gave the diversity-over-single-mode advantage but said the corpus does not detail how crystal sampling exploits it"
+      },
+      "Q116": {
+        "v": "CORRECT"
+      },
+      "Q117": {
+        "v": "PARTIAL",
+        "why": "gave SMILES enumeration and pretraining rather than SELFIES and the pretrained SMILES transformer, and declined to say how they differ"
+      },
+      "Q118": {
+        "v": "CORRECT"
+      },
+      "Q119": {
+        "v": "CORRECT"
+      },
+      "Q120": {
+        "v": "PARTIAL",
+        "why": "named Ada with its target and listed the other platforms from the reference list without their targets (2/5 support docs)"
+      },
+      "Q121": {
+        "v": "CORRECT"
+      },
+      "Q122": {
+        "v": "PARTIAL",
+        "why": "described composition-only versus structure-based descriptors generically without naming ElemNet, CGCNN or MEGNet (0/3 support docs)"
+      },
+      "Q123": {
+        "v": "PARTIAL",
+        "why": "ElemNet right; said the corpus names no descriptor toolkit, missing Matminer"
+      },
+      "Q124": {
+        "v": "WRONG",
+        "why": "declined to name the two quantities and denied that any model claims better-than-DFT accuracy (0/3 support docs)"
+      },
+      "Q125": {
+        "v": "PARTIAL",
+        "why": "MOFid right; offered CGCNN rather than Matformer/ComFormer as the crystal transformer"
+      },
+      "Q126": {
+        "v": "CORRECT"
+      },
+      "Q127": {
+        "v": "WRONG",
+        "why": "said the corpus identifies no shared validation difficulty between the two VAEs"
+      },
+      "Q128": {
+        "v": "PARTIAL",
+        "why": "named the thin-film self-driving lab and the mobile chemist rather than the Dragonfly test stand and the on-the-fly work (0/2 support docs)"
+      },
+      "Q129": {
+        "v": "PARTIAL",
+        "why": "gave SELFIES but said the corpus does not address crystal string representations, omitting SLICES"
+      },
+      "Q130": {
+        "v": "PARTIAL",
+        "why": "gave iMatGen and a WGAN voxel model rather than xtal2png and the diffraction image; correctly rejected the question's false premise of a molecular image model (0/2 support docs)"
+      },
+      "Q131": {
+        "v": "PARTIAL",
+        "why": "role of DFT right; named no frameworks that automate it (0/3 support docs)"
+      },
+      "Q132": {
+        "v": "PARTIAL",
+        "why": "hull meaning right; named the Materials Project and single-system searches rather than GNoME and the alloy search"
+      },
+      "Q133": {
+        "v": "PARTIAL",
+        "why": "explained the hull as a synthesizability heuristic with its limits but declined the framing that the two are different problems (0/3 support docs)"
+      },
+      "Q134": {
+        "v": "CORRECT"
+      },
+      "Q135": {
+        "v": "CORRECT"
+      },
+      "Q136": {
+        "v": "PARTIAL",
+        "why": "described equivariant GNNs and DPA-2's representation learning but never named NequIP nor identified both as MLIPs replacing DFT (1/3 support docs)"
+      },
+      "Q137": {
+        "v": "PARTIAL",
+        "why": "gave pool-based versus adaptive sampling and said the corpus defines no two distinct uses (0/2 support docs)"
+      },
+      "Q138": {
+        "v": "WRONG",
+        "why": "said the corpus identifies no shared representation choice between the Wyckoff transformer and the Wyckoff diffusion model"
+      },
+      "Q139": {
+        "v": "PARTIAL",
+        "why": "found a second model and contrasted the outputs, but paired CrystalFormer with DiffCSP++ - a diffusion model - rather than the Wyckoff material transformer"
+      },
+      "Q140": {
+        "v": "CORRECT"
+      },
+      "Q141": {
+        "v": "PARTIAL",
+        "why": "gave MATGAN's charge-neutrality and electronegativity checks rather than DFT stability, and declined the diffusion side"
+      },
+      "Q142": {
+        "v": "WRONG",
+        "why": "declined the question entirely, saying the corpus does not describe generating many candidates from a smaller training set (0/2 support docs)"
+      },
+      "Q143": {
+        "v": "PARTIAL",
+        "why": "gave the unsupervised phase-field model but declined to name ElemNet as the composition-only stability model"
+      },
+      "Q144": {
+        "v": "CORRECT"
+      },
+      "Q145": {
+        "v": "PARTIAL",
+        "why": "SMILES Transformer pretraining right; named CrysMMNet's MatSciBERT rather than FlowLLM, noting the corpus has no pretrained crystal generative model"
+      },
+      "Q146": {
+        "v": "WRONG",
+        "why": "said the corpus contains nothing on how a self-driving laboratory differs from high-throughput screening (1/3 support docs)"
+      },
+      "Q147": {
+        "v": "PARTIAL",
+        "why": "named Chakraborty and Balachandran with what each screened for rather than the HOIP screen and the reinforcement-learning inverse design work"
+      },
+      "Q148": {
+        "v": "CORRECT"
+      },
+      "Q149": {
+        "v": "PARTIAL",
+        "why": "gave ML surrogates and model distillation rather than the active-learning potential and ElemNet (0/2 support docs)"
+      },
+      "Q150": {
+        "v": "WRONG",
+        "why": "said the corpus does not identify a risk of training only on curated databases (0/3 support docs)"
+      },
+      "Q151": {
+        "v": "CORRECT"
+      },
+      "Q152": {
+        "v": "CORRECT"
+      },
+      "Q153": {
+        "v": "CORRECT"
+      },
+      "Q154": {
+        "v": "PARTIAL",
+        "why": "gave the set2set readout to a single vector rather than the global state representation MEGNet consolidates into"
+      },
+      "Q155": {
+        "v": "CORRECT"
+      },
+      "Q156": {
+        "v": "CORRECT"
+      },
+      "Q157": {
+        "v": "CORRECT"
+      },
+      "Q158": {
+        "v": "CORRECT"
+      },
+      "Q159": {
+        "v": "CORRECT"
+      },
+      "Q160": {
+        "v": "CORRECT"
+      },
+      "Q161": {
+        "v": "PARTIAL",
+        "why": "noted the mode-mixing problem and high-dimensional intractability but declined to tie them to detailed balance - the question's premise is at fault (see questionFlaws)"
+      },
+      "Q162": {
+        "v": "CORRECT"
+      },
+      "Q163": {
+        "v": "CORRECT"
+      },
+      "Q164": {
+        "v": "PARTIAL",
+        "why": "distinguished CSP from DNG by whether composition is given, not by what each scores"
+      },
+      "Q165": {
+        "v": "PARTIAL",
+        "why": "gave RMSE as the second number but declined to say why match rate alone understates the difficulty"
+      },
+      "Q166": {
+        "v": "PARTIAL",
+        "why": "gave the diffraction fingerprint correctly but said the corpus describes no separate image encoding, though xtal2png is in it"
+      },
+      "Q167": {
+        "v": "WRONG",
+        "why": "said the corpus addresses no failed-experiment argument and identifies no shared weakness"
+      },
+      "Q168": {
+        "v": "CORRECT"
+      },
+      "Q169": {
+        "v": "PARTIAL",
+        "why": "named CrysMMNet and Matformer, and credited CrysMMNet with bond-angle information rather than the textual modality; missed MEGNet's global state vector"
+      },
+      "Q170": {
+        "v": "CORRECT"
+      },
+      "Q171": {
+        "v": "WRONG",
+        "why": "named FlowMM and CrystalFlow but denied the corpus identifies two models sharing flow-matching mathematics; the pair is FlowMM and FlowLLM"
+      },
+      "Q172": {
+        "v": "CORRECT"
+      },
+      "Q173": {
+        "v": "WRONG",
+        "why": "declined the parameter-count comparison entirely (0/2 support docs)"
+      },
+      "Q174": {
+        "v": "PARTIAL",
+        "why": "described the CSP-versus-DNG distinction and the stability gap but said the corpus contains no analysis of the divergence"
+      },
+      "Q175": {
+        "v": "PARTIAL",
+        "why": "traced the stages and noted 50 of 57 targets were predicted stable, but reported none of the GNoME figures, and said the corpus does not link the two efforts as one pipeline"
+      },
+      "Q176": {
+        "v": "WRONG",
+        "why": "denied that any representation guarantees a space group without explicit coordinates; the Wyckoff protostructure does (3/3 support docs retrieved)"
+      },
+      "Q177": {
+        "v": "PARTIAL",
+        "why": "gave MLIPs as an end in themselves but illustrated the pipeline role with training-data generation rather than the active-learning alloy search"
+      },
+      "Q178": {
+        "v": "WRONG",
+        "why": "said the corpus does not support the claim that any paper reduces DFT calls by replacing DFT (0/3 support docs)"
+      },
+      "Q179": {
+        "v": "CORRECT"
+      },
+      "Q180": {
+        "v": "PARTIAL",
+        "why": "correctly spotted that the two files are the same study and gave both data sources, but missed the separate simulated-diffraction paper"
+      },
+      "Q181": {
+        "v": "PARTIAL",
+        "why": "GFlowNet's proportional sampling right; said the corpus does not explain how latent-space models achieve diversity"
+      },
+      "Q182": {
+        "v": "CORRECT"
+      },
+      "Q183": {
+        "v": "PARTIAL",
+        "why": "found only Ada; the second work is not a self-driving laboratory, so the question's premise is loose"
+      },
+      "Q184": {
+        "v": "PARTIAL",
+        "why": "gave MatBERT/MatSciBERT pretraining and CrysMMNet as the consumer rather than FlowLLM's crystal-text base distribution and Riemannian flow matching (0/2 support docs)"
+      },
+      "Q185": {
+        "v": "PARTIAL",
+        "why": "defined transferability and named DPA-2 but said the corpus does not define data efficiency as a distinct virtue"
+      },
+      "Q186": {
+        "v": "PARTIAL",
+        "why": "gave the lack of negative examples correctly but offered NLP curation and generative synthetic data rather than the reaction VAE and failed experiments as training data"
+      },
+      "Q187": {
+        "v": "WRONG",
+        "why": "said the corpus does not connect the lenient validity threshold to how models are ranked"
+      },
+      "Q188": {
+        "v": "WRONG",
+        "why": "named the GAN V-O rediscovery and the diffusion language model rather than MatterGen and GNoME (0/2 support docs)"
+      },
+      "Q189": {
+        "v": "WRONG",
+        "why": "said the corpus holds no models evaluated on MP-20 at all; both graph arms named several (0/5 support docs)"
+      },
+      "Q190": {
+        "v": "PARTIAL",
+        "why": "SymmCD's asymmetric unit right; missed WyckoffDiff, WyCryst and the space-group transformer"
+      },
+      "Q191": {
+        "v": "PARTIAL",
+        "why": "gave composition, phase fields and protostructures generically rather than the five specific representations"
+      },
+      "Q192": {
+        "v": "PARTIAL",
+        "why": "GNoME's 736 realized structures right; said no other paper reports experimental realization, missing the A-Lab, Ada and the electrolyte platform (1/4 support docs)"
+      },
+      "Q193": {
+        "v": "PARTIAL",
+        "why": "MOFormer and its MOFid input right; missed MatterGPT/SLICES, the SMILES Transformer and Matformer/ComFormer (1/4 support docs)"
+      },
+      "Q194": {
+        "v": "WRONG",
+        "why": "gave Frechet Inception Distance and image-generation metrics rather than match rate, validity, stability and S.U.N. (0/4 support docs)"
+      },
+      "Q195": {
+        "v": "WRONG",
+        "why": "discussed DFT's own accuracy-cost balance without listing any reduction strategy (0/4 support docs)"
+      },
+      "Q196": {
+        "v": "PARTIAL",
+        "why": "gave SMILES-based, grammar-VAE and graph-based families rather than the molecular VAE, MolGAN, GraphVAE and reaction VAE (1/4 support docs)"
+      },
+      "Q197": {
+        "v": "PARTIAL",
+        "why": "gave theoretical/experimental bias, publication bias and data imbalance rather than the four sources asked for (0/3 support docs)"
+      },
+      "Q198": {
+        "v": "PARTIAL",
+        "why": "listed pretraining, transfer learning and active learning; coverage incomplete"
+      },
+      "Q199": {
+        "v": "PARTIAL",
+        "why": "gave post-hoc XAI and faithfulness/plausibility metrics rather than CGCNN site contributions, attentive response maps and invariant descriptors (0/3 support docs)"
+      },
+      "Q200": {
+        "v": "WRONG",
+        "why": "answered with drug-design targets rather than the materials properties asked for (0/4 support docs)"
+      }
+    },
+    "26@25": {
+      "Q001": {
+        "v": "CORRECT"
+      },
+      "Q002": {
+        "v": "CORRECT"
+      },
+      "Q003": {
+        "v": "CORRECT"
+      },
+      "Q004": {
+        "v": "CORRECT"
+      },
+      "Q005": {
+        "v": "PARTIAL",
+        "why": "gave DiffCSP as 'diffusion models' without the joint equivariant diffusion over lattice and fractional coordinates"
+      },
+      "Q006": {
+        "v": "CORRECT"
+      },
+      "Q007": {
+        "v": "CORRECT"
+      },
+      "Q008": {
+        "v": "CORRECT"
+      },
+      "Q009": {
+        "v": "CORRECT"
+      },
+      "Q010": {
+        "v": "CORRECT"
+      },
+      "Q011": {
+        "v": "CORRECT"
+      },
+      "Q012": {
+        "v": "WRONG",
+        "why": "expected 2.2M encoder / 2.3M decoder parameters; answered that the documents do not state them (0/1 support docs retrieved)"
+      },
+      "Q013": {
+        "v": "CORRECT"
+      },
+      "Q014": {
+        "v": "PARTIAL",
+        "why": "declined to link GNoME to NequIP, saying the corpus lacks it; did explain the equivariance-to-data-efficiency mechanism"
+      },
+      "Q015": {
+        "v": "PARTIAL",
+        "why": "named the shared Wyckoff-based representation but split the advantage across the two models and declined WyckoffDiff's"
+      },
+      "Q016": {
+        "v": "CORRECT"
+      },
+      "Q017": {
+        "v": "PARTIAL",
+        "why": "identified MEGNet's global state vector but refused to confirm CGCNN lacks it"
+      },
+      "Q018": {
+        "v": "CORRECT"
+      },
+      "Q019": {
+        "v": "CORRECT"
+      },
+      "Q020": {
+        "v": "WRONG",
+        "why": "expected Materials Project and OQMD; named Materials Project and ICSD (0/3 support docs retrieved)"
+      },
+      "Q021": {
+        "v": "CORRECT"
+      },
+      "Q022": {
+        "v": "CORRECT"
+      },
+      "Q023": {
+        "v": "CORRECT"
+      },
+      "Q024": {
+        "v": "CORRECT"
+      },
+      "Q025": {
+        "v": "CORRECT"
+      },
+      "Q026": {
+        "v": "CORRECT"
+      },
+      "Q027": {
+        "v": "CORRECT"
+      },
+      "Q028": {
+        "v": "CORRECT"
+      },
+      "Q029": {
+        "v": "CORRECT"
+      },
+      "Q030": {
+        "v": "CORRECT"
+      },
+      "Q031": {
+        "v": "PARTIAL",
+        "why": "continuous-filter convolutions right; said the corpus does not state why continuous filters specifically, missing the off-grid-atoms rationale"
+      },
+      "Q032": {
+        "v": "CORRECT"
+      },
+      "Q033": {
+        "v": "CORRECT"
+      },
+      "Q034": {
+        "v": "WRONG",
+        "why": "claimed the corpus contains neither the inorganic-solids nor the electrolyte autonomous laboratory; found only the mobile robot (1/3 support docs)"
+      },
+      "Q035": {
+        "v": "CORRECT"
+      },
+      "Q036": {
+        "v": "PARTIAL",
+        "why": "named SymmCD and WyckoffDiff but not the space-group informed transformer, and contrasted CDVAE rather than DiffCSP"
+      },
+      "Q037": {
+        "v": "PARTIAL",
+        "why": "answered for FlowMM and FlowLLM rather than CrystalFlow and FlowLLM - a defensible reading, and the analytic-prior contrast is right"
+      },
+      "Q038": {
+        "v": "CORRECT"
+      },
+      "Q039": {
+        "v": "PARTIAL",
+        "why": "said 'atomic coordinates' rather than fractional coordinates and declined the periodicity rationale"
+      },
+      "Q040": {
+        "v": "CORRECT"
+      },
+      "Q041": {
+        "v": "CORRECT"
+      },
+      "Q042": {
+        "v": "CORRECT"
+      },
+      "Q043": {
+        "v": "CORRECT"
+      },
+      "Q044": {
+        "v": "CORRECT"
+      },
+      "Q045": {
+        "v": "CORRECT"
+      },
+      "Q046": {
+        "v": "PARTIAL",
+        "why": "gave the memorisation rationale but declined the unified reason and never named the S.U.N. rate (0/2 support docs)"
+      },
+      "Q047": {
+        "v": "PARTIAL",
+        "why": "listed diffusion, flow and string families but miscategorised CDVAE as diffusion and omitted the VAE, transformer and GFlowNet families (1/5 support docs)"
+      },
+      "Q048": {
+        "v": "CORRECT"
+      },
+      "Q049": {
+        "v": "CORRECT"
+      },
+      "Q050": {
+        "v": "CORRECT"
+      },
+      "Q051": {
+        "v": "CORRECT"
+      },
+      "Q052": {
+        "v": "CORRECT"
+      },
+      "Q053": {
+        "v": "CORRECT"
+      },
+      "Q054": {
+        "v": "WRONG",
+        "why": "expected encoder, decoder and predictor; answered that the corpus describes no VAE with three coupled functions"
+      },
+      "Q055": {
+        "v": "PARTIAL",
+        "why": "gave all three latent-space operations but said the corpus does not explain why continuity specifically enables them"
+      },
+      "Q056": {
+        "v": "CORRECT"
+      },
+      "Q057": {
+        "v": "CORRECT"
+      },
+      "Q058": {
+        "v": "CORRECT"
+      },
+      "Q059": {
+        "v": "CORRECT"
+      },
+      "Q060": {
+        "v": "CORRECT"
+      },
+      "Q061": {
+        "v": "CORRECT"
+      },
+      "Q062": {
+        "v": "CORRECT"
+      },
+      "Q063": {
+        "v": "PARTIAL",
+        "why": "gave ComFormer's SE(3)/SO(3) but declined the interatomic potential's group, though it had surfaced the E(3) fact"
+      },
+      "Q064": {
+        "v": "CORRECT"
+      },
+      "Q065": {
+        "v": "PARTIAL",
+        "why": "gave sparsity and diversity of component ratios; expected discrete features and severe sparsity"
+      },
+      "Q066": {
+        "v": "CORRECT"
+      },
+      "Q067": {
+        "v": "CORRECT"
+      },
+      "Q068": {
+        "v": "CORRECT"
+      },
+      "Q069": {
+        "v": "CORRECT"
+      },
+      "Q070": {
+        "v": "CORRECT"
+      },
+      "Q071": {
+        "v": "CORRECT"
+      },
+      "Q072": {
+        "v": "CORRECT"
+      },
+      "Q073": {
+        "v": "CORRECT"
+      },
+      "Q074": {
+        "v": "PARTIAL",
+        "why": "named SchNet, CGCNN, MEGNet and Matformer with contributions but omitted ComFormer, and gave MEGNet only as a multi-edge graph model (3/5 support docs)"
+      },
+      "Q075": {
+        "v": "PARTIAL",
+        "why": "molecular VAE right; named WyCryst rather than CDVAE as the inorganic-crystal VAE (0/2 support docs)"
+      },
+      "Q076": {
+        "v": "CORRECT"
+      },
+      "Q077": {
+        "v": "CORRECT"
+      },
+      "Q078": {
+        "v": "PARTIAL",
+        "why": "gave CNN compatibility and the memory/compute cost but not the poor handling of periodic boundary conditions (0/2 support docs)"
+      },
+      "Q079": {
+        "v": "PARTIAL",
+        "why": "multi-task pre-training right; said the corpus does not define the class of quantity predicted, having surfaced energy and force"
+      },
+      "Q080": {
+        "v": "CORRECT"
+      },
+      "Q081": {
+        "v": "PARTIAL",
+        "why": "stated the challenge to the massive-data belief but gave generic consequences rather than high-order quantum reference data and long-timescale MD"
+      },
+      "Q082": {
+        "v": "CORRECT"
+      },
+      "Q083": {
+        "v": "CORRECT"
+      },
+      "Q084": {
+        "v": "CORRECT"
+      },
+      "Q085": {
+        "v": "PARTIAL",
+        "why": "gave constraint-based generation and SymmCD's asymmetric unit; missed the network-equivariance strategy of DiffCSP and CrystalFlow (1/3 support docs)"
+      },
+      "Q086": {
+        "v": "CORRECT"
+      },
+      "Q087": {
+        "v": "CORRECT"
+      },
+      "Q088": {
+        "v": "PARTIAL",
+        "why": "gave metric saturation and computational expense, not the differing novelty reference set"
+      },
+      "Q089": {
+        "v": "CORRECT"
+      },
+      "Q090": {
+        "v": "PARTIAL",
+        "why": "named Crystal-GFN and PGN rather than the diffusion language model and the RL agent - both do check charge neutrality"
+      },
+      "Q091": {
+        "v": "CORRECT"
+      },
+      "Q092": {
+        "v": "CORRECT"
+      },
+      "Q093": {
+        "v": "CORRECT"
+      },
+      "Q094": {
+        "v": "PARTIAL",
+        "why": "gave the no-prior-structural-knowledge and efficiency rationale but not the wider configuration-space coverage (0/2 support docs)"
+      },
+      "Q095": {
+        "v": "WRONG",
+        "why": "listed Citrine, OPTiMaDe and three biology databases instead of Materials Project, OQMD, ICSD, AFLOW, NOMAD and QM9 (0/4 support docs, only 4 graph facts)"
+      },
+      "Q096": {
+        "v": "PARTIAL",
+        "why": "gave ICSD as experimentally verified but said the corpus does not distinguish it from the Materials Project"
+      },
+      "Q097": {
+        "v": "CORRECT"
+      },
+      "Q098": {
+        "v": "PARTIAL",
+        "why": "MatterGen right; named CrystalFlow rather than MatterGPT as the second conditioned model (0/2 support docs)"
+      },
+      "Q099": {
+        "v": "CORRECT"
+      },
+      "Q100": {
+        "v": "CORRECT"
+      },
+      "Q101": {
+        "v": "CORRECT"
+      },
+      "Q102": {
+        "v": "CORRECT"
+      },
+      "Q103": {
+        "v": "CORRECT"
+      },
+      "Q104": {
+        "v": "CORRECT"
+      },
+      "Q105": {
+        "v": "CORRECT"
+      },
+      "Q106": {
+        "v": "CORRECT"
+      },
+      "Q107": {
+        "v": "CORRECT"
+      },
+      "Q108": {
+        "v": "CORRECT"
+      },
+      "Q109": {
+        "v": "CORRECT"
+      },
+      "Q110": {
+        "v": "PARTIAL",
+        "why": "named the positive-bias-model and publication-bias papers rather than the reaction VAE and the failed-experiment work (0/2 support docs)"
+      },
+      "Q111": {
+        "v": "PARTIAL",
+        "why": "named AIRSS but said the corpus does not define what it searches over"
+      },
+      "Q112": {
+        "v": "CORRECT"
+      },
+      "Q113": {
+        "v": "CORRECT"
+      },
+      "Q114": {
+        "v": "PARTIAL",
+        "why": "described amortising MCMC correctly but never named the detailed balance objective"
+      },
+      "Q115": {
+        "v": "PARTIAL",
+        "why": "gave the diversity-over-single-mode advantage but said the corpus does not detail how crystal sampling exploits it"
+      },
+      "Q116": {
+        "v": "CORRECT"
+      },
+      "Q117": {
+        "v": "PARTIAL",
+        "why": "gave SMILES enumeration and pretraining rather than SELFIES and the pretrained SMILES transformer"
+      },
+      "Q118": {
+        "v": "CORRECT"
+      },
+      "Q119": {
+        "v": "CORRECT"
+      },
+      "Q120": {
+        "v": "PARTIAL",
+        "why": "named Ada with its target and listed the other platforms from the reference list without their targets (2/5 support docs)"
+      },
+      "Q121": {
+        "v": "CORRECT"
+      },
+      "Q122": {
+        "v": "PARTIAL",
+        "why": "described composition-only versus structure-based descriptors generically without naming ElemNet, CGCNN or MEGNet (0/3 support docs)"
+      },
+      "Q123": {
+        "v": "PARTIAL",
+        "why": "ElemNet right; said the corpus names no descriptor toolkit, missing Matminer"
+      },
+      "Q124": {
+        "v": "WRONG",
+        "why": "declined to name the two quantities and denied that any model claims better-than-DFT accuracy (0/3 support docs)"
+      },
+      "Q125": {
+        "v": "PARTIAL",
+        "why": "MOFid right; offered CGCNN rather than Matformer/ComFormer as the crystal transformer, noting it is not a transformer"
+      },
+      "Q126": {
+        "v": "CORRECT"
+      },
+      "Q127": {
+        "v": "PARTIAL",
+        "why": "identified the shared validity difficulty and the BVAE's handling but said the corpus does not describe the molecular VAE's"
+      },
+      "Q128": {
+        "v": "PARTIAL",
+        "why": "named the thin-film self-driving lab and the mobile chemist rather than the Dragonfly test stand and the on-the-fly work (0/2 support docs)"
+      },
+      "Q129": {
+        "v": "PARTIAL",
+        "why": "gave SELFIES but said the corpus discusses no crystal string representation, omitting SLICES"
+      },
+      "Q130": {
+        "v": "PARTIAL",
+        "why": "gave iMatGen's 3D-image representation rather than xtal2png and the diffraction image; correctly rejected the question's false premise of a molecular image model (0/2 support docs)"
+      },
+      "Q131": {
+        "v": "PARTIAL",
+        "why": "role of DFT right; said the corpus names no frameworks that automate it (0/3 support docs)"
+      },
+      "Q132": {
+        "v": "PARTIAL",
+        "why": "hull meaning right; named MatterGen and ab initio RSS rather than GNoME and the active-learning alloy search"
+      },
+      "Q133": {
+        "v": "PARTIAL",
+        "why": "explained the hull as a synthesizability proxy with its limits but declined the framing that the two are different problems (0/3 support docs)"
+      },
+      "Q134": {
+        "v": "PARTIAL",
+        "why": "17 unobtained of 57 right (the paper's figure); named the Materials Project but not Google DeepMind as the source"
+      },
+      "Q135": {
+        "v": "CORRECT"
+      },
+      "Q136": {
+        "v": "PARTIAL",
+        "why": "described equivariant GNNs and DPA-2's multi-task pretraining but never named NequIP as the equivariant potential nor identified both as MLIPs replacing DFT (1/3 support docs)"
+      },
+      "Q137": {
+        "v": "PARTIAL",
+        "why": "gave pool-based versus iterative active learning rather than potential-training versus experiment selection (0/2 support docs)"
+      },
+      "Q138": {
+        "v": "PARTIAL",
+        "why": "gave Wyckoff positions as graph nodes and single-architecture flexibility; missed that the representation guarantees valid symmetry by construction"
+      },
+      "Q139": {
+        "v": "WRONG",
+        "why": "claimed the corpus holds no second space-group-conditioned transformer; it holds CrystalFormer and the Wyckoff material transformer (1/3 support docs)"
+      },
+      "Q140": {
+        "v": "CORRECT"
+      },
+      "Q141": {
+        "v": "PARTIAL",
+        "why": "gave MATGAN's charge-neutrality and electronegativity checks rather than DFT stability, and declined the diffusion side"
+      },
+      "Q142": {
+        "v": "WRONG",
+        "why": "declined the question entirely, saying the corpus does not describe generating many candidates from a smaller training set (0/2 support docs)"
+      },
+      "Q143": {
+        "v": "PARTIAL",
+        "why": "gave the unsupervised phase-field model but declined to name ElemNet as the composition-only stability model"
+      },
+      "Q144": {
+        "v": "CORRECT"
+      },
+      "Q145": {
+        "v": "PARTIAL",
+        "why": "SMILES Transformer pretraining right; said the corpus holds no crystal generative model that pretrains, missing FlowLLM"
+      },
+      "Q146": {
+        "v": "WRONG",
+        "why": "said the corpus does not define how a self-driving laboratory differs from high-throughput screening (1/3 support docs)"
+      },
+      "Q147": {
+        "v": "WRONG",
+        "why": "listed perovskite reference titles and declined to say what any of them screened for"
+      },
+      "Q148": {
+        "v": "PARTIAL",
+        "why": "gave the photovoltaic trade-off and tandem rationale but did not tie bandgap to the lead-free HOIP screen or to conditioning"
+      },
+      "Q149": {
+        "v": "PARTIAL",
+        "why": "gave ML surrogates and model distillation rather than the active-learning potential and ElemNet (0/2 support docs)"
+      },
+      "Q150": {
+        "v": "WRONG",
+        "why": "said the corpus does not identify a risk of training only on curated databases (0/3 support docs)"
+      },
+      "Q151": {
+        "v": "CORRECT"
+      },
+      "Q152": {
+        "v": "CORRECT"
+      },
+      "Q153": {
+        "v": "CORRECT"
+      },
+      "Q154": {
+        "v": "PARTIAL",
+        "why": "gave the set2set readout to a single vector rather than the global state representation MEGNet consolidates into"
+      },
+      "Q155": {
+        "v": "CORRECT"
+      },
+      "Q156": {
+        "v": "CORRECT"
+      },
+      "Q157": {
+        "v": "CORRECT"
+      },
+      "Q158": {
+        "v": "CORRECT"
+      },
+      "Q159": {
+        "v": "CORRECT"
+      },
+      "Q160": {
+        "v": "CORRECT"
+      },
+      "Q161": {
+        "v": "PARTIAL",
+        "why": "engaged with detailed balance and the mode-mixing problem but declined the 'two failure modes' framing - which is a flaw in the question, not the answer (see questionFlaws)"
+      },
+      "Q162": {
+        "v": "CORRECT"
+      },
+      "Q163": {
+        "v": "CORRECT"
+      },
+      "Q164": {
+        "v": "PARTIAL",
+        "why": "distinguished CSP from DNG by whether composition is given, not by what each scores"
+      },
+      "Q165": {
+        "v": "PARTIAL",
+        "why": "gave RMSE as the second number but declined to say why match rate alone understates the difficulty"
+      },
+      "Q166": {
+        "v": "PARTIAL",
+        "why": "gave the diffraction fingerprint correctly but said the corpus holds no image encoding, though xtal2png is in it and was described correctly for Q077"
+      },
+      "Q167": {
+        "v": "WRONG",
+        "why": "said the corpus identifies no weakness shared by the disordered-materials benchmark and the failed-experiment argument"
+      },
+      "Q168": {
+        "v": "CORRECT"
+      },
+      "Q169": {
+        "v": "PARTIAL",
+        "why": "named CrysMMNet and Matformer, and credited CrysMMNet with bond-angle information rather than the textual modality; missed MEGNet's global state vector"
+      },
+      "Q170": {
+        "v": "CORRECT"
+      },
+      "Q171": {
+        "v": "WRONG",
+        "why": "said the corpus does not identify two models sharing flow-matching mathematics; FlowMM and FlowLLM both use Riemannian flow matching"
+      },
+      "Q172": {
+        "v": "CORRECT"
+      },
+      "Q173": {
+        "v": "WRONG",
+        "why": "declined the parameter-count comparison entirely (0/2 support docs)"
+      },
+      "Q174": {
+        "v": "PARTIAL",
+        "why": "described the CSP-versus-DNG distinction and the stability-after-relaxation gap but opened by saying the corpus does not explain the divergence"
+      },
+      "Q175": {
+        "v": "PARTIAL",
+        "why": "traced the stages and the convex hull's role at each but reported none of the figures - 2.2M candidates, 381,000 on the hull, 736 realized, 36 of 57"
+      },
+      "Q176": {
+        "v": "WRONG",
+        "why": "denied that any representation guarantees a space group without explicit coordinates; the Wyckoff protostructure does (3/3 support docs retrieved)"
+      },
+      "Q177": {
+        "v": "PARTIAL",
+        "why": "gave MLIPs as an end in themselves but illustrated the pipeline role with generic simulation examples rather than the active-learning alloy search"
+      },
+      "Q178": {
+        "v": "WRONG",
+        "why": "said the corpus holds no papers reducing DFT calls for structure search or property prediction (0/3 support docs)"
+      },
+      "Q179": {
+        "v": "CORRECT"
+      },
+      "Q180": {
+        "v": "PARTIAL",
+        "why": "gave both data sources but treated the corpus as one duplicated study, missing the separate simulated-diffraction paper"
+      },
+      "Q181": {
+        "v": "PARTIAL",
+        "why": "GFlowNet's proportional sampling right; said the corpus does not explain how latent-space models achieve diversity"
+      },
+      "Q182": {
+        "v": "CORRECT"
+      },
+      "Q183": {
+        "v": "PARTIAL",
+        "why": "found only Ada; the second work is not a self-driving laboratory, so the question's premise is loose"
+      },
+      "Q184": {
+        "v": "PARTIAL",
+        "why": "gave MatBERT/MatSciBERT pretraining and CrysMMNet as the consumer rather than FlowLLM's crystal-text base distribution and Riemannian flow matching (0/2 support docs)"
+      },
+      "Q185": {
+        "v": "PARTIAL",
+        "why": "defined transferability and named DPA-2 but said the corpus does not define data efficiency as a virtue or offer a model for it"
+      },
+      "Q186": {
+        "v": "PARTIAL",
+        "why": "gave the lack of negative examples correctly but offered generative synthetic data and NLP curation rather than the reaction VAE and failed experiments as training data"
+      },
+      "Q187": {
+        "v": "WRONG",
+        "why": "said the corpus does not connect the lenient validity threshold to how models are ranked, having quoted the 0.5 A lenient standard itself"
+      },
+      "Q188": {
+        "v": "WRONG",
+        "why": "named the GAN V-O rediscovery and the diffusion language model's recovery rate rather than MatterGen and GNoME (0/2 support docs)"
+      },
+      "Q189": {
+        "v": "PARTIAL",
+        "why": "named CDVAE and SymmCD from graph facts but said the corpus holds nothing on their comparative contributions (0/5 support docs)"
+      },
+      "Q190": {
+        "v": "PARTIAL",
+        "why": "SymmCD's asymmetric unit right; named MatterGen, CrystalGAN and blind-test submissions rather than WyckoffDiff, WyCryst and the space-group transformer"
+      },
+      "Q191": {
+        "v": "PARTIAL",
+        "why": "gave composition, phase fields and protostructures generically rather than the five specific representations"
+      },
+      "Q192": {
+        "v": "PARTIAL",
+        "why": "GNoME's 736 realized structures right; missed the A-Lab, Ada's palladium films and the electrolyte platform (1/4 support docs)"
+      },
+      "Q193": {
+        "v": "PARTIAL",
+        "why": "MOFormer and its MOFid input right; missed MatterGPT/SLICES, the SMILES Transformer and Matformer/ComFormer (1/4 support docs)"
+      },
+      "Q194": {
+        "v": "WRONG",
+        "why": "gave Frechet Inception Distance and image-generation metrics rather than match rate, validity, stability and S.U.N. (0/4 support docs)"
+      },
+      "Q195": {
+        "v": "WRONG",
+        "why": "discussed DFT's own accuracy-cost balance without listing any reduction strategy (0/4 support docs)"
+      },
+      "Q196": {
+        "v": "PARTIAL",
+        "why": "gave SMILES-based, grammar-VAE and graph-based families rather than the molecular VAE, MolGAN, GraphVAE and reaction VAE (1/4 support docs)"
+      },
+      "Q197": {
+        "v": "PARTIAL",
+        "why": "gave publication bias, missing negative data and featurization rather than ordered-crystal databases, success-only literature and lenient novelty reference sets (0/3 support docs)"
+      },
+      "Q198": {
+        "v": "PARTIAL",
+        "why": "listed pretraining and transfer-learning strategies; coverage incomplete"
+      },
+      "Q199": {
+        "v": "PARTIAL",
+        "why": "gave regressions, decision trees and post-hoc XAI rather than CGCNN site contributions, attentive response maps and invariant descriptors (0/3 support docs)"
+      },
+      "Q200": {
+        "v": "WRONG",
+        "why": "answered with drug-design targets - synthetic accessibility, docking score, QED - rather than the materials properties asked for (0/4 support docs)"
+      }
+    },
+    "26@100": {
+      "Q001": {
+        "v": "CORRECT"
+      },
+      "Q002": {
+        "v": "CORRECT"
+      },
+      "Q003": {
+        "v": "CORRECT"
+      },
+      "Q004": {
+        "v": "CORRECT"
+      },
+      "Q005": {
+        "v": "PARTIAL",
+        "why": "gave DiffCSP as 'a diffusion model' without the joint equivariant diffusion over lattice and fractional coordinates"
+      },
+      "Q006": {
+        "v": "CORRECT"
+      },
+      "Q007": {
+        "v": "CORRECT"
+      },
+      "Q008": {
+        "v": "CORRECT"
+      },
+      "Q009": {
+        "v": "CORRECT"
+      },
+      "Q010": {
+        "v": "CORRECT"
+      },
+      "Q011": {
+        "v": "CORRECT"
+      },
+      "Q012": {
+        "v": "WRONG",
+        "why": "expected 2.2M encoder / 2.3M decoder parameters; answered that the documents do not state them (0/1 support docs retrieved)"
+      },
+      "Q013": {
+        "v": "CORRECT"
+      },
+      "Q014": {
+        "v": "PARTIAL",
+        "why": "surfaced the GNoME-MLIP link from a [G] fact but still said the excerpts do not discuss it; never named NequIP as the architecture that line builds on"
+      },
+      "Q015": {
+        "v": "PARTIAL",
+        "why": "named the shared Wyckoff-based representation but declined to state WyckoffDiff's advantage"
+      },
+      "Q016": {
+        "v": "CORRECT"
+      },
+      "Q017": {
+        "v": "PARTIAL",
+        "why": "gave MEGNet's global state vector and CGCNN's nine attributes but still declined the architectural contrast"
+      },
+      "Q018": {
+        "v": "CORRECT"
+      },
+      "Q019": {
+        "v": "CORRECT"
+      },
+      "Q020": {
+        "v": "WRONG",
+        "why": "named Materials Project and ICSD as the pair; mentioned OQMD only as a further database (0/3 support docs retrieved)"
+      },
+      "Q021": {
+        "v": "CORRECT"
+      },
+      "Q022": {
+        "v": "CORRECT"
+      },
+      "Q023": {
+        "v": "CORRECT"
+      },
+      "Q024": {
+        "v": "CORRECT"
+      },
+      "Q025": {
+        "v": "CORRECT"
+      },
+      "Q026": {
+        "v": "CORRECT"
+      },
+      "Q027": {
+        "v": "CORRECT"
+      },
+      "Q028": {
+        "v": "CORRECT"
+      },
+      "Q029": {
+        "v": "CORRECT"
+      },
+      "Q030": {
+        "v": "CORRECT"
+      },
+      "Q031": {
+        "v": "PARTIAL",
+        "why": "continuous-filter convolutions right; explicitly declined the rationale, missing the off-grid-atoms reason"
+      },
+      "Q032": {
+        "v": "CORRECT"
+      },
+      "Q033": {
+        "v": "CORRECT"
+      },
+      "Q034": {
+        "v": "WRONG",
+        "why": "claimed the corpus contains neither the inorganic-solids nor the electrolyte autonomous laboratory; found only the mobile robot (1/3 support docs)"
+      },
+      "Q035": {
+        "v": "CORRECT"
+      },
+      "Q036": {
+        "v": "PARTIAL",
+        "why": "named SymmCD and WyckoffDiff but not the space-group informed transformer, and drew no DiffCSP contrast"
+      },
+      "Q037": {
+        "v": "PARTIAL",
+        "why": "answered for FlowMM and FlowLLM rather than CrystalFlow and FlowLLM - a defensible reading, and the analytic-prior contrast is right"
+      },
+      "Q038": {
+        "v": "CORRECT"
+      },
+      "Q039": {
+        "v": "PARTIAL",
+        "why": "said 'atomic coordinates' rather than fractional coordinates; surfaced DiffCSP's periodicity reason but declined to commit to it as the answer"
+      },
+      "Q040": {
+        "v": "CORRECT"
+      },
+      "Q041": {
+        "v": "CORRECT"
+      },
+      "Q042": {
+        "v": "CORRECT"
+      },
+      "Q043": {
+        "v": "CORRECT"
+      },
+      "Q044": {
+        "v": "CORRECT"
+      },
+      "Q045": {
+        "v": "CORRECT"
+      },
+      "Q046": {
+        "v": "PARTIAL",
+        "why": "gave the training-data-copy rationale but declined the unified reason and never named the S.U.N. rate (0/2 support docs)"
+      },
+      "Q047": {
+        "v": "PARTIAL",
+        "why": "gained the GFlowNet family for Crystal-GFN from a [G] fact but still miscategorised CDVAE and omitted the VAE and transformer families (1/5 support docs)"
+      },
+      "Q048": {
+        "v": "CORRECT"
+      },
+      "Q049": {
+        "v": "PARTIAL",
+        "why": "gave all three hard constraints and why they matter but opened by declining the diffusion-model comparison the question asked for"
+      },
+      "Q050": {
+        "v": "CORRECT"
+      },
+      "Q051": {
+        "v": "CORRECT"
+      },
+      "Q052": {
+        "v": "CORRECT"
+      },
+      "Q053": {
+        "v": "CORRECT"
+      },
+      "Q054": {
+        "v": "WRONG",
+        "why": "expected encoder, decoder and predictor; answered that the corpus does not support a VAE with three coupled functions"
+      },
+      "Q055": {
+        "v": "CORRECT"
+      },
+      "Q056": {
+        "v": "CORRECT"
+      },
+      "Q057": {
+        "v": "CORRECT"
+      },
+      "Q058": {
+        "v": "CORRECT"
+      },
+      "Q059": {
+        "v": "CORRECT"
+      },
+      "Q060": {
+        "v": "CORRECT"
+      },
+      "Q061": {
+        "v": "CORRECT"
+      },
+      "Q062": {
+        "v": "CORRECT"
+      },
+      "Q063": {
+        "v": "PARTIAL",
+        "why": "gave ComFormer's SE(3)/SO(3) but said the corpus holds nothing on the interatomic potential's group"
+      },
+      "Q064": {
+        "v": "CORRECT"
+      },
+      "Q065": {
+        "v": "PARTIAL",
+        "why": "gave sparsity and diversity of component ratios; expected discrete features and severe sparsity"
+      },
+      "Q066": {
+        "v": "CORRECT"
+      },
+      "Q067": {
+        "v": "CORRECT"
+      },
+      "Q068": {
+        "v": "CORRECT"
+      },
+      "Q069": {
+        "v": "CORRECT"
+      },
+      "Q070": {
+        "v": "CORRECT"
+      },
+      "Q071": {
+        "v": "CORRECT"
+      },
+      "Q072": {
+        "v": "CORRECT"
+      },
+      "Q073": {
+        "v": "CORRECT"
+      },
+      "Q074": {
+        "v": "PARTIAL",
+        "why": "named SchNet, CGCNN, MEGNet and Matformer but omitted ComFormer (3/5 support docs)"
+      },
+      "Q075": {
+        "v": "PARTIAL",
+        "why": "molecular VAE right; named BVAE and WyCryst rather than CDVAE as the inorganic-crystal VAE (0/2 support docs)"
+      },
+      "Q076": {
+        "v": "CORRECT"
+      },
+      "Q077": {
+        "v": "CORRECT"
+      },
+      "Q078": {
+        "v": "PARTIAL",
+        "why": "gave CNN compatibility and the memory/compute cost but not the poor handling of periodic boundary conditions (0/2 support docs)"
+      },
+      "Q079": {
+        "v": "CORRECT"
+      },
+      "Q080": {
+        "v": "CORRECT"
+      },
+      "Q081": {
+        "v": "WRONG",
+        "why": "said the corpus states no claim about deep learning that NequIP challenges, and that it does not address what the data efficiency makes newly practical - the cap-25 arm stated the challenge"
+      },
+      "Q082": {
+        "v": "PARTIAL",
+        "why": "gave the 'well within DFT errors' figures and the dataset sizes but framed the answer as the corpus not comparing MEGNet with DFT at all"
+      },
+      "Q083": {
+        "v": "CORRECT"
+      },
+      "Q084": {
+        "v": "CORRECT"
+      },
+      "Q085": {
+        "v": "PARTIAL",
+        "why": "gave Wyckoff-label prediction and SymmCD's asymmetric unit - both by-construction; missed the network-equivariance strategy (1/3 support docs)"
+      },
+      "Q086": {
+        "v": "CORRECT"
+      },
+      "Q087": {
+        "v": "CORRECT"
+      },
+      "Q088": {
+        "v": "WRONG",
+        "why": "gave only metric saturation and said the corpus provides no further reasons; the differing novelty reference set is the actual answer"
+      },
+      "Q089": {
+        "v": "CORRECT"
+      },
+      "Q090": {
+        "v": "PARTIAL",
+        "why": "named Crystal-GFN and CDVAE rather than the diffusion language model and the RL agent"
+      },
+      "Q091": {
+        "v": "CORRECT"
+      },
+      "Q092": {
+        "v": "CORRECT"
+      },
+      "Q093": {
+        "v": "CORRECT"
+      },
+      "Q094": {
+        "v": "PARTIAL",
+        "why": "gave the no-prior-structural-knowledge rationale and stated outright that the corpus does not explain the mechanism (0/2 support docs)"
+      },
+      "Q095": {
+        "v": "WRONG",
+        "why": "listed only Citrine and OPTiMaDe instead of Materials Project, OQMD, ICSD, AFLOW, NOMAD and QM9 (0/4 support docs, only 4 graph facts)"
+      },
+      "Q096": {
+        "v": "PARTIAL",
+        "why": "characterised both sides - ICSD experimental, Materials Project high-throughput computed via [G] - but still opened by declining the distinction"
+      },
+      "Q097": {
+        "v": "CORRECT"
+      },
+      "Q098": {
+        "v": "PARTIAL",
+        "why": "MatterGen right; named CrystalFlow rather than MatterGPT as the second conditioned model (0/2 support docs)"
+      },
+      "Q099": {
+        "v": "CORRECT"
+      },
+      "Q100": {
+        "v": "CORRECT"
+      },
+      "Q101": {
+        "v": "CORRECT"
+      },
+      "Q102": {
+        "v": "CORRECT"
+      },
+      "Q103": {
+        "v": "CORRECT"
+      },
+      "Q104": {
+        "v": "CORRECT"
+      },
+      "Q105": {
+        "v": "CORRECT"
+      },
+      "Q106": {
+        "v": "CORRECT"
+      },
+      "Q107": {
+        "v": "CORRECT"
+      },
+      "Q108": {
+        "v": "CORRECT"
+      },
+      "Q109": {
+        "v": "CORRECT"
+      },
+      "Q110": {
+        "v": "PARTIAL",
+        "why": "named the positive-bias-model and publication-bias papers rather than the reaction VAE and the failed-experiment work (0/2 support docs)"
+      },
+      "Q111": {
+        "v": "CORRECT"
+      },
+      "Q112": {
+        "v": "PARTIAL",
+        "why": "gave the MLIP cost saving but described AIRSS as a search strategy without stating that it still relaxes every candidate with DFT"
+      },
+      "Q113": {
+        "v": "CORRECT"
+      },
+      "Q114": {
+        "v": "PARTIAL",
+        "why": "described amortising MCMC correctly but never named the detailed balance objective"
+      },
+      "Q115": {
+        "v": "PARTIAL",
+        "why": "gave the diversity-over-single-mode advantage but said the corpus does not detail how crystal sampling exploits it"
+      },
+      "Q116": {
+        "v": "CORRECT"
+      },
+      "Q117": {
+        "v": "PARTIAL",
+        "why": "gave SMILES enumeration and pretraining rather than SELFIES and the pretrained SMILES transformer"
+      },
+      "Q118": {
+        "v": "CORRECT"
+      },
+      "Q119": {
+        "v": "CORRECT"
+      },
+      "Q120": {
+        "v": "PARTIAL",
+        "why": "named only Ada and said the corpus gives nothing on the other platforms - narrower than the cap-25 answer (2/5 support docs)"
+      },
+      "Q121": {
+        "v": "CORRECT"
+      },
+      "Q122": {
+        "v": "PARTIAL",
+        "why": "described composition-only versus structure-based descriptors generically without naming ElemNet, CGCNN or MEGNet (0/3 support docs)"
+      },
+      "Q123": {
+        "v": "PARTIAL",
+        "why": "ElemNet right; said the corpus names no descriptor toolkit, missing Matminer"
+      },
+      "Q124": {
+        "v": "WRONG",
+        "why": "declined to name the two quantities and denied that any model claims better-than-DFT accuracy (0/3 support docs)"
+      },
+      "Q125": {
+        "v": "PARTIAL",
+        "why": "MOFid right; said the corpus contains no transformer for crystals, missing Matformer and ComFormer"
+      },
+      "Q126": {
+        "v": "CORRECT"
+      },
+      "Q127": {
+        "v": "PARTIAL",
+        "why": "identified the shared validity difficulty and the BVAE's handling but said the corpus does not describe the molecular VAE's"
+      },
+      "Q128": {
+        "v": "PARTIAL",
+        "why": "named the thin-film lab, the mobile chemist and the Pareto-front lab rather than the Dragonfly test stand and the on-the-fly work (0/2 support docs)"
+      },
+      "Q129": {
+        "v": "PARTIAL",
+        "why": "gave SELFIES but said the corpus discusses no crystal string representation, omitting SLICES"
+      },
+      "Q130": {
+        "v": "PARTIAL",
+        "why": "gave iMatGen's 3D-image representation rather than xtal2png and the diffraction image; correctly rejected the question's false premise of a molecular image model (0/2 support docs)"
+      },
+      "Q131": {
+        "v": "PARTIAL",
+        "why": "role of DFT right; said the corpus names no frameworks that automate it (0/3 support docs)"
+      },
+      "Q132": {
+        "v": "PARTIAL",
+        "why": "hull meaning right; said the corpus does not identify two efforts reporting hull results at different scales"
+      },
+      "Q133": {
+        "v": "CORRECT"
+      },
+      "Q134": {
+        "v": "CORRECT"
+      },
+      "Q135": {
+        "v": "CORRECT"
+      },
+      "Q136": {
+        "v": "PARTIAL",
+        "why": "described equivariant GNNs and DPA-2's multi-task pretraining but never named NequIP nor identified both as MLIPs replacing DFT (1/3 support docs)"
+      },
+      "Q137": {
+        "v": "PARTIAL",
+        "why": "gave pool-based versus adaptive-sampling active learning rather than potential-training versus experiment selection (0/2 support docs)"
+      },
+      "Q138": {
+        "v": "WRONG",
+        "why": "said the corpus holds no shared representation choice between the Wyckoff transformer and the Wyckoff diffusion model; the cap-25 arm identified the Wyckoff representation"
+      },
+      "Q139": {
+        "v": "WRONG",
+        "why": "claimed the corpus holds no second space-group-conditioned transformer, describing only CrystalFormer (1/3 support docs)"
+      },
+      "Q140": {
+        "v": "CORRECT"
+      },
+      "Q141": {
+        "v": "PARTIAL",
+        "why": "gave MATGAN's charge-neutrality and electronegativity checks rather than DFT stability, and declined the diffusion side"
+      },
+      "Q142": {
+        "v": "WRONG",
+        "why": "declined the question entirely, saying the corpus does not describe generating many candidates from a smaller training set (0/2 support docs)"
+      },
+      "Q143": {
+        "v": "PARTIAL",
+        "why": "gave the unsupervised phase-field model but declined to name ElemNet, and rejected the complementary-steps framing"
+      },
+      "Q144": {
+        "v": "PARTIAL",
+        "why": "listed NequIP, MTP, DeepMD and others with distinctions but omitted DPA-2, and gave no detail for Allegro, CACE, CHGNet, M3GNet or PaiNN (1/4 support docs)"
+      },
+      "Q145": {
+        "v": "WRONG",
+        "why": "the generation was cut off mid-sentence after 233 characters with no error recorded - a mechanical truncation, not a reasoning failure; neither half of the answer was delivered"
+      },
+      "Q146": {
+        "v": "WRONG",
+        "why": "said the corpus contains nothing comparing self-driving laboratories with high-throughput screening (1/3 support docs)"
+      },
+      "Q147": {
+        "v": "PARTIAL",
+        "why": "named Chakraborty and Kuhar with what each screened for rather than the HOIP screen and the reinforcement-learning inverse design work"
+      },
+      "Q148": {
+        "v": "PARTIAL",
+        "why": "gave the photovoltaic trade-off and tandem rationale but did not tie bandgap to the lead-free HOIP screen or to conditioning"
+      },
+      "Q149": {
+        "v": "PARTIAL",
+        "why": "gave ML surrogates and model distillation rather than the active-learning potential and ElemNet (0/2 support docs)"
+      },
+      "Q150": {
+        "v": "WRONG",
+        "why": "said the corpus does not identify a risk of training only on curated databases (0/3 support docs)"
+      },
+      "Q151": {
+        "v": "CORRECT"
+      },
+      "Q152": {
+        "v": "CORRECT"
+      },
+      "Q153": {
+        "v": "CORRECT"
+      },
+      "Q154": {
+        "v": "PARTIAL",
+        "why": "gave the set2set readout to a single vector rather than the global state representation MEGNet consolidates into"
+      },
+      "Q155": {
+        "v": "CORRECT"
+      },
+      "Q156": {
+        "v": "CORRECT"
+      },
+      "Q157": {
+        "v": "CORRECT"
+      },
+      "Q158": {
+        "v": "CORRECT"
+      },
+      "Q159": {
+        "v": "CORRECT"
+      },
+      "Q160": {
+        "v": "CORRECT"
+      },
+      "Q161": {
+        "v": "PARTIAL",
+        "why": "described the detailed-balance loss and the mode-mixing problem but declined the 'two failure modes' framing - a flaw in the question (see questionFlaws)"
+      },
+      "Q162": {
+        "v": "CORRECT"
+      },
+      "Q163": {
+        "v": "CORRECT"
+      },
+      "Q164": {
+        "v": "PARTIAL",
+        "why": "distinguished CSP from DNG by whether composition is given; listed DNG metrics but said the corpus does not compare the two scoring regimes"
+      },
+      "Q165": {
+        "v": "PARTIAL",
+        "why": "gave RMSE and noted it is computed over matched structures, but declined to say why match rate alone understates the difficulty"
+      },
+      "Q166": {
+        "v": "PARTIAL",
+        "why": "gave the diffraction fingerprint correctly but said the corpus holds no image encoding, though xtal2png is in it and was described correctly for Q077"
+      },
+      "Q167": {
+        "v": "WRONG",
+        "why": "said the corpus contains no failed-experiment argument and identified no shared weakness"
+      },
+      "Q168": {
+        "v": "CORRECT"
+      },
+      "Q169": {
+        "v": "PARTIAL",
+        "why": "named CrysMMNet and PotNet, and credited CrysMMNet with bond-angle information rather than the textual modality; missed MEGNet's global state vector"
+      },
+      "Q170": {
+        "v": "CORRECT"
+      },
+      "Q171": {
+        "v": "WRONG",
+        "why": "named FlowMM and CrystalFlow as the two flow-based models but denied any shared flow-matching mathematics; the pair is FlowMM and FlowLLM"
+      },
+      "Q172": {
+        "v": "CORRECT"
+      },
+      "Q173": {
+        "v": "WRONG",
+        "why": "declined the parameter-count comparison entirely (0/2 support docs)"
+      },
+      "Q174": {
+        "v": "PARTIAL",
+        "why": "described what each metric measures but said outright the corpus does not explain why a model would diverge between them"
+      },
+      "Q175": {
+        "v": "PARTIAL",
+        "why": "traced the stages and gave the 57-from-146 target selection but none of the GNoME figures or the 36-of-57 outcome"
+      },
+      "Q176": {
+        "v": "WRONG",
+        "why": "denied that any representation guarantees a space group without explicit coordinates; the Wyckoff protostructure does (3/3 support docs retrieved)"
+      },
+      "Q177": {
+        "v": "PARTIAL",
+        "why": "gave MLIPs as an end in themselves but illustrated the pipeline role with generic [G] examples rather than the active-learning alloy search"
+      },
+      "Q178": {
+        "v": "WRONG",
+        "why": "said the corpus holds no papers that replace DFT for structure search or property prediction (0/3 support docs)"
+      },
+      "Q179": {
+        "v": "CORRECT"
+      },
+      "Q180": {
+        "v": "PARTIAL",
+        "why": "gave both data sources but treated the corpus as one duplicated study, missing the separate simulated-diffraction paper"
+      },
+      "Q181": {
+        "v": "PARTIAL",
+        "why": "GFlowNet's proportional sampling right; said the corpus does not explain how latent-space models achieve diversity"
+      },
+      "Q182": {
+        "v": "CORRECT"
+      },
+      "Q183": {
+        "v": "PARTIAL",
+        "why": "found only Ada, with its 280 C reference point; the second work is not a self-driving laboratory, so the question's premise is loose"
+      },
+      "Q184": {
+        "v": "PARTIAL",
+        "why": "gave MatBERT/MatSciBERT pretraining and CrysMMNet as the consumer rather than FlowLLM's crystal-text base distribution and Riemannian flow matching (0/2 support docs)"
+      },
+      "Q185": {
+        "v": "PARTIAL",
+        "why": "defined transferability and named DPA-2 but said the corpus does not discuss data efficiency as a distinct virtue"
+      },
+      "Q186": {
+        "v": "PARTIAL",
+        "why": "gave the lack of negative examples correctly but offered generative synthetic data and NLP curation rather than the reaction VAE and failed experiments as training data"
+      },
+      "Q187": {
+        "v": "WRONG",
+        "why": "said the corpus does not connect the lenient validity threshold to how models are ranked, having quoted the 0.5 A lenient standard itself"
+      },
+      "Q188": {
+        "v": "WRONG",
+        "why": "said the corpus holds only one such paper and declined to name two (0/2 support docs)"
+      },
+      "Q189": {
+        "v": "PARTIAL",
+        "why": "named CDVAE, CrystalFormer, MatterGen, SymmCD and the RFM model from graph facts - wider coverage than cap 25 - but declined the comparative contributions (0/5 support docs)"
+      },
+      "Q190": {
+        "v": "PARTIAL",
+        "why": "SymmCD's asymmetric unit and Wyckoff orbits right; named MatterGen and CrystalGAN rather than WyckoffDiff, WyCryst and the space-group transformer"
+      },
+      "Q191": {
+        "v": "PARTIAL",
+        "why": "gave composition, phase fields and protostructures generically rather than the five specific representations"
+      },
+      "Q192": {
+        "v": "PARTIAL",
+        "why": "GNoME's 736 realized structures right; explicitly ruled out the other papers, missing the A-Lab, Ada and the electrolyte platform (1/4 support docs)"
+      },
+      "Q193": {
+        "v": "PARTIAL",
+        "why": "MOFormer and its MOFid input right; missed MatterGPT/SLICES, the SMILES Transformer and Matformer/ComFormer (1/4 support docs)"
+      },
+      "Q194": {
+        "v": "WRONG",
+        "why": "gave Frechet Inception Distance and image-generation metrics rather than match rate, validity, stability and S.U.N. (0/4 support docs)"
+      },
+      "Q195": {
+        "v": "PARTIAL",
+        "why": "named interatomic potentials, MTP, GNN molecular dynamics, CGCNN and MEGNet as DFT surrogates from graph facts - the cap-25 arm listed none (0/4 support docs)"
+      },
+      "Q196": {
+        "v": "PARTIAL",
+        "why": "gave SMILES-based, grammar-VAE, graph-based and autoregressive families rather than the molecular VAE, MolGAN, GraphVAE and reaction VAE (1/4 support docs)"
+      },
+      "Q197": {
+        "v": "PARTIAL",
+        "why": "gave publication bias, missing negative data and index-database skew rather than ordered-crystal databases, success-only literature and lenient novelty reference sets (0/3 support docs)"
+      },
+      "Q198": {
+        "v": "PARTIAL",
+        "why": "listed pretraining and transfer-learning strategies; coverage incomplete"
+      },
+      "Q199": {
+        "v": "PARTIAL",
+        "why": "gave post-hoc XAI, feature visualisation and text descriptions rather than CGCNN site contributions, attentive response maps and invariant descriptors (0/3 support docs)"
+      },
+      "Q200": {
+        "v": "WRONG",
+        "why": "answered with drug-design targets - synthetic accessibility, docking score, QED - rather than the materials properties asked for (0/4 support docs)"
+      }
+    }
+  },
+  "questionFlaws": {
+    "Q019": "The expected answer took review B's figure of 275,000 ElemNet training compounds; the cited paper says 256,622. Answers matching the paper are graded correct.",
+    "Q134": "The expected answer used our arithmetic (57-36 = 21 unobtained targets); the A-Lab paper says 17. Answers matching the paper are graded correct.",
+    "Q161": "The question invented a 'two failure modes' framing; GFlowNet Foundations frames detailed balance as a local training objective. Declining the premise is not penalised."
+  }
+}

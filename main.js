@@ -43,6 +43,7 @@
  */
 
 import fs from 'fs/promises';
+import fsSync from 'fs';
 import path from 'path';
 import { fileURLToPath, pathToFileURL } from 'url';
 import { createRequire } from 'node:module';
@@ -90,8 +91,12 @@ const EMBED_MODEL = process.env.CLIENT_EMBEDDING_MODEL || 'Xenova/all-MiniLM-L12
 
 const STAMP     = new Date().toISOString().replace(/\..+$/, 'Z').replace(/:/g, '-');
 const PREFIX    = ANSWERS ? 'benchmark' : 'retrieval';
-const TXT_PATH  = path.join(ROOT, `${PREFIX}_${STAMP}.txt`);
-const JSON_PATH = path.join(ROOT, `${PREFIX}_${STAMP}.jsonl`);
+// New runs land in runs/; the ones a report actually cites get promoted into the
+// matching experiments/<nn>-<name>/ folder, so the root stays clean.
+const RUNS_DIR  = path.join(ROOT, 'runs');
+fsSync.mkdirSync(RUNS_DIR, { recursive: true });
+const TXT_PATH  = path.join(RUNS_DIR, `${PREFIX}_${STAMP}.txt`);
+const JSON_PATH = path.join(RUNS_DIR, `${PREFIX}_${STAMP}.jsonl`);
 
 const WIDTH  = ANSWERS ? 78 : 110;  // chunk rows are tabular; prose wraps narrower
 const GUTTER = ' '.repeat(11);      // aligns continuation lines under "PROMPT   : "

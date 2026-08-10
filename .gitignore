@@ -7,8 +7,12 @@ node_modules/
 # only chunk metadata (filename, pages, chunkId, scores) and are safe to commit.
 retrieval_*.jsonl
 
+# Scratch output. main.js and synthesis_benchmark.js write every run here; the ones a
+# report actually cites are promoted into experiments/<nn>-<name>/ and committed there.
+runs/
+
 # Source corpora. Same reasoning as above: these are third-party documents and this
 # repository is public. The benchmarks reference them by docId and by short verbatim
 # quotes in evidence.json; the PDFs themselves stay local.
 documents/
-Synthesis benchmark/*.pdf
+experiments/03-synthesis/*.pdf

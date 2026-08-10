@@ -43,7 +43,7 @@ import { parseArgs } from 'node:util';
 import { pipeline } from '@xenova/transformers';
 
 const ROOT = path.dirname(fileURLToPath(import.meta.url));
-const BENCH_DIR = path.join(ROOT, 'Synthesis benchmark');
+const BENCH_DIR = path.join(ROOT, 'experiments', '03-synthesis');
 const QUESTIONS_PATH = path.join(BENCH_DIR, 'questions.json');
 const EVIDENCE_PATH  = path.join(BENCH_DIR, 'evidence.json');
 
@@ -302,10 +302,14 @@ async function ask(collectionId, question) {
 // ---------------------------------------------------------------------------
 
 const files = new Map();
+// New runs land in runs/; the ones a report cites get promoted into the matching
+// experiments/<nn>-<name>/ folder, so the repository root stays clean.
+const RUNS_DIR = path.join(ROOT, 'runs');
+await fs.mkdir(RUNS_DIR, { recursive: true });
 for (const id of ARMS) {
   const row = collections.get(id);
-  const txt  = path.join(ROOT, `synthesis_c${id}_${STAMP}.txt`);
-  const json = path.join(ROOT, `synthesis_c${id}_${STAMP}.jsonl`);
+  const txt  = path.join(RUNS_DIR, `synthesis_c${id}_${STAMP}.txt`);
+  const json = path.join(RUNS_DIR, `synthesis_c${id}_${STAMP}.jsonl`);
   files.set(id, { txt, json });
   await fs.writeFile(txt, [
     '='.repeat(WIDTH),
