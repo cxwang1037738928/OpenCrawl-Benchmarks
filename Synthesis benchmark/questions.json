@@ -1,0 +1,1202 @@
+[
+ {
+  "id": "Q001",
+  "type": "single_doc",
+  "question": "How many structures did GNoME find that are stable with respect to previous work, and how many of those lie on the updated convex hull as newly discovered stable materials?",
+  "expectedAnswer": "About 2.2 million candidate structures stable with respect to previous work, of which roughly 381,000 lie on the updated convex hull as new stable materials."
+ },
+ {
+  "id": "Q002",
+  "type": "single_doc",
+  "question": "Of the stable structures reported by GNoME, how many have been independently experimentally realized?",
+  "expectedAnswer": "736 structures have been independently experimentally realized (verified)."
+ },
+ {
+  "id": "Q003",
+  "type": "single_doc",
+  "question": "Over how many days did the autonomous laboratory operate, how many target compounds did it realize, and out of how many targets?",
+  "expectedAnswer": "Over 17 days of continuous operation it realized 36 of 57 target compounds, a 63% success rate."
+ },
+ {
+  "id": "Q004",
+  "type": "single_doc",
+  "question": "How many experiments did the autonomous inorganic-synthesis laboratory perform during its closed-loop campaign?",
+  "expectedAnswer": "353 experiments over 17 days of closed-loop operation."
+ },
+ {
+  "id": "Q005",
+  "type": "cross_doc",
+  "question": "Both DiffCSP and FlowMM generate crystals, but they use different generative formulations. What is the underlying formulation of each, and which network do they share?",
+  "expectedAnswer": "DiffCSP uses joint equivariant diffusion over lattice and fractional coordinates; FlowMM uses Riemannian flow matching. FlowMM deliberately uses exactly the same underlying neural network as DiffCSP for an apples-to-apples comparison."
+ },
+ {
+  "id": "Q006",
+  "type": "cross_doc",
+  "question": "On the MP-20 benchmark, how few integration steps did FlowMM need to beat DiffCSP on match rate, and what does that represent in efficiency terms?",
+  "expectedAnswer": "As few as 50 integration steps, representing at least an order-of-magnitude improvement over DiffCSP."
+ },
+ {
+  "id": "Q007",
+  "type": "cross_doc",
+  "question": "CrystalFlow is described as symmetry-aware. Which symmetries does it explicitly incorporate, and which three quantities does it generate simultaneously?",
+  "expectedAnswer": "It incorporates the periodic-E(3) symmetries of crystals — permutation invariance, rotation invariance and periodic translation invariance — and simultaneously generates lattice parameters, fractional coordinates and atom types."
+ },
+ {
+  "id": "Q008",
+  "type": "cross_doc",
+  "question": "What does the S.U.N. rate measure for crystal generative models, and what S.U.N. ratio does MatterGen report compared with CDVAE?",
+  "expectedAnswer": "S.U.N. is the percentage of generated materials that are simultaneously stable, unique and novel. MatterGen reports a S.U.N. ratio of about 45% and CDVAE about 18%."
+ },
+ {
+  "id": "Q009",
+  "type": "single_doc",
+  "question": "How many experimentally verified ICSD structures did MatterGen re-discover that it had not seen during training, and what does that demonstrate?",
+  "expectedAnswer": "More than 2,000 experimentally verified ICSD structures not seen during training, showing its ability to generate synthesizable materials."
+ },
+ {
+  "id": "Q010",
+  "type": "cross_doc",
+  "question": "How many space groups exist for three-dimensional crystal structures, and what two tables does the space-group informed transformer combine to construct a crystal?",
+  "expectedAnswer": "There are 230 space groups. The model combines the periodic table of elements with the table of Wyckoff positions of the 230 space groups, placing atoms sequentially into Wyckoff positions in the unit cell."
+ },
+ {
+  "id": "Q011",
+  "type": "cross_doc",
+  "question": "The space-group informed transformer trains on MP-20 even though the dataset does not cover every symmetry. How many of the 230 space groups have no training data, and why was MP-20 still chosen?",
+  "expectedAnswer": "There is no training data in 61 of the 230 space groups; MP-20 was still used so the model's performance could be gauged against others in the literature."
+ },
+ {
+  "id": "Q012",
+  "type": "single_doc",
+  "question": "In the CDVAE architecture, how many parameters does the encoder have and how many does the decoder have?",
+  "expectedAnswer": "The encoder has 2.2 million parameters and the decoder has 2.3 million parameters."
+ },
+ {
+  "id": "Q013",
+  "type": "enumerate",
+  "question": "Which crystal generative models are evaluated on the MP-20 benchmark across this corpus, and what metric is used to compare their crystal-structure-prediction performance?",
+  "expectedAnswer": "CDVAE, DiffCSP, FlowMM and CrystalFlow (among others) are all evaluated on MP-20; they are compared by match rate and RMSE computed with StructureMatcher."
+ },
+ {
+  "id": "Q014",
+  "type": "multi_hop",
+  "question": "GNoME's discoveries were used to train interatomic potentials. Which equivariant neural-network potential architecture does that line of work build on, and what property of that architecture makes it data-efficient?",
+  "expectedAnswer": "It builds on NequIP, an E(3)-equivariant graph neural network for interatomic potentials; its equivariance to rotations, translations and permutations makes it markedly more data-efficient than invariant models."
+ },
+ {
+  "id": "Q015",
+  "type": "cross_doc",
+  "question": "Which representation do WyckoffDiff and WyCryst both build on, and what advantage does that representation give a generative model?",
+  "expectedAnswer": "Both build on the Wyckoff-position representation of crystal symmetry, which lets the model generate symmetric structures by construction rather than having to learn symmetry from coordinates."
+ },
+ {
+  "id": "Q016",
+  "type": "cross_doc",
+  "question": "SELFIES was introduced to fix a specific failure of SMILES. What is that failure, and what does SELFIES guarantee instead?",
+  "expectedAnswer": "SMILES strings can be syntactically invalid, so a generative model can emit strings that do not correspond to any molecule. SELFIES is a 100% robust representation in which every string maps to a valid molecule."
+ },
+ {
+  "id": "Q017",
+  "type": "cross_doc",
+  "question": "CGCNN and MEGNet are both graph networks for crystals. What does MEGNet add beyond atom and bond updates that CGCNN does not have?",
+  "expectedAnswer": "MEGNet introduces a global state attribute updated alongside atom (node) and bond (edge) features, so information is consolidated into a whole-material state vector; CGCNN updates only atom and bond representations."
+ },
+ {
+  "id": "Q018",
+  "type": "multi_hop",
+  "question": "MOFormer is a transformer for metal-organic frameworks that is trained together with a structure-based model in a self-supervised setup. Which structure-based crystal network is it paired with, and what does that network take as input?",
+  "expectedAnswer": "It is paired with CGCNN, which operates on the 3D crystal structure represented as a graph, while MOFormer operates on the MOFid string; the two embeddings are aligned in a self-supervised framework."
+ },
+ {
+  "id": "Q019",
+  "type": "single_doc",
+  "question": "ElemNet predicts formation enthalpy from composition alone. How many OQMD compounds was it trained on, and what mean absolute error did it achieve?",
+  "expectedAnswer": "It was trained on about 275,000 OQMD compounds and achieved a mean absolute error of roughly 0.050 eV/atom."
+ },
+ {
+  "id": "Q020",
+  "type": "cross_doc",
+  "question": "Two databases are repeatedly named as the training sources for inorganic crystal generative models in this corpus. Which are they, and what kind of data does each hold?",
+  "expectedAnswer": "The Materials Project and the Open Quantum Materials Database (OQMD), both holding DFT-computed properties of inorganic crystal structures such as formation energies and stability data."
+ },
+ {
+  "id": "Q021",
+  "type": "single_doc",
+  "question": "Crystal-GFN samples crystals as a GFlowNet. Which three structural attributes does it sample sequentially?",
+  "expectedAnswer": "Space group, composition and lattice parameters."
+ },
+ {
+  "id": "Q022",
+  "type": "single_doc",
+  "question": "What median predicted formation energy did Crystal-GFN achieve for the crystals it sampled?",
+  "expectedAnswer": "A median predicted formation energy of about -3.2 eV/atom."
+ },
+ {
+  "id": "Q023",
+  "type": "single_doc",
+  "question": "MatterGPT encodes crystals as strings so a transformer can generate them. Which string notation does it use, and what training task is the model trained on?",
+  "expectedAnswer": "It uses SLICES (Simplified Line-Input Crystal-Encoding System) notation and is trained on next-token prediction."
+ },
+ {
+  "id": "Q024",
+  "type": "single_doc",
+  "question": "MatterGPT is demonstrated on one lattice-insensitive and one lattice-sensitive property, namely formation energy and band gap. Which of the two is lattice-sensitive?",
+  "expectedAnswer": "Formation energy is the lattice-insensitive property and band gap is the lattice-sensitive one."
+ },
+ {
+  "id": "Q025",
+  "type": "cross_doc",
+  "question": "FlowLLM combines two generative mechanisms. What are they, and by how much does it improve the generation rate of stable materials and of stable, unique and novel crystals?",
+  "expectedAnswer": "It combines a fine-tuned large language model as the base distribution with Riemannian flow matching, increasing the stable-material generation rate by more than three times and the stable-unique-novel rate by about 50%."
+ },
+ {
+  "id": "Q026",
+  "type": "single_doc",
+  "question": "SymmCD decomposes a crystal into two components whose joint distribution it learns by diffusion. What are those two components?",
+  "expectedAnswer": "The asymmetric unit — the smallest subset that generates the whole crystal under symmetry — and the symmetry transformations applied to each atom in that asymmetric unit."
+ },
+ {
+  "id": "Q027",
+  "type": "cross_doc",
+  "question": "WyckoffDiff introduces a new evaluation metric for symmetry. What is it called, and what advantage does the model's discrete formulation give it?",
+  "expectedAnswer": "The Fréchet Wrenformer Distance, which captures the symmetry aspects of generated materials; the discrete nature of the model enables fast generation while respecting symmetry by construction."
+ },
+ {
+  "id": "Q028",
+  "type": "single_doc",
+  "question": "The WyCryst framework for inorganic crystal generation is built from three components, one of which is a VAE. What are all three?",
+  "expectedAnswer": "A Wyckoff-position based inorganic crystal representation, a property-directed VAE model, and an automated DFT workflow for structure refinement."
+ },
+ {
+  "id": "Q029",
+  "type": "cross_doc",
+  "question": "NequIP claims a large data-efficiency advantage. How much less training data does it need than existing models, and what architectural choice produces that advantage?",
+  "expectedAnswer": "Up to three orders of magnitude fewer training data, achieved by using E(3)-equivariant convolutions over geometric tensors instead of invariant convolutions acting only on scalars."
+ },
+ {
+  "id": "Q030",
+  "type": "cross_doc",
+  "question": "MEGNet was benchmarked against SchNet. On how many of the QM9 properties did it do better, and roughly how many Materials Project crystals was the crystal model trained on?",
+  "expectedAnswer": "MEGNet outperformed SchNet on 11 of 13 QM9 properties, and the crystal models were trained on about 60,000 Materials Project crystals."
+ },
+ {
+  "id": "Q031",
+  "type": "single_doc",
+  "question": "What is the central architectural innovation of SchNet, and why was it needed for molecules?",
+  "expectedAnswer": "Continuous-filter convolutional layers, needed because atoms in molecules are not restricted to a grid and discretizing their precise positions would lose essential physical information."
+ },
+ {
+  "id": "Q032",
+  "type": "cross_doc",
+  "question": "CGCNN is presented as interpretable as well as accurate. What can be extracted from the model, and on which material family is that interpretability demonstrated?",
+  "expectedAnswer": "The contributions of local chemical environments to the global property can be extracted; this is demonstrated on perovskites, where it yields empirical design rules."
+ },
+ {
+  "id": "Q033",
+  "type": "multi_hop",
+  "question": "A robotic platform discovered a battery electrolyte without human intervention. Which Bayesian optimization package guided it, and over how many hours of continuous experimentation did the discovery happen?",
+  "expectedAnswer": "Dragonfly, a Bayesian machine-learning package, guided the robotic test stand, discovering a mixed-anion aqueous sodium electrolyte in 40 hours of continuous experimentation."
+ },
+ {
+  "id": "Q034",
+  "type": "multi_hop",
+  "question": "Autonomous laboratories are reported for two different chemistries in this corpus: one synthesizing inorganic solids and one searching liquid electrolytes. What did each realize, and which used a mobile robot?",
+  "expectedAnswer": "The inorganic-solids A-Lab realized 36 of 57 targets in 17 days; the electrolyte platform found a novel mixed-anion aqueous sodium electrolyte in 40 hours; a separate mobile robotic chemist moved between instruments to run photocatalysis experiments."
+ },
+ {
+  "id": "Q035",
+  "type": "cross_doc",
+  "question": "Why is a mobile robot argued to be preferable to a fixed automated platform for materials research?",
+  "expectedAnswer": "Because materials research demands a diversity of sample types, operations, instruments and measurements that fixed platforms cannot cover, so a mobile robot that moves between existing instruments generalizes where a bespoke rig does not."
+ },
+ {
+  "id": "Q036",
+  "type": "enumerate",
+  "question": "Which diffusion-based crystal generative models in this corpus explicitly incorporate crystallographic symmetry, and what is each one's mechanism for doing so?",
+  "expectedAnswer": "SymmCD, via the asymmetric unit plus learned symmetry transformations; WyckoffDiff, via a Wyckoff-position representation in a discrete diffusion model; and the space-group informed transformer, via space-group conditioning and Wyckoff placement. DiffCSP by contrast diffuses lattice and fractional coordinates without explicit space-group constraints."
+ },
+ {
+  "id": "Q037",
+  "type": "cross_doc",
+  "question": "Two distinct papers in this corpus both present a flow-matching generative model for crystals. What distinguishes the base distribution used by each?",
+  "expectedAnswer": "CrystalFlow flows from simple analytic prior distributions over lattice, fractional coordinates and atom types; FlowLLM instead uses a fine-tuned large language model as the base distribution, then refines its samples with Riemannian flow matching."
+ },
+ {
+  "id": "Q038",
+  "type": "multi_hop",
+  "question": "The MP-20 dataset is used to train several crystal generative models. Which database is MP-20 drawn from, and roughly how many crystals did MEGNet train on from that same database?",
+  "expectedAnswer": "MP-20 is drawn from the Materials Project; MEGNet's crystal models were trained on about 60,000 Materials Project crystals."
+ },
+ {
+  "id": "Q039",
+  "type": "cross_doc",
+  "question": "Which structural quantity do DiffCSP and CrystalFlow both generate jointly with the lattice, and why does generating it require special treatment?",
+  "expectedAnswer": "Both jointly generate fractional coordinates with the lattice; fractional coordinates live on a periodic domain, so the model must respect periodic translation invariance rather than treating them as ordinary Euclidean coordinates."
+ },
+ {
+  "id": "Q040",
+  "type": "single_doc",
+  "question": "In the space-group informed transformer, how is a crystal constructed once a space group has been chosen?",
+  "expectedAnswer": "Atoms are selected from the periodic table and placed sequentially into the Wyckoff positions of the chosen space group within the unit cell."
+ },
+ {
+  "id": "Q041",
+  "type": "multi_hop",
+  "question": "GNoME reports discoveries validated against a stability criterion. What is that criterion, and which database's convex hull is used as the reference?",
+  "expectedAnswer": "Stability with respect to the convex hull of competing phases, referenced against the Materials Project; 381,000 GNoME entries sit on the updated convex hull."
+ },
+ {
+  "id": "Q042",
+  "type": "cross_doc",
+  "question": "Both a large-scale GNN screening effort and an autonomous laboratory appear in this corpus and are connected. What data did the autonomous laboratory use to choose its synthesis targets?",
+  "expectedAnswer": "It selected targets using large-scale ab initio phase-stability data from the Materials Project and Google DeepMind — that is, from the same large-scale DFT/GNN discovery effort."
+ },
+ {
+  "id": "Q043",
+  "type": "single_doc",
+  "question": "How many structural prototypes and how many elements did the autonomous laboratory's target set span?",
+  "expectedAnswer": "33 elements and 40 structural prototypes."
+ },
+ {
+  "id": "Q044",
+  "type": "cross_doc",
+  "question": "What does StructureMatcher do in the evaluation of crystal generative models, and which tolerance settings are used for the match-rate calculation?",
+  "expectedAnswer": "StructureMatcher decides whether a generated structure matches the ground-truth structure within tolerances; FlowMM reports settings stol = 0.5, angle_tol = 10, ltol = 0.3."
+ },
+ {
+  "id": "Q045",
+  "type": "multi_hop",
+  "question": "Which two datasets are used together to report crystal-structure-prediction performance for flow and diffusion models, and which of the two is described as the more challenging?",
+  "expectedAnswer": "MP-20 and MPTS-52; MPTS-52 is the more challenging and realistic of the two."
+ },
+ {
+  "id": "Q046",
+  "type": "cross_doc",
+  "question": "Why does a benchmark of generative crystal models need a novelty measure in addition to a stability measure?",
+  "expectedAnswer": "Because a model can score well on stability by reproducing structures already in the training database; the stable, unique and novel (S.U.N.) rate is used so that only genuinely new stable structures count."
+ },
+ {
+  "id": "Q047",
+  "type": "enumerate",
+  "question": "Which generative architectures for inorganic crystals are represented in this corpus, and what family does each belong to?",
+  "expectedAnswer": "Variational autoencoders (CDVAE, WyCryst), diffusion models (DiffCSP, SymmCD, WyckoffDiff, MatterGen), flow matching (FlowMM, CrystalFlow, FlowLLM), transformers (MatterGPT, the space-group informed transformer) and GFlowNets (Crystal-GFN)."
+ },
+ {
+  "id": "Q048",
+  "type": "multi_hop",
+  "question": "Crystal-GFN is described as a multi-environment continuous-discrete GFlowNet. Which of the attributes it samples are discrete and which are continuous?",
+  "expectedAnswer": "Space group and composition are discrete attributes, while the lattice parameters are continuous — hence the mixed continuous-discrete GFlowNet formulation."
+ },
+ {
+  "id": "Q049",
+  "type": "cross_doc",
+  "question": "What hard constraints can a GFlowNet-based crystal sampler enforce that an unconstrained diffusion model cannot, and why does that matter for generated candidates?",
+  "expectedAnswer": "It can enforce physicochemical and geometric hard constraints during sampling — for example charge neutrality and space-group validity — so generated crystals are valid by construction rather than filtered afterwards."
+ },
+ {
+  "id": "Q050",
+  "type": "single_doc",
+  "question": "What limitations of earlier generative models does MatterGPT explicitly identify as having held back their adoption?",
+  "expectedAnswer": "Inefficiency, architectural constraints and restricted open-source availability."
+ },
+ {
+  "id": "Q051",
+  "type": "single_doc",
+  "question": "MolGAN generates molecular graphs directly. What does operating on graphs let it avoid, and what proportion of valid compounds does it reach on QM9?",
+  "expectedAnswer": "It avoids expensive graph matching procedures and node-ordering heuristics required by likelihood-based methods, and generates close to 100% valid compounds on QM9."
+ },
+ {
+  "id": "Q052",
+  "type": "cross_doc",
+  "question": "MolGAN combines an adversarial objective with a second training signal to steer generation toward desired chemistry. What is that second signal, and which representation does MolGAN compare itself against?",
+  "expectedAnswer": "A reinforcement learning objective encourages molecules with specific desired chemical properties; MolGAN compares favourably against string-based SMILES representations."
+ },
+ {
+  "id": "Q053",
+  "type": "single_doc",
+  "question": "What problem with standard cross-domain GANs motivated CrystalGAN, and what does CrystalGAN generate?",
+  "expectedAnswer": "Materials science needs data of higher order complexity than the observed samples, which state-of-the-art cross-domain GANs cannot produce directly; CrystalGAN generates new chemically stable crystallographic structures with increased domain complexity."
+ },
+ {
+  "id": "Q054",
+  "type": "cross_doc",
+  "question": "The VAE approach to molecular design trains three coupled functions. What are they, and what does the third one enable that a plain autoencoder cannot?",
+  "expectedAnswer": "An encoder, a decoder and a predictor. The predictor estimates chemical properties from the latent vector, so the continuous latent space can be optimized directly toward target properties rather than only reconstructed."
+ },
+ {
+  "id": "Q055",
+  "type": "cross_doc",
+  "question": "What operations in a continuous latent space are used to generate new molecules, and why does a continuous representation make that possible?",
+  "expectedAnswer": "Decoding random vectors, perturbing known structures and interpolating between molecules; a continuous representation converts discrete molecular structures into real-valued vectors on which such arithmetic is meaningful."
+ },
+ {
+  "id": "Q056",
+  "type": "cross_doc",
+  "question": "GraphVAE generates graphs in a way that avoids sequential construction. What does its decoder output, and what limitation does that impose?",
+  "expectedAnswer": "The decoder outputs a probabilistic fully-connected graph of a predefined maximum size all at once, sidestepping linearization — but it therefore limits generation to small graphs of bounded size."
+ },
+ {
+  "id": "Q057",
+  "type": "multi_hop",
+  "question": "Diffusion models for materials descend from an idea in non-equilibrium statistical physics. What is the forward process, and what is learned to invert it?",
+  "expectedAnswer": "A forward diffusion process systematically and slowly destroys structure in the data distribution; a reverse diffusion process is then learned to restore that structure, yielding a flexible and tractable generative model."
+ },
+ {
+  "id": "Q058",
+  "type": "cross_doc",
+  "question": "Matminer provides featurization for materials data. How many featurization classes does it offer, and which external databases can it retrieve from?",
+  "expectedAnswer": "44 featurization classes that generate thousands of descriptors, with retrieval from external databases including the Materials Project, Citrination, the Materials Data Facility and the Materials Platform for Data Science."
+ },
+ {
+  "id": "Q059",
+  "type": "cross_doc",
+  "question": "What does the acronym FAIR stand for in materials data infrastructure, and which repository in this corpus is built explicitly around that concept?",
+  "expectedAnswer": "Findable, Accessible, Interoperable and Reusable; the NOMAD (Novel Materials Discovery) Centre of Excellence is built around comprehensive FAIR data sharing for computational materials science."
+ },
+ {
+  "id": "Q060",
+  "type": "cross_doc",
+  "question": "A reinforcement learning approach to inverse inorganic design targets both property and synthesis objectives. Which chemical guidelines did the models learn, and which synthesis objectives were targeted?",
+  "expectedAnswer": "The models learned negative formation energy, charge neutrality and electronegativity balance, while targeting low sintering and calcination temperatures alongside band gap, formation energy, bulk modulus and shear modulus."
+ },
+ {
+  "id": "Q061",
+  "type": "cross_doc",
+  "question": "Periodic crystal graphs need an invariance that ordinary molecular graphs do not. What is it, and which transformer architecture was designed to provide it?",
+  "expectedAnswer": "Periodic invariance — the representation must be unchanged by shifts of the artificially imposed unit-cell boundaries. Matformer is the transformer designed to be invariant to periodicity while capturing repeating patterns explicitly."
+ },
+ {
+  "id": "Q062",
+  "type": "cross_doc",
+  "question": "ComFormer comes in two variants for predicting the properties of crystals. What distinguishes them, and what type of symmetry group is ComFormer built around?",
+  "expectedAnswer": "iComFormer uses invariant geometric descriptors of Euclidean distances and angles, while eComFormer uses equivariant vector representations; ComFormer is an SE(3) transformer for crystalline materials."
+ },
+ {
+  "id": "Q063",
+  "type": "multi_hop",
+  "question": "Graph transformers for crystals and equivariant interatomic potentials both rely on symmetry groups. Which group does the crystal property transformer use, and which does the interatomic potential use?",
+  "expectedAnswer": "ComFormer is an SE(3) transformer for crystal property prediction, while NequIP uses E(3)-equivariant convolutions for interatomic potentials — E(3) additionally covers reflections."
+ },
+ {
+  "id": "Q064",
+  "type": "cross_doc",
+  "question": "CrysMMNet argues that a crystal graph alone is insufficient for crystal property prediction. What global information does the graph miss, and what second modality does CrysMMNet add?",
+  "expectedAnswer": "A crystal graph captures local chemical semantics but misses global periodic structural information such as space group number, crystal symmetry and rotational information; CrysMMNet adds textual descriptions of the material as a second modality."
+ },
+ {
+  "id": "Q065",
+  "type": "single_doc",
+  "question": "The Binded-VAE was developed for a data regime that defeats standard generative models. What two data characteristics motivated it?",
+  "expectedAnswer": "Discrete features and severe sparsity in the description of compounds as vectors of component proportions."
+ },
+ {
+  "id": "Q066",
+  "type": "cross_doc",
+  "question": "Why can standard generative-model validation metrics not be used for inorganic compound generation, and what did the Binded-VAE work do instead?",
+  "expectedAnswer": "Metrics such as visual verification, FID and Inception scores are tailored to images and do not transfer to compounds, so the work introduced novel metrics adapted to compound generation."
+ },
+ {
+  "id": "Q067",
+  "type": "cross_doc",
+  "question": "A self-driving laboratory was used to map a trade-off rather than a single optimum. Which two quantities were traded off, and what processing temperature did it reach compared with prior art?",
+  "expectedAnswer": "Conductivity against processing temperature for palladium films made by combustion synthesis; it found metallic films below 200 °C, against 250 °C for the prior art."
+ },
+ {
+  "id": "Q068",
+  "type": "multi_hop",
+  "question": "Bayesian optimization is described as insufficient for some materials-design goals. What is the stated limitation, and what three strategies does the Bayesian algorithm execution framework provide instead?",
+  "expectedAnswer": "Bayesian optimization only seeks candidates that maximize a property, whereas design often needs specific subsets of the design space; the framework provides SwitchBAX, InfoBAX and MeanBAX, translated automatically from user-defined filtering algorithms."
+ },
+ {
+  "id": "Q069",
+  "type": "cross_doc",
+  "question": "Active learning of interatomic potentials was used to accelerate alloy searches. Which three alloy systems were used to demonstrate it, and what role was DFT reduced to?",
+  "expectedAnswer": "Cu-Pd, Co-Nb-V and Al-Ni-Ti; DFT was used only to produce training data, while structural optimization was carried out with the machine-learning interatomic potential."
+ },
+ {
+  "id": "Q070",
+  "type": "cross_doc",
+  "question": "What advantage does an active-learning interatomic potential have over cluster expansion when predicting alloy structures?",
+  "expectedAnswer": "It is not limited to one or a small number of lattice types, so it can predict structures with lattice types absent from the training dataset — unlike cluster expansion."
+ },
+ {
+  "id": "Q071",
+  "type": "cross_doc",
+  "question": "Embedding physical laws directly into a neural network is presented as a response to a specific shortage in scientific machine learning. What is that shortage, and how does the approach compensate?",
+  "expectedAnswer": "Training deep networks needs big data, which is often unavailable for scientific problems; physics-informed learning compensates by enforcing physical laws as additional information, for example at random points in the space-time domain."
+ },
+ {
+  "id": "Q072",
+  "type": "cross_doc",
+  "question": "In transfer learning, what assumption of conventional machine learning is violated, and what does successful knowledge transfer avoid?",
+  "expectedAnswer": "The assumption that training and future data share a feature space and distribution; successful transfer avoids much expensive data-labeling effort."
+ },
+ {
+  "id": "Q073",
+  "type": "multi_hop",
+  "question": "Machine-learned force fields are validated on phenomena beyond the reach of ab initio methods. Which two phenomena are given as examples, and for which element?",
+  "expectedAnswer": "Surface melting and stress-strain behaviour, demonstrated for aluminium (Al), phenomena that exceed ab initio methods in both length and time scales."
+ },
+ {
+  "id": "Q074",
+  "type": "enumerate",
+  "question": "Which graph neural network architectures for predicting crystal or molecular properties appear in this corpus, and what does each contribute?",
+  "expectedAnswer": "SchNet (continuous-filter convolutions for off-grid atoms), CGCNN (interpretable crystal graph convolutions), MEGNet (a global state alongside atom and bond updates), Matformer (periodic invariance) and ComFormer (SE(3) invariant and equivariant variants)."
+ },
+ {
+  "id": "Q075",
+  "type": "multi_hop",
+  "question": "Two generative models in this corpus both use a VAE but differ in what they encode. What does the molecular one encode, and what does the inorganic-crystal one encode?",
+  "expectedAnswer": "The molecular VAE encodes SMILES strings into a continuous latent space; CDVAE encodes periodic crystal structures, generating lattice and atom positions for periodic materials."
+ },
+ {
+  "id": "Q076",
+  "type": "cross_doc",
+  "question": "Why do benchmarks built only on ordered crystal databases give an incomplete picture of generative models, and which benchmark in this corpus addresses that gap?",
+  "expectedAnswer": "Because they never test disordered materials and interfaces, which are common in practice; Dismai-Bench benchmarks generative models specifically on disordered materials and interfaces."
+ },
+ {
+  "id": "Q077",
+  "type": "single_doc",
+  "question": "What is the purpose of the xtal2png package, and what representation does it convert crystal structures into?",
+  "expectedAnswer": "It encodes crystal structures as PNG image files so that image-based machine learning models can be applied to crystals."
+ },
+ {
+  "id": "Q078",
+  "type": "cross_doc",
+  "question": "Voxel and image encodings both discretize a crystal onto a grid. What does that buy, and what does the corpus give as the main cost?",
+  "expectedAnswer": "It makes convolutional architectures directly applicable to 3D structure, but high-resolution grids are computationally expensive and handle periodic boundary conditions poorly."
+ },
+ {
+  "id": "Q079",
+  "type": "multi_hop",
+  "question": "DPA-2 is described as a large atomic model. What training paradigm does it use to cover many chemistries at once, and what class of quantity does it ultimately predict?",
+  "expectedAnswer": "It is a multi-task learner trained across many datasets simultaneously, and it predicts interatomic potential energies and forces as a machine-learning potential."
+ },
+ {
+  "id": "Q080",
+  "type": "cross_doc",
+  "question": "Which two papers in this corpus present essentially the same equivariant interatomic potential under different symmetry-group labels, and what is the difference between those groups?",
+  "expectedAnswer": "Two versions of NequIP appear, one labelled SE(3)-equivariant and the later one E(3)-equivariant; E(3) additionally includes reflections (improper rotations) whereas SE(3) covers only proper rotations and translations."
+ },
+ {
+  "id": "Q081",
+  "type": "cross_doc",
+  "question": "What claim about deep learning does the NequIP result challenge, and what does its data efficiency make newly practical?",
+  "expectedAnswer": "It challenges the widely held belief that deep neural networks require massive training sets, and its data efficiency makes it practical to build potentials from high-order quantum chemical reference data and run high-fidelity molecular dynamics over long timescales."
+ },
+ {
+  "id": "Q082",
+  "type": "single_doc",
+  "question": "How does MEGNet's performance on crystals compare with DFT, and on what size of dataset?",
+  "expectedAnswer": "MEGNet achieves better than DFT accuracy for formation energies, band gaps and elastic moduli, over a much larger dataset than DFT could cover."
+ },
+ {
+  "id": "Q083",
+  "type": "cross_doc",
+  "question": "Fixed-length feature vectors were the conventional way to feed crystals to machine learning. What two problems does the corpus identify with that approach?",
+  "expectedAnswer": "Manually constructed feature vectors require case-by-case design for each property, while symmetry-invariant coordinate transformations make the resulting models hard to interpret."
+ },
+ {
+  "id": "Q084",
+  "type": "multi_hop",
+  "question": "Both a crystal property predictor and a MOF property predictor in this corpus use self-supervision across two views of the same material. What are the two views in the MOF case?",
+  "expectedAnswer": "A 3D crystal-structure view processed by CGCNN and a string view (the MOFid) processed by the MOFormer transformer, whose embeddings are aligned self-supervised."
+ },
+ {
+  "id": "Q085",
+  "type": "cross_doc",
+  "question": "Which two distinct strategies for injecting symmetry into crystal generation are represented in this corpus, and how do they differ in where symmetry is enforced?",
+  "expectedAnswer": "One enforces symmetry by construction in the representation — Wyckoff positions in WyckoffDiff and WyCryst, or the asymmetric unit in SymmCD — while the other enforces it in the network's equivariance, as in DiffCSP and CrystalFlow acting on lattice and fractional coordinates."
+ },
+ {
+  "id": "Q086",
+  "type": "cross_doc",
+  "question": "Reinforcement fine-tuning has been applied on top of a pretrained crystal generator. Which generator was fine-tuned, and what does reinforcement learning optimize that pretraining does not?",
+  "expectedAnswer": "CrystalFormer, the space-group informed transformer, was fine-tuned with reinforcement learning to optimize directly for target properties rather than only matching the training distribution."
+ },
+ {
+  "id": "Q087",
+  "type": "multi_hop",
+  "question": "A Wyckoff-based generative transformer reports a S.U.N. ratio well below MatterGen's. What ratio does it report, and what caveat does it attach to the comparison?",
+  "expectedAnswer": "About 16% at T = 0.7, against roughly 45% for MatterGen — but it notes those other results were measured against a much less stringent reference set."
+ },
+ {
+  "id": "Q088",
+  "type": "cross_doc",
+  "question": "Why does the corpus argue that comparing the stable-unique-novel rates of generative models across different papers is unreliable?",
+  "expectedAnswer": "Because the reference set used to judge novelty differs between papers — a less stringent reference set inflates the apparent novelty rate, so the numbers are not directly comparable."
+ },
+ {
+  "id": "Q089",
+  "type": "single_doc",
+  "question": "Deep diffusion language models have been applied to generate inorganic compositions. What checks were the generated formulas put through?",
+  "expectedAnswer": "Charge-neutrality and electronegativity-balance checks, followed by a final oxidation-states check using BERTOS."
+ },
+ {
+  "id": "Q090",
+  "type": "cross_doc",
+  "question": "Charge neutrality appears as a validity criterion in more than one generative approach in this corpus. Name two approaches that enforce or check it, and how each does so.",
+  "expectedAnswer": "The deep diffusion language model filters generated formulas through explicit charge-neutrality and electronegativity checks, while the reinforcement-learning inverse design agent learns charge neutrality as a chemical guideline through its reward."
+ },
+ {
+  "id": "Q091",
+  "type": "multi_hop",
+  "question": "GAN-based crystal structure prediction represents a crystal as a 2D matrix. What two components make up that representation, and what idea inspired it?",
+  "expectedAnswer": "Unit cell parameters together with the rescaled fractional coordinates of the atoms, in a 2D matrix representation inspired by a point cloud."
+ },
+ {
+  "id": "Q092",
+  "type": "cross_doc",
+  "question": "Which chemical system was targeted by generative high-throughput virtual screening with a GAN, and which compound had previously been discovered and experimentally verified in that space?",
+  "expectedAnswer": "The Mg-Mn-O system; Mg2MnO4 had previously been found with reasonable stability and activity and experimentally verified."
+ },
+ {
+  "id": "Q093",
+  "type": "cross_doc",
+  "question": "Both a GFlowNet crystal sampler and a diffusion crystal model must produce valid structures. What validity criteria does the corpus apply to generated crystals?",
+  "expectedAnswer": "Structural validity requires the shortest atomic distance to exceed 0.5 Å, and compositional validity requires charge neutrality."
+ },
+ {
+  "id": "Q094",
+  "type": "multi_hop",
+  "question": "One paper trains machine-learning potentials for crystal structure prediction deliberately using structures that are not ordered. Why would disordered structures help a potential meant for ordered crystals?",
+  "expectedAnswer": "Training on disordered structures covers a far wider region of configuration space than relaxed ordered crystals, so the potential remains accurate on the unrelaxed, far-from-equilibrium configurations that structure search actually visits."
+ },
+ {
+  "id": "Q095",
+  "type": "enumerate",
+  "question": "Which materials databases are named as data sources across this corpus, and what does each one hold?",
+  "expectedAnswer": "The Materials Project and OQMD (DFT-computed inorganic crystal properties), ICSD (experimentally reported crystal structures), AFLOW (high-throughput calculated structures), NOMAD (FAIR-shared raw computational data) and QM9 (small-molecule quantum chemistry)."
+ },
+ {
+  "id": "Q096",
+  "type": "cross_doc",
+  "question": "What distinguishes the kind of data held by ICSD from that held by the Materials Project, and why does that difference matter for training a generative model?",
+  "expectedAnswer": "ICSD holds experimentally reported crystal structures whereas the Materials Project holds DFT-computed structures and properties; training on ICSD biases a model toward synthesizable materials, while Materials Project data covers far more hypothetical compounds."
+ },
+ {
+  "id": "Q097",
+  "type": "multi_hop",
+  "question": "MatterGen's ability to produce synthesizable materials is argued from a rediscovery experiment against the ICSD. What was rediscovered, and why is that evidence of synthesizability rather than of memorization of the training set?",
+  "expectedAnswer": "It rediscovered more than 2,000 experimentally verified ICSD structures that were not in its training set; because they were unseen during training, generating them shows the model produces structures that really can be made."
+ },
+ {
+  "id": "Q098",
+  "type": "cross_doc",
+  "question": "Two of the crystal generative models in this corpus are conditioned on a target property rather than sampling unconditionally. Name them and say what each conditions on.",
+  "expectedAnswer": "MatterGen conditions generation on target properties such as bulk modulus, and MatterGPT conditions on formation energy and band gap, including both simultaneously for multi-property design."
+ },
+ {
+  "id": "Q099",
+  "type": "cross_doc",
+  "question": "What does a Pareto front represent in materials optimization, and why does the corpus argue a single objective is insufficient?",
+  "expectedAnswer": "It reports the optimal trade-offs between conflicting objectives; useful materials must satisfy several objectives at once, and improving one is usually at the expense of another."
+ },
+ {
+  "id": "Q100",
+  "type": "single_doc",
+  "question": "What made widespread robotic adoption difficult in materials research according to the mobile robotic chemist work, and how does experimental complexity scale?",
+  "expectedAnswer": "The diversity of sample types, operations, instruments and measurements required; experimental complexity scales exponentially with the number of variables, restricting most searches to narrow regions of materials space."
+ },
+ {
+  "id": "Q101",
+  "type": "single_doc",
+  "question": "The Heusler discovery engine screened candidate crystal structures without any structural input. What true-positive and false-positive rates did it achieve, and over how many candidates?",
+  "expectedAnswer": "A true positive rate of 0.94 and a false positive rate of 0.01, over more than 400,000 candidates."
+ },
+ {
+  "id": "Q102",
+  "type": "single_doc",
+  "question": "Which three variants of Heusler crystal structures are hard to tell apart, and why is that a problem for diffraction techniques?",
+  "expectedAnswer": "Heusler, inverse Heusler and CsCl-type structures — three subtle variations that are difficult and sometimes impossible to distinguish by diffraction techniques."
+ },
+ {
+  "id": "Q103",
+  "type": "multi_hop",
+  "question": "A machine-learning model was used both to predict new compounds and to audit existing databases. What secondary use is described, and which structure family was being screened?",
+  "expectedAnswer": "It is useful for data sanitizing, flagging questionable entries in crystallographic databases, while screening candidates of formula AB2C for Heusler compounds."
+ },
+ {
+  "id": "Q104",
+  "type": "multi_hop",
+  "question": "Screening hybrid organic-inorganic perovskites for photovoltaics has to solve two problems beyond bandgap. What are they, and how many candidates were screened to how many hits?",
+  "expectedAnswer": "Toxicity and poor environmental stability; six orthorhombic lead-free HOIPs were screened out of 5,158 unexplored candidates, two of which have direct bandgaps in the visible region."
+ },
+ {
+  "id": "Q105",
+  "type": "multi_hop",
+  "question": "Deep learning has been applied to classify crystal symmetry from diffraction. What intermediate representation is computed first, and how many simulated structures were classified?",
+  "expectedAnswer": "A diffraction image is calculated first and fed to a deep neural network, correctly classifying a dataset of more than 100,000 simulated crystal structures including heavily defective ones."
+ },
+ {
+  "id": "Q106",
+  "type": "cross_doc",
+  "question": "What limitation of conventional lattice-symmetry identification does the deep learning approach remove, and how is its reasoning made interpretable?",
+  "expectedAnswer": "Conventional methods need a user-specified threshold and cannot detect average symmetries for defective structures; the network's internal operations are unravelled through attentive response maps."
+ },
+ {
+  "id": "Q107",
+  "type": "multi_hop",
+  "question": "Two different papers here classify crystal symmetry from X-ray diffraction. One works from simulated patterns, the other from a limited number of experimental thin-film patterns. How does the second overcome its data scarcity?",
+  "expectedAnswer": "By coupling supervised learning with a physics-informed, model-agnostic data augmentation strategy that uses simulated ICSD data alongside the experimental patterns."
+ },
+ {
+  "id": "Q108",
+  "type": "cross_doc",
+  "question": "What crystallographic quantities does the thin-film XRD classifier predict, and why is XRD analysis a bottleneck in the first place?",
+  "expectedAnswer": "It predicts crystallographic dimensionality and space group; XRD acquisition and analysis is among the most time-consuming steps in developing novel thin-film materials."
+ },
+ {
+  "id": "Q109",
+  "type": "multi_hop",
+  "question": "A VAE was used to overcome the reporting bias in chemical reaction datasets. What is the bias, and how many reactions were generated from how many?",
+  "expectedAnswer": "Experimental synthesis datasets report only the optimal reactions, which biases models; the VAE generated over 7,000,000 new reactions from a training set of only 7,000."
+ },
+ {
+  "id": "Q110",
+  "type": "cross_doc",
+  "question": "Two papers in this corpus argue that missing negative or non-optimal data biases materials models. What is each one's remedy?",
+  "expectedAnswer": "The reaction VAE synthesizes new reactions by sampling the latent space to span the whole solution space, while the failed-experiment line of work argues for using unsuccessful experiments as training data directly."
+ },
+ {
+  "id": "Q111",
+  "type": "multi_hop",
+  "question": "Before machine-learned potentials, crystal structure prediction relied on random search with DFT. What is that method called, and what does it search over?",
+  "expectedAnswer": "Ab initio random structure searching (AIRSS), which repeatedly generates random sensible structures and relaxes them with density functional theory to find stable arrangements."
+ },
+ {
+  "id": "Q112",
+  "type": "cross_doc",
+  "question": "AIRSS and machine-learning interatomic potentials both attack the cost of crystal structure search but at different points. Where does each save effort?",
+  "expectedAnswer": "AIRSS still relaxes every random candidate with DFT, whereas the active-learning potential approach uses DFT only to generate training data and performs the structural optimization with the learned potential."
+ },
+ {
+  "id": "Q113",
+  "type": "multi_hop",
+  "question": "Data mining of quantum calculations was proposed as a route to crystal structure prediction. What two conventional approaches was it positioned between, and what limitation did the empirical one have?",
+  "expectedAnswer": "Highly accurate quantum mechanical computation on a small candidate set, and empirical rules extracted from large amounts of experimental information; the empirical rules had limited predictive power."
+ },
+ {
+  "id": "Q114",
+  "type": "single_doc",
+  "question": "GFlowNet Foundations introduces a training objective by analogy with MCMC. What is it called, and what expensive computation do GFlowNets amortize?",
+  "expectedAnswer": "The detailed balance objective; GFlowNets amortize the work normally done by computationally expensive MCMC methods into a single trained generative pass."
+ },
+ {
+  "id": "Q115",
+  "type": "multi_hop",
+  "question": "GFlowNets sample in proportion to a reward. What does that proportionality buy compared with reward maximization, and how is it exploited in crystal sampling?",
+  "expectedAnswer": "It yields a diverse set of high-reward candidates rather than collapsing onto a single optimum; Crystal-GFN exploits this to sample diverse valid crystals with low formation energy or a target band gap."
+ },
+ {
+  "id": "Q116",
+  "type": "multi_hop",
+  "question": "A transformer was pretrained on SMILES to produce molecular fingerprints. What problem with rule-based fingerprints motivated it, and in which data regime does it help most?",
+  "expectedAnswer": "Rule-based fingerprints map molecules to a sparse discrete space and perform poorly for shallow models or small datasets; the pretrained SMILES transformer helps most in small-data settings."
+ },
+ {
+  "id": "Q117",
+  "type": "cross_doc",
+  "question": "Two different remedies for the fragility of SMILES appear in this corpus. What are they, and how do they differ in approach?",
+  "expectedAnswer": "SELFIES changes the representation itself so every string is a valid molecule, while the SMILES Transformer keeps SMILES but learns a robust fingerprint from a huge corpus by unsupervised pretraining."
+ },
+ {
+  "id": "Q118",
+  "type": "multi_hop",
+  "question": "Closed-loop autonomous discovery is applied to a landscape described as exceedingly complex. Which landscape is that, and what field of machine learning drives the loop?",
+  "expectedAnswer": "The synthesis-process-structure-property landscape; active learning, the field devoted to optimal experiment design, drives the closed loop."
+ },
+ {
+  "id": "Q119",
+  "type": "cross_doc",
+  "question": "Unsupervised machine learning has been used to choose which elements to combine before any synthesis is attempted. What does the choice of elements determine, and why does it matter?",
+  "expectedAnswer": "The elements chosen delimit the range of compositions, structures and therefore properties that can arise, so element selection bounds the possible outcomes of the synthetic chemistry before it begins."
+ },
+ {
+  "id": "Q120",
+  "type": "enumerate",
+  "question": "Which autonomous or self-driving laboratory platforms appear in this corpus, and what did each target?",
+  "expectedAnswer": "The A-Lab for inorganic solid synthesis, Ada for the conductivity-temperature Pareto front of palladium films, a self-driving laboratory for thin-film materials, a mobile robotic chemist for photocatalysis, and a robotic test stand guided by Dragonfly for battery electrolytes."
+ },
+ {
+  "id": "Q121",
+  "type": "multi_hop",
+  "question": "ElemNet takes only elemental composition as input. What does that let it bypass, and what does the model capture automatically instead?",
+  "expectedAnswer": "It bypasses manual feature engineering that requires domain knowledge, automatically capturing the physical and chemical interactions and similarities between elements."
+ },
+ {
+  "id": "Q122",
+  "type": "cross_doc",
+  "question": "Composition-only and structure-based property prediction represent two ends of a spectrum in this corpus. Give an example of each and say what extra information the structural one requires.",
+  "expectedAnswer": "ElemNet predicts from elemental composition alone, while CGCNN and MEGNet require the full crystal structure as a graph of atoms and bonds — structural methods are more accurate but need a known or relaxed structure."
+ },
+ {
+  "id": "Q123",
+  "type": "multi_hop",
+  "question": "Feature engineering with domain descriptors and end-to-end deep learning are competing strategies here. Which toolkit represents the descriptor approach, and which model showed descriptors can be bypassed?",
+  "expectedAnswer": "Matminer represents the descriptor approach with its library of featurizers, while ElemNet showed that a deep network can bypass manual descriptors and still do better, even with only a few thousand training samples."
+ },
+ {
+  "id": "Q124",
+  "type": "cross_doc",
+  "question": "Which two quantities does the corpus most often use to benchmark crystal property models, and which model claims better-than-DFT accuracy on them?",
+  "expectedAnswer": "Formation energy and band gap; MEGNet claims better than DFT accuracy for formation energies, band gaps and elastic moduli over a much larger dataset."
+ },
+ {
+  "id": "Q125",
+  "type": "multi_hop",
+  "question": "The corpus contains a transformer for MOFs and a transformer for crystals. What input string does the MOF model consume, and what geometric input does the crystal transformer consume instead?",
+  "expectedAnswer": "MOFormer consumes the MOFid string representation, while Matformer and ComFormer consume periodic crystal graphs built from atomic positions and lattice geometry."
+ },
+ {
+  "id": "Q126",
+  "type": "multi_hop",
+  "question": "One generative model in this corpus is validated on rubber compound design rather than crystals. Which model is it, and what property of that data made standard generative models unsuitable?",
+  "expectedAnswer": "The Binded-VAE, validated on rubber compound design; the compound data is discrete and severely sparse, which standard generative models handle badly."
+ },
+ {
+  "id": "Q127",
+  "type": "cross_doc",
+  "question": "Both a molecular VAE and an inorganic-compound VAE in this corpus report a validation difficulty. What is the shared difficulty, and how does each handle it?",
+  "expectedAnswer": "Judging whether generated candidates are realistic: the molecular VAE relies on chemical validity of decoded structures and a property predictor, while the Binded-VAE had to define novel metrics because image metrics like FID and Inception scores do not apply."
+ },
+ {
+  "id": "Q128",
+  "type": "multi_hop",
+  "question": "Which two papers in this corpus both describe an autonomous system that chose its own next experiment, and what optimization method did each use?",
+  "expectedAnswer": "The battery-electrolyte test stand used the Dragonfly Bayesian optimization package, and the on-the-fly closed-loop materials discovery work used Bayesian active learning to select each next measurement."
+ },
+ {
+  "id": "Q129",
+  "type": "enumerate",
+  "question": "Which molecular and crystal string representations are discussed in this corpus alongside SMILES, and what is each one's defining property?",
+  "expectedAnswer": "SMILES, a compact text encoding whose strict syntax can produce invalid strings; SELFIES, a 100% robust encoding where every string is a valid molecule; and SLICES, a line-input crystal encoding used by MatterGPT for inorganic solids."
+ },
+ {
+  "id": "Q130",
+  "type": "multi_hop",
+  "question": "A crystal generative model and a molecular generative model in this corpus both encode structures as images. What are the two encodings, and what do they enable?",
+  "expectedAnswer": "xtal2png encodes crystal structures as PNG images and the diffraction-image classifier encodes crystals as calculated diffraction images; both let convolutional image models operate on crystal structures."
+ },
+ {
+  "id": "Q131",
+  "type": "cross_doc",
+  "question": "What role does DFT play after a generative model proposes a crystal, and which two frameworks in this corpus automate that step?",
+  "expectedAnswer": "DFT relaxes and validates the generated structure and checks its stability; WyCryst includes an automated DFT workflow for structure refinement, and the active-learning alloy search uses DFT to validate convex hulls."
+ },
+ {
+  "id": "Q132",
+  "type": "multi_hop",
+  "question": "The convex hull is used as the stability criterion in several papers here. What does a structure lying on the hull mean, and which two efforts report hull results at very different scales?",
+  "expectedAnswer": "Lying on the convex hull means the structure does not decompose into any combination of competing phases, so it is thermodynamically stable. GNoME reports 381,000 entries on the updated hull, while the active-learning alloy search reports hulls for three specific binary and ternary systems."
+ },
+ {
+  "id": "Q133",
+  "type": "cross_doc",
+  "question": "Why does the corpus treat generating a structure that sits on the convex hull and generating a synthesizable one as different problems?",
+  "expectedAnswer": "Thermodynamic stability against the convex hull says nothing about whether a synthesis route exists; MatterGen's rediscovery of experimentally verified ICSD structures and the A-Lab's 63% success rate on computationally predicted targets are used to probe synthesizability separately."
+ },
+ {
+  "id": "Q134",
+  "type": "multi_hop",
+  "question": "Which effort supplied the Materials Project target list that an autonomous laboratory attempted to synthesize, and what proportion of those targets failed?",
+  "expectedAnswer": "Targets came from large-scale ab initio phase-stability data from the Materials Project and Google DeepMind's GNoME effort; 21 of the 57 targets were not obtained, a 37% failure rate."
+ },
+ {
+  "id": "Q135",
+  "type": "cross_doc",
+  "question": "What did inspection of the autonomous laboratory's unobtained targets reveal about the causes of failure, and what does that imply about the DFT calculations behind them?",
+  "expectedAnswer": "The failures had both synthetic and computational causes — that is, some targets failed because of the synthesis route chosen and others because the computational prediction itself was at fault."
+ },
+ {
+  "id": "Q136",
+  "type": "multi_hop",
+  "question": "The corpus contains both an equivariant potential trained on quantum data and a large multi-task atomic model, both used for molecular dynamics. What does each optimize for, and what do they share?",
+  "expectedAnswer": "NequIP optimizes accuracy and data efficiency on a single system using E(3)-equivariant convolutions, while DPA-2 optimizes breadth by multi-task learning across many datasets; both are machine-learning interatomic potentials replacing DFT in molecular dynamics."
+ },
+ {
+  "id": "Q137",
+  "type": "multi_hop",
+  "question": "Which two distinct uses of the term 'active learning' appear in this corpus, and what is being selected in each case?",
+  "expectedAnswer": "In interatomic potential fitting, active learning selects which configurations to compute with DFT for the training set; in autonomous experimentation, it selects which physical experiment to run next."
+ },
+ {
+  "id": "Q138",
+  "type": "cross_doc",
+  "question": "Which representation choice do a Wyckoff-based transformer and a Wyckoff-based diffusion model share, and what does it let both of them guarantee?",
+  "expectedAnswer": "Both represent a crystal by its space group and the occupied Wyckoff positions rather than by explicit atomic coordinates, which guarantees the generated structure has a valid crystallographic symmetry by construction."
+ },
+ {
+  "id": "Q139",
+  "type": "multi_hop",
+  "question": "Two papers in this corpus generate crystals with a transformer conditioned on the space group. What is generated after the space group is fixed, and how do the two differ in output?",
+  "expectedAnswer": "After the space group is chosen, both place species into Wyckoff positions; the space-group informed transformer emits full crystal structures for arbitrary space groups, while the Wyckoff material transformer emits a Wyckoff-level protostructure that is then relaxed."
+ },
+ {
+  "id": "Q140",
+  "type": "cross_doc",
+  "question": "What is a protostructure in the Wyckoff-based description of crystals, and why is it useful for generative modelling?",
+  "expectedAnswer": "A protostructure is the symmetry-level description of a crystal — space group plus occupied Wyckoff sites and species — without explicit coordinates, so a model can generate symmetry directly and leave the coordinates to relaxation."
+ },
+ {
+  "id": "Q141",
+  "type": "multi_hop",
+  "question": "A GAN and a diffusion model in this corpus both target the same class of crystal validity problem. What check does each rely on to filter its output?",
+  "expectedAnswer": "The GAN-based crystal structure prediction work relies on DFT stability evaluation of generated Mg-Mn-O candidates, while the deep diffusion language model filters formulas through charge-neutrality, electronegativity and oxidation-state checks."
+ },
+ {
+  "id": "Q142",
+  "type": "cross_doc",
+  "question": "Which two papers here report generating a very large number of candidates from a much smaller training set, and what are the ratios involved?",
+  "expectedAnswer": "The reaction VAE generated over 7,000,000 reactions from 7,000 training reactions, and the Heusler discovery engine screened over 400,000 candidate compositions from a much smaller trained model."
+ },
+ {
+  "id": "Q143",
+  "type": "multi_hop",
+  "question": "Element selection and composition prediction are described as complementary steps. Which unsupervised approach guides element selection, and which supervised model then predicts stability from composition alone?",
+  "expectedAnswer": "Unsupervised machine learning of experimentally explored chemistry guides which elements to combine, and ElemNet then predicts formation enthalpy from the elemental composition alone."
+ },
+ {
+  "id": "Q144",
+  "type": "enumerate",
+  "question": "Which distinct machine-learning interatomic potentials for molecular dynamics are represented in this corpus, and what distinguishes each?",
+  "expectedAnswer": "NequIP with E(3)-equivariant convolutions for data efficiency, DPA-2 as a multi-task large atomic model, moment-tensor style potentials used with active learning for alloy search, and direct force-learning machine-learned force fields validated on surface melting and stress-strain behaviour."
+ },
+ {
+  "id": "Q145",
+  "type": "multi_hop",
+  "question": "Both a crystal generative model and a molecular fingerprint model in this corpus use pretraining on a large unlabeled corpus. What is pretrained in each case, and what downstream benefit is claimed?",
+  "expectedAnswer": "FlowLLM pretrains a large language model on crystal text to serve as a base distribution, improving stable generation rates by over three times; the SMILES Transformer pretrains a sequence-to-sequence model on a huge SMILES corpus, improving generalization in small-data settings."
+ },
+ {
+  "id": "Q146",
+  "type": "cross_doc",
+  "question": "How does a self-driving laboratory differ from a high-throughput screening platform, according to this corpus?",
+  "expectedAnswer": "High-throughput screening evaluates a predetermined library, whereas a self-driving laboratory closes the loop — a model chooses the next experiment from the results so far, as Ada did in mapping the Pareto front and the A-Lab did in choosing synthesis recipes."
+ },
+ {
+  "id": "Q147",
+  "type": "multi_hop",
+  "question": "Which two papers in this corpus report screening perovskites with machine learning, and what did each screen for?",
+  "expectedAnswer": "One screened 5,158 unexplored hybrid organic-inorganic perovskites for bandgap, avoiding lead and poor stability; the reinforcement-learning inverse design work targeted oxide perovskite-like compositions for band gap, formation energy and moduli with low processing temperatures."
+ },
+ {
+  "id": "Q148",
+  "type": "cross_doc",
+  "question": "What makes bandgap a recurring screening target across the photovoltaic and optoelectronic work in this corpus?",
+  "expectedAnswer": "Bandgap determines which part of the solar spectrum a material absorbs, so it is the primary screen for photovoltaic candidates — used both to select lead-free HOIPs with visible-region direct bandgaps and as a conditioning property for generative and reinforcement-learning models."
+ },
+ {
+  "id": "Q149",
+  "type": "multi_hop",
+  "question": "Two papers here describe reducing DFT cost by orders of magnitude but by different mechanisms. What is each mechanism?",
+  "expectedAnswer": "The active-learning interatomic potential replaces DFT relaxation with a learned potential, using DFT only for training data; ElemNet replaces the calculation entirely with a composition-only neural network that predicts formation enthalpy in a fraction of a second."
+ },
+ {
+  "id": "Q150",
+  "type": "cross_doc",
+  "question": "What does the corpus identify as the risk of training generative models only on curated databases of known materials?",
+  "expectedAnswer": "The models inherit the biases of those databases — toward well-studied, successfully synthesized, crystalline materials — so they under-explore novel chemical space; this motivates using failed experiments, synthetic data and broader reference sets."
+ },
+ {
+  "id": "Q151",
+  "type": "single_doc",
+  "question": "What does FlowMM report about its own inference cost relative to DiffCSP on MP-20, and how is that cost measured?",
+  "expectedAnswer": "FlowMM beats DiffCSP on match rate with as few as 50 integration steps, at least an order-of-magnitude improvement; cost is measured as the number of integration steps needed."
+ },
+ {
+  "id": "Q152",
+  "type": "single_doc",
+  "question": "What two quantities does Crystal-GFN report beyond formation energy when demonstrating that it can sample crystals with desirable properties?",
+  "expectedAnswer": "A band gap close to a target value and high density, alongside low predicted formation energy."
+ },
+ {
+  "id": "Q153",
+  "type": "single_doc",
+  "question": "In the crystal diffusion variational autoencoder, what is the size relationship between encoder and decoder, and what was reduced to speed up training?",
+  "expectedAnswer": "The encoder has 2.2 million parameters and the decoder 2.3 million; the hidden dimensions were reduced to 128 for faster training."
+ },
+ {
+  "id": "Q154",
+  "type": "single_doc",
+  "question": "What does the MEGNet architecture consolidate information into after the bond and atom updates?",
+  "expectedAnswer": "A global state representation for the entire material, updated after bond and atom information has been exchanged."
+ },
+ {
+  "id": "Q155",
+  "type": "single_doc",
+  "question": "What data efficiency claim does NequIP make, and against what belief is it positioned?",
+  "expectedAnswer": "It outperforms existing models with up to three orders of magnitude fewer training data, challenging the widely held belief that deep neural networks require massive training sets."
+ },
+ {
+  "id": "Q156",
+  "type": "single_doc",
+  "question": "What did the autonomous laboratory's own outlook give as its success rate, and how was that rate achieved using DFT calculations?",
+  "expectedAnswer": "A 63% success rate, achieved by integrating robotics with DFT-computed data surveying the energetic landscape of precursors and with machine-learning-derived synthesis recipes."
+ },
+ {
+  "id": "Q157",
+  "type": "single_doc",
+  "question": "What does the space-group informed transformer say about nature's preference for symmetry, and what is that preference attributed to?",
+  "expectedAnswer": "Nature exhibits a preference for symmetric crystal structures, a tendency attributed to the symmetry inherent in the interatomic interactions."
+ },
+ {
+  "id": "Q158",
+  "type": "single_doc",
+  "question": "What structural validity threshold is applied to generated crystal structures, and what is the compositional validity criterion?",
+  "expectedAnswer": "A structure is valid if its shortest atomic distance exceeds 0.5 Å, a deliberately lenient standard; composition validity requires charge neutrality."
+ },
+ {
+  "id": "Q159",
+  "type": "single_doc",
+  "question": "What does SELFIES guarantee about the strings it produces, and how strong is that guarantee stated to be?",
+  "expectedAnswer": "Every SELFIES string corresponds to a valid molecule — the representation is described as 100% robust."
+ },
+ {
+  "id": "Q160",
+  "type": "single_doc",
+  "question": "What kind of latent-space arithmetic does the continuous molecular representation support for generating new compounds?",
+  "expectedAnswer": "Decoding random vectors, perturbing known chemical structures, and interpolating between molecules."
+ },
+ {
+  "id": "Q161",
+  "type": "single_doc",
+  "question": "Which two failure modes of high-dimensional modelling does the GFlowNet detailed-balance objective address, according to GFlowNet Foundations?",
+  "expectedAnswer": "It provides a local and efficient training objective analogous to MCMC, letting GFlowNets amortize expensive MCMC sampling into a single trained generative pass."
+ },
+ {
+  "id": "Q162",
+  "type": "single_doc",
+  "question": "What does the Materials Project supply to the graph networks trained on crystals, and roughly how many crystals were used?",
+  "expectedAnswer": "About 60,000 Materials Project crystals were used to train MEGNet models for formation energy, band gap and elastic moduli."
+ },
+ {
+  "id": "Q163",
+  "type": "single_doc",
+  "question": "What is the stated purpose of the asymmetric unit in a symmetry-preserving crystal diffusion model?",
+  "expectedAnswer": "It is the smallest subset of the crystal that can generate the whole crystal through symmetry transformations, so learning it plus the transformations reproduces the full structure."
+ },
+ {
+  "id": "Q164",
+  "type": "cross_doc",
+  "question": "How do the two ways of measuring a crystal generative model — crystal structure prediction and de novo generation — differ in what they score?",
+  "expectedAnswer": "Crystal structure prediction scores reconstruction of held-out structures by match rate and RMSE, while de novo generation scores validity, stability and the stable-unique-novel rate of freshly sampled structures."
+ },
+ {
+  "id": "Q165",
+  "type": "cross_doc",
+  "question": "Why does reporting only the match rate understate the difficulty of crystal structure prediction, and what second number is reported alongside it?",
+  "expectedAnswer": "Match rate only counts whether a generated structure falls within tolerance of the ground truth; the RMSE over matched structures is reported alongside it to show how close those matches actually are."
+ },
+ {
+  "id": "Q166",
+  "type": "cross_doc",
+  "question": "Both an image encoding and a diffraction encoding turn crystals into 2D arrays for convolutional models. What does each preserve?",
+  "expectedAnswer": "xtal2png packs the lattice, coordinates and species into PNG channels so the structure itself is recoverable, while the diffraction-image encoding preserves the symmetry signature rather than the atomic positions."
+ },
+ {
+  "id": "Q167",
+  "type": "cross_doc",
+  "question": "What common weakness of curated crystal databases do the disordered-materials benchmark and the failed-experiment argument both point to?",
+  "expectedAnswer": "Both point out that curated databases contain only ordered, successfully synthesized structures, so models trained on them are never tested on — and cannot learn from — disordered materials or failed syntheses."
+ },
+ {
+  "id": "Q168",
+  "type": "cross_doc",
+  "question": "What distinguishes an invariant model from an equivariant one for interatomic potentials, and which architecture in this corpus argues the distinction matters for accuracy?",
+  "expectedAnswer": "Invariant models act only on scalars such as distances, whereas equivariant models propagate geometric tensors that transform with the system; NequIP argues this gives a more information-rich and faithful representation of atomic environments."
+ },
+ {
+  "id": "Q169",
+  "type": "cross_doc",
+  "question": "Two of the crystal property models in this corpus add information that a plain atom-bond graph lacks. What does each add?",
+  "expectedAnswer": "MEGNet adds a global state vector for the whole material, and CrysMMNet adds a textual description carrying global periodic information such as space group and symmetry."
+ },
+ {
+  "id": "Q170",
+  "type": "cross_doc",
+  "question": "What role does the Materials Project play for both the generative models and the autonomous laboratory in this corpus?",
+  "expectedAnswer": "It is the training source for crystal generative models such as CDVAE and MatterGen, and it supplied the ab initio phase-stability data from which the autonomous laboratory chose its synthesis targets."
+ },
+ {
+  "id": "Q171",
+  "type": "cross_doc",
+  "question": "Which two of the flow-based crystal models share the same underlying flow-matching mathematics, and what does the second one change?",
+  "expectedAnswer": "FlowMM and FlowLLM both use Riemannian flow matching; FlowLLM changes the base distribution from a simple prior to a fine-tuned large language model over crystal text."
+ },
+ {
+  "id": "Q172",
+  "type": "cross_doc",
+  "question": "What does the corpus give as the reason that generated crystal structures still need density functional theory afterwards?",
+  "expectedAnswer": "Generative models produce candidate geometries whose energies are unknown, so DFT relaxation and convex-hull evaluation are needed to establish whether the candidate is actually stable."
+ },
+ {
+  "id": "Q173",
+  "type": "cross_doc",
+  "question": "How does the number of parameters in a crystal generative model compare with the number of structures it is expected to search, based on the figures in this corpus?",
+  "expectedAnswer": "The models are small relative to the search — CDVAE has only about 2.2 million encoder and 2.3 million decoder parameters, while GNoME-scale searches cover 2.2 million candidate structures."
+ },
+ {
+  "id": "Q174",
+  "type": "multi_hop",
+  "question": "A crystal generative model reports both a match rate on MP-20 and a stable-unique-novel rate. Why can a model score well on one and badly on the other?",
+  "expectedAnswer": "Match rate measures reconstruction of known held-out structures, which rewards fidelity to the training distribution, whereas the S.U.N. rate rewards producing stable structures that are not already known — so a faithful reconstructor can be an unremarkable discoverer."
+ },
+ {
+  "id": "Q175",
+  "type": "multi_hop",
+  "question": "Trace the path from a large-scale graph-network screening effort to a physically realized compound: which stages are involved, and what is reported at each in terms of the convex hull?",
+  "expectedAnswer": "GNoME screened with graph networks and DFT to yield 2.2 million stable candidates and 381,000 on the convex hull, of which 736 were independently experimentally realized; the autonomous laboratory then took Materials Project and DeepMind stability data as targets and realized 36 of 57 in 17 days."
+ },
+ {
+  "id": "Q176",
+  "type": "multi_hop",
+  "question": "Which representation lets a generative model guarantee a valid space group without ever placing an atom at explicit coordinates, and which two models use it?",
+  "expectedAnswer": "The Wyckoff-position (protostructure) representation; WyckoffDiff generates it with a discrete diffusion model and the Wyckoff material transformer generates it autoregressively, in both cases leaving coordinates to later relaxation."
+ },
+ {
+  "id": "Q177",
+  "type": "multi_hop",
+  "question": "Machine-learning interatomic potentials appear in this corpus both as an end in themselves and as a component of a larger discovery pipeline. Give an example of each.",
+  "expectedAnswer": "NequIP is developed as a potential in its own right for accurate, data-efficient molecular dynamics; in the alloy search, an active-learning potential is a component that replaces DFT relaxation inside a high-throughput convex-hull search."
+ },
+ {
+  "id": "Q178",
+  "type": "multi_hop",
+  "question": "Two papers here reduce the number of density functional theory calculations needed, one during structure search and one during property prediction. What replaces DFT in each?",
+  "expectedAnswer": "In structure search, a machine-learning interatomic potential performs the relaxations and DFT is used only to generate training data; in property prediction, ElemNet predicts formation enthalpy directly from elemental composition with no structure or DFT at all."
+ },
+ {
+  "id": "Q179",
+  "type": "multi_hop",
+  "question": "How does the corpus connect the choice of elements to combine with the eventual probability of discovering a new crystalline material?",
+  "expectedAnswer": "Element selection determines the range of accessible compositions and structures and therefore properties, so the elemental components of a phase field set the likelihood of finding a new crystalline material before any synthesis begins."
+ },
+ {
+  "id": "Q180",
+  "type": "multi_hop",
+  "question": "Two papers here use X-ray diffraction with machine learning but differ in where their training data comes from. What is the source in each case?",
+  "expectedAnswer": "One trains on more than 100,000 simulated crystal structures converted to diffraction images; the other augments a small set of experimental thin-film patterns with simulated ICSD data through a physics-informed augmentation strategy."
+ },
+ {
+  "id": "Q181",
+  "type": "multi_hop",
+  "question": "A latent space model and a reward-based sampler both aim to produce diverse candidates. How does each achieve diversity?",
+  "expectedAnswer": "The VAE achieves diversity by sampling a smooth continuous latent space and decoding, while the GFlowNet achieves it by sampling in proportion to a reward rather than maximizing it, which spreads probability over many high-reward modes."
+ },
+ {
+  "id": "Q182",
+  "type": "multi_hop",
+  "question": "The corpus contains both a transformer that consumes crystal strings and one that consumes crystal graphs. What does each need the crystal to be reduced to before the model sees it?",
+  "expectedAnswer": "MatterGPT needs the crystal encoded as a SLICES string of characters, while Matformer and ComFormer need it reduced to a periodic graph with lattice-aware geometric descriptors."
+ },
+ {
+  "id": "Q183",
+  "type": "multi_hop",
+  "question": "Which two self-driving laboratories in this corpus optimized against a temperature constraint, and what was each optimizing?",
+  "expectedAnswer": "Ada optimized palladium film conductivity against processing temperature, reaching metallic films below 200 °C; the reinforcement-learning inverse design work targeted low sintering and calcination temperatures alongside its property objectives."
+ },
+ {
+  "id": "Q184",
+  "type": "multi_hop",
+  "question": "Trace how a transformer pretrained on text becomes useful for inorganic crystals in this corpus. What is pretrained, and what consumes its output?",
+  "expectedAnswer": "A large language model is fine-tuned on a text representation of meta-stable crystals to act as a base distribution; a Riemannian flow-matching model then converts its samples to a graph representation and refines the coordinates and lattice parameters."
+ },
+ {
+  "id": "Q185",
+  "type": "multi_hop",
+  "question": "Why does the corpus treat data efficiency and transferability as separate virtues for an atomic model, and which model is offered for each?",
+  "expectedAnswer": "Data efficiency means reaching accuracy from few training examples on one system, as NequIP does through equivariance; transferability means covering many chemistries at once, as DPA-2 does through multi-task learning across datasets."
+ },
+ {
+  "id": "Q186",
+  "type": "multi_hop",
+  "question": "How does the reporting bias in synthesis literature propagate into a generative model, and what two remedies does this corpus offer?",
+  "expectedAnswer": "Datasets record only successful or optimal syntheses, so a model trained on them never sees the boundary between what works and what does not; the remedies offered are synthetically generating reactions from a VAE latent space, and treating failed experiments as training data in their own right."
+ },
+ {
+  "id": "Q187",
+  "type": "multi_hop",
+  "question": "What connects the choice of a lenient structural-validity threshold to the way generative models are ranked against each other?",
+  "expectedAnswer": "Validity is checked with a deliberately lenient rule — shortest atomic distance above 0.5 Å plus charge neutrality — so validity rates saturate near the top and cannot separate models, which is why match rate and the stable-unique-novel rate do the ranking instead."
+ },
+ {
+  "id": "Q188",
+  "type": "multi_hop",
+  "question": "Two papers here report that a model rediscovered crystal structures it had not been trained on. Which are they, and what does each rediscovery demonstrate?",
+  "expectedAnswer": "MatterGen rediscovered more than 2,000 experimentally verified ICSD structures unseen in training, demonstrating synthesizability; the GNoME work independently experimentally realized 736 of its predicted structures, demonstrating that the predictions survive contact with experiment."
+ },
+ {
+  "id": "Q189",
+  "type": "enumerate",
+  "question": "Which models in this corpus are evaluated on the MP-20 dataset, and what does each contribute to the comparison?",
+  "expectedAnswer": "CDVAE, DiffCSP, FlowMM, CrystalFlow and the space-group informed transformer are all evaluated on MP-20, letting diffusion, flow-matching, VAE and transformer approaches be compared on the same match-rate and RMSE metrics."
+ },
+ {
+  "id": "Q190",
+  "type": "enumerate",
+  "question": "Which generative approaches in this corpus enforce crystallographic symmetry, and by what mechanism does each do it?",
+  "expectedAnswer": "SymmCD via the asymmetric unit plus learned symmetry transformations, WyckoffDiff via a discrete Wyckoff representation, WyCryst via a Wyckoff-based representation with a property-directed VAE, and the space-group informed transformer by conditioning on the space group and filling Wyckoff positions."
+ },
+ {
+  "id": "Q191",
+  "type": "enumerate",
+  "question": "Which distinct crystal representations are used by the generative models in this corpus?",
+  "expectedAnswer": "Lattice plus fractional coordinates (DiffCSP, CrystalFlow, FlowMM), Wyckoff-position protostructures (WyckoffDiff, WyCryst), SLICES strings (MatterGPT), text for a language model (FlowLLM), and image encodings such as PNG channels (xtal2png)."
+ },
+ {
+  "id": "Q192",
+  "type": "enumerate",
+  "question": "Which papers in this corpus report experimentally realized crystal structures or materials rather than a purely computational outcome, and what was realized in each?",
+  "expectedAnswer": "The GNoME work reports 736 structures independently experimentally realized, the autonomous laboratory realized 36 of 57 inorganic targets, the self-driving laboratory produced palladium films below 200 °C, and the robotic electrolyte platform discovered a novel mixed-anion aqueous sodium electrolyte."
+ },
+ {
+  "id": "Q193",
+  "type": "enumerate",
+  "question": "Which transformer architectures appear in this corpus and what does each take as input?",
+  "expectedAnswer": "MatterGPT takes SLICES crystal strings, MOFormer takes MOFid strings, the SMILES Transformer takes SMILES strings, and Matformer and ComFormer take periodic crystal graphs."
+ },
+ {
+  "id": "Q194",
+  "type": "enumerate",
+  "question": "Which measures of generative-model quality are used across this corpus, and what does each capture?",
+  "expectedAnswer": "Match rate and RMSE capture reconstruction of known structures; validity captures physical plausibility; stability captures position relative to the convex hull; and the stable-unique-novel rate captures genuine discovery."
+ },
+ {
+  "id": "Q195",
+  "type": "enumerate",
+  "question": "Which approaches to reducing the cost of density functional theory appear in this corpus?",
+  "expectedAnswer": "Machine-learning interatomic potentials replacing DFT relaxation, composition-only networks such as ElemNet predicting formation enthalpy directly, graph networks reaching better-than-DFT accuracy on large datasets, and active learning that limits DFT to the most informative configurations."
+ },
+ {
+  "id": "Q196",
+  "type": "enumerate",
+  "question": "Which generative model families are applied to molecules rather than crystals in this corpus, and what does each generate?",
+  "expectedAnswer": "A VAE over SMILES generating molecules through a continuous latent space, MolGAN generating molecular graphs adversarially with a reinforcement-learning reward, GraphVAE generating small graphs in one shot, and a VAE generating chemical reactions."
+ },
+ {
+  "id": "Q197",
+  "type": "enumerate",
+  "question": "Which sources of bias in materials machine learning are identified across this corpus?",
+  "expectedAnswer": "Databases restricted to ordered crystalline materials, synthesis literature reporting only successful or optimal outcomes, novelty measured against less stringent reference sets, and training sets skewed toward well-studied chemistries."
+ },
+ {
+  "id": "Q198",
+  "type": "enumerate",
+  "question": "Which strategies for handling scarce training data appear across this corpus?",
+  "expectedAnswer": "Equivariance for data efficiency (NequIP), transfer learning and pretraining on large unlabeled corpora (SMILES Transformer, FlowLLM), physics-informed constraints substituting for data, physics-informed data augmentation from simulation, and synthetic data generation from a generative model."
+ },
+ {
+  "id": "Q199",
+  "type": "enumerate",
+  "question": "Which interpretability techniques for materials models are described in this corpus?",
+  "expectedAnswer": "Extracting local chemical environment contributions from a crystal graph network (CGCNN), attentive response maps over diffraction images, and invariant geometric descriptors that keep a transformer's inputs physically meaningful."
+ },
+ {
+  "id": "Q200",
+  "type": "enumerate",
+  "question": "Which properties are used as conditioning or screening targets by the generative and screening models in this corpus?",
+  "expectedAnswer": "Formation energy, band gap, bulk and shear modulus, convex-hull stability, ionic conductivity and density, alongside synthesis-side targets such as sintering and calcination temperature."
+ }
+]
