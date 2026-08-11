@@ -1,0 +1,137 @@
+{
+ "_note": "Hand verdicts for the unbiased 220. Arms keyed by `key`: two of the three are the same collection at different seed floors, so collectionId cannot be the key. Every id gets an explicit verdict in every arm - absent-means-correct silently inflates a score.",
+ "model": "gemini/gemini-3.1-flash-lite",
+ "topK": 10,
+ "arms": [
+  {
+   "key": "26f2",
+   "collectionId": 26,
+   "maxFacts": 25,
+   "seedFloor": 2,
+   "label": "graph, seed floor 2",
+   "file": "synthesis_unbiased_c26_2026-08-11T03-16-32Z.jsonl"
+  },
+  {
+   "key": "26f1",
+   "collectionId": 26,
+   "maxFacts": 25,
+   "seedFloor": 1,
+   "label": "graph, seed floor 1",
+   "file": "synthesis_unbiased_c26_2026-08-11T03-16-33Z.jsonl"
+  },
+  {
+   "key": "33",
+   "collectionId": 33,
+   "maxFacts": 0,
+   "seedFloor": null,
+   "label": "no graph (control)",
+   "file": "synthesis_unbiased_c33_2026-08-11T03-16-32Z.jsonl"
+  }
+ ],
+ "gradedThrough": "chunk- graph+ stratum complete (8 of 220)",
+ "verdicts": {
+  "33": {
+   "V015": {
+    "v": "WRONG",
+    "r": "named Matminer and Pymatgen; the tools asked for are Weka for the models and Magpie for the attributes"
+   },
+   "V033": {
+    "v": "PARTIAL",
+    "r": "gave solid-state interpretability but denied the corpus covers organic chemistry, missing the open-database gap"
+   },
+   "V068": {
+    "v": "WRONG",
+    "r": "denied the corpus covers Co3Nb2V at all"
+   },
+   "V088": {
+    "v": "PARTIAL",
+    "r": "skew in the network memory right; missing bias as an incorrect-assumption error causing underfitting and the Gaussian latent-space link"
+   },
+   "V106": {
+    "v": "WRONG",
+    "r": "denied the corpus compares KRR and DFT on local versus global properties"
+   },
+   "V124": {
+    "v": "PARTIAL",
+    "r": "gave the generative side but not that MLIPs train on total energy, atomic forces and virial tensors"
+   },
+   "V129": {
+    "v": "PARTIAL",
+    "r": "gave traditional discovery as slow and costly but not that experimental validation stays non-negotiable to avoid false positives"
+   },
+   "V166": {
+    "v": "PARTIAL",
+    "r": "gave the asymmetric-unit representation but not sequential Wyckoff sampling versus symmetry-operation replication over orbit representatives"
+   }
+  },
+  "26f2": {
+   "V015": {
+    "v": "WRONG",
+    "r": "named Matminer and Pymatgen; the tools asked for are Weka for the models and Magpie for the attributes"
+   },
+   "V033": {
+    "v": "PARTIAL",
+    "r": "gave solid-state interpretability but denied the corpus covers organic chemistry, missing the open-database gap"
+   },
+   "V068": {
+    "v": "WRONG",
+    "r": "denied the corpus covers Co3Nb2V at all"
+   },
+   "V088": {
+    "v": "PARTIAL",
+    "r": "skew in the network memory right; missing bias as an incorrect-assumption error causing underfitting and the Gaussian latent-space link"
+   },
+   "V106": {
+    "v": "WRONG",
+    "r": "denied the corpus compares KRR and DFT on local versus global properties"
+   },
+   "V124": {
+    "v": "PARTIAL",
+    "r": "gave the generative side but not that MLIPs train on total energy, atomic forces and virial tensors"
+   },
+   "V129": {
+    "v": "PARTIAL",
+    "r": "gave traditional discovery as slow and costly but not that experimental validation stays non-negotiable to avoid false positives"
+   },
+   "V166": {
+    "v": "PARTIAL",
+    "r": "gave the asymmetric-unit representation but not sequential Wyckoff sampling versus symmetry-operation replication over orbit representatives"
+   }
+  },
+  "26f1": {
+   "V015": {
+    "v": "WRONG",
+    "r": "named Matminer and Pymatgen; the tools asked for are Weka for the models and Magpie for the attributes"
+   },
+   "V033": {
+    "v": "PARTIAL",
+    "r": "gave solid-state interpretability but denied the corpus covers organic chemistry, missing the open-database gap"
+   },
+   "V068": {
+    "v": "WRONG",
+    "r": "surfaced from the graph that MTP discovered Co3Nb2V but still declined the advantage over on/off-lattice models"
+   },
+   "V088": {
+    "v": "PARTIAL",
+    "r": "skew in the network memory right; missing bias as an incorrect-assumption error causing underfitting and the Gaussian latent-space link"
+   },
+   "V106": {
+    "v": "WRONG",
+    "r": "denied the corpus compares KRR and DFT on local versus global properties"
+   },
+   "V124": {
+    "v": "PARTIAL",
+    "r": "gave the generative side but not that MLIPs train on total energy, atomic forces and virial tensors"
+   },
+   "V129": {
+    "v": "PARTIAL",
+    "r": "gave traditional discovery as slow and costly but not that experimental validation stays non-negotiable to avoid false positives"
+   },
+   "V166": {
+    "v": "PARTIAL",
+    "r": "gave the asymmetric-unit representation but not sequential Wyckoff sampling versus symmetry-operation replication over orbit representatives"
+   }
+  }
+ },
+ "questionFlaws": {}
+}
