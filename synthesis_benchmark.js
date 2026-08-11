@@ -43,9 +43,16 @@ import { parseArgs } from 'node:util';
 import { pipeline } from '@xenova/transformers';
 
 const ROOT = path.dirname(fileURLToPath(import.meta.url));
-const BENCH_DIR = path.join(ROOT, 'experiments', '03-synthesis');
-const QUESTIONS_PATH = path.join(BENCH_DIR, 'questions.json');
-const EVIDENCE_PATH  = path.join(BENCH_DIR, 'evidence.json');
+// Which question set to ask. 03-synthesis is the original review-derived 200;
+// 04-unbiased is the rebuilt set whose answers are NOT gated on being reachable by
+// chunk retrieval, so the two are not interchangeable and the run must record which
+// one it asked. --bench names the directory, --questions/--evidence override the files.
+const BENCH_DIR = path.join(ROOT, 'experiments',
+  process.env.BENCH || '03-synthesis');
+const QUESTIONS_PATH = process.env.QUESTIONS_FILE
+  ? path.resolve(process.env.QUESTIONS_FILE) : path.join(BENCH_DIR, 'questions.json');
+const EVIDENCE_PATH  = process.env.EVIDENCE_FILE
+  ? path.resolve(process.env.EVIDENCE_FILE) : path.join(BENCH_DIR, 'evidence.json');
 
 const { values: flags } = parseArgs({
   options: {
@@ -308,8 +315,11 @@ const RUNS_DIR = path.join(ROOT, 'runs');
 await fs.mkdir(RUNS_DIR, { recursive: true });
 for (const id of ARMS) {
   const row = collections.get(id);
-  const txt  = path.join(RUNS_DIR, `synthesis_c${id}_${STAMP}.txt`);
-  const json = path.join(RUNS_DIR, `synthesis_c${id}_${STAMP}.jsonl`);
+  // The question set is in the filename: a c26 run against 03-synthesis and one
+  // against 04-unbiased are not comparable, and a bare collection id hides that.
+  const set = path.basename(BENCH_DIR).replace(/^\d+-/, '');
+  const txt  = path.join(RUNS_DIR, `synthesis_${set}_c${id}_${STAMP}.txt`);
+  const json = path.join(RUNS_DIR, `synthesis_${set}_c${id}_${STAMP}.jsonl`);
   files.set(id, { txt, json });
   await fs.writeFile(txt, [
     '='.repeat(WIDTH),
