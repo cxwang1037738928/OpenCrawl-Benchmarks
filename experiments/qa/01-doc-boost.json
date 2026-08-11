@@ -1,0 +1,2862 @@
+[
+ {
+  "id": "1.1 Dermal_sens.pdf#0",
+  "study": "1.1 Dermal_sens.pdf",
+  "supportDoc": "1.1 Dermal_sens.pdf",
+  "question": "regarding 1.1 Dermal_sens.pdf, answer the following: Determine the exposure type (ORAL, DERMAL, or INHALATION) for the toxicology study, then classify the exposure method.",
+  "expected": "DERMAL : Intradermal Injection and Occlusive Patch",
+  "arms": {
+   "28": {
+    "reply": "The toxicology study described in the document is for dermal exposure [2].\n\nThe exposure method used was the Magnusson and Kligman maximization test [2]. This method involved both intradermal and topical applications [6, 9, 10!]. Specifically, the study utilized:\n* **Intradermal induction:** 1% w/v in distilled water [9].\n* **Topical induction:** 50% w/w in distilled water [9].\n* **Topical challenge:** 25% and 10% w/w in distilled water [8].",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "1.1 Dermal_sens.pdf#1",
+  "study": "1.1 Dermal_sens.pdf",
+  "supportDoc": "1.1 Dermal_sens.pdf",
+  "question": "regarding 1.1 Dermal_sens.pdf, answer the following: Find the purity of the tested substance for this toxicology report.",
+  "expected": "Purity: Null",
+  "arms": {
+   "28": {
+    "reply": "The provided documents do not state the purity of the tested substance.",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "1.1 Dermal_sens.pdf#2",
+  "study": "1.1 Dermal_sens.pdf",
+  "supportDoc": "1.1 Dermal_sens.pdf",
+  "question": "regarding 1.1 Dermal_sens.pdf, answer the following: Find the vehicle(s) or solvent(s) used in this toxicity study.",
+  "expected": "VEHICLE/SOLVENT: distilled water",
+  "arms": {
+   "28": {
+    "reply": "The vehicle used in the study was distilled water [9].",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "1.1 Dermal_sens.pdf#3",
+  "study": "1.1 Dermal_sens.pdf",
+  "supportDoc": "1.1 Dermal_sens.pdf",
+  "question": "regarding 1.1 Dermal_sens.pdf, answer the following: Test guidelines can help legitimize studies. Guidelines are often from OECD, ECC or EC. For example, OECD 471 is a type of guideline. Does this study follow a test guideline? If yes, state it. If no, answer \"null\".",
+  "expected": "TEST GUIDELINE : OECD 406",
+  "arms": {
+   "28": {
+    "reply": "Yes, the study followed the OECD Guidelines for the Testing of Chemicals No. 406 \"Skin Sensitisation\" [2, 3, 6!]. This guideline is published by the Organisation for Economic Cooperation and Development [G]. Additionally, the study followed Method B6 of Commission Directive 92/69/EEC [2].",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "1.1 Dermal_sens.pdf#4",
+  "study": "1.1 Dermal_sens.pdf",
+  "supportDoc": "1.1 Dermal_sens.pdf",
+  "question": "regarding 1.1 Dermal_sens.pdf, answer the following: Does this study follow a test method? If yes, state it. If no, answer \"null\".",
+  "expected": "TEST METHOD : Guinea pig maximization test",
+  "arms": {
+   "28": {
+    "reply": "Yes, the study follows a test method. It follows the OECD Guidelines for the Testing of Chemicals No. 406 \"Skin Sensitisation\" (adopted 17 July 1992), which is based on the Magnusson and Kligman method [2]. Additionally, the study follows Method B6 of Commission Directive 92/69/EEC [3].",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "1.1 Dermal_sens.pdf#5",
+  "study": "1.1 Dermal_sens.pdf",
+  "supportDoc": "1.1 Dermal_sens.pdf",
+  "question": "regarding 1.1 Dermal_sens.pdf, answer the following: What was the highest dose of substance used, with unit?",
+  "expected": "Max dose: 50% w/v",
+  "arms": {
+   "28": {
+    "reply": "The highest concentration of the test material used in the sighting tests was 50% w/w in distilled water [2].",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "1.1 Dermal_sens.pdf#6",
+  "study": "1.1 Dermal_sens.pdf",
+  "supportDoc": "1.1 Dermal_sens.pdf",
+  "question": "regarding 1.1 Dermal_sens.pdf, answer the following: Is the substance ever diluted? If yes, state the dilution percentage or percentages. If no, answer \"null\".",
+  "expected": "DILUTION PERCENTAGES : 1% w/v (distilled water), 50% w/w, 25% w/w, 10% w/w, 5% w/w.",
+  "arms": {
+   "28": {
+    "reply": "Yes, the substance is diluted in distilled water for various stages of testing. The following concentrations are mentioned in the document:\n\n* **Intradermal Induction:** 1% w/v [3, 7!].\n* **Topical Induction:** 50% w/w [3, 5, 10!].\n* **Topical Challenge:** 25% w/w and 10% w/w [3, 4, 8!].\n* **Sighting Tests:** The substance was also prepared at 5%, 10%, 25%, and 50% w/w for the topical induction sighting test [3].",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "1.1 Dermal_sens.pdf#7",
+  "study": "1.1 Dermal_sens.pdf",
+  "supportDoc": "1.1 Dermal_sens.pdf",
+  "question": "regarding 1.1 Dermal_sens.pdf, answer the following: What is the total number of animals used in the study? If it is not mentioned, answer \"null\".",
+  "expected": "Total Animals: 20",
+  "arms": {
+   "28": {
+    "reply": "The study used a total of 20 animals, consisting of ten test animals and ten control animals [2].",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "1.1 Dermal_sens.pdf#8",
+  "study": "1.1 Dermal_sens.pdf",
+  "supportDoc": "1.1 Dermal_sens.pdf",
+  "question": "regarding 1.1 Dermal_sens.pdf, answer the following: Answer this question only if the study is a repeated dose or sensitization study, otherwise, answer 'not applicable'. Was the substance classified as low, low-moderate, moderate, moderate-high, high, or extreme hazard? If there is no info, answer \"null\".",
+  "expected": "Hazard : strong",
+  "arms": {
+   "28": {
+    "reply": "The study is a sensitization study [1, 3, 5, 8!].\n\nThe test material was classified as an \"extreme sensitiser\" to guinea pig skin [2].",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "1.1 Dermal_sens.pdf#9",
+  "study": "1.1 Dermal_sens.pdf",
+  "supportDoc": "1.1 Dermal_sens.pdf",
+  "question": "regarding 1.1 Dermal_sens.pdf, answer the following: Answer this question only if the study is a repeated dose study. Otherwise, answer 'not applicable'. What was the duration of the study, including units (days, weeks, years). If it's not mentioned, answer \"null\"",
+  "expected": "Not applicable",
+  "arms": {
+   "28": {
+    "reply": "not applicable",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "1.1 Dermal_sens.pdf#10",
+  "study": "1.1 Dermal_sens.pdf",
+  "supportDoc": "1.1 Dermal_sens.pdf",
+  "question": "regarding 1.1 Dermal_sens.pdf, answer the following: Answer this question only if the study is a repeated dose study. Otherwise, answer 'not applicable'. What effects on the test animals changed the NOAEL or the classification hazard? This could be changes in food consumption, organ weight change, weight change, or any other health problem observed in the animal due to the substance. If there were none, answer \"null\".",
+  "expected": "Not applicable",
+  "arms": {
+   "28": {
+    "reply": "not applicable [3, 4, 8!]",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "1.2_Inhalation_geno#0",
+  "study": "1.2_Inhalation_geno",
+  "supportDoc": "1.2 Inhalation_geno.pdf",
+  "question": "regarding 1.2_Inhalation_geno, answer the following: Determine the exposure type (ORAL, DERMAL, or INHALATION) for the toxicology study, then classify the exposure method.",
+  "expected": "INHALATION : Vapor",
+  "arms": {
+   "28": {
+    "reply": "The toxicology study described in the document is an inhalation study [1]. The exposure method is whole-body inhalation [6].",
+    "retrievedSupport": 6
+   }
+  }
+ },
+ {
+  "id": "1.2_Inhalation_geno#1",
+  "study": "1.2_Inhalation_geno",
+  "supportDoc": "1.2 Inhalation_geno.pdf",
+  "question": "regarding 1.2_Inhalation_geno, answer the following: Find the purity of the tested substance for this toxicology report.",
+  "expected": "Purity: Null",
+  "arms": {
+   "28": {
+    "reply": "The provided excerpts from the document \"1.2 Inhalation_geno.pdf\" do not state the purity of the tested substance (styrene).",
+    "retrievedSupport": 6
+   }
+  }
+ },
+ {
+  "id": "1.2_Inhalation_geno#2",
+  "study": "1.2_Inhalation_geno",
+  "supportDoc": "1.2 Inhalation_geno.pdf",
+  "question": "regarding 1.2_Inhalation_geno, answer the following: Find the vehicle(s) or solvent(s) used in this toxicity study.",
+  "expected": "vehicle/solvent: Null",
+  "arms": {
+   "28": {
+    "reply": "The provided excerpts regarding the study in `1.2 Inhalation_geno.pdf` do not mention the vehicle or solvent used in the toxicity study. The documents describe the exposure as \"whole-body inhalation to 0 ppm (air-only control) or 120 ppm of styrene\" [5].",
+    "retrievedSupport": 5
+   }
+  }
+ },
+ {
+  "id": "1.2_Inhalation_geno#3",
+  "study": "1.2_Inhalation_geno",
+  "supportDoc": "1.2 Inhalation_geno.pdf",
+  "question": "regarding 1.2_Inhalation_geno, answer the following: Test guidelines can help legitimize studies. Guidelines are often from OECD, ECC or EC. For example, OECD 471 is a type of guideline. Does this study follow a test guideline? If yes, state it. If no, answer \"null\".",
+  "expected": "Guidelines: Null",
+  "arms": {
+   "28": {
+    "reply": "The provided excerpts from document 1.2 Inhalation_geno.pdf do not state that the study followed a specific test guideline. Therefore, the answer is null.",
+    "retrievedSupport": 5
+   }
+  }
+ },
+ {
+  "id": "1.2_Inhalation_geno#4",
+  "study": "1.2_Inhalation_geno",
+  "supportDoc": "1.2 Inhalation_geno.pdf",
+  "question": "regarding 1.2_Inhalation_geno, answer the following: Does this study follow a test method? If yes, state it. If no, answer \"null\".",
+  "expected": "Method: Null",
+  "arms": {
+   "28": {
+    "reply": "The provided excerpts for 1.2 Inhalation_geno.pdf do not state a specific test method followed by the study; therefore, the answer is null [1, 2, 3, 4, 5, 6, 8!].",
+    "retrievedSupport": 7
+   }
+  }
+ },
+ {
+  "id": "1.2_Inhalation_geno#5",
+  "study": "1.2_Inhalation_geno",
+  "supportDoc": "1.2 Inhalation_geno.pdf",
+  "question": "regarding 1.2_Inhalation_geno, answer the following: What was the highest dose of substance used, with unit?",
+  "expected": "Max Dose: 120 ppm",
+  "arms": {
+   "28": {
+    "reply": "In the study described in document 1.2_Inhalation_geno, the mice were exposed to a dose of 120 ppm of styrene [1].",
+    "retrievedSupport": 4
+   }
+  }
+ },
+ {
+  "id": "1.2_Inhalation_geno#6",
+  "study": "1.2_Inhalation_geno",
+  "supportDoc": "1.2 Inhalation_geno.pdf",
+  "question": "regarding 1.2_Inhalation_geno, answer the following: Is the substance ever diluted? If yes, state the dilution percentage or percentages. If no, answer \"null\".",
+  "expected": "Dilution percentage: Null",
+  "arms": {
+   "28": {
+    "reply": "The provided excerpts for `1.2 Inhalation_geno.pdf` do not mention the substance being diluted. Therefore, the answer is null [1, 2, 3, 4, 5, 6, 8, 9!].",
+    "retrievedSupport": 8
+   }
+  }
+ },
+ {
+  "id": "1.2_Inhalation_geno#7",
+  "study": "1.2_Inhalation_geno",
+  "supportDoc": "1.2 Inhalation_geno.pdf",
+  "question": "regarding 1.2_Inhalation_geno, answer the following: What is the total number of animals used in the study? If it is not mentioned, answer \"null\".",
+  "expected": "Total Animals: 548",
+  "arms": {
+   "28": {
+    "reply": "The provided documents do not state the total number of animals used in the study; therefore, the answer is null [1, 2, 3, 4, 6, 8!]. While Table 2 provides the number of mice examined for specific strains and exposure concentrations (e.g., 67, 69, 70, 68), it does not provide a cumulative total for the entire study [2!].",
+    "retrievedSupport": 6
+   }
+  }
+ },
+ {
+  "id": "1.2_Inhalation_geno#8",
+  "study": "1.2_Inhalation_geno",
+  "supportDoc": "1.2 Inhalation_geno.pdf",
+  "question": "regarding 1.2_Inhalation_geno, answer the following: Answer this question only if the study is a repeated dose or sensitization study, otherwise, answer 'not applicable'. Was the substance classified as low, low-moderate, moderate, moderate-high, high, or extreme hazard? If there is no info, answer \"null\".",
+  "expected": "Hazard: Low",
+  "arms": {
+   "28": {
+    "reply": "The study described in `1.2 Inhalation_geno.pdf` is a repeated dose study, as it involved exposing mice to styrene via whole-body inhalation for 6 hours/day, 5 days/week for up to 104 weeks [4].\n\nRegarding the classification of the substance as a hazard, the provided documents do not contain information classifying the substance as low, low-moderate, moderate, moderate-high, high, or extreme hazard. Therefore, the answer is \"null\" [1, 2, 3, 4, 5, 6, 8!].",
+    "retrievedSupport": 7
+   }
+  }
+ },
+ {
+  "id": "1.2_Inhalation_geno#9",
+  "study": "1.2_Inhalation_geno",
+  "supportDoc": "1.2 Inhalation_geno.pdf",
+  "question": "regarding 1.2_Inhalation_geno, answer the following: Answer this question only if the study is a repeated dose study. Otherwise, answer 'not applicable'. What was the duration of the study, including units (days, weeks, years). If it's not mentioned, answer \"null\"",
+  "expected": "Duration: 104 weeks",
+  "arms": {
+   "28": {
+    "reply": "The study described in the document is a repeated dose study, as the mice were exposed to styrene for 6 hours/day, 5 days/week for up to 104 weeks [4].\n\nThe duration of the study was up to 104 weeks [1, 3, 4, 6!].",
+    "retrievedSupport": 7
+   }
+  }
+ },
+ {
+  "id": "1.2_Inhalation_geno#10",
+  "study": "1.2_Inhalation_geno",
+  "supportDoc": "1.2 Inhalation_geno.pdf",
+  "question": "regarding 1.2_Inhalation_geno, answer the following: Answer this question only if the study is a repeated dose study. Otherwise, answer 'not applicable'. What effects on the test animals changed the NOAEL or the classification hazard? This could be changes in food consumption, organ weight change, weight change, or any other health problem observed in the animal due to the substance. If there were none, answer \"null\".",
+  "expected": "DEGENERATION OF EPITHELIAL CELLS : Shrunken and sometimes hypereosinophilic cytoplasm  <br>LUNG TUMORS: Lung adenomas or adenocarcinomas in 31 out of 67 CD-1 controls  <br>HYPERPLASIA: Observed at week 1 but not subsequently (26, 52, or 78 weeks)",
+  "arms": {
+   "28": {
+    "reply": "The study described in `1.2_Inhalation_geno.pdf` is a repeated dose study, as the animals were exposed to styrene for 6 hours/day, 5 days/week for up to 104 weeks [9].\n\nRegarding effects that changed the NOAEL or classification hazard, the provided text does not mention a NOAEL (No Observed Adverse Effect Level). Furthermore, the document states that the Styrene Information and Research Center (SIRC) has not made a determination regarding whether the information supports the conclusion that the substance presents a substantial risk of injury to human health or the environment [2].\n\nRegarding specific health effects observed in the animals:\n* **Degeneration:** Slight degeneration of epithelial cells lining the terminal bronchioles was observed in CD-1 mice and WT (C57BL/6) mice [5].\n* **Hyperplasia:** Hyperplasia was observed in the terminal bronchioles of CD-1 mice and WT mice [4].\n* **Tumorigenicity:** Styrene increased the incidence of bronchioloalveolar adenomas and carcinomas in CD-1 mice [5].\n* **Cell Proliferation:** Increased cell proliferation occurred in CD-1 and WT mice exposed to 120 ppm styrene for 1 week [8].\n\nThe document argues that these effects are due to mouse-specific CYP2F2 metabolism, which is a rodent mode of action that the authors claim is not relevant to humans [2].",
+    "retrievedSupport": 7
+   }
+  }
+ },
+ {
+  "id": "1.3_Oral_repd#0",
+  "study": "1.3_Oral_repd",
+  "supportDoc": "1.3 Oral_repd.pdf",
+  "question": "regarding 1.3_Oral_repd, answer the following: Determine the exposure type (ORAL, DERMAL, or INHALATION) for the toxicology study, then classify the exposure method.",
+  "expected": "Oral : Diet",
+  "arms": {
+   "28": {
+    "reply": "Based on the provided documents, the toxicology study mentioned in `1.3_Oral_repd.pdf` is an oral study [8]. The exposure method for this study is dietary, as it is described as a \"3-month dietary toxicity study\" [8].",
+    "retrievedSupport": 3
+   }
+  }
+ },
+ {
+  "id": "1.3_Oral_repd#1",
+  "study": "1.3_Oral_repd",
+  "supportDoc": "1.3 Oral_repd.pdf",
+  "question": "regarding 1.3_Oral_repd, answer the following: Find the purity of the tested substance for this toxicology report.",
+  "expected": "Purity: Null",
+  "arms": {
+   "28": {
+    "reply": "The provided documents do not state the purity of the butyl CELLOSOLVE used in the study described in `1.3 Oral_repd.pdf`.",
+    "retrievedSupport": 8
+   }
+  }
+ },
+ {
+  "id": "1.3_Oral_repd#2",
+  "study": "1.3_Oral_repd",
+  "supportDoc": "1.3 Oral_repd.pdf",
+  "question": "regarding 1.3_Oral_repd, answer the following: Find the vehicle(s) or solvent(s) used in this toxicity study.",
+  "expected": "Vehicle: PURINA laboratory diet",
+  "arms": {
+   "28": {
+    "reply": "The provided documents do not identify a specific vehicle or solvent used to administer the butyl CELLOSOLVE in the toxicity study. The study involved incorporating the chemical directly into a \"basic diet\" of ground PURINA laboratory diet using a \"READCO model K-20 vertical mixer\" [7!].",
+    "retrievedSupport": 9
+   }
+  }
+ },
+ {
+  "id": "1.3_Oral_repd#3",
+  "study": "1.3_Oral_repd",
+  "supportDoc": "1.3 Oral_repd.pdf",
+  "question": "regarding 1.3_Oral_repd, answer the following: Test guidelines can help legitimize studies. Guidelines are often from OECD, ECC or EC. For example, OECD 471 is a type of guideline. Does this study follow a test guideline? If yes, state it. If no, answer \"null\".",
+  "expected": "Test Guideline: Null",
+  "arms": {
+   "28": {
+    "reply": "The provided excerpt for 1.3_Oral_repd.pdf [7!] does not mention any specific test guidelines followed by the study. Therefore, the answer is null.",
+    "retrievedSupport": 1
+   }
+  }
+ },
+ {
+  "id": "1.3_Oral_repd#4",
+  "study": "1.3_Oral_repd",
+  "supportDoc": "1.3 Oral_repd.pdf",
+  "question": "regarding 1.3_Oral_repd, answer the following: Does this study follow a test method? If yes, state it. If no, answer \"null\".",
+  "expected": "No test guideline",
+  "arms": {
+   "28": {
+    "reply": "The provided excerpts for document 1.3 Oral_repd.pdf do not state whether the study followed a specific test method; therefore, the answer is null [1, 2, 5, 9!].",
+    "retrievedSupport": 4
+   }
+  }
+ },
+ {
+  "id": "1.3_Oral_repd#5",
+  "study": "1.3_Oral_repd",
+  "supportDoc": "1.3 Oral_repd.pdf",
+  "question": "regarding 1.3_Oral_repd, answer the following: What was the highest dose of substance used, with unit?",
+  "expected": "Max Dose: 1.25 %",
+  "arms": {
+   "28": {
+    "reply": "In the 3-month dietary toxicity study described in the provided documents, the rats were fed the chemical at levels of 1.25%, 0.25%, 0.05%, or 0.0156% of their diets [2]. Therefore, the highest dose used was 1.25% of their diet [1].",
+    "retrievedSupport": 4
+   }
+  }
+ },
+ {
+  "id": "1.3_Oral_repd#6",
+  "study": "1.3_Oral_repd",
+  "supportDoc": "1.3 Oral_repd.pdf",
+  "question": "regarding 1.3_Oral_repd, answer the following: Is the substance ever diluted? If yes, state the dilution percentage or percentages. If no, answer \"null\".",
+  "expected": "Dilutions: 1.25%, 0.25%, 0.05%, 0.01%, 0.00%",
+  "arms": {
+   "28": {
+    "reply": "Based on the provided documents, the substance butyl CELLOSOLVE was incorporated into the diet of rats at concentrations of 1.25%, 0.25%, 0.05%, or 0.0156% [7]. The corpus does not explicitly describe these concentrations as \"dilutions,\" but rather as the levels at which the chemical was incorporated into the diet [4!].",
+    "retrievedSupport": 6
+   }
+  }
+ },
+ {
+  "id": "1.3_Oral_repd#7",
+  "study": "1.3_Oral_repd",
+  "supportDoc": "1.3 Oral_repd.pdf",
+  "question": "regarding 1.3_Oral_repd, answer the following: What is the total number of animals used in the study? If it is not mentioned, answer \"null\".",
+  "expected": "Total Animals: 99",
+  "arms": {
+   "28": {
+    "reply": "The total number of animals used in the study was 100 [6!].",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "1.3_Oral_repd#8",
+  "study": "1.3_Oral_repd",
+  "supportDoc": "1.3 Oral_repd.pdf",
+  "question": "regarding 1.3_Oral_repd, answer the following: Answer this question only if the study is a repeated dose or sensitization study, otherwise, answer 'not applicable'. Was the substance classified as low, low-moderate, moderate, moderate-high, high, or extreme hazard? If there is no info, answer \"null\".",
+  "expected": "Hazard: High",
+  "arms": {
+   "28": {
+    "reply": "The study described in `1.3 Oral_repd.pdf` is a \"3-month dietary toxicity study\" [3], which constitutes a repeated dose study.\n\nRegarding the hazard classification of the substance (butyl CELLOSOLVE) in this specific document, the corpus does not provide a classification of low, low-moderate, moderate, moderate-high, high, or extreme hazard; therefore, the answer is \"null\" [3].",
+    "retrievedSupport": 4
+   }
+  }
+ },
+ {
+  "id": "1.3_Oral_repd#9",
+  "study": "1.3_Oral_repd",
+  "supportDoc": "1.3 Oral_repd.pdf",
+  "question": "regarding 1.3_Oral_repd, answer the following: Answer this question only if the study is a repeated dose study. Otherwise, answer 'not applicable'. What was the duration of the study, including units (days, weeks, years). If it's not mentioned, answer \"null\"",
+  "expected": "Duration: 3 months",
+  "arms": {
+   "28": {
+    "reply": "The study is a repeated dose study [1]. The duration of the study was 91 to 93 days [3!].",
+    "retrievedSupport": 6
+   }
+  }
+ },
+ {
+  "id": "1.3_Oral_repd#10",
+  "study": "1.3_Oral_repd",
+  "supportDoc": "1.3 Oral_repd.pdf",
+  "question": "regarding 1.3_Oral_repd, answer the following: Answer this question only if the study is a repeated dose study. Otherwise, answer 'not applicable'. What effects on the test animals changed the NOAEL or the classification hazard? This could be changes in food consumption, organ weight change, weight change, or any other health problem observed in the animal due to the substance. If there were none, answer \"null\".",
+  "expected": "APPROPRIATE FOOD CONSUMPTION : Significant reduction in appetite  <br>BODY WEIGHT CHANGE : Decrease in body weight gain, with affected rats reaching approximately half the body weight of control animals by study's end  <br>ORGAN WEIGHT CHANGES: Changes in liver and kidney weights compared to controls  <br>HEALTH PROBLEMS OBSERVED: Histopathological changes observed specifically in testis",
+  "arms": {
+   "28": {
+    "reply": "The study is a repeated dose study, as it involved feeding rats butyl CELLOSOLVE in their diets for three months [1].\n\nThe following effects were observed at the 1.25% dosage level, which influenced the study's findings:\n* **Appetite/Diet Consumption:** Diet consumption was significantly depressed in both male and female rats [2].\n* **Body Weight:** Body weight gain was depressed to about one-half that of the control group [2].\n* **Organ Weights:** Mean liver and kidney weights were increased [2].\n* **Histopathology:** Testicular atrophy was observed and verified microscopically [8].\n\nAt the 0.25% dosage level, the following effects were observed:\n* **Appetite/Diet Consumption:** Appetite was depressed in male rats [2].\n* **Body Weight:** Weight gain was depressed in male rats [2].\n* **Histopathology:** Testicular atrophy was observed and verified microscopically [8].\n\nThe study concluded that the 0.05% dosage level was without deleterious effect on the criteria measured [9].",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "1.4_Vitro_Geno#0",
+  "study": "1.4_Vitro_Geno",
+  "supportDoc": "1.4 Vitro_geno.pdf",
+  "question": "regarding 1.4_Vitro_Geno, answer the following: Determine the exposure type (ORAL, DERMAL, or INHALATION) for the toxicology study, then classify the exposure method.",
+  "expected": "Not applicable",
+  "arms": {
+   "28": {
+    "reply": "The provided documents do not state whether the exposure type for the toxicology study was oral, dermal, or inhalation. The study is an *in vitro* \"Reverse Mutation Assay\" (Ames Test) using bacterial strains, which involves exposing bacteria to the test item in a laboratory setting rather than administering it to a living organism via oral, dermal, or inhalation routes [1, 3, 9!].\n\nRegarding the exposure method, the test item was applied using the \"Ames plate incorporation and pre-incubation methods\" [9!]. This involved mixing the test item formulation with bacterial culture, molten top agar, and either S9-mix or phosphate buffer, then overlaying the mixture onto sterile plates of Vogel-Bonner Minimal agar [2!].",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "1.4_Vitro_Geno#1",
+  "study": "1.4_Vitro_Geno",
+  "supportDoc": "1.4 Vitro_geno.pdf",
+  "question": "regarding 1.4_Vitro_Geno, answer the following: Find the purity of the tested substance for this toxicology report.",
+  "expected": "Purity: Null",
+  "arms": {
+   "28": {
+    "reply": "The provided documents do not state the specific purity of the test item. While the report notes that the formulated concentrations were adjusted to account for a \"stated active ingredient (60°/o w/v)\" [3!], the document explicitly states that the responsibility for data relating to the purity of the test item lies with the Sponsor [6!].",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "1.4_Vitro_Geno#2",
+  "study": "1.4_Vitro_Geno",
+  "supportDoc": "1.4 Vitro_geno.pdf",
+  "question": "regarding 1.4_Vitro_Geno, answer the following: Find the vehicle(s) or solvent(s) used in this toxicity study.",
+  "expected": "VEHICLE/SOLVENT: Sterile distilled water, Bacto agar with sodium chloride and supplemented trace histidine or tryptophan solutions, S9-mix",
+  "arms": {
+   "28": {
+    "reply": "The vehicle used in this study was sterile distilled water [6].",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "1.4_Vitro_Geno#3",
+  "study": "1.4_Vitro_Geno",
+  "supportDoc": "1.4 Vitro_geno.pdf",
+  "question": "regarding 1.4_Vitro_Geno, answer the following: Test guidelines can help legitimize studies. Guidelines are often from OECD, ECC or EC. For example, OECD 471 is a type of guideline. Does this study follow a test guideline? If yes, state it. If no, answer \"null\".",
+  "expected": "CATEGORY : OECD 471",
+  "arms": {
+   "28": {
+    "reply": "Yes, the study follows several test guidelines, including:\n\n* OECD Guidelines for Testing of Chemicals No. 471 \"Bacterial Reverse Mutation Test\" [1].\n* Method 813/14 of Commission Regulation (EC) number 440/2008 [1].\n* Guidelines published by Japanese Regulatory Authorities, including METI, MHLW, and MAFF [1].\n* USA, EPA (TSCA) OPPTS harmonised guidelines [1].",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "1.4_Vitro_Geno#4",
+  "study": "1.4_Vitro_Geno",
+  "supportDoc": "1.4 Vitro_geno.pdf",
+  "question": "regarding 1.4_Vitro_Geno, answer the following: Does this study follow a test method? If yes, state it. If no, answer \"null\".",
+  "expected": "CATEGORY : Ames Test",
+  "arms": {
+   "28": {
+    "reply": "Yes, the study follows a test method designed to be compatible with the following guidelines:\n\n* Guidelines for bacterial mutagenicity testing published by major Japanese Regulatory Authorities, including METI, MHLW, and MAFF [1].\n* OECD Guidelines for Testing of Chemicals No. 471 \"Bacterial Reverse Mutation Test\" [1].\n* Method 813/14 of Commission Regulation (EC) number 440/2008 [1].\n* USA, EPA (TSCA) OPPTS harmonised guidelines [1].",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "1.4_Vitro_Geno#5",
+  "study": "1.4_Vitro_Geno",
+  "supportDoc": "1.4 Vitro_geno.pdf",
+  "question": "regarding 1.4_Vitro_Geno, answer the following: What was the highest dose of substance used, with unit?",
+  "expected": "Max Dose: 5000 ug/plate",
+  "arms": {
+   "28": {
+    "reply": "The highest dose of the test item used in the preliminary toxicity test was 5000 µg/plate [1]. This same dose range (up to 5000 µg/plate) was also used in the second experiment [9].",
+    "retrievedSupport": 8
+   }
+  }
+ },
+ {
+  "id": "1.4_Vitro_Geno#6",
+  "study": "1.4_Vitro_Geno",
+  "supportDoc": "1.4 Vitro_geno.pdf",
+  "question": "regarding 1.4_Vitro_Geno, answer the following: Is the substance ever diluted? If yes, state the dilution percentage or percentages. If no, answer \"null\".",
+  "expected": "Dilution: Half-Log dilutions/ 60%w/v or Null (acceptable mistake)",
+  "arms": {
+   "28": {
+    "reply": "Yes, the substance is diluted. The test item was prepared in approximate half-log dilutions using sterile distilled water [1].",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "1.4_Vitro_Geno#7",
+  "study": "1.4_Vitro_Geno",
+  "supportDoc": "1.4 Vitro_geno.pdf",
+  "question": "regarding 1.4_Vitro_Geno, answer the following: What is the total number of animals used in the study? If it is not mentioned, answer \"null\".",
+  "expected": "Not applicable",
+  "arms": {
+   "28": {
+    "reply": "null [1, 2, 3, 4, 5, 6, 7, 8, 9, 10!]",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "1.4_Vitro_Geno#8",
+  "study": "1.4_Vitro_Geno",
+  "supportDoc": "1.4 Vitro_geno.pdf",
+  "question": "regarding 1.4_Vitro_Geno, answer the following: Answer this question only if the study is a repeated dose or sensitization study, otherwise, answer 'not applicable'. Was the substance classified as low, low-moderate, moderate, moderate-high, high, or extreme hazard? If there is no info, answer \"null\".",
+  "expected": "Not applicable",
+  "arms": {
+   "28": {
+    "reply": "not applicable",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "1.4_Vitro_Geno#9",
+  "study": "1.4_Vitro_Geno",
+  "supportDoc": "1.4 Vitro_geno.pdf",
+  "question": "regarding 1.4_Vitro_Geno, answer the following: Answer this question only if the study is a repeated dose study. Otherwise, answer 'not applicable'. What was the duration of the study, including units (days, weeks, years). If it's not mentioned, answer \"null\"",
+  "expected": "Not applicable",
+  "arms": {
+   "28": {
+    "reply": "not applicable [8!]",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "1.4_Vitro_Geno#10",
+  "study": "1.4_Vitro_Geno",
+  "supportDoc": "1.4 Vitro_geno.pdf",
+  "question": "regarding 1.4_Vitro_Geno, answer the following: Answer this question only if the study is a repeated dose study. Otherwise, answer 'not applicable'. What effects on the test animals changed the NOAEL or the classification hazard? This could be changes in food consumption, organ weight change, weight change, or any other health problem observed in the animal due to the substance. If there were none, answer \"null\".",
+  "expected": "Not applicable",
+  "arms": {
+   "28": {
+    "reply": "not applicable [1, 6!]",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "1.5_Inhalation_repd#0",
+  "study": "1.5_Inhalation_repd",
+  "supportDoc": "1.5 Inhalation_repd.pdf",
+  "question": "regarding 1.5_Inhalation_repd, answer the following: Determine the exposure type (ORAL, DERMAL, or INHALATION) for the toxicology study, then classify the exposure method.",
+  "expected": "Inhalation: Vapor",
+  "arms": {
+   "28": {
+    "reply": "The toxicology study described in the document is an **inhalation** study [1].\n\nThe exposure method involved exposing male and female Sprague-Dawley rats to n-butyl acetate in a chamber [5]. The rats were exposed for 6 hours per day, 5 days per week, for 13 consecutive weeks [5].",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "1.5_Inhalation_repd#1",
+  "study": "1.5_Inhalation_repd",
+  "supportDoc": "1.5 Inhalation_repd.pdf",
+  "question": "regarding 1.5_Inhalation_repd, answer the following: Find the purity of the tested substance for this toxicology report.",
+  "expected": "Purity: Null",
+  "arms": {
+   "28": {
+    "reply": "The provided corpus does not contain information regarding the purity of the n-butyl acetate used in the study.",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "1.5_Inhalation_repd#2",
+  "study": "1.5_Inhalation_repd",
+  "supportDoc": "1.5 Inhalation_repd.pdf",
+  "question": "regarding 1.5_Inhalation_repd, answer the following: Find the vehicle(s) or solvent(s) used in this toxicity study.",
+  "expected": "Vehicle\\:Null",
+  "arms": {
+   "28": {
+    "reply": "The provided documents do not identify a vehicle or solvent used to administer the n-butyl acetate in this study. The study involved the inhalation of n-butyl acetate vapor at concentrations of 0, 500, 1500, or 3000 ppm [7]. The documents describe n-butyl acetate itself as a solvent used in commercial products [7].",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "1.5_Inhalation_repd#3",
+  "study": "1.5_Inhalation_repd",
+  "supportDoc": "1.5 Inhalation_repd.pdf",
+  "question": "regarding 1.5_Inhalation_repd, answer the following: Test guidelines can help legitimize studies. Guidelines are often from OECD, ECC or EC. For example, OECD 471 is a type of guideline. Does this study follow a test guideline? If yes, state it. If no, answer \"null\".",
+  "expected": "Not applicable",
+  "arms": {
+   "28": {
+    "reply": "The provided documents do not state whether the study followed a specific test guideline such as those from the OECD, ECC, or EC. Therefore, the corpus does not address this.",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "1.5_Inhalation_repd#4",
+  "study": "1.5_Inhalation_repd",
+  "supportDoc": "1.5 Inhalation_repd.pdf",
+  "question": "regarding 1.5_Inhalation_repd, answer the following: Does this study follow a test method? If yes, state it. If no, answer \"null\".",
+  "expected": "Null\\:Null",
+  "arms": {
+   "28": {
+    "reply": "The provided documents do not state that the study followed a specific, named test method (such as an OECD guideline or EPA test protocol). The documents describe the study as a \"13-week subchronic inhalation toxicity study\" [2] conducted by the Eastman Kodak Company Toxicological Sciences Laboratory [2] for the Chemical Manufacturers Association Oxo Process Panel [2].\n\nTherefore, the answer is null.",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "1.5_Inhalation_repd#5",
+  "study": "1.5_Inhalation_repd",
+  "supportDoc": "1.5 Inhalation_repd.pdf",
+  "question": "regarding 1.5_Inhalation_repd, answer the following: What was the highest dose of substance used, with unit?",
+  "expected": "Max dose: 3000 ppm",
+  "arms": {
+   "28": {
+    "reply": "The highest dose of n-butyl acetate used in the study was 3000 ppm [8].",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "1.5_Inhalation_repd#6",
+  "study": "1.5_Inhalation_repd",
+  "supportDoc": "1.5 Inhalation_repd.pdf",
+  "question": "regarding 1.5_Inhalation_repd, answer the following: Is the substance ever diluted? If yes, state the dilution percentage or percentages. If no, answer \"null\".",
+  "expected": "Dilution: Null",
+  "arms": {
+   "28": {
+    "reply": "The provided documents do not state that the substance (n-butyl acetate) is diluted. The study involved exposing rats to vapor concentrations of 0, 500, 1500, or 3000 ppm [10]. While the study discusses adjusting target analytical concentrations to account for chamber homogeneity (e.g., increasing a target of 500 ppm to 550 ppm) [6, 8!], this is not described as a dilution of the substance itself. Therefore, the corpus does not address whether the substance is diluted.",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "1.5_Inhalation_repd#7",
+  "study": "1.5_Inhalation_repd",
+  "supportDoc": "1.5 Inhalation_repd.pdf",
+  "question": "regarding 1.5_Inhalation_repd, answer the following: What is the total number of animals used in the study? If it is not mentioned, answer \"null\".",
+  "expected": "Total Animals: 120",
+  "arms": {
+   "28": {
+    "reply": "The study used a total of 120 animals [1]. This consisted of 15 males and 15 females per group across four groups (Control/0 ppm, Low/500 ppm, Mid/1500 ppm, and High/3000 ppm) [7].",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "1.5_Inhalation_repd#8",
+  "study": "1.5_Inhalation_repd",
+  "supportDoc": "1.5 Inhalation_repd.pdf",
+  "question": "regarding 1.5_Inhalation_repd, answer the following: Answer this question only if the study is a repeated dose or sensitization study, otherwise, answer 'not applicable'. Was the substance classified as low, low-moderate, moderate, moderate-high, high, or extreme hazard? If there is no info, answer \"null\".",
+  "expected": "Hazard Classification : null",
+  "arms": {
+   "28": {
+    "reply": "The study is a 13-week subchronic inhalation toxicity study, which constitutes a repeated dose study [1].\n\nRegarding the hazard classification of n-butyl acetate, the provided corpus does not contain information classifying the substance as low, low-moderate, moderate, moderate-high, high, or extreme hazard; therefore, the answer is null [1, 7!].",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "1.5_Inhalation_repd#9",
+  "study": "1.5_Inhalation_repd",
+  "supportDoc": "1.5 Inhalation_repd.pdf",
+  "question": "regarding 1.5_Inhalation_repd, answer the following: Answer this question only if the study is a repeated dose study. Otherwise, answer 'not applicable'. What was the duration of the study, including units (days, weeks, years). If it's not mentioned, answer \"null\"",
+  "expected": "DURATION : 13 weeks",
+  "arms": {
+   "28": {
+    "reply": "The study is a repeated dose study [1]. The duration of the study was 13 weeks [1, 2, 7, 8!].",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "1.5_Inhalation_repd#10",
+  "study": "1.5_Inhalation_repd",
+  "supportDoc": "1.5 Inhalation_repd.pdf",
+  "question": "regarding 1.5_Inhalation_repd, answer the following: Answer this question only if the study is a repeated dose study. Otherwise, answer 'not applicable'. What effects on the test animals changed the NOAEL or the classification hazard? This could be changes in food consumption, organ weight change, weight change, or any other health problem observed in the animal due to the substance. If there were none, answer \"null\".",
+  "expected": "- \\*\\*Necrosis of olfactory epithelium\\*\\* - critical respiratory tract irritation;  <br>- \\*\\*Inflammation and necrosis in stomach mucosa\\*\\* - gastrointestinal toxicity;<br>- Significant reductions in absolute weights of the liver, kidneys, spleen at higher doses (LOAEL);<br>- Relative splenic-to-body weight ratios were notably lower at 3000 ppm.",
+  "arms": {
+   "28": {
+    "reply": "The study is a repeated dose study, as it involved a 13-week subchronic inhalation toxicity study with repeated exposure [1].\n\nThe no-observed-effect level (NOEL) for this study is considered to be 500 ppm [4]. The effects observed at higher concentrations (1500 and 3000 ppm) that informed this determination include:\n\n* **Respiratory tract irritation:** Signs of upper respiratory tract irritation were observed in the nasal passages of animals exposed to 1500 and 3000 ppm, including necrosis of the olfactory epithelium [7].\n* **Reduced activity:** Animals exposed to 1500 and 3000 ppm displayed acute, transient signs of reduced activity levels during exposure [7].\n* **Body weight and feed consumption:** The 1500 and 3000 ppm treatments produced decreased body weight and feed consumption throughout much of the exposure period [3]. While the 500 ppm treatment also resulted in reductions in feed consumption at a few time periods, this was not accompanied by statistically significant reductions in body weight [3].\n* **Stomach irritation:** Gross necropsy and microscopic observations showed signs of irritation to the glandular stomach and necrosis in the non-glandular stomach in some 3000 ppm female rats [3].\n\nDespite these findings, the study concluded there was no systemic or organ-specific toxicity [4].",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "1.6_Vitro_Geno#0",
+  "study": "1.6_Vitro_Geno",
+  "supportDoc": "1.6 Vitro_geno.pdf",
+  "question": "regarding 1.6_Vitro_Geno, answer the following: Determine the exposure type (ORAL, DERMAL, or INHALATION) for the toxicology study, then classify the exposure method.",
+  "expected": "Not applicable",
+  "arms": {
+   "28": {
+    "reply": "The provided documents do not state the exposure type (oral, dermal, or inhalation) or the exposure method for the toxicology study. The corpus focuses on an *in vitro* mammalian chromosome aberration test [2], which involves treating cells in a laboratory setting rather than administering a substance to a living organism via oral, dermal, or inhalation routes [2].",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "1.6_Vitro_Geno#1",
+  "study": "1.6_Vitro_Geno",
+  "supportDoc": "1.6 Vitro_geno.pdf",
+  "question": "regarding 1.6_Vitro_Geno, answer the following: Find the purity of the tested substance for this toxicology report.",
+  "expected": "Purity: 74%",
+  "arms": {
+   "28": {
+    "reply": "The purity of the active ingredient used in the study was 74.0% [1].",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "1.6_Vitro_Geno#2",
+  "study": "1.6_Vitro_Geno",
+  "supportDoc": "1.6 Vitro_geno.pdf",
+  "question": "regarding 1.6_Vitro_Geno, answer the following: Find the vehicle(s) or solvent(s) used in this toxicity study.",
+  "expected": "VEHICLE/SOLVENT: phosphate buffered saline (PBS), DMEM, sterile physiological saline",
+  "arms": {
+   "28": {
+    "reply": "The vehicle selected for the study was 1X PBS (phosphate buffered saline) [7].",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "1.6_Vitro_Geno#3",
+  "study": "1.6_Vitro_Geno",
+  "supportDoc": "1.6 Vitro_geno.pdf",
+  "question": "regarding 1.6_Vitro_Geno, answer the following: Test guidelines can help legitimize studies. Guidelines are often from OECD, ECC or EC. For example, OECD 471 is a type of guideline. Does this study follow a test guideline? If yes, state it. If no, answer \"null\".",
+  "expected": "OECD: 473",
+  "arms": {
+   "28": {
+    "reply": "Yes, this study followed the procedures indicated by the following internationally accepted guidelines:\n\n* OECD Guidelines for Testing of Chemicals, Section 4, No. 473 (\"In Vitro Mammalian Chromosome Aberration Test\") [1].\n* Commission Regulation (EC) No 440/2008, B.10 (\"Mutagenicity In Vitro Mammalian Chromosome Aberration Test\") [1].\n* EPA Health Effects Test Guidelines, OPPTS 870.5375 (\"In Vitro Mammalian Chromosome Aberration Test\") [1].",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "1.6_Vitro_Geno#4",
+  "study": "1.6_Vitro_Geno",
+  "supportDoc": "1.6 Vitro_geno.pdf",
+  "question": "regarding 1.6_Vitro_Geno, answer the following: Does this study follow a test method? If yes, state it. If no, answer \"null\".",
+  "expected": "Method\\:Chromosomal Abberation",
+  "arms": {
+   "28": {
+    "reply": "Yes, this study follows the procedures indicated by the following internationally accepted guidelines:\n\n* Ninth Addendum to OECD Guidelines for Testing of Chemicals, Section 4, No. 473, \"In Vitro Mammalian Chromosome Aberration Test,\" adopted 21 July 1997 [1].\n* Commission Regulation (EC) No 440/2008 of 30 May 2008, B.10, \"Mutagenicity In Vitro Mammalian Chromosome Aberration Test\" [1].\n* EPA Health Effects Test Guidelines, OPPTS 870.5375, \"In Vitro Mammalian Chromosome Aberration Test,\" EPA 712-C-98-223, August 1998 [1].",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "1.6_Vitro_Geno#5",
+  "study": "1.6_Vitro_Geno",
+  "supportDoc": "1.6 Vitro_geno.pdf",
+  "question": "regarding 1.6_Vitro_Geno, answer the following: What was the highest dose of substance used, with unit?",
+  "expected": "Max Dose: 400 ug/mL",
+  "arms": {
+   "28": {
+    "reply": "The highest concentration used in the preliminary test was 5000 µg/mL [2]. Additionally, a total of nine test concentrations between 5000 and 0.064 µg/mL were used to evaluate toxicity in each cytotoxicity assay [9].",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "1.6_Vitro_Geno#6",
+  "study": "1.6_Vitro_Geno",
+  "supportDoc": "1.6 Vitro_geno.pdf",
+  "question": "regarding 1.6_Vitro_Geno, answer the following: Is the substance ever diluted? If yes, state the dilution percentage or percentages. If no, answer \"null\".",
+  "expected": "Dilutions\\:Null",
+  "arms": {
+   "28": {
+    "reply": "Yes, the substance is diluted. From the stock formulation, several dilutions were prepared using the selected vehicle [1].\n\nThe provided documents do not state specific dilution percentages.",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "1.6_Vitro_Geno#7",
+  "study": "1.6_Vitro_Geno",
+  "supportDoc": "1.6 Vitro_geno.pdf",
+  "question": "regarding 1.6_Vitro_Geno, answer the following: What is the total number of animals used in the study? If it is not mentioned, answer \"null\".",
+  "expected": "ANIMALS USED : null",
+  "arms": {
+   "28": {
+    "reply": "null [1, 2, 4!]",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "1.6_Vitro_Geno#8",
+  "study": "1.6_Vitro_Geno",
+  "supportDoc": "1.6 Vitro_geno.pdf",
+  "question": "regarding 1.6_Vitro_Geno, answer the following: Answer this question only if the study is a repeated dose or sensitization study, otherwise, answer 'not applicable'. Was the substance classified as low, low-moderate, moderate, moderate-high, high, or extreme hazard? If there is no info, answer \"null\".",
+  "expected": "not applicable",
+  "arms": {
+   "28": {
+    "reply": "not applicable [2, 4!]",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "1.6_Vitro_Geno#9",
+  "study": "1.6_Vitro_Geno",
+  "supportDoc": "1.6 Vitro_geno.pdf",
+  "question": "regarding 1.6_Vitro_Geno, answer the following: Answer this question only if the study is a repeated dose study. Otherwise, answer 'not applicable'. What was the duration of the study, including units (days, weeks, years). If it's not mentioned, answer \"null\"",
+  "expected": "not applicable",
+  "arms": {
+   "28": {
+    "reply": "not applicable",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "1.6_Vitro_Geno#10",
+  "study": "1.6_Vitro_Geno",
+  "supportDoc": "1.6 Vitro_geno.pdf",
+  "question": "regarding 1.6_Vitro_Geno, answer the following: Answer this question only if the study is a repeated dose study. Otherwise, answer 'not applicable'. What effects on the test animals changed the NOAEL or the classification hazard? This could be changes in food consumption, organ weight change, weight change, or any other health problem observed in the animal due to the substance. If there were none, answer \"null\".",
+  "expected": "not applicable",
+  "arms": {
+   "28": {
+    "reply": "not applicable [1, 4, 10!]",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "1.7_Dermal_Sens#0",
+  "study": "1.7_Dermal_Sens",
+  "supportDoc": "1.7 Dermal_sens.pdf",
+  "question": "regarding 1.7_Dermal_Sens, answer the following: Determine the exposure type (ORAL, DERMAL, or INHALATION) for the toxicology study, then classify the exposure method.",
+  "expected": "Dermal : Local Lymph Node Assay",
+  "arms": {
+   "28": {
+    "reply": "Based on the provided documents, the toxicology study in `1.7 Dermal_sens.pdf` is classified as follows:\n\n* **Exposure Type:** The exposure type is **dermal** [1!].\n* **Exposure Method:** The study utilized a modified **Local Lymph Node Assay (LLNA)** [1]. In this method, groups of mice were dermally exposed to solutions of the test substance in acetone/olive oil [1].",
+    "retrievedSupport": 4
+   }
+  }
+ },
+ {
+  "id": "1.7_Dermal_Sens#1",
+  "study": "1.7_Dermal_Sens",
+  "supportDoc": "1.7 Dermal_sens.pdf",
+  "question": "regarding 1.7_Dermal_Sens, answer the following: Find the purity of the tested substance for this toxicology report.",
+  "expected": "Purity\\:Null",
+  "arms": {
+   "28": {
+    "reply": "The provided documents for 1.7 Dermal_sens.pdf do not state the purity of the tested substance. The corpus does not address this information.",
+    "retrievedSupport": 4
+   }
+  }
+ },
+ {
+  "id": "1.7_Dermal_Sens#2",
+  "study": "1.7_Dermal_Sens",
+  "supportDoc": "1.7 Dermal_sens.pdf",
+  "question": "regarding 1.7_Dermal_Sens, answer the following: Find the vehicle(s) or solvent(s) used in this toxicity study.",
+  "expected": "Vehicle:  acetone/olive oil",
+  "arms": {
+   "28": {
+    "reply": "The vehicle used in the study described in the document \"1.7 Dermal_sens.pdf\" was a mixture of acetone and olive oil [2].",
+    "retrievedSupport": 4
+   }
+  }
+ },
+ {
+  "id": "1.7_Dermal_Sens#3",
+  "study": "1.7_Dermal_Sens",
+  "supportDoc": "1.7 Dermal_sens.pdf",
+  "question": "regarding 1.7_Dermal_Sens, answer the following: Test guidelines can help legitimize studies. Guidelines are often from OECD, ECC or EC. For example, OECD 471 is a type of guideline. Does this study follow a test guideline? If yes, state it. If no, answer \"null\".",
+  "expected": "OECD: 429,406",
+  "arms": {
+   "28": {
+    "reply": "Yes, the study follows test guidelines. The study design was in accordance with OECD Guidelines 429 and 406, as well as EPA OPPTS 870.2600 [1]. OECD is an abbreviation for the Organisation for Economic Cooperation and Development [G].",
+    "retrievedSupport": 4
+   }
+  }
+ },
+ {
+  "id": "1.7_Dermal_Sens#4",
+  "study": "1.7_Dermal_Sens",
+  "supportDoc": "1.7 Dermal_sens.pdf",
+  "question": "regarding 1.7_Dermal_Sens, answer the following: Does this study follow a test method? If yes, state it. If no, answer \"null\".",
+  "expected": "Method:  Local Lymph Node Assay",
+  "arms": {
+   "28": {
+    "reply": "Yes, the study follows a test method. It was a modified Local Lymph Node Assay (LLNA) that followed OECD Guidelines 429 and 406, as well as EPA OPPTS 870.2600 [2].",
+    "retrievedSupport": 3
+   }
+  }
+ },
+ {
+  "id": "1.7_Dermal_Sens#5",
+  "study": "1.7_Dermal_Sens",
+  "supportDoc": "1.7 Dermal_sens.pdf",
+  "question": "regarding 1.7_Dermal_Sens, answer the following: What was the highest dose of substance used, with unit?",
+  "expected": "Max Dose: 100%",
+  "arms": {
+   "28": {
+    "reply": "In the study described in document 1.7_Dermal_sens.pdf, the highest dose of the test substance used was 100% [2!].",
+    "retrievedSupport": 4
+   }
+  }
+ },
+ {
+  "id": "1.7_Dermal_Sens#6",
+  "study": "1.7_Dermal_Sens",
+  "supportDoc": "1.7 Dermal_sens.pdf",
+  "question": "regarding 1.7_Dermal_Sens, answer the following: Is the substance ever diluted? If yes, state the dilution percentage or percentages. If no, answer \"null\".",
+  "expected": "Dilutions: 0,4,20,100%",
+  "arms": {
+   "28": {
+    "reply": "Yes, the substance is diluted. In the Local Lymph Node Assay (LLNA) described in the document, groups of mice were dermally exposed to 4%, 20%, or 100% solutions of the test substance in acetone/olive oil [2].",
+    "retrievedSupport": 4
+   }
+  }
+ },
+ {
+  "id": "1.7_Dermal_Sens#7",
+  "study": "1.7_Dermal_Sens",
+  "supportDoc": "1.7 Dermal_sens.pdf",
+  "question": "regarding 1.7_Dermal_Sens, answer the following: What is the total number of animals used in the study? If it is not mentioned, answer \"null\".",
+  "expected": "Total Animals: 24",
+  "arms": {
+   "28": {
+    "reply": "The study used different groups of 6 female NMRI mice [1]. As there were four groups (0, 4, 20, and 100% solutions), the total number of animals used was 24 [1!].",
+    "retrievedSupport": 3
+   }
+  }
+ },
+ {
+  "id": "1.7_Dermal_Sens#8",
+  "study": "1.7_Dermal_Sens",
+  "supportDoc": "1.7 Dermal_sens.pdf",
+  "question": "regarding 1.7_Dermal_Sens, answer the following: Answer this question only if the study is a repeated dose or sensitization study, otherwise, answer 'not applicable'. Was the substance classified as low, low-moderate, moderate, moderate-high, high, or extreme hazard? If there is no info, answer \"null\".",
+  "expected": "Hazard: Null",
+  "arms": {
+   "28": {
+    "reply": "The study described in document 1.7 Dermal_sens.pdf is a Local Lymph Node Assay (LLNA), which is a sensitization study [2!].\n\nRegarding the classification of the substance, the provided excerpts for this document do not state a classification of \"low,\" \"low-moderate,\" \"moderate,\" \"moderate-high,\" \"high,\" or \"extreme\" hazard. The study director concluded that a \"sensitizing potential was observed\" based on the cell counts exceeding the \"positive level\" index of 1.4 [1!]. Therefore, the answer is \"null\" [1, 2, 3, 7!].",
+    "retrievedSupport": 4
+   }
+  }
+ },
+ {
+  "id": "1.7_Dermal_Sens#9",
+  "study": "1.7_Dermal_Sens",
+  "supportDoc": "1.7 Dermal_sens.pdf",
+  "question": "regarding 1.7_Dermal_Sens, answer the following: Answer this question only if the study is a repeated dose study. Otherwise, answer 'not applicable'. What was the duration of the study, including units (days, weeks, years). If it's not mentioned, answer \"null\"",
+  "expected": "not applicable",
+  "arms": {
+   "28": {
+    "reply": "not applicable",
+    "retrievedSupport": 4
+   }
+  }
+ },
+ {
+  "id": "1.7_Dermal_Sens#10",
+  "study": "1.7_Dermal_Sens",
+  "supportDoc": "1.7 Dermal_sens.pdf",
+  "question": "regarding 1.7_Dermal_Sens, answer the following: Answer this question only if the study is a repeated dose study. Otherwise, answer 'not applicable'. What effects on the test animals changed the NOAEL or the classification hazard? This could be changes in food consumption, organ weight change, weight change, or any other health problem observed in the animal due to the substance. If there were none, answer \"null\".",
+  "expected": "not applicable",
+  "arms": {
+   "28": {
+    "reply": "not applicable [1, 2!]",
+    "retrievedSupport": 4
+   }
+  }
+ },
+ {
+  "id": "1.8_Vitro_Geno#0",
+  "study": "1.8_Vitro_Geno",
+  "supportDoc": "1.8 Vitro_geno.pdf",
+  "question": "regarding 1.8_Vitro_Geno, answer the following: Determine the exposure type (ORAL, DERMAL, or INHALATION) for the toxicology study, then classify the exposure method.",
+  "expected": "Not applicable",
+  "arms": {
+   "28": {
+    "reply": "The provided corpus does not contain information regarding whether the exposure type was oral, dermal, or inhalation. The document describes an *in vitro* study [7!], which involves cell cultures rather than administration to a living organism via those routes.\n\nRegarding the exposure method, the study utilized the following conditions:\n\n* **Without Metabolic Activation:**\n * 6 hours of exposure to the test material, followed by a phosphate buffered saline wash and an 18-hour culture in treatment-free media [1].\n * 24 hours of continuous exposure to the test material [1].\n * 48 hours of continuous exposure to the test material [1].\n* **With Metabolic Activation:**\n * 6 hours of exposure to the test material and S9 mix, followed by a phosphate buffered saline wash and an 18-hour culture in treatment-free media [4].",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "1.8_Vitro_Geno#1",
+  "study": "1.8_Vitro_Geno",
+  "supportDoc": "1.8 Vitro_geno.pdf",
+  "question": "regarding 1.8_Vitro_Geno, answer the following: Find the purity of the tested substance for this toxicology report.",
+  "expected": "Purity: Null",
+  "arms": {
+   "28": {
+    "reply": "The provided documents do not state the purity of the tested substance. The report explicitly notes that \"The concentration, homogeneity and stability of the test material preparations were not determined by analysis\" [7].",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "1.8_Vitro_Geno#2",
+  "study": "1.8_Vitro_Geno",
+  "supportDoc": "1.8 Vitro_geno.pdf",
+  "question": "regarding 1.8_Vitro_Geno, answer the following: Find the vehicle(s) or solvent(s) used in this toxicity study.",
+  "expected": "Solvent: dimethyl<br>suiphoxide",
+  "arms": {
+   "28": {
+    "reply": "The vehicle used in this study was dimethyl sulphoxide [3!].",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "1.8_Vitro_Geno#3",
+  "study": "1.8_Vitro_Geno",
+  "supportDoc": "1.8 Vitro_geno.pdf",
+  "question": "regarding 1.8_Vitro_Geno, answer the following: Test guidelines can help legitimize studies. Guidelines are often from OECD, ECC or EC. For example, OECD 471 is a type of guideline. Does this study follow a test guideline? If yes, state it. If no, answer \"null\".",
+  "expected": "OECD: Null",
+  "arms": {
+   "28": {
+    "reply": "The study does not explicitly state that it follows a specific test guideline (such as an OECD guideline). It does, however, declare that the work was performed in compliance with the principles of Good Laboratory Practice (GLP), citing the following:\n\n* The United Kingdom Compliance Programme, Department of Health 1989 [3].\n* Organisation for Economic Co-operation and Development (OECD), Paris 1982 [3][G].\n* Japanese Ministry of Agriculture, Forestry and Fisheries, 59 NohSan Notification No. 3850, 10 August 1984 [3].\n* Japanese Ministry of Health and Welfare, Notification No. Yakuhatsu 313, 31 March 1982 [3].\n\nAdditionally, the study references the \"1983 UKEMS guidelines for mutagenicity testing\" regarding the methodology for scoring chromosome damage [3].",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "1.8_Vitro_Geno#4",
+  "study": "1.8_Vitro_Geno",
+  "supportDoc": "1.8 Vitro_geno.pdf",
+  "question": "regarding 1.8_Vitro_Geno, answer the following: Does this study follow a test method? If yes, state it. If no, answer \"null\".",
+  "expected": "Method: Chromosomal Abberation",
+  "arms": {
+   "28": {
+    "reply": "The study follows the guidelines recommended in the 1983 UKEMS guidelines for mutagenicity testing [8].",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "1.8_Vitro_Geno#5",
+  "study": "1.8_Vitro_Geno",
+  "supportDoc": "1.8 Vitro_geno.pdf",
+  "question": "regarding 1.8_Vitro_Geno, answer the following: What was the highest dose of substance used, with unit?",
+  "expected": "Max Dose:  625 ug/ml (main study) or 2500 ug/mL (preliminary results)",
+  "arms": {
+   "28": {
+    "reply": "The maximum dose level of Nigrosine Base EX tested was 2500 µg/ml [2]. However, due to the formation of precipitates and large clumps of test material, the maximum *practical* dose level used in the 6 (18) and 24-hour treatment groups was 625 µg/ml [2]. In the 48-hour treatment group, the maximum dose level was limited to 78.1 µg/ml due to toxicity [2].",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "1.8_Vitro_Geno#6",
+  "study": "1.8_Vitro_Geno",
+  "supportDoc": "1.8 Vitro_geno.pdf",
+  "question": "regarding 1.8_Vitro_Geno, answer the following: Is the substance ever diluted? If yes, state the dilution percentage or percentages. If no, answer \"null\".",
+  "expected": "Dilutions: Null",
+  "arms": {
+   "28": {
+    "reply": "Yes, the substance is diluted. The document states that Nigrosine Base EX was dissolved in dimethyl sulphoxide and \"appropriate dilutions made\" [7!]. However, the corpus does not specify the exact dilution percentages used.",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "1.8_Vitro_Geno#7",
+  "study": "1.8_Vitro_Geno",
+  "supportDoc": "1.8 Vitro_geno.pdf",
+  "question": "regarding 1.8_Vitro_Geno, answer the following: What is the total number of animals used in the study? If it is not mentioned, answer \"null\".",
+  "expected": "Not applicable",
+  "arms": {
+   "28": {
+    "reply": "Null [1, 2, 3, 4, 5, 6, 7, 8, 9, 10!].",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "1.8_Vitro_Geno#8",
+  "study": "1.8_Vitro_Geno",
+  "supportDoc": "1.8 Vitro_geno.pdf",
+  "question": "regarding 1.8_Vitro_Geno, answer the following: Answer this question only if the study is a repeated dose or sensitization study, otherwise, answer 'not applicable'. Was the substance classified as low, low-moderate, moderate, moderate-high, high, or extreme hazard? If there is no info, answer \"null\".",
+  "expected": "Not applicable",
+  "arms": {
+   "28": {
+    "reply": "not applicable [1, 3, 4, 7!]",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "1.8_Vitro_Geno#9",
+  "study": "1.8_Vitro_Geno",
+  "supportDoc": "1.8 Vitro_geno.pdf",
+  "question": "regarding 1.8_Vitro_Geno, answer the following: Answer this question only if the study is a repeated dose study. Otherwise, answer 'not applicable'. What was the duration of the study, including units (days, weeks, years). If it's not mentioned, answer \"null\"",
+  "expected": "Not applicable",
+  "arms": {
+   "28": {
+    "reply": "not applicable [3, 9, 10!]",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "1.8_Vitro_Geno#10",
+  "study": "1.8_Vitro_Geno",
+  "supportDoc": "1.8 Vitro_geno.pdf",
+  "question": "regarding 1.8_Vitro_Geno, answer the following: Answer this question only if the study is a repeated dose study. Otherwise, answer 'not applicable'. What effects on the test animals changed the NOAEL or the classification hazard? This could be changes in food consumption, organ weight change, weight change, or any other health problem observed in the animal due to the substance. If there were none, answer \"null\".",
+  "expected": "Not applicable",
+  "arms": {
+   "28": {
+    "reply": "not applicable [1, 2, 7, 10!]",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "1.9_Inhalation_Repd#0",
+  "study": "1.9_Inhalation_Repd",
+  "supportDoc": "1.9 Inhalation_repd.pdf",
+  "question": "regarding 1.9_Inhalation_Repd, answer the following: Determine the exposure type (ORAL, DERMAL, or INHALATION) for the toxicology study, then classify the exposure method.",
+  "expected": "Inhalation: Whole body",
+  "arms": {
+   "28": {
+    "reply": "The toxicology study described in document 1.9_Inhalation_Repd utilized an **inhalation** exposure type [4].\n\nThe exposure method was **whole body inhalation** [1].",
+    "retrievedSupport": 4
+   }
+  }
+ },
+ {
+  "id": "1.9_Inhalation_Repd#1",
+  "study": "1.9_Inhalation_Repd",
+  "supportDoc": "1.9 Inhalation_repd.pdf",
+  "question": "regarding 1.9_Inhalation_Repd, answer the following: Find the purity of the tested substance for this toxicology report.",
+  "expected": "Purity\\:null",
+  "arms": {
+   "28": {
+    "reply": "The provided documents do not state the purity of the tetrahydrofurfuryl alcohol (THFA) tested in the study described in 1.9 Inhalation_repd.pdf.",
+    "retrievedSupport": 5
+   }
+  }
+ },
+ {
+  "id": "1.9_Inhalation_Repd#2",
+  "study": "1.9_Inhalation_Repd",
+  "supportDoc": "1.9 Inhalation_repd.pdf",
+  "question": "regarding 1.9_Inhalation_Repd, answer the following: Find the vehicle(s) or solvent(s) used in this toxicity study.",
+  "expected": "Null",
+  "arms": {
+   "28": {
+    "reply": "The provided documents regarding the study of tetrahydrofurfuryl alcohol (THFA) do not state the vehicle or solvent used in the study. The documents describe the test article being administered via whole-body inhalation and note that a concurrent control group received \"filtered air\" [1].",
+    "retrievedSupport": 3
+   }
+  }
+ },
+ {
+  "id": "1.9_Inhalation_Repd#3",
+  "study": "1.9_Inhalation_Repd",
+  "supportDoc": "1.9 Inhalation_repd.pdf",
+  "question": "regarding 1.9_Inhalation_Repd, answer the following: Test guidelines can help legitimize studies. Guidelines are often from OECD, ECC or EC. For example, OECD 471 is a type of guideline. Does this study follow a test guideline? If yes, state it. If no, answer \"null\".",
+  "expected": "Null",
+  "arms": {
+   "28": {
+    "reply": "The provided excerpts for 1.9 Inhalation_repd.pdf do not mention whether the study followed a specific test guideline. Therefore, the answer is null.",
+    "retrievedSupport": 5
+   }
+  }
+ },
+ {
+  "id": "1.9_Inhalation_Repd#4",
+  "study": "1.9_Inhalation_Repd",
+  "supportDoc": "1.9 Inhalation_repd.pdf",
+  "question": "regarding 1.9_Inhalation_Repd, answer the following: Does this study follow a test method? If yes, state it. If no, answer \"null\".",
+  "expected": "Not applicable",
+  "arms": {
+   "28": {
+    "reply": "The provided excerpts for 1.9 Inhalation_repd.pdf do not state the specific test method followed for the study; therefore, the corpus does not address this part of your request.",
+    "retrievedSupport": 5
+   }
+  }
+ },
+ {
+  "id": "1.9_Inhalation_Repd#5",
+  "study": "1.9_Inhalation_Repd",
+  "supportDoc": "1.9 Inhalation_repd.pdf",
+  "question": "regarding 1.9_Inhalation_Repd, answer the following: What was the highest dose of substance used, with unit?",
+  "expected": "Max dose: 500 ppm",
+  "arms": {
+   "28": {
+    "reply": "The highest dose of the substance used in the study described in document 1.9 Inhalation_repd.pdf was 500 parts per million (ppm) [1!].",
+    "retrievedSupport": 3
+   }
+  }
+ },
+ {
+  "id": "1.9_Inhalation_Repd#6",
+  "study": "1.9_Inhalation_Repd",
+  "supportDoc": "1.9 Inhalation_repd.pdf",
+  "question": "regarding 1.9_Inhalation_Repd, answer the following: Is the substance ever diluted? If yes, state the dilution percentage or percentages. If no, answer \"null\".",
+  "expected": "Null",
+  "arms": {
+   "28": {
+    "reply": "The provided excerpts for document 1.9 Inhalation_repd.pdf do not state that the substance was diluted; therefore, the corpus does not address this.",
+    "retrievedSupport": 4
+   }
+  }
+ },
+ {
+  "id": "1.9_Inhalation_Repd#7",
+  "study": "1.9_Inhalation_Repd",
+  "supportDoc": "1.9 Inhalation_repd.pdf",
+  "question": "regarding 1.9_Inhalation_Repd, answer the following: What is the total number of animals used in the study? If it is not mentioned, answer \"null\".",
+  "expected": "Total animals: 96",
+  "arms": {
+   "28": {
+    "reply": "The study used three test groups, each comprised of 14 male and 10 female rats, and a concurrent control group of identical design [2]. This results in a total of 96 animals (4 groups × 24 animals per group).",
+    "retrievedSupport": 4
+   }
+  }
+ },
+ {
+  "id": "1.9_Inhalation_Repd#8",
+  "study": "1.9_Inhalation_Repd",
+  "supportDoc": "1.9 Inhalation_repd.pdf",
+  "question": "regarding 1.9_Inhalation_Repd, answer the following: Answer this question only if the study is a repeated dose or sensitization study, otherwise, answer 'not applicable'. Was the substance classified as low, low-moderate, moderate, moderate-high, high, or extreme hazard? If there is no info, answer \"null\".",
+  "expected": "Null",
+  "arms": {
+   "28": {
+    "reply": "The study described in `1.9_Inhalation_Repd.pdf` is a 90-day subchronic inhalation toxicity study [4], which is a repeated dose study.\n\nRegarding the classification of the substance (tetrahydrofurfuryl alcohol) as low, low-moderate, moderate, moderate-high, high, or extreme hazard, the provided corpus does not contain this information. Therefore, the answer is \"null\" [1, 2, 3, 5, 6, 7!].",
+    "retrievedSupport": 6
+   }
+  }
+ },
+ {
+  "id": "1.9_Inhalation_Repd#9",
+  "study": "1.9_Inhalation_Repd",
+  "supportDoc": "1.9 Inhalation_repd.pdf",
+  "question": "regarding 1.9_Inhalation_Repd, answer the following: Answer this question only if the study is a repeated dose study. Otherwise, answer 'not applicable'. What was the duration of the study, including units (days, weeks, years). If it's not mentioned, answer \"null\"",
+  "expected": "13 Weeks",
+  "arms": {
+   "28": {
+    "reply": "The study described in 1.9_Inhalation_Repd is a repeated dose study, as it involved exposures for six hours per day, five days per week, for 13 weeks [1].\n\nThe duration of the study was 13 weeks [1!].",
+    "retrievedSupport": 5
+   }
+  }
+ },
+ {
+  "id": "1.9_Inhalation_Repd#10",
+  "study": "1.9_Inhalation_Repd",
+  "supportDoc": "1.9 Inhalation_repd.pdf",
+  "question": "regarding 1.9_Inhalation_Repd, answer the following: Answer this question only if the study is a repeated dose study. Otherwise, answer 'not applicable'. What effects on the test animals changed the NOAEL or the classification hazard? This could be changes in food consumption, organ weight change, weight change, or any other health problem observed in the animal due to the substance. If there were none, answer \"null\".",
+  "expected": "- Changes in food consumption : Both mid- and high-exposure male groups showed reduced food consumption throughout the study compared to controls.<br><br>- Weight change (body weight reduction) : Mean body weights of mid- and high-exposure males were significantly lower than those of control group males by 9.2% and 13.3%, respectively, at terminal necropsy (study week 13).<br><br>- Organ weight change (epididymides atrophy): Mild multifocal atrophy in the epididymides observed particularly in males from both exposure periods, with more pronounced effects noted by week 13 for higher exposures.",
+  "arms": {
+   "28": {
+    "reply": "The study described in document 1.9 is a repeated dose study, as it involved 13 weeks of exposure (at least 65 exposures) [1].\n\nThe following effects were observed in the test animals, which contributed to the finding that a No Observable Effect Level (NOEL) could not be established for tetrahydrofurfuryl alcohol (THFA) [1]:\n\n* **Clinical Signs:** Intermittent whole-body spasms were observed frequently in a dose-related manner in all exposed groups [2]. Hyperactivity was noted one-hour post-exposure in all test groups [2]. Occasional hypoactivity and excessive grooming occurred in the high exposure group [2]. Wet yellow urogenital matting and a low incidence of salivation were noted in the high exposure group [2].\n* **Body Weight and Food Consumption:** Mean body weights were decreased in mid- and high-exposure group males, with terminal necropsy values 9.2% and 13.3% lower than controls, respectively [5]. Mean food consumption was lower in mid- and high-exposure group males throughout the study [5].\n* **Hematology:** Decreased platelet and hemoglobin means were observed in high exposure group males and females at study weeks three and 13 [5]. Decreased Mean Corpuscular Hemoglobin (MCH) values were noted in high exposure group males at week three, and in both sexes of the high exposure group at week 13 [5].\n* **Organ Weights and Pathology:**\n * **Testes/Reproductive:** Mean absolute seminal vesicle weight, and absolute and relative epididymides weights were decreased in high exposure group males [4]. Mean absolute and relative prostate weights were decreased in both mid- and high-exposure groups [5]. Microscopic examination revealed mild multifocal atrophy of the testes in one high exposure group male [5]. Decreased epididymal sperm numbers and sperm motility, as well as an increased incidence of morphologically abnormal sperm, were observed in high exposure group males at weeks six and 13 [5].",
+    "retrievedSupport": 5
+   }
+  }
+ },
+ {
+  "id": "1.10_Oral_Repd#0",
+  "study": "1.10_Oral_Repd",
+  "supportDoc": "1.10 Oral_repd.pdf",
+  "question": "regarding 1.10_Oral_Repd, answer the following: Determine the exposure type (ORAL, DERMAL, or INHALATION) for the toxicology study, then classify the exposure method.",
+  "expected": "Oral\\:Gavage",
+  "arms": {
+   "28": {
+    "reply": "The exposure type for the toxicology study is oral [1]. The study involved the oral administration of domoic acid to three cynomolgus monkeys [1].",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "1.10_Oral_Repd#1",
+  "study": "1.10_Oral_Repd",
+  "supportDoc": "1.10 Oral_repd.pdf",
+  "question": "regarding 1.10_Oral_Repd, answer the following: Find the purity of the tested substance for this toxicology report.",
+  "expected": "Purity\\:Null",
+  "arms": {
+   "28": {
+    "reply": "The provided document corpus does not state the purity of the domoic acid used in the study.",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "1.10_Oral_Repd#2",
+  "study": "1.10_Oral_Repd",
+  "supportDoc": "1.10 Oral_repd.pdf",
+  "question": "regarding 1.10_Oral_Repd, answer the following: Find the vehicle(s) or solvent(s) used in this toxicity study.",
+  "expected": "Solvent\\:water",
+  "arms": {
+   "28": {
+    "reply": "The provided corpus does not state the vehicle or solvent used in this toxicity study.",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "1.10_Oral_Repd#3",
+  "study": "1.10_Oral_Repd",
+  "supportDoc": "1.10 Oral_repd.pdf",
+  "question": "regarding 1.10_Oral_Repd, answer the following: Test guidelines can help legitimize studies. Guidelines are often from OECD, ECC or EC. For example, OECD 471 is a type of guideline. Does this study follow a test guideline? If yes, state it. If no, answer \"null\".",
+  "expected": "Null",
+  "arms": {
+   "28": {
+    "reply": "The provided corpus does not contain a document titled \"1.10_Oral_Repd.\" Therefore, I cannot determine if that specific study follows a test guideline.",
+    "retrievedSupport": 0
+   }
+  }
+ },
+ {
+  "id": "1.10_Oral_Repd#4",
+  "study": "1.10_Oral_Repd",
+  "supportDoc": "1.10 Oral_repd.pdf",
+  "question": "regarding 1.10_Oral_Repd, answer the following: Does this study follow a test method? If yes, state it. If no, answer \"null\".",
+  "expected": "Null",
+  "arms": {
+   "28": {
+    "reply": "The provided document corpus does not contain a document titled \"1.10_Oral_Repd,\" and therefore does not address whether that specific study follows a test method.",
+    "retrievedSupport": 0
+   }
+  }
+ },
+ {
+  "id": "1.10_Oral_Repd#5",
+  "study": "1.10_Oral_Repd",
+  "supportDoc": "1.10 Oral_repd.pdf",
+  "question": "regarding 1.10_Oral_Repd, answer the following: What was the highest dose of substance used, with unit?",
+  "expected": "0.75 mg/kg",
+  "arms": {
+   "28": {
+    "reply": "The provided documents do not explicitly state the highest dose of domoic acid administered to the monkeys during the 30-day study. The text notes that the dose was increased from 0.5 to 0.75 mg/kg/day on day 16 [6!], but it does not specify if this was the maximum dose used throughout the entire study.",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "1.10_Oral_Repd#6",
+  "study": "1.10_Oral_Repd",
+  "supportDoc": "1.10 Oral_repd.pdf",
+  "question": "regarding 1.10_Oral_Repd, answer the following: Is the substance ever diluted? If yes, state the dilution percentage or percentages. If no, answer \"null\".",
+  "expected": "Null",
+  "arms": {
+   "28": {
+    "reply": "Yes, in the context of serum analysis, samples containing the substance were diluted at ratios of 1:150 or 1:300 [1!]. The corpus does not provide a dilution percentage for the domoic acid dosing solution, which is described only as a solution dissolved in water [8].",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "1.10_Oral_Repd#7",
+  "study": "1.10_Oral_Repd",
+  "supportDoc": "1.10 Oral_repd.pdf",
+  "question": "regarding 1.10_Oral_Repd, answer the following: What is the total number of animals used in the study? If it is not mentioned, answer \"null\".",
+  "expected": "Total Animals: 5",
+  "arms": {
+   "28": {
+    "reply": "The study used a total of five adult female cynomolgus monkeys [7].",
+    "retrievedSupport": 8
+   }
+  }
+ },
+ {
+  "id": "1.10_Oral_Repd#8",
+  "study": "1.10_Oral_Repd",
+  "supportDoc": "1.10 Oral_repd.pdf",
+  "question": "regarding 1.10_Oral_Repd, answer the following: Answer this question only if the study is a repeated dose or sensitization study, otherwise, answer 'not applicable'. Was the substance classified as low, low-moderate, moderate, moderate-high, high, or extreme hazard? If there is no info, answer \"null\".",
+  "expected": "Hazard: High",
+  "arms": {
+   "28": {
+    "reply": "The study is a 30-day oral toxicity study, which constitutes a repeated dose study [6]. The provided corpus does not contain information classifying the substance as low, low-moderate, moderate, moderate-high, high, or extreme hazard; therefore, the answer is null.",
+    "retrievedSupport": 9
+   }
+  }
+ },
+ {
+  "id": "1.10_Oral_Repd#9",
+  "study": "1.10_Oral_Repd",
+  "supportDoc": "1.10 Oral_repd.pdf",
+  "question": "regarding 1.10_Oral_Repd, answer the following: Answer this question only if the study is a repeated dose study. Otherwise, answer 'not applicable'. What was the duration of the study, including units (days, weeks, years). If it's not mentioned, answer \"null\"",
+  "expected": "Duration:30 days",
+  "arms": {
+   "28": {
+    "reply": "The study is a repeated dose study [1]. The duration of the study was 30 days [1, 8!].",
+    "retrievedSupport": 9
+   }
+  }
+ },
+ {
+  "id": "1.10_Oral_Repd#10",
+  "study": "1.10_Oral_Repd",
+  "supportDoc": "1.10 Oral_repd.pdf",
+  "question": "regarding 1.10_Oral_Repd, answer the following: Answer this question only if the study is a repeated dose study. Otherwise, answer 'not applicable'. What effects on the test animals changed the NOAEL or the classification hazard? This could be changes in food consumption, organ weight change, weight change, or any other health problem observed in the animal due to the substance. If there were none, answer \"null\".",
+  "expected": "NULL : There were no treatment-related adverse effects observed at any dosage level tested.",
+  "arms": {
+   "28": {
+    "reply": "This is a repeated dose study [5!].\n\nNull [2, 3, 5!].",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "2.1_Vitro_geno#0",
+  "study": "2.1_Vitro_geno",
+  "supportDoc": "2.1 Vitro_geno.pdf",
+  "question": "regarding 2.1_Vitro_geno, answer the following: Determine the exposure type (ORAL, DERMAL, or INHALATION) for the toxicology study, then classify the exposure method.",
+  "expected": "Not applicable",
+  "arms": {
+   "28": {
+    "reply": "The provided documents do not state that the study involved oral, dermal, or inhalation exposure. Instead, the study is an \"in vitro study for the detection of structural chromosomal aberrations in cultured mammalian cells\" [6].\n\nRegarding the exposure method, the study involved treating duplicate cultures of human lymphocytes with the test item [6]. The exposure conditions included:\n\n* **4-hour exposure** with and without metabolic activation (S9-mix), followed by a 20-hour recovery period in treatment-free media [6].\n* **24-hour continuous exposure** without metabolic activation [6].",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "2.1_Vitro_geno#1",
+  "study": "2.1_Vitro_geno",
+  "supportDoc": "2.1 Vitro_geno.pdf",
+  "question": "regarding 2.1_Vitro_geno, answer the following: Find the purity of the tested substance for this toxicology report.",
+  "expected": "Purity:100%",
+  "arms": {
+   "28": {
+    "reply": "The purity of the test item is 100% [2, 6!].",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "2.1_Vitro_geno#2",
+  "study": "2.1_Vitro_geno",
+  "supportDoc": "2.1 Vitro_geno.pdf",
+  "question": "regarding 2.1_Vitro_geno, answer the following: Find the vehicle(s) or solvent(s) used in this toxicity study.",
+  "expected": "Solvent: DMSO",
+  "arms": {
+   "28": {
+    "reply": "The vehicle used in this study was dimethyl sulphoxide [7].",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "2.1_Vitro_geno#3",
+  "study": "2.1_Vitro_geno",
+  "supportDoc": "2.1 Vitro_geno.pdf",
+  "question": "regarding 2.1_Vitro_geno, answer the following: Test guidelines can help legitimize studies. Guidelines are often from OECD, ECC or EC. For example, OECD 471 is a type of guideline. Does this study follow a test guideline? If yes, state it. If no, answer \"null\".",
+  "expected": "OECD: 473",
+  "arms": {
+   "28": {
+    "reply": "Yes, the study follows several test guidelines. The study was designed to be compatible with the following:\n\n* OECD Guidelines for the Testing of Chemicals (1997) No. 473 \"Genetic Toxicology: Chromosome Aberration Test\" [1][G].\n* Method B10 of Commission Regulation (EC) No. 440/2008 of 30 May 2008 [1].\n* UK Department of Health Guidelines for Testing of Chemicals for Mutagenicity [1].",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "2.1_Vitro_geno#4",
+  "study": "2.1_Vitro_geno",
+  "supportDoc": "2.1 Vitro_geno.pdf",
+  "question": "regarding 2.1_Vitro_geno, answer the following: Does this study follow a test method? If yes, state it. If no, answer \"null\".",
+  "expected": "Method: Chromosomal Abberation",
+  "arms": {
+   "28": {
+    "reply": "Yes, the study follows specific test methods. The method was designed to be compatible with the following:\n\n* OECD Guidelines for Testing of Chemicals (1997) No. 473 \"Genetic Toxicology: Chromosome Aberration Test\" [2].\n* Method B10 of Commission Regulation (EC) No. 440/2008 of 30 May 2008 [2].\n* The UK Department of Health Guidelines for Testing of Chemicals for Mutagenicity [2].",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "2.1_Vitro_geno#5",
+  "study": "2.1_Vitro_geno",
+  "supportDoc": "2.1 Vitro_geno.pdf",
+  "question": "regarding 2.1_Vitro_geno, answer the following: What was the highest dose of substance used, with unit?",
+  "expected": "Max Dose: 5000 ug/mL (preliminary) or 120 ug/mL (for metaphase analysis and actual testing)",
+  "arms": {
+   "28": {
+    "reply": "The highest dose of the test item used was 5000 pg/ml [1].",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "2.1_Vitro_geno#6",
+  "study": "2.1_Vitro_geno",
+  "supportDoc": "2.1 Vitro_geno.pdf",
+  "question": "regarding 2.1_Vitro_geno, answer the following: Is the substance ever diluted? If yes, state the dilution percentage or percentages. If no, answer \"null\".",
+  "expected": "Null",
+  "arms": {
+   "28": {
+    "reply": "Yes, the test item is diluted. The document states that the test item was dissolved in dimethyl sulphoxide and \"serial dilutions prepared\" [3!].\n\nRegarding the S9 microsomal enzyme fraction, it was diluted to a final concentration of 2% in the Preliminary Toxicity Test and Experiment 1, and 1% in Experiment 2 [10!].",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "2.1_Vitro_geno#7",
+  "study": "2.1_Vitro_geno",
+  "supportDoc": "2.1 Vitro_geno.pdf",
+  "question": "regarding 2.1_Vitro_geno, answer the following: What is the total number of animals used in the study? If it is not mentioned, answer \"null\".",
+  "expected": "Not applicable",
+  "arms": {
+   "28": {
+    "reply": "null [6!]",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "2.1_Vitro_geno#8",
+  "study": "2.1_Vitro_geno",
+  "supportDoc": "2.1 Vitro_geno.pdf",
+  "question": "regarding 2.1_Vitro_geno, answer the following: Answer this question only if the study is a repeated dose or sensitization study, otherwise, answer 'not applicable'. Was the substance classified as low, low-moderate, moderate, moderate-high, high, or extreme hazard? If there is no info, answer \"null\".",
+  "expected": "Not applicable",
+  "arms": {
+   "28": {
+    "reply": "Not applicable.",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "2.1_Vitro_geno#9",
+  "study": "2.1_Vitro_geno",
+  "supportDoc": "2.1 Vitro_geno.pdf",
+  "question": "regarding 2.1_Vitro_geno, answer the following: Answer this question only if the study is a repeated dose study. Otherwise, answer 'not applicable'. What was the duration of the study, including units (days, weeks, years). If it's not mentioned, answer \"null\"",
+  "expected": "Not applicable",
+  "arms": {
+   "28": {
+    "reply": "not applicable",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "2.1_Vitro_geno#10",
+  "study": "2.1_Vitro_geno",
+  "supportDoc": "2.1 Vitro_geno.pdf",
+  "question": "regarding 2.1_Vitro_geno, answer the following: Answer this question only if the study is a repeated dose study. Otherwise, answer 'not applicable'. What effects on the test animals changed the NOAEL or the classification hazard? This could be changes in food consumption, organ weight change, weight change, or any other health problem observed in the animal due to the substance. If there were none, answer \"null\".",
+  "expected": "Not applicable",
+  "arms": {
+   "28": {
+    "reply": "not applicable",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "2.2_Dermal_Repd#0",
+  "study": "2.2_Dermal_Repd",
+  "supportDoc": "2.2 Dermal_repd.pdf",
+  "question": "regarding 2.2_Dermal_Repd, answer the following: Determine the exposure type (ORAL, DERMAL, or INHALATION) for the toxicology study, then classify the exposure method.",
+  "expected": "Dermal: Occlusive Patch",
+  "arms": {
+   "28": {
+    "reply": "Based on the provided documents regarding the study in 2.2_Dermal_Repd.pdf:\n\n* **Exposure Type:** The exposure type is dermal [1, 7, 10!].\n* **Exposure Method:** The test article (THFA) was administered undiluted to shaved intact dorsal skin [1]. The application sites were wrapped for six hours using an occlusive wrap/binder [1]. The study involved 65 applications over 13 consecutive weeks [1].",
+    "retrievedSupport": 5
+   }
+  }
+ },
+ {
+  "id": "2.2_Dermal_Repd#1",
+  "study": "2.2_Dermal_Repd",
+  "supportDoc": "2.2 Dermal_repd.pdf",
+  "question": "regarding 2.2_Dermal_Repd, answer the following: Find the purity of the tested substance for this toxicology report.",
+  "expected": "Purity\\:Null",
+  "arms": {
+   "28": {
+    "reply": "The provided excerpts from 2.2 Dermal_repd.pdf do not contain information regarding the purity of the tested substance, tetrahydrofurfuryl alcohol (THFA).",
+    "retrievedSupport": 5
+   }
+  }
+ },
+ {
+  "id": "2.2_Dermal_Repd#2",
+  "study": "2.2_Dermal_Repd",
+  "supportDoc": "2.2 Dermal_repd.pdf",
+  "question": "regarding 2.2_Dermal_Repd, answer the following: Find the vehicle(s) or solvent(s) used in this toxicity study.",
+  "expected": "Solvent\\:None (for THFA), 0.9% saline (control group)",
+  "arms": {
+   "28": {
+    "reply": "The vehicle used in the 90-day subchronic dermal toxicity study of tetrahydrofurfuryl alcohol (THFA) was 0.9% saline [1].",
+    "retrievedSupport": 4
+   }
+  }
+ },
+ {
+  "id": "2.2_Dermal_Repd#3",
+  "study": "2.2_Dermal_Repd",
+  "supportDoc": "2.2 Dermal_repd.pdf",
+  "question": "regarding 2.2_Dermal_Repd, answer the following: Test guidelines can help legitimize studies. Guidelines are often from OECD, ECC or EC. For example, OECD 471 is a type of guideline. Does this study follow a test guideline? If yes, state it. If no, answer \"null\".",
+  "expected": "Null",
+  "arms": {
+   "28": {
+    "reply": "The provided excerpts for the study in `2.2 Dermal_repd.pdf` do not state that the study followed a specific test guideline. Therefore, the answer is null.",
+    "retrievedSupport": 3
+   }
+  }
+ },
+ {
+  "id": "2.2_Dermal_Repd#4",
+  "study": "2.2_Dermal_Repd",
+  "supportDoc": "2.2 Dermal_repd.pdf",
+  "question": "regarding 2.2_Dermal_Repd, answer the following: Does this study follow a test method? If yes, state it. If no, answer \"null\".",
+  "expected": "Null",
+  "arms": {
+   "28": {
+    "reply": "The provided excerpts from 2.2_Dermal_repd.pdf do not state the specific test method followed; therefore, the answer is null [2, 3!].",
+    "retrievedSupport": 2
+   }
+  }
+ },
+ {
+  "id": "2.2_Dermal_Repd#5",
+  "study": "2.2_Dermal_Repd",
+  "supportDoc": "2.2 Dermal_repd.pdf",
+  "question": "regarding 2.2_Dermal_Repd, answer the following: What was the highest dose of substance used, with unit?",
+  "expected": "Max dose: 1000 mg/kg/day",
+  "arms": {
+   "28": {
+    "reply": "The highest dose of tetrahydrofurfuryl alcohol (THFA) administered in the study was 1000 mg/kg/day [1].",
+    "retrievedSupport": 3
+   }
+  }
+ },
+ {
+  "id": "2.2_Dermal_Repd#6",
+  "study": "2.2_Dermal_Repd",
+  "supportDoc": "2.2 Dermal_repd.pdf",
+  "question": "regarding 2.2_Dermal_Repd, answer the following: Is the substance ever diluted? If yes, state the dilution percentage or percentages. If no, answer \"null\".",
+  "expected": "Null",
+  "arms": {
+   "28": {
+    "reply": "null [1!]",
+    "retrievedSupport": 3
+   }
+  }
+ },
+ {
+  "id": "2.2_Dermal_Repd#7",
+  "study": "2.2_Dermal_Repd",
+  "supportDoc": "2.2 Dermal_repd.pdf",
+  "question": "regarding 2.2_Dermal_Repd, answer the following: What is the total number of animals used in the study? If it is not mentioned, answer \"null\".",
+  "expected": "Total Animals: 116",
+  "arms": {
+   "28": {
+    "reply": "The study included three test groups, each consisting of 17 male and 12 female rats [2]. Additionally, there was a concurrent control group, which followed an identical design [2].\n\nCalculating the total:\n* Each of the 3 test groups had 29 animals (17 males + 12 females) [2].\n* The control group also had 29 animals (17 males + 12 females) [3].\n* Total animals = 4 groups × 29 animals/group = 116 animals.",
+    "retrievedSupport": 3
+   }
+  }
+ },
+ {
+  "id": "2.2_Dermal_Repd#8",
+  "study": "2.2_Dermal_Repd",
+  "supportDoc": "2.2 Dermal_repd.pdf",
+  "question": "regarding 2.2_Dermal_Repd, answer the following: Answer this question only if the study is a repeated dose or sensitization study, otherwise, answer 'not applicable'. Was the substance classified as low, low-moderate, moderate, moderate-high, high, or extreme hazard? If there is no info, answer \"null\".",
+  "expected": "Moderate",
+  "arms": {
+   "28": {
+    "reply": "The study described in `2.2 Dermal_repd.pdf` is a 90-day subchronic dermal toxicity study in rats, which is a repeated dose study [1].\n\nRegarding the hazard classification of the substance (tetrahydrofurfuryl alcohol or THFA) in this study, the provided documents do not contain a classification of the substance as low, low-moderate, moderate, moderate-high, high, or extreme hazard [1, 2, 4, 8!]. Therefore, the answer is \"null\".",
+    "retrievedSupport": 4
+   }
+  }
+ },
+ {
+  "id": "2.2_Dermal_Repd#9",
+  "study": "2.2_Dermal_Repd",
+  "supportDoc": "2.2 Dermal_repd.pdf",
+  "question": "regarding 2.2_Dermal_Repd, answer the following: Answer this question only if the study is a repeated dose study. Otherwise, answer 'not applicable'. What was the duration of the study, including units (days, weeks, years). If it's not mentioned, answer \"null\"",
+  "expected": "Duration: 13 weeks",
+  "arms": {
+   "28": {
+    "reply": "The study is a repeated dose study [1]. The duration of the study was 13 weeks [1, 2, 6!].",
+    "retrievedSupport": 4
+   }
+  }
+ },
+ {
+  "id": "2.2_Dermal_Repd#10",
+  "study": "2.2_Dermal_Repd",
+  "supportDoc": "2.2 Dermal_repd.pdf",
+  "question": "regarding 2.2_Dermal_Repd, answer the following: Answer this question only if the study is a repeated dose study. Otherwise, answer 'not applicable'. What effects on the test animals changed the NOAEL or the classification hazard? This could be changes in food consumption, organ weight change, weight change, or any other health problem observed in the animal due to the substance. If there were none, answer \"null\".",
+  "expected": "CRITICAL EFFECTS : Lower mean body weights and weight gains; Decreased spermatogenesis (sperm count, production rate, motility).  <br>NOAEL DETERMINATION: 100 mg/kg/day for male rats and 300 mg/kg/day for female rats.  <br><br>Critical Effects Influencing NOAEL or Classification Hazard:<br><br>- \\*\\*Lower Mean Body Weights and Weight Gains\\*\\*: Observed at a dose of 1000 mg/kg/day in both males and females over the course of 13 weeks, indicating systemic toxicity.<br>  <br>- \\*\\*Decreased Spermatogenesis (Sperm Count, Production Rate, Motility)\\*\\*: Noted particularly in male rats treated with THFA dermal application. Decreases were observed at doses of 300 and 1000 mg/kg/day for sperm count and production rate; motility decrease specifically noted at the higher dose.<br><br>These effects are pivotal as they directly influenced NOAEL determination, highlighting systemic toxicity thresholds:<br><br>- \\*\\*NOAEL Determination\\*\\*: Identified to be 100 mg/kg/day for male rats based on decreased spermatogenesis and lower body weight metrics. For female rats, it was determined to be 300 mg/kg/day after considering the adverse outcomes of reduced mean body weights.<br>",
+  "arms": {
+   "28": {
+    "reply": "The study described in `2.2_Dermal_repd.pdf` is a 13-week subchronic dermal toxicity study involving 65 applications, which qualifies as a repeated dose study [4].\n\nThe following effects were observed in the test animals that influenced the determination of the no observable effect level (NOEL) for systemic toxicity:\n\n* **Body Weight:** Following 13 consecutive weeks of treatment, lower mean body weights and body weight gains were observed in both males and females at the 1000 mg/kg/day dose level [1].\n* **Spermatogenesis:** An adverse effect on spermatogenesis was noted after 13 weeks of administration. Specifically, the mean number of sperm in the testis and the mean sperm production rate decreased in males in the 300 and 1000 mg/kg/day groups, and a decrease in the mean percentage of motile sperm was noted in the 1000 mg/kg/day group males [1].\n\nBased on these findings, the NOEL for systemic toxicity was determined to be 100 mg/kg/day for males and 300 mg/kg/day for females [3].",
+    "retrievedSupport": 4
+   }
+  }
+ },
+ {
+  "id": "2.3_Oral_Geno#0",
+  "study": "2.3_Oral_Geno",
+  "supportDoc": "2.3 Oral_geno.pdf",
+  "question": "regarding 2.3_Oral_Geno, answer the following: Determine the exposure type (ORAL, DERMAL, or INHALATION) for the toxicology study, then classify the exposure method.",
+  "expected": "Oral\\:Gavage",
+  "arms": {
+   "28": {
+    "reply": "The exposure type for the toxicology study is oral [3, 7!]. The exposure method is gavage [3, 7!].",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "2.3_Oral_Geno#1",
+  "study": "2.3_Oral_Geno",
+  "supportDoc": "2.3 Oral_geno.pdf",
+  "question": "regarding 2.3_Oral_Geno, answer the following: Find the purity of the tested substance for this toxicology report.",
+  "expected": "Purity: 99.7%",
+  "arms": {
+   "28": {
+    "reply": "The purity of the tested substance, Perfluoroalkyl acrylate (C6-SFA), is 99.7% [3].",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "2.3_Oral_Geno#2",
+  "study": "2.3_Oral_Geno",
+  "supportDoc": "2.3 Oral_geno.pdf",
+  "question": "regarding 2.3_Oral_Geno, answer the following: Find the vehicle(s) or solvent(s) used in this toxicity study.",
+  "expected": "VEHICLE/SOLVENT : olive oil with 0.5% Tween 80",
+  "arms": {
+   "28": {
+    "reply": "The vehicles used in the study were olive oil and a mixture of 0.5% Tween 80 in olive oil [9].",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "2.3_Oral_Geno#3",
+  "study": "2.3_Oral_Geno",
+  "supportDoc": "2.3 Oral_geno.pdf",
+  "question": "regarding 2.3_Oral_Geno, answer the following: Test guidelines can help legitimize studies. Guidelines are often from OECD, ECC or EC. For example, OECD 471 is a type of guideline. Does this study follow a test guideline? If yes, state it. If no, answer \"null\".",
+  "expected": "OECD: 474",
+  "arms": {
+   "28": {
+    "reply": "Yes, the study follows a test guideline. The assay design for this study was based on OECD Guideline 474, which was updated and adopted on 21 July 1997 [1].",
+    "retrievedSupport": 7
+   }
+  }
+ },
+ {
+  "id": "2.3_Oral_Geno#4",
+  "study": "2.3_Oral_Geno",
+  "supportDoc": "2.3 Oral_geno.pdf",
+  "question": "regarding 2.3_Oral_Geno, answer the following: Does this study follow a test method? If yes, state it. If no, answer \"null\".",
+  "expected": "MICRONUCLEUS TEST",
+  "arms": {
+   "28": {
+    "reply": "Yes, the study follows the \"Mammalian Erythrocyte Micronucleus Test\" [6]. This is identified as Section 4, Guideline 474 of the OECD Guidelines for Testing of Chemicals, updated and adopted on 21 July 1997 [6].",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "2.3_Oral_Geno#5",
+  "study": "2.3_Oral_Geno",
+  "supportDoc": "2.3 Oral_geno.pdf",
+  "question": "regarding 2.3_Oral_Geno, answer the following: What was the highest dose of substance used, with unit?",
+  "expected": "2000 mg/kg (dose-finding) or 400 mg/kg (actual test)",
+  "arms": {
+   "28": {
+    "reply": "Based on the provided documents, the highest dose used in the micronucleus assay was 400 mg/kg [1].\n\nIn the dose range-finding study, higher doses were tested (up to 2000 mg/kg) [2], but the maximum tolerated dose for the subsequent micronucleus assay was estimated to be 400 mg/kg [2].",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "2.3_Oral_Geno#6",
+  "study": "2.3_Oral_Geno",
+  "supportDoc": "2.3 Oral_geno.pdf",
+  "question": "regarding 2.3_Oral_Geno, answer the following: Is the substance ever diluted? If yes, state the dilution percentage or percentages. If no, answer \"null\".",
+  "expected": "Null",
+  "arms": {
+   "28": {
+    "reply": "Yes, the substance is diluted. Lower concentrations of the test article were obtained by dilution with the vehicle [1]. The provided documents do not state specific dilution percentages.",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "2.3_Oral_Geno#7",
+  "study": "2.3_Oral_Geno",
+  "supportDoc": "2.3 Oral_geno.pdf",
+  "question": "regarding 2.3_Oral_Geno, answer the following: What is the total number of animals used in the study? If it is not mentioned, answer \"null\".",
+  "expected": "Total Animals: 71<br>Other acceptable answer: **Null (mismatch between results tables and proposed study design)**",
+  "arms": {
+   "28": {
+    "reply": "The provided documents do not state the total number of animals used in the study; therefore, the answer is null.\n\nWhile the documents provide specific counts for certain groups—such as 5 animals per group for the micronucleus assay [3] and 3 males and 3 females per group for the dose range-finding study [3]—they do not provide a cumulative total for the entire study.",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "2.3_Oral_Geno#8",
+  "study": "2.3_Oral_Geno",
+  "supportDoc": "2.3 Oral_geno.pdf",
+  "question": "regarding 2.3_Oral_Geno, answer the following: Answer this question only if the study is a repeated dose or sensitization study, otherwise, answer 'not applicable'. Was the substance classified as low, low-moderate, moderate, moderate-high, high, or extreme hazard? If there is no info, answer \"null\".",
+  "expected": "na",
+  "arms": {
+   "28": {
+    "reply": "not applicable [10!]",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "2.3_Oral_Geno#9",
+  "study": "2.3_Oral_Geno",
+  "supportDoc": "2.3 Oral_geno.pdf",
+  "question": "regarding 2.3_Oral_Geno, answer the following: Answer this question only if the study is a repeated dose study. Otherwise, answer 'not applicable'. What was the duration of the study, including units (days, weeks, years). If it's not mentioned, answer \"null\"",
+  "expected": "na",
+  "arms": {
+   "28": {
+    "reply": "Not applicable. The study involved a single oral gavage dose administration [10].",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "2.3_Oral_Geno#10",
+  "study": "2.3_Oral_Geno",
+  "supportDoc": "2.3 Oral_geno.pdf",
+  "question": "regarding 2.3_Oral_Geno, answer the following: Answer this question only if the study is a repeated dose study. Otherwise, answer 'not applicable'. What effects on the test animals changed the NOAEL or the classification hazard? This could be changes in food consumption, organ weight change, weight change, or any other health problem observed in the animal due to the substance. If there were none, answer \"null\".",
+  "expected": "na",
+  "arms": {
+   "28": {
+    "reply": "not applicable [2, 9!]",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "2.4_Oral_Repd#0",
+  "study": "2.4_Oral_Repd",
+  "supportDoc": "2.4 Oral_repd.pdf",
+  "question": "regarding 2.4_Oral_Repd, answer the following: Determine the exposure type (ORAL, DERMAL, or INHALATION) for the toxicology study, then classify the exposure method.",
+  "expected": "Oral\\:Gavage",
+  "arms": {
+   "28": {
+    "reply": "Based on the provided documents, the exposure type for the toxicology study in 2.4 Oral_repd.pdf is oral [1, 3!]. The provided corpus does not specify the method of oral administration (e.g., gavage or dietary).",
+    "retrievedSupport": 2
+   }
+  }
+ },
+ {
+  "id": "2.4_Oral_Repd#1",
+  "study": "2.4_Oral_Repd",
+  "supportDoc": "2.4 Oral_repd.pdf",
+  "question": "regarding 2.4_Oral_Repd, answer the following: Find the purity of the tested substance for this toxicology report.",
+  "expected": "null",
+  "arms": {
+   "28": {
+    "reply": "The provided documents for the report \"Pubertal Development and Thyroid Function in Juvenile/Peripubertal Female Rats\" (2.4_Oral_repd.pdf) do not state the purity of the tested substance, 1,3-dimethylbutyl-N'-phenyl-p-phenylenediamine (6PPD) [1, 2, 4!].",
+    "retrievedSupport": 3
+   }
+  }
+ },
+ {
+  "id": "2.4_Oral_Repd#2",
+  "study": "2.4_Oral_Repd",
+  "supportDoc": "2.4 Oral_repd.pdf",
+  "question": "regarding 2.4_Oral_Repd, answer the following: Find the vehicle(s) or solvent(s) used in this toxicity study.",
+  "expected": "solvent: corn oil",
+  "arms": {
+   "28": {
+    "reply": "The provided excerpts from 2.4 Oral_repd.pdf do not state the vehicle or solvent used in the toxicity study [1, 2!].",
+    "retrievedSupport": 2
+   }
+  }
+ },
+ {
+  "id": "2.4_Oral_Repd#3",
+  "study": "2.4_Oral_Repd",
+  "supportDoc": "2.4 Oral_repd.pdf",
+  "question": "regarding 2.4_Oral_Repd, answer the following: Test guidelines can help legitimize studies. Guidelines are often from OECD, ECC or EC. For example, OECD 471 is a type of guideline. Does this study follow a test guideline? If yes, state it. If no, answer \"null\".",
+  "expected": "Null",
+  "arms": {
+   "28": {
+    "reply": "The provided excerpts for document 2.4_Oral_repd.pdf do not mention any specific test guidelines followed by the study. Therefore, the answer is null.",
+    "retrievedSupport": 2
+   }
+  }
+ },
+ {
+  "id": "2.4_Oral_Repd#4",
+  "study": "2.4_Oral_Repd",
+  "supportDoc": "2.4 Oral_repd.pdf",
+  "question": "regarding 2.4_Oral_Repd, answer the following: Does this study follow a test method? If yes, state it. If no, answer \"null\".",
+  "expected": "OCSPP 890-1450 and OCSPP 890-1500",
+  "arms": {
+   "28": {
+    "reply": "The provided excerpts for document 2.4 Oral_repd.pdf do not state a specific test method used for the study; therefore, the answer is null [1, 2!].",
+    "retrievedSupport": 2
+   }
+  }
+ },
+ {
+  "id": "2.4_Oral_Repd#5",
+  "study": "2.4_Oral_Repd",
+  "supportDoc": "2.4 Oral_repd.pdf",
+  "question": "regarding 2.4_Oral_Repd, answer the following: What was the highest dose of substance used, with unit?",
+  "expected": "Max dose: 300 mglkg/d",
+  "arms": {
+   "28": {
+    "reply": "In the study described in the document regarding pubertal development and thyroid function in juvenile/peripubertal female rats, the highest dose of 6PPD administered was 300 mg/kg/d [10].",
+    "retrievedSupport": 3
+   }
+  }
+ },
+ {
+  "id": "2.4_Oral_Repd#6",
+  "study": "2.4_Oral_Repd",
+  "supportDoc": "2.4 Oral_repd.pdf",
+  "question": "regarding 2.4_Oral_Repd, answer the following: Is the substance ever diluted? If yes, state the dilution percentage or percentages. If no, answer \"null\".",
+  "expected": "Null",
+  "arms": {
+   "28": {
+    "reply": "The provided excerpts from 2.4 Oral_repd.pdf do not address whether the substance is diluted or provide any dilution percentages [1, 4!].",
+    "retrievedSupport": 2
+   }
+  }
+ },
+ {
+  "id": "2.4_Oral_Repd#7",
+  "study": "2.4_Oral_Repd",
+  "supportDoc": "2.4 Oral_repd.pdf",
+  "question": "regarding 2.4_Oral_Repd, answer the following: What is the total number of animals used in the study? If it is not mentioned, answer \"null\".",
+  "expected": "Total Animals: 36",
+  "arms": {
+   "28": {
+    "reply": "null [1, 2, 7!]",
+    "retrievedSupport": 3
+   }
+  }
+ },
+ {
+  "id": "2.4_Oral_Repd#8",
+  "study": "2.4_Oral_Repd",
+  "supportDoc": "2.4 Oral_repd.pdf",
+  "question": "regarding 2.4_Oral_Repd, answer the following: Answer this question only if the study is a repeated dose or sensitization study, otherwise, answer 'not applicable'. Was the substance classified as low, low-moderate, moderate, moderate-high, high, or extreme hazard? If there is no info, answer \"null\".",
+  "expected": "High",
+  "arms": {
+   "28": {
+    "reply": "The study described in [1] and [1] is a reproductive and developmental toxicity study regarding 6PPD in juvenile/peripubertal female rats [1]. As this is a reproductive/developmental study rather than a sensitization study, and the provided text does not explicitly label it as a \"repeated dose\" study, the classification of the substance as a hazard level (low, moderate, high, etc.) is not applicable based on the provided excerpts.\n\nThe corpus does not provide a hazard classification for the substance in the context of the 2.4 Oral_repd study [1, 2!].",
+    "retrievedSupport": 2
+   }
+  }
+ },
+ {
+  "id": "2.4_Oral_Repd#9",
+  "study": "2.4_Oral_Repd",
+  "supportDoc": "2.4 Oral_repd.pdf",
+  "question": "regarding 2.4_Oral_Repd, answer the following: Answer this question only if the study is a repeated dose study. Otherwise, answer 'not applicable'. What was the duration of the study, including units (days, weeks, years). If it's not mentioned, answer \"null\"",
+  "expected": "30 days",
+  "arms": {
+   "28": {
+    "reply": "The study described in the document is a repeated dose study, as the juvenile female rats were exposed to the test material \"once daily\" from postnatal day 22 to 42 or 43 [6].\n\nThe duration of the study was from postnatal day 22 to 42 or 43 [6].",
+    "retrievedSupport": 3
+   }
+  }
+ },
+ {
+  "id": "2.4_Oral_Repd#10",
+  "study": "2.4_Oral_Repd",
+  "supportDoc": "2.4 Oral_repd.pdf",
+  "question": "regarding 2.4_Oral_Repd, answer the following: Answer this question only if the study is a repeated dose study. Otherwise, answer 'not applicable'. What effects on the test animals changed the NOAEL or the classification hazard? This could be changes in food consumption, organ weight change, weight change, or any other health problem observed in the animal due to the substance. If there were none, answer \"null\".",
+  "expected": "CATEGORY: Critical Effects  <br>- \\*\\*FEMALE RATS:\\*\\* Reduced initial body weight gain, reduced mean body weights during pubertal development.  <br>- \\*\\*MALE RATS:\\*\\* Decreased vesicle and coagulating gland weights (-29.2%), decreased ventral prostate weights (-21.2%).",
+  "arms": {
+   "28": {
+    "reply": "The studies described in `2.4_Oral_Repd.pdf` are repeated dose studies, as they involve daily oral gavage administration of 6PPD to rats over a period of weeks (e.g., postnatal day 22 to 42/43 for females and postnatal day 23 to 53/54 for males) [3, 8!].\n\nRegarding the effects observed in the female rat study, the following changes were noted:\n\n* **Body weight:** Initial reduced body weight gain (first two days of dosing) and mean body weight on PND 24 and 25, and reduced body weight at the time of vaginal opening [7].\n* **Organ weights:** Increased absolute and relative liver weight, increased relative kidney weight, decreased absolute and relative pituitary weight, and decreased absolute ovarian and uterine weights [7].\n* **Hormonal and clinical chemistry:** Increased serum TSH, non-statistically significant decrease in serum T4, increased serum cholesterol, total protein, and globulin, and decreased serum triglycerides [7].\n* **Other health/developmental parameters:** Increased thyroid follicular cell height and decreased colloid area, and a decrease in the percentage of regularly cycling animals [7].\n\nThe provided text does not explicitly state which of these specific effects resulted in a change to a NOAEL (No Observed Adverse Effect Level) or a change in classification hazard. Instead, the document notes that the WBCSD/TIP has not made a determination that these results constitute reliable evidence of a significant risk of injury to human health or the environment, and therefore, it was not submitted as a required report under TSCA Section 8(e) [1]. It further states that some of these effects (liver and kidney weights, serum thyroid hormone, testosterone in males, and clinical chemistry parameters) are considered \"likely to be secondary to adverse effects on the liver\" [1].",
+    "retrievedSupport": 5
+   }
+  }
+ },
+ {
+  "id": "2.5_inhalation_repd#0",
+  "study": "2.5_inhalation_repd",
+  "supportDoc": "2.5 Inhalation_repd.pdf",
+  "question": "regarding 2.5_inhalation_repd, answer the following: Determine the exposure type (ORAL, DERMAL, or INHALATION) for the toxicology study, then classify the exposure method.",
+  "expected": "Inhalation: nose-only",
+  "arms": {
+   "28": {
+    "reply": "Based on the provided documents, the toxicology study described in `2.5 Inhalation_repd.pdf` is classified as follows:\n\n* **Exposure Type:** The exposure type is inhalation [2].\n* **Exposure Method:** The exposure method is nose-only inhalation [9].",
+    "retrievedSupport": 2
+   }
+  }
+ },
+ {
+  "id": "2.5_inhalation_repd#1",
+  "study": "2.5_inhalation_repd",
+  "supportDoc": "2.5 Inhalation_repd.pdf",
+  "question": "regarding 2.5_inhalation_repd, answer the following: Find the purity of the tested substance for this toxicology report.",
+  "expected": "Null",
+  "arms": {
+   "28": {
+    "reply": "The provided excerpts from the document 2.5 Inhalation_repd.pdf do not state the purity of the tested substance.",
+    "retrievedSupport": 3
+   }
+  }
+ },
+ {
+  "id": "2.5_inhalation_repd#2",
+  "study": "2.5_inhalation_repd",
+  "supportDoc": "2.5 Inhalation_repd.pdf",
+  "question": "regarding 2.5_inhalation_repd, answer the following: Find the vehicle(s) or solvent(s) used in this toxicity study.",
+  "expected": "Null",
+  "arms": {
+   "28": {
+    "reply": "The provided excerpts for the study on di-tert-butyl peroxide (CAS# 110-05-4) do not identify a vehicle or solvent used in the inhalation study. The documents state that the substance was administered by \"nose-only inhalation\" [1!], but they do not mention the use of any vehicle or solvent.",
+    "retrievedSupport": 3
+   }
+  }
+ },
+ {
+  "id": "2.5_inhalation_repd#3",
+  "study": "2.5_inhalation_repd",
+  "supportDoc": "2.5 Inhalation_repd.pdf",
+  "question": "regarding 2.5_inhalation_repd, answer the following: Test guidelines can help legitimize studies. Guidelines are often from OECD, ECC or EC. For example, OECD 471 is a type of guideline. Does this study follow a test guideline? If yes, state it. If no, answer \"null\".",
+  "expected": "OCED: 422",
+  "arms": {
+   "28": {
+    "reply": "The corpus does not address whether the dose range-finding study described in 2.5 Inhalation_repd.pdf followed a specific test guideline. The document mentions that the study was conducted \"under REACH\" [1!] and references a previous \"OECD 422 subchronic toxicity and reproductive/developmental toxicity screening study\" [4!], but it does not state that the dose range-finding study itself followed a specific test guideline.\n\nTherefore, the answer is null.",
+    "retrievedSupport": 3
+   }
+  }
+ },
+ {
+  "id": "2.5_inhalation_repd#4",
+  "study": "2.5_inhalation_repd",
+  "supportDoc": "2.5 Inhalation_repd.pdf",
+  "question": "regarding 2.5_inhalation_repd, answer the following: Does this study follow a test method? If yes, state it. If no, answer \"null\".",
+  "expected": "Not applicable",
+  "arms": {
+   "28": {
+    "reply": "The study mentioned in the document is a dose range-finding phase of a 90-day inhalation study being conducted under REACH [1]. Additionally, the document references an OECD 422 subchronic toxicity and reproductive/developmental toxicity screening study [2].",
+    "retrievedSupport": 2
+   }
+  }
+ },
+ {
+  "id": "2.5_inhalation_repd#5",
+  "study": "2.5_inhalation_repd",
+  "supportDoc": "2.5 Inhalation_repd.pdf",
+  "question": "regarding 2.5_inhalation_repd, answer the following: What was the highest dose of substance used, with unit?",
+  "expected": "Max Dose: 10,000 mg/m3",
+  "arms": {
+   "28": {
+    "reply": "The highest dose of di-tert-butyl peroxide administered in the study was 10,000 mg/in³ [1].",
+    "retrievedSupport": 2
+   }
+  }
+ },
+ {
+  "id": "2.5_inhalation_repd#6",
+  "study": "2.5_inhalation_repd",
+  "supportDoc": "2.5 Inhalation_repd.pdf",
+  "question": "regarding 2.5_inhalation_repd, answer the following: Is the substance ever diluted? If yes, state the dilution percentage or percentages. If no, answer \"null\".",
+  "expected": "Null",
+  "arms": {
+   "28": {
+    "reply": "The provided excerpts for 2.5 Inhalation_repd.pdf do not state that the substance, di-tert-butyl peroxide, was diluted; the document describes the administration of the substance by nose-only inhalation at specific dose levels (100, 1,000, or 10,000 mg/in³) [1]. Therefore, the answer is null.",
+    "retrievedSupport": 3
+   }
+  }
+ },
+ {
+  "id": "2.5_inhalation_repd#7",
+  "study": "2.5_inhalation_repd",
+  "supportDoc": "2.5 Inhalation_repd.pdf",
+  "question": "regarding 2.5_inhalation_repd, answer the following: What is the total number of animals used in the study? If it is not mentioned, answer \"null\".",
+  "expected": "Total animals: 40",
+  "arms": {
+   "28": {
+    "reply": "The study used a total of 40 animals [2]. This is based on the inclusion of three dose groups and one control group, with each group containing five animals per sex (10 animals per group) [1].",
+    "retrievedSupport": 2
+   }
+  }
+ },
+ {
+  "id": "2.5_inhalation_repd#8",
+  "study": "2.5_inhalation_repd",
+  "supportDoc": "2.5 Inhalation_repd.pdf",
+  "question": "regarding 2.5_inhalation_repd, answer the following: Answer this question only if the study is a repeated dose or sensitization study, otherwise, answer 'not applicable'. Was the substance classified as low, low-moderate, moderate, moderate-high, high, or extreme hazard? If there is no info, answer \"null\".",
+  "expected": "Not appliable",
+  "arms": {
+   "28": {
+    "reply": "The study described in the provided excerpts for `2.5 Inhalation_repd.pdf` is a \"dose range-finding phase of a 90-day inhalation study\" [1]. Because this is a repeated dose study, the condition to answer the question is met.\n\nRegarding the hazard classification, the provided documents do not classify the substance as low, low-moderate, moderate, moderate-high, high, or extreme hazard; therefore, the answer is \"null\" [1].",
+    "retrievedSupport": 2
+   }
+  }
+ },
+ {
+  "id": "2.5_inhalation_repd#9",
+  "study": "2.5_inhalation_repd",
+  "supportDoc": "2.5 Inhalation_repd.pdf",
+  "question": "regarding 2.5_inhalation_repd, answer the following: Answer this question only if the study is a repeated dose study. Otherwise, answer 'not applicable'. What was the duration of the study, including units (days, weeks, years). If it's not mentioned, answer \"null\"",
+  "expected": "Not applicable",
+  "arms": {
+   "28": {
+    "reply": "The study described in the provided excerpts is a repeated dose study [9]. The duration of the study was fourteen days [1].",
+    "retrievedSupport": 2
+   }
+  }
+ },
+ {
+  "id": "2.5_inhalation_repd#10",
+  "study": "2.5_inhalation_repd",
+  "supportDoc": "2.5 Inhalation_repd.pdf",
+  "question": "regarding 2.5_inhalation_repd, answer the following: Answer this question only if the study is a repeated dose study. Otherwise, answer 'not applicable'. What effects on the test animals changed the NOAEL or the classification hazard? This could be changes in food consumption, organ weight change, weight change, or any other health problem observed in the animal due to the substance. If there were none, answer \"null\".",
+  "expected": "ORGAN WEIGHT CHANGE: Mean relative liver, kidney, and adrenal weights increased;  <br>BEHAVIORAL SYMPTOMS: Animals exhibited stiff tails with quick and short-lasting movements.",
+  "arms": {
+   "28": {
+    "reply": "The study described in [1] and [1] is a dose range-finding phase of a 90-day inhalation study, which involves daily administration of the test substance for fourteen days [1]. As this is a repeated administration study, it qualifies as a repeated dose study.\n\nRegarding the effects observed:\n\n* **Organ weight changes:** Test item-related increases in mean relative organ weights were noted in the liver, kidney, and adrenal glands [1]. Specifically, at 10,000 mg/in³, mean relative liver, kidney, and adrenal weights were significantly increased in males, and relative liver weight was significantly increased in females [1]. At 1,000 mg/in³, the only statistically significant effect was increased relative adrenal gland weight in males [2].\n* **Other health problems:** The laboratory reported that the animals' tails were stiff and had quick and short-lasting movements [2].\n\nThe provided text does not state that these effects changed the NOAEL or the classification hazard for the substance.",
+    "retrievedSupport": 2
+   }
+  }
+ },
+ {
+  "id": "2.6_Dermal_Sens#0",
+  "study": "2.6_Dermal_Sens",
+  "supportDoc": "2.6 Dermal_sens.pdf",
+  "question": "regarding 2.6_Dermal_Sens, answer the following: Determine the exposure type (ORAL, DERMAL, or INHALATION) for the toxicology study, then classify the exposure method.",
+  "expected": "Dermal: Intradermal Injection",
+  "arms": {
+   "28": {
+    "reply": "Based on the provided documents for 2.6 Dermal_sens.pdf:\n\n* **Exposure Type:** The exposure type is dermal [1!]. The study tested n-heptylamine for its potential to produce an allergic skin reaction [1].\n* **Exposure Method:** The exposure method involved intradermal injection and skin application [1]. Specifically, the study utilized a modified Magnusson and Kligman method [1].",
+    "retrievedSupport": 3
+   }
+  }
+ },
+ {
+  "id": "2.6_Dermal_Sens#1",
+  "study": "2.6_Dermal_Sens",
+  "supportDoc": "2.6 Dermal_sens.pdf",
+  "question": "regarding 2.6_Dermal_Sens, answer the following: Find the purity of the tested substance for this toxicology report.",
+  "expected": "Purity\\:Null",
+  "arms": {
+   "28": {
+    "reply": "The provided documents regarding the toxicology report for n-heptylamine (2.6 Dermal_sens.pdf) do not state the purity of the tested substance [1, 2, 3!].",
+    "retrievedSupport": 3
+   }
+  }
+ },
+ {
+  "id": "2.6_Dermal_Sens#2",
+  "study": "2.6_Dermal_Sens",
+  "supportDoc": "2.6 Dermal_sens.pdf",
+  "question": "regarding 2.6_Dermal_Sens, answer the following: Find the vehicle(s) or solvent(s) used in this toxicity study.",
+  "expected": "Null",
+  "arms": {
+   "28": {
+    "reply": "The provided excerpts for document 2.6 Dermal_sens.pdf do not identify the specific vehicle or solvent used in the sensitization study for n-heptylamine. While the document mentions that a 1% solution was used to test the pH of the material [1!], and that 0.25% and 0.5% solutions were used during the challenge application [3!], it does not specify the substance used as the vehicle or solvent for these solutions.",
+    "retrievedSupport": 3
+   }
+  }
+ },
+ {
+  "id": "2.6_Dermal_Sens#3",
+  "study": "2.6_Dermal_Sens",
+  "supportDoc": "2.6 Dermal_sens.pdf",
+  "question": "regarding 2.6_Dermal_Sens, answer the following: Test guidelines can help legitimize studies. Guidelines are often from OECD, ECC or EC. For example, OECD 471 is a type of guideline. Does this study follow a test guideline? If yes, state it. If no, answer \"null\".",
+  "expected": "Null",
+  "arms": {
+   "28": {
+    "reply": "The study described in the document `2.6 Dermal_sens.pdf` does not explicitly cite a specific numbered test guideline (such as an OECD guideline number). It states that the study used a \"modified Magnusson and Kligman method\" to test for potential allergic skin reactions [1]. Therefore, the answer is null.",
+    "retrievedSupport": 3
+   }
+  }
+ },
+ {
+  "id": "2.6_Dermal_Sens#4",
+  "study": "2.6_Dermal_Sens",
+  "supportDoc": "2.6 Dermal_sens.pdf",
+  "question": "regarding 2.6_Dermal_Sens, answer the following: Does this study follow a test method? If yes, state it. If no, answer \"null\".",
+  "expected": "Guineapig Maximization test",
+  "arms": {
+   "28": {
+    "reply": "Yes, the study follows a test method, which is a modified Magnusson and Kligman method [1].",
+    "retrievedSupport": 3
+   }
+  }
+ },
+ {
+  "id": "2.6_Dermal_Sens#5",
+  "study": "2.6_Dermal_Sens",
+  "supportDoc": "2.6 Dermal_sens.pdf",
+  "question": "regarding 2.6_Dermal_Sens, answer the following: What was the highest dose of substance used, with unit?",
+  "expected": "0.50%",
+  "arms": {
+   "28": {
+    "reply": "The provided documents for 2.6_Dermal_Sens do not state the highest dose of the substance used in the study. The excerpts mention that a 0.25% solution and a 0.5% solution were used for challenge applications [9], and that a 1% solution was tested for pH [9], but they do not identify a maximum dose level.",
+    "retrievedSupport": 3
+   }
+  }
+ },
+ {
+  "id": "2.6_Dermal_Sens#6",
+  "study": "2.6_Dermal_Sens",
+  "supportDoc": "2.6 Dermal_sens.pdf",
+  "question": "regarding 2.6_Dermal_Sens, answer the following: Is the substance ever diluted? If yes, state the dilution percentage or percentages. If no, answer \"null\".",
+  "expected": "0.25%, 0.5%",
+  "arms": {
+   "28": {
+    "reply": "Yes, the substance n-heptylamine is diluted in the sensitization studies described in the document. The study reports the following dilution percentages:\n\n* 0.25% solution [3!]\n* 0.5% solution [3!]\n* 25% [5!]",
+    "retrievedSupport": 3
+   }
+  }
+ },
+ {
+  "id": "2.6_Dermal_Sens#7",
+  "study": "2.6_Dermal_Sens",
+  "supportDoc": "2.6 Dermal_sens.pdf",
+  "question": "regarding 2.6_Dermal_Sens, answer the following: What is the total number of animals used in the study? If it is not mentioned, answer \"null\".",
+  "expected": "10",
+  "arms": {
+   "28": {
+    "reply": "The document 2.6 Dermal_sens.pdf does not state the total number of animals used in the study; it only provides the number of animals that exhibited sensitization reactions (3/10 and 4/10) [5]. Therefore, the answer is null.",
+    "retrievedSupport": 3
+   }
+  }
+ },
+ {
+  "id": "2.6_Dermal_Sens#8",
+  "study": "2.6_Dermal_Sens",
+  "supportDoc": "2.6 Dermal_sens.pdf",
+  "question": "regarding 2.6_Dermal_Sens, answer the following: Answer this question only if the study is a repeated dose or sensitization study, otherwise, answer 'not applicable'. Was the substance classified as low, low-moderate, moderate, moderate-high, high, or extreme hazard? If there is no info, answer \"null\".",
+  "expected": "Strong",
+  "arms": {
+   "28": {
+    "reply": "The study described in the provided excerpts for `2.6_Dermal_sens.pdf` is a sensitization study [9].\n\nRegarding the classification of the substance (n-heptylamine), the provided excerpts do not state that it was classified as low, low-moderate, moderate, moderate-high, high, or extreme hazard. Therefore, the answer is \"null\" [1, 2, 3!].",
+    "retrievedSupport": 3
+   }
+  }
+ },
+ {
+  "id": "2.6_Dermal_Sens#9",
+  "study": "2.6_Dermal_Sens",
+  "supportDoc": "2.6 Dermal_sens.pdf",
+  "question": "regarding 2.6_Dermal_Sens, answer the following: Answer this question only if the study is a repeated dose study. Otherwise, answer 'not applicable'. What was the duration of the study, including units (days, weeks, years). If it's not mentioned, answer \"null\"",
+  "expected": "Null",
+  "arms": {
+   "28": {
+    "reply": "not applicable",
+    "retrievedSupport": 3
+   }
+  }
+ },
+ {
+  "id": "2.6_Dermal_Sens#10",
+  "study": "2.6_Dermal_Sens",
+  "supportDoc": "2.6 Dermal_sens.pdf",
+  "question": "regarding 2.6_Dermal_Sens, answer the following: Answer this question only if the study is a repeated dose study. Otherwise, answer 'not applicable'. What effects on the test animals changed the NOAEL or the classification hazard? This could be changes in food consumption, organ weight change, weight change, or any other health problem observed in the animal due to the substance. If there were none, answer \"null\".",
+  "expected": "Null",
+  "arms": {
+   "28": {
+    "reply": "not applicable",
+    "retrievedSupport": 3
+   }
+  }
+ },
+ {
+  "id": "2.7_Vitro_Geno#0",
+  "study": "2.7_Vitro_Geno",
+  "supportDoc": "2.7 Vitro_geno.pdf",
+  "question": "regarding 2.7_Vitro_Geno, answer the following: Determine the exposure type (ORAL, DERMAL, or INHALATION) for the toxicology study, then classify the exposure method.",
+  "expected": "In vitro / Not applicable",
+  "arms": {
+   "28": {
+    "reply": "The provided document corpus does not state whether the exposure type was oral, dermal, or inhalation. The study is an \"IN VITRO MAMMALIAN CHROMOSOME ABERRATION TEST\" [3], which involves exposing CHO (Chinese Hamster Ovary) cells to a test article in a laboratory setting rather than administering it to a living organism via oral, dermal, or inhalation routes [3].\n\nRegarding the exposure method, the cells were treated by refeeding flasks with complete medium (for non-activated exposure) or an S9 reaction mixture (for S9-activated exposure), to which a dosing solution of the test article or solvent was added [10]. The treatment occurred at 37± 1°C in a humidified atmosphere of 5± 1% CO2 in air [10].",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "2.7_Vitro_Geno#1",
+  "study": "2.7_Vitro_Geno",
+  "supportDoc": "2.7 Vitro_geno.pdf",
+  "question": "regarding 2.7_Vitro_Geno, answer the following: Find the purity of the tested substance for this toxicology report.",
+  "expected": "97.42%",
+  "arms": {
+   "28": {
+    "reply": "The purity of the tested substance, 1-Chlorododecane, is 97.42% [1].",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "2.7_Vitro_Geno#2",
+  "study": "2.7_Vitro_Geno",
+  "supportDoc": "2.7 Vitro_geno.pdf",
+  "question": "regarding 2.7_Vitro_Geno, answer the following: Find the vehicle(s) or solvent(s) used in this toxicity study.",
+  "expected": "Ethanol",
+  "arms": {
+   "28": {
+    "reply": "Based on the provided documents, the following information regarding the vehicle or solvent used in the study is available:\n\n* **Ethanol:** The study explicitly identifies ethanol as the solvent used in the preliminary toxicity assay [8].\n* **General Solvent/Vehicle Policy:** The documents note that vehicles compatible with the test system include, but are not limited to, deionized water, dimethyl sulfoxide, ethanol, and acetone [10]. The protocol states that the solvent for the test article is used as the solvent control [1]. If a solvent other than water, physiological buffer, or medium is used, its final concentration in the treatment medium must not exceed 1% [2].",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "2.7_Vitro_Geno#3",
+  "study": "2.7_Vitro_Geno",
+  "supportDoc": "2.7 Vitro_geno.pdf",
+  "question": "regarding 2.7_Vitro_Geno, answer the following: Test guidelines can help legitimize studies. Guidelines are often from OECD, ECC or EC. For example, OECD 471 is a type of guideline. Does this study follow a test guideline? If yes, state it. If no, answer \"null\".",
+  "expected": "OECD: 473",
+  "arms": {
+   "28": {
+    "reply": "Yes, this study follows a test guideline. The study protocol was written to comply with the OECD Guideline 473 (In Vitro Mammalian Chromosome Aberration Test), Ninth Addendum to the OECD Guidelines for the Testing of Chemicals, published by the Organisation for Economic Co-operation and Development [3].",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "2.7_Vitro_Geno#4",
+  "study": "2.7_Vitro_Geno",
+  "supportDoc": "2.7 Vitro_geno.pdf",
+  "question": "regarding 2.7_Vitro_Geno, answer the following: Does this study follow a test method? If yes, state it. If no, answer \"null\".",
+  "expected": "TEST METHOD: In Vitro Mammalian Chromosome Aberration Test",
+  "arms": {
+   "28": {
+    "reply": "Yes, the study follows a test method. It was written to comply with the OECD Guideline 473 (In Vitro Mammalian Chromosome Aberration Test), Ninth Addendum to the OECD Guidelines for the Testing of Chemicals, published in February 1998 [3]. Additionally, the study was conducted in accordance with the International Conference on Harmonisation (ICH) of Technical Requirements for Registration of Pharmaceuticals for Human Use (1996 and 1997) [4].",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "2.7_Vitro_Geno#5",
+  "study": "2.7_Vitro_Geno",
+  "supportDoc": "2.7 Vitro_geno.pdf",
+  "question": "regarding 2.7_Vitro_Geno, answer the following: What was the highest dose of substance used, with unit?",
+  "expected": "Max dose: 2040 ug/mL (10 mM) (preliminary asssay) or 5000 ug/mL (testing)",
+  "arms": {
+   "28": {
+    "reply": "In the preliminary toxicity test, the highest concentration of the test article used was 2040 µg/mL [4].",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "2.7_Vitro_Geno#6",
+  "study": "2.7_Vitro_Geno",
+  "supportDoc": "2.7 Vitro_geno.pdf",
+  "question": "regarding 2.7_Vitro_Geno, answer the following: Is the substance ever diluted? If yes, state the dilution percentage or percentages. If no, answer \"null\".",
+  "expected": "Null (No specific dilution percentages)",
+  "arms": {
+   "28": {
+    "reply": "The provided documents do not state that the test substance is diluted, nor do they specify a dilution percentage.\n\nThe documents note that for solvents other than water, physiological buffer, or medium, the final concentration in the treatment medium will not exceed 1% [6]. Additionally, the study involves testing at least nine concentrations of the test article [7], and the highest concentration is determined based on solubility or workability (e.g., 5 mg/ml or 10 mM) [7]. However, the corpus does not explicitly describe the process as \"dilution\" or provide specific dilution percentages.",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "2.7_Vitro_Geno#7",
+  "study": "2.7_Vitro_Geno",
+  "supportDoc": "2.7 Vitro_geno.pdf",
+  "question": "regarding 2.7_Vitro_Geno, answer the following: What is the total number of animals used in the study? If it is not mentioned, answer \"null\".",
+  "expected": "Null",
+  "arms": {
+   "28": {
+    "reply": "null [1, 2, 3, 4, 5, 6, 7, 8, 9, 10!]",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "2.7_Vitro_Geno#8",
+  "study": "2.7_Vitro_Geno",
+  "supportDoc": "2.7 Vitro_geno.pdf",
+  "question": "regarding 2.7_Vitro_Geno, answer the following: Answer this question only if the study is a repeated dose or sensitization study, otherwise, answer 'not applicable'. Was the substance classified as low, low-moderate, moderate, moderate-high, high, or extreme hazard? If there is no info, answer \"null\".",
+  "expected": "na",
+  "arms": {
+   "28": {
+    "reply": "Not applicable. The provided document describes an *in vitro* mammalian chromosome aberration test [2], which is a genotoxicity study, not a repeated dose or sensitization study.",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "2.7_Vitro_Geno#9",
+  "study": "2.7_Vitro_Geno",
+  "supportDoc": "2.7 Vitro_geno.pdf",
+  "question": "regarding 2.7_Vitro_Geno, answer the following: Answer this question only if the study is a repeated dose study. Otherwise, answer 'not applicable'. What was the duration of the study, including units (days, weeks, years). If it's not mentioned, answer \"null\"",
+  "expected": "na",
+  "arms": {
+   "28": {
+    "reply": "not applicable",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "2.7_Vitro_Geno#10",
+  "study": "2.7_Vitro_Geno",
+  "supportDoc": "2.7 Vitro_geno.pdf",
+  "question": "regarding 2.7_Vitro_Geno, answer the following: Answer this question only if the study is a repeated dose study. Otherwise, answer 'not applicable'. What effects on the test animals changed the NOAEL or the classification hazard? This could be changes in food consumption, organ weight change, weight change, or any other health problem observed in the animal due to the substance. If there were none, answer \"null\".",
+  "expected": "na",
+  "arms": {
+   "28": {
+    "reply": "not applicable [2, 6, 8, 9!]",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "2.8_Dermal_Sens#0",
+  "study": "2.8_Dermal_Sens",
+  "supportDoc": "2.8 Dermal_sens.pdf",
+  "question": "regarding 2.8_Dermal_Sens, answer the following: Determine the exposure type (ORAL, DERMAL, or INHALATION) for the toxicology study, then classify the exposure method.",
+  "expected": "Dermal: Topical Application",
+  "arms": {
+   "28": {
+    "reply": "The toxicology study for Dihexyl ether is a dermal exposure study [5!]. The study assesses the skin sensitization potential of the substance following its \"dermal application to mice\" [5!].\n\nRegarding the exposure method, the study utilizes the Local Lymph Node Assay (LLNA) [5!]. This method involves measuring the proliferation of lymphocytes isolated from the auricular lymph nodes (the lymph nodes draining the site of exposure, which is the dorsal aspect of the ears) in mice [9!].",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "2.8_Dermal_Sens#1",
+  "study": "2.8_Dermal_Sens",
+  "supportDoc": "2.8 Dermal_sens.pdf",
+  "question": "regarding 2.8_Dermal_Sens, answer the following: Find the purity of the tested substance for this toxicology report.",
+  "expected": "Purity: 98.5%",
+  "arms": {
+   "28": {
+    "reply": "The purity of the tested substance, dihexyl ether, is 98.5% [1].",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "2.8_Dermal_Sens#2",
+  "study": "2.8_Dermal_Sens",
+  "supportDoc": "2.8 Dermal_sens.pdf",
+  "question": "regarding 2.8_Dermal_Sens, answer the following: Find the vehicle(s) or solvent(s) used in this toxicity study.",
+  "expected": "Solvent: Acetone/Olive Oil (4:1)",
+  "arms": {
+   "28": {
+    "reply": "The vehicle used in the study was AOO, which is a 4:1 (v/v) mixture of acetone and olive oil [6].",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "2.8_Dermal_Sens#3",
+  "study": "2.8_Dermal_Sens",
+  "supportDoc": "2.8 Dermal_sens.pdf",
+  "question": "regarding 2.8_Dermal_Sens, answer the following: Test guidelines can help legitimize studies. Guidelines are often from OECD, ECC or EC. For example, OECD 471 is a type of guideline. Does this study follow a test guideline? If yes, state it. If no, answer \"null\".",
+  "expected": "OECD: 429",
+  "arms": {
+   "28": {
+    "reply": "Yes, the study follows several test guidelines:\n\n* OECD Guideline 429, 'Skin Sensitisation: Local Lymph Node Assay' [1].\n* Commission Regulation (EC) No. 440/2008, Method B.42 [1].\n* EPA Health Effects Test Guidelines, OPPTS 870.2600 [1].",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "2.8_Dermal_Sens#4",
+  "study": "2.8_Dermal_Sens",
+  "supportDoc": "2.8 Dermal_sens.pdf",
+  "question": "regarding 2.8_Dermal_Sens, answer the following: Does this study follow a test method? If yes, state it. If no, answer \"null\".",
+  "expected": "Local Lymph Node Assay",
+  "arms": {
+   "28": {
+    "reply": "Yes, the study followed the OECD Guideline 429, 'Skin Sensitisation: Local Lymph Node Assay' [2]. Additionally, the study followed the procedures indicated by internal Eurofins Munich and BSL Munich SOPs, as well as the following guidelines and recommendations:\n\n* Commission Regulation (EC) No. 440/2008, L 142, Annex Part B, Method B.42 [2]\n* EPA Health Effects Test Guidelines, OPPTS 870.2600 'Skin Sensitization' [2]",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "2.8_Dermal_Sens#5",
+  "study": "2.8_Dermal_Sens",
+  "supportDoc": "2.8 Dermal_sens.pdf",
+  "question": "regarding 2.8_Dermal_Sens, answer the following: What was the highest dose of substance used, with unit?",
+  "expected": "Max dose: 100%",
+  "arms": {
+   "28": {
+    "reply": "The provided documents do not state the highest dose of dihexyl ether used in the study. While the documents mention that the EC3 value was calculated at a concentration of 22.18% [4, 5!], they do not specify the range of doses tested or the maximum dose administered.",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "2.8_Dermal_Sens#6",
+  "study": "2.8_Dermal_Sens",
+  "supportDoc": "2.8 Dermal_sens.pdf",
+  "question": "regarding 2.8_Dermal_Sens, answer the following: Is the substance ever diluted? If yes, state the dilution percentage or percentages. If no, answer \"null\".",
+  "expected": "25, 50, 100%",
+  "arms": {
+   "28": {
+    "reply": "Yes, the substance is diluted. In the main study, the test item was prepared at concentrations of 25% and 50% (diluted with AOO 4:1, v/v) [2].",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "2.8_Dermal_Sens#7",
+  "study": "2.8_Dermal_Sens",
+  "supportDoc": "2.8 Dermal_sens.pdf",
+  "question": "regarding 2.8_Dermal_Sens, answer the following: What is the total number of animals used in the study? If it is not mentioned, answer \"null\".",
+  "expected": "Total Animals: 25<br>(5 per group, 5 groups)<br>OR<br>80 (20 per group, 4 groups)",
+  "arms": {
+   "28": {
+    "reply": "The provided documents do not state the total number of animals used in the entire study; therefore, the answer is null [9!]. The corpus only specifies that there were 5 mice per group and 5 mice for the prescreen test [9].",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "2.8_Dermal_Sens#8",
+  "study": "2.8_Dermal_Sens",
+  "supportDoc": "2.8 Dermal_sens.pdf",
+  "question": "regarding 2.8_Dermal_Sens, answer the following: Answer this question only if the study is a repeated dose or sensitization study, otherwise, answer 'not applicable'. Was the substance classified as low, low-moderate, moderate, moderate-high, high, or extreme hazard? If there is no info, answer \"null\".",
+  "expected": "Null",
+  "arms": {
+   "28": {
+    "reply": "The study is a sensitization study (Local Lymph Node Assay) [2].\n\nRegarding the classification of the substance, the provided documents state that Dihexyl ether is classified into Category 1B [2]. The documents define Category 1B as substances showing a \"low to moderate frequency of occurrence in humans and/or a low to moderate potency in animals\" [2]. The corpus does not use the specific terms \"low,\" \"low-moderate,\" \"moderate,\" \"moderate-high,\" \"high,\" or \"extreme hazard\" to describe the overall hazard level, other than the definition provided for the Category 1B classification [2].",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "2.8_Dermal_Sens#9",
+  "study": "2.8_Dermal_Sens",
+  "supportDoc": "2.8 Dermal_sens.pdf",
+  "question": "regarding 2.8_Dermal_Sens, answer the following: Answer this question only if the study is a repeated dose study. Otherwise, answer 'not applicable'. What was the duration of the study, including units (days, weeks, years). If it's not mentioned, answer \"null\"",
+  "expected": "Null",
+  "arms": {
+   "28": {
+    "reply": "not applicable",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "2.8_Dermal_Sens#10",
+  "study": "2.8_Dermal_Sens",
+  "supportDoc": "2.8 Dermal_sens.pdf",
+  "question": "regarding 2.8_Dermal_Sens, answer the following: Answer this question only if the study is a repeated dose study. Otherwise, answer 'not applicable'. What effects on the test animals changed the NOAEL or the classification hazard? This could be changes in food consumption, organ weight change, weight change, or any other health problem observed in the animal due to the substance. If there were none, answer \"null\".",
+  "expected": "na",
+  "arms": {
+   "28": {
+    "reply": "not applicable",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "2.9_Oral_Geno#0",
+  "study": "2.9_Oral_Geno",
+  "supportDoc": "2.9 Oral_geno.pdf",
+  "question": "regarding 2.9_Oral_Geno, answer the following: Determine the exposure type (ORAL, DERMAL, or INHALATION) for the toxicology study, then classify the exposure method.",
+  "expected": "Oral: Gavage",
+  "arms": {
+   "28": {
+    "reply": "Based on the provided documents, the exposure type for the toxicology study is oral [3, 9!]. The exposure method is gavage [3, 9!].",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "2.9_Oral_Geno#1",
+  "study": "2.9_Oral_Geno",
+  "supportDoc": "2.9 Oral_geno.pdf",
+  "question": "regarding 2.9_Oral_Geno, answer the following: Find the purity of the tested substance for this toxicology report.",
+  "expected": "Purity: 90%+",
+  "arms": {
+   "28": {
+    "reply": "The provided documents do not state the purity of the tested substance. The report explicitly notes that the \"identity, strength, purity and composition or other characteristics to define the test or control substance have not been determined by the testing facility\" [1]. Furthermore, the study protocol assigned the responsibility for determining and documenting the analytical purity and composition of the test article to the Sponsor [1].",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "2.9_Oral_Geno#2",
+  "study": "2.9_Oral_Geno",
+  "supportDoc": "2.9 Oral_geno.pdf",
+  "question": "regarding 2.9_Oral_Geno, answer the following: Find the vehicle(s) or solvent(s) used in this toxicity study.",
+  "expected": "com oil (corn oil), Hank's balanced salt solution (HBSS), Carnoy’s fixative, methanol\\:acetic acid (3:1 v/v), potassium chloride (0.060 M KC1)",
+  "arms": {
+   "28": {
+    "reply": "In the toxicity study, the vehicle used for the test article was corn oil [1]. While the document notes that vehicles compatible with the test system include distilled water, 1% carboxymethylcellulose, and corn oil [2], only corn oil is identified as the vehicle used for the test article in this specific study [2].",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "2.9_Oral_Geno#3",
+  "study": "2.9_Oral_Geno",
+  "supportDoc": "2.9 Oral_geno.pdf",
+  "question": "regarding 2.9_Oral_Geno, answer the following: Test guidelines can help legitimize studies. Guidelines are often from OECD, ECC or EC. For example, OECD 471 is a type of guideline. Does this study follow a test guideline? If yes, state it. If no, answer \"null\".",
+  "expected": "null",
+  "arms": {
+   "28": {
+    "reply": "Yes, the study states that it is performed in accordance with \"OECD guidelines\" [2]. The corpus does not specify a particular numbered test guideline.",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "2.9_Oral_Geno#4",
+  "study": "2.9_Oral_Geno",
+  "supportDoc": "2.9 Oral_geno.pdf",
+  "question": "regarding 2.9_Oral_Geno, answer the following: Does this study follow a test method? If yes, state it. If no, answer \"null\".",
+  "expected": "Acute in vivo Cytogenetics Assay",
+  "arms": {
+   "28": {
+    "reply": "The study is titled \"Acute In Vivo Cytogenetics Assay in Mice\" [2]. Its purpose is to test the mutagenic potential of the test article or its metabolites by measuring its ability to induce structural chromosome aberrations in mice [2]. The study involves a single administration of the test article via oral gavage [2].",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "2.9_Oral_Geno#5",
+  "study": "2.9_Oral_Geno",
+  "supportDoc": "2.9 Oral_geno.pdf",
+  "question": "regarding 2.9_Oral_Geno, answer the following: What was the highest dose of substance used, with unit?",
+  "expected": "5000 mg/kg",
+  "arms": {
+   "28": {
+    "reply": "The provided documents do not state the specific highest dose of the test substance used in the study.\n\nRegarding the selection of the high dose, the corpus specifies that \"the high dose for the cytogenetics assay will be the maximum tolerated dose (to a maximum of 9000 mg/kg) or that which produces some indication of toxicity\" [5]. However, the documents do not report the actual dose administered in the study.",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "2.9_Oral_Geno#6",
+  "study": "2.9_Oral_Geno",
+  "supportDoc": "2.9 Oral_geno.pdf",
+  "question": "regarding 2.9_Oral_Geno, answer the following: Is the substance ever diluted? If yes, state the dilution percentage or percentages. If no, answer \"null\".",
+  "expected": "null",
+  "arms": {
+   "28": {
+    "reply": "Yes, the test article (Oleylamine) was diluted.\n\n* The test article was dissolved in corn oil [4].\n* The positive control substance, Triethylenemelamine (TEM), was dissolved in sterile distilled water at a concentration of 0.05 mg/ml [4].\n\nThe provided documents do not state a specific dilution percentage for the test article (Oleylamine) itself, only that it was dissolved in corn oil [4].",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "2.9_Oral_Geno#7",
+  "study": "2.9_Oral_Geno",
+  "supportDoc": "2.9 Oral_geno.pdf",
+  "question": "regarding 2.9_Oral_Geno, answer the following: What is the total number of animals used in the study? If it is not mentioned, answer \"null\".",
+  "expected": "Total Animals: 200",
+  "arms": {
+   "28": {
+    "reply": "The provided documents do not state the total number of animals used in the study; therefore, the answer is null.\n\nThe corpus provides the following information regarding animal group sizes:\n* For the dose-finding study, animals were assigned to six experimental groups of five males and five females each [3].\n* For the cytogenetics study, animals were assigned to thirteen experimental groups of five males and five females each [3].\n* A table indicates that for certain treatments, 5 animals per sex were sacrificed at 6, 12, and 24 hours [1].",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "2.9_Oral_Geno#8",
+  "study": "2.9_Oral_Geno",
+  "supportDoc": "2.9 Oral_geno.pdf",
+  "question": "regarding 2.9_Oral_Geno, answer the following: Answer this question only if the study is a repeated dose or sensitization study, otherwise, answer 'not applicable'. Was the substance classified as low, low-moderate, moderate, moderate-high, high, or extreme hazard? If there is no info, answer \"null\".",
+  "expected": "not applicable (No NOAEL)",
+  "arms": {
+   "28": {
+    "reply": "Not applicable. [9!]",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "2.9_Oral_Geno#9",
+  "study": "2.9_Oral_Geno",
+  "supportDoc": "2.9 Oral_geno.pdf",
+  "question": "regarding 2.9_Oral_Geno, answer the following: Answer this question only if the study is a repeated dose study. Otherwise, answer 'not applicable'. What was the duration of the study, including units (days, weeks, years). If it's not mentioned, answer \"null\"",
+  "expected": "duration: 7 days",
+  "arms": {
+   "28": {
+    "reply": "not applicable",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "2.9_Oral_Geno#10",
+  "study": "2.9_Oral_Geno",
+  "supportDoc": "2.9 Oral_geno.pdf",
+  "question": "regarding 2.9_Oral_Geno, answer the following: Answer this question only if the study is a repeated dose study. Otherwise, answer 'not applicable'. What effects on the test animals changed the NOAEL or the classification hazard? This could be changes in food consumption, organ weight change, weight change, or any other health problem observed in the animal due to the substance. If there were none, answer \"null\".",
+  "expected": "EFFECTS : REDUCTION IN BODY WEIGHT GAIN, CLINICAL SIGNS OF CHEMICAL EFFECTS<br>",
+  "arms": {
+   "28": {
+    "reply": "not applicable",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "2.10_Dermal_Sens#0",
+  "study": "2.10_Dermal_Sens",
+  "supportDoc": "2.10 Dermal_sens.pdf",
+  "question": "regarding 2.10_Dermal_Sens, answer the following: Determine the exposure type (ORAL, DERMAL, or INHALATION) for the toxicology study, then classify the exposure method.",
+  "expected": "Dermal: Topical Application, Intradermal Injection",
+  "arms": {
+   "28": {
+    "reply": "Based on the provided documents, the toxicology study for T-5474 is classified as follows:\n\n* **Exposure Type:** The study is a dermal exposure study [1].\n* **Exposure Method:** The study utilized the Magnusson and Kligman maximization test [2]. This method involved intradermal and topical (dermal) routes of administration [9]. Specifically, the test material was applied to the skin and occluded with patches for 24 hours [2].",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "2.10_Dermal_Sens#1",
+  "study": "2.10_Dermal_Sens",
+  "supportDoc": "2.10 Dermal_sens.pdf",
+  "question": "regarding 2.10_Dermal_Sens, answer the following: Find the purity of the tested substance for this toxicology report.",
+  "expected": "Null",
+  "arms": {
+   "28": {
+    "reply": "The provided documents do not state the purity of the tested substance, T-5474. While the documents describe the concentrations used for testing (such as 25%, 50%, 75% w/v in deionized water, and undiluted) [6, 9!], they do not provide information regarding the chemical purity of the test material itself.",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "2.10_Dermal_Sens#2",
+  "study": "2.10_Dermal_Sens",
+  "supportDoc": "2.10 Dermal_sens.pdf",
+  "question": "regarding 2.10_Dermal_Sens, answer the following: Find the vehicle(s) or solvent(s) used in this toxicity study.",
+  "expected": "Solvent: Freund's Complete Adjuvant Solution, Sterile Water",
+  "arms": {
+   "28": {
+    "reply": "The provided documents identify deionized water as a solvent used in the irritation screening study [4]. Regarding the specific vehicle used for the test material administration in the maximization test, the document contains a field for \"Vehicle,\" but the corresponding entry is illegible [1].",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "2.10_Dermal_Sens#3",
+  "study": "2.10_Dermal_Sens",
+  "supportDoc": "2.10 Dermal_sens.pdf",
+  "question": "regarding 2.10_Dermal_Sens, answer the following: Test guidelines can help legitimize studies. Guidelines are often from OECD, ECC or EC. For example, OECD 471 is a type of guideline. Does this study follow a test guideline? If yes, state it. If no, answer \"null\".",
+  "expected": "Null",
+  "arms": {
+   "28": {
+    "reply": "Yes, the study follows a test guideline. The study title explicitly identifies it as a \"Dermal Sensitization Study of T-5474 in Guinea Pigs -Maximization Test (EPA Guidelines)\" [1]. Additionally, the \"REFERENCES\" section of the report cites \"Dermal Sensitization,\" Health Effects Test Guidelines, 40 CFR 798.4100 (1989) [6!].",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "2.10_Dermal_Sens#4",
+  "study": "2.10_Dermal_Sens",
+  "supportDoc": "2.10 Dermal_sens.pdf",
+  "question": "regarding 2.10_Dermal_Sens, answer the following: Does this study follow a test method? If yes, state it. If no, answer \"null\".",
+  "expected": "TEST METHOD: Guinea Pigs - Maximization Test",
+  "arms": {
+   "28": {
+    "reply": "Yes, the study follows a test method. It is identified as a \"Dermal Sensitization Study of T-5474 in Guinea Pigs -Maximization Test (EPA Guidelines)\" [1]. The study also specifically notes that a \"definitive sensitization test according to the method of Magnusson and Kligman\" was conducted [5].",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "2.10_Dermal_Sens#5",
+  "study": "2.10_Dermal_Sens",
+  "supportDoc": "2.10 Dermal_sens.pdf",
+  "question": "regarding 2.10_Dermal_Sens, answer the following: What was the highest dose of substance used, with unit?",
+  "expected": "Max Dose: 100%",
+  "arms": {
+   "28": {
+    "reply": "The provided documents do not state the highest dose of the substance used. While the records contain fields for \"Concentration w/ v\" and \"Concentration of Test Material For Challenge Application,\" the specific values are either obscured or illegible in the provided excerpts [1, 6, 8!].",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "2.10_Dermal_Sens#6",
+  "study": "2.10_Dermal_Sens",
+  "supportDoc": "2.10 Dermal_sens.pdf",
+  "question": "regarding 2.10_Dermal_Sens, answer the following: Is the substance ever diluted? If yes, state the dilution percentage or percentages. If no, answer \"null\".",
+  "expected": "DIlutions: 25, 50, 75% w/v",
+  "arms": {
+   "28": {
+    "reply": "Yes, the substance T-5474 is diluted in certain instances. In an initial irritation screening study, the substance was applied to guinea pigs undiluted and at concentrations of 25%, 50%, and 75% w/v in deionized water [4]. Subsequently, for the definitive study, it was administered as a 75% w/v suspension in deionized water for the initial challenge phase [4].",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "2.10_Dermal_Sens#7",
+  "study": "2.10_Dermal_Sens",
+  "supportDoc": "2.10 Dermal_sens.pdf",
+  "question": "regarding 2.10_Dermal_Sens, answer the following: What is the total number of animals used in the study? If it is not mentioned, answer \"null\".",
+  "expected": "Total animals: 22",
+  "arms": {
+   "28": {
+    "reply": "The provided documents do not state the total number of animals used in the study; therefore, the answer is null. While the documents mention that \"all 10 test animals\" were used for the initial challenge application [7!], they do not provide a cumulative total for the entire study.",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "2.10_Dermal_Sens#8",
+  "study": "2.10_Dermal_Sens",
+  "supportDoc": "2.10 Dermal_sens.pdf",
+  "question": "regarding 2.10_Dermal_Sens, answer the following: Answer this question only if the study is a repeated dose or sensitization study, otherwise, answer 'not applicable'. Was the substance classified as low, low-moderate, moderate, moderate-high, high, or extreme hazard? If there is no info, answer \"null\".",
+  "expected": "Hazard: Moderate",
+  "arms": {
+   "28": {
+    "reply": "The study is a dermal sensitization study [2].\n\nThe substance T-5474 is classified as an \"extreme skin sensitizer\" [3].",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "2.10_Dermal_Sens#9",
+  "study": "2.10_Dermal_Sens",
+  "supportDoc": "2.10 Dermal_sens.pdf",
+  "question": "regarding 2.10_Dermal_Sens, answer the following: Answer this question only if the study is a repeated dose study. Otherwise, answer 'not applicable'. What was the duration of the study, including units (days, weeks, years). If it's not mentioned, answer \"null\"",
+  "expected": "null",
+  "arms": {
+   "28": {
+    "reply": "Not applicable. The provided excerpts describe a \"Dermal Sensitization Study of T-5474 in Guinea Pigs - Maximization Test (EPA Guidelines)\" [1], which is a sensitization study, not a repeated dose study.",
+    "retrievedSupport": 10
+   }
+  }
+ },
+ {
+  "id": "2.10_Dermal_Sens#10",
+  "study": "2.10_Dermal_Sens",
+  "supportDoc": "2.10 Dermal_sens.pdf",
+  "question": "regarding 2.10_Dermal_Sens, answer the following: Answer this question only if the study is a repeated dose study. Otherwise, answer 'not applicable'. What effects on the test animals changed the NOAEL or the classification hazard? This could be changes in food consumption, organ weight change, weight change, or any other health problem observed in the animal due to the substance. If there were none, answer \"null\".",
+  "expected": "null",
+  "arms": {
+   "28": {
+    "reply": "not applicable",
+    "retrievedSupport": 10
+   }
+  }
+ }
+]
