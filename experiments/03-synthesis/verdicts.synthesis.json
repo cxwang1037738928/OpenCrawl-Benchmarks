@@ -23,6 +23,14 @@
       "maxFacts": 0,
       "label": "no graph (control)",
       "file": "synthesis_c33_2026-08-10T04-19-23Z.jsonl"
+    },
+    {
+      "key": "26@25f1",
+      "collectionId": 26,
+      "maxFacts": 25,
+      "seedFloor": 1,
+      "label": "graph, 25 facts, seed floor 1",
+      "file": "synthesis_c26_2026-08-11T02-29-35Z.jsonl"
     }
   ],
   "gradedThrough": "Q200",
@@ -2117,6 +2125,701 @@
       "Q200": {
         "v": "WRONG",
         "why": "answered with drug-design targets - synthetic accessibility, docking score, QED - rather than the materials properties asked for (0/4 support docs)"
+      }
+    },
+    "26@25f1": {
+      "Q002": {
+        "v": "CORRECT"
+      },
+      "Q005": {
+        "v": "PARTIAL",
+        "why": "named Riemannian flow matching and the shared network but gave DiffCSP only as 'diffusion models', missing joint equivariant diffusion over lattice and fractional coordinates"
+      },
+      "Q006": {
+        "v": "CORRECT"
+      },
+      "Q007": {
+        "v": "CORRECT"
+      },
+      "Q008": {
+        "v": "CORRECT"
+      },
+      "Q009": {
+        "v": "CORRECT"
+      },
+      "Q012": {
+        "v": "WRONG",
+        "why": "said the corpus does not state the encoder/decoder parameter counts; expected 2.2M and 2.3M"
+      },
+      "Q016": {
+        "v": "CORRECT"
+      },
+      "Q017": {
+        "v": "PARTIAL",
+        "why": "gave MEGNet's global state vector but opened by denying the corpus details the difference and declined to say CGCNN lacks it"
+      },
+      "Q019": {
+        "v": "CORRECT"
+      },
+      "Q020": {
+        "v": "WRONG",
+        "why": "named Materials Project and ICSD; the second training source asked for is OQMD"
+      },
+      "Q029": {
+        "v": "CORRECT"
+      },
+      "Q031": {
+        "v": "PARTIAL",
+        "why": "gave continuous-filter convolutions but justified them by quantum interactions and invariance, not by atoms being off-grid so discretising loses information"
+      },
+      "Q032": {
+        "v": "CORRECT"
+      },
+      "Q034": {
+        "v": "WRONG",
+        "why": "denied the corpus covers inorganic-solid or electrolyte autonomous labs; gave only the mobile robotic chemist, missing A-Lab's 36/57 and the sodium electrolyte"
+      },
+      "Q036": {
+        "v": "PARTIAL",
+        "why": "SymmCD's asymmetric unit and symmetry transformations right; gave only two models, missing the space-group informed transformer and the DiffCSP contrast"
+      },
+      "Q038": {
+        "v": "CORRECT"
+      },
+      "Q039": {
+        "v": "PARTIAL",
+        "why": "DiffCSP's fractional coordinates and periodic translation invariance right; said the corpus does not state why CrystalFlow needs special treatment"
+      },
+      "Q044": {
+        "v": "CORRECT"
+      },
+      "Q045": {
+        "v": "CORRECT"
+      },
+      "Q047": {
+        "v": "PARTIAL",
+        "why": "listed diffusion, flow and string families but miscategorised CDVAE as diffusion and omitted the VAE, transformer and GFlowNet families"
+      },
+      "Q053": {
+        "v": "CORRECT"
+      },
+      "Q055": {
+        "v": "CORRECT"
+      },
+      "Q068": {
+        "v": "CORRECT"
+      },
+      "Q069": {
+        "v": "CORRECT"
+      },
+      "Q070": {
+        "v": "CORRECT"
+      },
+      "Q072": {
+        "v": "CORRECT"
+      },
+      "Q073": {
+        "v": "CORRECT"
+      },
+      "Q074": {
+        "v": "PARTIAL",
+        "why": "named CGCNN, SchNet, MPNN, MEGNet, GATGNN and ALIGNN but omitted Matformer and ComFormer, and gave SchNet without continuous-filter convolutions"
+      },
+      "Q075": {
+        "v": "PARTIAL",
+        "why": "molecular VAE over SMILES/SELFIES right; gave WyCryst PVAE and a rubber-compound BVAE for the crystal side rather than CDVAE"
+      },
+      "Q076": {
+        "v": "CORRECT"
+      },
+      "Q081": {
+        "v": "PARTIAL",
+        "why": "challenged the massive-data belief but gave transferability and MD generally, not high-order quantum chemical reference data and long-timescale high-fidelity MD"
+      },
+      "Q083": {
+        "v": "CORRECT"
+      },
+      "Q084": {
+        "v": "CORRECT"
+      },
+      "Q085": {
+        "v": "PARTIAL",
+        "why": "gave label/constraint conditioning and SymmCD's decomposition rather than the representation-versus-equivariance split"
+      },
+      "Q088": {
+        "v": "PARTIAL",
+        "why": "gave metric saturation and DFT expense, not the differing novelty reference set; same content as the floor-2 reply but prefixed with a denial"
+      },
+      "Q090": {
+        "v": "PARTIAL",
+        "why": "named Crystal-GFN's SMACT screening and PGN rather than the diffusion language model's filters and the RL agent's reward"
+      },
+      "Q094": {
+        "v": "PARTIAL",
+        "why": "gave the dearth-of-structure motivation but not that disordered training covers far-from-equilibrium configuration space; same substance as floor 2"
+      },
+      "Q095": {
+        "v": "WRONG",
+        "why": "listed Citrine, OPTiMaDe and biology databases instead of Materials Project, OQMD, ICSD, AFLOW, NOMAD and QM9"
+      },
+      "Q096": {
+        "v": "PARTIAL",
+        "why": "ICSD as experimentally verified right; did not state MP holds DFT-computed data nor the synthesizability-versus-hypothetical bias"
+      },
+      "Q102": {
+        "v": "CORRECT"
+      },
+      "Q105": {
+        "v": "CORRECT"
+      },
+      "Q106": {
+        "v": "CORRECT"
+      },
+      "Q110": {
+        "v": "PARTIAL",
+        "why": "gave a positive-bias model and publishing negative data rather than the reaction VAE's latent sampling and using failed experiments directly"
+      },
+      "Q111": {
+        "v": "PARTIAL",
+        "why": "named AIRSS but said the corpus does not define what it searches over, missing random structure generation plus DFT relaxation"
+      },
+      "Q112": {
+        "v": "CORRECT"
+      },
+      "Q114": {
+        "v": "PARTIAL",
+        "why": "gave amortized inference and replacing MCMC's stochastic search but did not name the detailed balance objective"
+      },
+      "Q115": {
+        "v": "PARTIAL",
+        "why": "diversity over mode collapse right; did not tie it to Crystal-GFN sampling low formation energy or a target band gap"
+      },
+      "Q117": {
+        "v": "PARTIAL",
+        "why": "gave SMILES enumeration augmentation rather than SELFIES, and did not contrast representation change with pretrained fingerprints"
+      },
+      "Q122": {
+        "v": "PARTIAL",
+        "why": "gave elemental-mean and PRDF representations generically rather than ElemNet versus CGCNN/MEGNet"
+      },
+      "Q123": {
+        "v": "PARTIAL",
+        "why": "ElemNet right; denied the corpus names a descriptor toolkit, missing Matminer"
+      },
+      "Q127": {
+        "v": "PARTIAL",
+        "why": "shared validity difficulty right; did not give the molecular VAE's property predictor or Binded-VAE's novel metrics replacing FID"
+      },
+      "Q131": {
+        "v": "PARTIAL",
+        "why": "DFT relaxation right; said the corpus identifies no two automating frameworks, missing WyCryst and the active-learning alloy search"
+      },
+      "Q132": {
+        "v": "PARTIAL",
+        "why": "convex hull meaning right; did not contrast GNoME's 381,000 with the three alloy systems"
+      },
+      "Q133": {
+        "v": "PARTIAL",
+        "why": "hull as heuristic rather than proof of synthesizability right; did not cite MatterGen's ICSD rediscovery or the A-Lab's 63%"
+      },
+      "Q135": {
+        "v": "CORRECT"
+      },
+      "Q136": {
+        "v": "PARTIAL",
+        "why": "described equivariant GNNs generically without naming NequIP or DPA-2 or their differing objectives"
+      },
+      "Q137": {
+        "v": "PARTIAL",
+        "why": "gave information gathering versus performance optimization rather than DFT configuration selection versus next-experiment selection"
+      },
+      "Q139": {
+        "v": "WRONG",
+        "why": "denied the corpus contains two space-group-conditioned transformer papers"
+      },
+      "Q142": {
+        "v": "WRONG",
+        "why": "denied the corpus reports any such generation ratios"
+      },
+      "Q143": {
+        "v": "PARTIAL",
+        "why": "unsupervised phase-field selection right; denied the corpus names a composition-only stability model, missing ElemNet"
+      },
+      "Q144": {
+        "v": "CORRECT"
+      },
+      "Q146": {
+        "v": "WRONG",
+        "why": "denied the corpus distinguishes self-driving labs from high-throughput screening"
+      },
+      "Q147": {
+        "v": "WRONG",
+        "why": "named Chakraborty and Kuhar on sulfide perovskites rather than the 5,158-compound hybrid screen and the RL inverse design work"
+      },
+      "Q149": {
+        "v": "PARTIAL",
+        "why": "gave generic ML-surrogate speedup without separating the active-learning potential from ElemNet's composition-only prediction"
+      },
+      "Q150": {
+        "v": "WRONG",
+        "why": "denied the corpus identifies the risk, missing database bias toward well-studied synthesized crystalline materials"
+      },
+      "Q151": {
+        "v": "CORRECT"
+      },
+      "Q152": {
+        "v": "CORRECT"
+      },
+      "Q154": {
+        "v": "PARTIAL",
+        "why": "gave the set2set readout rather than the global state representation for the whole material"
+      },
+      "Q155": {
+        "v": "CORRECT"
+      },
+      "Q156": {
+        "v": "CORRECT"
+      },
+      "Q159": {
+        "v": "CORRECT"
+      },
+      "Q160": {
+        "v": "CORRECT"
+      },
+      "Q162": {
+        "v": "CORRECT"
+      },
+      "Q165": {
+        "v": "PARTIAL",
+        "why": "gave RMSE as the second number but said the corpus does not explain why match rate alone understates the difficulty"
+      },
+      "Q167": {
+        "v": "WRONG",
+        "why": "denied the corpus contains a common weakness linking the disordered benchmark and the failed-experiment argument"
+      },
+      "Q168": {
+        "v": "CORRECT"
+      },
+      "Q172": {
+        "v": "CORRECT"
+      },
+      "Q173": {
+        "v": "WRONG",
+        "why": "said the corpus gives no parameter counts, so made no comparison against the search size"
+      },
+      "Q175": {
+        "v": "PARTIAL",
+        "why": "gave the screening stages generically without GNoME's 2.2M/381,000/736 or the A-Lab's 36 of 57 in 17 days"
+      },
+      "Q176": {
+        "v": "WRONG",
+        "why": "denied such a representation exists in the corpus, missing the Wyckoff protostructure and its two models"
+      },
+      "Q180": {
+        "v": "PARTIAL",
+        "why": "said the corpus holds only one XRD paper and gave its simulated patterns, missing the >100,000-structure diffraction-image source"
+      },
+      "Q182": {
+        "v": "CORRECT"
+      },
+      "Q184": {
+        "v": "PARTIAL",
+        "why": "gave MatBERT and MatSciBERT pretrained on literature rather than an LLM fine-tuned on crystal text feeding a Riemannian flow-matching refiner"
+      },
+      "Q185": {
+        "v": "PARTIAL",
+        "why": "denied the corpus separates the two virtues; gave Deep Potentials for transferability and did not pair NequIP with data efficiency"
+      },
+      "Q188": {
+        "v": "WRONG",
+        "why": "denied the corpus contains two such papers, offering a V-O GAN instead of MatterGen and GNoME"
+      },
+      "Q189": {
+        "v": "PARTIAL",
+        "why": "named CDVAE and SymmCD from graph facts but said the corpus gives nothing on their comparative contributions"
+      },
+      "Q190": {
+        "v": "PARTIAL",
+        "why": "SymmCD's asymmetric unit and symmetry transformations right; did not give WyckoffDiff, WyCryst or the space-group transformer"
+      },
+      "Q191": {
+        "v": "PARTIAL",
+        "why": "gave graph-based and string-based representations generically rather than the five specific ones"
+      },
+      "Q192": {
+        "v": "PARTIAL",
+        "why": "cited a filename and ICSD-derived element selection rather than GNoME's 736, the A-Lab's 36 of 57, the palladium films and the sodium electrolyte"
+      },
+      "Q194": {
+        "v": "WRONG",
+        "why": "gave Frechet Inception Distance and log-likelihood rather than match rate, validity, stability and S.U.N."
+      },
+      "Q195": {
+        "v": "WRONG",
+        "why": "discussed DFT's own accuracy-cost balance without listing any reduction strategy"
+      },
+      "Q196": {
+        "v": "PARTIAL",
+        "why": "gave SMILES-based, grammar and graph VAEs rather than the molecular VAE, MolGAN, GraphVAE and the reaction VAE"
+      },
+      "Q197": {
+        "v": "PARTIAL",
+        "why": "gave publication bias and missing negative data rather than ordered-crystal databases, success-only literature and lenient novelty reference sets"
+      },
+      "Q198": {
+        "v": "PARTIAL",
+        "why": "gave the SMILES Transformer's pretraining; coverage incomplete"
+      },
+      "Q199": {
+        "v": "PARTIAL",
+        "why": "gave post hoc XAI rather than CGCNN site contributions, attentive response maps and invariant descriptors"
+      },
+      "Q001": {
+        "v": "CORRECT"
+      },
+      "Q003": {
+        "v": "CORRECT"
+      },
+      "Q004": {
+        "v": "CORRECT"
+      },
+      "Q010": {
+        "v": "CORRECT"
+      },
+      "Q011": {
+        "v": "CORRECT"
+      },
+      "Q013": {
+        "v": "CORRECT"
+      },
+      "Q014": {
+        "v": "PARTIAL",
+        "why": "gave NequIP's Tensor-Field Network basis but denied the corpus covers GNoME, so never linked the two"
+      },
+      "Q015": {
+        "v": "PARTIAL",
+        "why": "Wyckoff representation right; gave it as an 'excellent choice for invertible models' rather than generating symmetric structures by construction"
+      },
+      "Q018": {
+        "v": "CORRECT"
+      },
+      "Q021": {
+        "v": "CORRECT"
+      },
+      "Q022": {
+        "v": "CORRECT"
+      },
+      "Q023": {
+        "v": "CORRECT"
+      },
+      "Q024": {
+        "v": "CORRECT"
+      },
+      "Q025": {
+        "v": "CORRECT"
+      },
+      "Q026": {
+        "v": "CORRECT"
+      },
+      "Q027": {
+        "v": "CORRECT"
+      },
+      "Q028": {
+        "v": "CORRECT"
+      },
+      "Q030": {
+        "v": "CORRECT"
+      },
+      "Q033": {
+        "v": "CORRECT"
+      },
+      "Q035": {
+        "v": "CORRECT"
+      },
+      "Q037": {
+        "v": "PARTIAL",
+        "why": "named FlowMM and FlowLLM rather than CrystalFlow and FlowLLM, so contrasted the wrong pair of base distributions"
+      },
+      "Q040": {
+        "v": "CORRECT"
+      },
+      "Q041": {
+        "v": "CORRECT"
+      },
+      "Q042": {
+        "v": "CORRECT"
+      },
+      "Q043": {
+        "v": "CORRECT"
+      },
+      "Q046": {
+        "v": "PARTIAL",
+        "why": "gave novelty as distinguishing generated from training data but did not name the S.U.N. rate as the combined measure"
+      },
+      "Q048": {
+        "v": "CORRECT"
+      },
+      "Q049": {
+        "v": "CORRECT"
+      },
+      "Q050": {
+        "v": "CORRECT"
+      },
+      "Q051": {
+        "v": "CORRECT"
+      },
+      "Q052": {
+        "v": "CORRECT"
+      },
+      "Q054": {
+        "v": "WRONG",
+        "why": "denied the corpus describes three coupled functions, so never gave the property predictor over the latent space"
+      },
+      "Q056": {
+        "v": "CORRECT"
+      },
+      "Q057": {
+        "v": "CORRECT"
+      },
+      "Q058": {
+        "v": "CORRECT"
+      },
+      "Q059": {
+        "v": "CORRECT"
+      },
+      "Q060": {
+        "v": "CORRECT"
+      },
+      "Q061": {
+        "v": "CORRECT"
+      },
+      "Q062": {
+        "v": "CORRECT"
+      },
+      "Q063": {
+        "v": "PARTIAL",
+        "why": "gave iComFormer/eComFormer's SE(3) but said the corpus does not specify the potential side, missing NequIP's E(3)"
+      },
+      "Q064": {
+        "v": "CORRECT"
+      },
+      "Q065": {
+        "v": "PARTIAL",
+        "why": "sparsity right; gave diversity rather than discrete features as the second characteristic"
+      },
+      "Q066": {
+        "v": "CORRECT"
+      },
+      "Q067": {
+        "v": "CORRECT"
+      },
+      "Q071": {
+        "v": "CORRECT"
+      },
+      "Q077": {
+        "v": "CORRECT"
+      },
+      "Q078": {
+        "v": "PARTIAL",
+        "why": "gave architectural compatibility as the benefit but not high-resolution cost and poor periodic boundary handling as the cost"
+      },
+      "Q079": {
+        "v": "PARTIAL",
+        "why": "multi-task pretraining across 18 datasets right; did not say it predicts interatomic potential energies and forces"
+      },
+      "Q080": {
+        "v": "CORRECT"
+      },
+      "Q086": {
+        "v": "CORRECT"
+      },
+      "Q087": {
+        "v": "CORRECT"
+      },
+      "Q089": {
+        "v": "CORRECT"
+      },
+      "Q091": {
+        "v": "CORRECT"
+      },
+      "Q092": {
+        "v": "CORRECT"
+      },
+      "Q093": {
+        "v": "CORRECT"
+      },
+      "Q097": {
+        "v": "CORRECT"
+      },
+      "Q098": {
+        "v": "PARTIAL",
+        "why": "MatterGen and its conditioning right; gave a composition-conditioned crystal GAN rather than MatterGPT on formation energy and band gap"
+      },
+      "Q099": {
+        "v": "CORRECT"
+      },
+      "Q100": {
+        "v": "CORRECT"
+      },
+      "Q082": {
+        "v": "CORRECT"
+      },
+      "Q101": {
+        "v": "CORRECT"
+      },
+      "Q103": {
+        "v": "CORRECT"
+      },
+      "Q104": {
+        "v": "CORRECT"
+      },
+      "Q107": {
+        "v": "CORRECT"
+      },
+      "Q108": {
+        "v": "CORRECT"
+      },
+      "Q109": {
+        "v": "CORRECT"
+      },
+      "Q113": {
+        "v": "CORRECT"
+      },
+      "Q116": {
+        "v": "CORRECT"
+      },
+      "Q118": {
+        "v": "CORRECT"
+      },
+      "Q119": {
+        "v": "CORRECT"
+      },
+      "Q120": {
+        "v": "PARTIAL",
+        "why": "carried: the floor-1 reply matches the floor-2 answer on every graded component"
+      },
+      "Q121": {
+        "v": "CORRECT"
+      },
+      "Q124": {
+        "v": "WRONG",
+        "why": "carried: the floor-1 reply matches the floor-2 answer on every graded component"
+      },
+      "Q125": {
+        "v": "PARTIAL",
+        "why": "carried: the floor-1 reply matches the floor-2 answer on every graded component"
+      },
+      "Q126": {
+        "v": "CORRECT"
+      },
+      "Q128": {
+        "v": "PARTIAL",
+        "why": "carried: the floor-1 reply matches the floor-2 answer on every graded component"
+      },
+      "Q129": {
+        "v": "PARTIAL",
+        "why": "carried: the floor-1 reply matches the floor-2 answer on every graded component"
+      },
+      "Q130": {
+        "v": "PARTIAL",
+        "why": "carried: the floor-1 reply matches the floor-2 answer on every graded component"
+      },
+      "Q134": {
+        "v": "PARTIAL",
+        "why": "carried: the floor-1 reply matches the floor-2 answer on every graded component"
+      },
+      "Q138": {
+        "v": "PARTIAL",
+        "why": "carried: the floor-1 reply matches the floor-2 answer on every graded component"
+      },
+      "Q140": {
+        "v": "CORRECT"
+      },
+      "Q141": {
+        "v": "PARTIAL",
+        "why": "carried: the floor-1 reply matches the floor-2 answer on every graded component"
+      },
+      "Q145": {
+        "v": "PARTIAL",
+        "why": "carried: the floor-1 reply matches the floor-2 answer on every graded component"
+      },
+      "Q148": {
+        "v": "PARTIAL",
+        "why": "carried: the floor-1 reply matches the floor-2 answer on every graded component"
+      },
+      "Q153": {
+        "v": "CORRECT"
+      },
+      "Q157": {
+        "v": "CORRECT"
+      },
+      "Q158": {
+        "v": "CORRECT"
+      },
+      "Q161": {
+        "v": "PARTIAL",
+        "why": "carried: the floor-1 reply matches the floor-2 answer on every graded component"
+      },
+      "Q163": {
+        "v": "CORRECT"
+      },
+      "Q164": {
+        "v": "PARTIAL",
+        "why": "carried: the floor-1 reply matches the floor-2 answer on every graded component"
+      },
+      "Q166": {
+        "v": "PARTIAL",
+        "why": "carried: the floor-1 reply matches the floor-2 answer on every graded component"
+      },
+      "Q169": {
+        "v": "PARTIAL",
+        "why": "carried: the floor-1 reply matches the floor-2 answer on every graded component"
+      },
+      "Q170": {
+        "v": "CORRECT"
+      },
+      "Q171": {
+        "v": "WRONG",
+        "why": "carried: the floor-1 reply matches the floor-2 answer on every graded component"
+      },
+      "Q174": {
+        "v": "PARTIAL",
+        "why": "carried: the floor-1 reply matches the floor-2 answer on every graded component"
+      },
+      "Q177": {
+        "v": "PARTIAL",
+        "why": "carried: the floor-1 reply matches the floor-2 answer on every graded component"
+      },
+      "Q178": {
+        "v": "WRONG",
+        "why": "carried: the floor-1 reply matches the floor-2 answer on every graded component"
+      },
+      "Q179": {
+        "v": "CORRECT"
+      },
+      "Q181": {
+        "v": "PARTIAL",
+        "why": "carried: the floor-1 reply matches the floor-2 answer on every graded component"
+      },
+      "Q183": {
+        "v": "PARTIAL",
+        "why": "carried: the floor-1 reply matches the floor-2 answer on every graded component"
+      },
+      "Q186": {
+        "v": "PARTIAL",
+        "why": "carried: the floor-1 reply matches the floor-2 answer on every graded component"
+      },
+      "Q187": {
+        "v": "WRONG",
+        "why": "carried: the floor-1 reply matches the floor-2 answer on every graded component"
+      },
+      "Q193": {
+        "v": "PARTIAL",
+        "why": "carried: the floor-1 reply matches the floor-2 answer on every graded component"
+      },
+      "Q200": {
+        "v": "WRONG",
+        "why": "carried: the floor-1 reply matches the floor-2 answer on every graded component"
       }
     }
   },
