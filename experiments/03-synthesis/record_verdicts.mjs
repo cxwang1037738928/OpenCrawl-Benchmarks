@@ -13,8 +13,11 @@
  * reason; a [verdict, reason] pair carries one. PARTIAL and WRONG without a reason are
  * rejected — an unexplained downgrade is not a judgement anyone can check.
  *
- * Run:  node "Synthesis benchmark/record_verdicts.mjs" < batch.json
- *       node "Synthesis benchmark/record_verdicts.mjs" --through Q050 < batch.json
+ * Serves any experiment directory via BENCH / VERDICTS_FILE, not just this one.
+ *
+ * Run:  node experiments/03-synthesis/record_verdicts.mjs --through Q050 < batch.json
+ *       BENCH=04-unbiased VERDICTS_FILE=experiments/04-unbiased/verdicts.v2.json \
+ *         node experiments/03-synthesis/record_verdicts.mjs --through "…" < batch.json
  */
 
 import fs from 'fs';
@@ -22,7 +25,10 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
-const PATH = path.join(HERE, 'verdicts.synthesis.json');
+const ROOT = path.resolve(HERE, '..');
+const PATH = process.env.VERDICTS_FILE
+  ? path.resolve(process.env.VERDICTS_FILE)
+  : path.join(path.resolve(ROOT, process.env.BENCH || '03-synthesis'), 'verdicts.synthesis.json');
 const EXPAND = { C: 'CORRECT', P: 'PARTIAL', F: 'WRONG' };
 
 const through = process.argv.includes('--through')
@@ -36,6 +42,7 @@ const file = JSON.parse(fs.readFileSync(PATH, 'utf-8'));
 const armKeys = new Set(file.arms.map((a) => a.key));
 
 let written = 0;
+const overwritten = [];        // regrading is allowed, but never silently
 for (const [armKey, entries] of Object.entries(batch)) {
   if (!armKeys.has(armKey)) { console.error(`unknown arm "${armKey}"`); process.exit(1); }
   file.verdicts[armKey] ??= {};
@@ -48,6 +55,9 @@ for (const [armKey, entries] of Object.entries(batch)) {
     if (v !== 'CORRECT' && !why) {
       console.error(`${armKey} ${id}: ${v} needs a reason`); process.exit(1);
     }
+    const prior = file.verdicts[armKey][id];
+    if (prior && prior.v !== v) overwritten.push(`${armKey} ${id} ${prior.v}->${v}`);
+    else if (prior) overwritten.push(`${armKey} ${id} ${prior.v} (unchanged)`);
     file.verdicts[armKey][id] = why ? { v, why } : { v };
     written++;
   }
@@ -58,3 +68,6 @@ fs.writeFileSync(PATH, JSON.stringify(file, null, 2) + '\n', 'utf-8');
 const counts = file.arms.map((a) => `${a.key} ${Object.keys(file.verdicts[a.key] ?? {}).length}`);
 console.log(`merged ${written} verdicts; totals: ${counts.join(', ')}`
   + (through ? `; graded through ${through}` : ''));
+if (overwritten.length) {
+  console.log(`REGRADED ${overwritten.length}: ${overwritten.join('; ')}`);
+}

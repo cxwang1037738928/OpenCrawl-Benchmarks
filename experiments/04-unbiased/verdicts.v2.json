@@ -1,137 +1,940 @@
 {
- "_note": "Hand verdicts for the unbiased 220. Arms keyed by `key`: two of the three are the same collection at different seed floors, so collectionId cannot be the key. Every id gets an explicit verdict in every arm - absent-means-correct silently inflates a score.",
- "model": "gemini/gemini-3.1-flash-lite",
- "topK": 10,
- "arms": [
-  {
-   "key": "26f2",
-   "collectionId": 26,
-   "maxFacts": 25,
-   "seedFloor": 2,
-   "label": "graph, seed floor 2",
-   "file": "synthesis_unbiased_c26_2026-08-11T03-16-32Z.jsonl"
+  "_note": "Hand verdicts for the unbiased 220. Arms keyed by `key`: two of the three are the same collection at different seed floors, so collectionId cannot be the key. Every id gets an explicit verdict in every arm - absent-means-correct silently inflates a score.",
+  "model": "gemini/gemini-3.1-flash-lite",
+  "topK": 10,
+  "arms": [
+    {
+      "key": "26f2",
+      "collectionId": 26,
+      "maxFacts": 25,
+      "seedFloor": 2,
+      "label": "graph, seed floor 2",
+      "file": "synthesis_unbiased_c26_2026-08-11T03-16-32Z.jsonl"
+    },
+    {
+      "key": "26f1",
+      "collectionId": 26,
+      "maxFacts": 25,
+      "seedFloor": 1,
+      "label": "graph, seed floor 1",
+      "file": "synthesis_unbiased_c26_2026-08-11T03-16-33Z.jsonl"
+    },
+    {
+      "key": "33",
+      "collectionId": 33,
+      "maxFacts": 0,
+      "seedFloor": null,
+      "label": "no graph (control)",
+      "file": "synthesis_unbiased_c33_2026-08-11T03-16-32Z.jsonl"
+    }
+  ],
+  "gradedThrough": "chunk- strata COMPLETE (80 of 220)",
+  "verdicts": {
+    "33": {
+      "V015": {
+        "v": "WRONG",
+        "why": "named Matminer and Pymatgen; the tools asked for are Weka for the models and Magpie for the attributes"
+      },
+      "V033": {
+        "v": "PARTIAL",
+        "why": "gave solid-state interpretability but denied the corpus covers organic chemistry, missing the open-database gap"
+      },
+      "V068": {
+        "v": "WRONG",
+        "why": "denied the corpus covers Co3Nb2V at all"
+      },
+      "V088": {
+        "v": "PARTIAL",
+        "why": "skew in the network memory right; missing bias as an incorrect-assumption error causing underfitting and the Gaussian latent-space link"
+      },
+      "V106": {
+        "v": "WRONG",
+        "why": "denied the corpus compares KRR and DFT on local versus global properties"
+      },
+      "V124": {
+        "v": "PARTIAL",
+        "why": "gave the generative side but not that MLIPs train on total energy, atomic forces and virial tensors"
+      },
+      "V129": {
+        "v": "PARTIAL",
+        "why": "gave traditional discovery as slow and costly but not that experimental validation stays non-negotiable to avoid false positives"
+      },
+      "V166": {
+        "v": "PARTIAL",
+        "why": "gave the asymmetric-unit representation but not sequential Wyckoff sampling versus symmetry-operation replication over orbit representatives"
+      },
+      "V007": {
+        "v": "CORRECT"
+      },
+      "V016": {
+        "v": "PARTIAL",
+        "why": "gave KMC for 2D-material growth kinetics but not critical-nuclei sizing during crystallization"
+      },
+      "V018": {
+        "v": "PARTIAL",
+        "why": "graph matching costly because every input passes the matching process, right; declined invariant integration's cost entirely"
+      },
+      "V021": {
+        "v": "WRONG",
+        "why": "answered with CryinGAN training tricks; the approach asked about is kriging"
+      },
+      "V022": {
+        "v": "CORRECT"
+      },
+      "V024": {
+        "v": "CORRECT"
+      },
+      "V026": {
+        "v": "WRONG",
+        "why": "denied the corpus covers diffusion sampling cost, then gave neither the 200 epochs nor the many-evaluation-step sampling"
+      },
+      "V027": {
+        "v": "WRONG",
+        "why": "denied the corpus contains Chmiela et al. at all"
+      },
+      "V029": {
+        "v": "CORRECT"
+      },
+      "V031": {
+        "v": "PARTIAL",
+        "why": "got ODE versus SDE solvers and flexible priors; denied Score SDEs is in the corpus and missed the conditional probability path and vector field"
+      },
+      "V035": {
+        "v": "PARTIAL",
+        "why": "invertible and differentiable diffeomorphisms right; denied the corpus covers autonomous experimentation systems"
+      },
+      "V037": {
+        "v": "PARTIAL",
+        "why": "gave SOAP-GAP beating benchmarks on QM7b and its role, but never named Coulomb matrix or SLATM as the representations compared against"
+      },
+      "V043": {
+        "v": "PARTIAL",
+        "why": "CQML replacing expensive high-level data with cheap low-level right; denied active learning is covered at all"
+      },
+      "V045": {
+        "v": "WRONG",
+        "why": "denied the corpus covers the comparison; gave neither Born-Huang and modulus thresholds nor stopping criteria and model uncertainty"
+      },
+      "V047": {
+        "v": "PARTIAL",
+        "why": "gave DMQC's ab-initio energy library and dimension-reduction analysis; denied the referenced interatomic-potential works are covered"
+      },
+      "V048": {
+        "v": "CORRECT"
+      },
+      "V049": {
+        "v": "PARTIAL",
+        "why": "gave latent representations overcoming scarce data, then hedged that the corpus does not address low-data performance; missed the pre-trained fingerprint result"
+      },
+      "V053": {
+        "v": "PARTIAL",
+        "why": "LASSO/SISSO operator-driven feature expansion right; denied the MOF side, missing the fixed 156 heuristic descriptors"
+      },
+      "V058": {
+        "v": "PARTIAL",
+        "why": "gave only the first CK step, not the difference model, and no KRR data requirement"
+      },
+      "V060": {
+        "v": "PARTIAL",
+        "why": "identified Boltzmann machines as unsupervised inverse-Ising and DFT as first-principles, but not likelihood maximization over interactions and fields, nor functionals, bandgaps and DOS"
+      },
+      "V066": {
+        "v": "PARTIAL",
+        "why": "placed diffusion in the VAE/GAN/flow lineage for materials but never gave the nonequilibrium-thermodynamics mechanism converting a simple distribution into the data distribution"
+      },
+      "V069": {
+        "v": "WRONG",
+        "why": "refused outright, denying both the WyCryst side and any TiO2 water-splitting content"
+      },
+      "V074": {
+        "v": "PARTIAL",
+        "why": "titrant speciation states and buffer capacity in the feature space exactly right; denied the atomistic physics-informed side is covered"
+      },
+      "V075": {
+        "v": "WRONG",
+        "why": "denied the corpus contains Ramakrishnan et al. at all"
+      },
+      "V078": {
+        "v": "PARTIAL",
+        "why": "autoencoder continuous encodings enabling gradient-based search right; denied MolGAN is in the corpus"
+      },
+      "V081": {
+        "v": "PARTIAL",
+        "why": "BAX surrogate models trained on few design points, fast and inexpensive, exactly right; denied SOAP's dimensionality growth is covered"
+      },
+      "V083": {
+        "v": "PARTIAL",
+        "why": "value learning unconstrained by large initialization sets right; explicitly declined to say anything about policy gradient's data reliance"
+      },
+      "V091": {
+        "v": "WRONG",
+        "why": "answered only with version-compatibility rules; never gave the package's purpose"
+      },
+      "V092": {
+        "v": "PARTIAL",
+        "why": "PINN alleviating big-data dependence via conservation laws exactly right; denied the Materials Project is in the corpus"
+      },
+      "V102": {
+        "v": "CORRECT"
+      },
+      "V104": {
+        "v": "WRONG",
+        "why": "refused outright; gave neither CALYPSO for CrystalFlow nor ICSD for the space-group transformer"
+      },
+      "V115": {
+        "v": "WRONG",
+        "why": "asserted that low-data problems are unsuitable for machine learning, the opposite of the expected clever descriptive parameters"
+      },
+      "V116": {
+        "v": "PARTIAL",
+        "why": "listed search-space constraint among the autonomy criteria but never applied it to the reliance on fixed experimental inputs"
+      },
+      "V118": {
+        "v": "PARTIAL",
+        "why": "EXP trainer reproducing experimental observables and the zero-pressure target, but not elastic constants in the loss; denied Deep Potentials is covered"
+      },
+      "V120": {
+        "v": "CORRECT"
+      },
+      "V122": {
+        "v": "WRONG",
+        "why": "gave the 2-D diagrams handed to participants, not that the targets are unpublished structures, and denied the JARVIS-DFT side"
+      },
+      "V126": {
+        "v": "PARTIAL",
+        "why": "both definitions right, then claimed the enhancement factor is not calculable when both performances exceed zero, contradicting its own worked example"
+      },
+      "V132": {
+        "v": "PARTIAL",
+        "why": "transparent objective novelty criteria turning subjective, exactly right; denied the closed-source STEM software side"
+      },
+      "V133": {
+        "v": "CORRECT"
+      },
+      "V135": {
+        "v": "PARTIAL",
+        "why": "Auto-sklearn's joint configuration space right; denied ECSG is in the corpus"
+      },
+      "V138": {
+        "v": "WRONG",
+        "why": "gave neither the screening/synthesizability gap nor that DPs are slower than empirical potentials; asserted DP efficiency is superior to empirical, the opposite of the stated challenge"
+      },
+      "V141": {
+        "v": "CORRECT"
+      },
+      "V146": {
+        "v": "CORRECT"
+      },
+      "V151": {
+        "v": "CORRECT"
+      },
+      "V153": {
+        "v": "PARTIAL",
+        "why": "gave the stability rate with E_hull and the proxy metrics but denied the corpus covers what influences formation energy"
+      },
+      "V155": {
+        "v": "PARTIAL",
+        "why": "GraphVAE's failed Gumbel-softmax and the Hungarian fallback exactly right; gave GAN instability instead of the differentiability requirement"
+      },
+      "V159": {
+        "v": "WRONG",
+        "why": "no 27-fold reduction and no GAN turnover frequencies; reported only that balanced runs cost about the same as other exploration factors"
+      },
+      "V161": {
+        "v": "CORRECT"
+      },
+      "V163": {
+        "v": "PARTIAL",
+        "why": "drug-discovery synthesizability gap right; missed the materials-side discrepancy between predicted and experimental formation energies"
+      },
+      "V167": {
+        "v": "PARTIAL",
+        "why": "NOMAD as data curation and FAIR sharing exactly right; denied the A-Lab is in the corpus"
+      },
+      "V173": {
+        "v": "CORRECT"
+      },
+      "V174": {
+        "v": "CORRECT"
+      },
+      "V176": {
+        "v": "WRONG",
+        "why": "gave generic train/validation/test splitting for hyperparameter optimization, not multi-fidelity training on subsets, and denied the reaction-prediction side"
+      },
+      "V181": {
+        "v": "PARTIAL",
+        "why": "GFlowNets approximating Bayesian posteriors via amortized inference; no causal structures, and denied the robot scientist kit is in the corpus"
+      },
+      "V183": {
+        "v": "CORRECT"
+      },
+      "V185": {
+        "v": "CORRECT"
+      },
+      "V187": {
+        "v": "CORRECT"
+      },
+      "V189": {
+        "v": "PARTIAL",
+        "why": "reached the right conclusion by denying DPA-2 is in the corpus at all; it is there, just never tied to interpretability"
+      },
+      "V193": {
+        "v": "PARTIAL",
+        "why": "gave z_i as the rollout reward, not a reward above 1 on a proven state, and denied the flow network framework is covered"
+      },
+      "V194": {
+        "v": "CORRECT"
+      },
+      "V197": {
+        "v": "PARTIAL",
+        "why": "gave LAMMPS as a molecular simulation package but not the multi-scale atomic-to-continuum particle simulator framing"
+      },
+      "V199": {
+        "v": "PARTIAL",
+        "why": "gave convex-hull stability and S.U.N. for uniqueness and novelty, then denied template discovery is a distinct evaluation category"
+      },
+      "V202": {
+        "v": "PARTIAL",
+        "why": "adaptive design balancing exploitation against high-uncertainty regions right; no GFlowNet Bayesian posterior estimator of epistemic uncertainty"
+      },
+      "V205": {
+        "v": "PARTIAL",
+        "why": "gave the diffusion model's validity, EMD and Frechet ALIGNN metrics; denied WyckoffDiff is in the corpus"
+      },
+      "V207": {
+        "v": "CORRECT"
+      },
+      "V208": {
+        "v": "CORRECT"
+      },
+      "V210": {
+        "v": "PARTIAL",
+        "why": "named qEHVI and the hypervolume mechanism but not the a posteriori framing, and denied the hierarchical crystal-structure-prediction side"
+      },
+      "V211": {
+        "v": "WRONG",
+        "why": "gave neither the reduction of multivariate data to univariate quantities nor the relaxing of oxidation-state balancing"
+      },
+      "V213": {
+        "v": "PARTIAL",
+        "why": "ReaxFF for MoS2 sulfidation synthesis and MXene intercalation right; denied that 2D materials appear in perovskite solar cells"
+      },
+      "V216": {
+        "v": "PARTIAL",
+        "why": "ECSG as electron-configuration input and CGCNN as structural, but no atom features with Cartesian coordinates and no Graphormer or GATGNN"
+      },
+      "V218": {
+        "v": "PARTIAL",
+        "why": "the penalty function for values below user targets exactly right; denied the ASAB system is in the corpus"
+      },
+      "V220": {
+        "v": "WRONG",
+        "why": "gave KRR feature-space distances and t-SNE; neither periodic DFT nor the motif matching matrix"
+      }
+    },
+    "26f2": {
+      "V015": {
+        "v": "WRONG",
+        "why": "named Matminer and Pymatgen; the tools asked for are Weka for the models and Magpie for the attributes"
+      },
+      "V033": {
+        "v": "PARTIAL",
+        "why": "gave solid-state interpretability but denied the corpus covers organic chemistry, missing the open-database gap"
+      },
+      "V068": {
+        "v": "WRONG",
+        "why": "denied the corpus covers Co3Nb2V at all"
+      },
+      "V088": {
+        "v": "PARTIAL",
+        "why": "skew in the network memory right; missing bias as an incorrect-assumption error causing underfitting and the Gaussian latent-space link"
+      },
+      "V106": {
+        "v": "WRONG",
+        "why": "denied the corpus compares KRR and DFT on local versus global properties"
+      },
+      "V124": {
+        "v": "PARTIAL",
+        "why": "gave the generative side but not that MLIPs train on total energy, atomic forces and virial tensors"
+      },
+      "V129": {
+        "v": "PARTIAL",
+        "why": "gave traditional discovery as slow and costly but not that experimental validation stays non-negotiable to avoid false positives"
+      },
+      "V166": {
+        "v": "PARTIAL",
+        "why": "gave the asymmetric-unit representation but not sequential Wyckoff sampling versus symmetry-operation replication over orbit representatives"
+      },
+      "V007": {
+        "v": "CORRECT"
+      },
+      "V016": {
+        "v": "PARTIAL",
+        "why": "gave KMC for 2D-material growth kinetics but not critical-nuclei sizing during crystallization"
+      },
+      "V018": {
+        "v": "PARTIAL",
+        "why": "graph matching costly because every input passes the matching process, right; declined invariant integration's cost entirely"
+      },
+      "V021": {
+        "v": "WRONG",
+        "why": "answered with CryinGAN training tricks and M3GNet relaxation; the approach asked about is kriging"
+      },
+      "V022": {
+        "v": "CORRECT"
+      },
+      "V024": {
+        "v": "CORRECT"
+      },
+      "V026": {
+        "v": "WRONG",
+        "why": "denied the corpus covers diffusion sampling cost, then gave neither the 200 epochs nor the many-evaluation-step sampling"
+      },
+      "V027": {
+        "v": "WRONG",
+        "why": "denied the corpus contains Chmiela et al. at all"
+      },
+      "V029": {
+        "v": "PARTIAL",
+        "why": "gave RL reward signals for CrystalFormer and the closed loop for autolabs, then declined to make the comparison the question asked for"
+      },
+      "V031": {
+        "v": "PARTIAL",
+        "why": "got ODE-solver versus SDE-solver and flow-based framing; denied Score SDEs is in the corpus and missed the conditional probability path and vector field"
+      },
+      "V035": {
+        "v": "PARTIAL",
+        "why": "invertible and differentiable diffeomorphisms right; denied the corpus covers autonomous experimentation systems"
+      },
+      "V037": {
+        "v": "PARTIAL",
+        "why": "gave SOAP-GAP beating benchmarks on QM7b and its role, but never named Coulomb matrix or SLATM as the representations compared against"
+      },
+      "V043": {
+        "v": "PARTIAL",
+        "why": "CQML replacing expensive high-level data with cheap low-level right; denied active learning's latent-space selection is covered"
+      },
+      "V045": {
+        "v": "WRONG",
+        "why": "denied the corpus covers verification for elastic properties; gave neither Born-Huang and modulus thresholds nor stopping criteria and model uncertainty"
+      },
+      "V047": {
+        "v": "PARTIAL",
+        "why": "gave DMQC's ab-initio energy library over 114 structures and 55 alloys; denied the referenced interatomic-potential works are covered"
+      },
+      "V048": {
+        "v": "CORRECT"
+      },
+      "V049": {
+        "v": "PARTIAL",
+        "why": "gave latent representations overcoming scarce data, then hedged that the corpus does not address low-data performance; missed the pre-trained fingerprint result"
+      },
+      "V053": {
+        "v": "PARTIAL",
+        "why": "LASSO/SISSO operator-driven feature expansion right; denied the MOF side, missing the fixed 156 heuristic descriptors"
+      },
+      "V058": {
+        "v": "PARTIAL",
+        "why": "CK two-step low-fidelity-then-difference right; gave no KRR data requirement, missing the single DFT dataset"
+      },
+      "V060": {
+        "v": "PARTIAL",
+        "why": "identified Boltzmann machines as unsupervised inverse-Ising and DFT as first-principles, but not likelihood maximization over interactions and fields, nor functionals, bandgaps and DOS"
+      },
+      "V066": {
+        "v": "PARTIAL",
+        "why": "placed diffusion in the VAE/GAN/flow lineage for materials but never gave the nonequilibrium-thermodynamics mechanism converting a simple distribution into the data distribution"
+      },
+      "V069": {
+        "v": "PARTIAL",
+        "why": "gave photocatalytic water splitting and the 1.23 eV requirement; denied WyCryst and the Ca4Ti4O12 formation energies entirely"
+      },
+      "V074": {
+        "v": "PARTIAL",
+        "why": "titrant speciation states and buffer capacity in the feature space exactly right; denied the atomistic physics-informed side is covered"
+      },
+      "V075": {
+        "v": "WRONG",
+        "why": "denied the corpus contains Ramakrishnan et al. at all"
+      },
+      "V078": {
+        "v": "PARTIAL",
+        "why": "autoencoder continuous encodings enabling gradient-based search right; denied MolGAN is in the corpus"
+      },
+      "V081": {
+        "v": "PARTIAL",
+        "why": "BAX surrogate models trained on few design points, fast and inexpensive, exactly right; denied SOAP's dimensionality growth is covered"
+      },
+      "V083": {
+        "v": "PARTIAL",
+        "why": "value learning unconstrained by large initialization sets, and the graph supplied that PGN requires pretraining, but no trial-and-error mechanism or dataset scale"
+      },
+      "V091": {
+        "v": "PARTIAL",
+        "why": "gave the package as many-body potential energy representation and MD but stopped short of deep potential models, and declined the question as asked"
+      },
+      "V092": {
+        "v": "PARTIAL",
+        "why": "PINN alleviating big-data dependence via conservation laws exactly right; denied the Materials Project is in the corpus"
+      },
+      "V102": {
+        "v": "CORRECT"
+      },
+      "V104": {
+        "v": "WRONG",
+        "why": "refused outright; gave neither CALYPSO for CrystalFlow nor ICSD for the space-group transformer"
+      },
+      "V115": {
+        "v": "WRONG",
+        "why": "asserted that low-data problems are unsuitable for machine learning, the opposite of the expected clever descriptive parameters"
+      },
+      "V116": {
+        "v": "WRONG",
+        "why": "refused outright; never reached the search-space-constraint criterion that the corpus states"
+      },
+      "V118": {
+        "v": "PARTIAL",
+        "why": "EXP trainer reproducing experimental observables and the zero-pressure target, but not elastic constants in the loss; denied Deep Potentials is covered"
+      },
+      "V120": {
+        "v": "CORRECT"
+      },
+      "V122": {
+        "v": "WRONG",
+        "why": "gave the 2-D diagrams handed to participants, not that the targets are unpublished structures, and denied the JARVIS-DFT side"
+      },
+      "V126": {
+        "v": "CORRECT"
+      },
+      "V132": {
+        "v": "PARTIAL",
+        "why": "transparent objective novelty criteria turning subjective, exactly right; denied the closed-source STEM software side"
+      },
+      "V133": {
+        "v": "CORRECT"
+      },
+      "V135": {
+        "v": "PARTIAL",
+        "why": "Auto-sklearn's configuration space over classifiers and preprocessors right; denied ECSG is in the corpus"
+      },
+      "V138": {
+        "v": "WRONG",
+        "why": "gave neither the screening/synthesizability gap nor that DPs are slower than empirical potentials; claimed DP efficiency is comparable to empirical, the opposite of the stated challenge"
+      },
+      "V141": {
+        "v": "CORRECT"
+      },
+      "V146": {
+        "v": "CORRECT"
+      },
+      "V151": {
+        "v": "CORRECT"
+      },
+      "V153": {
+        "v": "PARTIAL",
+        "why": "gave the generative metrics including ground-state relaxation but denied the corpus covers what influences formation energy"
+      },
+      "V155": {
+        "v": "PARTIAL",
+        "why": "GraphVAE's failed Gumbel-softmax and the Hungarian fallback exactly right; gave GAN instability instead of the differentiability requirement"
+      },
+      "V159": {
+        "v": "WRONG",
+        "why": "no 27-fold reduction and no GAN turnover frequencies; reported only that balanced runs cost about the same as other exploration factors"
+      },
+      "V161": {
+        "v": "CORRECT"
+      },
+      "V163": {
+        "v": "PARTIAL",
+        "why": "drug-discovery synthesizability gap right; missed the materials-side discrepancy between predicted and experimental formation energies"
+      },
+      "V167": {
+        "v": "PARTIAL",
+        "why": "NOMAD as data curation and FAIR sharing exactly right; denied the A-Lab is in the corpus"
+      },
+      "V173": {
+        "v": "CORRECT"
+      },
+      "V174": {
+        "v": "CORRECT"
+      },
+      "V176": {
+        "v": "WRONG",
+        "why": "gave generic train/validation/test splitting for hyperparameter optimization, not multi-fidelity training on subsets, and denied the reaction-prediction side"
+      },
+      "V181": {
+        "v": "PARTIAL",
+        "why": "GFlowNets approximating Bayesian posteriors over causal models right; denied the robot scientist kit is in the corpus"
+      },
+      "V183": {
+        "v": "CORRECT"
+      },
+      "V185": {
+        "v": "CORRECT"
+      },
+      "V187": {
+        "v": "CORRECT"
+      },
+      "V189": {
+        "v": "CORRECT"
+      },
+      "V193": {
+        "v": "PARTIAL",
+        "why": "gave z_i as the rollout reward, not a reward above 1 on a proven state, and denied Z in the flow network framework"
+      },
+      "V194": {
+        "v": "CORRECT"
+      },
+      "V197": {
+        "v": "PARTIAL",
+        "why": "gave LAMMPS as a classical and path-integral MD package but not the multi-scale atomic-to-continuum particle simulator framing"
+      },
+      "V199": {
+        "v": "PARTIAL",
+        "why": "gave convex-hull E_hull for stability and S.U.N. for uniqueness and novelty, then denied template discovery is a distinct evaluation category"
+      },
+      "V202": {
+        "v": "PARTIAL",
+        "why": "adaptive design balancing exploitation against high-uncertainty regions right; no GFlowNet Bayesian posterior estimator of epistemic uncertainty"
+      },
+      "V205": {
+        "v": "PARTIAL",
+        "why": "gave the diffusion model's validity, EMD and Frechet ALIGNN metrics; denied WyckoffDiff is in the corpus"
+      },
+      "V207": {
+        "v": "CORRECT"
+      },
+      "V208": {
+        "v": "CORRECT"
+      },
+      "V210": {
+        "v": "PARTIAL",
+        "why": "qEHVI as an a posteriori Pareto method exactly right; denied the hierarchical screening side of crystal structure prediction"
+      },
+      "V211": {
+        "v": "WRONG",
+        "why": "gave neither the reduction of multivariate data to univariate quantities nor the relaxing of oxidation-state balancing"
+      },
+      "V213": {
+        "v": "PARTIAL",
+        "why": "ReaxFF for MoS2 sulfidation synthesis and ripplocation formation energies right; denied that 2D materials appear in perovskite solar cells"
+      },
+      "V216": {
+        "v": "PARTIAL",
+        "why": "ECSG as composition-only electron-configuration input and CGCNN as structural, but no atom features with Cartesian coordinates and no Graphormer or GATGNN"
+      },
+      "V218": {
+        "v": "PARTIAL",
+        "why": "the penalty function for values below user targets exactly right; denied the ASAB system is in the corpus"
+      },
+      "V220": {
+        "v": "WRONG",
+        "why": "gave RAC descriptors and kernel distances; neither periodic DFT nor the motif matching matrix"
+      }
+    },
+    "26f1": {
+      "V015": {
+        "v": "WRONG",
+        "why": "named Matminer and Pymatgen; the tools asked for are Weka for the models and Magpie for the attributes"
+      },
+      "V033": {
+        "v": "PARTIAL",
+        "why": "gave solid-state interpretability but denied the corpus covers organic chemistry, missing the open-database gap"
+      },
+      "V068": {
+        "v": "WRONG",
+        "why": "surfaced from the graph that MTP discovered Co3Nb2V but still declined the advantage over on/off-lattice models"
+      },
+      "V088": {
+        "v": "PARTIAL",
+        "why": "skew in the network memory right; missing bias as an incorrect-assumption error causing underfitting and the Gaussian latent-space link"
+      },
+      "V106": {
+        "v": "WRONG",
+        "why": "denied the corpus compares KRR and DFT on local versus global properties"
+      },
+      "V124": {
+        "v": "PARTIAL",
+        "why": "gave the generative side but not that MLIPs train on total energy, atomic forces and virial tensors"
+      },
+      "V129": {
+        "v": "PARTIAL",
+        "why": "gave traditional discovery as slow and costly but not that experimental validation stays non-negotiable to avoid false positives"
+      },
+      "V166": {
+        "v": "PARTIAL",
+        "why": "gave the asymmetric-unit representation but not sequential Wyckoff sampling versus symmetry-operation replication over orbit representatives"
+      },
+      "V007": {
+        "v": "CORRECT"
+      },
+      "V016": {
+        "v": "PARTIAL",
+        "why": "gave KMC for 2D-material growth kinetics but not critical-nuclei sizing during crystallization"
+      },
+      "V018": {
+        "v": "PARTIAL",
+        "why": "graph matching costly because every input passes the matching process, right; declined invariant integration's cost entirely"
+      },
+      "V021": {
+        "v": "WRONG",
+        "why": "answered with CryinGAN training tricks and M3GNet relaxation; the approach asked about is kriging"
+      },
+      "V022": {
+        "v": "CORRECT"
+      },
+      "V024": {
+        "v": "CORRECT"
+      },
+      "V026": {
+        "v": "WRONG",
+        "why": "denied the corpus covers diffusion sampling cost, then gave neither the 200 epochs nor the many-evaluation-step sampling"
+      },
+      "V027": {
+        "v": "PARTIAL",
+        "why": "graph supplied that Chmiela developed gradient-domain ML obtaining molecular force fields, but hedged the link to the 2017 paper and missed energy conservation"
+      },
+      "V029": {
+        "v": "PARTIAL",
+        "why": "gave RL reward signals for CrystalFormer and learning-from-outcomes for autolabs, then declined to make the comparison the question asked for"
+      },
+      "V031": {
+        "v": "PARTIAL",
+        "why": "graph supplied that diffusion models include Score SDEs; still missed the conditional probability path and vector field versus SDE/probability-flow ODE"
+      },
+      "V035": {
+        "v": "PARTIAL",
+        "why": "invertible and differentiable diffeomorphisms right; denied the corpus covers autonomous experimentation systems"
+      },
+      "V037": {
+        "v": "PARTIAL",
+        "why": "gave SOAP-GAP beating benchmarks on QM7b and its role, but never named Coulomb matrix or SLATM as the representations compared against"
+      },
+      "V043": {
+        "v": "PARTIAL",
+        "why": "CQML replacing expensive high-level data with cheap low-level right; denied active learning's latent-space selection is covered"
+      },
+      "V045": {
+        "v": "WRONG",
+        "why": "denied the corpus covers verification for either study type; gave neither Born-Huang and modulus thresholds nor stopping criteria and model uncertainty"
+      },
+      "V047": {
+        "v": "PARTIAL",
+        "why": "gave DMQC's ab-initio energy library and its linear-correlation analysis; denied the referenced interatomic-potential works are covered"
+      },
+      "V048": {
+        "v": "CORRECT"
+      },
+      "V049": {
+        "v": "PARTIAL",
+        "why": "gave latent representations overcoming scarce data, then hedged that the corpus does not address low-data performance; missed the pre-trained fingerprint result"
+      },
+      "V053": {
+        "v": "PARTIAL",
+        "why": "SISSO operator-driven feature construction right; denied the MOF side, missing the fixed 156 heuristic descriptors"
+      },
+      "V058": {
+        "v": "PARTIAL",
+        "why": "spelled out the CK two-step training exactly; gave no KRR data requirement, missing the single DFT dataset"
+      },
+      "V060": {
+        "v": "PARTIAL",
+        "why": "identified Boltzmann machines as unsupervised inverse-Ising and DFT as first-principles, but not likelihood maximization over interactions and fields, nor functionals, bandgaps and DOS"
+      },
+      "V066": {
+        "v": "PARTIAL",
+        "why": "placed diffusion in the VAE/GAN/flow lineage for materials but never gave the nonequilibrium-thermodynamics mechanism converting a simple distribution into the data distribution"
+      },
+      "V069": {
+        "v": "PARTIAL",
+        "why": "gave the 1.23 eV water photolysis requirement; denied WyCryst and the Ca4Ti4O12 formation energies entirely"
+      },
+      "V074": {
+        "v": "PARTIAL",
+        "why": "titrant speciation states and buffer capacity in the feature space exactly right; denied the atomistic physics-informed side is covered"
+      },
+      "V075": {
+        "v": "WRONG",
+        "why": "denied the corpus contains Ramakrishnan et al. at all"
+      },
+      "V078": {
+        "v": "PARTIAL",
+        "why": "autoencoder continuous encodings enabling gradient-based search right; graph gave only that MolGAN is an implicit generative model, not its gradient mechanism"
+      },
+      "V081": {
+        "v": "PARTIAL",
+        "why": "BAX surrogate models trained on few design points, fast and inexpensive, exactly right; denied SOAP's dimensionality growth is covered"
+      },
+      "V083": {
+        "v": "PARTIAL",
+        "why": "value learning unconstrained by large initialization sets right; explicitly declined to say anything about policy gradient's data reliance"
+      },
+      "V091": {
+        "v": "CORRECT"
+      },
+      "V092": {
+        "v": "PARTIAL",
+        "why": "PINN alleviating big-data dependence via conservation laws exactly right; denied the Materials Project is in the corpus"
+      },
+      "V102": {
+        "v": "CORRECT"
+      },
+      "V104": {
+        "v": "WRONG",
+        "why": "refused outright; gave neither CALYPSO for CrystalFlow nor ICSD for the space-group transformer"
+      },
+      "V115": {
+        "v": "WRONG",
+        "why": "asserted that low-data problems are unsuitable for machine learning, the opposite of the expected clever descriptive parameters"
+      },
+      "V116": {
+        "v": "CORRECT"
+      },
+      "V118": {
+        "v": "PARTIAL",
+        "why": "EXP trainer reproducing experimental observables and the zero-pressure target, but not elastic constants in the loss; graph gave only that Deep Potential is an ML potential"
+      },
+      "V120": {
+        "v": "CORRECT"
+      },
+      "V122": {
+        "v": "WRONG",
+        "why": "gave the 2-D diagrams handed to participants, not that the targets are unpublished structures, and denied the JARVIS-DFT side"
+      },
+      "V126": {
+        "v": "CORRECT"
+      },
+      "V132": {
+        "v": "PARTIAL",
+        "why": "transparent objective novelty criteria turning subjective, exactly right; denied the closed-source STEM software side"
+      },
+      "V133": {
+        "v": "CORRECT"
+      },
+      "V135": {
+        "v": "PARTIAL",
+        "why": "named the joint configuration space over classifiers and preprocessors exactly; denied ECSG is in the corpus"
+      },
+      "V138": {
+        "v": "WRONG",
+        "why": "gave neither the screening/synthesizability gap nor that DPs are slower than empirical potentials; claimed DP efficiency is comparable to empirical, the opposite of the stated challenge"
+      },
+      "V141": {
+        "v": "CORRECT"
+      },
+      "V146": {
+        "v": "CORRECT"
+      },
+      "V151": {
+        "v": "CORRECT"
+      },
+      "V153": {
+        "v": "PARTIAL",
+        "why": "named E_hull and the stability rate for FlowLLM but denied the corpus covers what influences formation energy"
+      },
+      "V155": {
+        "v": "PARTIAL",
+        "why": "GraphVAE's failed Gumbel-softmax and the Hungarian fallback exactly right; gave GAN instability instead of the differentiability requirement"
+      },
+      "V159": {
+        "v": "WRONG",
+        "why": "no 27-fold reduction and no GAN turnover frequencies; reported only that balanced runs cost about the same as other exploration factors"
+      },
+      "V161": {
+        "v": "CORRECT"
+      },
+      "V163": {
+        "v": "PARTIAL",
+        "why": "drug-discovery synthesizability gap right; missed the materials-side discrepancy between predicted and experimental formation energies"
+      },
+      "V167": {
+        "v": "PARTIAL",
+        "why": "NOMAD as data curation and FAIR sharing exactly right; denied the A-Lab is in the corpus"
+      },
+      "V173": {
+        "v": "CORRECT"
+      },
+      "V174": {
+        "v": "WRONG",
+        "why": "denied the corpus names a cheminformatics toolkit and offered Matminer and BLT instead; RDKit is right there in the same reference"
+      },
+      "V176": {
+        "v": "WRONG",
+        "why": "gave generic train/validation/test splitting for hyperparameter optimization, not multi-fidelity training on subsets, and denied the reaction-prediction side"
+      },
+      "V181": {
+        "v": "PARTIAL",
+        "why": "GFlowNets approximating Bayesian posteriors via amortized inference; no causal structures, and denied the robot scientist kit is in the corpus"
+      },
+      "V183": {
+        "v": "CORRECT"
+      },
+      "V185": {
+        "v": "CORRECT"
+      },
+      "V187": {
+        "v": "CORRECT"
+      },
+      "V189": {
+        "v": "CORRECT"
+      },
+      "V193": {
+        "v": "WRONG",
+        "why": "asserted from the graph that Z is a type of random vector in the flow network framework; Z there is the partition function"
+      },
+      "V194": {
+        "v": "CORRECT"
+      },
+      "V197": {
+        "v": "PARTIAL",
+        "why": "gave LAMMPS as a classical and path-integral MD package but not the multi-scale atomic-to-continuum particle simulator framing"
+      },
+      "V199": {
+        "v": "PARTIAL",
+        "why": "gave convex-hull E_hull for stability and S.U.N. for uniqueness and novelty, then denied template discovery is a distinct evaluation category"
+      },
+      "V202": {
+        "v": "PARTIAL",
+        "why": "adaptive design balancing exploitation against high-uncertainty regions right; no GFlowNet Bayesian posterior estimator of epistemic uncertainty"
+      },
+      "V205": {
+        "v": "CORRECT"
+      },
+      "V207": {
+        "v": "CORRECT"
+      },
+      "V208": {
+        "v": "CORRECT"
+      },
+      "V210": {
+        "v": "PARTIAL",
+        "why": "qEHVI as an a posteriori Pareto method exactly right; denied the hierarchical screening side of crystal structure prediction"
+      },
+      "V211": {
+        "v": "WRONG",
+        "why": "gave neither the reduction of multivariate data to univariate quantities nor the relaxing of oxidation-state balancing"
+      },
+      "V213": {
+        "v": "PARTIAL",
+        "why": "ReaxFF for MoS2 synthesis and ripplocation formation energies right; graph gave interfacial defects in perovskites but never 2D-material passivation"
+      },
+      "V216": {
+        "v": "PARTIAL",
+        "why": "ECSG as electron-configuration input and CGCNN as structural, but no atom features with Cartesian coordinates and no Graphormer or GATGNN"
+      },
+      "V218": {
+        "v": "PARTIAL",
+        "why": "the penalty function for values below user targets exactly right; denied the ASAB system is in the corpus"
+      },
+      "V220": {
+        "v": "WRONG",
+        "why": "gave RAC descriptors and kernel distances; neither periodic DFT nor the motif matching matrix"
+      }
+    }
   },
-  {
-   "key": "26f1",
-   "collectionId": 26,
-   "maxFacts": 25,
-   "seedFloor": 1,
-   "label": "graph, seed floor 1",
-   "file": "synthesis_unbiased_c26_2026-08-11T03-16-33Z.jsonl"
-  },
-  {
-   "key": "33",
-   "collectionId": 33,
-   "maxFacts": 0,
-   "seedFloor": null,
-   "label": "no graph (control)",
-   "file": "synthesis_unbiased_c33_2026-08-11T03-16-32Z.jsonl"
+  "questionFlaws": {
+    "V141": "Ambiguous referent: \"the researchers\" has no antecedent, so the question cannot single out the cross-validation study its expected answer comes from. The v2 self-reference filter caught \"the authors\" and \"this paper\" but not this. Graded in the model favour in ALL THREE arms.",
+    "V207": "Underdetermined: asks for \"a common technique\" against excessive complexity, and early stopping and regularization are equally valid corpus-grounded answers to that. The expected answer names dropout, but nothing in the question selects it. Graded in the model favour in ALL THREE arms."
   }
- ],
- "gradedThrough": "chunk- graph+ stratum complete (8 of 220)",
- "verdicts": {
-  "33": {
-   "V015": {
-    "v": "WRONG",
-    "r": "named Matminer and Pymatgen; the tools asked for are Weka for the models and Magpie for the attributes"
-   },
-   "V033": {
-    "v": "PARTIAL",
-    "r": "gave solid-state interpretability but denied the corpus covers organic chemistry, missing the open-database gap"
-   },
-   "V068": {
-    "v": "WRONG",
-    "r": "denied the corpus covers Co3Nb2V at all"
-   },
-   "V088": {
-    "v": "PARTIAL",
-    "r": "skew in the network memory right; missing bias as an incorrect-assumption error causing underfitting and the Gaussian latent-space link"
-   },
-   "V106": {
-    "v": "WRONG",
-    "r": "denied the corpus compares KRR and DFT on local versus global properties"
-   },
-   "V124": {
-    "v": "PARTIAL",
-    "r": "gave the generative side but not that MLIPs train on total energy, atomic forces and virial tensors"
-   },
-   "V129": {
-    "v": "PARTIAL",
-    "r": "gave traditional discovery as slow and costly but not that experimental validation stays non-negotiable to avoid false positives"
-   },
-   "V166": {
-    "v": "PARTIAL",
-    "r": "gave the asymmetric-unit representation but not sequential Wyckoff sampling versus symmetry-operation replication over orbit representatives"
-   }
-  },
-  "26f2": {
-   "V015": {
-    "v": "WRONG",
-    "r": "named Matminer and Pymatgen; the tools asked for are Weka for the models and Magpie for the attributes"
-   },
-   "V033": {
-    "v": "PARTIAL",
-    "r": "gave solid-state interpretability but denied the corpus covers organic chemistry, missing the open-database gap"
-   },
-   "V068": {
-    "v": "WRONG",
-    "r": "denied the corpus covers Co3Nb2V at all"
-   },
-   "V088": {
-    "v": "PARTIAL",
-    "r": "skew in the network memory right; missing bias as an incorrect-assumption error causing underfitting and the Gaussian latent-space link"
-   },
-   "V106": {
-    "v": "WRONG",
-    "r": "denied the corpus compares KRR and DFT on local versus global properties"
-   },
-   "V124": {
-    "v": "PARTIAL",
-    "r": "gave the generative side but not that MLIPs train on total energy, atomic forces and virial tensors"
-   },
-   "V129": {
-    "v": "PARTIAL",
-    "r": "gave traditional discovery as slow and costly but not that experimental validation stays non-negotiable to avoid false positives"
-   },
-   "V166": {
-    "v": "PARTIAL",
-    "r": "gave the asymmetric-unit representation but not sequential Wyckoff sampling versus symmetry-operation replication over orbit representatives"
-   }
-  },
-  "26f1": {
-   "V015": {
-    "v": "WRONG",
-    "r": "named Matminer and Pymatgen; the tools asked for are Weka for the models and Magpie for the attributes"
-   },
-   "V033": {
-    "v": "PARTIAL",
-    "r": "gave solid-state interpretability but denied the corpus covers organic chemistry, missing the open-database gap"
-   },
-   "V068": {
-    "v": "WRONG",
-    "r": "surfaced from the graph that MTP discovered Co3Nb2V but still declined the advantage over on/off-lattice models"
-   },
-   "V088": {
-    "v": "PARTIAL",
-    "r": "skew in the network memory right; missing bias as an incorrect-assumption error causing underfitting and the Gaussian latent-space link"
-   },
-   "V106": {
-    "v": "WRONG",
-    "r": "denied the corpus compares KRR and DFT on local versus global properties"
-   },
-   "V124": {
-    "v": "PARTIAL",
-    "r": "gave the generative side but not that MLIPs train on total energy, atomic forces and virial tensors"
-   },
-   "V129": {
-    "v": "PARTIAL",
-    "r": "gave traditional discovery as slow and costly but not that experimental validation stays non-negotiable to avoid false positives"
-   },
-   "V166": {
-    "v": "PARTIAL",
-    "r": "gave the asymmetric-unit representation but not sequential Wyckoff sampling versus symmetry-operation replication over orbit representatives"
-   }
-  }
- },
- "questionFlaws": {}
 }
