@@ -28,7 +28,7 @@
       "file": "synthesis_unbiased_c33_2026-08-11T03-16-32Z.jsonl"
     }
   ],
-  "gradedThrough": "chunk+ graph+ COMPLETE (137 of 220)",
+  "gradedThrough": "ALL 220 GRADED (660 answers)",
   "verdicts": {
     "33": {
       "V015": {
@@ -512,6 +512,281 @@
       "V214": {
         "v": "PARTIAL",
         "why": "melt-quench-annealing and the amorphous-sampling rationale right; no melting-temperature and cell-volume determination, no cooling to 300 K or annealing at 500 K"
+      },
+      "V001": {
+        "v": "CORRECT"
+      },
+      "V002": {
+        "v": "CORRECT"
+      },
+      "V003": {
+        "v": "PARTIAL",
+        "why": "DP's speed benchmarks against DFT and EAM right; gave the symmetry-constrained genetic algorithm instead of Query by Committee resampling"
+      },
+      "V005": {
+        "v": "CORRECT"
+      },
+      "V006": {
+        "v": "PARTIAL",
+        "why": "named likelihood maximization as a survey direction but not the variational lower bound or noise-schedule optimization, and denied any MatterGen training objective"
+      },
+      "V008": {
+        "v": "CORRECT"
+      },
+      "V011": {
+        "v": "PARTIAL",
+        "why": "perovskite thickness variation right; described photonic layer thickness as an encoded variable and never said prior photonic studies hold it constant"
+      },
+      "V013": {
+        "v": "CORRECT"
+      },
+      "V014": {
+        "v": "CORRECT"
+      },
+      "V017": {
+        "v": "WRONG",
+        "why": "denied the corpus gives a count; it is 30 motifs"
+      },
+      "V019": {
+        "v": "CORRECT"
+      },
+      "V020": {
+        "v": "PARTIAL",
+        "why": "LSAS's lower-dimensional latent representation right; denied the corpus states what multimodal VAEs are for"
+      },
+      "V025": {
+        "v": "CORRECT"
+      },
+      "V028": {
+        "v": "CORRECT"
+      },
+      "V032": {
+        "v": "CORRECT"
+      },
+      "V034": {
+        "v": "CORRECT"
+      },
+      "V038": {
+        "v": "CORRECT"
+      },
+      "V039": {
+        "v": "CORRECT"
+      },
+      "V041": {
+        "v": "CORRECT"
+      },
+      "V042": {
+        "v": "CORRECT"
+      },
+      "V052": {
+        "v": "CORRECT"
+      },
+      "V054": {
+        "v": "CORRECT"
+      },
+      "V055": {
+        "v": "WRONG",
+        "why": "denied any strategies are described; the corpus gives upper-triangular prediction, a maximum spanning tree for connectivity and hydrogen as padding"
+      },
+      "V056": {
+        "v": "CORRECT"
+      },
+      "V061": {
+        "v": "CORRECT"
+      },
+      "V062": {
+        "v": "PARTIAL",
+        "why": "hydrogen ignored in XRD for limited positional accuracy right; denied the corpus says anything about hydrogen in STEM"
+      },
+      "V063": {
+        "v": "CORRECT"
+      },
+      "V064": {
+        "v": "PARTIAL",
+        "why": "described SML-AutoML's meta-features and pipeline recommendation and the Extra Tree Regressor result separately, then refused to connect them as the question asked"
+      },
+      "V065": {
+        "v": "WRONG",
+        "why": "gave occluded-object detection and medical image segmentation; this Segan is the speech-enhancement model"
+      },
+      "V071": {
+        "v": "WRONG",
+        "why": "described DPA-2 as spanning alloys, semiconductors, batteries and drug molecules rather than limited to metallic systems, and gave validity and novelty metrics instead of polarizability, dipole moments, orbital energies and binding affinity"
+      },
+      "V072": {
+        "v": "CORRECT"
+      },
+      "V073": {
+        "v": "CORRECT"
+      },
+      "V076": {
+        "v": "WRONG",
+        "why": "denied the corpus gives the A-Lab's criterion; it is the sign of the decomposition energy, negative for stable and positive for metastable"
+      },
+      "V077": {
+        "v": "CORRECT"
+      },
+      "V079": {
+        "v": "CORRECT"
+      },
+      "V085": {
+        "v": "WRONG",
+        "why": "denied the corpus describes the system and never surfaced the title naming the mass spectrometry production line"
+      },
+      "V086": {
+        "v": "CORRECT"
+      },
+      "V087": {
+        "v": "CORRECT"
+      },
+      "V090": {
+        "v": "PARTIAL",
+        "why": "adsorbate species, adsorption sites and metal components as the drivers of the configuration space, but not catalyst geometry, coverage effects, adsorbate-adsorbate interactions or surface reconstruction"
+      },
+      "V094": {
+        "v": "CORRECT"
+      },
+      "V097": {
+        "v": "CORRECT"
+      },
+      "V099": {
+        "v": "PARTIAL",
+        "why": "quoted MCM learning highly explainable representations but not the motif-based local structural context, and denied any link to intelligibility"
+      },
+      "V101": {
+        "v": "CORRECT"
+      },
+      "V103": {
+        "v": "CORRECT"
+      },
+      "V105": {
+        "v": "CORRECT"
+      },
+      "V107": {
+        "v": "CORRECT"
+      },
+      "V108": {
+        "v": "PARTIAL",
+        "why": "SELFIES's grammar enforcing valence constraints right; gave the InChI consistency check rather than iterative relaxation under tightening convergence criteria"
+      },
+      "V110": {
+        "v": "PARTIAL",
+        "why": "the diffraction fingerprint's species-independent dimension exactly right; denied the pharmaceutical platform's random-forest surrogate is covered"
+      },
+      "V111": {
+        "v": "CORRECT"
+      },
+      "V112": {
+        "v": "CORRECT"
+      },
+      "V113": {
+        "v": "PARTIAL",
+        "why": "gave the 300,000-versus-few-hundred zeolite gap and GFlowNet diversity, but not the flow-matching loss as a gradient-solvable minimization"
+      },
+      "V123": {
+        "v": "CORRECT"
+      },
+      "V127": {
+        "v": "WRONG",
+        "why": "noted the SMILES-length stratification but denied any relationship; accuracy improves as SMILES length grows"
+      },
+      "V128": {
+        "v": "WRONG",
+        "why": "denied the corpus names any group; it names minority and disadvantaged populations, women and BIPOC individuals"
+      },
+      "V130": {
+        "v": "PARTIAL",
+        "why": "reported single-temperature training as worse than multi-temperature; never that it still improves on DFT-only training across the whole temperature range"
+      },
+      "V137": {
+        "v": "CORRECT"
+      },
+      "V139": {
+        "v": "CORRECT"
+      },
+      "V140": {
+        "v": "CORRECT"
+      },
+      "V142": {
+        "v": "PARTIAL",
+        "why": "CPU, memory and time limits and the single P100 GPU right; missed that the limits are called harder than overfitting and the 50 ps simulation length"
+      },
+      "V143": {
+        "v": "CORRECT"
+      },
+      "V144": {
+        "v": "CORRECT"
+      },
+      "V145": {
+        "v": "CORRECT"
+      },
+      "V147": {
+        "v": "PARTIAL",
+        "why": "MOFormer as structure-agnostic exactly right; quoted the overlap matrix and interatomic distance vectors but declined to say spectral descriptors require 3D structure"
+      },
+      "V148": {
+        "v": "CORRECT"
+      },
+      "V149": {
+        "v": "CORRECT"
+      },
+      "V154": {
+        "v": "CORRECT"
+      },
+      "V160": {
+        "v": "CORRECT"
+      },
+      "V169": {
+        "v": "PARTIAL",
+        "why": "gave governance's purpose and FlowLLM's limitations separately; no model card documenting the discrete/continuous split or the finite-precision risk"
+      },
+      "V170": {
+        "v": "CORRECT"
+      },
+      "V171": {
+        "v": "CORRECT"
+      },
+      "V175": {
+        "v": "CORRECT"
+      },
+      "V179": {
+        "v": "WRONG",
+        "why": "denied the researchers made that choice; the stated reason is that 3D would require parent and radicals separately, accumulating error across three predictions"
+      },
+      "V182": {
+        "v": "CORRECT"
+      },
+      "V184": {
+        "v": "CORRECT"
+      },
+      "V186": {
+        "v": "PARTIAL",
+        "why": "the 155GB data-processing failure right; missed that the fix was splitting the dataset into four parts trained in sequence"
+      },
+      "V195": {
+        "v": "CORRECT"
+      },
+      "V198": {
+        "v": "CORRECT"
+      },
+      "V201": {
+        "v": "CORRECT"
+      },
+      "V206": {
+        "v": "CORRECT"
+      },
+      "V212": {
+        "v": "CORRECT"
+      },
+      "V215": {
+        "v": "CORRECT"
+      },
+      "V217": {
+        "v": "CORRECT"
+      },
+      "V219": {
+        "v": "PARTIAL",
+        "why": "gave the 30.2 to 28.4 span but not the order-1 value of 29.8 that the order-1-versus-order-2 comparison turns on"
       }
     },
     "26f2": {
@@ -994,6 +1269,280 @@
       "V214": {
         "v": "PARTIAL",
         "why": "melt-quench-annealing and the amorphous-sampling rationale right; no melting-temperature and cell-volume determination, no cooling to 300 K or annealing at 500 K"
+      },
+      "V001": {
+        "v": "CORRECT"
+      },
+      "V002": {
+        "v": "PARTIAL",
+        "why": "gave HTCP's aerosolized inks but declared the corpus does not describe Ada's material state, while quoting spin-cast thin films from it"
+      },
+      "V003": {
+        "v": "PARTIAL",
+        "why": "DP's speed benchmarks against DFT and EAM right; gave the symmetry-constrained genetic algorithm instead of Query by Committee resampling"
+      },
+      "V005": {
+        "v": "CORRECT"
+      },
+      "V006": {
+        "v": "PARTIAL",
+        "why": "named likelihood maximization as a survey direction but not the variational lower bound or noise-schedule optimization, and denied any MatterGen training objective"
+      },
+      "V008": {
+        "v": "CORRECT"
+      },
+      "V011": {
+        "v": "CORRECT"
+      },
+      "V013": {
+        "v": "CORRECT"
+      },
+      "V014": {
+        "v": "CORRECT"
+      },
+      "V017": {
+        "v": "WRONG",
+        "why": "denied the corpus gives a count; it is 30 motifs"
+      },
+      "V019": {
+        "v": "CORRECT"
+      },
+      "V020": {
+        "v": "PARTIAL",
+        "why": "LSAS's lower-dimensional latent representation right; denied the corpus states what multimodal VAEs are for"
+      },
+      "V025": {
+        "v": "CORRECT"
+      },
+      "V028": {
+        "v": "CORRECT"
+      },
+      "V032": {
+        "v": "CORRECT"
+      },
+      "V034": {
+        "v": "CORRECT"
+      },
+      "V038": {
+        "v": "CORRECT"
+      },
+      "V039": {
+        "v": "CORRECT"
+      },
+      "V041": {
+        "v": "CORRECT"
+      },
+      "V042": {
+        "v": "CORRECT"
+      },
+      "V052": {
+        "v": "CORRECT"
+      },
+      "V054": {
+        "v": "CORRECT"
+      },
+      "V055": {
+        "v": "WRONG",
+        "why": "denied any strategies are described; the corpus gives upper-triangular prediction, a maximum spanning tree for connectivity and hydrogen as padding"
+      },
+      "V056": {
+        "v": "CORRECT"
+      },
+      "V061": {
+        "v": "CORRECT"
+      },
+      "V062": {
+        "v": "PARTIAL",
+        "why": "hydrogen ignored in XRD for limited positional accuracy right; for STEM gave only that resolution is finer than a hydrogen atom, not that hydrogen is hard to detect"
+      },
+      "V063": {
+        "v": "CORRECT"
+      },
+      "V064": {
+        "v": "CORRECT"
+      },
+      "V065": {
+        "v": "WRONG",
+        "why": "gave occluded-object detection and medical image segmentation; this Segan is the speech-enhancement model"
+      },
+      "V071": {
+        "v": "WRONG",
+        "why": "described DPA-2 as spanning alloys, semiconductors, batteries and drug molecules rather than limited to metallic systems, and gave validity and novelty metrics instead of polarizability, dipole moments, orbital energies and binding affinity"
+      },
+      "V072": {
+        "v": "CORRECT"
+      },
+      "V073": {
+        "v": "CORRECT"
+      },
+      "V076": {
+        "v": "WRONG",
+        "why": "denied the corpus gives the A-Lab's criterion; it is the sign of the decomposition energy, negative for stable and positive for metastable"
+      },
+      "V077": {
+        "v": "CORRECT"
+      },
+      "V079": {
+        "v": "CORRECT"
+      },
+      "V085": {
+        "v": "WRONG",
+        "why": "denied the corpus describes the system and pointed at the A-Lab and Ada instead of the mass spectrometry production line"
+      },
+      "V086": {
+        "v": "CORRECT"
+      },
+      "V087": {
+        "v": "CORRECT"
+      },
+      "V090": {
+        "v": "PARTIAL",
+        "why": "adsorbate species, adsorption sites and metal components as the drivers of the configuration space, but not catalyst geometry, coverage effects, adsorbate-adsorbate interactions or surface reconstruction"
+      },
+      "V094": {
+        "v": "CORRECT"
+      },
+      "V097": {
+        "v": "CORRECT"
+      },
+      "V099": {
+        "v": "PARTIAL",
+        "why": "quoted MCM using local structural information for highly explainable representations, then denied any link to intelligibility in discovery workflows"
+      },
+      "V101": {
+        "v": "CORRECT"
+      },
+      "V103": {
+        "v": "CORRECT"
+      },
+      "V105": {
+        "v": "CORRECT"
+      },
+      "V107": {
+        "v": "CORRECT"
+      },
+      "V108": {
+        "v": "PARTIAL",
+        "why": "SELFIES's grammar enforcing valence constraints right; gave the InChI consistency check rather than iterative relaxation under tightening convergence criteria"
+      },
+      "V110": {
+        "v": "PARTIAL",
+        "why": "the diffraction fingerprint's species-independent dimension exactly right; denied the pharmaceutical platform's random-forest surrogate is covered"
+      },
+      "V111": {
+        "v": "CORRECT"
+      },
+      "V112": {
+        "v": "CORRECT"
+      },
+      "V113": {
+        "v": "WRONG",
+        "why": "gave generic GFlowNet diversity claims; neither the flow-matching loss as a gradient-solvable minimization nor the 300,000-versus-few-hundred zeolite gap"
+      },
+      "V123": {
+        "v": "CORRECT"
+      },
+      "V127": {
+        "v": "WRONG",
+        "why": "noted the SMILES-length stratification but denied any relationship; accuracy improves as SMILES length grows"
+      },
+      "V128": {
+        "v": "WRONG",
+        "why": "denied the corpus names any group; it names minority and disadvantaged populations, women and BIPOC individuals"
+      },
+      "V130": {
+        "v": "PARTIAL",
+        "why": "reported single-temperature training as worse than multi-temperature; never that it still improves on DFT-only training across the whole temperature range"
+      },
+      "V137": {
+        "v": "CORRECT"
+      },
+      "V139": {
+        "v": "CORRECT"
+      },
+      "V140": {
+        "v": "CORRECT"
+      },
+      "V142": {
+        "v": "PARTIAL",
+        "why": "CPU, memory and time limits and the single P100 GPU right; missed that the limits are called harder than overfitting and the 50 ps simulation length"
+      },
+      "V143": {
+        "v": "CORRECT"
+      },
+      "V144": {
+        "v": "CORRECT"
+      },
+      "V145": {
+        "v": "CORRECT"
+      },
+      "V147": {
+        "v": "PARTIAL",
+        "why": "MOFormer as structure-agnostic exactly right; quoted the overlap matrix and interatomic distance vectors but declined to say spectral descriptors require 3D structure"
+      },
+      "V148": {
+        "v": "CORRECT"
+      },
+      "V149": {
+        "v": "CORRECT"
+      },
+      "V154": {
+        "v": "CORRECT"
+      },
+      "V160": {
+        "v": "CORRECT"
+      },
+      "V169": {
+        "v": "PARTIAL",
+        "why": "gave governance's purpose and FlowLLM's limitations separately; no model card documenting the discrete/continuous split or the finite-precision risk"
+      },
+      "V170": {
+        "v": "CORRECT"
+      },
+      "V171": {
+        "v": "CORRECT"
+      },
+      "V175": {
+        "v": "CORRECT"
+      },
+      "V179": {
+        "v": "WRONG",
+        "why": "denied the researchers made that choice; the stated reason is that 3D would require parent and radicals separately, accumulating error across three predictions"
+      },
+      "V182": {
+        "v": "CORRECT"
+      },
+      "V184": {
+        "v": "CORRECT"
+      },
+      "V186": {
+        "v": "PARTIAL",
+        "why": "the 155GB data-processing failure right; missed that the fix was splitting the dataset into four parts trained in sequence"
+      },
+      "V195": {
+        "v": "CORRECT"
+      },
+      "V198": {
+        "v": "CORRECT"
+      },
+      "V201": {
+        "v": "CORRECT"
+      },
+      "V206": {
+        "v": "CORRECT"
+      },
+      "V212": {
+        "v": "CORRECT"
+      },
+      "V215": {
+        "v": "CORRECT"
+      },
+      "V217": {
+        "v": "PARTIAL",
+        "why": "quoted the title naming conductivity predictions for aqueous systems, which is the answer, then declared the corpus does not state the model's function"
+      },
+      "V219": {
+        "v": "CORRECT"
       }
     },
     "26f1": {
@@ -1476,6 +2025,280 @@
       "V214": {
         "v": "PARTIAL",
         "why": "melt-quench-annealing and the amorphous-sampling rationale right; no melting-temperature and cell-volume determination, no cooling to 300 K or annealing at 500 K"
+      },
+      "V001": {
+        "v": "CORRECT"
+      },
+      "V002": {
+        "v": "CORRECT"
+      },
+      "V003": {
+        "v": "PARTIAL",
+        "why": "DP's speed benchmarks against DFT and EAM right; gave the symmetry-constrained genetic algorithm instead of Query by Committee resampling"
+      },
+      "V005": {
+        "v": "CORRECT"
+      },
+      "V006": {
+        "v": "PARTIAL",
+        "why": "named likelihood maximization as a survey direction but not the variational lower bound or noise-schedule optimization, and denied any MatterGen training objective"
+      },
+      "V008": {
+        "v": "CORRECT"
+      },
+      "V011": {
+        "v": "CORRECT"
+      },
+      "V013": {
+        "v": "CORRECT"
+      },
+      "V014": {
+        "v": "CORRECT"
+      },
+      "V017": {
+        "v": "WRONG",
+        "why": "denied the corpus gives a count; it is 30 motifs"
+      },
+      "V019": {
+        "v": "CORRECT"
+      },
+      "V020": {
+        "v": "CORRECT"
+      },
+      "V025": {
+        "v": "CORRECT"
+      },
+      "V028": {
+        "v": "PARTIAL",
+        "why": "Matformer's 500 epochs right; never reached ElemNet's peak at 17 layers, only that no epoch count is given"
+      },
+      "V032": {
+        "v": "CORRECT"
+      },
+      "V034": {
+        "v": "CORRECT"
+      },
+      "V038": {
+        "v": "CORRECT"
+      },
+      "V039": {
+        "v": "CORRECT"
+      },
+      "V041": {
+        "v": "CORRECT"
+      },
+      "V042": {
+        "v": "CORRECT"
+      },
+      "V052": {
+        "v": "CORRECT"
+      },
+      "V054": {
+        "v": "CORRECT"
+      },
+      "V055": {
+        "v": "WRONG",
+        "why": "denied any strategies are described; the corpus gives upper-triangular prediction, a maximum spanning tree for connectivity and hydrogen as padding"
+      },
+      "V056": {
+        "v": "CORRECT"
+      },
+      "V061": {
+        "v": "CORRECT"
+      },
+      "V062": {
+        "v": "PARTIAL",
+        "why": "hydrogen ignored in XRD for limited positional accuracy right; for STEM gave only that resolution is finer than a hydrogen atom, not that hydrogen is hard to detect"
+      },
+      "V063": {
+        "v": "CORRECT"
+      },
+      "V064": {
+        "v": "CORRECT"
+      },
+      "V065": {
+        "v": "WRONG",
+        "why": "gave occluded-object detection and medical image segmentation; this Segan is the speech-enhancement model"
+      },
+      "V071": {
+        "v": "WRONG",
+        "why": "described DPA-2 as spanning alloys, semiconductors, batteries and drug molecules rather than limited to metallic systems, and gave validity and novelty metrics instead of polarizability, dipole moments, orbital energies and binding affinity"
+      },
+      "V072": {
+        "v": "CORRECT"
+      },
+      "V073": {
+        "v": "CORRECT"
+      },
+      "V076": {
+        "v": "WRONG",
+        "why": "denied the corpus gives the A-Lab's criterion; it is the sign of the decomposition energy, negative for stable and positive for metastable"
+      },
+      "V077": {
+        "v": "CORRECT"
+      },
+      "V079": {
+        "v": "CORRECT"
+      },
+      "V085": {
+        "v": "PARTIAL",
+        "why": "quoted the title naming the mass spectrometry production line and its microcontrollers, which is the answer, then declared it had no detail on the system"
+      },
+      "V086": {
+        "v": "CORRECT"
+      },
+      "V087": {
+        "v": "CORRECT"
+      },
+      "V090": {
+        "v": "PARTIAL",
+        "why": "adsorbate species, adsorption sites and metal components as the drivers of the configuration space, but not catalyst geometry, coverage effects, adsorbate-adsorbate interactions or surface reconstruction"
+      },
+      "V094": {
+        "v": "CORRECT"
+      },
+      "V097": {
+        "v": "CORRECT"
+      },
+      "V099": {
+        "v": "PARTIAL",
+        "why": "quoted MCM learning highly explainable representations but not the motif-based local structural context, and denied any link to intelligibility"
+      },
+      "V101": {
+        "v": "CORRECT"
+      },
+      "V103": {
+        "v": "CORRECT"
+      },
+      "V105": {
+        "v": "CORRECT"
+      },
+      "V107": {
+        "v": "CORRECT"
+      },
+      "V108": {
+        "v": "PARTIAL",
+        "why": "SELFIES's grammar enforcing valence constraints right; gave the InChI consistency check rather than iterative relaxation under tightening convergence criteria"
+      },
+      "V110": {
+        "v": "PARTIAL",
+        "why": "the diffraction fingerprint's species-independent dimension exactly right; denied the pharmaceutical platform's random-forest surrogate is covered"
+      },
+      "V111": {
+        "v": "CORRECT"
+      },
+      "V112": {
+        "v": "CORRECT"
+      },
+      "V113": {
+        "v": "WRONG",
+        "why": "gave generic GFlowNet diversity claims; neither the flow-matching loss as a gradient-solvable minimization nor the 300,000-versus-few-hundred zeolite gap"
+      },
+      "V123": {
+        "v": "CORRECT"
+      },
+      "V127": {
+        "v": "WRONG",
+        "why": "noted the SMILES-length stratification but denied any relationship; accuracy improves as SMILES length grows"
+      },
+      "V128": {
+        "v": "WRONG",
+        "why": "denied the corpus names any group; it names minority and disadvantaged populations, women and BIPOC individuals"
+      },
+      "V130": {
+        "v": "PARTIAL",
+        "why": "reported single-temperature training as worse than multi-temperature; never that it still improves on DFT-only training across the whole temperature range"
+      },
+      "V137": {
+        "v": "CORRECT"
+      },
+      "V139": {
+        "v": "CORRECT"
+      },
+      "V140": {
+        "v": "CORRECT"
+      },
+      "V142": {
+        "v": "PARTIAL",
+        "why": "CPU, memory and time limits and the single P100 GPU right; missed that the limits are called harder than overfitting and the 50 ps simulation length"
+      },
+      "V143": {
+        "v": "CORRECT"
+      },
+      "V144": {
+        "v": "CORRECT"
+      },
+      "V145": {
+        "v": "CORRECT"
+      },
+      "V147": {
+        "v": "PARTIAL",
+        "why": "MOFormer as structure-agnostic exactly right; gave spectral descriptors only as mathematical properties, never the 3D structure and overlap matrices"
+      },
+      "V148": {
+        "v": "CORRECT"
+      },
+      "V149": {
+        "v": "CORRECT"
+      },
+      "V154": {
+        "v": "CORRECT"
+      },
+      "V160": {
+        "v": "CORRECT"
+      },
+      "V169": {
+        "v": "PARTIAL",
+        "why": "gave governance's purpose and FlowLLM's limitations separately; no model card documenting the discrete/continuous split or the finite-precision risk"
+      },
+      "V170": {
+        "v": "CORRECT"
+      },
+      "V171": {
+        "v": "CORRECT"
+      },
+      "V175": {
+        "v": "CORRECT"
+      },
+      "V179": {
+        "v": "WRONG",
+        "why": "denied the researchers made that choice; the stated reason is that 3D would require parent and radicals separately, accumulating error across three predictions"
+      },
+      "V182": {
+        "v": "CORRECT"
+      },
+      "V184": {
+        "v": "CORRECT"
+      },
+      "V186": {
+        "v": "PARTIAL",
+        "why": "the 155GB data-processing failure right; missed that the fix was splitting the dataset into four parts trained in sequence"
+      },
+      "V195": {
+        "v": "CORRECT"
+      },
+      "V198": {
+        "v": "CORRECT"
+      },
+      "V201": {
+        "v": "CORRECT"
+      },
+      "V206": {
+        "v": "CORRECT"
+      },
+      "V212": {
+        "v": "CORRECT"
+      },
+      "V215": {
+        "v": "CORRECT"
+      },
+      "V217": {
+        "v": "PARTIAL",
+        "why": "quoted the title naming conductivity predictions for aqueous systems, which is the answer, then declared the corpus does not state the model's function"
+      },
+      "V219": {
+        "v": "PARTIAL",
+        "why": "gave the 30.2 to 28.4 span but not the order-1 value of 29.8 that the order-1-versus-order-2 comparison turns on"
       }
     }
   },

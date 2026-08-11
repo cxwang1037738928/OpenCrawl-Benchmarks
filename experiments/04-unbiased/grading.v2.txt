@@ -1,0 +1,520 @@
+====================================================================================================
+UNBIASED BENCHMARK (v2) — HAND-GRADED RESULTS
+====================================================================================================
+
+220 questions built without the retrieval bias: generated from document text sampled uniformly
+across the corpus, never filtered on whether retrieval or the graph can answer them. Both
+reachabilities were MEASURED afterwards and recorded as strata. Every one of the 660 answers was
+read by hand against its expected answer.
+
+reasoning model : gemini/gemini-3.1-flash-lite   topK 10
+graded          : ALL 220 GRADED (660 answers)
+
+----------------------------------------------------------------------------------------------------
+1. HEADLINE
+----------------------------------------------------------------------------------------------------
+
+  arm                          C     P     F    accuracy   not-wrong
+  graph, seed floor 2       126    61    33      57.3%      85.0%
+  graph, seed floor 1       126    63    31      57.3%      85.9%
+  no graph (control)        123    64    33      55.9%      85.0%
+
+----------------------------------------------------------------------------------------------------
+2. THE NOISE FLOOR (measured, not assumed)
+----------------------------------------------------------------------------------------------------
+
+73 of the 220 questions got a byte-identical fact window in the floor-2 and floor-1 arms. Same
+collection, same retrieval, same prompt — two draws at temperature 0.2 with no seed. Any verdict
+disagreement between those two arms on those questions is pure run-to-run variance and nothing else.
+
+  identical fact windows      : 73
+  verdict disagreements there : 2  (V089, V091)
+  implied noise floor         : 2.7% = about 6 answers in 220
+
+Observed spread between the best and worst arm: 3 correct answers. Compare that with the floor above
+before reading anything into it.
+
+----------------------------------------------------------------------------------------------------
+3. BY STRATUM — the split that actually predicts the answer
+----------------------------------------------------------------------------------------------------
+
+chunk+/chunk- is whether ordinary chunk retrieval reached the support document; graph+/graph- is
+whether the graph did. Neither was used to select questions.
+
+  stratum           n     26f2            26f1            33              
+  chunk+ graph+    57   47/4/6 82.5%    45/7/5 78.9%    46/5/6 80.7%    
+  chunk+ graph-    83   58/15/10 69.9%  58/16/9 69.9%   57/17/9 68.7%   
+  chunk- graph+     8   0/5/3 0.0%      0/5/3 0.0%      0/5/3 0.0%      
+  chunk- graph-    72   21/37/14 29.2%  23/35/14 31.9%  20/37/15 27.8%  
+
+  chunk+ overall (140)  26f2 75.0%   26f1 73.6%   33 73.6%
+  chunk- overall (80)  26f2 26.3%   26f1 28.8%   33 25.0%
+
+----------------------------------------------------------------------------------------------------
+4. DID CITING [G] HELP?
+----------------------------------------------------------------------------------------------------
+
+Split each graph arm by whether its own answer actually cited a graph fact, and score the CONTROL on
+those same questions. The control never saw the graph, so any gap that survives in the control
+column is a property of the questions, not of the graph.
+
+  arm    cited [G]?     n     that arm    control on the same ids
+  26f2   yes             73      45.2%       42.5%
+  26f2   no             147      63.3%       62.6%
+  26f1   yes             97      50.5%       45.4%
+  26f1   no             123      62.6%       64.2%
+
+----------------------------------------------------------------------------------------------------
+5. THE SEED FLOOR CHANGED THE FACT WINDOW AND NOT THE SCORE
+----------------------------------------------------------------------------------------------------
+
+  fact windows rewritten by floor 2 -> floor 1 : 147 of 220
+  correct on those questions, floor 2          : 79
+  correct on those questions, floor 1          : 79
+
+----------------------------------------------------------------------------------------------------
+6. EVERY QUESTION WHERE THE ARMS DISAGREED
+----------------------------------------------------------------------------------------------------
+
+  23 of 220 questions. Each one is a single answer; none is a pattern on its own.
+
+  V002  [chunk+ graph-]   26f2=P  26f1=C  33=C
+      Q: How does the HTCP technique for creating material libraries differ from the automated
+      spin-casting methods used in platforms like Ada in terms of the physical state of the
+      materials being processed?
+        26f2: gave HTCP's aerosolized inks but declared the corpus does not describe Ada's
+            material state, while quoting spin-cast thin films from it
+
+  V011  [chunk+ graph-]   26f2=C  26f1=C  33=P
+      Q: How do current generative deep learning approaches for photonic design differ from the
+      methods used to optimize perovskite absorber layers in tandem devices regarding the handling
+      of layer thickness?
+        33: perovskite thickness variation right; described photonic layer thickness as an
+            encoded variable and never said prior photonic studies hold it constant
+
+  V020  [chunk+ graph-]   26f2=P  26f1=C  33=P
+      Q: How does the primary goal of the LSAS method for analyzing X-ray absorption spectra compare
+      to the functional capabilities of multimodal VAEs?
+        26f2: LSAS's lower-dimensional latent representation right; denied the corpus states
+            what multimodal VAEs are for
+        33: LSAS's lower-dimensional latent representation right; denied the corpus states what
+            multimodal VAEs are for
+
+  V027  [chunk- graph-]   26f2=F  26f1=P  33=F
+      Q: What is the primary focus of the research conducted by Chmiela et al. in their 2017 Science
+      Advances publication?
+        26f2: denied the corpus contains Chmiela et al. at all
+        26f1: graph supplied that Chmiela developed gradient-domain ML obtaining molecular force
+            fields, but hedged the link to the 2017 paper and missed energy conservation
+        33: denied the corpus contains Chmiela et al. at all
+
+  V028  [chunk+ graph-]   26f2=C  26f1=P  33=C
+      Q: How does the training duration required for ElemNet to reach its peak performance compare
+      to the number of epochs used to train Matformer for predicting formation energy?
+        26f1: Matformer's 500 epochs right; never reached ElemNet's peak at 17 layers, only that
+            no epoch count is given
+
+  V029  [chunk- graph-]   26f2=P  26f1=P  33=C
+      Q: How do the methods for generating new crystal structures in CrystalFormer and the
+      autonomous synthesis laboratory differ in their reliance on external feedback?
+        26f2: gave RL reward signals for CrystalFormer and the closed loop for autolabs, then
+            declined to make the comparison the question asked for
+        26f1: gave RL reward signals for CrystalFormer and learning-from-outcomes for autolabs,
+            then declined to make the comparison the question asked for
+
+  V064  [chunk+ graph-]   26f2=C  26f1=C  33=P
+      Q: How could the SML-AutoML framework be utilized to address the challenges of predicting
+      properties for layer-by-layer (LbL) coatings?
+        33: described SML-AutoML's meta-features and pipeline recommendation and the Extra Tree
+            Regressor result separately, then refused to connect them as the question asked
+
+  V069  [chunk- graph-]   26f2=P  26f1=P  33=F
+      Q: How does the predicted stability of calcium-based titanium oxides generated by the WyCryst
+      framework compare to the energy efficiency of titanium dioxide in water-splitting
+      applications?
+        26f2: gave photocatalytic water splitting and the 1.23 eV requirement; denied WyCryst
+            and the Ca4Ti4O12 formation energies entirely
+        26f1: gave the 1.23 eV water photolysis requirement; denied WyCryst and the Ca4Ti4O12
+            formation energies entirely
+        33: refused outright, denying both the WyCryst side and any TiO2 water-splitting content
+
+  V085  [chunk+ graph-]   26f2=F  26f1=P  33=F
+      Q: What kind of tasks does the dual robotic arm system described by Chen et al. perform?
+        26f2: denied the corpus describes the system and pointed at the A-Lab and Ada instead of
+            the mass spectrometry production line
+        26f1: quoted the title naming the mass spectrometry production line and its
+            microcontrollers, which is the answer, then declared it had no detail on the system
+        33: denied the corpus describes the system and never surfaced the title naming the mass
+            spectrometry production line
+
+  V089  [chunk+ graph+]   26f2=C  26f1=P  33=C
+      Q: What is the primary focus of the research conducted by Fulford et al. regarding the
+      identification of water and ice molecules?
+        26f1: quoted the DeepIce title, which is the answer, then declared it had no detail on
+            the paper's focus
+
+  V091  [chunk- graph-]   26f2=P  26f1=C  33=F
+      Q: What is the primary objective of the DeepMD-kit v2 software?
+        26f2: gave the package as many-body potential energy representation and MD but stopped
+            short of deep potential models, and declined the question as asked
+        33: answered only with version-compatibility rules; never gave the package's purpose
+
+  V098  [chunk+ graph+]   26f2=C  26f1=C  33=P
+      Q: What specific capability does the molecular transformer gain when transfer learning is
+      applied to carbohydrate reactions?
+        33: gave the accuracy gain and the confidence score but never named regio- and
+            stereoselectivity, which both graph arms did
+
+  V113  [chunk+ graph-]   26f2=F  26f1=F  33=P
+      Q: How could the application of GFlowNets potentially address the disparity between the vast
+      number of theoretically proposed zeolite structures and the relatively small number that have
+      been experimentally synthesized?
+        26f2: gave generic GFlowNet diversity claims; neither the flow-matching loss as a
+            gradient-solvable minimization nor the 300,000-versus-few-hundred zeolite gap
+        26f1: gave generic GFlowNet diversity claims; neither the flow-matching loss as a
+            gradient-solvable minimization nor the 300,000-versus-few-hundred zeolite gap
+        33: gave the 300,000-versus-few-hundred zeolite gap and GFlowNet diversity, but not the
+            flow-matching loss as a gradient-solvable minimization
+
+  V116  [chunk- graph-]   26f2=F  26f1=C  33=P
+      Q: How does the reliance on specific experimental inputs, such as the EBSD maps required for
+      reconstructing 3D Statistically Equivalent Virtual Microstructures (SEVMs), affect the
+      autonomy of a discovery platform according to the criteria for evaluating autonomous systems?
+        26f2: refused outright; never reached the search-space-constraint criterion that the
+            corpus states
+        33: listed search-space constraint among the autonomy criteria but never applied it to
+            the reliance on fixed experimental inputs
+
+  V121  [chunk+ graph+]   26f2=C  26f1=P  33=C
+      Q: What is the primary function of the climbing image nudged elastic band method?
+        26f1: gave transition-state identification but attributed minimum energy path finding to
+            plain NEB rather than to CINEB
+
+  V126  [chunk- graph-]   26f2=C  26f1=C  33=P
+      Q: How do the metrics used to compare the performance of different sampling techniques in an
+      automated laboratory setting differ in their mathematical definition when evaluating the
+      relative effectiveness of two approaches?
+        33: both definitions right, then claimed the enhancement factor is not calculable when
+            both performances exceed zero, contradicting its own worked example
+
+  V174  [chunk- graph-]   26f2=C  26f1=F  33=C
+      Q: What is the name of the open-source software toolkit used for cheminformatics tasks?
+        26f1: denied the corpus names a cheminformatics toolkit and offered Matminer and BLT
+            instead; RDKit is right there in the same reference
+
+  V180  [chunk+ graph+]   26f2=F  26f1=P  33=F
+      Q: What are the two primary goals of the Property-directed VAE model when designing new
+      inorganic materials?
+        26f2: gave forward-model and reconstruction losses; neither learning the database
+            distribution nor the property-oriented latent space
+        26f1: graph supplied learning the distribution of inorganic materials, one of the two
+            goals; missed the property-oriented latent space and denied the question
+        33: gave reconstruction quality, forward-model accuracy and validity; neither learning
+            the database distribution nor the property-oriented latent space
+
+  V189  [chunk- graph-]   26f2=C  26f1=C  33=P
+      Q: How does the DPA-2 model address the challenge of model transparency and interpretability
+      mentioned as a general limitation in complex machine learning architectures?
+        33: reached the right conclusion by denying DPA-2 is in the corpus at all; it is there,
+            just never tied to interpretability
+
+  V193  [chunk- graph-]   26f2=P  26f1=F  33=P
+      Q: How do the roles of the variable Z differ between the chemical synthesis planning approach
+      using Monte Carlo Tree Search and the flow network framework?
+        26f2: gave z_i as the rollout reward, not a reward above 1 on a proven state, and denied
+            Z in the flow network framework
+        26f1: asserted from the graph that Z is a type of random vector in the flow network
+            framework; Z there is the partition function
+        33: gave z_i as the rollout reward, not a reward above 1 on a proven state, and denied
+            the flow network framework is covered
+
+  V205  [chunk- graph-]   26f2=P  26f1=C  33=P
+      Q: How do the evaluation metrics used by Vector Field Oriented Diffusion Model and WyckoffDiff
+      differ in their approach to assessing the quality of generated crystal structures?
+        26f2: gave the diffusion model's validity, EMD and Frechet ALIGNN metrics; denied
+            WyckoffDiff is in the corpus
+        33: gave the diffusion model's validity, EMD and Frechet ALIGNN metrics; denied
+            WyckoffDiff is in the corpus
+
+  V217  [chunk+ graph-]   26f2=P  26f1=P  33=C
+      Q: What is the primary function of the Advanced Electrolyte Model in the context of aqueous
+      systems?
+        26f2: quoted the title naming conductivity predictions for aqueous systems, which is the
+            answer, then declared the corpus does not state the model's function
+        26f1: quoted the title naming conductivity predictions for aqueous systems, which is the
+            answer, then declared the corpus does not state the model's function
+
+  V219  [chunk+ graph-]   26f2=C  26f1=P  33=P
+      Q: How does increasing the order of the equivariant layer in eComFormer affect its performance
+      in predicting material properties?
+        26f1: gave the 30.2 to 28.4 span but not the order-1 value of 29.8 that the
+            order-1-versus-order-2 comparison turns on
+        33: gave the 30.2 to 28.4 span but not the order-1 value of 29.8 that the
+            order-1-versus-order-2 comparison turns on
+
+----------------------------------------------------------------------------------------------------
+7. QUESTION DEFECTS
+----------------------------------------------------------------------------------------------------
+
+Found while grading. Each is graded in the model's favour in ALL THREE arms, so no arm gains or
+loses from them.
+
+  V141
+      Ambiguous referent: "the researchers" has no antecedent, so the question cannot single out the
+      cross-validation study its expected answer comes from. The v2 self-reference filter caught
+      "the authors" and "this paper" but not this. Graded in the model favour in ALL THREE arms.
+
+  V207
+      Underdetermined: asks for "a common technique" against excessive complexity, and early
+      stopping and regularization are equally valid corpus-grounded answers to that. The expected
+      answer names dropout, but nothing in the question selects it. Graded in the model favour in
+      ALL THREE arms.
+
+  V192
+      Unverifiable negative: the expected answer asserts the corpus has no CrystalFlow
+      code-availability information, but that was inferred from one source window. All three arms
+      cite a chunk giving the GitHub URL, Zenodo and the MIT licence. A negative expected answer
+      cannot be checked against a corpus the generator saw only a slice of. Graded in the model
+      favour in ALL THREE arms.
+
+----------------------------------------------------------------------------------------------------
+8. FULL MATRIX
+----------------------------------------------------------------------------------------------------
+
+  id     stratum          26f2   26f1   33      flip
+  V001   chunk+ graph-   C      C      C      
+  V002   chunk+ graph-   P      C      C       <--
+  V003   chunk+ graph-   P      P      P      
+  V004   chunk+ graph+   C      C      C      
+  V005   chunk+ graph-   C      C      C      
+  V006   chunk+ graph-   P      P      P      
+  V007   chunk- graph-   C      C      C      
+  V008   chunk+ graph-   C      C      C      
+  V009   chunk+ graph+   F      F      F      
+  V010   chunk+ graph+   C      C      C      
+  V011   chunk+ graph-   C      C      P       <--
+  V012   chunk+ graph+   C      C      C      
+  V013   chunk+ graph-   C      C      C      
+  V014   chunk+ graph-   C      C      C      
+  V015   chunk- graph+   F      F      F      
+  V016   chunk- graph-   P      P      P      
+  V017   chunk+ graph-   F      F      F      
+  V018   chunk- graph-   P      P      P      
+  V019   chunk+ graph-   C      C      C      
+  V020   chunk+ graph-   P      C      P       <--
+  V021   chunk- graph-   F      F      F      
+  V022   chunk- graph-   C      C      C      
+  V023   chunk+ graph+   C      C      C      
+  V024   chunk- graph-   C      C      C      
+  V025   chunk+ graph-   C      C      C      
+  V026   chunk- graph-   F      F      F      
+  V027   chunk- graph-   F      P      F       <--
+  V028   chunk+ graph-   C      P      C       <--
+  V029   chunk- graph-   P      P      C       <--
+  V030   chunk+ graph+   C      C      C      
+  V031   chunk- graph-   P      P      P      
+  V032   chunk+ graph-   C      C      C      
+  V033   chunk- graph+   P      P      P      
+  V034   chunk+ graph-   C      C      C      
+  V035   chunk- graph-   P      P      P      
+  V036   chunk+ graph+   C      C      C      
+  V037   chunk- graph-   P      P      P      
+  V038   chunk+ graph-   C      C      C      
+  V039   chunk+ graph-   C      C      C      
+  V040   chunk+ graph+   C      C      C      
+  V041   chunk+ graph-   C      C      C      
+  V042   chunk+ graph-   C      C      C      
+  V043   chunk- graph-   P      P      P      
+  V044   chunk+ graph+   C      C      C      
+  V045   chunk- graph-   F      F      F      
+  V046   chunk+ graph+   C      C      C      
+  V047   chunk- graph-   P      P      P      
+  V048   chunk- graph-   C      C      C      
+  V049   chunk- graph-   P      P      P      
+  V050   chunk+ graph+   P      P      P      
+  V051   chunk+ graph+   C      C      C      
+  V052   chunk+ graph-   C      C      C      
+  V053   chunk- graph-   P      P      P      
+  V054   chunk+ graph-   C      C      C      
+  V055   chunk+ graph-   F      F      F      
+  V056   chunk+ graph-   C      C      C      
+  V057   chunk+ graph+   C      C      C      
+  V058   chunk- graph-   P      P      P      
+  V059   chunk+ graph+   C      C      C      
+  V060   chunk- graph-   P      P      P      
+  V061   chunk+ graph-   C      C      C      
+  V062   chunk+ graph-   P      P      P      
+  V063   chunk+ graph-   C      C      C      
+  V064   chunk+ graph-   C      C      P       <--
+  V065   chunk+ graph-   F      F      F      
+  V066   chunk- graph-   P      P      P      
+  V067   chunk+ graph+   C      C      C      
+  V068   chunk- graph+   F      F      F      
+  V069   chunk- graph-   P      P      F       <--
+  V070   chunk+ graph+   C      C      C      
+  V071   chunk+ graph-   F      F      F      
+  V072   chunk+ graph-   C      C      C      
+  V073   chunk+ graph-   C      C      C      
+  V074   chunk- graph-   P      P      P      
+  V075   chunk- graph-   F      F      F      
+  V076   chunk+ graph-   F      F      F      
+  V077   chunk+ graph-   C      C      C      
+  V078   chunk- graph-   P      P      P      
+  V079   chunk+ graph-   C      C      C      
+  V080   chunk+ graph+   C      C      C      
+  V081   chunk- graph-   P      P      P      
+  V082   chunk+ graph+   C      C      C      
+  V083   chunk- graph-   P      P      P      
+  V084   chunk+ graph+   F      F      F      
+  V085   chunk+ graph-   F      P      F       <--
+  V086   chunk+ graph-   C      C      C      
+  V087   chunk+ graph-   C      C      C      
+  V088   chunk- graph+   P      P      P      
+  V089   chunk+ graph+   C      P      C       <--
+  V090   chunk+ graph-   P      P      P      
+  V091   chunk- graph-   P      C      F       <--
+  V092   chunk- graph-   P      P      P      
+  V093   chunk+ graph+   C      C      C      
+  V094   chunk+ graph-   C      C      C      
+  V095   chunk+ graph+   F      F      F      
+  V096   chunk+ graph+   C      C      C      
+  V097   chunk+ graph-   C      C      C      
+  V098   chunk+ graph+   C      C      P       <--
+  V099   chunk+ graph-   P      P      P      
+  V100   chunk+ graph+   F      F      F      
+  V101   chunk+ graph-   C      C      C      
+  V102   chunk- graph-   C      C      C      
+  V103   chunk+ graph-   C      C      C      
+  V104   chunk- graph-   F      F      F      
+  V105   chunk+ graph-   C      C      C      
+  V106   chunk- graph+   F      F      F      
+  V107   chunk+ graph-   C      C      C      
+  V108   chunk+ graph-   P      P      P      
+  V109   chunk+ graph+   C      C      C      
+  V110   chunk+ graph-   P      P      P      
+  V111   chunk+ graph-   C      C      C      
+  V112   chunk+ graph-   C      C      C      
+  V113   chunk+ graph-   F      F      P       <--
+  V114   chunk+ graph+   C      C      C      
+  V115   chunk- graph-   F      F      F      
+  V116   chunk- graph-   F      C      P       <--
+  V117   chunk+ graph+   C      C      C      
+  V118   chunk- graph-   P      P      P      
+  V119   chunk+ graph+   C      C      C      
+  V120   chunk- graph-   C      C      C      
+  V121   chunk+ graph+   C      P      C       <--
+  V122   chunk- graph-   F      F      F      
+  V123   chunk+ graph-   C      C      C      
+  V124   chunk- graph+   P      P      P      
+  V125   chunk+ graph+   C      C      C      
+  V126   chunk- graph-   C      C      P       <--
+  V127   chunk+ graph-   F      F      F      
+  V128   chunk+ graph-   F      F      F      
+  V129   chunk- graph+   P      P      P      
+  V130   chunk+ graph-   P      P      P      
+  V131   chunk+ graph+   C      C      C      
+  V132   chunk- graph-   P      P      P      
+  V133   chunk- graph-   C      C      C      
+  V134   chunk+ graph+   C      C      C      
+  V135   chunk- graph-   P      P      P      
+  V136   chunk+ graph+   C      C      C      
+  V137   chunk+ graph-   C      C      C      
+  V138   chunk- graph-   F      F      F      
+  V139   chunk+ graph-   C      C      C      
+  V140   chunk+ graph-   C      C      C      
+  V141   chunk- graph-   C      C      C      
+  V142   chunk+ graph-   P      P      P      
+  V143   chunk+ graph-   C      C      C      
+  V144   chunk+ graph-   C      C      C      
+  V145   chunk+ graph-   C      C      C      
+  V146   chunk- graph-   C      C      C      
+  V147   chunk+ graph-   P      P      P      
+  V148   chunk+ graph-   C      C      C      
+  V149   chunk+ graph-   C      C      C      
+  V150   chunk+ graph+   C      C      C      
+  V151   chunk- graph-   C      C      C      
+  V152   chunk+ graph+   C      C      C      
+  V153   chunk- graph-   P      P      P      
+  V154   chunk+ graph-   C      C      C      
+  V155   chunk- graph-   P      P      P      
+  V156   chunk+ graph+   C      C      C      
+  V157   chunk+ graph+   P      P      P      
+  V158   chunk+ graph+   C      C      C      
+  V159   chunk- graph-   F      F      F      
+  V160   chunk+ graph-   C      C      C      
+  V161   chunk- graph-   C      C      C      
+  V162   chunk+ graph+   C      C      C      
+  V163   chunk- graph-   P      P      P      
+  V164   chunk+ graph+   F      F      F      
+  V165   chunk+ graph+   C      C      C      
+  V166   chunk- graph+   P      P      P      
+  V167   chunk- graph-   P      P      P      
+  V168   chunk+ graph+   C      C      C      
+  V169   chunk+ graph-   P      P      P      
+  V170   chunk+ graph-   C      C      C      
+  V171   chunk+ graph-   C      C      C      
+  V172   chunk+ graph+   C      C      C      
+  V173   chunk- graph-   C      C      C      
+  V174   chunk- graph-   C      F      C       <--
+  V175   chunk+ graph-   C      C      C      
+  V176   chunk- graph-   F      F      F      
+  V177   chunk+ graph+   C      C      C      
+  V178   chunk+ graph+   C      C      C      
+  V179   chunk+ graph-   F      F      F      
+  V180   chunk+ graph+   F      P      F       <--
+  V181   chunk- graph-   P      P      P      
+  V182   chunk+ graph-   C      C      C      
+  V183   chunk- graph-   C      C      C      
+  V184   chunk+ graph-   C      C      C      
+  V185   chunk- graph-   C      C      C      
+  V186   chunk+ graph-   P      P      P      
+  V187   chunk- graph-   C      C      C      
+  V188   chunk+ graph+   C      C      C      
+  V189   chunk- graph-   C      C      P       <--
+  V190   chunk+ graph+   C      C      C      
+  V191   chunk+ graph+   C      C      C      
+  V192   chunk+ graph+   C      C      C      
+  V193   chunk- graph-   P      F      P       <--
+  V194   chunk- graph-   C      C      C      
+  V195   chunk+ graph-   C      C      C      
+  V196   chunk+ graph+   C      C      C      
+  V197   chunk- graph-   P      P      P      
+  V198   chunk+ graph-   C      C      C      
+  V199   chunk- graph-   P      P      P      
+  V200   chunk+ graph+   C      C      C      
+  V201   chunk+ graph-   C      C      C      
+  V202   chunk- graph-   P      P      P      
+  V203   chunk+ graph+   P      P      P      
+  V204   chunk+ graph+   C      C      C      
+  V205   chunk- graph-   P      C      P       <--
+  V206   chunk+ graph-   C      C      C      
+  V207   chunk- graph-   C      C      C      
+  V208   chunk- graph-   C      C      C      
+  V209   chunk+ graph+   C      C      C      
+  V210   chunk- graph-   P      P      P      
+  V211   chunk- graph-   F      F      F      
+  V212   chunk+ graph-   C      C      C      
+  V213   chunk- graph-   P      P      P      
+  V214   chunk+ graph+   P      P      P      
+  V215   chunk+ graph-   C      C      C      
+  V216   chunk- graph-   P      P      P      
+  V217   chunk+ graph-   P      P      C       <--
+  V218   chunk- graph-   P      P      P      
+  V219   chunk+ graph-   C      P      P       <--
+  V220   chunk- graph-   F      F      F      
+
+----------------------------------------------------------------------------------------------------
+9. WHAT THIS DOES AND DOES NOT SHOW
+----------------------------------------------------------------------------------------------------
+
+  Reads as measured. Every verdict is explicit and carries a reason where it is not CORRECT.
+
+  The arms share retrieval entirely. They differ only in the graph fact block, so any difference
+  between them is attributable to the graph — but only if it clears the noise floor in section 2.
+
+  The reasoning model runs at temperature 0.2 with no seed, so answers are not reproducible.
+  This is the reason section 2 exists and the reason a small delta is not a finding.
+
+  One grader, not blind to which arm produced which answer. On borderline answers that is a real
+  source of bias; it is mitigated by the arms being read side by side against one expected answer.
+
