@@ -28,7 +28,7 @@
       "file": "synthesis_unbiased_c33_2026-08-11T03-16-32Z.jsonl"
     }
   ],
-  "gradedThrough": "chunk- strata COMPLETE (80 of 220)",
+  "gradedThrough": "chunk+ graph+ COMPLETE (137 of 220)",
   "verdicts": {
     "33": {
       "V015": {
@@ -330,6 +330,188 @@
       "V220": {
         "v": "WRONG",
         "why": "gave KRR feature-space distances and t-SNE; neither periodic DFT nor the motif matching matrix"
+      },
+      "V004": {
+        "v": "CORRECT"
+      },
+      "V009": {
+        "v": "WRONG",
+        "why": "BSbS4 is the only MoS2-prototype entry rated high; the answer listed it plus 45 others that do not qualify"
+      },
+      "V010": {
+        "v": "CORRECT"
+      },
+      "V012": {
+        "v": "CORRECT"
+      },
+      "V023": {
+        "v": "CORRECT"
+      },
+      "V030": {
+        "v": "CORRECT"
+      },
+      "V036": {
+        "v": "CORRECT"
+      },
+      "V040": {
+        "v": "CORRECT"
+      },
+      "V044": {
+        "v": "CORRECT"
+      },
+      "V046": {
+        "v": "CORRECT"
+      },
+      "V050": {
+        "v": "PARTIAL",
+        "why": "CrystalFlow's CNF and 13-by-15 periodic-table encoding right; denied the corpus describes MatterGen's discrete atom-type denoising"
+      },
+      "V051": {
+        "v": "CORRECT"
+      },
+      "V057": {
+        "v": "CORRECT"
+      },
+      "V059": {
+        "v": "CORRECT"
+      },
+      "V067": {
+        "v": "CORRECT"
+      },
+      "V070": {
+        "v": "CORRECT"
+      },
+      "V080": {
+        "v": "CORRECT"
+      },
+      "V082": {
+        "v": "CORRECT"
+      },
+      "V084": {
+        "v": "WRONG",
+        "why": "gave 0.032 eV/atom from a different exclusion strategy and denied the elastic-moduli metrics exist; the answers are 26 meV/atom, 0.07 and 0.12"
+      },
+      "V089": {
+        "v": "CORRECT"
+      },
+      "V093": {
+        "v": "CORRECT"
+      },
+      "V095": {
+        "v": "WRONG",
+        "why": "declared the two platforms are the same system, so gave neither the conductivity-versus-temperature goal nor Ada's hole-mobility objective"
+      },
+      "V096": {
+        "v": "CORRECT"
+      },
+      "V098": {
+        "v": "PARTIAL",
+        "why": "gave the accuracy gain and the confidence score but never named regio- and stereoselectivity, which both graph arms did"
+      },
+      "V100": {
+        "v": "WRONG",
+        "why": "gave doping ratio and annealing time; the four controlled variables are fuel type, fuel-to-oxidizer ratio, precursor concentration and annealing temperature"
+      },
+      "V109": {
+        "v": "CORRECT"
+      },
+      "V114": {
+        "v": "CORRECT"
+      },
+      "V117": {
+        "v": "CORRECT"
+      },
+      "V119": {
+        "v": "CORRECT"
+      },
+      "V121": {
+        "v": "CORRECT"
+      },
+      "V125": {
+        "v": "CORRECT"
+      },
+      "V131": {
+        "v": "CORRECT"
+      },
+      "V134": {
+        "v": "CORRECT"
+      },
+      "V136": {
+        "v": "CORRECT"
+      },
+      "V150": {
+        "v": "CORRECT"
+      },
+      "V152": {
+        "v": "CORRECT"
+      },
+      "V156": {
+        "v": "CORRECT"
+      },
+      "V157": {
+        "v": "PARTIAL",
+        "why": "NequIP's forces as the negative gradient of total energy exactly right; never said SchNet trains on force information to improve generalization, and denied NequIP's long-term MD utility"
+      },
+      "V158": {
+        "v": "CORRECT"
+      },
+      "V162": {
+        "v": "CORRECT"
+      },
+      "V164": {
+        "v": "WRONG",
+        "why": "denied the corpus explains the temperature parameter's effect; it is that below one narrows the distribution and above one widens the variety"
+      },
+      "V165": {
+        "v": "CORRECT"
+      },
+      "V168": {
+        "v": "CORRECT"
+      },
+      "V172": {
+        "v": "CORRECT"
+      },
+      "V177": {
+        "v": "CORRECT"
+      },
+      "V178": {
+        "v": "CORRECT"
+      },
+      "V180": {
+        "v": "WRONG",
+        "why": "gave reconstruction quality, forward-model accuracy and validity; neither learning the database distribution nor the property-oriented latent space"
+      },
+      "V188": {
+        "v": "CORRECT"
+      },
+      "V190": {
+        "v": "CORRECT"
+      },
+      "V191": {
+        "v": "CORRECT"
+      },
+      "V192": {
+        "v": "CORRECT"
+      },
+      "V196": {
+        "v": "CORRECT"
+      },
+      "V200": {
+        "v": "CORRECT"
+      },
+      "V203": {
+        "v": "PARTIAL",
+        "why": "Changchun Computing Center and Eco-Innovation Center right; gave the MindSpore Community and Jilin University rather than the Huawei AI for Science Lab for technical support"
+      },
+      "V204": {
+        "v": "CORRECT"
+      },
+      "V209": {
+        "v": "CORRECT"
+      },
+      "V214": {
+        "v": "PARTIAL",
+        "why": "melt-quench-annealing and the amorphous-sampling rationale right; no melting-temperature and cell-volume determination, no cooling to 300 K or annealing at 500 K"
       }
     },
     "26f2": {
@@ -631,6 +813,187 @@
       "V220": {
         "v": "WRONG",
         "why": "gave RAC descriptors and kernel distances; neither periodic DFT nor the motif matching matrix"
+      },
+      "V004": {
+        "v": "CORRECT"
+      },
+      "V009": {
+        "v": "WRONG",
+        "why": "BSbS4 is the only MoS2-prototype entry rated high; the answer listed it plus 45 others that do not qualify"
+      },
+      "V010": {
+        "v": "CORRECT"
+      },
+      "V012": {
+        "v": "CORRECT"
+      },
+      "V023": {
+        "v": "CORRECT"
+      },
+      "V030": {
+        "v": "CORRECT"
+      },
+      "V036": {
+        "v": "CORRECT"
+      },
+      "V040": {
+        "v": "CORRECT"
+      },
+      "V044": {
+        "v": "CORRECT"
+      },
+      "V046": {
+        "v": "CORRECT"
+      },
+      "V050": {
+        "v": "PARTIAL",
+        "why": "CrystalFlow's CNF and 13-by-15 periodic-table encoding right; denied the corpus describes MatterGen's discrete atom-type denoising"
+      },
+      "V051": {
+        "v": "CORRECT"
+      },
+      "V057": {
+        "v": "CORRECT"
+      },
+      "V059": {
+        "v": "CORRECT"
+      },
+      "V067": {
+        "v": "CORRECT"
+      },
+      "V070": {
+        "v": "CORRECT"
+      },
+      "V080": {
+        "v": "CORRECT"
+      },
+      "V082": {
+        "v": "CORRECT"
+      },
+      "V084": {
+        "v": "WRONG",
+        "why": "gave 0.032 eV/atom from a different exclusion strategy and denied the elastic-moduli metrics exist; the answers are 26 meV/atom, 0.07 and 0.12"
+      },
+      "V089": {
+        "v": "CORRECT"
+      },
+      "V093": {
+        "v": "CORRECT"
+      },
+      "V095": {
+        "v": "WRONG",
+        "why": "declared the two platforms are the same system, so gave neither the conductivity-versus-temperature goal nor Ada's hole-mobility objective"
+      },
+      "V096": {
+        "v": "CORRECT"
+      },
+      "V098": {
+        "v": "CORRECT"
+      },
+      "V100": {
+        "v": "WRONG",
+        "why": "gave doping ratio and annealing time; the four controlled variables are fuel type, fuel-to-oxidizer ratio, precursor concentration and annealing temperature"
+      },
+      "V109": {
+        "v": "CORRECT"
+      },
+      "V114": {
+        "v": "CORRECT"
+      },
+      "V117": {
+        "v": "CORRECT"
+      },
+      "V119": {
+        "v": "CORRECT"
+      },
+      "V121": {
+        "v": "CORRECT"
+      },
+      "V125": {
+        "v": "CORRECT"
+      },
+      "V131": {
+        "v": "CORRECT"
+      },
+      "V134": {
+        "v": "CORRECT"
+      },
+      "V136": {
+        "v": "CORRECT"
+      },
+      "V150": {
+        "v": "CORRECT"
+      },
+      "V152": {
+        "v": "CORRECT"
+      },
+      "V156": {
+        "v": "CORRECT"
+      },
+      "V157": {
+        "v": "PARTIAL",
+        "why": "NequIP's forces as the negative gradient of total energy exactly right; never said SchNet trains on force information to improve generalization, and denied NequIP's long-term MD utility"
+      },
+      "V158": {
+        "v": "CORRECT"
+      },
+      "V162": {
+        "v": "CORRECT"
+      },
+      "V164": {
+        "v": "WRONG",
+        "why": "denied the corpus explains the temperature parameter's effect; it is that below one narrows the distribution and above one widens the variety"
+      },
+      "V165": {
+        "v": "CORRECT"
+      },
+      "V168": {
+        "v": "CORRECT"
+      },
+      "V172": {
+        "v": "CORRECT"
+      },
+      "V177": {
+        "v": "CORRECT"
+      },
+      "V178": {
+        "v": "CORRECT"
+      },
+      "V180": {
+        "v": "WRONG",
+        "why": "gave forward-model and reconstruction losses; neither learning the database distribution nor the property-oriented latent space"
+      },
+      "V188": {
+        "v": "CORRECT"
+      },
+      "V190": {
+        "v": "CORRECT"
+      },
+      "V191": {
+        "v": "CORRECT"
+      },
+      "V192": {
+        "v": "CORRECT"
+      },
+      "V196": {
+        "v": "CORRECT"
+      },
+      "V200": {
+        "v": "CORRECT"
+      },
+      "V203": {
+        "v": "PARTIAL",
+        "why": "Changchun Computing Center and Eco-Innovation Center right; gave the MindSpore Community and Jilin University rather than the Huawei AI for Science Lab for technical support"
+      },
+      "V204": {
+        "v": "CORRECT"
+      },
+      "V209": {
+        "v": "CORRECT"
+      },
+      "V214": {
+        "v": "PARTIAL",
+        "why": "melt-quench-annealing and the amorphous-sampling rationale right; no melting-temperature and cell-volume determination, no cooling to 300 K or annealing at 500 K"
       }
     },
     "26f1": {
@@ -930,11 +1293,195 @@
       "V220": {
         "v": "WRONG",
         "why": "gave RAC descriptors and kernel distances; neither periodic DFT nor the motif matching matrix"
+      },
+      "V004": {
+        "v": "CORRECT"
+      },
+      "V009": {
+        "v": "WRONG",
+        "why": "BSbS4 is the only MoS2-prototype entry rated high; the answer listed it plus 45 others that do not qualify"
+      },
+      "V010": {
+        "v": "CORRECT"
+      },
+      "V012": {
+        "v": "CORRECT"
+      },
+      "V023": {
+        "v": "CORRECT"
+      },
+      "V030": {
+        "v": "CORRECT"
+      },
+      "V036": {
+        "v": "CORRECT"
+      },
+      "V040": {
+        "v": "CORRECT"
+      },
+      "V044": {
+        "v": "CORRECT"
+      },
+      "V046": {
+        "v": "CORRECT"
+      },
+      "V050": {
+        "v": "PARTIAL",
+        "why": "CrystalFlow's CNF and 13-by-15 periodic-table encoding right; denied the corpus describes MatterGen's discrete atom-type denoising"
+      },
+      "V051": {
+        "v": "CORRECT"
+      },
+      "V057": {
+        "v": "CORRECT"
+      },
+      "V059": {
+        "v": "CORRECT"
+      },
+      "V067": {
+        "v": "CORRECT"
+      },
+      "V070": {
+        "v": "CORRECT"
+      },
+      "V080": {
+        "v": "CORRECT"
+      },
+      "V082": {
+        "v": "CORRECT"
+      },
+      "V084": {
+        "v": "WRONG",
+        "why": "gave 0.032 eV/atom from a different exclusion strategy and denied the elastic-moduli metrics exist; the answers are 26 meV/atom, 0.07 and 0.12"
+      },
+      "V089": {
+        "v": "PARTIAL",
+        "why": "quoted the DeepIce title, which is the answer, then declared it had no detail on the paper's focus"
+      },
+      "V093": {
+        "v": "CORRECT"
+      },
+      "V095": {
+        "v": "WRONG",
+        "why": "declared the two platforms are the same system, so gave neither the conductivity-versus-temperature goal nor Ada's hole-mobility objective"
+      },
+      "V096": {
+        "v": "CORRECT"
+      },
+      "V098": {
+        "v": "CORRECT"
+      },
+      "V100": {
+        "v": "WRONG",
+        "why": "gave doping ratio and annealing time; the four controlled variables are fuel type, fuel-to-oxidizer ratio, precursor concentration and annealing temperature"
+      },
+      "V109": {
+        "v": "CORRECT"
+      },
+      "V114": {
+        "v": "CORRECT"
+      },
+      "V117": {
+        "v": "CORRECT"
+      },
+      "V119": {
+        "v": "CORRECT"
+      },
+      "V121": {
+        "v": "PARTIAL",
+        "why": "gave transition-state identification but attributed minimum energy path finding to plain NEB rather than to CINEB"
+      },
+      "V125": {
+        "v": "CORRECT"
+      },
+      "V131": {
+        "v": "CORRECT"
+      },
+      "V134": {
+        "v": "CORRECT"
+      },
+      "V136": {
+        "v": "CORRECT"
+      },
+      "V150": {
+        "v": "CORRECT"
+      },
+      "V152": {
+        "v": "CORRECT"
+      },
+      "V156": {
+        "v": "CORRECT"
+      },
+      "V157": {
+        "v": "PARTIAL",
+        "why": "NequIP's forces as the negative gradient of total energy exactly right; never said SchNet trains on force information to improve generalization, and denied NequIP's long-term MD utility"
+      },
+      "V158": {
+        "v": "CORRECT"
+      },
+      "V162": {
+        "v": "CORRECT"
+      },
+      "V164": {
+        "v": "WRONG",
+        "why": "denied the corpus explains the temperature parameter's effect; it is that below one narrows the distribution and above one widens the variety"
+      },
+      "V165": {
+        "v": "CORRECT"
+      },
+      "V168": {
+        "v": "CORRECT"
+      },
+      "V172": {
+        "v": "CORRECT"
+      },
+      "V177": {
+        "v": "CORRECT"
+      },
+      "V178": {
+        "v": "CORRECT"
+      },
+      "V180": {
+        "v": "PARTIAL",
+        "why": "graph supplied learning the distribution of inorganic materials, one of the two goals; missed the property-oriented latent space and denied the question"
+      },
+      "V188": {
+        "v": "CORRECT"
+      },
+      "V190": {
+        "v": "CORRECT"
+      },
+      "V191": {
+        "v": "CORRECT"
+      },
+      "V192": {
+        "v": "CORRECT"
+      },
+      "V196": {
+        "v": "CORRECT"
+      },
+      "V200": {
+        "v": "CORRECT"
+      },
+      "V203": {
+        "v": "PARTIAL",
+        "why": "Changchun Computing Center and Eco-Innovation Center right; gave the MindSpore Community and Jilin University rather than the Huawei AI for Science Lab for technical support"
+      },
+      "V204": {
+        "v": "CORRECT"
+      },
+      "V209": {
+        "v": "CORRECT"
+      },
+      "V214": {
+        "v": "PARTIAL",
+        "why": "melt-quench-annealing and the amorphous-sampling rationale right; no melting-temperature and cell-volume determination, no cooling to 300 K or annealing at 500 K"
       }
     }
   },
   "questionFlaws": {
     "V141": "Ambiguous referent: \"the researchers\" has no antecedent, so the question cannot single out the cross-validation study its expected answer comes from. The v2 self-reference filter caught \"the authors\" and \"this paper\" but not this. Graded in the model favour in ALL THREE arms.",
-    "V207": "Underdetermined: asks for \"a common technique\" against excessive complexity, and early stopping and regularization are equally valid corpus-grounded answers to that. The expected answer names dropout, but nothing in the question selects it. Graded in the model favour in ALL THREE arms."
+    "V207": "Underdetermined: asks for \"a common technique\" against excessive complexity, and early stopping and regularization are equally valid corpus-grounded answers to that. The expected answer names dropout, but nothing in the question selects it. Graded in the model favour in ALL THREE arms.",
+    "V192": "Unverifiable negative: the expected answer asserts the corpus has no CrystalFlow code-availability information, but that was inferred from one source window. All three arms cite a chunk giving the GitHub URL, Zenodo and the MIT licence. A negative expected answer cannot be checked against a corpus the generator saw only a slice of. Graded in the model favour in ALL THREE arms."
   }
 }
