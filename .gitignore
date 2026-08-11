@@ -16,3 +16,9 @@ runs/
 # quotes in evidence.json; the PDFs themselves stay local.
 documents/
 experiments/03-synthesis/*.pdf
+
+# The v2 builder's scratch file carries the full source window it generated each
+# question from — the same "republishes the corpus" exposure as retrieval_*.jsonl.
+# questions.v2.json and evidence.v2.json hold only the question, the answer and a
+# short quote, and are safe to commit.
+experiments/04-unbiased/generated.raw.jsonl
