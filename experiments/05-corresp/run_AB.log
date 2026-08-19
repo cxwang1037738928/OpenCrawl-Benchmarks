@@ -1,0 +1,132 @@
+[synthesis] authenticating as user 1 <admin@gmail.com> (login skipped)
+[synthesis] arm 35 "Experiment 05 — graph @ KG_FULL_TEXT_FRACTION=0.4" — 4091 chunks, graph 3230 entities
+[synthesis] arm 34 "Experiment 05 — SEC correspondence (A: no graph)" — 4091 chunks, graph NONE
+[synthesis] 183 questions x 2 arms = 366 calls
+[synthesis] model gemini/gemini-3.1-flash-lite, 3000 ms between questions
+
+[synthesis] arm 35 — 183 questions
+[synthesis] loading Xenova/all-MiniLM-L12-v2 ...
+[synthesis] 1/366 c35 C001 10.6s
+[synthesis] 2/366 c35 C002 7.8s
+[synthesis] 3/366 c35 C003 1.9s
+[synthesis] 4/366 c35 C004 8.9s
+[synthesis] 5/366 c35 C005 5.0s
+[synthesis] 6/366 c35 C006 5.6s
+[synthesis] 7/366 c35 C007 3.0s
+[synthesis] 8/366 c35 C008 9.0s
+[synthesis] 9/366 c35 C009 4.5s
+[synthesis] 10/366 c35 C010 3.7s
+[synthesis] 11/366 c35 C011 7.3s
+[synthesis] 12/366 c35 C012 7.9s
+[synthesis] 13/366 c35 C013 4.3s
+[synthesis] 14/366 c35 C014 6.9s
+[synthesis] 15/366 c35 C015 5.9s
+[synthesis] 16/366 c35 C016 6.9s
+[synthesis] 17/366 c35 C017 5.2s
+[synthesis] 18/366 c35 C018 6.9s
+[synthesis] 19/366 c35 C019 9.4s
+[synthesis] 20/366 c35 C020 8.9s
+[synthesis] 21/366 c35 C021 7.3s
+[synthesis] 22/366 c35 C022 14.3s
+[synthesis] 23/366 c35 C023 5.7s
+[synthesis] 24/366 c35 C024 6.2s
+[synthesis] 25/366 c35 C025 4.4s
+[synthesis] 26/366 c35 C026 3.4s
+[synthesis] 27/366 c35 C027 26.4s
+[synthesis] 28/366 c35 C028 4.8s
+[synthesis] 29/366 c35 C029 10.3s
+[synthesis] 30/366 c35 C030 7.1s
+[synthesis] 31/366 c35 C031 5.7s
+[synthesis] 32/366 c35 C032 2.7s
+[synthesis] 33/366 c35 C033 7.3s
+[synthesis] 34/366 c35 C034 2.9s
+[synthesis] 35/366 c35 C035 4.4s
+[synthesis] 36/366 c35 C036 2.2s
+[synthesis] 37/366 c35 C037 3.2s
+[synthesis] 38/366 c35 C038 2.3s
+[synthesis] 39/366 c35 C039 1.6s
+[synthesis] 40/366 c35 C040 1.5s
+[synthesis] 41/366 c35 C041 1.8s
+[synthesis] 42/366 c35 C042 1.3s
+[synthesis] 43/366 c35 C043 5.4s
+[synthesis] 44/366 c35 C044 2.1s
+[synthesis] 45/366 c35 C045 1.7s
+[synthesis] 46/366 c35 C046 3.1s
+[synthesis] 47/366 c35 C047 1.7s
+[synthesis] 48/366 c35 C048 2.4s
+[synthesis] 49/366 c35 C049 1.6s
+[synthesis] 50/366 c35 C050 2.1s
+[synthesis] 51/366 c35 C051 5.1s
+[synthesis] 52/366 c35 C052 1.9s
+[synthesis] 53/366 c35 C053 2.1s
+[synthesis] 54/366 c35 C054 1.8s
+[synthesis] 55/366 c35 C055 1.8s
+[synthesis] 56/366 c35 C056 1.9s
+[synthesis] 57/366 c35 C057 5.2s
+[synthesis] 58/366 c35 C058 1.5s
+[synthesis] 59/366 c35 C059 2.1s
+[synthesis] 60/366 c35 C060 2.1s
+[synthesis] 61/366 c35 C061 1.5s
+[synthesis] 62/366 c35 C062 1.9s
+[synthesis] 63/366 c35 C063 5.4s
+[synthesis] 64/366 c35 C064 5.1s
+[synthesis] 65/366 c35 C065 5.1s
+[synthesis] 66/366 c35 C066 5.6s
+[synthesis] 67/366 c35 C067 5.0s
+[synthesis] 68/366 c35 C068 7.8s
+[synthesis] 69/366 c35 C069 3.5s
+[synthesis] 70/366 c35 C070 2.7s
+[synthesis] 71/366 c35 C071 5.7s
+[synthesis] 72/366 c35 C072 6.5s
+[synthesis] 73/366 c35 C073 4.1s
+[synthesis] 74/366 c35 C074 3.7s
+[synthesis] 75/366 c35 C075 6.1s
+[synthesis] 76/366 c35 C076 3.0s
+[synthesis] 77/366 c35 C077 5.3s
+[synthesis] 78/366 c35 C078 4.5s
+[synthesis] 79/366 c35 C079 3.1s
+[synthesis] 80/366 c35 C080 5.2s
+[synthesis] 81/366 c35 C081 1.9s
+[synthesis] 82/366 c35 C082 1.9s
+[synthesis] 83/366 c35 C083 2.8s
+[synthesis] 84/366 c35 C084 4.9s
+[synthesis] 85/366 c35 C085 12.8s
+[synthesis] 86/366 c35 C086 7.3s
+[synthesis] 87/366 c35 C087 8.1s
+[synthesis] 88/366 c35 C088 8.0s
+[synthesis] 89/366 c35 C089 5.5s
+[synthesis] 90/366 c35 C090 4.0s
+[synthesis] 91/366 c35 C091 5.4s
+[synthesis] 92/366 c35 C092 5.4s
+[synthesis] 93/366 c35 C093 6.1s
+[synthesis] 94/366 c35 C094 4.4s
+[synthesis] 95/366 c35 C095 11.3s
+[synthesis] 96/366 c35 C096 6.2s
+[synthesis] 97/366 c35 C097 8.4s
+[synthesis] 98/366 c35 C098 7.2s
+[synthesis] 99/366 c35 C099 3.3s
+[synthesis] 100/366 c35 C100 7.3s
+[synthesis] 101/366 c35 C101 5.0s
+[synthesis] 102/366 c35 C102 3.6s
+[synthesis] 103/366 c35 C103 7.6s
+[synthesis] 104/366 c35 C104 FAILED (HTTP 429: Google rate limit hit for gemini-3.1-flash-lite — raise its quota or retrieve fewer chunks)
+[synthesis] 105/366 c35 C105 FAILED (HTTP 429: Google rate limit hit for gemini-3.1-flash-lite — raise its quota or retrieve fewer chunks)
+[synthesis] 106/366 c35 C106 FAILED (HTTP 429: Google rate limit hit for gemini-3.1-flash-lite — raise its quota or retrieve fewer chunks)
+[synthesis] 107/366 c35 C107 71.4s
+[synthesis] 108/366 c35 C108 FAILED (HTTP 429: Google rate limit hit for gemini-3.1-flash-lite — raise its quota or retrieve fewer chunks)
+[synthesis] 109/366 c35 C109 FAILED (HTTP 429: Google rate limit hit for gemini-3.1-flash-lite — raise its quota or retrieve fewer chunks)
+[synthesis] 110/366 c35 C110 FAILED (HTTP 429: Google rate limit hit for gemini-3.1-flash-lite — raise its quota or retrieve fewer chunks)
+[synthesis] 111/366 c35 C111 FAILED (HTTP 429: Google rate limit hit for gemini-3.1-flash-lite — raise its quota or retrieve fewer chunks)
+[synthesis] 112/366 c35 C112 FAILED (HTTP 429: Google rate limit hit for gemini-3.1-flash-lite — raise its quota or retrieve fewer chunks)
+[synthesis] 113/366 c35 C113 FAILED (HTTP 429: Google rate limit hit for gemini-3.1-flash-lite — raise its quota or retrieve fewer chunks)
+[synthesis] 114/366 c35 C114 FAILED (HTTP 429: Google rate limit hit for gemini-3.1-flash-lite — raise its quota or retrieve fewer chunks)
+[synthesis] 115/366 c35 C115 FAILED (fetch failed)
+[synthesis] 116/366 c35 C116 FAILED (fetch failed)
+[synthesis] 117/366 c35 C117 FAILED (fetch failed)
+[synthesis] 118/366 c35 C118 FAILED (fetch failed)
+[synthesis] 119/366 c35 C119 FAILED (fetch failed)
+[synthesis] 120/366 c35 C120 FAILED (fetch failed)
+[synthesis] 121/366 c35 C121 FAILED (fetch failed)
+[synthesis] 122/366 c35 C122 FAILED (fetch failed)
+[synthesis] 123/366 c35 C123 FAILED (fetch failed)
+[synthesis] 124/366 c35 C124 FAILED (fetch failed)

@@ -1,5 +1,8 @@
 node_modules/
 
+# Python venv for experiment 05's EDGAR fetch (edgartools, fpdf2). Local only.
+.venv/
+
 # Retrieval sidecars embed the full text of every retrieved chunk, so committing
 # one republishes most of the source corpus. This repository is public and the
 # corpus is third-party study reports — keep these local unless the documents
@@ -22,3 +25,18 @@ experiments/03-synthesis/*.pdf
 # questions.v2.json and evidence.v2.json hold only the question, the answer and a
 # short quote, and are safe to commit.
 experiments/04-unbiased/generated.raw.jsonl
+
+# Experiment 05 corpus: SEC UPLOAD/CORRESP letters and 10-Ks fetched from EDGAR,
+# plus the PDFs rendered from them for upload. Public-domain government filings, but
+# they are bulk third-party documents and the rendered corpus is large — same policy
+# as documents/. questions.json and evidence.json carry the question, the response
+# and docIds, and are safe to commit.
+experiments/05-corresp/corpus/
+experiments/05-corresp/raw/
+__pycache__/
+
+# The probe outputs the report cites are promoted out of raw/ into 05-corresp/ itself:
+# graph_probe_35.json and querylen_probe.json verbatim, retrieval_probe*.json with the
+# chunk `text` field dropped and the two statistics section 6 quotes from it precomputed
+# as `hasLetterhead` / `hasTitlePrefix` flags. Same rule as retrieval_*.jsonl above —
+# chunk metadata is publishable, chunk text is not.

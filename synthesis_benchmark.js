@@ -179,16 +179,35 @@ let plan = questions.filter((question) => !ID_FILTER || ID_FILTER.has(question.i
 if (LIMIT) plan = plan.slice(0, LIMIT);
 if (!plan.length) fail('no questions selected');
 
-const login = await api(null, 'POST', '/api/auth/login', { email: EMAIL, password: PASSWORD })
-  .catch((err) => fail(`cannot reach ${BASE} — is the backend running? (${err.message})`));
-if (login.status !== 200 || !login.body.token) {
-  fail(`login as ${EMAIL} failed: ${login.status} ${login.body.error ?? ''}`);
+// AUTH_AS_USER mints a token for a user id instead of logging in with a password. Experiments
+// 02-04 ran against collections owned by demo@gmail.com, so EMAIL/PASSWORD was enough; experiment
+// 05 built its collections through scripts (build_arms.mjs, reindex.mjs) that mint their own token
+// for the first user, which puts them on a different account. Reassigning the rows would work too,
+// but writing to the user's data to satisfy a benchmark's login is the wrong trade -- and the
+// token is signed here rather than passed in so it never has to be stored anywhere.
+let token;
+if (process.env.AUTH_AS_USER) {
+  const uid = Number(process.env.AUTH_AS_USER);
+  const account = await prisma.user.findUnique({ where: { id: uid } });
+  if (!account) fail(`AUTH_AS_USER=${uid} is not a user in this database`);
+  const jwt = createRequire(path.join(OPENCRAWL, 'package.json'))('jsonwebtoken');
+  token = jwt.sign({ sub: account.id, email: account.email, isAdmin: !!account.isAdmin },
+    process.env.JWT_SECRET || 'opencrawl-local-dev-secret', { expiresIn: '24h' });
+  console.log(`${LOG} authenticating as user ${account.id} <${account.email}> (login skipped)`);
+} else {
+  const login = await api(null, 'POST', '/api/auth/login', { email: EMAIL, password: PASSWORD })
+    .catch((err) => fail(`cannot reach ${BASE} — is the backend running? (${err.message})`));
+  if (login.status !== 200 || !login.body.token) {
+    fail(`login as ${EMAIL} failed: ${login.status} ${login.body.error ?? ''}`);
+  }
+  token = login.body.token;
 }
-const token = login.body.token;
 
 const visible = (await api(token, 'GET', '/api/collections')).body.collections ?? [];
 for (const id of ARMS) {
-  if (!visible.some((entry) => entry.id === id)) fail(`collection ${id} is not visible to ${EMAIL}`);
+  if (!visible.some((entry) => entry.id === id)) {
+    fail(`collection ${id} is not visible to the authenticated account`);
+  }
 }
 const reasoningModel = (await api(token, 'GET', '/api/corpus/models')).body.roles?.REASONING_MODEL;
 if (!reasoningModel) fail('REASONING_MODEL is not set on the server — pick one in the Models tab');

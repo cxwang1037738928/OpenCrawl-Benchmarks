@@ -1,0 +1,1100 @@
+[
+ {
+  "id": "C001",
+  "type": "compare",
+  "question": "Both Jazz Pharmaceuticals plc and NOVAVAX INC responded to SEC staff comments about revenue recognition. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "No, their positions differed. Jazz Pharmaceuticals plc defended its treatment while agreeing to expand disclosure: \"... 6 of Statement of Financial Accounting Standards No. 48,  Revenue Recognition When Right of Return Exists , or Statement No. 48, to determine when and how to recognize revenue on product shipped with the right of return. The return policies and particular c...\" NOVAVAX INC provided supplemental information: \"...ides for payments based on annual license maintenance fees, milestone payments and royalties on product sales, and that the aggregate payments under the agreement in 2008 could reach certain amounts, depending on the achievement of clinical development milesto...\""
+ },
+ {
+  "id": "C002",
+  "type": "compare",
+  "question": "Both Revolution Medicines, Inc. and INSMED Inc responded to SEC staff comments about research and development expense. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "No, their positions differed. Revolution Medicines, Inc. agreed to revise: \"... quantitative and qualitative disclosures as to the type of research and development expenses, for each period presented. We hope that the foregoing has been responsive to the Staffs comment. Please do not hesitate to contact me by telephone at (650) 463-3043...\" INSMED Inc provided supplemental information: \"...illion in the years ended December 31, 2002, 2003 and 2004. Research and development expenses consist primarily of salaries and related expenses, costs to develop and manufacture products and amounts paid to contract research organizations, hospitals and labor...\""
+ },
+ {
+  "id": "C003",
+  "type": "compare",
+  "question": "Both AMGEN INC and NOVAVAX INC responded to SEC staff comments about executive compensation. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "They took the same position. AMGEN INC agreed to revise: \"...l update its future filings to expand the discussion in the Compensation Discussion and Analysis to include a more complete discussion of the terms of the necessary targets and performance objectives for compensation earned for the last fiscal year. For exampl...\" NOVAVAX INC agreed to revise: \"...ng additional disclosure regarding individual goals for the named executive officers. Below is a copy of such additional disclosure: | In addition, each officer has additional individual goals to support the 2007 Objectives or to further the Companys strategi...\""
+ },
+ {
+  "id": "C004",
+  "type": "compare",
+  "question": "Both REGENERON PHARMACEUTICALS, INC. and ARVINAS, INC. responded to SEC staff comments about fair value. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "No, their positions differed. REGENERON PHARMACEUTICALS, INC. provided supplemental information: \"...d over the life of the royalty term, is within the range of fair value for similar licensing transactions, and therefore it is paying a fair market value rate for the licensed patents. The Company determined that the total blended royalty rate is within a reas...\" ARVINAS, INC. agreed to revise: \"... the Registration Statement to correct the weighted-average fair value of incentive units from $2.17 per unit to $1.40 per unit. The correct weighted-average fair value of the incentive units is $1.40 per unit. The $2.17 per unit number represents the fair val...\""
+ },
+ {
+  "id": "C005",
+  "type": "compare",
+  "question": "Both ALNYLAM PHARMACEUTICALS, INC. and IOVANCE BIOTHERAPEUTICS, INC. responded to SEC staff comments about research and development expense. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "No, their positions differed. ALNYLAM PHARMACEUTICALS, INC. provided supplemental information: \"...of cemdisiran in the third phase of clinical development. • Research and Development Expense – The Company estimated research and development expenses based on the expected costs to be incurred to complete the clinical development process and any open label ex...\" IOVANCE BIOTHERAPEUTICS, INC. agreed to revise: \"...mment and advises the Staff that the Company does not track research and development expenses by each individual product candidate, program, or indication. However, the Company does track direct research and development expenses by product categories, as set f...\""
+ },
+ {
+  "id": "C006",
+  "type": "compare",
+  "question": "Both PTC THERAPEUTICS, INC. and TG THERAPEUTICS, INC. responded to SEC staff comments about revenue recognition. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "No, their positions differed. PTC THERAPEUTICS, INC. agreed to revise: \"...to provide disaggregated information by product pursuant to ASC 606-10-55-89 through 55-91. <u>The following paragraphs, with an updated footnote 13 “Revenue Recognition” for fiscal year ended December 31, 2020, reflects how PTC plans to enhance its disclosure...\" TG THERAPEUTICS, INC. provided supplemental information: \"...ayment from Ildong, and are eligible to receive sales based milestone payments * up to an aggregate of $5 million* and royalty payments on net sales of ublituximab *at a royalty rate that escalates from mid-teens to high-teens * upon approval in South Korea an...\""
+ },
+ {
+  "id": "C007",
+  "type": "compare",
+  "question": "Both REGENERON PHARMACEUTICALS, INC. and VERTEX PHARMACEUTICALS INC / MA responded to SEC staff comments about fair value. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "No, their positions differed. REGENERON PHARMACEUTICALS, INC. provided supplemental information: \"...d over the life of the royalty term, is within the range of fair value for similar licensing transactions, and therefore it is paying a fair market value rate for the licensed patents. The Company determined that the total blended royalty rate is within a reas...\" VERTEX PHARMACEUTICALS INC / MA agreed to revise: \"...collaboration arrangements, and the Company has evidence of fair value for these remaining obligations, management considers the milestone payment and the remaining obligations to be separate units of accounting. In these circumstances, the Company uses the re...\""
+ },
+ {
+  "id": "C008",
+  "type": "compare",
+  "question": "Both IOVANCE BIOTHERAPEUTICS, INC. and UNITED THERAPEUTICS Corp responded to SEC staff comments about risk factors. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "No, their positions differed. IOVANCE BIOTHERAPEUTICS, INC. provided supplemental information: \"The following risk factor regarding the Company’s ability to continue as a going concern has been added. **“Our auditor has expressed substantial doubt as to our ability to continue as a going concern.** As we are a development stage biopharmaceutical company ...\" UNITED THERAPEUTICS Corp agreed to revise: \"...To address the Staff’s concerns, the Company will include a risk factor regarding these issues in future filings, beginning with the Company’s Annual Report on Form 10-K for the year ended December 31, 2020. * * * If you have any questions, please do not hesit...\""
+ },
+ {
+  "id": "C009",
+  "type": "compare",
+  "question": "Both INSMED Inc and NEUROCRINE BIOSCIENCES INC responded to SEC staff comments about revenue recognition. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "They took the same position. INSMED Inc defended its existing treatment: \"...sts of product revenues (excluding amortization) and (ii) milestone payments related to ARIKAYCE in its non-GAAP measure. Historically, this non-GAAP measure was calculated by subtracting non-cash components from the most directly comparable GAAP measure (...\" NEUROCRINE BIOSCIENCES INC defended its existing treatment: \"...arch and Development Agreements and under the heading 15. Revenue Recognition sufficiently address the requirements of ASC 808-10-50-1 and U.S. generally accepted accounting principles. Furthermore, the Company has filed copies of such collaboration agreeme...\""
+ },
+ {
+  "id": "C010",
+  "type": "compare",
+  "question": "Both ALNYLAM PHARMACEUTICALS, INC. and PTC THERAPEUTICS, INC. responded to SEC staff comments about revenue recognition. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "They took the same position. ALNYLAM PHARMACEUTICALS, INC. agreed to revise: \"Revenue recognized under the Regeneron collaboration is presented in net revenues from collaborations in the consolidated statements of operations and comprehensive loss and the associated deferred revenue is presented within deferred revenue and deferred reve...\" PTC THERAPEUTICS, INC. agreed to revise: \"...to provide disaggregated information by product pursuant to ASC 606-10-55-89 through 55-91. <u>The following paragraphs, with an updated footnote 13 “Revenue Recognition” for fiscal year ended December 31, 2020, reflects how PTC plans to enhance its disclosure...\""
+ },
+ {
+  "id": "C011",
+  "type": "compare",
+  "question": "Both ALNYLAM PHARMACEUTICALS, INC. and Jazz Pharmaceuticals plc responded to SEC staff comments about fair value. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "No, their positions differed. ALNYLAM PHARMACEUTICALS, INC. agreed to revise: \"...s of Series B redeemable convertible preferred stock with a fair value of $1.8 million. We were also given the right to acquire the remaining 50% exclusive rights, which right we exercised upon our acquisition of Ribopharma AG in July 2003. In consideration fo...\" Jazz Pharmaceuticals plc provided supplemental information: \"... options was decreased by a number of shares having a total fair value on the date of the net share settlement equal to the amount of the income tax withholdings paid. The $25.3 million of income tax withholdings paid was recorded as a reduction to additional ...\""
+ },
+ {
+  "id": "C012",
+  "type": "compare",
+  "question": "Both BIOMARIN PHARMACEUTICAL INC and REGENERON PHARMACEUTICALS, INC. responded to SEC staff comments about non-GAAP measures. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "No, their positions differed. BIOMARIN PHARMACEUTICAL INC agreed to revise: \"... its Reconciliation of Certain GAAP Reported Information to Non-GAAP Information in future filings to comply with Question 102.10 of the Commission’s # Non-GAAP Financial Measures Compliance and Disclosure Interpretations # (C&DI) . We have historically provid...\" REGENERON PHARMACEUTICALS, INC. provided supplemental information: \"The Company has described what its non-GAAP adjustments represent in its quarterly earnings releases furnished as exhibits to the Company's Current Reports on Form 8-K. As noted in the earnings release furnished as an exhibit to the Company's Current Report on...\""
+ },
+ {
+  "id": "C013",
+  "type": "compare",
+  "question": "Both INCYTE CORP and BIOMARIN PHARMACEUTICAL INC responded to SEC staff comments about non-GAAP measures. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "No, their positions differed. INCYTE CORP provided supplemental information: \"...mpany has reviewed the guidance noted within the Divisions Non-GAAP Financial Measures Compliance and Disclosure Interpretations (the Non-GAAP C&DIs). The Company believes that inclusion of adjustments for milestones received from new or existing partners a...\" BIOMARIN PHARMACEUTICAL INC agreed to revise: \"... its Reconciliation of Certain GAAP Reported Information to Non-GAAP Information in future filings to comply with Question 102.10 of the Commission’s # Non-GAAP Financial Measures Compliance and Disclosure Interpretations # (C&DI) . We have historically provid...\""
+ },
+ {
+  "id": "C014",
+  "type": "compare",
+  "question": "Both Sarepta Therapeutics, Inc. and VERTEX PHARMACEUTICALS INC / MA responded to SEC staff comments about internal control. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "No, their positions differed. Sarepta Therapeutics, Inc. provided supplemental information: \"...ear ended December 31, 2009 by expanding the definition of disclosure controls and procedures to clarify that the disclosure controls and procedures are also effective to ensure that information required to be disclosed by the Company in the reports it files...\" VERTEX PHARMACEUTICALS INC / MA agreed to revise: \"...reports, and how its risk oversight process aligns with its disclosure controls and procedures. * * * | Securities and Exchange Commission | - 3 - | September 26, 2022 | | --- | --- | --- | Please do not hesitate to call me at (617) 961-0518 with any questions...\""
+ },
+ {
+  "id": "C015",
+  "type": "compare",
+  "question": "Both VERTEX PHARMACEUTICALS INC / MA and AMGEN INC responded to SEC staff comments about income taxes. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "No, their positions differed. VERTEX PHARMACEUTICALS INC / MA agreed to revise: \"...rate reconciliation table primarily reflect a change in the valuation allowance on deferred tax assets related to the United States, Canada, Ireland and Switzerland. In 2012 and 2011, there was a favorable effect on the tax provision (benefit) in the tax rate ...\" AMGEN INC provided supplemental information: \"...pitalized and then expensed over time through depreciation. ASC 740-10-25-45 and ASC 740-10-25-46 indicate that two methods are acceptable for purposes of recognizing the income tax benefit associated with an investment tax credit; the tax provision benefit ma...\""
+ },
+ {
+  "id": "C016",
+  "type": "compare",
+  "question": "Both AMARIN CORP PLC\\UK and ARROWHEAD PHARMACEUTICALS, INC. responded to SEC staff comments about revenue recognition. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "No, their positions differed. AMARIN CORP PLC\\UK agreed to revise: \"... that the $154.0 million related to different categories of milestone payments as disclosed in the two distinct parts of the Form # 10-K, and such difference in disclosure was simply an unintended inconsistency in terminology. The Development, Commercializatio...\" ARROWHEAD PHARMACEUTICALS, INC. provided supplemental information: \"...ement of certain development milestones. The first of these milestone payments ($1,000,000) is for commencement of IND-enabling toxicity studies and is projected to be due during the second quarter of fiscal 2007. The second milestone payment ($3,000,000) is f...\""
+ },
+ {
+  "id": "C017",
+  "type": "compare",
+  "question": "Both INCYTE CORP and VERTEX PHARMACEUTICALS INC / MA responded to SEC staff comments about revenue recognition. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "They took the same position. INCYTE CORP agreed to revise: \"...ded September 30, 2012, we used the sell-through method for revenue recognition as we had limited historical data on product returns. Under the sell-through method, we deferred revenue until the patients received JAKAFI. In the three months ended September 30,...\" VERTEX PHARMACEUTICALS INC / MA agreed to revise: \"...e for these remaining obligations, management considers the milestone payment and the remaining obligations to be separate units of accounting. In these circumstances, the Company uses the residual method under Emerging Issues Task Force (EITF) Issue No. 00-21...\""
+ },
+ {
+  "id": "C018",
+  "type": "compare",
+  "question": "Both NOVAVAX INC and ARVINAS, INC. responded to SEC staff comments about liquidity and MD&A. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "They took the same position. NOVAVAX INC agreed to revise: \"...pany acknowledges the Staff’s comment and will include this contractual obligation in the contractual obligations table consistent with the disclosure contained on page 43 of the “Management’s Discussion and Analysis of Financial Condition and Results of Opera...\" ARVINAS, INC. agreed to revise: \"...gement’s Discussion and Analysis of Financial Condition and Results of Operations in the Company’s Annual Reports on Form 10-K and Quarterly Reports on Form 10-Q: “The following table summarizes our research and development expenses incurred during the years e...\""
+ },
+ {
+  "id": "C019",
+  "type": "compare",
+  "question": "Both Kymera Therapeutics, Inc. and INSMED Inc responded to SEC staff comments about revenue recognition. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "No, their positions differed. Kymera Therapeutics, Inc. agreed to revise: \"...beyond its lead development candidate KT-474, the potential milestone payments attributable to the Companys IRAK4 program under its collaboration with Sanofi described elsewhere in the S-1 Registration Statement; | | • | With respect to the Companys STAT3 pr...\" INSMED Inc defended its existing treatment: \"...sts of product revenues (excluding amortization) and (ii) milestone payments related to ARIKAYCE in its non-GAAP measure. Historically, this non-GAAP measure was calculated by subtracting non-cash components from the most directly comparable GAAP measure (...\""
+ },
+ {
+  "id": "C020",
+  "type": "compare",
+  "question": "Both NEUROCRINE BIOSCIENCES INC and Denali Therapeutics Inc. responded to SEC staff comments about revenue recognition. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "No, their positions differed. NEUROCRINE BIOSCIENCES INC defended its existing treatment: \"...arch and Development Agreements and under the heading 15. Revenue Recognition sufficiently address the requirements of ASC 808-10-50-1 and U.S. generally accepted accounting principles. Furthermore, the Company has filed copies of such collaboration agreeme...\" Denali Therapeutics Inc. provided supplemental information: \"... --- | | [*] | | As noted on page 160 of the Form 10-K, the transaction price at inception of the Takeda Collaboration Agreement in February 2018 included fixed consideration consisting of the upfront fee of $40.0 million, the $15.6 million premium on the sale...\""
+ },
+ {
+  "id": "C021",
+  "type": "compare",
+  "question": "Both AMGEN INC and Ultragenyx Pharmaceutical Inc. responded to SEC staff comments about liquidity and MD&A. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "No, their positions differed. AMGEN INC defended its treatment while agreeing to expand disclosure: \"...ces, and have reflected material drivers in compliance with Item 303(b)(2)(iii) of Regulation S-K in our filings. For example, in our 2023 ## 10-K MD&A, we disclosed that volume growth for certain brands, including Repatha®, TEZSPIRE®, EVENITY®, Prolia® and BL...\" Ultragenyx Pharmaceutical Inc. provided supplemental information: \"...gements Discussion and Analysis of Financial Condition and Results of Operations in the Companys future periodic reports, beginning with the Companys Quarterly Report on Form 10-Q for the three and six months ended June 30, 2024, that includes an additiona...\""
+ },
+ {
+  "id": "C022",
+  "type": "compare",
+  "question": "Both Sarepta Therapeutics, Inc. and HALOZYME THERAPEUTICS, INC. responded to SEC staff comments about research and development expense. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "They took the same position. Sarepta Therapeutics, Inc. agreed to revise: \"...isclose in its future filings its total external costs on a project-by-project basis for each period presented and its total internal research and development costs in the aggregate for all projects for each period presented. Prior to 2011, the Company did not...\" HALOZYME THERAPEUTICS, INC. agreed to revise: \"...ures in Note 2, Summary of Significant Accounting Policies, Research and Development Expenses as shown below (new text underlined and deleted text struck). The proposed disclosures are prepared as of September 30, 2013, the end of our last fiscal quarter, but ...\""
+ },
+ {
+  "id": "C023",
+  "type": "compare",
+  "question": "Both EXELIXIS, INC. and Ultragenyx Pharmaceutical Inc. responded to SEC staff comments about research and development expense. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "No, their positions differed. EXELIXIS, INC. agreed to revise: \"...intends to include additional disclosure under the heading Research and Development Expenses in Managements Discussion and Analysis of Financial Condition and Results of Operations in its future annual reports on Form 10-K and quarterly reports on Form 10-Q...\" Ultragenyx Pharmaceutical Inc. provided supplemental information: \"... level, the Company does not fully track and allocate total R&D expenses at the individual product candidate level. Specifically, the Company tracks costs to conduct clinical studies, including expenses incurred with clinical research organizations, direct man...\""
+ },
+ {
+  "id": "C024",
+  "type": "compare",
+  "question": "Both ARROWHEAD PHARMACEUTICALS, INC. and Beam Therapeutics Inc. responded to SEC staff comments about warrants and equity classification. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "No, their positions differed. ARROWHEAD PHARMACEUTICALS, INC. provided supplemental information: \"...tion and licensing arrangements on page 10 of the 10-K. The warrants for Calando (not Aonex) were issued at the formation of the Calando. There was no accounting entry necessary but we disclosed the impact that exercising the warrants would have upon Arrowhead...\" Beam Therapeutics Inc. agreed to revise: \"...ed the Registration Statement on pages 92 and 93 to exclude redeemable convertible stock of $298,786 in determining Historical net tangible book deficit per share of common stock at September 30, 2019 and to exclude the 3,043,669 shares of unvested restricte...\""
+ },
+ {
+  "id": "C025",
+  "type": "compare",
+  "question": "Both Immunovant, Inc. and Alkermes plc. responded to SEC staff comments about research and development expense. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "No, their positions differed. Immunovant, Inc. agreed to revise: \"...CIDP, and endocrine diseases, inclusive of TED and GD. Some R&D expenses are incurred and tracked at the indication level and other such expenses apply across multiple indications. For those expenses that are incurred across multiple indications, the Company a...\" Alkermes plc. defended its treatment while agreeing to expand disclosure: \"...cur material costs. The Company tracks significant external R&D expenses by program for internal reporting purposes. External R&D expenses include clinical and non-clinical activities performed by contract research organizations, consulting fees, laboratory se...\""
+ },
+ {
+  "id": "C026",
+  "type": "compare",
+  "question": "Both GILEAD SCIENCES, INC. and Sarepta Therapeutics, Inc. responded to SEC staff comments about internal control. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "No, their positions differed. GILEAD SCIENCES, INC. agreed to revise: \"...8 Form 10-K, we affirm that our officers concluded that our disclosure controls and procedures are effective to ensure that information required to be disclosed in the reports that we file or submit under the Exchange Act is accumulated and communicated to our...\" Sarepta Therapeutics, Inc. provided supplemental information: \"...ear ended December 31, 2009 by expanding the definition of disclosure controls and procedures to clarify that the disclosure controls and procedures are also effective to ensure that information required to be disclosed by the Company in the reports it files...\""
+ },
+ {
+  "id": "C027",
+  "type": "compare",
+  "question": "Both VERTEX PHARMACEUTICALS INC / MA and Kymera Therapeutics, Inc. responded to SEC staff comments about revenue recognition. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "They took the same position. VERTEX PHARMACEUTICALS INC / MA agreed to revise: \"...e for these remaining obligations, management considers the milestone payment and the remaining obligations to be separate units of accounting. In these circumstances, the Company uses the residual method under Emerging Issues Task Force (EITF) Issue No. 00-21...\" Kymera Therapeutics, Inc. agreed to revise: \"...beyond its lead development candidate KT-474, the potential milestone payments attributable to the Companys IRAK4 program under its collaboration with Sanofi described elsewhere in the S-1 Registration Statement; | | • | With respect to the Companys STAT3 pr...\""
+ },
+ {
+  "id": "C028",
+  "type": "compare",
+  "question": "Both HALOZYME THERAPEUTICS, INC. and Immunovant, Inc. responded to SEC staff comments about research and development expense. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "They took the same position. HALOZYME THERAPEUTICS, INC. agreed to revise: \"...ures in Note 2, Summary of Significant Accounting Policies, Research and Development Expenses as shown below (new text underlined and deleted text struck). The proposed disclosures are prepared as of September 30, 2013, the end of our last fiscal quarter, but ...\" Immunovant, Inc. agreed to revise: \"...CIDP, and endocrine diseases, inclusive of TED and GD. Some R&D expenses are incurred and tracked at the indication level and other such expenses apply across multiple indications. For those expenses that are incurred across multiple indications, the Company a...\""
+ },
+ {
+  "id": "C029",
+  "type": "compare",
+  "question": "Both UNITED THERAPEUTICS Corp and ALNYLAM PHARMACEUTICALS, INC. responded to SEC staff comments about revenue recognition. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "No, their positions differed. UNITED THERAPEUTICS Corp provided supplemental information: \"...e 20 (4) $2.0 million upon marketing approval in Japan. Our revenue recognition policy for all non-refundable upfront license and distribution rights fees and milestone arrangements are in accordance with the guidance provided in the Commissions Staff Account...\" ALNYLAM PHARMACEUTICALS, INC. agreed to revise: \"Revenue recognized under the Regeneron collaboration is presented in net revenues from collaborations in the consolidated statements of operations and comprehensive loss and the associated deferred revenue is presented within deferred revenue and deferred reve...\""
+ },
+ {
+  "id": "C030",
+  "type": "compare",
+  "question": "Both NEUROCRINE BIOSCIENCES INC and Kymera Therapeutics, Inc. responded to SEC staff comments about revenue recognition. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "No, their positions differed. NEUROCRINE BIOSCIENCES INC defended its existing treatment: \"...arch and Development Agreements and under the heading 15. Revenue Recognition sufficiently address the requirements of ASC 808-10-50-1 and U.S. generally accepted accounting principles. Furthermore, the Company has filed copies of such collaboration agreeme...\" Kymera Therapeutics, Inc. agreed to revise: \"...beyond its lead development candidate KT-474, the potential milestone payments attributable to the Companys IRAK4 program under its collaboration with Sanofi described elsewhere in the S-1 Registration Statement; | | • | With respect to the Companys STAT3 pr...\""
+ },
+ {
+  "id": "C031",
+  "type": "compare",
+  "question": "Both Alkermes plc. and ARVINAS, INC. responded to SEC staff comments about fair value. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "No, their positions differed. Alkermes plc. provided supplemental information: \"...ed and liabilities assumed be recognized at their estimated fair values as of the acquisition date, and that the fair value of acquired in-process research and development be recorded on the balance sheet. Also, transaction costs are expensed as incurred. Any ...\" ARVINAS, INC. agreed to revise: \"... the Registration Statement to correct the weighted-average fair value of incentive units from $2.17 per unit to $1.40 per unit. The correct weighted-average fair value of the incentive units is $1.40 per unit. The $2.17 per unit number represents the fair val...\""
+ },
+ {
+  "id": "C032",
+  "type": "compare",
+  "question": "Both Jazz Pharmaceuticals plc and REGENERON PHARMACEUTICALS, INC. responded to SEC staff comments about executive compensation. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "No, their positions differed. Jazz Pharmaceuticals plc provided supplemental information: \"...gy for determining potential bonus awards for the Companys named executive officers for 2009. Please note that this draft disclosure was prepared on the basis of a number assumptions, including, without limitation: that the Companys named executive officers ...\" REGENERON PHARMACEUTICALS, INC. defended its existing treatment: \"...most recent CD&A the impact of our share repurchases on our executive compensation levels in 2019 because we do not believe our repurchases had a material impact on our executive compensation levels in 2019. Therefore, we do not believe that a discussion of th...\""
+ },
+ {
+  "id": "C033",
+  "type": "compare",
+  "question": "Both Ultragenyx Pharmaceutical Inc. and Revolution Medicines, Inc. responded to SEC staff comments about research and development expense. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "No, their positions differed. Ultragenyx Pharmaceutical Inc. provided supplemental information: \"... level, the Company does not fully track and allocate total R&D expenses at the individual product candidate level. Specifically, the Company tracks costs to conduct clinical studies, including expenses incurred with clinical research organizations, direct man...\" Revolution Medicines, Inc. agreed to revise: \"... quantitative and qualitative disclosures as to the type of research and development expenses, for each period presented. We hope that the foregoing has been responsive to the Staffs comment. Please do not hesitate to contact me by telephone at (650) 463-3043...\""
+ },
+ {
+  "id": "C034",
+  "type": "compare",
+  "question": "Both Immunovant, Inc. and REGENERON PHARMACEUTICALS, INC. responded to SEC staff comments about risk factors. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "No, their positions differed. Immunovant, Inc. agreed to revise: \"... been revised in accordance with the Staff’s comments and a risk factor has been added on page 70 of the Amended Preliminary Proxy Statement in accordance with the Staff’s comments. | Jeffrey Gabor November 5, 2019 Page 6 | | --- | # Immunovant Sciences Ltd.’s...\" REGENERON PHARMACEUTICALS, INC. provided supplemental information: \"...er revenue, as applicable. In addition, as noted in Part I. Item 1A. \"Risk Factors\" and Part II. Item 7. \"Management's Discussion and Analysis of Financial Condition and Results of Operations\" of the 2023 Form 10-K, the Company is substantially dependent on th...\""
+ },
+ {
+  "id": "C035",
+  "type": "compare",
+  "question": "Both Allogene Therapeutics, Inc. and ALNYLAM PHARMACEUTICALS, INC. responded to SEC staff comments about fair value. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "They took the same position. Allogene Therapeutics, Inc. agreed to revise: \"The Company elected the fair value option to account for the 2018 Notes. The Company determined that the 2018 Notes are eligible for the fair value option under ASC 815-15-25-4, and as part of the eligibility assessment, the Company considered if the 2018 Note...\" ALNYLAM PHARMACEUTICALS, INC. agreed to revise: \"...s of Series B redeemable convertible preferred stock with a fair value of $1.8 million. We were also given the right to acquire the remaining 50% exclusive rights, which right we exercised upon our acquisition of Ribopharma AG in July 2003. In consideration fo...\""
+ },
+ {
+  "id": "C036",
+  "type": "compare",
+  "question": "Both Alkermes plc. and PTC THERAPEUTICS, INC. responded to SEC staff comments about income taxes. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "No, their positions differed. Alkermes plc. provided supplemental information: \"...erent from the Irish statutory rate; and the Company having valuation allowances recorded against certain deferred tax assets. Other than these two items, there are no significant underlying causes for difference. Notwithstanding this, the Company discloses ad...\" PTC THERAPEUTICS, INC. defended its existing treatment: \"...st the future taxable profit of the acquiree and reduce its valuation allowance based on the weight of available evidence. This should be accounted for as an event separate from the business combination; recognized as an element of the acquirers deferred inco...\""
+ },
+ {
+  "id": "C037",
+  "type": "compare",
+  "question": "Both BIOMARIN PHARMACEUTICAL INC and VERTEX PHARMACEUTICALS INC / MA responded to SEC staff comments about income taxes. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "No, their positions differed. BIOMARIN PHARMACEUTICAL INC provided supplemental information: \"...to support the realization of the majority of the Companys deferred tax assets. The following is a summary of the significant positive, neutral and negative evidence evaluated in making this determination: ## Positive Evidence: | a) | Cumulative earnings hist...\" VERTEX PHARMACEUTICALS INC / MA agreed to revise: \"...rate reconciliation table primarily reflect a change in the valuation allowance on deferred tax assets related to the United States, Canada, Ireland and Switzerland. In 2012 and 2011, there was a favorable effect on the tax provision (benefit) in the tax rate ...\""
+ },
+ {
+  "id": "C038",
+  "type": "compare",
+  "question": "Both INCYTE CORP and NEUROCRINE BIOSCIENCES INC responded to SEC staff comments about clinical and pipeline disclosure. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "They took the same position. INCYTE CORP agreed to revise: \"...ring our drug candidates that have progressed into at least Phase II clinical trials:</u> | Drug Candidate (Target) | Status of United States Patent Estate (Earliest Anticipated Expirations, Subject to Potential Extensions and Payment of Maintenance Fees) | St...\" NEUROCRINE BIOSCIENCES INC agreed to revise: \"...specifically, since 2017 the Company’s clinical development pipeline has expanded from 3 to 12 clinical development programs. To manage its expanded clinical development pipeline and enterprise risk profile, the Company takes a portfolio approach that balances...\""
+ },
+ {
+  "id": "C039",
+  "type": "compare",
+  "question": "Both Ultragenyx Pharmaceutical Inc. and REGENERON PHARMACEUTICALS, INC. responded to SEC staff comments about liquidity and MD&A. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "No, their positions differed. Ultragenyx Pharmaceutical Inc. provided supplemental information: \"...gements Discussion and Analysis of Financial Condition and Results of Operations in the Companys future periodic reports, beginning with the Companys Quarterly Report on Form 10-Q for the three and six months ended June 30, 2024, that includes an additiona...\" REGENERON PHARMACEUTICALS, INC. defended its treatment while agreeing to expand disclosure: \"We believe the existing disclosure contained in Part I, Item 1. \"Business - Collaboration, License, and Other Agreements - Sanofi - Antibody\" of the 2023 Form 10-K ( which is also included in Note 3 on page F-17) describes the key terms governing our contingen...\""
+ },
+ {
+  "id": "C040",
+  "type": "compare",
+  "question": "Both TG THERAPEUTICS, INC. and HALOZYME THERAPEUTICS, INC. responded to SEC staff comments about clinical and pipeline disclosure. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "No, their positions differed. TG THERAPEUTICS, INC. provided supplemental information: \"...e on the development and commercialization of Rhizen’s lead product candidate (the “Collaboration Agreement”), a novel P13K delta inhibitor, (“TGR-1202”) (previously referred to as RP5264). The companies will jointly develop the product on a world\" HALOZYME THERAPEUTICS, INC. defended its existing treatment: \"...Financial Condition and Results of Operations – Product and Product Candidates, Baxter Gammagard Partnership, as follows: On August 1, 2012, we announced that the Center for Biologics Evaluation and Research (CBER) of the U.S. Food and Drug Administration (FD...\""
+ },
+ {
+  "id": "C041",
+  "type": "compare",
+  "question": "Both Alkermes plc. and NOVAVAX INC responded to SEC staff comments about liquidity and MD&A. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "No, their positions differed. Alkermes plc. defended its treatment while agreeing to expand disclosure: \"...the Research and Development Expense analysis within the Results of Operations section of its Managements Discussion and Analysis of Financial Condition and Results of Operations in applicable future annual reports beginning with its Annual Report on Fo...\" NOVAVAX INC agreed to revise: \"...pany acknowledges the Staff’s comment and will include this contractual obligation in the contractual obligations table consistent with the disclosure contained on page 43 of the “Management’s Discussion and Analysis of Financial Condition and Results of Opera...\""
+ },
+ {
+  "id": "C042",
+  "type": "compare",
+  "question": "Both ALNYLAM PHARMACEUTICALS, INC. and BIOMARIN PHARMACEUTICAL INC responded to SEC staff comments about warrants and equity classification. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "No, their positions differed. ALNYLAM PHARMACEUTICALS, INC. agreed to revise: \"...0b8504001.gif) Page 2 Innovation 723,240 shares of Series B redeemable convertible preferred stock with a fair value of $1.8 million. We were also given the right to acquire the remaining 50% exclusive rights, which right we exercised upon our acquisition of R...\" BIOMARIN PHARMACEUTICAL INC provided supplemental information: \"...this provision is consistent with Example 17 illustrated in ASC 815-10-65-3. The adjustment to the conversion rate is based upon a mathematical calculation that determines the direct effect that such dilutive events would have on the price of the underlying sh...\""
+ },
+ {
+  "id": "C043",
+  "type": "compare",
+  "question": "Both ARVINAS, INC. and ALNYLAM PHARMACEUTICALS, INC. responded to SEC staff comments about research and development expense. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "No, their positions differed. ARVINAS, INC. agreed to revise: \"...y Reports on Form 10-Q: “The following table summarizes our research and development expenses incurred during the years ended December 31, 2024, 2023 and 2022: | (dollars in millions) | 2024 | | 2023 | | 2022 | | | --- | --- | --- | --- | --- | --- | --- | | P...\" ALNYLAM PHARMACEUTICALS, INC. provided supplemental information: \"...of cemdisiran in the third phase of clinical development. • Research and Development Expense – The Company estimated research and development expenses based on the expected costs to be incurred to complete the clinical development process and any open label ex...\""
+ },
+ {
+  "id": "C044",
+  "type": "compare",
+  "question": "Both TG THERAPEUTICS, INC. and ALNYLAM PHARMACEUTICALS, INC. responded to SEC staff comments about warrants and equity classification. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "No, their positions differed. TG THERAPEUTICS, INC. provided supplemental information: \"...terest in the Joint Venture (the \"Put Right\"), and Nordic’s warrant to purchase our common stock (the \"Warrant”). The Settlement and Release Agreement resolved all disputes between Manhattan, on the one hand, and Nordic and the Joint Venture, on the other. # T...\" ALNYLAM PHARMACEUTICALS, INC. agreed to revise: \"...0b8504001.gif) Page 2 Innovation 723,240 shares of Series B redeemable convertible preferred stock with a fair value of $1.8 million. We were also given the right to acquire the remaining 50% exclusive rights, which right we exercised upon our acquisition of R...\""
+ },
+ {
+  "id": "C045",
+  "type": "compare",
+  "question": "Both Kymera Therapeutics, Inc. and AMGEN INC responded to SEC staff comments about liquidity and MD&A. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "No, their positions differed. Kymera Therapeutics, Inc. agreed to revise: \"...gements Discussion and Analysis of Financial Condition and Results of Operations; | | • | With respect to the Companys lead development candidate KT-474 under its IRAK4 program, the current expectation that the Company will move forward with Phase 1 and Pha...\" AMGEN INC defended its treatment while agreeing to expand disclosure: \"...ces, and have reflected material drivers in compliance with Item 303(b)(2)(iii) of Regulation S-K in our filings. For example, in our 2023 ## 10-K MD&A, we disclosed that volume growth for certain brands, including Repatha®, TEZSPIRE®, EVENITY®, Prolia® and BL...\""
+ },
+ {
+  "id": "C046",
+  "type": "compare",
+  "question": "Both GILEAD SCIENCES, INC. and ALNYLAM PHARMACEUTICALS, INC. responded to SEC staff comments about revenue recognition. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "No, their positions differed. GILEAD SCIENCES, INC. provided supplemental information: \"... following substantially similar disclosure changes to the Revenue Recognition  section in Critical Accounting Policies, Estimates and Judgments (refer to pages 32-33 of our 2005 Form 10-K) beginning with our Form 10-K for the year ending December 31, 2006. ...\" ALNYLAM PHARMACEUTICALS, INC. agreed to revise: \"Revenue recognized under the Regeneron collaboration is presented in net revenues from collaborations in the consolidated statements of operations and comprehensive loss and the associated deferred revenue is presented within deferred revenue and deferred reve...\""
+ },
+ {
+  "id": "C047",
+  "type": "compare",
+  "question": "Both NOVAVAX INC and Jazz Pharmaceuticals plc responded to SEC staff comments about executive compensation. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "No, their positions differed. NOVAVAX INC agreed to revise: \"...ng additional disclosure regarding individual goals for the named executive officers. Below is a copy of such additional disclosure: | In addition, each officer has additional individual goals to support the 2007 Objectives or to further the Companys strategi...\" Jazz Pharmaceuticals plc provided supplemental information: \"...gy for determining potential bonus awards for the Companys named executive officers for 2009. Please note that this draft disclosure was prepared on the basis of a number assumptions, including, without limitation: that the Companys named executive officers ...\""
+ },
+ {
+  "id": "C048",
+  "type": "compare",
+  "question": "Both BIOGEN INC. and INSMED Inc responded to SEC staff comments about non-GAAP measures. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "No, their positions differed. BIOGEN INC. provided supplemental information: \"...three major categories of the statements of cash flows with equal or greater prominence in accordance with Item 10(e)(1)(i)(a) of Regulation S-K and Question 102.06 of the Non-GAAP Financial Measures Compliance and Disclosure Interpretations. Please also addre...\" INSMED Inc defended its existing treatment: \"...t and has considered the guidance in Question 100.01 of the Non-GAAP Compliance and Disclosure Interpretations with respect to the adjustments for (i) costs of product revenues (excluding amortization) and (ii) milestone payments related to ARIKAYCE in its...\""
+ },
+ {
+  "id": "C049",
+  "type": "compare",
+  "question": "Both VERTEX PHARMACEUTICALS INC / MA and BIOMARIN PHARMACEUTICAL INC responded to SEC staff comments about non-GAAP measures. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "No, their positions differed. VERTEX PHARMACEUTICALS INC / MA provided supplemental information: \"...al Officer | <u>Exhibit A</u> ### Reconciliation of GAAP to Non-GAAP Financial Information (in thousands, except per share amounts) (unaudited) | Three Months Ended March 31, 2012 | GAAP | | | Adjustments | | | Stock-based Compensation Expense | | September 20...\" BIOMARIN PHARMACEUTICAL INC agreed to revise: \"... its Reconciliation of Certain GAAP Reported Information to Non-GAAP Information in future filings to comply with Question 102.10 of the Commission’s # Non-GAAP Financial Measures Compliance and Disclosure Interpretations # (C&DI) . We have historically provid...\""
+ },
+ {
+  "id": "C050",
+  "type": "compare",
+  "question": "Both NOVAVAX INC and INCYTE CORP responded to SEC staff comments about revenue recognition. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "No, their positions differed. NOVAVAX INC provided supplemental information: \"...ides for payments based on annual license maintenance fees, milestone payments and royalties on product sales, and that the aggregate payments under the agreement in 2008 could reach certain amounts, depending on the achievement of clinical development milesto...\" INCYTE CORP agreed to revise: \"...ded September 30, 2012, we used the sell-through method for revenue recognition as we had limited historical data on product returns. Under the sell-through method, we deferred revenue until the patients received JAKAFI. In the three months ended September 30,...\""
+ },
+ {
+  "id": "C051",
+  "type": "compare",
+  "question": "Both IOVANCE BIOTHERAPEUTICS, INC. and AMARIN CORP PLC\\UK responded to SEC staff comments about research and development expense. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "They took the same position. IOVANCE BIOTHERAPEUTICS, INC. agreed to revise: \"...mment and advises the Staff that the Company does not track research and development expenses by each individual product candidate, program, or indication. However, the Company does track direct research and development expenses by product categories, as set f...\" AMARIN CORP PLC\\UK agreed to revise: \"The Company acknowledges the Staffs comment and confirms that it will correct the inconsistency in future filings, in a manner consistent with the Staffs comment. It was not the Companys intent to imply that the $154.0 million related to different categorie...\""
+ },
+ {
+  "id": "C052",
+  "type": "compare",
+  "question": "Both INCYTE CORP and VERTEX PHARMACEUTICALS INC / MA responded to SEC staff comments about executive compensation. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "No, their positions differed. INCYTE CORP provided supplemental information: \"...ingly, the Company concluded that disclosure in response to Item 402(s) of Regulation S-K was not necessary. In making this determination, as part of its annual executive compensation process, the Compensation Committee of the Companys Board of Directors, in ...\" VERTEX PHARMACEUTICALS INC / MA defended its treatment while agreeing to expand disclosure: \"...s and maintain plans that will require us to provide to our named executive officers under specified circumstances cash compensation, benefits and/or acceleration of the vesting of equity awards in the event of termination of employment. The terms of these agr...\""
+ },
+ {
+  "id": "C053",
+  "type": "compare",
+  "question": "Both Sarepta Therapeutics, Inc. and Immunovant, Inc. responded to SEC staff comments about liquidity and MD&A. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "They took the same position. Sarepta Therapeutics, Inc. agreed to revise: \"In response to the Staffs comment 5, the Company will disclose in its future filings its total external costs on a project-by-project basis for each period presented and its total internal research and development costs in the aggregate for all projects for e...\" Immunovant, Inc. agreed to revise: \"The Company acknowledges the Staff’s comment and respectfully advises the Staff that it organizes its research and development (“R&D”) programs by therapeutic area, rather than by the specific disease indications. Currently, the Company’s development programs ...\""
+ },
+ {
+  "id": "C054",
+  "type": "compare",
+  "question": "Both INCYTE CORP and Immunovant, Inc. responded to SEC staff comments about research and development expense. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "No, their positions differed. INCYTE CORP provided supplemental information: \"...ses are different in nature from product revenues and other research and development expenses.* Collaborative agreement milestones represent compensation for entrance and participation in established development programs that may not be indicative of the value...\" Immunovant, Inc. agreed to revise: \"...CIDP, and endocrine diseases, inclusive of TED and GD. Some R&D expenses are incurred and tracked at the indication level and other such expenses apply across multiple indications. For those expenses that are incurred across multiple indications, the Company a...\""
+ },
+ {
+  "id": "C055",
+  "type": "compare",
+  "question": "Both Kymera Therapeutics, Inc. and NEUROCRINE BIOSCIENCES INC responded to SEC staff comments about liquidity and MD&A. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "No, their positions differed. Kymera Therapeutics, Inc. agreed to revise: \"...gements Discussion and Analysis of Financial Condition and Results of Operations; | | • | With respect to the Companys lead development candidate KT-474 under its IRAK4 program, the current expectation that the Company will move forward with Phase 1 and Pha...\" NEUROCRINE BIOSCIENCES INC defended its existing treatment: \"The Company acknowledges the Staffs comment and respectfully submits that the administrative expenses and corporate costs disclosed on page 55 of the 10-K consist of salaries, payroll taxes, employee benefits and equity compensation charges for Company employ...\""
+ },
+ {
+  "id": "C056",
+  "type": "compare",
+  "question": "Both Revolution Medicines, Inc. and ALNYLAM PHARMACEUTICALS, INC. responded to SEC staff comments about research and development expense. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "No, their positions differed. Revolution Medicines, Inc. agreed to revise: \"... quantitative and qualitative disclosures as to the type of research and development expenses, for each period presented. We hope that the foregoing has been responsive to the Staffs comment. Please do not hesitate to contact me by telephone at (650) 463-3043...\" ALNYLAM PHARMACEUTICALS, INC. provided supplemental information: \"...of cemdisiran in the third phase of clinical development. • Research and Development Expense – The Company estimated research and development expenses based on the expected costs to be incurred to complete the clinical development process and any open label ex...\""
+ },
+ {
+  "id": "C057",
+  "type": "compare",
+  "question": "Both IOVANCE BIOTHERAPEUTICS, INC. and VERTEX PHARMACEUTICALS INC / MA responded to SEC staff comments about executive compensation. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "No, their positions differed. IOVANCE BIOTHERAPEUTICS, INC. agreed to revise: \"The Company undertakes to include a summary compensation table and outstanding equity awards table in future filings. In connection with the foregoing response and Pre-effective Amendment No. 2 as filed, the Company and its management acknowledge that they are...\" VERTEX PHARMACEUTICALS INC / MA defended its treatment while agreeing to expand disclosure: \"...s and maintain plans that will require us to provide to our named executive officers under specified circumstances cash compensation, benefits and/or acceleration of the vesting of equity awards in the event of termination of employment. The terms of these agr...\""
+ },
+ {
+  "id": "C058",
+  "type": "compare",
+  "question": "Both UNITED THERAPEUTICS Corp and INSMED Inc responded to SEC staff comments about revenue recognition. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "No, their positions differed. UNITED THERAPEUTICS Corp provided supplemental information: \"...e 20 (4) $2.0 million upon marketing approval in Japan. Our revenue recognition policy for all non-refundable upfront license and distribution rights fees and milestone arrangements are in accordance with the guidance provided in the Commissions Staff Account...\" INSMED Inc defended its existing treatment: \"...sts of product revenues (excluding amortization) and (ii) milestone payments related to ARIKAYCE in its non-GAAP measure. Historically, this non-GAAP measure was calculated by subtracting non-cash components from the most directly comparable GAAP measure (...\""
+ },
+ {
+  "id": "C059",
+  "type": "compare",
+  "question": "Both GILEAD SCIENCES, INC. and Alkermes plc. responded to SEC staff comments about income taxes. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "No, their positions differed. GILEAD SCIENCES, INC. agreed to revise: \"...owances | | 27,491 | | 114,810 | | 109,067 | | 33,234 | | | Valuation allowance for deferred tax assets | | 33,349 | | — | | 33,349 | | — | | | Year ended December 31, 2004: | | | | | | | | | | | Government rebates allowances | | | | | | | | | | | Activity rel...\" Alkermes plc. provided supplemental information: \"...erent from the Irish statutory rate; and the Company having valuation allowances recorded against certain deferred tax assets. Other than these two items, there are no significant underlying causes for difference. Notwithstanding this, the Company discloses ad...\""
+ },
+ {
+  "id": "C060",
+  "type": "compare",
+  "question": "Both Alkermes plc. and ARROWHEAD PHARMACEUTICALS, INC. responded to SEC staff comments about clinical and pipeline disclosure. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "No, their positions differed. Alkermes plc. defended its treatment while agreeing to expand disclosure: \"...) programs. The Companys Key Development Programs include product candidates in phase 3 of clinical development and may also include product candidates in phases 1 and 2 of development. They may also include product candidates that incorporate the Companys ...\" ARROWHEAD PHARMACEUTICALS, INC. provided supplemental information: \"... March 15, 2007 ### Page 13 | documents to the FDA to begin Phase II clinical trials and the filing of a second IND with the FDA for a new therapeutic, and is projected to be due during the third quarter of fiscal 2008. | | --- | | (2) | Under its Agreement to...\""
+ },
+ {
+  "id": "C061",
+  "type": "compare",
+  "question": "Both PTC THERAPEUTICS, INC. and NEUROCRINE BIOSCIENCES INC responded to SEC staff comments about business combinations and IPR&D. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "No, their positions differed. PTC THERAPEUTICS, INC. defended its existing treatment: \"# The Company acknowledges the guidance in ASC 805-740-30-3 which notes that an acquirer may be able to utilize the benefit of its tax operating loss carryforwards against the future taxable profit of the acquiree and reduce its valuation allowance based on th...\" NEUROCRINE BIOSCIENCES INC provided supplemental information: \"...e of achievement or have been achieved and (ii) amounts for in-process research and development once significant collaboration and licensing arrangements have been completed. In acknowledgement of conversations with the Staff, the Company advises the Staff tha...\""
+ },
+ {
+  "id": "C062",
+  "type": "compare",
+  "question": "Both AMARIN CORP PLC\\UK and Sarepta Therapeutics, Inc. responded to SEC staff comments about research and development expense. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "They took the same position. AMARIN CORP PLC\\UK agreed to revise: \"The Company acknowledges the Staffs comment and confirms that it will correct the inconsistency in future filings, in a manner consistent with the Staffs comment. It was not the Companys intent to imply that the $154.0 million related to different categorie...\" Sarepta Therapeutics, Inc. agreed to revise: \"...isclose in its future filings its total external costs on a project-by-project basis for each period presented and its total internal research and development costs in the aggregate for all projects for each period presented. Prior to 2011, the Company did not...\""
+ },
+ {
+  "id": "C063",
+  "type": "compare",
+  "question": "Both PTC THERAPEUTICS, INC. and VERTEX PHARMACEUTICALS INC / MA responded to SEC staff comments about income taxes. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "No, their positions differed. PTC THERAPEUTICS, INC. defended its existing treatment: \"...st the future taxable profit of the acquiree and reduce its valuation allowance based on the weight of available evidence. This should be accounted for as an event separate from the business combination; recognized as an element of the acquirers deferred inco...\" VERTEX PHARMACEUTICALS INC / MA agreed to revise: \"...rate reconciliation table primarily reflect a change in the valuation allowance on deferred tax assets related to the United States, Canada, Ireland and Switzerland. In 2012 and 2011, there was a favorable effect on the tax provision (benefit) in the tax rate ...\""
+ },
+ {
+  "id": "C064",
+  "type": "compare",
+  "question": "Both Kymera Therapeutics, Inc. and Immunovant, Inc. responded to SEC staff comments about risk factors. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "They took the same position. Kymera Therapeutics, Inc. agreed to revise: \"The Company respectfully advises the Staff that it has revised the disclosure on page 46 of the Amended Registration Statement in response to the Staffs comment to clarify that the Company would be able to use and enforce its trademark and trade name in the U...\" Immunovant, Inc. agreed to revise: \"... been revised in accordance with the Staff’s comments and a risk factor has been added on page 70 of the Amended Preliminary Proxy Statement in accordance with the Staff’s comments. | Jeffrey Gabor November 5, 2019 Page 6 | | --- | # Immunovant Sciences Ltd.’s...\""
+ },
+ {
+  "id": "C065",
+  "type": "compare",
+  "question": "Both INSMED Inc and AMGEN INC responded to SEC staff comments about liquidity and MD&A. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "No, their positions differed. INSMED Inc provided supplemental information: \"We propose to amend the 10-K in response to your comment by deleting the last paragraph of the Overview section on page 35 and replacing it with the following description of Insmeds Research and Development Activities: Research and Development Activities We a...\" AMGEN INC defended its treatment while agreeing to expand disclosure: \"...ces, and have reflected material drivers in compliance with Item 303(b)(2)(iii) of Regulation S-K in our filings. For example, in our 2023 ## 10-K MD&A, we disclosed that volume growth for certain brands, including Repatha®, TEZSPIRE®, EVENITY®, Prolia® and BL...\""
+ },
+ {
+  "id": "C066",
+  "type": "compare",
+  "question": "Both INSMED Inc and IOVANCE BIOTHERAPEUTICS, INC. responded to SEC staff comments about research and development expense. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "No, their positions differed. INSMED Inc provided supplemental information: \"...illion in the years ended December 31, 2002, 2003 and 2004. Research and development expenses consist primarily of salaries and related expenses, costs to develop and manufacture products and amounts paid to contract research organizations, hospitals and labor...\" IOVANCE BIOTHERAPEUTICS, INC. agreed to revise: \"...mment and advises the Staff that the Company does not track research and development expenses by each individual product candidate, program, or indication. However, the Company does track direct research and development expenses by product categories, as set f...\""
+ },
+ {
+  "id": "C067",
+  "type": "compare",
+  "question": "Both BIOMARIN PHARMACEUTICAL INC and BIOGEN INC. responded to SEC staff comments about non-GAAP measures. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "No, their positions differed. BIOMARIN PHARMACEUTICAL INC agreed to revise: \"... its Reconciliation of Certain GAAP Reported Information to Non-GAAP Information in future filings to comply with Question 102.10 of the Commission’s # Non-GAAP Financial Measures Compliance and Disclosure Interpretations # (C&DI) . We have historically provid...\" BIOGEN INC. provided supplemental information: \"...three major categories of the statements of cash flows with equal or greater prominence in accordance with Item 10(e)(1)(i)(a) of Regulation S-K and Question 102.06 of the Non-GAAP Financial Measures Compliance and Disclosure Interpretations. Please also addre...\""
+ },
+ {
+  "id": "C068",
+  "type": "compare",
+  "question": "Both GILEAD SCIENCES, INC. and Beam Therapeutics Inc. responded to SEC staff comments about warrants and equity classification. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "No, their positions differed. GILEAD SCIENCES, INC. provided supplemental information: \"...ch provisions do not exist with respect to the 16.9 million warrants we issued pursuant to our April 2006 convertible senior notes transaction. Specifically, the terms of those warrants allow for settlement of the contract in cash or shares (physical settlemen...\" Beam Therapeutics Inc. agreed to revise: \"...ed the Registration Statement on pages 92 and 93 to exclude redeemable convertible stock of $298,786 in determining Historical net tangible book deficit per share of common stock at September 30, 2019 and to exclude the 3,043,669 shares of unvested restricte...\""
+ },
+ {
+  "id": "C069",
+  "type": "compare",
+  "question": "Both Jazz Pharmaceuticals plc and ARROWHEAD PHARMACEUTICALS, INC. responded to SEC staff comments about revenue recognition. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "No, their positions differed. Jazz Pharmaceuticals plc defended its treatment while agreeing to expand disclosure: \"... 6 of Statement of Financial Accounting Standards No. 48,  Revenue Recognition When Right of Return Exists , or Statement No. 48, to determine when and how to recognize revenue on product shipped with the right of return. The return policies and particular c...\" ARROWHEAD PHARMACEUTICALS, INC. provided supplemental information: \"...ement of certain development milestones. The first of these milestone payments ($1,000,000) is for commencement of IND-enabling toxicity studies and is projected to be due during the second quarter of fiscal 2007. The second milestone payment ($3,000,000) is f...\""
+ },
+ {
+  "id": "C070",
+  "type": "compare",
+  "question": "Both INCYTE CORP and INSMED Inc responded to SEC staff comments about non-GAAP measures. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "No, their positions differed. INCYTE CORP provided supplemental information: \"...mpany has reviewed the guidance noted within the Divisions Non-GAAP Financial Measures Compliance and Disclosure Interpretations (the Non-GAAP C&DIs). The Company believes that inclusion of adjustments for milestones received from new or existing partners a...\" INSMED Inc defended its existing treatment: \"...t and has considered the guidance in Question 100.01 of the Non-GAAP Compliance and Disclosure Interpretations with respect to the adjustments for (i) costs of product revenues (excluding amortization) and (ii) milestone payments related to ARIKAYCE in its...\""
+ },
+ {
+  "id": "C071",
+  "type": "compare",
+  "question": "Both REGENERON PHARMACEUTICALS, INC. and AMARIN CORP PLC\\UK responded to SEC staff comments about revenue recognition. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "They took the same position. REGENERON PHARMACEUTICALS, INC. agreed to revise: \"In considering the accounting for the increase in reimbursement percentage from 10% to 20%, we note that this modification to the Antibody LCA was negotiated and entered into in connection and concurrently with the July 1, 2022 Amended and Restated Immuno-onco...\" AMARIN CORP PLC\\UK agreed to revise: \"... that the $154.0 million related to different categories of milestone payments as disclosed in the two distinct parts of the Form # 10-K, and such difference in disclosure was simply an unintended inconsistency in terminology. The Development, Commercializatio...\""
+ },
+ {
+  "id": "C072",
+  "type": "compare",
+  "question": "Both INCYTE CORP and IOVANCE BIOTHERAPEUTICS, INC. responded to SEC staff comments about liquidity and MD&A. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "They took the same position. INCYTE CORP agreed to revise: \"We confirm that JAKAFI product revenues are recorded net of an allowance for product returns, which has been de minimis to date. Our proposed revised disclosure for the three and nine months ended September 30, 2012 and 2011 is below, and we represent that our...\" IOVANCE BIOTHERAPEUTICS, INC. agreed to revise: \"...gement’s Discussion and Analysis of Financial Condition and Results of Operations” in each of its periodic reports, beginning with the Form 10-K that the Company will file for the fiscal year ended December 31, 2023: “We separate our research and development e...\""
+ },
+ {
+  "id": "C073",
+  "type": "compare",
+  "question": "Both ARVINAS, INC. and Jazz Pharmaceuticals plc responded to SEC staff comments about clinical and pipeline disclosure. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "No, their positions differed. ARVINAS, INC. agreed to revise: \"...he foreseeable future as we continue to conduct our ongoing clinical trials for vepdegestrant (ARV-471), ARV-766 and the initiation of clinical trials for ARV-393 and ARV-102, and continue to discover and develop additional product candidates. Research and dev...\" Jazz Pharmaceuticals plc provided supplemental information: \"...d publicly disclose top-line results for our second pivotal Phase III trial of JZP-6 (sodium oxybate) for the treatment of fibromyalgia during the third quarter of 2009, and submit a New Drug Application, or NDA, to the U.S. Food and Drug Administration for JZ...\""
+ },
+ {
+  "id": "C074",
+  "type": "compare",
+  "question": "Both TG THERAPEUTICS, INC. and REGENERON PHARMACEUTICALS, INC. responded to SEC staff comments about research and development expense. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "No, their positions differed. TG THERAPEUTICS, INC. provided supplemental information: \"... had paid Swiss Pharma $860,736, and recognized $243,777 of research and development expense for the Phase IIa study. The remainder, $616,959, is included in prepaid expenses. The agreement with Swiss Pharma may be terminated by the Company for any reason, in ...\" REGENERON PHARMACEUTICALS, INC. agreed to revise: \"In considering the accounting for the increase in reimbursement percentage from 10% to 20%, we note that this modification to the Antibody LCA was negotiated and entered into in connection and concurrently with the July 1, 2022 Amended and Restated Immuno-onco...\""
+ },
+ {
+  "id": "C075",
+  "type": "compare",
+  "question": "Both Jazz Pharmaceuticals plc and PTC THERAPEUTICS, INC. responded to SEC staff comments about inventory. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "No, their positions differed. Jazz Pharmaceuticals plc defended its treatment while agreeing to expand disclosure: \"...f return and for which the Company exchanges product out of inventory. The Company relies upon the criteria set forth in paragraph 6 of Statement of Financial Accounting Standards No. 48,  Revenue Recognition When Right of Return Exists , or Statement No. 48...\" PTC THERAPEUTICS, INC. provided supplemental information: \"...not carrying, and have not carried, a significant amount of inventory given the Companys sales process and the relatively high cost of drug product. Since the initial product sale of Translarna in the third quarter of 2014, the Company has had no requests for...\""
+ },
+ {
+  "id": "C076",
+  "type": "compare",
+  "question": "Both Alkermes plc. and PTC THERAPEUTICS, INC. responded to SEC staff comments about business combinations and IPR&D. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "No, their positions differed. Alkermes plc. provided supplemental information: \"...ccordance with Accounting Standards Codification (ASC) 805, Business Combinations. The balance of the valuation allowance was retained as the Company deemed it was more likely than not that the net deferred tax assets would not be realized. This conclusion was...\" PTC THERAPEUTICS, INC. defended its existing treatment: \"# The Company acknowledges the guidance in ASC 805-740-30-3 which notes that an acquirer may be able to utilize the benefit of its tax operating loss carryforwards against the future taxable profit of the acquiree and reduce its valuation allowance based on th...\""
+ },
+ {
+  "id": "C077",
+  "type": "compare",
+  "question": "Both Alkermes plc. and EXELIXIS, INC. responded to SEC staff comments about research and development expense. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "No, their positions differed. Alkermes plc. defended its treatment while agreeing to expand disclosure: \"...cur material costs. The Company tracks significant external R&D expenses by program for internal reporting purposes. External R&D expenses include clinical and non-clinical activities performed by contract research organizations, consulting fees, laboratory se...\" EXELIXIS, INC. agreed to revise: \"...intends to include additional disclosure under the heading Research and Development Expenses in Managements Discussion and Analysis of Financial Condition and Results of Operations in its future annual reports on Form 10-K and quarterly reports on Form 10-Q...\""
+ },
+ {
+  "id": "C078",
+  "type": "compare",
+  "question": "Both ARVINAS, INC. and NEUROCRINE BIOSCIENCES INC responded to SEC staff comments about research and development expense. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "No, their positions differed. ARVINAS, INC. agreed to revise: \"...y Reports on Form 10-Q: “The following table summarizes our research and development expenses incurred during the years ended December 31, 2024, 2023 and 2022: | (dollars in millions) | 2024 | | 2023 | | 2022 | | | --- | --- | --- | --- | --- | --- | --- | | P...\" NEUROCRINE BIOSCIENCES INC defended its existing treatment: \"The Company acknowledges the Staffs comment and directs the Staff to ASC 808-10-50-1 Collaborative Arrangements ( ASC 808-10-50-1 ), which the Company believes sets forth the requirements for disclosure regarding its collaborative agreements in the notes ...\""
+ },
+ {
+  "id": "C079",
+  "type": "compare",
+  "question": "Both Beam Therapeutics Inc. and ALNYLAM PHARMACEUTICALS, INC. responded to SEC staff comments about warrants and equity classification. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "They took the same position. Beam Therapeutics Inc. agreed to revise: \"...ed the Registration Statement on pages 92 and 93 to exclude redeemable convertible stock of $298,786 in determining Historical net tangible book deficit per share of common stock at September 30, 2019 and to exclude the 3,043,669 shares of unvested restricte...\" ALNYLAM PHARMACEUTICALS, INC. agreed to revise: \"...0b8504001.gif) Page 2 Innovation 723,240 shares of Series B redeemable convertible preferred stock with a fair value of $1.8 million. We were also given the right to acquire the remaining 50% exclusive rights, which right we exercised upon our acquisition of R...\""
+ },
+ {
+  "id": "C080",
+  "type": "compare",
+  "question": "Both Sarepta Therapeutics, Inc. and Ultragenyx Pharmaceutical Inc. responded to SEC staff comments about research and development expense. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "No, their positions differed. Sarepta Therapeutics, Inc. agreed to revise: \"...isclose in its future filings its total external costs on a project-by-project basis for each period presented and its total internal research and development costs in the aggregate for all projects for each period presented. Prior to 2011, the Company did not...\" Ultragenyx Pharmaceutical Inc. provided supplemental information: \"... level, the Company does not fully track and allocate total R&D expenses at the individual product candidate level. Specifically, the Company tracks costs to conduct clinical studies, including expenses incurred with clinical research organizations, direct man...\""
+ },
+ {
+  "id": "C081",
+  "type": "compare",
+  "question": "Both ALNYLAM PHARMACEUTICALS, INC. and Alkermes plc. responded to SEC staff comments about fair value. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "No, their positions differed. ALNYLAM PHARMACEUTICALS, INC. agreed to revise: \"...s of Series B redeemable convertible preferred stock with a fair value of $1.8 million. We were also given the right to acquire the remaining 50% exclusive rights, which right we exercised upon our acquisition of Ribopharma AG in July 2003. In consideration fo...\" Alkermes plc. provided supplemental information: \"...ed and liabilities assumed be recognized at their estimated fair values as of the acquisition date, and that the fair value of acquired in-process research and development be recorded on the balance sheet. Also, transaction costs are expensed as incurred. Any ...\""
+ },
+ {
+  "id": "C082",
+  "type": "compare",
+  "question": "Both INCYTE CORP and Jazz Pharmaceuticals plc responded to SEC staff comments about inventory. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "No, their positions differed. INCYTE CORP provided supplemental information: \"...rescription has been filled and it is no longer in the SPs inventory, it may no longer be returned to the Company by the SP for full credit in the event that the product reaches its expiration date. As of September 30, 2012, all products that were in the dist...\" Jazz Pharmaceuticals plc defended its treatment while agreeing to expand disclosure: \"...f return and for which the Company exchanges product out of inventory. The Company relies upon the criteria set forth in paragraph 6 of Statement of Financial Accounting Standards No. 48,  Revenue Recognition When Right of Return Exists , or Statement No. 48...\""
+ },
+ {
+  "id": "C083",
+  "type": "compare",
+  "question": "Both NOVAVAX INC and REGENERON PHARMACEUTICALS, INC. responded to SEC staff comments about executive compensation. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "No, their positions differed. NOVAVAX INC agreed to revise: \"...ng additional disclosure regarding individual goals for the named executive officers. Below is a copy of such additional disclosure: | In addition, each officer has additional individual goals to support the 2007 Objectives or to further the Companys strategi...\" REGENERON PHARMACEUTICALS, INC. defended its existing treatment: \"...most recent CD&A the impact of our share repurchases on our executive compensation levels in 2019 because we do not believe our repurchases had a material impact on our executive compensation levels in 2019. Therefore, we do not believe that a discussion of th...\""
+ },
+ {
+  "id": "C084",
+  "type": "compare",
+  "question": "Both Allogene Therapeutics, Inc. and VERTEX PHARMACEUTICALS INC / MA responded to SEC staff comments about fair value. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "They took the same position. Allogene Therapeutics, Inc. agreed to revise: \"The Company elected the fair value option to account for the 2018 Notes. The Company determined that the 2018 Notes are eligible for the fair value option under ASC 815-15-25-4, and as part of the eligibility assessment, the Company considered if the 2018 Note...\" VERTEX PHARMACEUTICALS INC / MA agreed to revise: \"...collaboration arrangements, and the Company has evidence of fair value for these remaining obligations, management considers the milestone payment and the remaining obligations to be separate units of accounting. In these circumstances, the Company uses the re...\""
+ },
+ {
+  "id": "C085",
+  "type": "compare",
+  "question": "Both GILEAD SCIENCES, INC. and Jazz Pharmaceuticals plc responded to SEC staff comments about impairment. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "No, their positions differed. GILEAD SCIENCES, INC. agreed to revise: \"...overable value of our asset, ii) elaborating on the type of impairment indicators that we review; and iii) elaborating on any other information or factors that the Company considers in estimating its expected future sales levels. In response to the Staffs tel...\" Jazz Pharmaceuticals plc provided supplemental information: \"...ipated sales of Luvox CR, the Company noted an indicator of impairment and performed an analysis under Statement 142. As a result of the analysis, the Company recorded an impairment charge and reduced the gross carrying amount of the asset to its estimated fai...\""
+ },
+ {
+  "id": "C086",
+  "type": "compare",
+  "question": "Both NEUROCRINE BIOSCIENCES INC and INCYTE CORP responded to SEC staff comments about liquidity and MD&A. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "No, their positions differed. NEUROCRINE BIOSCIENCES INC defended its existing treatment: \"The Company acknowledges the Staffs comment and respectfully submits that the administrative expenses and corporate costs disclosed on page 55 of the 10-K consist of salaries, payroll taxes, employee benefits and equity compensation charges for Company employ...\" INCYTE CORP agreed to revise: \"We confirm that JAKAFI product revenues are recorded net of an allowance for product returns, which has been de minimis to date. Our proposed revised disclosure for the three and nine months ended September 30, 2012 and 2011 is below, and we represent that our...\""
+ },
+ {
+  "id": "C087",
+  "type": "compare",
+  "question": "Both INSMED Inc and BIOMARIN PHARMACEUTICAL INC responded to SEC staff comments about executive compensation. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "No, their positions differed. INSMED Inc provided supplemental information: \"... conclusion that no disclosure was necessary in response to Item 402(s) of Regulation S-K and the process the Company undertook to reach that conclusion is as follows: The Company determined that its compensation policies do not create risks that are reasonabl...\" BIOMARIN PHARMACEUTICAL INC agreed to revise: \"...will disclose the information requested by the Staff in the Compensation Discussion and Analysis section of our next annual filing, including any financial and product specific sales goals and a general description of any non-financial goals. ********* ## The ...\""
+ },
+ {
+  "id": "C088",
+  "type": "compare",
+  "question": "Both AMGEN INC and GILEAD SCIENCES, INC. responded to SEC staff comments about income taxes. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "No, their positions differed. AMGEN INC provided supplemental information: \"...pitalized and then expensed over time through depreciation. ASC 740-10-25-45 and ASC 740-10-25-46 indicate that two methods are acceptable for purposes of recognizing the income tax benefit associated with an investment tax credit; the tax provision benefit ma...\" GILEAD SCIENCES, INC. agreed to revise: \"...owances | | 27,491 | | 114,810 | | 109,067 | | 33,234 | | | Valuation allowance for deferred tax assets | | 33,349 | | — | | 33,349 | | — | | | Year ended December 31, 2004: | | | | | | | | | | | Government rebates allowances | | | | | | | | | | | Activity rel...\""
+ },
+ {
+  "id": "C089",
+  "type": "compare",
+  "question": "Both REGENERON PHARMACEUTICALS, INC. and NOVAVAX INC responded to SEC staff comments about liquidity and MD&A. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "No, their positions differed. REGENERON PHARMACEUTICALS, INC. defended its treatment while agreeing to expand disclosure: \"We believe the existing disclosure contained in Part I, Item 1. \"Business - Collaboration, License, and Other Agreements - Sanofi - Antibody\" of the 2023 Form 10-K ( which is also included in Note 3 on page F-17) describes the key terms governing our contingen...\" NOVAVAX INC agreed to revise: \"...pany acknowledges the Staff’s comment and will include this contractual obligation in the contractual obligations table consistent with the disclosure contained on page 43 of the “Management’s Discussion and Analysis of Financial Condition and Results of Opera...\""
+ },
+ {
+  "id": "C090",
+  "type": "compare",
+  "question": "Both Kymera Therapeutics, Inc. and Denali Therapeutics Inc. responded to SEC staff comments about revenue recognition. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "No, their positions differed. Kymera Therapeutics, Inc. agreed to revise: \"...beyond its lead development candidate KT-474, the potential milestone payments attributable to the Companys IRAK4 program under its collaboration with Sanofi described elsewhere in the S-1 Registration Statement; | | • | With respect to the Companys STAT3 pr...\" Denali Therapeutics Inc. provided supplemental information: \"... --- | | [*] | | As noted on page 160 of the Form 10-K, the transaction price at inception of the Takeda Collaboration Agreement in February 2018 included fixed consideration consisting of the upfront fee of $40.0 million, the $15.6 million premium on the sale...\""
+ },
+ {
+  "id": "C091",
+  "type": "compare",
+  "question": "Both NEUROCRINE BIOSCIENCES INC and TG THERAPEUTICS, INC. responded to SEC staff comments about research and development expense. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "No, their positions differed. NEUROCRINE BIOSCIENCES INC defended its existing treatment: \"The Company acknowledges the Staffs comment and directs the Staff to ASC 808-10-50-1 Collaborative Arrangements ( ASC 808-10-50-1 ), which the Company believes sets forth the requirements for disclosure regarding its collaborative agreements in the notes ...\" TG THERAPEUTICS, INC. provided supplemental information: \"... had paid Swiss Pharma $860,736, and recognized $243,777 of research and development expense for the Phase IIa study. The remainder, $616,959, is included in prepaid expenses. The agreement with Swiss Pharma may be terminated by the Company for any reason, in ...\""
+ },
+ {
+  "id": "C092",
+  "type": "compare",
+  "question": "Both ALNYLAM PHARMACEUTICALS, INC. and HALOZYME THERAPEUTICS, INC. responded to SEC staff comments about clinical and pipeline disclosure. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "They took the same position. ALNYLAM PHARMACEUTICALS, INC. defended its existing treatment: \"...very technology licensed under the Tekmira agreement in its Phase I ALN-VSP product candidate, it will not use such technology with its lead product, | Securities and Exchange Commission February 24, 2009 Page 6 | ALN-RSV. Furthermore, the Company does not yet...\" HALOZYME THERAPEUTICS, INC. defended its existing treatment: \"...Financial Condition and Results of Operations – Product and Product Candidates, Baxter Gammagard Partnership, as follows: On August 1, 2012, we announced that the Center for Biologics Evaluation and Research (CBER) of the U.S. Food and Drug Administration (FD...\""
+ },
+ {
+  "id": "C093",
+  "type": "compare",
+  "question": "Both VERTEX PHARMACEUTICALS INC / MA and ALNYLAM PHARMACEUTICALS, INC. responded to SEC staff comments about fair value. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "They took the same position. VERTEX PHARMACEUTICALS INC / MA agreed to revise: \"...collaboration arrangements, and the Company has evidence of fair value for these remaining obligations, management considers the milestone payment and the remaining obligations to be separate units of accounting. In these circumstances, the Company uses the re...\" ALNYLAM PHARMACEUTICALS, INC. agreed to revise: \"...s of Series B redeemable convertible preferred stock with a fair value of $1.8 million. We were also given the right to acquire the remaining 50% exclusive rights, which right we exercised upon our acquisition of Ribopharma AG in July 2003. In consideration fo...\""
+ },
+ {
+  "id": "C094",
+  "type": "compare",
+  "question": "Both NOVAVAX INC and INSMED Inc responded to SEC staff comments about liquidity and MD&A. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "No, their positions differed. NOVAVAX INC agreed to revise: \"...pany acknowledges the Staff’s comment and will include this contractual obligation in the contractual obligations table consistent with the disclosure contained on page 43 of the “Management’s Discussion and Analysis of Financial Condition and Results of Opera...\" INSMED Inc provided supplemental information: \"We propose to amend the 10-K in response to your comment by deleting the last paragraph of the Overview section on page 35 and replacing it with the following description of Insmeds Research and Development Activities: Research and Development Activities We a...\""
+ },
+ {
+  "id": "C095",
+  "type": "compare",
+  "question": "Both REGENERON PHARMACEUTICALS, INC. and ARVINAS, INC. responded to SEC staff comments about clinical and pipeline disclosure. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "No, their positions differed. REGENERON PHARMACEUTICALS, INC. provided supplemental information: \"...he Company's letter to the Staff dated July 7, 2016, any IO product candidates previously being researched under the terms of the Antibody Collaboration (all of which were in pre-clinical development) were transferred to the IO Collaboration upon execution of ...\" ARVINAS, INC. agreed to revise: \"...he foreseeable future as we continue to conduct our ongoing clinical trials for vepdegestrant (ARV-471), ARV-766 and the initiation of clinical trials for ARV-393 and ARV-102, and continue to discover and develop additional product candidates. Research and dev...\""
+ },
+ {
+  "id": "C096",
+  "type": "compare",
+  "question": "Both ARROWHEAD PHARMACEUTICALS, INC. and PTC THERAPEUTICS, INC. responded to SEC staff comments about revenue recognition. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "No, their positions differed. ARROWHEAD PHARMACEUTICALS, INC. provided supplemental information: \"...ement of certain development milestones. The first of these milestone payments ($1,000,000) is for commencement of IND-enabling toxicity studies and is projected to be due during the second quarter of fiscal 2007. The second milestone payment ($3,000,000) is f...\" PTC THERAPEUTICS, INC. agreed to revise: \"...to provide disaggregated information by product pursuant to ASC 606-10-55-89 through 55-91. <u>The following paragraphs, with an updated footnote 13 “Revenue Recognition” for fiscal year ended December 31, 2020, reflects how PTC plans to enhance its disclosure...\""
+ },
+ {
+  "id": "C097",
+  "type": "compare",
+  "question": "Both VERTEX PHARMACEUTICALS INC / MA and Kymera Therapeutics, Inc. responded to SEC staff comments about clinical and pipeline disclosure. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "They took the same position. VERTEX PHARMACEUTICALS INC / MA agreed to revise: \"...t must be administered by weekly injection. The early-stage clinical trials in the HCV nucleotide analogue development program were intended to identify a single treatment regimen containing ALS-2200 and/or ALS-2158 (the “ # Selected Regimen ”) that the Compan...\" Kymera Therapeutics, Inc. agreed to revise: \"...ity and to more accurately depict the Companys development pipeline, which includes certain programs partnered with Sanofi and Vertex. In addition, the Company respectfully advises the staff that the Company considers each of the programs depicted in the pipe...\""
+ },
+ {
+  "id": "C098",
+  "type": "compare",
+  "question": "Both HALOZYME THERAPEUTICS, INC. and Arcus Biosciences, Inc. responded to SEC staff comments about clinical and pipeline disclosure. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "No, their positions differed. HALOZYME THERAPEUTICS, INC. defended its existing treatment: \"...Financial Condition and Results of Operations – Product and Product Candidates, Baxter Gammagard Partnership, as follows: On August 1, 2012, we announced that the Center for Biologics Evaluation and Research (CBER) of the U.S. Food and Drug Administration (FD...\" Arcus Biosciences, Inc. agreed to revise: \"...to the Staffs comment, the Company has revised its product pipeline table on page 2 and page 89 to remove the oral CD73 inhibitor. <u>Executive Compensation </u> <u>Material Compensation Developments Occurring After 2017 Fiscal Year End, page 146</u> | 2. | W...\""
+ },
+ {
+  "id": "C099",
+  "type": "compare",
+  "question": "Both INSMED Inc and REGENERON PHARMACEUTICALS, INC. responded to SEC staff comments about revenue recognition. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "No, their positions differed. INSMED Inc defended its existing treatment: \"...sts of product revenues (excluding amortization) and (ii) milestone payments related to ARIKAYCE in its non-GAAP measure. Historically, this non-GAAP measure was calculated by subtracting non-cash components from the most directly comparable GAAP measure (...\" REGENERON PHARMACEUTICALS, INC. agreed to revise: \"In considering the accounting for the increase in reimbursement percentage from 10% to 20%, we note that this modification to the Antibody LCA was negotiated and entered into in connection and concurrently with the July 1, 2022 Amended and Restated Immuno-onco...\""
+ },
+ {
+  "id": "C100",
+  "type": "compare",
+  "question": "Both INSMED Inc and REGENERON PHARMACEUTICALS, INC. responded to SEC staff comments about non-GAAP measures. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "No, their positions differed. INSMED Inc defended its existing treatment: \"...t and has considered the guidance in Question 100.01 of the Non-GAAP Compliance and Disclosure Interpretations with respect to the adjustments for (i) costs of product revenues (excluding amortization) and (ii) milestone payments related to ARIKAYCE in its...\" REGENERON PHARMACEUTICALS, INC. provided supplemental information: \"The Company has described what its non-GAAP adjustments represent in its quarterly earnings releases furnished as exhibits to the Company's Current Reports on Form 8-K. As noted in the earnings release furnished as an exhibit to the Company's Current Report on...\""
+ },
+ {
+  "id": "C101",
+  "type": "compare",
+  "question": "Both VERTEX PHARMACEUTICALS INC / MA and GILEAD SCIENCES, INC. responded to SEC staff comments about business combinations and IPR&D. Did they take the same position, and how did their reasoning differ?",
+  "expectedAnswer": "No, their positions differed. VERTEX PHARMACEUTICALS INC / MA agreed to revise: \"...ty, and the initial consolidation of Alios was treated as a business combination. As of the Acquisition Date, the Company valued the HCV nucleotide analogue program, which included both ALS-2200 and ALS-2158, at $250.6 million. All treatment regimens for HCV i...\" GILEAD SCIENCES, INC. provided supplemental information: \"Our valuation of the IPR&D programs that we acquired from Myogen consisted of the estimated present value of the expected future cash flows of ambrisentan for the treatment of pulmonary arterial hypertension and darusentan for the treatment of resistant hypert...\""
+ },
+ {
+  "id": "C102",
+  "type": "conjunctive",
+  "question": "Identify the company in this document set that agreed to revise its disclosure regarding executive compensation but separately declined to change its treatment of revenue recognition, defending it to the staff. Name the company and both subjects.",
+  "expectedAnswer": "NEUROCRINE BIOSCIENCES INC. It agreed to revise on executive compensation, and defended its treatment of revenue recognition."
+ },
+ {
+  "id": "C103",
+  "type": "conjunctive",
+  "question": "Identify the company in this document set that agreed to revise its disclosure regarding inventory but separately declined to change its treatment of research and development expense, defending it to the staff. Name the company and both subjects.",
+  "expectedAnswer": "AMARIN CORP PLC\\UK. It agreed to revise on inventory, and defended its treatment of research and development expense."
+ },
+ {
+  "id": "C104",
+  "type": "conjunctive",
+  "question": "Identify the company in this document set that agreed to revise its disclosure regarding research and development expense but separately declined to change its treatment of revenue recognition, defending it to the staff. Name the company and both subjects.",
+  "expectedAnswer": "HALOZYME THERAPEUTICS, INC.. It agreed to revise on research and development expense, and defended its treatment of revenue recognition."
+ },
+ {
+  "id": "C105",
+  "type": "conjunctive",
+  "question": "Identify the company in this document set that agreed to revise its disclosure regarding executive compensation but separately declined to change its treatment of revenue recognition, defending it to the staff. Name the company and both subjects.",
+  "expectedAnswer": "VERTEX PHARMACEUTICALS INC / MA. It agreed to revise on executive compensation, and defended its treatment of revenue recognition."
+ },
+ {
+  "id": "C106",
+  "type": "conjunctive",
+  "question": "Identify the company in this document set that agreed to revise its disclosure regarding research and development expense but separately declined to change its treatment of warrants and equity classification, defending it to the staff. Name the company and both subjects.",
+  "expectedAnswer": "Sarepta Therapeutics, Inc.. It agreed to revise on research and development expense, and defended its treatment of warrants and equity classification."
+ },
+ {
+  "id": "C107",
+  "type": "conjunctive",
+  "question": "Identify the company in this document set that agreed to revise its disclosure regarding research and development expense but separately declined to change its treatment of business combinations and IPR&D, defending it to the staff. Name the company and both subjects.",
+  "expectedAnswer": "PTC THERAPEUTICS, INC.. It agreed to revise on research and development expense, and defended its treatment of business combinations and IPR&D."
+ },
+ {
+  "id": "C108",
+  "type": "conjunctive",
+  "question": "Identify the company in this document set that agreed to revise its disclosure regarding liquidity and MD&A but separately declined to change its treatment of leases, defending it to the staff. Name the company and both subjects.",
+  "expectedAnswer": "UNITED THERAPEUTICS Corp. It agreed to revise on liquidity and MD&A, and defended its treatment of leases."
+ },
+ {
+  "id": "C109",
+  "type": "conjunctive",
+  "question": "Identify the company in this document set that agreed to revise its disclosure regarding research and development expense but separately declined to change its treatment of liquidity and MD&A, defending it to the staff. Name the company and both subjects.",
+  "expectedAnswer": "Revolution Medicines, Inc.. It agreed to revise on research and development expense, and defended its treatment of liquidity and MD&A."
+ },
+ {
+  "id": "C110",
+  "type": "conjunctive",
+  "question": "Identify the company in this document set that agreed to revise its disclosure regarding revenue recognition but separately declined to change its treatment of clinical and pipeline disclosure, defending it to the staff. Name the company and both subjects.",
+  "expectedAnswer": "ALNYLAM PHARMACEUTICALS, INC.. It agreed to revise on revenue recognition, and defended its treatment of clinical and pipeline disclosure."
+ },
+ {
+  "id": "C111",
+  "type": "conjunctive",
+  "question": "Identify the company in this document set that agreed to revise its disclosure regarding executive compensation but separately declined to change its treatment of liquidity and MD&A, defending it to the staff. Name the company and both subjects.",
+  "expectedAnswer": "AMGEN INC. It agreed to revise on executive compensation, and defended its treatment of liquidity and MD&A."
+ },
+ {
+  "id": "C112",
+  "type": "conjunctive",
+  "question": "Identify the company in this document set that agreed to revise its disclosure regarding income taxes but separately declined to change its treatment of research and development expense, defending it to the staff. Name the company and both subjects.",
+  "expectedAnswer": "GILEAD SCIENCES, INC.. It agreed to revise on income taxes, and defended its treatment of research and development expense."
+ },
+ {
+  "id": "C113",
+  "type": "conjunctive",
+  "question": "Identify the company in this document set that agreed to revise its disclosure regarding liquidity and MD&A but separately declined to change its treatment of executive compensation, defending it to the staff. Name the company and both subjects.",
+  "expectedAnswer": "REGENERON PHARMACEUTICALS, INC.. It agreed to revise on liquidity and MD&A, and defended its treatment of executive compensation."
+ },
+ {
+  "id": "C114",
+  "type": "conjunctive",
+  "question": "Identify the company in this document set that agreed to revise its disclosure regarding inventory but separately declined to change its treatment of revenue recognition, defending it to the staff. Name the company and both subjects.",
+  "expectedAnswer": "Jazz Pharmaceuticals plc. It agreed to revise on inventory, and defended its treatment of revenue recognition."
+ },
+ {
+  "id": "C115",
+  "type": "count",
+  "question": "How many distinct companies in this document set addressed ASC 605-25-25 in correspondence with the SEC staff, and how many of them agreed to revise their disclosure?",
+  "expectedAnswer": "2 companies addressed ASC 605-25-25 (HALOZYME THERAPEUTICS, INC., REGENERON PHARMACEUTICALS, INC.). 1 agreed to revise (HALOZYME THERAPEUTICS, INC.); 1 defended their existing treatment (REGENERON PHARMACEUTICALS, INC.)."
+ },
+ {
+  "id": "C116",
+  "type": "count",
+  "question": "How many distinct companies in this document set addressed ASC 730-10-20 in correspondence with the SEC staff, and how many of them agreed to revise their disclosure?",
+  "expectedAnswer": "3 companies addressed ASC 730-10-20 (AMARIN CORP PLC\\UK, NEUROCRINE BIOSCIENCES INC, PTC THERAPEUTICS, INC.). 1 agreed to revise (AMARIN CORP PLC\\UK); 1 defended their existing treatment (NEUROCRINE BIOSCIENCES INC)."
+ },
+ {
+  "id": "C117",
+  "type": "count",
+  "question": "How many distinct companies in this document set addressed ASC 730-10-25 in correspondence with the SEC staff, and how many of them agreed to revise their disclosure?",
+  "expectedAnswer": "3 companies addressed ASC 730-10-25 (AMARIN CORP PLC\\UK, HALOZYME THERAPEUTICS, INC., NEUROCRINE BIOSCIENCES INC). 1 agreed to revise (HALOZYME THERAPEUTICS, INC.); 2 defended their existing treatment (AMARIN CORP PLC\\UK, NEUROCRINE BIOSCIENCES INC)."
+ },
+ {
+  "id": "C118",
+  "type": "count",
+  "question": "How many distinct companies in this document set addressed business combinations and IPR&D in correspondence with the SEC staff, and how many of them agreed to revise their disclosure?",
+  "expectedAnswer": "6 companies addressed business combinations and IPR&D (ARROWHEAD PHARMACEUTICALS, INC., Alkermes plc., GILEAD SCIENCES, INC., NEUROCRINE BIOSCIENCES INC, PTC THERAPEUTICS, INC., VERTEX PHARMACEUTICALS INC / MA). 1 agreed to revise (VERTEX PHARMACEUTICALS INC / MA); 1 defended their existing treatment (PTC THERAPEUTICS, INC.)."
+ },
+ {
+  "id": "C119",
+  "type": "count",
+  "question": "How many distinct companies in this document set addressed ASC 808-10-50 in correspondence with the SEC staff, and how many of them agreed to revise their disclosure?",
+  "expectedAnswer": "2 companies addressed ASC 808-10-50 (INCYTE CORP, NEUROCRINE BIOSCIENCES INC). 1 agreed to revise (INCYTE CORP); 1 defended their existing treatment (NEUROCRINE BIOSCIENCES INC)."
+ },
+ {
+  "id": "C120",
+  "type": "count",
+  "question": "How many distinct companies in this document set addressed leases in correspondence with the SEC staff, and how many of them agreed to revise their disclosure?",
+  "expectedAnswer": "2 companies addressed leases (Kymera Therapeutics, Inc., UNITED THERAPEUTICS Corp). 1 agreed to revise (Kymera Therapeutics, Inc.); 1 defended their existing treatment (UNITED THERAPEUTICS Corp)."
+ },
+ {
+  "id": "C121",
+  "type": "holdout",
+  "question": "Of all the companies in this document set that responded to SEC staff comments about business combinations and IPR&D, which ones defended their existing treatment rather than agreeing to revise their disclosure? Name every such company.",
+  "expectedAnswer": "1 of the 6 companies questioned about business combinations and IPR&D defended their treatment: PTC THERAPEUTICS, INC.."
+ },
+ {
+  "id": "C122",
+  "type": "holdout",
+  "question": "Of all the companies in this document set that responded to SEC staff comments about income taxes, which ones defended their existing treatment rather than agreeing to revise their disclosure? Name every such company.",
+  "expectedAnswer": "1 of the 7 companies questioned about income taxes defended their treatment: PTC THERAPEUTICS, INC.."
+ },
+ {
+  "id": "C123",
+  "type": "holdout",
+  "question": "Of all the companies in this document set that responded to SEC staff comments about research and development expense, which ones defended their existing treatment rather than agreeing to revise their disclosure? Name every such company.",
+  "expectedAnswer": "2 of the 21 companies questioned about research and development expense defended their treatment: AMGEN INC, NEUROCRINE BIOSCIENCES INC."
+ },
+ {
+  "id": "C124",
+  "type": "holdout",
+  "question": "Of all the companies in this document set that responded to SEC staff comments about clinical and pipeline disclosure, which ones defended their existing treatment rather than agreeing to revise their disclosure? Name every such company.",
+  "expectedAnswer": "4 of the 30 companies questioned about clinical and pipeline disclosure defended their treatment: ALNYLAM PHARMACEUTICALS, INC., AMGEN INC, HALOZYME THERAPEUTICS, INC., Revolution Medicines, Inc.."
+ },
+ {
+  "id": "C125",
+  "type": "holdout",
+  "question": "Of all the companies in this document set that responded to SEC staff comments about liquidity and MD&A, which ones defended their existing treatment rather than agreeing to revise their disclosure? Name every such company.",
+  "expectedAnswer": "4 of the 19 companies questioned about liquidity and MD&A defended their treatment: GILEAD SCIENCES, INC., HALOZYME THERAPEUTICS, INC., NEUROCRINE BIOSCIENCES INC, Revolution Medicines, Inc.."
+ },
+ {
+  "id": "C126",
+  "type": "holdout",
+  "question": "Of all the companies in this document set that responded to SEC staff comments about revenue recognition, which ones defended their existing treatment rather than agreeing to revise their disclosure? Name every such company.",
+  "expectedAnswer": "2 of the 21 companies questioned about revenue recognition defended their treatment: INSMED Inc, NEUROCRINE BIOSCIENCES INC."
+ },
+ {
+  "id": "C127",
+  "type": "holdout",
+  "question": "Of all the companies in this document set that responded to SEC staff comments about non-GAAP measures, which ones defended their existing treatment rather than agreeing to revise their disclosure? Name every such company.",
+  "expectedAnswer": "2 of the 8 companies questioned about non-GAAP measures defended their treatment: INSMED Inc, Jazz Pharmaceuticals plc."
+ },
+ {
+  "id": "C128",
+  "type": "holdout",
+  "question": "Of all the companies in this document set that responded to SEC staff comments about executive compensation, which ones defended their existing treatment rather than agreeing to revise their disclosure? Name every such company.",
+  "expectedAnswer": "3 of the 16 companies questioned about executive compensation defended their treatment: ALNYLAM PHARMACEUTICALS, INC., NEUROCRINE BIOSCIENCES INC, REGENERON PHARMACEUTICALS, INC.."
+ },
+ {
+  "id": "C129",
+  "type": "recurring",
+  "question": "Which companies in this document set were asked about Item 601(b)(10) by the SEC staff in more than one calendar year? Name them and give the years.",
+  "expectedAnswer": "ALNYLAM PHARMACEUTICALS, INC., VERTEX PHARMACEUTICALS INC / MA. Years: ALNY: 2009, 2011; VRTX: 2011, 2026."
+ },
+ {
+  "id": "C130",
+  "type": "recurring",
+  "question": "Which companies in this document set were asked about warrants and equity classification by the SEC staff in more than one calendar year? Name them and give the years.",
+  "expectedAnswer": "REGENERON PHARMACEUTICALS, INC., Sarepta Therapeutics, Inc.. Years: REGN: 2014, 2016; SRPT: 2007, 2014."
+ },
+ {
+  "id": "C131",
+  "type": "recurring",
+  "question": "Which companies in this document set were asked about fair value by the SEC staff in more than one calendar year? Name them and give the years.",
+  "expectedAnswer": "REGENERON PHARMACEUTICALS, INC., VERTEX PHARMACEUTICALS INC / MA. Years: REGN: 2014, 2016; VRTX: 2006, 2009."
+ },
+ {
+  "id": "C132",
+  "type": "recurring",
+  "question": "Which companies in this document set were asked about inventory by the SEC staff in more than one calendar year? Name them and give the years.",
+  "expectedAnswer": "GILEAD SCIENCES, INC., INCYTE CORP. Years: GILD: 2006, 2009; INCY: 2012, 2014."
+ },
+ {
+  "id": "C133",
+  "type": "recurring",
+  "question": "Which companies in this document set were asked about non-GAAP measures by the SEC staff in more than one calendar year? Name them and give the years.",
+  "expectedAnswer": "INCYTE CORP, Jazz Pharmaceuticals plc. Years: INCY: 2018, 2019; JAZZ: 2019, 2020."
+ },
+ {
+  "id": "C134",
+  "type": "recurring",
+  "question": "Which companies in this document set were asked about impairment by the SEC staff in more than one calendar year? Name them and give the years.",
+  "expectedAnswer": "Alkermes plc.. Years: ALKS: 2013, 2014."
+ },
+ {
+  "id": "C135",
+  "type": "recurring",
+  "question": "Which companies in this document set were asked about business combinations and IPR&D by the SEC staff in more than one calendar year? Name them and give the years.",
+  "expectedAnswer": "Alkermes plc.. Years: ALKS: 2013, 2014."
+ },
+ {
+  "id": "C136",
+  "type": "recurring",
+  "question": "Which companies in this document set were asked about Item 402(b)(2) by the SEC staff in more than one calendar year? Name them and give the years.",
+  "expectedAnswer": "VERTEX PHARMACEUTICALS INC / MA. Years: VRTX: 2007, 2008."
+ },
+ {
+  "id": "C137",
+  "type": "recurring",
+  "question": "Which companies in this document set were asked about research and development expense by the SEC staff in more than one calendar year? Name them and give the years.",
+  "expectedAnswer": "GILEAD SCIENCES, INC., INCYTE CORP, NEUROCRINE BIOSCIENCES INC, PTC THERAPEUTICS, INC.. Years: GILD: 2011, 2013; INCY: 2014, 2018; NBIX: 2010, 2021; PTCT: 2016, 2025."
+ },
+ {
+  "id": "C138",
+  "type": "recurring",
+  "question": "Which companies in this document set were asked about liquidity and MD&A by the SEC staff in more than one calendar year? Name them and give the years.",
+  "expectedAnswer": "AMGEN INC, GILEAD SCIENCES, INC., INCYTE CORP, REGENERON PHARMACEUTICALS, INC.. Years: AMGN: 2006, 2009, 2024; GILD: 2011, 2012, 2013; INCY: 2012, 2014; REGN: 2016, 2024, 2025."
+ },
+ {
+  "id": "C139",
+  "type": "recurring",
+  "question": "Which companies in this document set were asked about ASC 815 by the SEC staff in more than one calendar year? Name them and give the years.",
+  "expectedAnswer": "REGENERON PHARMACEUTICALS, INC.. Years: REGN: 2014, 2024."
+ },
+ {
+  "id": "C140",
+  "type": "recurring",
+  "question": "Which companies in this document set were asked about executive compensation by the SEC staff in more than one calendar year? Name them and give the years.",
+  "expectedAnswer": "INCYTE CORP, NEUROCRINE BIOSCIENCES INC, VERTEX PHARMACEUTICALS INC / MA. Years: INCY: 2008, 2010; NBIX: 2007, 2010; VRTX: 2007, 2008, 2010."
+ },
+ {
+  "id": "C141",
+  "type": "recurring",
+  "question": "Which companies in this document set were asked about income taxes by the SEC staff in more than one calendar year? Name them and give the years.",
+  "expectedAnswer": "Alkermes plc.. Years: ALKS: 2013, 2014."
+ },
+ {
+  "id": "C142",
+  "type": "recurring",
+  "question": "Which companies in this document set were asked about ASC 605-28-50 by the SEC staff in more than one calendar year? Name them and give the years.",
+  "expectedAnswer": "Alkermes plc.. Years: ALKS: 2013, 2014."
+ },
+ {
+  "id": "C143",
+  "type": "set",
+  "question": "Which companies in this document set responded to SEC staff comments concerning impairment? Name every such company.",
+  "expectedAnswer": "The companies are: ARROWHEAD PHARMACEUTICALS, INC., Alkermes plc., BIOGEN INC., GILEAD SCIENCES, INC., Jazz Pharmaceuticals plc, VERTEX PHARMACEUTICALS INC / MA (6 in total)."
+ },
+ {
+  "id": "C144",
+  "type": "set",
+  "question": "Which companies in this document set cited ASC 605-28-50 in responding to SEC staff comments? Name every such company.",
+  "expectedAnswer": "The companies are: AMARIN CORP PLC\\UK, Alkermes plc., Sarepta Therapeutics, Inc. (3 in total)."
+ },
+ {
+  "id": "C145",
+  "type": "set",
+  "question": "Which companies in this document set cited Rule 24b-2 in responding to SEC staff comments? Name every such company.",
+  "expectedAnswer": "The companies are: Alkermes plc., NEUROCRINE BIOSCIENCES INC (2 in total)."
+ },
+ {
+  "id": "C146",
+  "type": "set",
+  "question": "Which companies in this document set cited Rule 13a-15 in responding to SEC staff comments? Name every such company.",
+  "expectedAnswer": "The companies are: GILEAD SCIENCES, INC., Jazz Pharmaceuticals plc, NOVAVAX INC, Sarepta Therapeutics, Inc. (4 in total)."
+ },
+ {
+  "id": "C147",
+  "type": "set",
+  "question": "Which companies in this document set cited Item 402(b) in responding to SEC staff comments? Name every such company.",
+  "expectedAnswer": "The companies are: AMGEN INC, NEUROCRINE BIOSCIENCES INC, Sarepta Therapeutics, Inc., VERTEX PHARMACEUTICALS INC / MA (4 in total)."
+ },
+ {
+  "id": "C148",
+  "type": "set",
+  "question": "Which companies in this document set cited Item 404(b)(1) in responding to SEC staff comments? Name every such company.",
+  "expectedAnswer": "The companies are: AMGEN INC, NEUROCRINE BIOSCIENCES INC, VERTEX PHARMACEUTICALS INC / MA (3 in total)."
+ },
+ {
+  "id": "C149",
+  "type": "set",
+  "question": "Which companies in this document set cited ASC 730-10-25 in responding to SEC staff comments? Name every such company.",
+  "expectedAnswer": "The companies are: AMARIN CORP PLC\\UK, HALOZYME THERAPEUTICS, INC., NEUROCRINE BIOSCIENCES INC (3 in total)."
+ },
+ {
+  "id": "C150",
+  "type": "set",
+  "question": "Which companies in this document set cited Item 303(b) in responding to SEC staff comments? Name every such company.",
+  "expectedAnswer": "The companies are: AMGEN INC, Revolution Medicines, Inc. (2 in total)."
+ },
+ {
+  "id": "C151",
+  "type": "set",
+  "question": "Which companies in this document set cited Rule 5-02 in responding to SEC staff comments? Name every such company.",
+  "expectedAnswer": "The companies are: Alkermes plc., INCYTE CORP (2 in total)."
+ },
+ {
+  "id": "C152",
+  "type": "set",
+  "question": "Which companies in this document set cited Item 404(a) in responding to SEC staff comments? Name every such company.",
+  "expectedAnswer": "The companies are: AMGEN INC, INCYTE CORP, NEUROCRINE BIOSCIENCES INC, UNITED THERAPEUTICS Corp, VERTEX PHARMACEUTICALS INC / MA (5 in total)."
+ },
+ {
+  "id": "C153",
+  "type": "set",
+  "question": "Which companies in this document set cited Rule 14a-3 in responding to SEC staff comments? Name every such company.",
+  "expectedAnswer": "The companies are: AMARIN CORP PLC\\UK, INCYTE CORP (2 in total)."
+ },
+ {
+  "id": "C154",
+  "type": "set",
+  "question": "Which companies in this document set responded to SEC staff comments concerning internal control? Name every such company.",
+  "expectedAnswer": "The companies are: GILEAD SCIENCES, INC., Jazz Pharmaceuticals plc, NOVAVAX INC, Sarepta Therapeutics, Inc., VERTEX PHARMACEUTICALS INC / MA (5 in total)."
+ },
+ {
+  "id": "C155",
+  "type": "set",
+  "question": "Which companies in this document set responded to SEC staff comments concerning stock-based compensation? Name every such company.",
+  "expectedAnswer": "The companies are: REGENERON PHARMACEUTICALS, INC., Sarepta Therapeutics, Inc., VERTEX PHARMACEUTICALS INC / MA (3 in total)."
+ },
+ {
+  "id": "C156",
+  "type": "set",
+  "question": "Which companies in this document set cited ASC 730 in responding to SEC staff comments? Name every such company.",
+  "expectedAnswer": "The companies are: AMARIN CORP PLC\\UK, REGENERON PHARMACEUTICALS, INC. (2 in total)."
+ },
+ {
+  "id": "C157",
+  "type": "set",
+  "question": "Which companies in this document set cited ASC 740-30-50 in responding to SEC staff comments? Name every such company.",
+  "expectedAnswer": "The companies are: Alkermes plc., VERTEX PHARMACEUTICALS INC / MA (2 in total)."
+ },
+ {
+  "id": "C158",
+  "type": "set",
+  "question": "Which companies in this document set cited Item 402(b)(1) in responding to SEC staff comments? Name every such company.",
+  "expectedAnswer": "The companies are: AMGEN INC, NEUROCRINE BIOSCIENCES INC (2 in total)."
+ },
+ {
+  "id": "C159",
+  "type": "set",
+  "question": "Which companies in this document set responded to SEC staff comments concerning leases? Name every such company.",
+  "expectedAnswer": "The companies are: Kymera Therapeutics, Inc., UNITED THERAPEUTICS Corp (2 in total)."
+ },
+ {
+  "id": "C160",
+  "type": "set",
+  "question": "Which companies in this document set cited ASC 606-10-50 in responding to SEC staff comments? Name every such company.",
+  "expectedAnswer": "The companies are: ALNYLAM PHARMACEUTICALS, INC., Denali Therapeutics Inc. (2 in total)."
+ },
+ {
+  "id": "C161",
+  "type": "set",
+  "question": "Which companies in this document set cited ASC 605-15-25 in responding to SEC staff comments? Name every such company.",
+  "expectedAnswer": "The companies are: INCYTE CORP, PTC THERAPEUTICS, INC. (2 in total)."
+ },
+ {
+  "id": "C162",
+  "type": "set",
+  "question": "Which companies in this document set cited Item 303(b)(2) in responding to SEC staff comments? Name every such company.",
+  "expectedAnswer": "The companies are: AMGEN INC, REGENERON PHARMACEUTICALS, INC. (2 in total)."
+ },
+ {
+  "id": "C163",
+  "type": "set",
+  "question": "Which companies in this document set cited ASC 605-28 in responding to SEC staff comments? Name every such company.",
+  "expectedAnswer": "The companies are: Alkermes plc., INCYTE CORP (2 in total)."
+ },
+ {
+  "id": "C164",
+  "type": "set",
+  "question": "Which companies in this document set cited ASC 815 in responding to SEC staff comments? Name every such company.",
+  "expectedAnswer": "The companies are: Alkermes plc., HALOZYME THERAPEUTICS, INC., REGENERON PHARMACEUTICALS, INC. (3 in total)."
+ },
+ {
+  "id": "C165",
+  "type": "set",
+  "question": "Which companies in this document set cited Item 402(s) in responding to SEC staff comments? Name every such company.",
+  "expectedAnswer": "The companies are: INCYTE CORP, INSMED Inc, UNITED THERAPEUTICS Corp (3 in total)."
+ },
+ {
+  "id": "C166",
+  "type": "set",
+  "question": "Which companies in this document set cited Item 101(c)(1) in responding to SEC staff comments? Name every such company.",
+  "expectedAnswer": "The companies are: INCYTE CORP, NEUROCRINE BIOSCIENCES INC (2 in total)."
+ },
+ {
+  "id": "C167",
+  "type": "set",
+  "question": "Which companies in this document set cited Rule 14e-1 in responding to SEC staff comments? Name every such company.",
+  "expectedAnswer": "The companies are: Jazz Pharmaceuticals plc, UNITED THERAPEUTICS Corp (2 in total)."
+ },
+ {
+  "id": "C168",
+  "type": "set",
+  "question": "Which companies in this document set cited Item 10(e)(1) in responding to SEC staff comments? Name every such company.",
+  "expectedAnswer": "The companies are: BIOGEN INC., NEUROCRINE BIOSCIENCES INC (2 in total)."
+ },
+ {
+  "id": "C169",
+  "type": "set",
+  "question": "Which companies in this document set cited Item 402(b)(2) in responding to SEC staff comments? Name every such company.",
+  "expectedAnswer": "The companies are: AMGEN INC, NEUROCRINE BIOSCIENCES INC, VERTEX PHARMACEUTICALS INC / MA (3 in total)."
+ },
+ {
+  "id": "C170",
+  "type": "set",
+  "question": "Which companies in this document set cited ASC 606 in responding to SEC staff comments? Name every such company.",
+  "expectedAnswer": "The companies are: Denali Therapeutics Inc., INCYTE CORP, Jazz Pharmaceuticals plc, REGENERON PHARMACEUTICALS, INC. (4 in total)."
+ },
+ {
+  "id": "C171",
+  "type": "set",
+  "question": "Which companies in this document set cited ASC 606-10-32-11 in responding to SEC staff comments? Name every such company.",
+  "expectedAnswer": "The companies are: INCYTE CORP, Jazz Pharmaceuticals plc (2 in total)."
+ },
+ {
+  "id": "C172",
+  "type": "set",
+  "question": "Which companies in this document set cited ASC 815-15-25 in responding to SEC staff comments? Name every such company.",
+  "expectedAnswer": "The companies are: Allogene Therapeutics, Inc., HALOZYME THERAPEUTICS, INC. (2 in total)."
+ },
+ {
+  "id": "C173",
+  "type": "shared",
+  "question": "Jazz Pharmaceuticals plc and NOVAVAX INC each responded to SEC staff comments touching on internal control. Which specific accounting standard or regulatory provision did both of them cite in those responses?",
+  "expectedAnswer": "Both cited Rule 13a-15."
+ },
+ {
+  "id": "C174",
+  "type": "shared",
+  "question": "AMGEN INC and Sarepta Therapeutics, Inc. each responded to SEC staff comments touching on executive compensation. Which specific accounting standard or regulatory provision did both of them cite in those responses?",
+  "expectedAnswer": "Both cited Item 402(b)."
+ },
+ {
+  "id": "C175",
+  "type": "shared",
+  "question": "AMGEN INC and VERTEX PHARMACEUTICALS INC / MA each responded to SEC staff comments touching on executive compensation. Which specific accounting standard or regulatory provision did both of them cite in those responses?",
+  "expectedAnswer": "Both cited Item 402(b)(2)."
+ },
+ {
+  "id": "C176",
+  "type": "shared",
+  "question": "AMARIN CORP PLC\\UK and NEUROCRINE BIOSCIENCES INC each responded to SEC staff comments touching on research and development expense. Which specific accounting standard or regulatory provision did both of them cite in those responses?",
+  "expectedAnswer": "Both cited ASC 730-10-20, ASC 730-10-25."
+ },
+ {
+  "id": "C177",
+  "type": "shared",
+  "question": "INCYTE CORP and INSMED Inc each responded to SEC staff comments touching on executive compensation. Which specific accounting standard or regulatory provision did both of them cite in those responses?",
+  "expectedAnswer": "Both cited Item 402(s)."
+ },
+ {
+  "id": "C178",
+  "type": "shared",
+  "question": "ARVINAS, INC. and REGENERON PHARMACEUTICALS, INC. each responded to SEC staff comments touching on research and development expense. Which specific accounting standard or regulatory provision did both of them cite in those responses?",
+  "expectedAnswer": "Both cited ASC 808."
+ },
+ {
+  "id": "C179",
+  "type": "shared",
+  "question": "HALOZYME THERAPEUTICS, INC. and NEUROCRINE BIOSCIENCES INC each responded to SEC staff comments touching on research and development expense. Which specific accounting standard or regulatory provision did both of them cite in those responses?",
+  "expectedAnswer": "Both cited ASC 730-10-25."
+ },
+ {
+  "id": "C180",
+  "type": "shared",
+  "question": "HALOZYME THERAPEUTICS, INC. and REGENERON PHARMACEUTICALS, INC. each responded to SEC staff comments touching on warrants and equity classification. Which specific accounting standard or regulatory provision did both of them cite in those responses?",
+  "expectedAnswer": "Both cited ASC 815."
+ },
+ {
+  "id": "C181",
+  "type": "shared",
+  "question": "AMARIN CORP PLC\\UK and HALOZYME THERAPEUTICS, INC. each responded to SEC staff comments touching on research and development expense. Which specific accounting standard or regulatory provision did both of them cite in those responses?",
+  "expectedAnswer": "Both cited ASC 730-10-25."
+ },
+ {
+  "id": "C182",
+  "type": "shared",
+  "question": "GILEAD SCIENCES, INC. and NOVAVAX INC each responded to SEC staff comments touching on internal control. Which specific accounting standard or regulatory provision did both of them cite in those responses?",
+  "expectedAnswer": "Both cited Rule 13a-15."
+ },
+ {
+  "id": "C183",
+  "type": "shared",
+  "question": "Alkermes plc. and AMARIN CORP PLC\\UK each responded to SEC staff comments touching on revenue recognition. Which specific accounting standard or regulatory provision did both of them cite in those responses?",
+  "expectedAnswer": "Both cited ASC 605-28-50."
+ }
+]

@@ -1,0 +1,3596 @@
+{
+ "C001": {
+  "supportDocIds": [
+   "03bc18991d86e7a8",
+   "14294da841d60c99"
+  ],
+  "hub": "revenue recognition",
+  "nDocs": 2,
+  "supportFilers": [
+   "JAZZ",
+   "NVAX"
+  ],
+  "origin": "supplement:Q003",
+  "supportDocNames": [
+   "JAZZ_CORRESP_2009-08-13",
+   "NVAX_CORRESP_2008-12-12"
+  ]
+ },
+ "C002": {
+  "supportDocIds": [
+   "be3413fa14940601",
+   "a6dcb68f7e496484"
+  ],
+  "hub": "research and development expense",
+  "nDocs": 2,
+  "supportFilers": [
+   "INSM",
+   "RVMD"
+  ],
+  "origin": "supplement:Q005",
+  "supportDocNames": [
+   "INSM_CORRESP_2005-05-06",
+   "RVMD_CORRESP_2024-04-19"
+  ]
+ },
+ "C003": {
+  "supportDocIds": [
+   "fcce1a082c1ae25a",
+   "14294da841d60c99"
+  ],
+  "hub": "executive compensation",
+  "nDocs": 2,
+  "supportFilers": [
+   "AMGN",
+   "NVAX"
+  ],
+  "origin": "supplement:Q007",
+  "supportDocNames": [
+   "AMGN_CORRESP_2007-10-15",
+   "NVAX_CORRESP_2008-12-12"
+  ]
+ },
+ "C004": {
+  "supportDocIds": [
+   "66315a32ce0897c9",
+   "810d2d142282adda"
+  ],
+  "hub": "fair value",
+  "nDocs": 2,
+  "supportFilers": [
+   "ARVN",
+   "REGN"
+  ],
+  "origin": "primary:Q008",
+  "supportDocNames": [
+   "ARVN_CORRESP_2018-08-30",
+   "REGN_CORRESP_2014-06-24"
+  ]
+ },
+ "C005": {
+  "supportDocIds": [
+   "d63f34eb85b487d5",
+   "3ecb5859031916de"
+  ],
+  "hub": "research and development expense",
+  "nDocs": 2,
+  "supportFilers": [
+   "ALNY",
+   "IOVA"
+  ],
+  "origin": "supplement:Q009",
+  "supportDocNames": [
+   "ALNY_CORRESP_2025-05-22",
+   "IOVA_CORRESP_2023-11-17"
+  ]
+ },
+ "C006": {
+  "supportDocIds": [
+   "e6ba742e05c98764",
+   "c2e2ab33688f7e18"
+  ],
+  "hub": "revenue recognition",
+  "nDocs": 2,
+  "supportFilers": [
+   "PTCT",
+   "TGTX"
+  ],
+  "origin": "supplement:Q011",
+  "supportDocNames": [
+   "PTCT_CORRESP_2021-10-19",
+   "TGTX_CORRESP_2013-10-01"
+  ]
+ },
+ "C007": {
+  "supportDocIds": [
+   "810d2d142282adda",
+   "4fcc634649e41911"
+  ],
+  "hub": "fair value",
+  "nDocs": 2,
+  "supportFilers": [
+   "REGN",
+   "VRTX"
+  ],
+  "origin": "supplement:Q013",
+  "supportDocNames": [
+   "REGN_CORRESP_2014-06-24",
+   "VRTX_CORRESP_2006-04-27"
+  ]
+ },
+ "C008": {
+  "supportDocIds": [
+   "b5cea595856e231e",
+   "ff5ff05585fa2fe0"
+  ],
+  "hub": "risk factors",
+  "nDocs": 2,
+  "supportFilers": [
+   "IOVA",
+   "UTHR"
+  ],
+  "origin": "primary:Q015",
+  "supportDocNames": [
+   "IOVA_CORRESP_2011-10-27",
+   "UTHR_CORRESP_2020-12-23"
+  ]
+ },
+ "C009": {
+  "supportDocIds": [
+   "8859abc2d3b1c136",
+   "97ef3a8ce1dc4059"
+  ],
+  "hub": "revenue recognition",
+  "nDocs": 2,
+  "supportFilers": [
+   "INSM",
+   "NBIX"
+  ],
+  "origin": "supplement:Q015",
+  "supportDocNames": [
+   "INSM_CORRESP_2019-12-17",
+   "NBIX_CORRESP_2010-09-09"
+  ]
+ },
+ "C010": {
+  "supportDocIds": [
+   "d63f34eb85b487d5",
+   "e6ba742e05c98764"
+  ],
+  "hub": "revenue recognition",
+  "nDocs": 2,
+  "supportFilers": [
+   "ALNY",
+   "PTCT"
+  ],
+  "origin": "supplement:Q017",
+  "supportDocNames": [
+   "ALNY_CORRESP_2025-05-22",
+   "PTCT_CORRESP_2021-10-19"
+  ]
+ },
+ "C011": {
+  "supportDocIds": [
+   "29ad60ce054ca4a3",
+   "53f1cad3cbca70d6"
+  ],
+  "hub": "fair value",
+  "nDocs": 2,
+  "supportFilers": [
+   "ALNY",
+   "JAZZ"
+  ],
+  "origin": "supplement:Q019",
+  "supportDocNames": [
+   "ALNY_CORRESP_2011-02-18",
+   "JAZZ_CORRESP_2013-01-22"
+  ]
+ },
+ "C012": {
+  "supportDocIds": [
+   "07542bf7d6ccbe2e",
+   "3476da8bbe7a76b7"
+  ],
+  "hub": "non-GAAP measures",
+  "nDocs": 2,
+  "supportFilers": [
+   "BMRN",
+   "REGN"
+  ],
+  "origin": "supplement:Q022",
+  "supportDocNames": [
+   "BMRN_CORRESP_2023-04-06",
+   "REGN_CORRESP_2016-05-23"
+  ]
+ },
+ "C013": {
+  "supportDocIds": [
+   "07542bf7d6ccbe2e",
+   "7ba143e0142eda09"
+  ],
+  "hub": "non-GAAP measures",
+  "nDocs": 2,
+  "supportFilers": [
+   "BMRN",
+   "INCY"
+  ],
+  "origin": "supplement:Q023",
+  "supportDocNames": [
+   "BMRN_CORRESP_2023-04-06",
+   "INCY_CORRESP_2018-10-31"
+  ]
+ },
+ "C014": {
+  "supportDocIds": [
+   "470d50ed4948cf89",
+   "35cedb986f8b88f2"
+  ],
+  "hub": "internal control",
+  "nDocs": 2,
+  "supportFilers": [
+   "SRPT",
+   "VRTX"
+  ],
+  "origin": "supplement:Q025",
+  "supportDocNames": [
+   "SRPT_CORRESP_2010-01-20",
+   "VRTX_CORRESP_2022-09-26"
+  ]
+ },
+ "C015": {
+  "supportDocIds": [
+   "a37f38f658333470",
+   "873604a6aa51ec5e"
+  ],
+  "hub": "income taxes",
+  "nDocs": 2,
+  "supportFilers": [
+   "AMGN",
+   "VRTX"
+  ],
+  "origin": "supplement:Q026",
+  "supportDocNames": [
+   "AMGN_CORRESP_2012-05-18",
+   "VRTX_CORRESP_2013-04-26"
+  ]
+ },
+ "C016": {
+  "supportDocIds": [
+   "fac29dd63375927e",
+   "d08e0e99817bbe2b"
+  ],
+  "hub": "revenue recognition",
+  "nDocs": 2,
+  "supportFilers": [
+   "AMRN",
+   "ARWR"
+  ],
+  "origin": "supplement:Q027",
+  "supportDocNames": [
+   "AMRN_CORRESP_2017-01-09",
+   "ARWR_CORRESP_2007-03-15"
+  ]
+ },
+ "C017": {
+  "supportDocIds": [
+   "b391a545533159a8",
+   "4fcc634649e41911"
+  ],
+  "hub": "revenue recognition",
+  "nDocs": 2,
+  "supportFilers": [
+   "INCY",
+   "VRTX"
+  ],
+  "origin": "supplement:Q028",
+  "supportDocNames": [
+   "INCY_CORRESP_2012-12-19",
+   "VRTX_CORRESP_2006-04-27"
+  ]
+ },
+ "C018": {
+  "supportDocIds": [
+   "ff2bd9fef19379fd",
+   "0258faf6c1624614"
+  ],
+  "hub": "liquidity and MD&A",
+  "nDocs": 2,
+  "supportFilers": [
+   "ARVN",
+   "NVAX"
+  ],
+  "origin": "supplement:Q030",
+  "supportDocNames": [
+   "ARVN_CORRESP_2024-09-11",
+   "NVAX_CORRESP_2017-12-04"
+  ]
+ },
+ "C019": {
+  "supportDocIds": [
+   "8859abc2d3b1c136",
+   "be21a904e57661f1"
+  ],
+  "hub": "revenue recognition",
+  "nDocs": 2,
+  "supportFilers": [
+   "INSM",
+   "KYMR"
+  ],
+  "origin": "supplement:Q032",
+  "supportDocNames": [
+   "INSM_CORRESP_2019-12-17",
+   "KYMR_CORRESP_2020-07-31"
+  ]
+ },
+ "C020": {
+  "supportDocIds": [
+   "aea76aeb66778c71",
+   "97ef3a8ce1dc4059"
+  ],
+  "hub": "revenue recognition",
+  "nDocs": 2,
+  "supportFilers": [
+   "DNLI",
+   "NBIX"
+  ],
+  "origin": "supplement:Q037",
+  "supportDocNames": [
+   "DNLI_CORRESP_2019-07-16",
+   "NBIX_CORRESP_2010-09-09"
+  ]
+ },
+ "C021": {
+  "supportDocIds": [
+   "c5e68d3b502f9e72",
+   "d1eab8035af62747"
+  ],
+  "hub": "liquidity and MD&A",
+  "nDocs": 2,
+  "supportFilers": [
+   "AMGN",
+   "RARE"
+  ],
+  "origin": "supplement:Q038",
+  "supportDocNames": [
+   "AMGN_CORRESP_2024-04-22",
+   "RARE_CORRESP_2024-05-17"
+  ]
+ },
+ "C022": {
+  "supportDocIds": [
+   "32cced4c87d1b768",
+   "79eb72411b65799a"
+  ],
+  "hub": "research and development expense",
+  "nDocs": 2,
+  "supportFilers": [
+   "HALO",
+   "SRPT"
+  ],
+  "origin": "supplement:Q040",
+  "supportDocNames": [
+   "HALO_CORRESP_2014-01-17",
+   "SRPT_CORRESP_2014-01-06"
+  ]
+ },
+ "C023": {
+  "supportDocIds": [
+   "89c907a727467880",
+   "d1eab8035af62747"
+  ],
+  "hub": "research and development expense",
+  "nDocs": 2,
+  "supportFilers": [
+   "EXEL",
+   "RARE"
+  ],
+  "origin": "supplement:Q041",
+  "supportDocNames": [
+   "EXEL_CORRESP_2008-10-20",
+   "RARE_CORRESP_2024-05-17"
+  ]
+ },
+ "C024": {
+  "supportDocIds": [
+   "d08e0e99817bbe2b",
+   "0aae2656bdfd0772"
+  ],
+  "hub": "warrants and equity classification",
+  "nDocs": 2,
+  "supportFilers": [
+   "ARWR",
+   "BEAM"
+  ],
+  "origin": "supplement:Q042",
+  "supportDocNames": [
+   "ARWR_CORRESP_2007-03-15",
+   "BEAM_CORRESP_2020-01-30"
+  ]
+ },
+ "C025": {
+  "supportDocIds": [
+   "fbb2dca17c06134b",
+   "ab45e3f9792ff4be"
+  ],
+  "hub": "research and development expense",
+  "nDocs": 2,
+  "supportFilers": [
+   "ALKS",
+   "IMVT"
+  ],
+  "origin": "supplement:Q043",
+  "supportDocNames": [
+   "ALKS_CORRESP_2013-03-12",
+   "IMVT_CORRESP_2024-02-13"
+  ]
+ },
+ "C026": {
+  "supportDocIds": [
+   "fe7e0045e3544b41",
+   "470d50ed4948cf89"
+  ],
+  "hub": "internal control",
+  "nDocs": 2,
+  "supportFilers": [
+   "GILD",
+   "SRPT"
+  ],
+  "origin": "supplement:Q044",
+  "supportDocNames": [
+   "GILD_CORRESP_2009-08-17",
+   "SRPT_CORRESP_2010-01-20"
+  ]
+ },
+ "C027": {
+  "supportDocIds": [
+   "be21a904e57661f1",
+   "4fcc634649e41911"
+  ],
+  "hub": "revenue recognition",
+  "nDocs": 2,
+  "supportFilers": [
+   "KYMR",
+   "VRTX"
+  ],
+  "origin": "supplement:Q045",
+  "supportDocNames": [
+   "KYMR_CORRESP_2020-07-31",
+   "VRTX_CORRESP_2006-04-27"
+  ]
+ },
+ "C028": {
+  "supportDocIds": [
+   "32cced4c87d1b768",
+   "ab45e3f9792ff4be"
+  ],
+  "hub": "research and development expense",
+  "nDocs": 2,
+  "supportFilers": [
+   "HALO",
+   "IMVT"
+  ],
+  "origin": "supplement:Q046",
+  "supportDocNames": [
+   "HALO_CORRESP_2014-01-17",
+   "IMVT_CORRESP_2024-02-13"
+  ]
+ },
+ "C029": {
+  "supportDocIds": [
+   "d63f34eb85b487d5",
+   "95a9eb6ea1685a91"
+  ],
+  "hub": "revenue recognition",
+  "nDocs": 2,
+  "supportFilers": [
+   "ALNY",
+   "UTHR"
+  ],
+  "origin": "supplement:Q049",
+  "supportDocNames": [
+   "ALNY_CORRESP_2025-05-22",
+   "UTHR_CORRESP_2008-01-18"
+  ]
+ },
+ "C030": {
+  "supportDocIds": [
+   "be21a904e57661f1",
+   "97ef3a8ce1dc4059"
+  ],
+  "hub": "revenue recognition",
+  "nDocs": 2,
+  "supportFilers": [
+   "KYMR",
+   "NBIX"
+  ],
+  "origin": "primary:Q050",
+  "supportDocNames": [
+   "KYMR_CORRESP_2020-07-31",
+   "NBIX_CORRESP_2010-09-09"
+  ]
+ },
+ "C031": {
+  "supportDocIds": [
+   "cc07b079dda7f996",
+   "66315a32ce0897c9"
+  ],
+  "hub": "fair value",
+  "nDocs": 2,
+  "supportFilers": [
+   "ALKS",
+   "ARVN"
+  ],
+  "origin": "supplement:Q050",
+  "supportDocNames": [
+   "ALKS_CORRESP_2016-11-10",
+   "ARVN_CORRESP_2018-08-30"
+  ]
+ },
+ "C032": {
+  "supportDocIds": [
+   "03bc18991d86e7a8",
+   "3b54a59abb97ff97"
+  ],
+  "hub": "executive compensation",
+  "nDocs": 2,
+  "supportFilers": [
+   "JAZZ",
+   "REGN"
+  ],
+  "origin": "supplement:Q051",
+  "supportDocNames": [
+   "JAZZ_CORRESP_2009-08-13",
+   "REGN_CORRESP_2020-12-07"
+  ]
+ },
+ "C033": {
+  "supportDocIds": [
+   "d1eab8035af62747",
+   "a6dcb68f7e496484"
+  ],
+  "hub": "research and development expense",
+  "nDocs": 2,
+  "supportFilers": [
+   "RARE",
+   "RVMD"
+  ],
+  "origin": "supplement:Q055",
+  "supportDocNames": [
+   "RARE_CORRESP_2024-05-17",
+   "RVMD_CORRESP_2024-04-19"
+  ]
+ },
+ "C034": {
+  "supportDocIds": [
+   "1965d44b9c958f1a",
+   "9456644128d6c70e"
+  ],
+  "hub": "risk factors",
+  "nDocs": 2,
+  "supportFilers": [
+   "IMVT",
+   "REGN"
+  ],
+  "origin": "primary:Q056",
+  "supportDocNames": [
+   "IMVT_CORRESP_2019-11-05",
+   "REGN_CORRESP_2024-05-20"
+  ]
+ },
+ "C035": {
+  "supportDocIds": [
+   "eac9a7da867a07da",
+   "29ad60ce054ca4a3"
+  ],
+  "hub": "fair value",
+  "nDocs": 2,
+  "supportFilers": [
+   "ALLO",
+   "ALNY"
+  ],
+  "origin": "supplement:Q057",
+  "supportDocNames": [
+   "ALLO_CORRESP_2018-10-02",
+   "ALNY_CORRESP_2011-02-18"
+  ]
+ },
+ "C036": {
+  "supportDocIds": [
+   "37404470e218b499",
+   "fc04c8f29ef1b60e"
+  ],
+  "hub": "income taxes",
+  "nDocs": 2,
+  "supportFilers": [
+   "ALKS",
+   "PTCT"
+  ],
+  "origin": "supplement:Q058",
+  "supportDocNames": [
+   "ALKS_CORRESP_2014-04-28",
+   "PTCT_CORRESP_2019-10-09"
+  ]
+ },
+ "C037": {
+  "supportDocIds": [
+   "1897d35af150cb6a",
+   "873604a6aa51ec5e"
+  ],
+  "hub": "income taxes",
+  "nDocs": 2,
+  "supportFilers": [
+   "BMRN",
+   "VRTX"
+  ],
+  "origin": "supplement:Q059",
+  "supportDocNames": [
+   "BMRN_CORRESP_2012-04-02",
+   "VRTX_CORRESP_2013-04-26"
+  ]
+ },
+ "C038": {
+  "supportDocIds": [
+   "fdf7f7fea6642c7a",
+   "678b2302d00381bb"
+  ],
+  "hub": "clinical and pipeline disclosure",
+  "nDocs": 2,
+  "supportFilers": [
+   "INCY",
+   "NBIX"
+  ],
+  "origin": "supplement:Q060",
+  "supportDocNames": [
+   "INCY_CORRESP_2010-08-04",
+   "NBIX_CORRESP_2021-10-05"
+  ]
+ },
+ "C039": {
+  "supportDocIds": [
+   "d1eab8035af62747",
+   "9456644128d6c70e"
+  ],
+  "hub": "liquidity and MD&A",
+  "nDocs": 2,
+  "supportFilers": [
+   "RARE",
+   "REGN"
+  ],
+  "origin": "primary:Q061",
+  "supportDocNames": [
+   "RARE_CORRESP_2024-05-17",
+   "REGN_CORRESP_2024-05-20"
+  ]
+ },
+ "C040": {
+  "supportDocIds": [
+   "189f9dee40702343",
+   "c2e2ab33688f7e18"
+  ],
+  "hub": "clinical and pipeline disclosure",
+  "nDocs": 2,
+  "supportFilers": [
+   "HALO",
+   "TGTX"
+  ],
+  "origin": "supplement:Q061",
+  "supportDocNames": [
+   "HALO_CORRESP_2012-08-31",
+   "TGTX_CORRESP_2013-10-01"
+  ]
+ },
+ "C041": {
+  "supportDocIds": [
+   "fbb2dca17c06134b",
+   "0258faf6c1624614"
+  ],
+  "hub": "liquidity and MD&A",
+  "nDocs": 2,
+  "supportFilers": [
+   "ALKS",
+   "NVAX"
+  ],
+  "origin": "supplement:Q062",
+  "supportDocNames": [
+   "ALKS_CORRESP_2013-03-12",
+   "NVAX_CORRESP_2017-12-04"
+  ]
+ },
+ "C042": {
+  "supportDocIds": [
+   "29ad60ce054ca4a3",
+   "453bf5555a244c2b"
+  ],
+  "hub": "warrants and equity classification",
+  "nDocs": 2,
+  "supportFilers": [
+   "ALNY",
+   "BMRN"
+  ],
+  "origin": "supplement:Q063",
+  "supportDocNames": [
+   "ALNY_CORRESP_2011-02-18",
+   "BMRN_CORRESP_2010-10-12"
+  ]
+ },
+ "C043": {
+  "supportDocIds": [
+   "d63f34eb85b487d5",
+   "ff2bd9fef19379fd"
+  ],
+  "hub": "research and development expense",
+  "nDocs": 2,
+  "supportFilers": [
+   "ALNY",
+   "ARVN"
+  ],
+  "origin": "supplement:Q068",
+  "supportDocNames": [
+   "ALNY_CORRESP_2025-05-22",
+   "ARVN_CORRESP_2024-09-11"
+  ]
+ },
+ "C044": {
+  "supportDocIds": [
+   "29ad60ce054ca4a3",
+   "4c26d40c0018f84a"
+  ],
+  "hub": "warrants and equity classification",
+  "nDocs": 2,
+  "supportFilers": [
+   "ALNY",
+   "TGTX"
+  ],
+  "origin": "supplement:Q069",
+  "supportDocNames": [
+   "ALNY_CORRESP_2011-02-18",
+   "TGTX_CORRESP_2011-03-14"
+  ]
+ },
+ "C045": {
+  "supportDocIds": [
+   "c5e68d3b502f9e72",
+   "be21a904e57661f1"
+  ],
+  "hub": "liquidity and MD&A",
+  "nDocs": 2,
+  "supportFilers": [
+   "AMGN",
+   "KYMR"
+  ],
+  "origin": "supplement:Q070",
+  "supportDocNames": [
+   "AMGN_CORRESP_2024-04-22",
+   "KYMR_CORRESP_2020-07-31"
+  ]
+ },
+ "C046": {
+  "supportDocIds": [
+   "d63f34eb85b487d5",
+   "9393db6918278c0d"
+  ],
+  "hub": "revenue recognition",
+  "nDocs": 2,
+  "supportFilers": [
+   "ALNY",
+   "GILD"
+  ],
+  "origin": "primary:Q071",
+  "supportDocNames": [
+   "ALNY_CORRESP_2025-05-22",
+   "GILD_CORRESP_2006-12-13"
+  ]
+ },
+ "C047": {
+  "supportDocIds": [
+   "03bc18991d86e7a8",
+   "14294da841d60c99"
+  ],
+  "hub": "executive compensation",
+  "nDocs": 2,
+  "supportFilers": [
+   "JAZZ",
+   "NVAX"
+  ],
+  "origin": "supplement:Q071",
+  "supportDocNames": [
+   "JAZZ_CORRESP_2009-08-13",
+   "NVAX_CORRESP_2008-12-12"
+  ]
+ },
+ "C048": {
+  "supportDocIds": [
+   "a5db4b8d5f6ab323",
+   "8859abc2d3b1c136"
+  ],
+  "hub": "non-GAAP measures",
+  "nDocs": 2,
+  "supportFilers": [
+   "BIIB",
+   "INSM"
+  ],
+  "origin": "supplement:Q072",
+  "supportDocNames": [
+   "BIIB_CORRESP_2021-04-07",
+   "INSM_CORRESP_2019-12-17"
+  ]
+ },
+ "C049": {
+  "supportDocIds": [
+   "07542bf7d6ccbe2e",
+   "9b8cca03ff375fa4"
+  ],
+  "hub": "non-GAAP measures",
+  "nDocs": 2,
+  "supportFilers": [
+   "BMRN",
+   "VRTX"
+  ],
+  "origin": "primary:Q076",
+  "supportDocNames": [
+   "BMRN_CORRESP_2023-04-06",
+   "VRTX_CORRESP_2012-07-11"
+  ]
+ },
+ "C050": {
+  "supportDocIds": [
+   "b391a545533159a8",
+   "14294da841d60c99"
+  ],
+  "hub": "revenue recognition",
+  "nDocs": 2,
+  "supportFilers": [
+   "INCY",
+   "NVAX"
+  ],
+  "origin": "supplement:Q078",
+  "supportDocNames": [
+   "INCY_CORRESP_2012-12-19",
+   "NVAX_CORRESP_2008-12-12"
+  ]
+ },
+ "C051": {
+  "supportDocIds": [
+   "fac29dd63375927e",
+   "3ecb5859031916de"
+  ],
+  "hub": "research and development expense",
+  "nDocs": 2,
+  "supportFilers": [
+   "AMRN",
+   "IOVA"
+  ],
+  "origin": "primary:Q081",
+  "supportDocNames": [
+   "AMRN_CORRESP_2017-01-09",
+   "IOVA_CORRESP_2023-11-17"
+  ]
+ },
+ "C052": {
+  "supportDocIds": [
+   "fdf7f7fea6642c7a",
+   "3847b41c39eda8be"
+  ],
+  "hub": "executive compensation",
+  "nDocs": 2,
+  "supportFilers": [
+   "INCY",
+   "VRTX"
+  ],
+  "origin": "supplement:Q081",
+  "supportDocNames": [
+   "INCY_CORRESP_2010-08-04",
+   "VRTX_CORRESP_2007-10-23"
+  ]
+ },
+ "C053": {
+  "supportDocIds": [
+   "ab45e3f9792ff4be",
+   "79eb72411b65799a"
+  ],
+  "hub": "liquidity and MD&A",
+  "nDocs": 2,
+  "supportFilers": [
+   "IMVT",
+   "SRPT"
+  ],
+  "origin": "primary:Q088",
+  "supportDocNames": [
+   "IMVT_CORRESP_2024-02-13",
+   "SRPT_CORRESP_2014-01-06"
+  ]
+ },
+ "C054": {
+  "supportDocIds": [
+   "ab45e3f9792ff4be",
+   "7ba143e0142eda09"
+  ],
+  "hub": "research and development expense",
+  "nDocs": 2,
+  "supportFilers": [
+   "IMVT",
+   "INCY"
+  ],
+  "origin": "primary:Q094",
+  "supportDocNames": [
+   "IMVT_CORRESP_2024-02-13",
+   "INCY_CORRESP_2018-10-31"
+  ]
+ },
+ "C055": {
+  "supportDocIds": [
+   "be21a904e57661f1",
+   "a2d2ccbb1cc235a1"
+  ],
+  "hub": "liquidity and MD&A",
+  "nDocs": 2,
+  "supportFilers": [
+   "KYMR",
+   "NBIX"
+  ],
+  "origin": "primary:Q100",
+  "supportDocNames": [
+   "KYMR_CORRESP_2020-07-31",
+   "NBIX_CORRESP_2010-11-22"
+  ]
+ },
+ "C056": {
+  "supportDocIds": [
+   "d63f34eb85b487d5",
+   "a6dcb68f7e496484"
+  ],
+  "hub": "research and development expense",
+  "nDocs": 2,
+  "supportFilers": [
+   "ALNY",
+   "RVMD"
+  ],
+  "origin": "primary:Q109",
+  "supportDocNames": [
+   "ALNY_CORRESP_2025-05-22",
+   "RVMD_CORRESP_2024-04-19"
+  ]
+ },
+ "C057": {
+  "supportDocIds": [
+   "b5cea595856e231e",
+   "3847b41c39eda8be"
+  ],
+  "hub": "executive compensation",
+  "nDocs": 2,
+  "supportFilers": [
+   "IOVA",
+   "VRTX"
+  ],
+  "origin": "primary:Q115",
+  "supportDocNames": [
+   "IOVA_CORRESP_2011-10-27",
+   "VRTX_CORRESP_2007-10-23"
+  ]
+ },
+ "C058": {
+  "supportDocIds": [
+   "8859abc2d3b1c136",
+   "95a9eb6ea1685a91"
+  ],
+  "hub": "revenue recognition",
+  "nDocs": 2,
+  "supportFilers": [
+   "INSM",
+   "UTHR"
+  ],
+  "origin": "primary:Q121",
+  "supportDocNames": [
+   "INSM_CORRESP_2019-12-17",
+   "UTHR_CORRESP_2008-01-18"
+  ]
+ },
+ "C059": {
+  "supportDocIds": [
+   "37404470e218b499",
+   "8cc247e7827a353c"
+  ],
+  "hub": "income taxes",
+  "nDocs": 2,
+  "supportFilers": [
+   "ALKS",
+   "GILD"
+  ],
+  "origin": "primary:Q127",
+  "supportDocNames": [
+   "ALKS_CORRESP_2014-04-28",
+   "GILD_CORRESP_2006-11-14"
+  ]
+ },
+ "C060": {
+  "supportDocIds": [
+   "fbb2dca17c06134b",
+   "d08e0e99817bbe2b"
+  ],
+  "hub": "clinical and pipeline disclosure",
+  "nDocs": 2,
+  "supportFilers": [
+   "ALKS",
+   "ARWR"
+  ],
+  "origin": "primary:Q130",
+  "supportDocNames": [
+   "ALKS_CORRESP_2013-03-12",
+   "ARWR_CORRESP_2007-03-15"
+  ]
+ },
+ "C061": {
+  "supportDocIds": [
+   "7af7cd903c42a69e",
+   "fc04c8f29ef1b60e"
+  ],
+  "hub": "business combinations and IPR&D",
+  "nDocs": 2,
+  "supportFilers": [
+   "NBIX",
+   "PTCT"
+  ],
+  "origin": "primary:Q133",
+  "supportDocNames": [
+   "NBIX_CORRESP_2021-11-03",
+   "PTCT_CORRESP_2019-10-09"
+  ]
+ },
+ "C062": {
+  "supportDocIds": [
+   "fac29dd63375927e",
+   "79eb72411b65799a"
+  ],
+  "hub": "research and development expense",
+  "nDocs": 2,
+  "supportFilers": [
+   "AMRN",
+   "SRPT"
+  ],
+  "origin": "primary:Q139",
+  "supportDocNames": [
+   "AMRN_CORRESP_2017-01-09",
+   "SRPT_CORRESP_2014-01-06"
+  ]
+ },
+ "C063": {
+  "supportDocIds": [
+   "fc04c8f29ef1b60e",
+   "873604a6aa51ec5e"
+  ],
+  "hub": "income taxes",
+  "nDocs": 2,
+  "supportFilers": [
+   "PTCT",
+   "VRTX"
+  ],
+  "origin": "primary:Q142",
+  "supportDocNames": [
+   "PTCT_CORRESP_2019-10-09",
+   "VRTX_CORRESP_2013-04-26"
+  ]
+ },
+ "C064": {
+  "supportDocIds": [
+   "1965d44b9c958f1a",
+   "dcb47402c822d0e0"
+  ],
+  "hub": "risk factors",
+  "nDocs": 2,
+  "supportFilers": [
+   "IMVT",
+   "KYMR"
+  ],
+  "origin": "primary:Q145",
+  "supportDocNames": [
+   "IMVT_CORRESP_2019-11-05",
+   "KYMR_CORRESP_2020-08-13"
+  ]
+ },
+ "C065": {
+  "supportDocIds": [
+   "c5e68d3b502f9e72",
+   "be3413fa14940601"
+  ],
+  "hub": "liquidity and MD&A",
+  "nDocs": 2,
+  "supportFilers": [
+   "AMGN",
+   "INSM"
+  ],
+  "origin": "primary:Q148",
+  "supportDocNames": [
+   "AMGN_CORRESP_2024-04-22",
+   "INSM_CORRESP_2005-05-06"
+  ]
+ },
+ "C066": {
+  "supportDocIds": [
+   "be3413fa14940601",
+   "3ecb5859031916de"
+  ],
+  "hub": "research and development expense",
+  "nDocs": 2,
+  "supportFilers": [
+   "INSM",
+   "IOVA"
+  ],
+  "origin": "primary:Q151",
+  "supportDocNames": [
+   "INSM_CORRESP_2005-05-06",
+   "IOVA_CORRESP_2023-11-17"
+  ]
+ },
+ "C067": {
+  "supportDocIds": [
+   "a5db4b8d5f6ab323",
+   "07542bf7d6ccbe2e"
+  ],
+  "hub": "non-GAAP measures",
+  "nDocs": 2,
+  "supportFilers": [
+   "BIIB",
+   "BMRN"
+  ],
+  "origin": "primary:Q163",
+  "supportDocNames": [
+   "BIIB_CORRESP_2021-04-07",
+   "BMRN_CORRESP_2023-04-06"
+  ]
+ },
+ "C068": {
+  "supportDocIds": [
+   "0aae2656bdfd0772",
+   "8cc247e7827a353c"
+  ],
+  "hub": "warrants and equity classification",
+  "nDocs": 2,
+  "supportFilers": [
+   "BEAM",
+   "GILD"
+  ],
+  "origin": "primary:Q165",
+  "supportDocNames": [
+   "BEAM_CORRESP_2020-01-30",
+   "GILD_CORRESP_2006-11-14"
+  ]
+ },
+ "C069": {
+  "supportDocIds": [
+   "d08e0e99817bbe2b",
+   "03bc18991d86e7a8"
+  ],
+  "hub": "revenue recognition",
+  "nDocs": 2,
+  "supportFilers": [
+   "ARWR",
+   "JAZZ"
+  ],
+  "origin": "primary:Q169",
+  "supportDocNames": [
+   "ARWR_CORRESP_2007-03-15",
+   "JAZZ_CORRESP_2009-08-13"
+  ]
+ },
+ "C070": {
+  "supportDocIds": [
+   "7ba143e0142eda09",
+   "8859abc2d3b1c136"
+  ],
+  "hub": "non-GAAP measures",
+  "nDocs": 2,
+  "supportFilers": [
+   "INCY",
+   "INSM"
+  ],
+  "origin": "primary:Q173",
+  "supportDocNames": [
+   "INCY_CORRESP_2018-10-31",
+   "INSM_CORRESP_2019-12-17"
+  ]
+ },
+ "C071": {
+  "supportDocIds": [
+   "fac29dd63375927e",
+   "9456644128d6c70e"
+  ],
+  "hub": "revenue recognition",
+  "nDocs": 2,
+  "supportFilers": [
+   "AMRN",
+   "REGN"
+  ],
+  "origin": "primary:Q177",
+  "supportDocNames": [
+   "AMRN_CORRESP_2017-01-09",
+   "REGN_CORRESP_2024-05-20"
+  ]
+ },
+ "C072": {
+  "supportDocIds": [
+   "b391a545533159a8",
+   "3ecb5859031916de"
+  ],
+  "hub": "liquidity and MD&A",
+  "nDocs": 2,
+  "supportFilers": [
+   "INCY",
+   "IOVA"
+  ],
+  "origin": "primary:Q181",
+  "supportDocNames": [
+   "INCY_CORRESP_2012-12-19",
+   "IOVA_CORRESP_2023-11-17"
+  ]
+ },
+ "C073": {
+  "supportDocIds": [
+   "ff2bd9fef19379fd",
+   "03bc18991d86e7a8"
+  ],
+  "hub": "clinical and pipeline disclosure",
+  "nDocs": 2,
+  "supportFilers": [
+   "ARVN",
+   "JAZZ"
+  ],
+  "origin": "primary:Q185",
+  "supportDocNames": [
+   "ARVN_CORRESP_2024-09-11",
+   "JAZZ_CORRESP_2009-08-13"
+  ]
+ },
+ "C074": {
+  "supportDocIds": [
+   "9456644128d6c70e",
+   "7dd2d8b64dc8f5b0"
+  ],
+  "hub": "research and development expense",
+  "nDocs": 2,
+  "supportFilers": [
+   "REGN",
+   "TGTX"
+  ],
+  "origin": "primary:Q187",
+  "supportDocNames": [
+   "REGN_CORRESP_2024-05-20",
+   "TGTX_CORRESP_2007-01-04"
+  ]
+ },
+ "C075": {
+  "supportDocIds": [
+   "03bc18991d86e7a8",
+   "888b8d005e7a5490"
+  ],
+  "hub": "inventory",
+  "nDocs": 2,
+  "supportFilers": [
+   "JAZZ",
+   "PTCT"
+  ],
+  "origin": "primary:Q188",
+  "supportDocNames": [
+   "JAZZ_CORRESP_2009-08-13",
+   "PTCT_CORRESP_2016-01-21"
+  ]
+ },
+ "C076": {
+  "supportDocIds": [
+   "fbb2dca17c06134b",
+   "fc04c8f29ef1b60e"
+  ],
+  "hub": "business combinations and IPR&D",
+  "nDocs": 2,
+  "supportFilers": [
+   "ALKS",
+   "PTCT"
+  ],
+  "origin": "primary:Q189",
+  "supportDocNames": [
+   "ALKS_CORRESP_2013-03-12",
+   "PTCT_CORRESP_2019-10-09"
+  ]
+ },
+ "C077": {
+  "supportDocIds": [
+   "fbb2dca17c06134b",
+   "89c907a727467880"
+  ],
+  "hub": "research and development expense",
+  "nDocs": 2,
+  "supportFilers": [
+   "ALKS",
+   "EXEL"
+  ],
+  "origin": "primary:Q190",
+  "supportDocNames": [
+   "ALKS_CORRESP_2013-03-12",
+   "EXEL_CORRESP_2008-10-20"
+  ]
+ },
+ "C078": {
+  "supportDocIds": [
+   "ff2bd9fef19379fd",
+   "97ef3a8ce1dc4059"
+  ],
+  "hub": "research and development expense",
+  "nDocs": 2,
+  "supportFilers": [
+   "ARVN",
+   "NBIX"
+  ],
+  "origin": "primary:Q191",
+  "supportDocNames": [
+   "ARVN_CORRESP_2024-09-11",
+   "NBIX_CORRESP_2010-09-09"
+  ]
+ },
+ "C079": {
+  "supportDocIds": [
+   "29ad60ce054ca4a3",
+   "0aae2656bdfd0772"
+  ],
+  "hub": "warrants and equity classification",
+  "nDocs": 2,
+  "supportFilers": [
+   "ALNY",
+   "BEAM"
+  ],
+  "origin": "primary:Q196",
+  "supportDocNames": [
+   "ALNY_CORRESP_2011-02-18",
+   "BEAM_CORRESP_2020-01-30"
+  ]
+ },
+ "C080": {
+  "supportDocIds": [
+   "d1eab8035af62747",
+   "79eb72411b65799a"
+  ],
+  "hub": "research and development expense",
+  "nDocs": 2,
+  "supportFilers": [
+   "RARE",
+   "SRPT"
+  ],
+  "origin": "primary:Q198",
+  "supportDocNames": [
+   "RARE_CORRESP_2024-05-17",
+   "SRPT_CORRESP_2014-01-06"
+  ]
+ },
+ "C081": {
+  "supportDocIds": [
+   "cc07b079dda7f996",
+   "29ad60ce054ca4a3"
+  ],
+  "hub": "fair value",
+  "nDocs": 2,
+  "supportFilers": [
+   "ALKS",
+   "ALNY"
+  ],
+  "origin": "primary:Q199",
+  "supportDocNames": [
+   "ALKS_CORRESP_2016-11-10",
+   "ALNY_CORRESP_2011-02-18"
+  ]
+ },
+ "C082": {
+  "supportDocIds": [
+   "b391a545533159a8",
+   "03bc18991d86e7a8"
+  ],
+  "hub": "inventory",
+  "nDocs": 2,
+  "supportFilers": [
+   "INCY",
+   "JAZZ"
+  ],
+  "origin": "primary:Q200",
+  "supportDocNames": [
+   "INCY_CORRESP_2012-12-19",
+   "JAZZ_CORRESP_2009-08-13"
+  ]
+ },
+ "C083": {
+  "supportDocIds": [
+   "14294da841d60c99",
+   "3b54a59abb97ff97"
+  ],
+  "hub": "executive compensation",
+  "nDocs": 2,
+  "supportFilers": [
+   "NVAX",
+   "REGN"
+  ],
+  "origin": "primary:Q201",
+  "supportDocNames": [
+   "NVAX_CORRESP_2008-12-12",
+   "REGN_CORRESP_2020-12-07"
+  ]
+ },
+ "C084": {
+  "supportDocIds": [
+   "eac9a7da867a07da",
+   "4fcc634649e41911"
+  ],
+  "hub": "fair value",
+  "nDocs": 2,
+  "supportFilers": [
+   "ALLO",
+   "VRTX"
+  ],
+  "origin": "primary:Q204",
+  "supportDocNames": [
+   "ALLO_CORRESP_2018-10-02",
+   "VRTX_CORRESP_2006-04-27"
+  ]
+ },
+ "C085": {
+  "supportDocIds": [
+   "8cc247e7827a353c",
+   "03bc18991d86e7a8"
+  ],
+  "hub": "impairment",
+  "nDocs": 2,
+  "supportFilers": [
+   "GILD",
+   "JAZZ"
+  ],
+  "origin": "primary:Q207",
+  "supportDocNames": [
+   "GILD_CORRESP_2006-11-14",
+   "JAZZ_CORRESP_2009-08-13"
+  ]
+ },
+ "C086": {
+  "supportDocIds": [
+   "b391a545533159a8",
+   "a2d2ccbb1cc235a1"
+  ],
+  "hub": "liquidity and MD&A",
+  "nDocs": 2,
+  "supportFilers": [
+   "INCY",
+   "NBIX"
+  ],
+  "origin": "primary:Q208",
+  "supportDocNames": [
+   "INCY_CORRESP_2012-12-19",
+   "NBIX_CORRESP_2010-11-22"
+  ]
+ },
+ "C087": {
+  "supportDocIds": [
+   "453bf5555a244c2b",
+   "42a02f471e85beaa"
+  ],
+  "hub": "executive compensation",
+  "nDocs": 2,
+  "supportFilers": [
+   "BMRN",
+   "INSM"
+  ],
+  "origin": "primary:Q209",
+  "supportDocNames": [
+   "BMRN_CORRESP_2010-10-12",
+   "INSM_CORRESP_2010-07-29"
+  ]
+ },
+ "C088": {
+  "supportDocIds": [
+   "a37f38f658333470",
+   "8cc247e7827a353c"
+  ],
+  "hub": "income taxes",
+  "nDocs": 2,
+  "supportFilers": [
+   "AMGN",
+   "GILD"
+  ],
+  "origin": "primary:Q211",
+  "supportDocNames": [
+   "AMGN_CORRESP_2012-05-18",
+   "GILD_CORRESP_2006-11-14"
+  ]
+ },
+ "C089": {
+  "supportDocIds": [
+   "0258faf6c1624614",
+   "9456644128d6c70e"
+  ],
+  "hub": "liquidity and MD&A",
+  "nDocs": 2,
+  "supportFilers": [
+   "NVAX",
+   "REGN"
+  ],
+  "origin": "primary:Q212",
+  "supportDocNames": [
+   "NVAX_CORRESP_2017-12-04",
+   "REGN_CORRESP_2024-05-20"
+  ]
+ },
+ "C090": {
+  "supportDocIds": [
+   "aea76aeb66778c71",
+   "be21a904e57661f1"
+  ],
+  "hub": "revenue recognition",
+  "nDocs": 2,
+  "supportFilers": [
+   "DNLI",
+   "KYMR"
+  ],
+  "origin": "primary:Q213",
+  "supportDocNames": [
+   "DNLI_CORRESP_2019-07-16",
+   "KYMR_CORRESP_2020-07-31"
+  ]
+ },
+ "C091": {
+  "supportDocIds": [
+   "97ef3a8ce1dc4059",
+   "7dd2d8b64dc8f5b0"
+  ],
+  "hub": "research and development expense",
+  "nDocs": 2,
+  "supportFilers": [
+   "NBIX",
+   "TGTX"
+  ],
+  "origin": "primary:Q215",
+  "supportDocNames": [
+   "NBIX_CORRESP_2010-09-09",
+   "TGTX_CORRESP_2007-01-04"
+  ]
+ },
+ "C092": {
+  "supportDocIds": [
+   "b1cac8c8c99d329b",
+   "189f9dee40702343"
+  ],
+  "hub": "clinical and pipeline disclosure",
+  "nDocs": 2,
+  "supportFilers": [
+   "ALNY",
+   "HALO"
+  ],
+  "origin": "primary:Q217",
+  "supportDocNames": [
+   "ALNY_CORRESP_2009-02-24",
+   "HALO_CORRESP_2012-08-31"
+  ]
+ },
+ "C093": {
+  "supportDocIds": [
+   "29ad60ce054ca4a3",
+   "4fcc634649e41911"
+  ],
+  "hub": "fair value",
+  "nDocs": 2,
+  "supportFilers": [
+   "ALNY",
+   "VRTX"
+  ],
+  "origin": "primary:Q219",
+  "supportDocNames": [
+   "ALNY_CORRESP_2011-02-18",
+   "VRTX_CORRESP_2006-04-27"
+  ]
+ },
+ "C094": {
+  "supportDocIds": [
+   "be3413fa14940601",
+   "0258faf6c1624614"
+  ],
+  "hub": "liquidity and MD&A",
+  "nDocs": 2,
+  "supportFilers": [
+   "INSM",
+   "NVAX"
+  ],
+  "origin": "primary:Q220",
+  "supportDocNames": [
+   "INSM_CORRESP_2005-05-06",
+   "NVAX_CORRESP_2017-12-04"
+  ]
+ },
+ "C095": {
+  "supportDocIds": [
+   "ff2bd9fef19379fd",
+   "3502befcde8cda5e"
+  ],
+  "hub": "clinical and pipeline disclosure",
+  "nDocs": 2,
+  "supportFilers": [
+   "ARVN",
+   "REGN"
+  ],
+  "origin": "primary:Q221",
+  "supportDocNames": [
+   "ARVN_CORRESP_2024-09-11",
+   "REGN_CORRESP_2016-08-19"
+  ]
+ },
+ "C096": {
+  "supportDocIds": [
+   "d08e0e99817bbe2b",
+   "e6ba742e05c98764"
+  ],
+  "hub": "revenue recognition",
+  "nDocs": 2,
+  "supportFilers": [
+   "ARWR",
+   "PTCT"
+  ],
+  "origin": "primary:Q223",
+  "supportDocNames": [
+   "ARWR_CORRESP_2007-03-15",
+   "PTCT_CORRESP_2021-10-19"
+  ]
+ },
+ "C097": {
+  "supportDocIds": [
+   "be21a904e57661f1",
+   "873604a6aa51ec5e"
+  ],
+  "hub": "clinical and pipeline disclosure",
+  "nDocs": 2,
+  "supportFilers": [
+   "KYMR",
+   "VRTX"
+  ],
+  "origin": "primary:Q225",
+  "supportDocNames": [
+   "KYMR_CORRESP_2020-07-31",
+   "VRTX_CORRESP_2013-04-26"
+  ]
+ },
+ "C098": {
+  "supportDocIds": [
+   "189f9dee40702343",
+   "2675fa111a8a3280"
+  ],
+  "hub": "clinical and pipeline disclosure",
+  "nDocs": 2,
+  "supportFilers": [
+   "HALO",
+   "RCUS"
+  ],
+  "origin": "primary:Q226",
+  "supportDocNames": [
+   "HALO_CORRESP_2012-08-31",
+   "RCUS_CORRESP_2018-02-16"
+  ]
+ },
+ "C099": {
+  "supportDocIds": [
+   "8859abc2d3b1c136",
+   "9456644128d6c70e"
+  ],
+  "hub": "revenue recognition",
+  "nDocs": 2,
+  "supportFilers": [
+   "INSM",
+   "REGN"
+  ],
+  "origin": "primary:Q228",
+  "supportDocNames": [
+   "INSM_CORRESP_2019-12-17",
+   "REGN_CORRESP_2024-05-20"
+  ]
+ },
+ "C100": {
+  "supportDocIds": [
+   "8859abc2d3b1c136",
+   "3476da8bbe7a76b7"
+  ],
+  "hub": "non-GAAP measures",
+  "nDocs": 2,
+  "supportFilers": [
+   "INSM",
+   "REGN"
+  ],
+  "origin": "primary:Q234",
+  "supportDocNames": [
+   "INSM_CORRESP_2019-12-17",
+   "REGN_CORRESP_2016-05-23"
+  ]
+ },
+ "C101": {
+  "supportDocIds": [
+   "d78b887bdaffa2ba",
+   "873604a6aa51ec5e"
+  ],
+  "hub": "business combinations and IPR&D",
+  "nDocs": 2,
+  "supportFilers": [
+   "GILD",
+   "VRTX"
+  ],
+  "origin": "primary:Q237",
+  "supportDocNames": [
+   "GILD_CORRESP_2007-05-18",
+   "VRTX_CORRESP_2013-04-26"
+  ]
+ },
+ "C102": {
+  "supportDocIds": [
+   "2da85dac7bba9d88",
+   "97ef3a8ce1dc4059"
+  ],
+  "hub": "NBIX",
+  "nDocs": 2,
+  "supportFilers": [
+   "NBIX"
+  ],
+  "origin": "primary:Q002",
+  "supportDocNames": [
+   "NBIX_CORRESP_2007-09-20",
+   "NBIX_CORRESP_2010-09-09"
+  ]
+ },
+ "C103": {
+  "supportDocIds": [
+   "fac29dd63375927e",
+   "993a3b4467e06526"
+  ],
+  "hub": "AMRN",
+  "nDocs": 2,
+  "supportFilers": [
+   "AMRN"
+  ],
+  "origin": "primary:Q009",
+  "supportDocNames": [
+   "AMRN_CORRESP_2017-01-09",
+   "AMRN_CORRESP_2023-10-24"
+  ]
+ },
+ "C104": {
+  "supportDocIds": [
+   "189f9dee40702343",
+   "32cced4c87d1b768"
+  ],
+  "hub": "HALO",
+  "nDocs": 2,
+  "supportFilers": [
+   "HALO"
+  ],
+  "origin": "primary:Q016",
+  "supportDocNames": [
+   "HALO_CORRESP_2012-08-31",
+   "HALO_CORRESP_2014-01-17"
+  ]
+ },
+ "C105": {
+  "supportDocIds": [
+   "3847b41c39eda8be",
+   "d2b44f9a32288555"
+  ],
+  "hub": "VRTX",
+  "nDocs": 2,
+  "supportFilers": [
+   "VRTX"
+  ],
+  "origin": "primary:Q023",
+  "supportDocNames": [
+   "VRTX_CORRESP_2007-10-23",
+   "VRTX_CORRESP_2011-05-20"
+  ]
+ },
+ "C106": {
+  "supportDocIds": [
+   "6a42274aeda7610c",
+   "79eb72411b65799a"
+  ],
+  "hub": "SRPT",
+  "nDocs": 2,
+  "supportFilers": [
+   "SRPT"
+  ],
+  "origin": "primary:Q030",
+  "supportDocNames": [
+   "SRPT_CORRESP_2007-10-24",
+   "SRPT_CORRESP_2014-01-06"
+  ]
+ },
+ "C107": {
+  "supportDocIds": [
+   "888b8d005e7a5490",
+   "fc04c8f29ef1b60e"
+  ],
+  "hub": "PTCT",
+  "nDocs": 2,
+  "supportFilers": [
+   "PTCT"
+  ],
+  "origin": "primary:Q037",
+  "supportDocNames": [
+   "PTCT_CORRESP_2016-01-21",
+   "PTCT_CORRESP_2019-10-09"
+  ]
+ },
+ "C108": {
+  "supportDocIds": [
+   "95a9eb6ea1685a91",
+   "3ec1893f3a8245a5"
+  ],
+  "hub": "UTHR",
+  "nDocs": 2,
+  "supportFilers": [
+   "UTHR"
+  ],
+  "origin": "primary:Q044",
+  "supportDocNames": [
+   "UTHR_CORRESP_2008-01-18",
+   "UTHR_CORRESP_2012-08-01"
+  ]
+ },
+ "C109": {
+  "supportDocIds": [
+   "7b67ea8fc0a6aaed",
+   "a6dcb68f7e496484"
+  ],
+  "hub": "RVMD",
+  "nDocs": 2,
+  "supportFilers": [
+   "RVMD"
+  ],
+  "origin": "primary:Q051",
+  "supportDocNames": [
+   "RVMD_CORRESP_2020-01-17",
+   "RVMD_CORRESP_2024-04-19"
+  ]
+ },
+ "C110": {
+  "supportDocIds": [
+   "7fba89dfede0d6ff",
+   "1d49ea84779a4e03"
+  ],
+  "hub": "ALNY",
+  "nDocs": 2,
+  "supportFilers": [
+   "ALNY"
+  ],
+  "origin": "primary:Q057",
+  "supportDocNames": [
+   "ALNY_CORRESP_2009-01-22",
+   "ALNY_CORRESP_2011-01-12"
+  ]
+ },
+ "C111": {
+  "supportDocIds": [
+   "fcce1a082c1ae25a",
+   "534e40bb82c1460d"
+  ],
+  "hub": "AMGN",
+  "nDocs": 2,
+  "supportFilers": [
+   "AMGN"
+  ],
+  "origin": "primary:Q062",
+  "supportDocNames": [
+   "AMGN_CORRESP_2007-10-15",
+   "AMGN_CORRESP_2009-04-01"
+  ]
+ },
+ "C112": {
+  "supportDocIds": [
+   "8cc247e7827a353c",
+   "106c2c5db0126f88"
+  ],
+  "hub": "GILD",
+  "nDocs": 2,
+  "supportFilers": [
+   "GILD"
+  ],
+  "origin": "primary:Q067",
+  "supportDocNames": [
+   "GILD_CORRESP_2006-11-14",
+   "GILD_CORRESP_2011-08-04"
+  ]
+ },
+ "C113": {
+  "supportDocIds": [
+   "3476da8bbe7a76b7",
+   "3b54a59abb97ff97"
+  ],
+  "hub": "REGN",
+  "nDocs": 2,
+  "supportFilers": [
+   "REGN"
+  ],
+  "origin": "primary:Q072",
+  "supportDocNames": [
+   "REGN_CORRESP_2016-05-23",
+   "REGN_CORRESP_2020-12-07"
+  ]
+ },
+ "C114": {
+  "supportDocIds": [
+   "03bc18991d86e7a8",
+   "7a3afcca53440528"
+  ],
+  "hub": "JAZZ",
+  "nDocs": 2,
+  "supportFilers": [
+   "JAZZ"
+  ],
+  "origin": "primary:Q077",
+  "supportDocNames": [
+   "JAZZ_CORRESP_2009-08-13",
+   "JAZZ_CORRESP_2019-11-19"
+  ]
+ },
+ "C115": {
+  "supportDocIds": [
+   "189f9dee40702343",
+   "f4c04b0230ba7595"
+  ],
+  "hub": "ASC 605-25-25",
+  "nDocs": 2,
+  "supportFilers": [
+   "HALO",
+   "REGN"
+  ],
+  "origin": "primary:Q003",
+  "supportDocNames": [
+   "HALO_CORRESP_2012-08-31",
+   "REGN_CORRESP_2016-10-12"
+  ]
+ },
+ "C116": {
+  "supportDocIds": [
+   "fac29dd63375927e",
+   "97ef3a8ce1dc4059",
+   "888b8d005e7a5490"
+  ],
+  "hub": "ASC 730-10-20",
+  "nDocs": 3,
+  "supportFilers": [
+   "AMRN",
+   "NBIX",
+   "PTCT"
+  ],
+  "origin": "primary:Q010",
+  "supportDocNames": [
+   "AMRN_CORRESP_2017-01-09",
+   "NBIX_CORRESP_2010-09-09",
+   "PTCT_CORRESP_2016-01-21"
+  ]
+ },
+ "C117": {
+  "supportDocIds": [
+   "fac29dd63375927e",
+   "32cced4c87d1b768",
+   "97ef3a8ce1dc4059"
+  ],
+  "hub": "ASC 730-10-25",
+  "nDocs": 3,
+  "supportFilers": [
+   "AMRN",
+   "HALO",
+   "NBIX"
+  ],
+  "origin": "primary:Q017",
+  "supportDocNames": [
+   "AMRN_CORRESP_2017-01-09",
+   "HALO_CORRESP_2014-01-17",
+   "NBIX_CORRESP_2010-09-09"
+  ]
+ },
+ "C118": {
+  "supportDocIds": [
+   "fbb2dca17c06134b",
+   "d08e0e99817bbe2b",
+   "d78b887bdaffa2ba",
+   "7af7cd903c42a69e",
+   "fc04c8f29ef1b60e",
+   "873604a6aa51ec5e"
+  ],
+  "hub": "business combinations and IPR&D",
+  "nDocs": 6,
+  "supportFilers": [
+   "ALKS",
+   "ARWR",
+   "GILD",
+   "NBIX",
+   "PTCT",
+   "VRTX"
+  ],
+  "origin": "primary:Q024",
+  "supportDocNames": [
+   "ALKS_CORRESP_2013-03-12",
+   "ARWR_CORRESP_2007-03-15",
+   "GILD_CORRESP_2007-05-18",
+   "NBIX_CORRESP_2021-11-03",
+   "PTCT_CORRESP_2019-10-09",
+   "VRTX_CORRESP_2013-04-26"
+  ]
+ },
+ "C119": {
+  "supportDocIds": [
+   "c1f4a90720a483de",
+   "97ef3a8ce1dc4059"
+  ],
+  "hub": "ASC 808-10-50",
+  "nDocs": 2,
+  "supportFilers": [
+   "INCY",
+   "NBIX"
+  ],
+  "origin": "primary:Q031",
+  "supportDocNames": [
+   "INCY_CORRESP_2014-12-17",
+   "NBIX_CORRESP_2010-09-09"
+  ]
+ },
+ "C120": {
+  "supportDocIds": [
+   "be21a904e57661f1",
+   "95a9eb6ea1685a91"
+  ],
+  "hub": "leases",
+  "nDocs": 2,
+  "supportFilers": [
+   "KYMR",
+   "UTHR"
+  ],
+  "origin": "primary:Q038",
+  "supportDocNames": [
+   "KYMR_CORRESP_2020-07-31",
+   "UTHR_CORRESP_2008-01-18"
+  ]
+ },
+ "C121": {
+  "supportDocIds": [
+   "fbb2dca17c06134b",
+   "d08e0e99817bbe2b",
+   "d78b887bdaffa2ba",
+   "7af7cd903c42a69e",
+   "fc04c8f29ef1b60e",
+   "873604a6aa51ec5e"
+  ],
+  "hub": "business combinations and IPR&D",
+  "nDocs": 6,
+  "supportFilers": [
+   "ALKS",
+   "ARWR",
+   "GILD",
+   "NBIX",
+   "PTCT",
+   "VRTX"
+  ],
+  "origin": "primary:Q004",
+  "supportDocNames": [
+   "ALKS_CORRESP_2013-03-12",
+   "ARWR_CORRESP_2007-03-15",
+   "GILD_CORRESP_2007-05-18",
+   "NBIX_CORRESP_2021-11-03",
+   "PTCT_CORRESP_2019-10-09",
+   "VRTX_CORRESP_2013-04-26"
+  ]
+ },
+ "C122": {
+  "supportDocIds": [
+   "37404470e218b499",
+   "a37f38f658333470",
+   "1897d35af150cb6a",
+   "8cc247e7827a353c",
+   "b391a545533159a8",
+   "fc04c8f29ef1b60e",
+   "873604a6aa51ec5e"
+  ],
+  "hub": "income taxes",
+  "nDocs": 7,
+  "supportFilers": [
+   "ALKS",
+   "AMGN",
+   "BMRN",
+   "GILD",
+   "INCY",
+   "PTCT",
+   "VRTX"
+  ],
+  "origin": "primary:Q011",
+  "supportDocNames": [
+   "ALKS_CORRESP_2014-04-28",
+   "AMGN_CORRESP_2012-05-18",
+   "BMRN_CORRESP_2012-04-02",
+   "GILD_CORRESP_2006-11-14",
+   "INCY_CORRESP_2012-12-19",
+   "PTCT_CORRESP_2019-10-09",
+   "VRTX_CORRESP_2013-04-26"
+  ]
+ },
+ "C123": {
+  "supportDocIds": [
+   "fbb2dca17c06134b",
+   "d63f34eb85b487d5",
+   "12515873015a6741",
+   "fac29dd63375927e",
+   "ff2bd9fef19379fd",
+   "a5db4b8d5f6ab323",
+   "1897d35af150cb6a",
+   "89c907a727467880",
+   "6f2130f342576894",
+   "32cced4c87d1b768",
+   "ab45e3f9792ff4be",
+   "7ba143e0142eda09",
+   "be3413fa14940601",
+   "3ecb5859031916de",
+   "97ef3a8ce1dc4059",
+   "888b8d005e7a5490",
+   "d1eab8035af62747",
+   "9456644128d6c70e",
+   "a6dcb68f7e496484",
+   "79eb72411b65799a",
+   "7dd2d8b64dc8f5b0"
+  ],
+  "hub": "research and development expense",
+  "nDocs": 21,
+  "supportFilers": [
+   "ALKS",
+   "ALNY",
+   "AMGN",
+   "AMRN",
+   "ARVN",
+   "BIIB",
+   "BMRN",
+   "EXEL",
+   "GILD",
+   "HALO",
+   "IMVT",
+   "INCY",
+   "INSM",
+   "IOVA",
+   "NBIX",
+   "PTCT",
+   "RARE",
+   "REGN",
+   "RVMD",
+   "SRPT",
+   "TGTX"
+  ],
+  "origin": "primary:Q018",
+  "supportDocNames": [
+   "ALKS_CORRESP_2013-03-12",
+   "ALNY_CORRESP_2025-05-22",
+   "AMGN_CORRESP_2011-08-19",
+   "AMRN_CORRESP_2017-01-09",
+   "ARVN_CORRESP_2024-09-11",
+   "BIIB_CORRESP_2021-04-07",
+   "BMRN_CORRESP_2012-04-02",
+   "EXEL_CORRESP_2008-10-20",
+   "GILD_CORRESP_2013-05-06",
+   "HALO_CORRESP_2014-01-17",
+   "IMVT_CORRESP_2024-02-13",
+   "INCY_CORRESP_2018-10-31",
+   "INSM_CORRESP_2005-05-06",
+   "IOVA_CORRESP_2023-11-17",
+   "NBIX_CORRESP_2010-09-09",
+   "PTCT_CORRESP_2016-01-21",
+   "RARE_CORRESP_2024-05-17",
+   "REGN_CORRESP_2024-05-20",
+   "RVMD_CORRESP_2024-04-19",
+   "SRPT_CORRESP_2014-01-06",
+   "TGTX_CORRESP_2007-01-04"
+  ]
+ },
+ "C124": {
+  "supportDocIds": [
+   "4dc55e5e26ad4d38",
+   "fbb2dca17c06134b",
+   "b7a08a4cfd7c8a6d",
+   "b1cac8c8c99d329b",
+   "12515873015a6741",
+   "ff2bd9fef19379fd",
+   "d08e0e99817bbe2b",
+   "74db180dbbd2728f",
+   "676c6250c6927992",
+   "6024a37ee0dddf20",
+   "6c6ce9db2c912685",
+   "6f2130f342576894",
+   "189f9dee40702343",
+   "1965d44b9c958f1a",
+   "fdf7f7fea6642c7a",
+   "be3413fa14940601",
+   "3ecb5859031916de",
+   "03bc18991d86e7a8",
+   "be21a904e57661f1",
+   "678b2302d00381bb",
+   "9b218b3574ab1aae",
+   "888b8d005e7a5490",
+   "d1eab8035af62747",
+   "2675fa111a8a3280",
+   "3502befcde8cda5e",
+   "7b67ea8fc0a6aaed",
+   "1f41b8dc0575a388",
+   "c2e2ab33688f7e18",
+   "95a9eb6ea1685a91",
+   "873604a6aa51ec5e"
+  ],
+  "hub": "clinical and pipeline disclosure",
+  "nDocs": 30,
+  "supportFilers": [
+   "ACAD",
+   "ALKS",
+   "ALLO",
+   "ALNY",
+   "AMGN",
+   "ARVN",
+   "ARWR",
+   "BIIB",
+   "BMRN",
+   "BNTX",
+   "DNLI",
+   "GILD",
+   "HALO",
+   "IMVT",
+   "INCY",
+   "INSM",
+   "IOVA",
+   "JAZZ",
+   "KYMR",
+   "NBIX",
+   "NVAX",
+   "PTCT",
+   "RARE",
+   "RCUS",
+   "REGN",
+   "RVMD",
+   "SRPT",
+   "TGTX",
+   "UTHR",
+   "VRTX"
+  ],
+  "origin": "primary:Q025",
+  "supportDocNames": [
+   "ACAD_CORRESP_2010-02-04",
+   "ALKS_CORRESP_2013-03-12",
+   "ALLO_CORRESP_2018-09-14",
+   "ALNY_CORRESP_2009-02-24",
+   "AMGN_CORRESP_2011-08-19",
+   "ARVN_CORRESP_2024-09-11",
+   "ARWR_CORRESP_2007-03-15",
+   "BIIB_CORRESP_2010-07-02",
+   "BMRN_CORRESP_2013-05-20",
+   "BNTX_CORRESP_2019-09-24",
+   "DNLI_CORRESP_2017-11-13",
+   "GILD_CORRESP_2013-05-06",
+   "HALO_CORRESP_2012-08-31",
+   "IMVT_CORRESP_2019-11-05",
+   "INCY_CORRESP_2010-08-04",
+   "INSM_CORRESP_2005-05-06",
+   "IOVA_CORRESP_2023-11-17",
+   "JAZZ_CORRESP_2009-08-13",
+   "KYMR_CORRESP_2020-07-31",
+   "NBIX_CORRESP_2021-10-05",
+   "NVAX_CORRESP_2008-12-30",
+   "PTCT_CORRESP_2016-01-21",
+   "RARE_CORRESP_2024-05-17",
+   "RCUS_CORRESP_2018-02-16",
+   "REGN_CORRESP_2016-08-19",
+   "RVMD_CORRESP_2020-01-17",
+   "SRPT_CORRESP_2010-03-26",
+   "TGTX_CORRESP_2013-10-01",
+   "UTHR_CORRESP_2008-01-18",
+   "VRTX_CORRESP_2013-04-26"
+  ]
+ },
+ "C125": {
+  "supportDocIds": [
+   "4dc55e5e26ad4d38",
+   "fbb2dca17c06134b",
+   "c5e68d3b502f9e72",
+   "ff2bd9fef19379fd",
+   "0ffd9bd4a6944dcf",
+   "106c2c5db0126f88",
+   "189f9dee40702343",
+   "ab45e3f9792ff4be",
+   "b391a545533159a8",
+   "be3413fa14940601",
+   "3ecb5859031916de",
+   "be21a904e57661f1",
+   "a2d2ccbb1cc235a1",
+   "0258faf6c1624614",
+   "d1eab8035af62747",
+   "9456644128d6c70e",
+   "7b67ea8fc0a6aaed",
+   "79eb72411b65799a",
+   "3ec1893f3a8245a5"
+  ],
+  "hub": "liquidity and MD&A",
+  "nDocs": 19,
+  "supportFilers": [
+   "ACAD",
+   "ALKS",
+   "AMGN",
+   "ARVN",
+   "ARWR",
+   "GILD",
+   "HALO",
+   "IMVT",
+   "INCY",
+   "INSM",
+   "IOVA",
+   "KYMR",
+   "NBIX",
+   "NVAX",
+   "RARE",
+   "REGN",
+   "RVMD",
+   "SRPT",
+   "UTHR"
+  ],
+  "origin": "primary:Q032",
+  "supportDocNames": [
+   "ACAD_CORRESP_2010-02-04",
+   "ALKS_CORRESP_2013-03-12",
+   "AMGN_CORRESP_2024-04-22",
+   "ARVN_CORRESP_2024-09-11",
+   "ARWR_CORRESP_2023-03-03",
+   "GILD_CORRESP_2011-08-04",
+   "HALO_CORRESP_2012-08-31",
+   "IMVT_CORRESP_2024-02-13",
+   "INCY_CORRESP_2012-12-19",
+   "INSM_CORRESP_2005-05-06",
+   "IOVA_CORRESP_2023-11-17",
+   "KYMR_CORRESP_2020-07-31",
+   "NBIX_CORRESP_2010-11-22",
+   "NVAX_CORRESP_2017-12-04",
+   "RARE_CORRESP_2024-05-17",
+   "REGN_CORRESP_2024-05-20",
+   "RVMD_CORRESP_2020-01-17",
+   "SRPT_CORRESP_2014-01-06",
+   "UTHR_CORRESP_2012-08-01"
+  ]
+ },
+ "C126": {
+  "supportDocIds": [
+   "37404470e218b499",
+   "d63f34eb85b487d5",
+   "fac29dd63375927e",
+   "d08e0e99817bbe2b",
+   "22b03de80a5bc918",
+   "6024a37ee0dddf20",
+   "aea76aeb66778c71",
+   "9393db6918278c0d",
+   "189f9dee40702343",
+   "b391a545533159a8",
+   "8859abc2d3b1c136",
+   "03bc18991d86e7a8",
+   "be21a904e57661f1",
+   "97ef3a8ce1dc4059",
+   "14294da841d60c99",
+   "e6ba742e05c98764",
+   "9456644128d6c70e",
+   "470d50ed4948cf89",
+   "c2e2ab33688f7e18",
+   "95a9eb6ea1685a91",
+   "4fcc634649e41911"
+  ],
+  "hub": "revenue recognition",
+  "nDocs": 21,
+  "supportFilers": [
+   "ALKS",
+   "ALNY",
+   "AMRN",
+   "ARWR",
+   "BMRN",
+   "BNTX",
+   "DNLI",
+   "GILD",
+   "HALO",
+   "INCY",
+   "INSM",
+   "JAZZ",
+   "KYMR",
+   "NBIX",
+   "NVAX",
+   "PTCT",
+   "REGN",
+   "SRPT",
+   "TGTX",
+   "UTHR",
+   "VRTX"
+  ],
+  "origin": "primary:Q039",
+  "supportDocNames": [
+   "ALKS_CORRESP_2014-04-28",
+   "ALNY_CORRESP_2025-05-22",
+   "AMRN_CORRESP_2017-01-09",
+   "ARWR_CORRESP_2007-03-15",
+   "BMRN_CORRESP_2016-07-08",
+   "BNTX_CORRESP_2019-09-24",
+   "DNLI_CORRESP_2019-07-16",
+   "GILD_CORRESP_2006-12-13",
+   "HALO_CORRESP_2012-08-31",
+   "INCY_CORRESP_2012-12-19",
+   "INSM_CORRESP_2019-12-17",
+   "JAZZ_CORRESP_2009-08-13",
+   "KYMR_CORRESP_2020-07-31",
+   "NBIX_CORRESP_2010-09-09",
+   "NVAX_CORRESP_2008-12-12",
+   "PTCT_CORRESP_2021-10-19",
+   "REGN_CORRESP_2024-05-20",
+   "SRPT_CORRESP_2010-01-20",
+   "TGTX_CORRESP_2013-10-01",
+   "UTHR_CORRESP_2008-01-18",
+   "VRTX_CORRESP_2006-04-27"
+  ]
+ },
+ "C127": {
+  "supportDocIds": [
+   "a5db4b8d5f6ab323",
+   "07542bf7d6ccbe2e",
+   "7ba143e0142eda09",
+   "8859abc2d3b1c136",
+   "7a3afcca53440528",
+   "7af7cd903c42a69e",
+   "3476da8bbe7a76b7",
+   "9b8cca03ff375fa4"
+  ],
+  "hub": "non-GAAP measures",
+  "nDocs": 8,
+  "supportFilers": [
+   "BIIB",
+   "BMRN",
+   "INCY",
+   "INSM",
+   "JAZZ",
+   "NBIX",
+   "REGN",
+   "VRTX"
+  ],
+  "origin": "primary:Q046",
+  "supportDocNames": [
+   "BIIB_CORRESP_2021-04-07",
+   "BMRN_CORRESP_2023-04-06",
+   "INCY_CORRESP_2018-10-31",
+   "INSM_CORRESP_2019-12-17",
+   "JAZZ_CORRESP_2019-11-19",
+   "NBIX_CORRESP_2021-11-03",
+   "REGN_CORRESP_2016-05-23",
+   "VRTX_CORRESP_2012-07-11"
+  ]
+ },
+ "C128": {
+  "supportDocIds": [
+   "4dc55e5e26ad4d38",
+   "1d49ea84779a4e03",
+   "fcce1a082c1ae25a",
+   "74db180dbbd2728f",
+   "453bf5555a244c2b",
+   "fdf7f7fea6642c7a",
+   "42a02f471e85beaa",
+   "b5cea595856e231e",
+   "03bc18991d86e7a8",
+   "be21a904e57661f1",
+   "97ef3a8ce1dc4059",
+   "14294da841d60c99",
+   "3b54a59abb97ff97",
+   "1f41b8dc0575a388",
+   "71b8aa0cc38e9e59",
+   "3847b41c39eda8be"
+  ],
+  "hub": "executive compensation",
+  "nDocs": 16,
+  "supportFilers": [
+   "ACAD",
+   "ALNY",
+   "AMGN",
+   "BIIB",
+   "BMRN",
+   "INCY",
+   "INSM",
+   "IOVA",
+   "JAZZ",
+   "KYMR",
+   "NBIX",
+   "NVAX",
+   "REGN",
+   "SRPT",
+   "UTHR",
+   "VRTX"
+  ],
+  "origin": "primary:Q052",
+  "supportDocNames": [
+   "ACAD_CORRESP_2010-02-04",
+   "ALNY_CORRESP_2011-01-12",
+   "AMGN_CORRESP_2007-10-15",
+   "BIIB_CORRESP_2010-07-02",
+   "BMRN_CORRESP_2010-10-12",
+   "INCY_CORRESP_2010-08-04",
+   "INSM_CORRESP_2010-07-29",
+   "IOVA_CORRESP_2011-10-27",
+   "JAZZ_CORRESP_2009-08-13",
+   "KYMR_CORRESP_2020-07-31",
+   "NBIX_CORRESP_2010-09-09",
+   "NVAX_CORRESP_2008-12-12",
+   "REGN_CORRESP_2020-12-07",
+   "SRPT_CORRESP_2010-03-26",
+   "UTHR_CORRESP_2010-07-19",
+   "VRTX_CORRESP_2007-10-23"
+  ]
+ },
+ "C129": {
+  "supportDocIds": [
+   "7fba89dfede0d6ff",
+   "b1cac8c8c99d329b",
+   "1d49ea84779a4e03",
+   "4758cbdd678b91e2",
+   "4cbd99154790a555"
+  ],
+  "hub": "Item 601(b)(10)",
+  "nDocs": 5,
+  "supportFilers": [
+   "ALNY",
+   "VRTX"
+  ],
+  "origin": "primary:Q005",
+  "supportDocNames": [
+   "ALNY_CORRESP_2009-01-22",
+   "ALNY_CORRESP_2009-02-24",
+   "ALNY_CORRESP_2011-01-12",
+   "VRTX_CORRESP_2011-04-13",
+   "VRTX_CORRESP_2026-04-01"
+  ]
+ },
+ "C130": {
+  "supportDocIds": [
+   "810d2d142282adda",
+   "3476da8bbe7a76b7",
+   "6a42274aeda7610c",
+   "79eb72411b65799a"
+  ],
+  "hub": "warrants and equity classification",
+  "nDocs": 4,
+  "supportFilers": [
+   "REGN",
+   "SRPT"
+  ],
+  "origin": "primary:Q012",
+  "supportDocNames": [
+   "REGN_CORRESP_2014-06-24",
+   "REGN_CORRESP_2016-05-23",
+   "SRPT_CORRESP_2007-10-24",
+   "SRPT_CORRESP_2014-01-06"
+  ]
+ },
+ "C131": {
+  "supportDocIds": [
+   "810d2d142282adda",
+   "f4c04b0230ba7595",
+   "4fcc634649e41911",
+   "4e3f48e776e4e0c9"
+  ],
+  "hub": "fair value",
+  "nDocs": 4,
+  "supportFilers": [
+   "REGN",
+   "VRTX"
+  ],
+  "origin": "primary:Q019",
+  "supportDocNames": [
+   "REGN_CORRESP_2014-06-24",
+   "REGN_CORRESP_2016-10-12",
+   "VRTX_CORRESP_2006-04-27",
+   "VRTX_CORRESP_2009-12-22"
+  ]
+ },
+ "C132": {
+  "supportDocIds": [
+   "8cc247e7827a353c",
+   "9393db6918278c0d",
+   "fe7e0045e3544b41",
+   "b391a545533159a8",
+   "cc22dc181835eb70"
+  ],
+  "hub": "inventory",
+  "nDocs": 5,
+  "supportFilers": [
+   "GILD",
+   "INCY"
+  ],
+  "origin": "primary:Q026",
+  "supportDocNames": [
+   "GILD_CORRESP_2006-11-14",
+   "GILD_CORRESP_2006-12-13",
+   "GILD_CORRESP_2009-08-17",
+   "INCY_CORRESP_2012-12-19",
+   "INCY_CORRESP_2014-01-14"
+  ]
+ },
+ "C133": {
+  "supportDocIds": [
+   "7ba143e0142eda09",
+   "45559596cdf33068",
+   "7a3afcca53440528",
+   "ddafaf40aa7456a0"
+  ],
+  "hub": "non-GAAP measures",
+  "nDocs": 4,
+  "supportFilers": [
+   "INCY",
+   "JAZZ"
+  ],
+  "origin": "primary:Q033",
+  "supportDocNames": [
+   "INCY_CORRESP_2018-10-31",
+   "INCY_CORRESP_2019-03-29",
+   "JAZZ_CORRESP_2019-11-19",
+   "JAZZ_CORRESP_2020-02-14"
+  ]
+ },
+ "C134": {
+  "supportDocIds": [
+   "d3bb4f9b044c9782",
+   "37404470e218b499"
+  ],
+  "hub": "impairment",
+  "nDocs": 2,
+  "supportFilers": [
+   "ALKS"
+  ],
+  "origin": "primary:Q040",
+  "supportDocNames": [
+   "ALKS_CORRESP_2013-04-25",
+   "ALKS_CORRESP_2014-04-28"
+  ]
+ },
+ "C135": {
+  "supportDocIds": [
+   "fbb2dca17c06134b",
+   "37404470e218b499"
+  ],
+  "hub": "business combinations and IPR&D",
+  "nDocs": 2,
+  "supportFilers": [
+   "ALKS"
+  ],
+  "origin": "primary:Q047",
+  "supportDocNames": [
+   "ALKS_CORRESP_2013-03-12",
+   "ALKS_CORRESP_2014-04-28"
+  ]
+ },
+ "C136": {
+  "supportDocIds": [
+   "3847b41c39eda8be",
+   "5a4b36e003c8fc4d"
+  ],
+  "hub": "Item 402(b)(2)",
+  "nDocs": 2,
+  "supportFilers": [
+   "VRTX"
+  ],
+  "origin": "primary:Q053",
+  "supportDocNames": [
+   "VRTX_CORRESP_2007-10-23",
+   "VRTX_CORRESP_2008-02-28"
+  ]
+ },
+ "C137": {
+  "supportDocIds": [
+   "106c2c5db0126f88",
+   "6f2130f342576894",
+   "cc22dc181835eb70",
+   "c65f38bb222f1aa5",
+   "c1f4a90720a483de",
+   "7ba143e0142eda09",
+   "97ef3a8ce1dc4059",
+   "a2d2ccbb1cc235a1",
+   "678b2302d00381bb",
+   "888b8d005e7a5490",
+   "f19a30123b18bc04"
+  ],
+  "hub": "research and development expense",
+  "nDocs": 11,
+  "supportFilers": [
+   "GILD",
+   "INCY",
+   "NBIX",
+   "PTCT"
+  ],
+  "origin": "primary:Q058",
+  "supportDocNames": [
+   "GILD_CORRESP_2011-08-04",
+   "GILD_CORRESP_2013-05-06",
+   "INCY_CORRESP_2014-01-14",
+   "INCY_CORRESP_2014-11-14",
+   "INCY_CORRESP_2014-12-17",
+   "INCY_CORRESP_2018-10-31",
+   "NBIX_CORRESP_2010-09-09",
+   "NBIX_CORRESP_2010-11-22",
+   "NBIX_CORRESP_2021-10-05",
+   "PTCT_CORRESP_2016-01-21",
+   "PTCT_CORRESP_2025-09-18"
+  ]
+ },
+ "C138": {
+  "supportDocIds": [
+   "93f60d961e1ecd79",
+   "534e40bb82c1460d",
+   "c5e68d3b502f9e72",
+   "106c2c5db0126f88",
+   "fc77a7b0ff3d36b6",
+   "16c5fd1e0b002209",
+   "6f2130f342576894",
+   "b391a545533159a8",
+   "cc22dc181835eb70",
+   "c65f38bb222f1aa5",
+   "3476da8bbe7a76b7",
+   "9456644128d6c70e",
+   "d11cee135f2fefde"
+  ],
+  "hub": "liquidity and MD&A",
+  "nDocs": 13,
+  "supportFilers": [
+   "AMGN",
+   "GILD",
+   "INCY",
+   "REGN"
+  ],
+  "origin": "primary:Q063",
+  "supportDocNames": [
+   "AMGN_CORRESP_2006-06-09",
+   "AMGN_CORRESP_2009-04-01",
+   "AMGN_CORRESP_2024-04-22",
+   "GILD_CORRESP_2011-08-04",
+   "GILD_CORRESP_2012-05-25",
+   "GILD_CORRESP_2012-06-01",
+   "GILD_CORRESP_2013-05-06",
+   "INCY_CORRESP_2012-12-19",
+   "INCY_CORRESP_2014-01-14",
+   "INCY_CORRESP_2014-11-14",
+   "REGN_CORRESP_2016-05-23",
+   "REGN_CORRESP_2024-05-20",
+   "REGN_CORRESP_2025-04-03"
+  ]
+ },
+ "C139": {
+  "supportDocIds": [
+   "810d2d142282adda",
+   "9456644128d6c70e"
+  ],
+  "hub": "ASC 815",
+  "nDocs": 2,
+  "supportFilers": [
+   "REGN"
+  ],
+  "origin": "primary:Q068",
+  "supportDocNames": [
+   "REGN_CORRESP_2014-06-24",
+   "REGN_CORRESP_2024-05-20"
+  ]
+ },
+ "C140": {
+  "supportDocIds": [
+   "c1ae176fefcded13",
+   "fdf7f7fea6642c7a",
+   "2da85dac7bba9d88",
+   "97ef3a8ce1dc4059",
+   "3847b41c39eda8be",
+   "5a4b36e003c8fc4d",
+   "9f29e99af42a1577"
+  ],
+  "hub": "executive compensation",
+  "nDocs": 7,
+  "supportFilers": [
+   "INCY",
+   "NBIX",
+   "VRTX"
+  ],
+  "origin": "primary:Q073",
+  "supportDocNames": [
+   "INCY_CORRESP_2008-06-16",
+   "INCY_CORRESP_2010-08-04",
+   "NBIX_CORRESP_2007-09-20",
+   "NBIX_CORRESP_2010-09-09",
+   "VRTX_CORRESP_2007-10-23",
+   "VRTX_CORRESP_2008-02-28",
+   "VRTX_CORRESP_2010-03-31"
+  ]
+ },
+ "C141": {
+  "supportDocIds": [
+   "fbb2dca17c06134b",
+   "37404470e218b499"
+  ],
+  "hub": "income taxes",
+  "nDocs": 2,
+  "supportFilers": [
+   "ALKS"
+  ],
+  "origin": "primary:Q078",
+  "supportDocNames": [
+   "ALKS_CORRESP_2013-03-12",
+   "ALKS_CORRESP_2014-04-28"
+  ]
+ },
+ "C142": {
+  "supportDocIds": [
+   "fbb2dca17c06134b",
+   "37404470e218b499"
+  ],
+  "hub": "ASC 605-28-50",
+  "nDocs": 2,
+  "supportFilers": [
+   "ALKS"
+  ],
+  "origin": "primary:Q082",
+  "supportDocNames": [
+   "ALKS_CORRESP_2013-03-12",
+   "ALKS_CORRESP_2014-04-28"
+  ]
+ },
+ "C143": {
+  "supportDocIds": [
+   "37404470e218b499",
+   "d08e0e99817bbe2b",
+   "41728c86d0b63a80",
+   "8cc247e7827a353c",
+   "03bc18991d86e7a8",
+   "873604a6aa51ec5e"
+  ],
+  "hub": "impairment",
+  "nDocs": 6,
+  "supportFilers": [
+   "ALKS",
+   "ARWR",
+   "BIIB",
+   "GILD",
+   "JAZZ",
+   "VRTX"
+  ],
+  "origin": "primary:Q006",
+  "supportDocNames": [
+   "ALKS_CORRESP_2014-04-28",
+   "ARWR_CORRESP_2007-03-15",
+   "BIIB_CORRESP_2009-09-29",
+   "GILD_CORRESP_2006-11-14",
+   "JAZZ_CORRESP_2009-08-13",
+   "VRTX_CORRESP_2013-04-26"
+  ]
+ },
+ "C144": {
+  "supportDocIds": [
+   "37404470e218b499",
+   "fac29dd63375927e",
+   "79eb72411b65799a"
+  ],
+  "hub": "ASC 605-28-50",
+  "nDocs": 3,
+  "supportFilers": [
+   "ALKS",
+   "AMRN",
+   "SRPT"
+  ],
+  "origin": "primary:Q013",
+  "supportDocNames": [
+   "ALKS_CORRESP_2014-04-28",
+   "AMRN_CORRESP_2017-01-09",
+   "SRPT_CORRESP_2014-01-06"
+  ]
+ },
+ "C145": {
+  "supportDocIds": [
+   "fbb2dca17c06134b",
+   "2da85dac7bba9d88"
+  ],
+  "hub": "Rule 24b-2",
+  "nDocs": 2,
+  "supportFilers": [
+   "ALKS",
+   "NBIX"
+  ],
+  "origin": "primary:Q020",
+  "supportDocNames": [
+   "ALKS_CORRESP_2013-03-12",
+   "NBIX_CORRESP_2007-09-20"
+  ]
+ },
+ "C146": {
+  "supportDocIds": [
+   "fe7e0045e3544b41",
+   "03bc18991d86e7a8",
+   "09dfa94ee801f92d",
+   "470d50ed4948cf89"
+  ],
+  "hub": "Rule 13a-15",
+  "nDocs": 4,
+  "supportFilers": [
+   "GILD",
+   "JAZZ",
+   "NVAX",
+   "SRPT"
+  ],
+  "origin": "primary:Q027",
+  "supportDocNames": [
+   "GILD_CORRESP_2009-08-17",
+   "JAZZ_CORRESP_2009-08-13",
+   "NVAX_CORRESP_2006-12-04",
+   "SRPT_CORRESP_2010-01-20"
+  ]
+ },
+ "C147": {
+  "supportDocIds": [
+   "fcce1a082c1ae25a",
+   "2da85dac7bba9d88",
+   "470d50ed4948cf89",
+   "3847b41c39eda8be"
+  ],
+  "hub": "Item 402(b)",
+  "nDocs": 4,
+  "supportFilers": [
+   "AMGN",
+   "NBIX",
+   "SRPT",
+   "VRTX"
+  ],
+  "origin": "primary:Q034",
+  "supportDocNames": [
+   "AMGN_CORRESP_2007-10-15",
+   "NBIX_CORRESP_2007-09-20",
+   "SRPT_CORRESP_2010-01-20",
+   "VRTX_CORRESP_2007-10-23"
+  ]
+ },
+ "C148": {
+  "supportDocIds": [
+   "fcce1a082c1ae25a",
+   "2da85dac7bba9d88",
+   "3847b41c39eda8be"
+  ],
+  "hub": "Item 404(b)(1)",
+  "nDocs": 3,
+  "supportFilers": [
+   "AMGN",
+   "NBIX",
+   "VRTX"
+  ],
+  "origin": "primary:Q041",
+  "supportDocNames": [
+   "AMGN_CORRESP_2007-10-15",
+   "NBIX_CORRESP_2007-09-20",
+   "VRTX_CORRESP_2007-10-23"
+  ]
+ },
+ "C149": {
+  "supportDocIds": [
+   "fac29dd63375927e",
+   "32cced4c87d1b768",
+   "97ef3a8ce1dc4059"
+  ],
+  "hub": "ASC 730-10-25",
+  "nDocs": 3,
+  "supportFilers": [
+   "AMRN",
+   "HALO",
+   "NBIX"
+  ],
+  "origin": "primary:Q048",
+  "supportDocNames": [
+   "AMRN_CORRESP_2017-01-09",
+   "HALO_CORRESP_2014-01-17",
+   "NBIX_CORRESP_2010-09-09"
+  ]
+ },
+ "C150": {
+  "supportDocIds": [
+   "c5e68d3b502f9e72",
+   "7b67ea8fc0a6aaed"
+  ],
+  "hub": "Item 303(b)",
+  "nDocs": 2,
+  "supportFilers": [
+   "AMGN",
+   "RVMD"
+  ],
+  "origin": "primary:Q054",
+  "supportDocNames": [
+   "AMGN_CORRESP_2024-04-22",
+   "RVMD_CORRESP_2020-01-17"
+  ]
+ },
+ "C151": {
+  "supportDocIds": [
+   "37404470e218b499",
+   "7ba143e0142eda09"
+  ],
+  "hub": "Rule 5-02",
+  "nDocs": 2,
+  "supportFilers": [
+   "ALKS",
+   "INCY"
+  ],
+  "origin": "primary:Q059",
+  "supportDocNames": [
+   "ALKS_CORRESP_2014-04-28",
+   "INCY_CORRESP_2018-10-31"
+  ]
+ },
+ "C152": {
+  "supportDocIds": [
+   "fcce1a082c1ae25a",
+   "c1ae176fefcded13",
+   "2da85dac7bba9d88",
+   "855dbcf3740032cc",
+   "3847b41c39eda8be"
+  ],
+  "hub": "Item 404(a)",
+  "nDocs": 5,
+  "supportFilers": [
+   "AMGN",
+   "INCY",
+   "NBIX",
+   "UTHR",
+   "VRTX"
+  ],
+  "origin": "primary:Q064",
+  "supportDocNames": [
+   "AMGN_CORRESP_2007-10-15",
+   "INCY_CORRESP_2008-06-16",
+   "NBIX_CORRESP_2007-09-20",
+   "UTHR_CORRESP_2008-02-26",
+   "VRTX_CORRESP_2007-10-23"
+  ]
+ },
+ "C153": {
+  "supportDocIds": [
+   "9d0817f02e2a54fc",
+   "fdf7f7fea6642c7a"
+  ],
+  "hub": "Rule 14a-3",
+  "nDocs": 2,
+  "supportFilers": [
+   "AMRN",
+   "INCY"
+  ],
+  "origin": "primary:Q069",
+  "supportDocNames": [
+   "AMRN_CORRESP_2023-01-27",
+   "INCY_CORRESP_2010-08-04"
+  ]
+ },
+ "C154": {
+  "supportDocIds": [
+   "fe7e0045e3544b41",
+   "03bc18991d86e7a8",
+   "09dfa94ee801f92d",
+   "470d50ed4948cf89",
+   "35cedb986f8b88f2"
+  ],
+  "hub": "internal control",
+  "nDocs": 5,
+  "supportFilers": [
+   "GILD",
+   "JAZZ",
+   "NVAX",
+   "SRPT",
+   "VRTX"
+  ],
+  "origin": "primary:Q074",
+  "supportDocNames": [
+   "GILD_CORRESP_2009-08-17",
+   "JAZZ_CORRESP_2009-08-13",
+   "NVAX_CORRESP_2006-12-04",
+   "SRPT_CORRESP_2010-01-20",
+   "VRTX_CORRESP_2022-09-26"
+  ]
+ },
+ "C155": {
+  "supportDocIds": [
+   "3476da8bbe7a76b7",
+   "79eb72411b65799a",
+   "9b8cca03ff375fa4"
+  ],
+  "hub": "stock-based compensation",
+  "nDocs": 3,
+  "supportFilers": [
+   "REGN",
+   "SRPT",
+   "VRTX"
+  ],
+  "origin": "primary:Q079",
+  "supportDocNames": [
+   "REGN_CORRESP_2016-05-23",
+   "SRPT_CORRESP_2014-01-06",
+   "VRTX_CORRESP_2012-07-11"
+  ]
+ },
+ "C156": {
+  "supportDocIds": [
+   "fac29dd63375927e",
+   "9456644128d6c70e"
+  ],
+  "hub": "ASC 730",
+  "nDocs": 2,
+  "supportFilers": [
+   "AMRN",
+   "REGN"
+  ],
+  "origin": "primary:Q083",
+  "supportDocNames": [
+   "AMRN_CORRESP_2017-01-09",
+   "REGN_CORRESP_2024-05-20"
+  ]
+ },
+ "C157": {
+  "supportDocIds": [
+   "37404470e218b499",
+   "873604a6aa51ec5e"
+  ],
+  "hub": "ASC 740-30-50",
+  "nDocs": 2,
+  "supportFilers": [
+   "ALKS",
+   "VRTX"
+  ],
+  "origin": "primary:Q089",
+  "supportDocNames": [
+   "ALKS_CORRESP_2014-04-28",
+   "VRTX_CORRESP_2013-04-26"
+  ]
+ },
+ "C158": {
+  "supportDocIds": [
+   "fcce1a082c1ae25a",
+   "2da85dac7bba9d88"
+  ],
+  "hub": "Item 402(b)(1)",
+  "nDocs": 2,
+  "supportFilers": [
+   "AMGN",
+   "NBIX"
+  ],
+  "origin": "primary:Q095",
+  "supportDocNames": [
+   "AMGN_CORRESP_2007-10-15",
+   "NBIX_CORRESP_2007-09-20"
+  ]
+ },
+ "C159": {
+  "supportDocIds": [
+   "be21a904e57661f1",
+   "95a9eb6ea1685a91"
+  ],
+  "hub": "leases",
+  "nDocs": 2,
+  "supportFilers": [
+   "KYMR",
+   "UTHR"
+  ],
+  "origin": "primary:Q098",
+  "supportDocNames": [
+   "KYMR_CORRESP_2020-07-31",
+   "UTHR_CORRESP_2008-01-18"
+  ]
+ },
+ "C160": {
+  "supportDocIds": [
+   "d63f34eb85b487d5",
+   "08181087a031fe2a"
+  ],
+  "hub": "ASC 606-10-50",
+  "nDocs": 2,
+  "supportFilers": [
+   "ALNY",
+   "DNLI"
+  ],
+  "origin": "primary:Q107",
+  "supportDocNames": [
+   "ALNY_CORRESP_2025-05-22",
+   "DNLI_CORRESP_2019-09-11"
+  ]
+ },
+ "C161": {
+  "supportDocIds": [
+   "b391a545533159a8",
+   "888b8d005e7a5490"
+  ],
+  "hub": "ASC 605-15-25",
+  "nDocs": 2,
+  "supportFilers": [
+   "INCY",
+   "PTCT"
+  ],
+  "origin": "primary:Q110",
+  "supportDocNames": [
+   "INCY_CORRESP_2012-12-19",
+   "PTCT_CORRESP_2016-01-21"
+  ]
+ },
+ "C162": {
+  "supportDocIds": [
+   "c5e68d3b502f9e72",
+   "d11cee135f2fefde"
+  ],
+  "hub": "Item 303(b)(2)",
+  "nDocs": 2,
+  "supportFilers": [
+   "AMGN",
+   "REGN"
+  ],
+  "origin": "primary:Q113",
+  "supportDocNames": [
+   "AMGN_CORRESP_2024-04-22",
+   "REGN_CORRESP_2025-04-03"
+  ]
+ },
+ "C163": {
+  "supportDocIds": [
+   "fbb2dca17c06134b",
+   "27d9a4d0684a5154"
+  ],
+  "hub": "ASC 605-28",
+  "nDocs": 2,
+  "supportFilers": [
+   "ALKS",
+   "INCY"
+  ],
+  "origin": "primary:Q116",
+  "supportDocNames": [
+   "ALKS_CORRESP_2013-03-12",
+   "INCY_CORRESP_2011-12-22"
+  ]
+ },
+ "C164": {
+  "supportDocIds": [
+   "82f635d550a85391",
+   "9066837335ecd96c",
+   "810d2d142282adda"
+  ],
+  "hub": "ASC 815",
+  "nDocs": 3,
+  "supportFilers": [
+   "ALKS",
+   "HALO",
+   "REGN"
+  ],
+  "origin": "primary:Q134",
+  "supportDocNames": [
+   "ALKS_CORRESP_2016-09-27",
+   "HALO_CORRESP_2023-06-28",
+   "REGN_CORRESP_2014-06-24"
+  ]
+ },
+ "C165": {
+  "supportDocIds": [
+   "fdf7f7fea6642c7a",
+   "42a02f471e85beaa",
+   "71b8aa0cc38e9e59"
+  ],
+  "hub": "Item 402(s)",
+  "nDocs": 3,
+  "supportFilers": [
+   "INCY",
+   "INSM",
+   "UTHR"
+  ],
+  "origin": "primary:Q137",
+  "supportDocNames": [
+   "INCY_CORRESP_2010-08-04",
+   "INSM_CORRESP_2010-07-29",
+   "UTHR_CORRESP_2010-07-19"
+  ]
+ },
+ "C166": {
+  "supportDocIds": [
+   "9533b07628bac5c4",
+   "7f126c5e772d6962"
+  ],
+  "hub": "Item 101(c)(1)",
+  "nDocs": 2,
+  "supportFilers": [
+   "INCY",
+   "NBIX"
+  ],
+  "origin": "primary:Q140",
+  "supportDocNames": [
+   "INCY_CORRESP_2020-04-07",
+   "NBIX_CORRESP_2013-06-26"
+  ]
+ },
+ "C167": {
+  "supportDocIds": [
+   "00c211d103dfc224",
+   "f61101a53acbb3f9"
+  ],
+  "hub": "Rule 14e-1",
+  "nDocs": 2,
+  "supportFilers": [
+   "JAZZ",
+   "UTHR"
+  ],
+  "origin": "primary:Q143",
+  "supportDocNames": [
+   "JAZZ_CORRESP_2014-01-07",
+   "UTHR_CORRESP_2023-12-13"
+  ]
+ },
+ "C168": {
+  "supportDocIds": [
+   "a5db4b8d5f6ab323",
+   "7af7cd903c42a69e"
+  ],
+  "hub": "Item 10(e)(1)",
+  "nDocs": 2,
+  "supportFilers": [
+   "BIIB",
+   "NBIX"
+  ],
+  "origin": "primary:Q146",
+  "supportDocNames": [
+   "BIIB_CORRESP_2021-04-07",
+   "NBIX_CORRESP_2021-11-03"
+  ]
+ },
+ "C169": {
+  "supportDocIds": [
+   "fcce1a082c1ae25a",
+   "2da85dac7bba9d88",
+   "3847b41c39eda8be"
+  ],
+  "hub": "Item 402(b)(2)",
+  "nDocs": 3,
+  "supportFilers": [
+   "AMGN",
+   "NBIX",
+   "VRTX"
+  ],
+  "origin": "primary:Q149",
+  "supportDocNames": [
+   "AMGN_CORRESP_2007-10-15",
+   "NBIX_CORRESP_2007-09-20",
+   "VRTX_CORRESP_2007-10-23"
+  ]
+ },
+ "C170": {
+  "supportDocIds": [
+   "aea76aeb66778c71",
+   "9533b07628bac5c4",
+   "d3838edce972ce07",
+   "9456644128d6c70e"
+  ],
+  "hub": "ASC 606",
+  "nDocs": 4,
+  "supportFilers": [
+   "DNLI",
+   "INCY",
+   "JAZZ",
+   "REGN"
+  ],
+  "origin": "primary:Q152",
+  "supportDocNames": [
+   "DNLI_CORRESP_2019-07-16",
+   "INCY_CORRESP_2020-04-07",
+   "JAZZ_CORRESP_2018-11-14",
+   "REGN_CORRESP_2024-05-20"
+  ]
+ },
+ "C171": {
+  "supportDocIds": [
+   "9533b07628bac5c4",
+   "d3838edce972ce07"
+  ],
+  "hub": "ASC 606-10-32-11",
+  "nDocs": 2,
+  "supportFilers": [
+   "INCY",
+   "JAZZ"
+  ],
+  "origin": "primary:Q155",
+  "supportDocNames": [
+   "INCY_CORRESP_2020-04-07",
+   "JAZZ_CORRESP_2018-11-14"
+  ]
+ },
+ "C172": {
+  "supportDocIds": [
+   "eac9a7da867a07da",
+   "9066837335ecd96c"
+  ],
+  "hub": "ASC 815-15-25",
+  "nDocs": 2,
+  "supportFilers": [
+   "ALLO",
+   "HALO"
+  ],
+  "origin": "primary:Q161",
+  "supportDocNames": [
+   "ALLO_CORRESP_2018-10-02",
+   "HALO_CORRESP_2023-06-28"
+  ]
+ },
+ "C173": {
+  "supportDocIds": [
+   "03bc18991d86e7a8",
+   "09dfa94ee801f92d"
+  ],
+  "hub": "internal control",
+  "nDocs": 2,
+  "supportFilers": [
+   "JAZZ",
+   "NVAX"
+  ],
+  "origin": "primary:Q021",
+  "supportDocNames": [
+   "JAZZ_CORRESP_2009-08-13",
+   "NVAX_CORRESP_2006-12-04"
+  ]
+ },
+ "C174": {
+  "supportDocIds": [
+   "fcce1a082c1ae25a",
+   "470d50ed4948cf89"
+  ],
+  "hub": "executive compensation",
+  "nDocs": 2,
+  "supportFilers": [
+   "AMGN",
+   "SRPT"
+  ],
+  "origin": "primary:Q049",
+  "supportDocNames": [
+   "AMGN_CORRESP_2007-10-15",
+   "SRPT_CORRESP_2010-01-20"
+  ]
+ },
+ "C175": {
+  "supportDocIds": [
+   "fcce1a082c1ae25a",
+   "3847b41c39eda8be"
+  ],
+  "hub": "executive compensation",
+  "nDocs": 2,
+  "supportFilers": [
+   "AMGN",
+   "VRTX"
+  ],
+  "origin": "primary:Q080",
+  "supportDocNames": [
+   "AMGN_CORRESP_2007-10-15",
+   "VRTX_CORRESP_2007-10-23"
+  ]
+ },
+ "C176": {
+  "supportDocIds": [
+   "fac29dd63375927e",
+   "97ef3a8ce1dc4059"
+  ],
+  "hub": "research and development expense",
+  "nDocs": 2,
+  "supportFilers": [
+   "AMRN",
+   "NBIX"
+  ],
+  "origin": "primary:Q087",
+  "supportDocNames": [
+   "AMRN_CORRESP_2017-01-09",
+   "NBIX_CORRESP_2010-09-09"
+  ]
+ },
+ "C177": {
+  "supportDocIds": [
+   "fdf7f7fea6642c7a",
+   "42a02f471e85beaa"
+  ],
+  "hub": "executive compensation",
+  "nDocs": 2,
+  "supportFilers": [
+   "INCY",
+   "INSM"
+  ],
+  "origin": "primary:Q093",
+  "supportDocNames": [
+   "INCY_CORRESP_2010-08-04",
+   "INSM_CORRESP_2010-07-29"
+  ]
+ },
+ "C178": {
+  "supportDocIds": [
+   "ff2bd9fef19379fd",
+   "9456644128d6c70e"
+  ],
+  "hub": "research and development expense",
+  "nDocs": 2,
+  "supportFilers": [
+   "ARVN",
+   "REGN"
+  ],
+  "origin": "primary:Q096",
+  "supportDocNames": [
+   "ARVN_CORRESP_2024-09-11",
+   "REGN_CORRESP_2024-05-20"
+  ]
+ },
+ "C179": {
+  "supportDocIds": [
+   "32cced4c87d1b768",
+   "97ef3a8ce1dc4059"
+  ],
+  "hub": "research and development expense",
+  "nDocs": 2,
+  "supportFilers": [
+   "HALO",
+   "NBIX"
+  ],
+  "origin": "primary:Q099",
+  "supportDocNames": [
+   "HALO_CORRESP_2014-01-17",
+   "NBIX_CORRESP_2010-09-09"
+  ]
+ },
+ "C180": {
+  "supportDocIds": [
+   "9066837335ecd96c",
+   "810d2d142282adda"
+  ],
+  "hub": "warrants and equity classification",
+  "nDocs": 2,
+  "supportFilers": [
+   "HALO",
+   "REGN"
+  ],
+  "origin": "primary:Q105",
+  "supportDocNames": [
+   "HALO_CORRESP_2023-06-28",
+   "REGN_CORRESP_2014-06-24"
+  ]
+ },
+ "C181": {
+  "supportDocIds": [
+   "fac29dd63375927e",
+   "32cced4c87d1b768"
+  ],
+  "hub": "research and development expense",
+  "nDocs": 2,
+  "supportFilers": [
+   "AMRN",
+   "HALO"
+  ],
+  "origin": "primary:Q111",
+  "supportDocNames": [
+   "AMRN_CORRESP_2017-01-09",
+   "HALO_CORRESP_2014-01-17"
+  ]
+ },
+ "C182": {
+  "supportDocIds": [
+   "fe7e0045e3544b41",
+   "09dfa94ee801f92d"
+  ],
+  "hub": "internal control",
+  "nDocs": 2,
+  "supportFilers": [
+   "GILD",
+   "NVAX"
+  ],
+  "origin": "primary:Q114",
+  "supportDocNames": [
+   "GILD_CORRESP_2009-08-17",
+   "NVAX_CORRESP_2006-12-04"
+  ]
+ },
+ "C183": {
+  "supportDocIds": [
+   "fbb2dca17c06134b",
+   "fac29dd63375927e"
+  ],
+  "hub": "revenue recognition",
+  "nDocs": 2,
+  "supportFilers": [
+   "ALKS",
+   "AMRN"
+  ],
+  "origin": "primary:Q135",
+  "supportDocNames": [
+   "ALKS_CORRESP_2013-03-12",
+   "AMRN_CORRESP_2017-01-09"
+  ]
+ }
+}
