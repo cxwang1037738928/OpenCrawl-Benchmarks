@@ -35,15 +35,15 @@ query text and multiply them into the existing per-document boost.
 | questions with the target document at rank 1 | 22 / 220 | **212 / 220** |
 
 Queries that name no document are bit-identical to before. Answer accuracy on the same 220
-questions: **163/220 = 74.1%** (`grading_results.txt`).
+questions: **163/220 = 74.1%** (`experiments/01-doc-boost/grading_results.txt`).
 
 ---
 
 ## 2. The knowledge-graph ablation was null — and the reason is mechanical
 
 Collections 30/31/32 share the same 20 documents, the same 1008 chunks and the same embeddings, so
-chunk retrieval is identical and the graph is the only variable (`ablation_grading.txt`, 660 answers
-graded by hand in batches of 11).
+chunk retrieval is identical and the graph is the only variable
+(`experiments/02-kg-ablation/ablation_grading.txt`, 660 answers graded by hand in batches of 11).
 
 | collection | graph | correct | accuracy |
 | --- | --- | --- | --- |
@@ -96,9 +96,10 @@ DiffCSP (9/155), CDVAE (11/119), NequIP (5/160), CGCNN (6/86), MP-20 (6/30), GNo
 frequency, and if under ~20% land in the 2–19 band the graph will not fire often enough to measure,
 however good it is. It costs seconds and would have predicted the null result above.
 
-Assessed against that criterion, of the corpus types considered: **medical records** are the
-strongest fit (drugs, conditions and procedures recur at the right frequency, relations are typed
-and multi-hop questions are natural); **invoices** are weak (bimodal frequency — a few hub vendors
+Assessed against that criterion — a judgement about corpus types, not a measurement; none of these
+were built or probed — **medical records** are the strongest fit (drugs, conditions and procedures
+recur at the right frequency, relations are typed and multi-hop questions are natural);
+**invoices** are weak (bimodal frequency — a few hub vendors
 and a long single-document tail — and the value is in numbers, which triple extraction handles
 worst); **call-centre procedures** are weakest (conditional prose does not decompose into triples,
 and the useful retrieval is chunk retrieval).
@@ -251,11 +252,15 @@ Experiments 02–04 all came back null on corpora chosen for topical breadth. `e
 attacks the criterion from §3 directly: build a corpus that *satisfies* the entity-recurrence test,
 ask only cross-document aggregation questions, and see whether the graph finally earns its keep.
 
-The corpus is **221 SEC comment-response letters** (`CORRESP`) from **38 biotech filers**, fetched
-from EDGAR, spanning 2004-12-10 to 2026-04-01, rendered to PDF and ingested to **4,091 chunks**.
-Every letter is the same genre answering the same regulator, so accounting topics — revenue
-recognition, R&D expense, non-GAAP measures, segment reporting — recur across filers by
-construction. **183 hand-reviewed questions** in seven aggregation archetypes:
+The corpus is **221 SEC comment-response letters** (`CORRESP`) from **38 biotech filers** — Amgen,
+Gilead, Regeneron, Vertex, Alnylam, BioMarin, Sarepta and 31 others — pulled from EDGAR by
+`fetch_corresp.py`, rendered to PDF by `build_corpus.py`, spanning 2004-12-10 to 2026-04-01 and
+ingested to **4,091 chunks**. Every letter is the same genre answering the same regulator, so
+accounting topics — revenue recognition, R&D expense, non-GAAP measures, segment reporting — recur
+across filers by construction.
+
+**183 hand-reviewed questions** in seven aggregation archetypes, each needing a median of 2 support
+letters (mean 3.0, max 30) drawn from a pool of 125 distinct letters:
 
 | archetype | n | what it asks |
 | --- | --- | --- |
@@ -267,17 +272,20 @@ construction. **183 hand-reviewed questions** in seven aggregation archetypes:
 | `holdout` | 8 | a topic deliberately held out of the seed set |
 | `count` | 6 | how many filers were questioned about an authority |
 
-Arms: **collection 34** (no graph) and **collection 35** (graph at `KG_FULL_TEXT_FRACTION=0.4`,
-3,230 entities / 3,501 relations, 229 LLM calls, 1.73M tokens). A third arm at fraction `1.0` was
-started and **abandoned on token cost**; its graph is a partial checkpoint (`complete: false`) and is
-not used.
+Arms: **collection 34** (no graph) and **collection 35** (graph at `KG_FULL_TEXT_FRACTION=0.4` —
+89 of 221 letters read in full and 132 as summaries, 3,230 entities / 3,501 relations, 229 calls to
+`gemini/gemini-3.6-flash` over 33 minutes for 1.73M tokens). A third arm at fraction `1.0` puts all
+221 letters through full text; it was started and **abandoned on token cost**, and its graph is a
+partial checkpoint (`complete: false`) that is not used anywhere below.
 
 ### There is no accuracy number for this experiment
 
-The paired answer run died on provider rate limits at call 124 of 366 — 124 answers from the graph
-arm, none from the control (`raw/run_AB.log`). Nothing was graded. **Everything below is measured on
-retrieval and graph reach with no LLM in the loop**: it bounds what either channel could possibly
-supply, not what the model does with it. That bound turned out to be the whole story.
+The paired run reached call 124 of 366 before `gemini/gemini-3.1-flash-lite` stopped answering — 10
+consecutive `HTTP 429`s, then 10 `fetch failed`s, leaving **104 usable answers from the graph arm and
+none from the control**, which was queued to run second (`run_AB.log`). Nothing was graded.
+**Everything below is measured on retrieval and graph reach with no LLM in the loop**: it bounds what
+either channel could possibly supply, not what the model does with it. That bound turned out to be
+the whole story, which is why the run was never restarted.
 
 ### The pre-flight histogram passes, and it is not enough
 
@@ -306,9 +314,12 @@ recur — the top of the document-frequency ranking:
 | 9 | 63 | U.S. Securities and Exchange Commission |
 | 10 | 58 | United States Securities and Exchange Commission |
 
-The regulator's own name under six spellings, its address, its staff reviewers, and the form types.
-The first entity in the ranking that a question could plausibly be *about* is a company name, at rank
-21. Not one accounting topic appears in the top 50.
+The regulator's own name, its address, its staff reviewers, and the form types. Entity resolution
+never collapsed the regulator: the graph carries **13 distinct spellings** of the SEC's name, five of
+them in 58 documents or more — `SEC` (117), `Securities and Exchange Commission` (117), `Commission`
+(86), `U.S. Securities and Exchange Commission` (63), `United States Securities and Exchange
+Commission` (58). The first company is `Gilead Sciences, Inc.` at rank 21 with 16 documents, and
+**not one of the 183 questions' 59 distinct hubs appears anywhere in the top 50.**
 
 **The §3 criterion measures whether entities recur, not whether what recurs discriminates.** In a
 single-genre corpus those come apart completely: the thing every document shares is the letterhead.
@@ -325,14 +336,30 @@ graph's gazetteer:
 | hub is an entity in the graph at all | 94 / 183 | 51% |
 | ...and its document frequency is ≥ 2, so `GRAPH_MIN_SEED_DOC_FREQ` will seed on it | **11 / 183** | **6%** |
 
-77 of the 94 matched hubs appear in exactly one document and are rejected as seeds. `count` is the
-extreme case: the graph never learned "ASC 605-25-25" or "Regulation G" as entities at all, so 1 of 6
-hubs matched and 0 are seedable.
+77 of the 94 matched hubs appear in exactly one document and are rejected as seeds. That 94 is the
+retriever's own fuzzy match; resolving the 59 distinct hubs against the entity list by exact string
+is stricter and shows what actually survives, which is not the subject matter:
+
+| hub class | distinct hubs | questions | in the graph | seedable (df ≥ 2) |
+| --- | --- | --- | --- | --- |
+| accounting topic — `revenue recognition`, `income taxes`, `impairment` … | 16 | **136** | 5 | **0** |
+| authority — `ASC 605-25-25`, `Rule 24b-2`, `Item 303(b)` … | 30 | 34 | 5 | **1** |
+| ticker — `GILD`, `VRTX`, `REGN` … | 13 | 13 | 13 | 10 |
+| **all** | **59** | **183** | **23** | **11** |
+
+**Every seedable hub is a ticker symbol except one, `Item 601(b)(10)`.** The five topics that reached
+the graph at all are there once each, ranking 1,151st to 2,177th by document frequency:
+`revenue recognition`, the hub of 21 questions, is entity number **1,904, in a single document**;
+`research and development expense`, the hub of 24, is number 1,172, in a single document. The `count`
+archetype is the extreme — of its six hubs (`ASC 605-25-25`, `ASC 730-10-20`, `ASC 730-10-25`,
+`ASC 808-10-50`, `business combinations and IPR&D`, `leases`) the graph learned exactly one, and that
+one carries no document frequency at all.
 
 The graph therefore seeds on whatever else the question names, which is company names: **211 of the
-245 seeds across all 183 questions are company-shaped** (86%), and the only non-company seeds in the
-entire set are `Non-GAAP`, `Incyte`, `The Staff` and `Item 601(b)(10)`. Seeding on a company name is
-seeding on the exact string BM25 already matches.
+245 seeds across all 183 questions are company-shaped** (86%, matched on the `Inc.`/`plc`/
+`Pharmaceuticals`-style suffixes), and the only non-company seeds in the entire set are `Non-GAAP`,
+`Incyte`, `The Staff` and `Item 601(b)(10)`. Seeding on a company name is seeding on the exact string
+BM25 already matches.
 
 ### Weighted evenly across archetypes, the graph reaches *less* than chunk retrieval
 
@@ -407,7 +434,11 @@ and `reindex.mjs` re-chunks and re-embeds from it without reopening a PDF. It wo
 | retrieved chunks containing "SEC correspondence" | 92% | **9%** |
 | questions reaching ≥1 support letter | 60% | 60% |
 | mean support-letter recall | 32% | 30% |
-| retrieved chunks containing an SEC letterhead marker | 29% | **37%** |
+| retrieved chunks carrying a letterhead marker | 29% | **37%** |
+
+("Letterhead marker" is `100 F Street`, `Division of Corporat(e\|ion) Finance` or `Via EDGAR` — the
+address block and transmission line every letter opens with. The flag is precomputed per chunk as
+`hasLetterhead` in the committed probe files.)
 
 Reach did not move, and the letterhead share of retrieved chunks went *up*. Removing the dominant
 uniform signal promoted the next one. **Boilerplate is not one bug with one fix; it is what a
@@ -424,24 +455,36 @@ keyword-only string, and a one-sentence rewrite:
 | keywords only | **55%** |
 | concise one-sentence rewrite | 49% |
 
-A bare keyword string beats the question it was derived from by 17 points. The prose framing of an
-aggregation question ("Both X and Y responded to SEC staff comments about Z. Did they take the same
-position...") is mostly shared scaffolding, and it dilutes the embedding exactly the way the title
-prefix did.
+A bare keyword string beats the question it was derived from by 17 points. C102 is the shape of it —
+37 words, against a 28-word median across the set:
+
+> Identify the company in this document set that agreed to revise its disclosure regarding executive
+> compensation but separately declined to change its treatment of revenue recognition, defending it
+> to the staff. Name the company and both subjects.
+
+Keyword form: `executive compensation revenue recognition`. Almost everything the question adds
+beyond those five words is scaffolding it shares with the other 182, and it dilutes the embedding
+exactly the way the title prefix did.
 
 ### What to take from this
 
-1. **The §3 pre-flight test is necessary, not sufficient.** A corpus can clear the 2–19 band
-   handsomely and still be useless, because the entities that recur are the ones every document
-   shares. Bin the histogram *after* removing boilerplate entities, or the test passes on letterhead.
+1. **The §3 pre-flight test is necessary, not sufficient — run it on the questions, not the corpus.**
+   25.6% in the 2–19 band said go; the number that mattered was that 0 of the 136 topic-keyed
+   questions had a seedable hub. Resolving the question set's hubs against the entity list takes the
+   same seconds the histogram does, needs no answers, and would have stopped this experiment before
+   the 33-minute graph build.
 2. **Single-genre corpora are the adversarial case for corroboration-weighted ranking.** Both
    channels — `specificity × corroboration` on the graph, cosine similarity on chunks — converge on
-   the shared scaffolding, by different mechanisms, and suppressing one just promotes the next.
+   the shared scaffolding, by different mechanisms, and suppressing one just promotes the next: the
+   title fix took `SEC correspondence` from 92% of retrieved chunks to 9% and moved reach by 0 points
+   while the letterhead share rose 29% → 37%.
 3. **The graph's reach advantage was a question-mix artifact.** Weight the archetypes evenly and it
-   reaches less than chunk retrieval, and it is worst on the authority-keyed questions it was built
-   for.
+   reaches less than chunk retrieval — 49% against 60% — and it is worst on the authority-keyed
+   questions it was built for, 7% on `recurring` and 0% on `count`.
 4. **This is the fourth null, and the first one visible before a single answer is graded.** The
-   ceiling was measured and it sits below the control's. The run was not worth finishing.
+   ceiling was measured and it sits below the control's, so the 262 remaining answer calls were
+   never worth buying.
+
 ---
 
 ## Layout
